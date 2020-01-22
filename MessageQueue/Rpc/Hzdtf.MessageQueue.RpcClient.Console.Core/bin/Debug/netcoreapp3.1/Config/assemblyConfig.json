@@ -1,0 +1,15 @@
+{
+  "Services": [
+    {
+      "Names": [
+        "FEG.Utility.Standard",
+        "FEG.Platform.Contract.Standard",
+        "FEG.Platform.Impl.Core",
+        "FEG.Logger.Contract.Standard",
+        "FEG.Logger.Text.Impl.Standard",
+        "FEG.MessageQueue.Contract.Standard"
+      ],
+      "Lifecycle": "SIGNLETON"
+    }
+  ]
+}

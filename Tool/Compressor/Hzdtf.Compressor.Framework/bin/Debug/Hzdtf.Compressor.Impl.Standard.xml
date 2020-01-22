@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.Compressor.Impl.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.Compressor.Impl.Standard.CssCompressorUtil">
+            <summary>
+            CSS压缩辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Compressor.Impl.Standard.CssCompressorUtil.CompressorFile(System.String)">
+            <summary>
+            压缩文件
+            </summary>
+            <param name="fileName">文件名</param>
+        </member>
+        <member name="T:Hzdtf.Compressor.Impl.Standard.JSCompressorUtil">
+            <summary>
+            JS压缩辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Compressor.Impl.Standard.JSCompressorUtil.CompressorFile(System.String)">
+            <summary>
+            压缩文件
+            </summary>
+            <param name="fileName">文件名</param>
+        </member>
+        <member name="M:Hzdtf.Compressor.Impl.Standard.JSCompressorUtil.MergeAndCompressorJsonFiles(System.String[],System.String)">
+            <summary>
+            合并并压缩Json文件组
+            </summary>
+            <param name="fileNames">文件名组</param>
+            <param name="newFilePre">新的文件前辍</param>
+        </member>
+        <member name="M:Hzdtf.Compressor.Impl.Standard.JSCompressorUtil.ReaderFileToLanguages(System.String)">
+            <summary>
+            读取文件内容并转换为语系信息列表
+            </summary>
+            <param name="fileName">文件名</param>
+            <returns>语系信息列表</returns>
+        </member>
+        <member name="M:Hzdtf.Compressor.Impl.Standard.JSCompressorUtil.ReaderFilesToLanguages(System.String[])">
+            <summary>
+            读取文件组内容并转换为语系信息列表
+            </summary>
+            <param name="fileName">文件名组</param>
+            <returns>语系信息列表</returns>
+        </member>
+    </members>
+</doc>

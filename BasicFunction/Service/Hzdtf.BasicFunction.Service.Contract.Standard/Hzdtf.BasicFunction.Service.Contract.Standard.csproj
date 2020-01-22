@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>黄振东</Authors>
+    <Company>Hzdtf</Company>
+    <Description>基础功能服务契约库
+增加根据角色ID查询所有的用户列表服务</Description>
+    <Version>2.0.0</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>D:\Hzdtf.FoundationFramework-master\BasicFunction\Service\Hzdtf.BasicFunction.Service.Contract.Standard\Hzdtf.BasicFunction.Service.Contract.Standard.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\Hzdtf.BasicFunction.Service.Contract.Standard.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Service\Hzdtf.Service.Contract.Standard\Hzdtf.Service.Contract.Standard.csproj" />
+    <ProjectReference Include="..\..\Model\Hzdtf.BasicFunction.Model.Standard\Hzdtf.BasicFunction.Model.Standard.csproj" />
+  </ItemGroup>
+
+</Project>

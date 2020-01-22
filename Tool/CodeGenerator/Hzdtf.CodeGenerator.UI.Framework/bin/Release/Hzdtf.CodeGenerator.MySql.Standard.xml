@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.CodeGenerator.MySql.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.CodeGenerator.MySql.Standard.MySqlInfoPersistence">
+            <summary>
+            MySql信息持久化
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.MySql.Standard.MySqlInfoPersistence.SelectTables(System.String,System.String)">
+            <summary>
+            查询所有表信息列表
+            </summary>
+            <param name="dataBase">数据库</param>
+            <param name="connectionString">连接字符串</param>
+            <returns>所有表信息列表</returns>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.MySql.Standard.MySqlInfoPersistence.SelectColumns(System.String,System.String,System.String)">
+            <summary>
+            查询所有列信息列表
+            </summary>
+            <param name="dataBase">数据库</param>
+            <param name="connectionString">连接字符串</param>
+            <param name="table">表</param>
+            <returns>所有列信息列表</returns>
+        </member>
+    </members>
+</doc>

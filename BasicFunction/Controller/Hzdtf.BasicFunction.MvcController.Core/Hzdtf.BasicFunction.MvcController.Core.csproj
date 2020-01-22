@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Description>基础功能Mvc控制器Core库</Description>
+    <Authors>黄振东</Authors>
+    <Company>Hzdtf</Company>
+    <Version>2.0.0</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\Hzdtf.BasicFunction.MvcController.Core.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>D:\Hzdtf.FoundationFramework-master\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\Hzdtf.BasicFunction.MvcController.Core.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Authorization\Hzdtf.Authorization.Web.Core\Hzdtf.Authorization.Web.Core.csproj" />
+    <ProjectReference Include="..\..\..\Controller\Hzdtf.BasicController.Core\Hzdtf.BasicController.Core.csproj" />
+    <ProjectReference Include="..\..\Model\Hzdtf.BasicFunction.Model.Standard\Hzdtf.BasicFunction.Model.Standard.csproj" />
+    <ProjectReference Include="..\..\Service\Hzdtf.BasicFunction.Service.Contract.Standard\Hzdtf.BasicFunction.Service.Contract.Standard.csproj" />
+  </ItemGroup>
+
+</Project>

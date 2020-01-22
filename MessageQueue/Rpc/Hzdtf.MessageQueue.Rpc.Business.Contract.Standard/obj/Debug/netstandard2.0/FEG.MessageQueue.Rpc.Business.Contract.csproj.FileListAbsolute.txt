@@ -1,0 +1,10 @@
+D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\MessageQueue\Rpc\FEG.MessageQueue.Rpc.Business.Contract\bin\Debug\netstandard2.0\FEG.MessageQueue.Rpc.Business.Contract.deps.json
+D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\MessageQueue\Rpc\FEG.MessageQueue.Rpc.Business.Contract\bin\Debug\netstandard2.0\FEG.MessageQueue.Rpc.Business.Contract.dll
+D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\MessageQueue\Rpc\FEG.MessageQueue.Rpc.Business.Contract\bin\Debug\netstandard2.0\FEG.MessageQueue.Rpc.Business.Contract.pdb
+D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\MessageQueue\Rpc\FEG.MessageQueue.Rpc.Business.Contract\bin\Debug\netstandard2.0\FEG.Utility.Standard.dll
+D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\MessageQueue\Rpc\FEG.MessageQueue.Rpc.Business.Contract\bin\Debug\netstandard2.0\FEG.Utility.Standard.pdb
+D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\MessageQueue\Rpc\FEG.MessageQueue.Rpc.Business.Contract\obj\Debug\netstandard2.0\FEG.MessageQueue.Rpc.Business.Contract.AssemblyInfoInputs.cache
+D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\MessageQueue\Rpc\FEG.MessageQueue.Rpc.Business.Contract\obj\Debug\netstandard2.0\FEG.MessageQueue.Rpc.Business.Contract.AssemblyInfo.cs
+D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\MessageQueue\Rpc\FEG.MessageQueue.Rpc.Business.Contract\obj\Debug\netstandard2.0\FEG.MessageQueue.Rpc.Business.Contract.csproj.CopyComplete
+D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\MessageQueue\Rpc\FEG.MessageQueue.Rpc.Business.Contract\obj\Debug\netstandard2.0\FEG.MessageQueue.Rpc.Business.Contract.dll
+D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\MessageQueue\Rpc\FEG.MessageQueue.Rpc.Business.Contract\obj\Debug\netstandard2.0\FEG.MessageQueue.Rpc.Business.Contract.pdb

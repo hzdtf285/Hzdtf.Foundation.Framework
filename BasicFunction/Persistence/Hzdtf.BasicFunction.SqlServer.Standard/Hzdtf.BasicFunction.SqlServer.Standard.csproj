@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>黄振东</Authors>
+    <Company>Hzdtf</Company>
+    <Description>基础功能SqlServer Standard库</Description>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <Version>2.0.0</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>D:\Hzdtf.FoundationFramework-master\BasicFunction\Persistence\Hzdtf.BasicFunction.SqlServer.Standard\Hzdtf.BasicFunction.SqlServer.Standard.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\Hzdtf.BasicFunction.SqlServer.Standard.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Persistence\Hzdtf.SqlServer.Standard\Hzdtf.SqlServer.Standard.csproj" />
+    <ProjectReference Include="..\..\Model\Hzdtf.BasicFunction.Model.Standard\Hzdtf.BasicFunction.Model.Standard.csproj" />
+    <ProjectReference Include="..\Hzdtf.BasicFunction.Persistence.Contract.Std\Hzdtf.BasicFunction.Persistence.Contract.Std.csproj" />
+  </ItemGroup>
+
+</Project>

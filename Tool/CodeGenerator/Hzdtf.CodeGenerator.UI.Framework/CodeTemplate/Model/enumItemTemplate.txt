@@ -1,0 +1,5 @@
+﻿        /// <summary>
+        /// |Description|
+        /// </summary>
+        [Description("|Description|")]
+        |CODE| = |VALUE|,

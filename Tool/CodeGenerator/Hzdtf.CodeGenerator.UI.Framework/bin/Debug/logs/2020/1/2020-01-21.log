@@ -1,0 +1,920 @@
+时间:2020-01-21 14:10:57.941
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,,ReturnValue:System.String[],timed:83.6209ms
+时间:2020-01-21 14:10:57.943
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.944
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.945
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.945
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.946
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.946
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.946
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.947
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.947
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.948
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.948
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.949
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.949
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.950
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.950
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.951
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.951
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.952
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.952
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.952
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.953
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.955
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,,ReturnValue:System.String[],timed:1.9948ms
+时间:2020-01-21 14:10:57.956
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.956
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.957
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.958
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.958
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.959
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0.9973ms
+时间:2020-01-21 14:10:57.959
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.959
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.964
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.964
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.965
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.965
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.966
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.966
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.967
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.967
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.967
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.968
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.968
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.969
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.969
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.969
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.970
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.970
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.970
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.971
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.971
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.972
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.972
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.972
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.973
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.973
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.975
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,,ReturnValue:System.String[],timed:0.9944ms
+时间:2020-01-21 14:10:57.975
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.976
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.978
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.978
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.978
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.979
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.979
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.979
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.980
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.980
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.980
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.981
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.981
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.981
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.982
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.982
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.983
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.983
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.983
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.984
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.984
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.984
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.985
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.985
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.985
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.986
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.986
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.986
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.987
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.987
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.987
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.987
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.989
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,,ReturnValue:System.String[],timed:0.9973ms
+时间:2020-01-21 14:10:57.989
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.990
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.990
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.991
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.991
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.992
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.992
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.992
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.993
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.994
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.994
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.994
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.995
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.995
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.995
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.996
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.996
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.996
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.997
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.997
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtf,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:57.997
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:10:58.028
+级别:debug
+来源:CodeGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.CodeGeneratorService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Boolean] Generator(System.Collections.Generic.IList`1[Hzdtf.CodeGenerator.Model.Standard.TableInfo], Hzdtf.CodeGenerator.Model.Standard.FunctionType[], System.String, System.String),params:System.Collections.Generic.List`1[Hzdtf.CodeGenerator.Model.Standard.TableInfo],Hzdtf.CodeGenerator.Model.Standard.FunctionType[],hzdtf,MySql,ReturnValue:{
+  "data": false,
+  "code": 0,
+  "msg": "操作成功"
+},timed:180.177ms
+时间:2020-01-21 14:19:14.710
+级别:error
+来源:CodeGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.CodeGeneratorService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Boolean] Generator(System.Collections.Generic.IList`1[Hzdtf.CodeGenerator.Model.Standard.TableInfo], Hzdtf.CodeGenerator.Model.Standard.FunctionType[], System.String, System.String),params:System.Collections.Generic.List`1[Hzdtf.CodeGenerator.Model.Standard.TableInfo],Hzdtf.CodeGenerator.Model.Standard.FunctionType[],hzdtd,MySql,ReturnValue:{
+  "data": false,
+  "code": -1,
+  "msg": "操作异常，请联系管理员",
+  "desc": "目录不是空的。\r\n"
+},timed:117.7295ms
+异常:Message:目录不是空的。
+.Description:System.IO.IOException: 目录不是空的。
+
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive, Boolean throwOnTopLevelDirectoryNotFound, WIN32_FIND_DATA& data)
+   在 System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive, Boolean checkHost)
+   在 System.IO.DirectoryInfo.Delete(Boolean recursive)
+   在 Hzdtf.Utility.Standard.Utils.FileUtil.DeleteDirectory(String path)
+   在 Hzdtf.CodeGenerator.Impl.Standard.CodeGeneratorService.Generator(IList`1 tables, FunctionType[] functionTypes, String namespacePfx, String type)
+   在 Castle.Proxies.CodeGeneratorServiceProxy.Generator_callback(IList`1 tables, FunctionType[] functionTypes, String namespacePfx, String type)
+   在 Castle.Proxies.Invocations.CodeGeneratorService_Generator.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Hzdtf.Autofac.Extend.Standard.Intercepteds.LogInterceptor.Intercept(IInvocation invocation)
+时间:2020-01-21 14:19:39.992
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,,ReturnValue:System.String[],timed:125.6421ms
+时间:2020-01-21 14:19:39.993
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.015
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:20.6633ms
+时间:2020-01-21 14:19:40.015
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.026
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:9.9725ms
+时间:2020-01-21 14:19:40.026
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.046
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:18.8176ms
+时间:2020-01-21 14:19:40.046
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.118
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:71.9613ms
+时间:2020-01-21 14:19:40.118
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.137
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:18.0319ms
+时间:2020-01-21 14:19:40.137
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.149
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:9.8123ms
+时间:2020-01-21 14:19:40.149
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.197
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:48.8873ms
+时间:2020-01-21 14:19:40.198
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.259
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:60.9994ms
+时间:2020-01-21 14:19:40.260
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.279
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:18.4725ms
+时间:2020-01-21 14:19:40.280
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.289
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:9.3258ms
+时间:2020-01-21 14:19:40.289
+级别:debug
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.292
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,,ReturnValue:System.String[],timed:1.9894ms
+时间:2020-01-21 14:19:40.292
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.293
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.294
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.294
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.294
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.295
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.295
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.295
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.296
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.296
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.296
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.297
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.297
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.299
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.299
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.299
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.300
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.300
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.300
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.301
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.301
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.301
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.302
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.302
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.302
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.303
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.303
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.304
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.304
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.305
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.305
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.305
+级别:debug
+来源:PersistenceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.307
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,,ReturnValue:System.String[],timed:0.9973ms
+时间:2020-01-21 14:19:40.307
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.308
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.309
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.309
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.309
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.310
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.310
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.310
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.311
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.311
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.311
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.311
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.312
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.312
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.312
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.313
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.313
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.314
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.314
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.314
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.315
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.315
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.315
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.316
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.316
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.316
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.317
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0.9973ms
+时间:2020-01-21 14:19:40.317
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.317
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.317
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.318
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.318
+级别:debug
+来源:ServiceGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.319
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.320
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.321
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.321
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.321
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.321
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.322
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.322
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.322
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.323
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.323
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.323
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.324
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.324
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.324
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.325
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.325
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.325
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.326
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.326
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.326
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:Hzdtf.CodeGenerator.Model.Standard.TableInfo,hzdtd,MySql,System.String[],ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.326
+级别:debug
+来源:CoreControllerGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService System.String[] SubFolders(),params:,ReturnValue:System.String[],timed:0ms
+时间:2020-01-21 14:19:40.327
+级别:debug
+来源:CodeGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.CodeGeneratorService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Boolean] Generator(System.Collections.Generic.IList`1[Hzdtf.CodeGenerator.Model.Standard.TableInfo], Hzdtf.CodeGenerator.Model.Standard.FunctionType[], System.String, System.String),params:System.Collections.Generic.List`1[Hzdtf.CodeGenerator.Model.Standard.TableInfo],Hzdtf.CodeGenerator.Model.Standard.FunctionType[],hzdtd,MySql,ReturnValue:{
+  "data": false,
+  "code": 0,
+  "msg": "操作成功"
+},timed:470.2391ms

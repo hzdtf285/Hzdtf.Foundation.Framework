@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>黄振东</Authors>
+    <Company>Hzdtf</Company>
+    <Description>工作流服务契约Standard库</Description>
+    <Version>2.0.0</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>D:\Hzdtf.FoundationFramework-master\WorkFlow\Service\Hzdtf.WorkFlow.Service.Contract.Standard\Hzdtf.WorkFlow.Service.Contract.Standard.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\Hzdtf.WorkFlow.Service.Contract.Standard.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Service\Hzdtf.Service.Contract.Standard\Hzdtf.Service.Contract.Standard.csproj" />
+    <ProjectReference Include="..\..\Model\Hzdtf.WorkFlow.Model.Standard\Hzdtf.WorkFlow.Model.Standard.csproj" />
+  </ItemGroup>
+
+</Project>

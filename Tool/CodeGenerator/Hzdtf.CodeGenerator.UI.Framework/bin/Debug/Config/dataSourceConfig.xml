@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Dictionarys>
+  <Dictionary Key="MySql">Server={0};Database={1};User={2};Password={3};Charset=utf8</Dictionary>
+  <Dictionary Key="SqlServer">Server={0};database={1};uid={2};pwd={3}</Dictionary>
+</Dictionarys>

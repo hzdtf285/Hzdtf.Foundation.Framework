@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+    <None Remove="Config\assemblyConfig.json" />
+    <None Remove="Config\rabbitMessageQueue.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\assemblyConfig.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\rabbitMessageQueue.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\IOC\Hzdtf.Autofac.Extend.Standard\Hzdtf.Autofac.Extend.Standard.csproj" />
+    <ProjectReference Include="..\..\..\Logger\Hzdtf.Logger.Text.Impl.Standard\Hzdtf.Logger.Text.Impl.Standard.csproj" />
+    <ProjectReference Include="..\..\..\Platform\Hzdtf.Platform.Contract.Standard\Hzdtf.Platform.Contract.Standard.csproj" />
+    <ProjectReference Include="..\..\..\Platform\Hzdtf.Platform.Impl.Core\Hzdtf.Platform.Impl.Core.csproj" />
+    <ProjectReference Include="..\..\Rabbit\Hzdtf.Rabbit.Impl.Standard\Hzdtf.Rabbit.Impl.Standard.csproj" />
+    <ProjectReference Include="..\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>黄振东</Authors>
+    <Description>工作流持久化MySql Standard库</Description>
+    <Company>Hzdtf</Company>
+    <Version>2.0.0</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>D:\Hzdtf.FoundationFramework-master\WorkFlow\Persistence\Hzdtf.WorkFlow.MySql.Standard\Hzdtf.WorkFlow.MySql.Standard.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\Hzdtf.WorkFlow.MySql.Standard.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Persistence\Hzdtf.MySql.Standard\Hzdtf.MySql.Standard.csproj" />
+    <ProjectReference Include="..\Hzdtf.WorkFlow.Persistence.Contract.Standard\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj" />
+  </ItemGroup>
+
+</Project>

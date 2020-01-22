@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FEG.Rabbit.Contract.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:FEG.Rabbit.Contract.Standard.Connection.IRabbitChannel">
+            <summary>
+            Rabbit渠道接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Contract.Standard.Connection.IRabbitChannel.GetChannelCount">
+            <summary>
+            获取渠道数
+            </summary>
+            <returns>渠道数</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Contract.Standard.Connection.IRabbitChannel.CloseChannels(System.Int32)">
+            <summary>
+            关闭渠道集合
+            </summary>
+            <param name="topCount">前几个要关闭的，如果为-1则表示全部</param>
+        </member>
+        <member name="T:FEG.Rabbit.Contract.Standard.MessageQueue.IRabbitMessageQueueReader">
+            <summary>
+            Rabbit消息队列读取接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Contract.Standard.MessageQueue.IRabbitMessageQueueReader.ReaderByExchange(System.String)">
+            <summary>
+            根据交换机获取消息队列信息
+            </summary>
+            <param name="exchange">交换机</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Contract.Standard.MessageQueue.IRabbitMessageQueueReader.ReaderByQueue(System.String)">
+            <summary>
+            根据队列获取消息队列信息
+            </summary>
+            <param name="queue">队列</param>
+            <returns>消息队列信息</returns>
+        </member>
+    </members>
+</doc>

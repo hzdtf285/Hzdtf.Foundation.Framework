@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Service\Hzdtf.Service.Contract.Standard\Hzdtf.Service.Contract.Standard.csproj" />
+    <ProjectReference Include="..\..\Model\Hzdtf.Demo.Model.Standard\Hzdtf.Demo.Model.Standard.csproj" />
+  </ItemGroup>
+
+</Project>

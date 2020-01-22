@@ -1,0 +1,44 @@
+时间:2020-01-21 18:11:16.666
+级别:error
+来源:UserService
+消息:Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.BasicUserInfo] Accredit(System.String, System.String),ReturnValue:{
+  "code": -1,
+  "msg": "操作异常，请联系管理员",
+  "desc": "Authentication to host 'localhost' for user 'root' using method 'mysql_native_password' failed with message: Access denied for user 'root'@'localhost' (using password: YES)"
+},timed:1141.906ms
+异常:Message:Authentication to host 'localhost' for user 'root' using method 'mysql_native_password' failed with message: Access denied for user 'root'@'localhost' (using password: YES).Description:System.Exception: Authentication to host 'localhost' for user 'root' using method 'mysql_native_password' failed with message: Access denied for user 'root'@'localhost' (using password: YES) ---> MySql.Data.MySqlClient.MySqlException: Authentication to host 'localhost' for user 'root' using method 'mysql_native_password' failed with message: Access denied for user 'root'@'localhost' (using password: YES) ---> MySql.Data.MySqlClient.MySqlException: Access denied for user 'root'@'localhost' (using password: YES)
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(Exception ex)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.Authenticate(Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.GetDbConnection(String connectionId, IPersistenceConnection persistenceConnection, Boolean& isExistsConnection, String& connectionString, AccessMode accessMode) in F:\MyWorks\net\Hzdtf.FoundationFramework\Persistence\Hzdtf.Persistence.Contract.Standard\Management\DbConnectionManager.cs:line 508
+   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.BrainpowerExecute(String connectionId, IPersistenceConnection persistenceConnection, Action`2 action, AccessMode accessMode) in F:\MyWorks\net\Hzdtf.FoundationFramework\Persistence\Hzdtf.Persistence.Contract.Standard\Management\DbConnectionManager.cs:line 83
+   at Hzdtf.BasicFunction.MySql.Standard.UserPersistence.SelectByLoginIdAndPassword(String loginId, String password, String connectionId) in F:\MyWorks\net\Hzdtf.FoundationFramework\BasicFunction\Persistence\Hzdtf.BasicFunction.MySql.Standard\Expand\User\UserPersistenceEx.cs:line 29
+   at Hzdtf.BasicFunction.Service.Impl.Standard.UserService.<>c__DisplayClass26_0.<Accredit>b__0(ReturnInfo`1 reInfo, String connId) in F:\MyWorks\net\Hzdtf.FoundationFramework\BasicFunction\Service\Hzdtf.BasicFunction.Service.Impl.Standard\Expand\User\UserServiceEx.cs:line 346
+   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_1`1.<ExecReturnFuncAndConnectionId>b__1(String connId) in F:\MyWorks\net\Hzdtf.FoundationFramework\Service\Hzdtf.Service.Impl.Standard\ServiceBase.cs:line 1374
+   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in F:\MyWorks\net\Hzdtf.FoundationFramework\Service\Hzdtf.Service.Impl.Standard\ServiceBase.cs:line 1415
+   --- End of inner exception stack trace ---
+   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in F:\MyWorks\net\Hzdtf.FoundationFramework\Service\Hzdtf.Service.Impl.Standard\ServiceBase.cs:line 1419
+   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_0`1.<ExecReturnFuncAndConnectionId>b__0(ReturnInfo`1 reInfo) in F:\MyWorks\net\Hzdtf.FoundationFramework\Service\Hzdtf.Service.Impl.Standard\ServiceBase.cs:line 1372
+   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFunc[OutT](Func`2 func, ReturnInfo`1 returnInfo) in F:\MyWorks\net\Hzdtf.FoundationFramework\Service\Hzdtf.Service.Impl.Standard\ServiceBase.cs:line 1395
+   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFuncAndConnectionId[OutT](Func`3 func, ReturnInfo`1 returnInfo, String connectionId, AccessMode accessMode) in F:\MyWorks\net\Hzdtf.FoundationFramework\Service\Hzdtf.Service.Impl.Standard\ServiceBase.cs:line 1369
+   at Hzdtf.BasicFunction.Service.Impl.Standard.UserService.Accredit(String user, String password) in F:\MyWorks\net\Hzdtf.FoundationFramework\BasicFunction\Service\Hzdtf.BasicFunction.Service.Impl.Standard\Expand\User\UserServiceEx.cs:line 344
+   at Castle.Proxies.Invocations.UserService_Accredit.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in F:\MyWorks\net\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Extend.Standard\Intercepteds\InterceptorBase.cs:line 32
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Hzdtf.Autofac.Extend.Standard.Intercepteds.LogInterceptor.Intercept(IInvocation invocation) in F:\MyWorks\net\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Extend.Standard\Intercepteds\LogInterceptor.cs:line 95
+时间:2020-01-21 19:00:22.029
+级别:info
+来源:UserService
+消息:登录ID:system,用户编号:1000,名称:系统管理员 成功授权

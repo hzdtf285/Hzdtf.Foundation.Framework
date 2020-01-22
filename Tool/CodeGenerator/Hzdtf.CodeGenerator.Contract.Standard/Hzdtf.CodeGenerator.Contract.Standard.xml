@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.CodeGenerator.Contract.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.CodeGenerator.Contract.Standard.Function.IFunctionGeneratorService">
+            <summary>
+            功能生成服务接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Contract.Standard.Function.IFunctionGeneratorService.Generator(System.Collections.Generic.IList{Hzdtf.CodeGenerator.Model.Standard.TableInfo},System.String,System.String)">
+            <summary>
+            生成
+            </summary>
+            <param name="tables">表信息列表</param>
+            <param name="functionTypes">功能类型集合</param>
+            <param name="namespacePfx">命名空间前辍</param>
+            <param name="type">类型</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Contract.Standard.ICodeGeneratorService">
+            <summary>
+            代码生成接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Contract.Standard.ICodeGeneratorService.Generator(System.Collections.Generic.IList{Hzdtf.CodeGenerator.Model.Standard.TableInfo},Hzdtf.CodeGenerator.Model.Standard.FunctionType[],System.String,System.String)">
+            <summary>
+            生成
+            </summary>
+            <param name="tables">表信息列表</param>
+            <param name="functionTypes">功能类型集合</param>
+            <param name="namespacePfx">命名空间前辍</param>
+            <param name="type">类型</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Contract.Standard.IDbInfoService">
+            <summary>
+            数据库信息服务接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Contract.Standard.IDbInfoService.Query(System.String,System.String,System.String)">
+            <summary>
+            查询所有表信息列表
+            </summary>
+            <param name="dataBase">数据库</param>
+            <param name="connectionString">连接字符串</param>
+            <param name="dataSourceType">数据源类型</param>
+            <returns>所有表信息列表</returns>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Contract.Standard.TypeMapper.ITypeMapperService">
+            <summary>
+            类型映射服务接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Contract.Standard.TypeMapper.ITypeMapperService.GetPropertyType(Hzdtf.CodeGenerator.Model.Standard.ColumnInfo)">
+            <summary>
+            根据列信息获取属性类型
+            </summary>
+            <param name="column">列信息</param>
+            <returns>属性类型</returns>
+        </member>
+    </members>
+</doc>

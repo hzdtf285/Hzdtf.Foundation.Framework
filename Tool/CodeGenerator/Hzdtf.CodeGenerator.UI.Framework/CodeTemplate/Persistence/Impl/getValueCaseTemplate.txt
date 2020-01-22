@@ -1,0 +1,2 @@
+﻿                case "|Field|":
+                    return model.|Property|;

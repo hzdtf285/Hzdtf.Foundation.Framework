@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.BasicFunction.WorkFlow.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.BasicFunction.WorkFlow.Standard.FindHandlerConcreteUser">
+            <summary>
+            查找处理者具体用户
+            @黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.WorkFlow.Standard.FindHandlerConcreteUser.UserService">
+            <summary>
+            用户服务
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.WorkFlow.Standard.FindHandlerConcreteUser.FindById(System.Int32,System.Int32,System.String)">
+            <summary>
+            根据ID查找用户信息数组
+            </summary>
+            <param name="id">ID</param>
+            <param name="userId">用户ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.WorkFlow.Standard.FindHandlerRoleUser">
+            <summary>
+            查找处理者角色用户
+            @黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.WorkFlow.Standard.FindHandlerRoleUser.RoleService">
+            <summary>
+            角色服务
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.WorkFlow.Standard.FindHandlerRoleUser.UserRoleService">
+            <summary>
+            角色用户服务
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.WorkFlow.Standard.FindHandlerRoleUser.FindById(System.Int32,System.Int32,System.String)">
+            <summary>
+            根据ID查找用户信息数组
+            </summary>
+            <param name="id">ID</param>
+            <param name="userId">用户ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.WorkFlow.Standard.UserWorkflowUtil">
+            <summary>
+            用户工作流辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.WorkFlow.Standard.UserWorkflowUtil.InitValiUserHandleVali">
+            <summary>
+            初始化用户处理验证
+            注册用户删除前判断是否有处理的事件
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.WorkFlow.Standard.UserWorkflowUtil.UserService_RemoveByIdsing(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},System.Int32[],System.String)">
+            <summary>
+            根据用户ID移除前事件
+            </summary>
+            <param name="arg1">返回信息</param>
+            <param name="arg2">用户ID</param>
+            <param name="arg3">连接ID</param>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.WorkFlow.Standard.UserWorkflowUtil.UserService_RemoveByIding(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},System.Int32,System.String)">
+            <summary>
+            根据用户ID移除前事件
+            </summary>
+            <param name="arg1">返回信息</param>
+            <param name="arg2">用户ID</param>
+            <param name="arg3">连接ID</param>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.WorkFlow.Standard.WorkflowInitSequenceService">
+            <summary>
+            工作流初始序列服务
+            @ 黄振东
+            </summary>
+            <typeparam name="FormT">表单类型</typeparam>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.WorkFlow.Standard.WorkflowInitSequenceService.SequenceService">
+            <summary>
+            序列服务
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.WorkFlow.Standard.WorkflowInitSequenceService.BuilderApplyNo``1(Hzdtf.WorkFlow.Model.Standard.Expand.FlowInitInfo{``0},Hzdtf.Utility.Standard.Model.Return.ReturnInfo{Hzdtf.WorkFlow.Model.Standard.Expand.WorkflowBasicInfo})">
+            <summary>
+            生成申请单号
+            </summary>
+            <typeparam name="FormT">表单类型</typeparam>
+            <param name="flowInit">流程初始化</param>
+            <param name="returnInfo">返回信息</param>
+            <returns>申请单号</returns>
+        </member>
+    </members>
+</doc>

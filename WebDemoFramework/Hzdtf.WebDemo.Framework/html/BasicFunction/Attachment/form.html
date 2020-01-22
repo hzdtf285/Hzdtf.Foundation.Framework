@@ -1,0 +1,48 @@
+﻿<div class="modal-dialog" style="width:70%">
+    <div class="modal-content animated fadeIn">
+        <div class="modal-header">
+            <button triggerclose type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&nbsp;</span><span class="sr-only">关闭</span>
+            </button>
+            <h4 class="modal-title"><span id="preFormTitle"></span>附件</h4>
+        </div>
+        <form class="form-horizontal m-t" id="editForm" enctype="multipart/form-data" method="post">
+            <input type="text" id="ownerType" value="0" name="ownerType" style="display:none" />
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" required="">归属业务：</label>
+                    <div class="col-sm-10">
+                        <select name="ownerId">
+                            <option value="1">业务1</option>
+                            <option value="2">业务2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">标题：</label>
+                    <div class="col-sm-4">
+                        <input type="text" name="title" maxlength="50" placeholder="请输入标题" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">备注：</label>
+                    <div class="col-sm-10">
+                        <textarea name="memo" placeholder="请输入备注" maxlength="500" cols="3" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">文件<font color="red">*</font>：</label>
+                    <div class="col-sm-10">
+                        <input type="file" name="filePaths" placeholder="请选择文件" class="form-control" required="" mulpitle />
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" id="btnUpload" class="btn btn-primary">上传</button>
+                    <button type="reset" class="btn btn-primary">重置</button>
+                    <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

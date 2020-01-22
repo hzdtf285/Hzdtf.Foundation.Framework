@@ -1,0 +1,1016 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.WorkFlow.Model.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.Expand.ActionType">
+            <summary>
+            动作类型
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.Expand.ActionType.SAVE">
+            <summary>
+            保存
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.Expand.ActionType.SEND">
+            <summary>
+            送件
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.Expand.ActionType.RETURN">
+            <summary>
+            退件
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.Expand.ActionType.UNDO">
+            <summary>
+            撤消
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.Expand.ConcreteCensorshipInfo">
+            <summary>
+            具体关卡信息
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.ConcreteCensorshipInfo.FlowCensorship">
+            <summary>
+            流程关卡
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.ConcreteCensorshipInfo.WorkflowHandles">
+            <summary>
+            工作流处理者数组
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.Expand.ConcreteFormInfo">
+            <summary>
+            具体表单信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.Expand.ConcreteFormInfo.ApplyNo_Name">
+            <summary>
+            申请单号_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.ConcreteFormInfo.ApplyNo">
+            <summary>
+            申请单号
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.Expand.ConcreteFormInfo.FlowStatus_Name">
+            <summary>
+            流程状态_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.ConcreteFormInfo.FlowStatus">
+            <summary>
+            流程状态
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.Expand.ConcreteFormInfo.WorkflowId_Name">
+            <summary>
+            工作流ID_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.ConcreteFormInfo.WorkflowId">
+            <summary>
+            工作流ID
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FindHandlerUserOutInfo">
+            <summary>
+            查找处理者用户输出信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FindHandlerUserOutInfo.ConcreteCensorship">
+            <summary>
+            具体关卡
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FindHandlerUserOutInfo.Users">
+            <summary>
+            用户信息数组
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipInInfo">
+            <summary>
+            流程关卡输入信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipInInfo.CurrWorkflowHandle">
+            <summary>
+            当前工作流处理，如果为null，则为申请者刚申请
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipInInfo.WorkflowDefine">
+            <summary>
+            工作流定义，不能为空
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipInInfo.Workflow">
+            <summary>
+            工作流
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipInInfo.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipInInfo.FormId">
+            <summary>
+            表单ID
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipInInfo.ApplyNo">
+            <summary>
+            申请单号
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipInInfo.Idea">
+            <summary>
+            意见
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipInInfo.ActionType">
+            <summary>
+            动作类型，默认为送件
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipOutInfo">
+            <summary>
+            流程关卡输出信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipOutInfo.Workflow">
+            <summary>
+            工作流
+            如果是申请状态，则需要客户端插入，然后手工把工作流ID赋于下一个处理数组和当前更新处理
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipOutInfo.CurrConcreteCensorship">
+            <summary>
+            当前具体关卡处理
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipOutInfo.NextConcreteCensorshipHandles">
+            <summary>
+            下一个具体关卡处理数组
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipOutInfo.ActionType">
+            <summary>
+            动作类型，默认为送件
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipOutInfo.ClientInData">
+            <summary>
+            客户输入数据
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipOutInfo.IsCurrApplicantCensorship">
+            <summary>
+            判断当前关卡是否申请者关卡
+            </summary>
+            <returns>当前关卡是否申请者关卡</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipOutInfo.IsNextEndCensorship">
+            <summary>
+            判断下一个关卡是否结束关卡
+            </summary>
+            <returns>下一个关卡是否结束关卡</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipOutInfo.IsNextApplicantCensorship">
+            <summary>
+            判断下一个关卡是否申请者关卡
+            </summary>
+            <returns>下一个关卡是否申请者关卡</returns>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.Expand.Filter.ApplyFlowFilterInfo">
+            <summary>
+            申请流程筛选信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.Filter.ApplyFlowFilterInfo.FlowStatus">
+            <summary>
+            流程状态
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.Expand.Filter.AuditFlowFilterInfo">
+            <summary>
+            审核流程筛选信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.Filter.AuditFlowFilterInfo.FlowStatus">
+            <summary>
+            流程状态
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.Expand.Filter.WaitHandleFilterInfo">
+            <summary>
+            待处理筛选信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.Filter.WaitHandleFilterInfo.HandleType">
+            <summary>
+            处理类型
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.Filter.WaitHandleFilterInfo.IsReaded">
+            <summary>
+            是否已读
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.Expand.Filter.WorkflowFilterInfo">
+            <summary>
+            工作流筛选信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.Filter.WorkflowFilterInfo.HandlerId">
+            <summary>
+            处理人ID
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.Expand.FlowAuditInfo">
+            <summary>
+            流程审核信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.FlowAuditInfo.HandleId">
+            <summary>
+            处理ID
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.FlowAuditInfo.ActionType">
+            <summary>
+            动作类型，默认为送件
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.FlowAuditInfo.Idea">
+            <summary>
+            意见
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.FlowAuditInfo.FormDataJsonString">
+            <summary>
+            表单数据JSON字符串
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.FlowAuditInfo.WorkflowHandle">
+            <summary>
+            工作流处理
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Model.Standard.Expand.FlowAuditInfo.ToFlowIn">
+            <summary>
+            转换为流程输入
+            </summary>
+            <returns>流程输入</returns>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.Expand.FlowInInfo`1">
+            <summary>
+            流程输入信息
+            @ 黄振东
+            </summary>
+            <typeparam name="FlowT">流程类型</typeparam>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.FlowInInfo`1.Flow">
+            <summary>
+            流程
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.FlowInInfo`1.Form">
+            <summary>
+            表单
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.Expand.FlowInitInfo`1">
+            <summary>
+            流程初始信息
+            @ 黄振东
+            </summary>
+            <typeparam name="FormT">表单类型</typeparam>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.FlowInitInfo`1.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.FlowInitInfo`1.WorkflowCode">
+            <summary>
+            工作流编码
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.FlowInitInfo`1.ApplyNo">
+            <summary>
+            申请单号
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.FlowInitInfo`1.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.FlowInitInfo`1.Idea">
+            <summary>
+            意见
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.FlowInitInfo`1.FormData">
+            <summary>
+            表单数据
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.FlowInitInfo`1.ActionType">
+            <summary>
+            动作类型
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Model.Standard.Expand.FlowInitInfo`1.ToFlowIn">
+            <summary>
+            转换为流程输入
+            </summary>
+            <returns>流程输入</returns>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.Expand.FlowStatusConvert">
+            <summary>
+            流程状态转换
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Model.Standard.Expand.FlowStatusConvert.ToNew(System.Object)">
+            <summary>
+            转换新值
+            </summary>
+            <param name="value">值</param>
+            <returns>新值</returns>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.Expand.RemoveType">
+            <summary>
+            移除类型
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.Expand.RemoveType.REMOVE">
+            <summary>
+            移除
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.Expand.RemoveType.FORCE_REMOVE">
+            <summary>
+            强制移除
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.Expand.RemoveType.UNDO">
+            <summary>
+            撤消
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.Expand.WorkflowBasicInfo">
+            <summary>
+            工作流基本信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.WorkflowBasicInfo.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.WorkflowBasicInfo.ApplyNo">
+            <summary>
+            申请单号
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.FlowCensorshipInfo">
+            <summary>
+            流程关卡信息
+            @ 黄振东
+            </summary>
+            <summary>
+            流程关卡信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.FlowCensorshipInfo.StandardCensorships">
+            <summary>
+            标准关卡数组
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.FlowCensorshipInfo.SendFlowRoutes">
+            <summary>
+            送件路线数组
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.FlowCensorshipInfo.ReturnFlowRoutes">
+            <summary>
+            退件路线数组
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.FlowCensorshipInfo.ConcreteCensorships">
+            <summary>
+            具体关卡数组
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.FlowCensorshipInfo.FlowId_Name">
+            <summary>
+            流程Id_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.FlowCensorshipInfo.FlowId">
+            <summary>
+            流程Id
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.FlowCensorshipInfo.OwnerCensorshipId_Name">
+            <summary>
+            归属关卡ID_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.FlowCensorshipInfo.OwnerCensorshipId">
+            <summary>
+            归属关卡ID
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.FlowCensorshipInfo.OwnerCensorshipType_Name">
+            <summary>
+            归属关卡类型_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.FlowCensorshipInfo.OwnerCensorshipType">
+            <summary>
+            归属关卡类型
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.FlowInfo">
+            <summary>
+            流程信息
+            @ 黄振东
+            </summary>
+            <summary>
+            流程信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.FlowInfo.FlowCensorships">
+            <summary>
+            流程关卡数组
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.FlowInfo.Name_Name">
+            <summary>
+            名称_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.FlowInfo.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.WorkflowDefineInfo">
+            <summary>
+            工作流定义信息
+            @ 黄振东
+            </summary>
+            <summary>
+            工作流定义信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowDefineInfo.Flow">
+            <summary>
+            流程信息
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowDefineInfo.Form">
+            <summary>
+            表单信息
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowDefineInfo.Code_Name">
+            <summary>
+            编码_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowDefineInfo.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowDefineInfo.Enabled_Name">
+            <summary>
+            启用_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowDefineInfo.Enabled">
+            <summary>
+            启用
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowDefineInfo.FlowId_Name">
+            <summary>
+            流程Id_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowDefineInfo.FlowId">
+            <summary>
+            流程Id
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowDefineInfo.FormId_Name">
+            <summary>
+            表单Id_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowDefineInfo.FormId">
+            <summary>
+            表单Id
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowDefineInfo.Name_Name">
+            <summary>
+            名称_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowDefineInfo.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo">
+            <summary>
+            工作流处理信息
+            @ 黄振东
+            </summary>
+            <summary>
+            工作流处理信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo.Workflow">
+            <summary>
+            工作流
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo.ConcreteConcrete_Name">
+            <summary>
+            具体关卡_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo.ConcreteConcrete">
+            <summary>
+            具体关卡
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo.ConcreteConcreteId_Name">
+            <summary>
+            具体关卡ID_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo.ConcreteConcreteId">
+            <summary>
+            具体关卡ID
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo.FlowCensorshipId_Name">
+            <summary>
+            流程关卡ID_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo.FlowCensorshipId">
+            <summary>
+            流程关卡ID
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo.HandleStatus_Name">
+            <summary>
+            处理状态_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo.HandleStatus">
+            <summary>
+            处理状态
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo.HandleTime_Name">
+            <summary>
+            处理时间_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo.HandleTime">
+            <summary>
+            处理时间
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo.HandleType_Name">
+            <summary>
+            处理类型_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo.HandleType">
+            <summary>
+            处理类型
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo.Handler_Name">
+            <summary>
+            处理人_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo.Handler">
+            <summary>
+            处理人
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo.HandlerId_Name">
+            <summary>
+            处理人ID_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo.HandlerId">
+            <summary>
+            处理人ID
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo.Idea_Name">
+            <summary>
+            意见_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo.Idea">
+            <summary>
+            意见
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo.IsReaded_Name">
+            <summary>
+            是否已读_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo.IsReaded">
+            <summary>
+            是否已读
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo.WorkflowId_Name">
+            <summary>
+            工作流Id_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo.WorkflowId">
+            <summary>
+            工作流Id
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo">
+            <summary>
+            工作流信息
+            @ 黄振东
+            </summary>
+            <summary>
+            工作流信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo.Handles">
+            <summary>
+            处理列表
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo.WorkflowDefine">
+            <summary>
+            工作流定义
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo.FormData">
+            <summary>
+            表单数据
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo.ApplyNo_Name">
+            <summary>
+            申请单号_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo.ApplyNo">
+            <summary>
+            申请单号
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo.CurrConcreteCensorshipIds_Name">
+            <summary>
+            当前流程关卡ID（多个以逗号分隔）_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo.CurrConcreteCensorshipIds">
+            <summary>
+            当前流程关卡ID（多个以逗号分隔）
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo.CurrConcreteCensorships_Name">
+            <summary>
+            当前流程关卡（多个以逗号分隔）_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo.CurrConcreteCensorships">
+            <summary>
+            当前流程关卡（多个以逗号分隔）
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo.CurrFlowCensorshipIds_Name">
+            <summary>
+            当前流程关卡ID（多个以逗号分隔）_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo.CurrFlowCensorshipIds">
+            <summary>
+            当前流程关卡ID（多个以逗号分隔）
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo.CurrHandlerIds_Name">
+            <summary>
+            当前处理人ID（多个以逗号分隔）_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo.CurrHandlerIds">
+            <summary>
+            当前处理人ID（多个以逗号分隔）
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo.CurrHandlers_Name">
+            <summary>
+            当前处理人（多个以逗号分隔）_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo.CurrHandlers">
+            <summary>
+            当前处理人（多个以逗号分隔）
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo.FlowStatus_Name">
+            <summary>
+            流程状态_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo.FlowStatus">
+            <summary>
+            流程状态
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo.Title_Name">
+            <summary>
+            标题_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo.WorkflowDefineId_Name">
+            <summary>
+            工作流定义Id_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo.WorkflowDefineId">
+            <summary>
+            工作流定义Id
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.CensorshipTypeEnum">
+            <summary>
+            关卡类型
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.CensorshipTypeEnum.STANDARD">
+            <summary>
+            标准
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.CensorshipTypeEnum.ROLE">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.CensorshipTypeEnum.USER">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.FlowStatusEnum">
+            <summary>
+            流程状态
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.FlowStatusEnum.DRAFT">
+            <summary>
+            草稿
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.FlowStatusEnum.AUDITING">
+            <summary>
+            审核中
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.FlowStatusEnum.AUDIT_PASS">
+            <summary>
+            审核通过
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.FlowStatusEnum.AUDIT_NOPASS">
+            <summary>
+            审核驳回
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.FlowStatusEnum.REVERSED">
+            <summary>
+            已撤消
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.HandleStatusEnum">
+            <summary>
+            处理状态
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.HandleStatusEnum.UN_HANDLE">
+            <summary>
+            未处理
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.HandleStatusEnum.SENDED">
+            <summary>
+            已送件
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.HandleStatusEnum.RETURNED">
+            <summary>
+            已退件
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.HandleStatusEnum.EFFICACYED">
+            <summary>
+            已失效
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.HandleTypeEnum">
+            <summary>
+            处理类型
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.HandleTypeEnum.NOTIFY">
+            <summary>
+            通知
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.HandleTypeEnum.AUDIT">
+            <summary>
+            审核
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.HandleTypeEnum.APPLY">
+            <summary>
+            申请
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.FormInfo">
+            <summary>
+            表单信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.FormInfo.FormUrl_Name">
+            <summary>
+            表单URL_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.FormInfo.FormUrl">
+            <summary>
+            表单URL
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.FormInfo.Name_Name">
+            <summary>
+            名称_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.FormInfo.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.ReturnFlowRouteInfo">
+            <summary>
+            退件流程路线信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.ReturnFlowRouteInfo.FlowCensorshipId_Name">
+            <summary>
+            流程关卡Id_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.ReturnFlowRouteInfo.FlowCensorshipId">
+            <summary>
+            流程关卡Id
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.ReturnFlowRouteInfo.ToFlowCensorshipId_Name">
+            <summary>
+            流转到流程关卡ID_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.ReturnFlowRouteInfo.ToFlowCensorshipId">
+            <summary>
+            流转到流程关卡ID
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.SendFlowRouteInfo">
+            <summary>
+            送件流程路线信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.SendFlowRouteInfo.FlowCensorshipId_Name">
+            <summary>
+            流程关卡Id_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.SendFlowRouteInfo.FlowCensorshipId">
+            <summary>
+            流程关卡Id
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.SendFlowRouteInfo.ToFlowCensorshipId_Name">
+            <summary>
+            流转到流程关卡ID_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.SendFlowRouteInfo.ToFlowCensorshipId">
+            <summary>
+            流转到流程关卡ID
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.StandardCensorshipInfo">
+            <summary>
+            标准关卡信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.StandardCensorshipInfo.Code_Name">
+            <summary>
+            编码_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.StandardCensorshipInfo.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.StandardCensorshipInfo.Name_Name">
+            <summary>
+            名称_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.StandardCensorshipInfo.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.StandardCensorshipDefine">
+            <summary>
+            标准关卡定义
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.StandardCensorshipDefine.APPLICANT">
+            <summary>
+            申请者
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.StandardCensorshipDefine.SUPERVISOR">
+            <summary>
+            上一级主管
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.StandardCensorshipDefine.END">
+            <summary>
+            结束
+            </summary>
+        </member>
+    </members>
+</doc>

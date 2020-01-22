@@ -1,0 +1,551 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.CodeGenerator.Impl.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.CodeGenerator.Impl.Standard.CodeGeneratorService">
+            <summary>
+            代码生成服务
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Impl.Standard.CodeGeneratorService.ModelGeneratorService">
+            <summary>
+            属性生成服务
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Impl.Standard.CodeGeneratorService.PersistenceGeneratorService">
+            <summary>
+            持久生成服务
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Impl.Standard.CodeGeneratorService.ServiceGeneratorService">
+            <summary>
+            服务生成服务
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Impl.Standard.CodeGeneratorService.FrameworkControllerGeneratorService">
+            <summary>
+            Framework控制生成服务
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Impl.Standard.CodeGeneratorService.CoreControllerGeneratorService">
+            <summary>
+            Core控制生成服务
+            </summary>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.CodeGeneratorService.Generator(System.Collections.Generic.IList{Hzdtf.CodeGenerator.Model.Standard.TableInfo},Hzdtf.CodeGenerator.Model.Standard.FunctionType[],System.String,System.String)">
+            <summary>
+            生成
+            </summary>
+            <param name="tables">表信息列表</param>
+            <param name="functionTypes">功能类型集合</param>
+            <param name="namespacePfx">命名空间前辍</param>
+            <param name="type">类型</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.CodeGeneratorService.GetFunctionServices(Hzdtf.CodeGenerator.Model.Standard.FunctionType[])">
+            <summary>
+            获取功能生成服务列表
+            </summary>
+            <param name="functionTypes">功能类型集合</param>
+            <returns>功能生成服务列表</returns>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Impl.Standard.ConnectionFactory">
+            <summary>
+            连接工厂
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.ConnectionFactory.Create(System.String)">
+            <summary>
+            创建
+            </summary>
+            <param name="type">类型</param>
+            <returns>产品</returns>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Impl.Standard.DataSource.DataSourceConfigXml">
+            <summary>
+            数据源配置XML
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.DataSource.DataSourceConfigXml.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Impl.Standard.DataSource.DbInfoPersistenceFactory">
+            <summary>
+            数据库信息持久化工厂
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.DataSource.DbInfoPersistenceFactory.Create(System.String)">
+            <summary>
+            创建
+            </summary>
+            <param name="type">类型</param>
+            <returns>产品</returns>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Impl.Standard.DataSource.DbInfoService">
+            <summary>
+            数据库信息服务
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Impl.Standard.DataSource.DbInfoService.DbInfoPersistenceFactory">
+            <summary>
+            数据库信息持久化工厂
+            </summary>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.DataSource.DbInfoService.Query(System.String,System.String,System.String)">
+            <summary>
+            查询所有表信息列表
+            </summary>
+            <param name="dataBase">数据库</param>
+            <param name="connectionString">连接字符串</param>
+            <param name="dataSourceType">数据源类型</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService">
+            <summary>
+            Core控制生成服务
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService.classTemplate">
+            <summary>
+            类模板
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService.ClassTemplate">
+            <summary>
+            类模板
+            </summary>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService.BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo,System.String,System.String,System.String[]@)">
+            <summary>
+            生成代码文本集合
+            </summary>
+            <param name="table">表名</param>
+            <param name="namespacePfx">命名空间前辍</param>
+            <param name="type">类型</param>
+            <param name="fileNames">文件名集合</param>
+            <returns>代码文本集合</returns>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService.SubFolders">
+            <summary>
+            子文件夹集合
+            </summary>
+            <returns>子文件夹集合</returns>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Impl.Standard.Function.EnumGenerator">
+            <summary>
+            枚举生成
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Impl.Standard.Function.EnumGenerator.FOLDER_ROOT">
+            <summary>
+            文件夹根路径
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Impl.Standard.Function.EnumGenerator.classTemplate">
+            <summary>
+            类模板
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Impl.Standard.Function.EnumGenerator.ClassTemplate">
+            <summary>
+            类模板
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Impl.Standard.Function.EnumGenerator.itemTemplate">
+            <summary>
+            子项模板
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Impl.Standard.Function.EnumGenerator.ItemTemplate">
+            <summary>
+            子项模板
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Impl.Standard.Function.EnumGenerator.generatorNames">
+            <summary>
+            已经生成的名称集合
+            </summary>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.EnumGenerator.BuilderCodeText(Hzdtf.CodeGenerator.Model.Standard.EnumInfo,System.String)">
+            <summary>
+            生成代码文本
+            </summary>
+            <param name="enumInfo">枚举信息</param>
+            <param name="namespacePfx">命名空间前辍</param>
+            <returns>枚举名</returns>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Impl.Standard.Function.FrameworkControllerGeneratorService">
+            <summary>
+            Framework控制生成服务
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Impl.Standard.Function.FrameworkControllerGeneratorService.classTemplate">
+            <summary>
+            类模板
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Impl.Standard.Function.FrameworkControllerGeneratorService.ClassTemplate">
+            <summary>
+            类模板
+            </summary>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.FrameworkControllerGeneratorService.BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo,System.String,System.String,System.String[]@)">
+            <summary>
+            生成代码文本集合
+            </summary>
+            <param name="table">表名</param>
+            <param name="namespacePfx">命名空间前辍</param>
+            <param name="type">类型</param>
+            <param name="fileNames">文件名集合</param>
+            <returns>代码文本集合</returns>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.FrameworkControllerGeneratorService.SubFolders">
+            <summary>
+            子文件夹集合
+            </summary>
+            <returns>子文件夹集合</returns>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Impl.Standard.Function.FunctionGeneratorBase">
+            <summary>
+            功能生成基类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.FunctionGeneratorBase.Generator(System.Collections.Generic.IList{Hzdtf.CodeGenerator.Model.Standard.TableInfo},System.String,System.String)">
+            <summary>
+            生成
+            </summary>
+            <param name="tables">表信息列表</param>
+            <param name="functionTypes">功能类型集合</param>
+            <param name="namespacePfx">命名空间前辍</param>
+            <param name="type">类型</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.FunctionGeneratorBase.BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo,System.String,System.String,System.String[]@)">
+            <summary>
+            生成代码文本集合
+            </summary>
+            <param name="table">表名</param>
+            <param name="namespacePfx">命名空间前辍</param>
+            <param name="type">类型</param>
+            <param name="fileNames">文件名集合</param>
+            <returns>代码文本集合</returns>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.FunctionGeneratorBase.SubFolders">
+            <summary>
+            子文件夹集合
+            </summary>
+            <returns>子文件夹集合</returns>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService">
+            <summary>
+            模型生成服务
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService.SimpleFactory">
+            <summary>
+            类型映射服务工厂
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService.classTemplate">
+            <summary>
+            类模板
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService.ClassTemplate">
+            <summary>
+            类模板
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService.propertyTemplate">
+            <summary>
+            属性模板
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService.PropertyTemplate">
+            <summary>
+            属性模板
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService.IGNORE_PROP_NAMES">
+            <summary>
+            忽略的属性名称集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService.USER_IGNORE_PROP_NAMES">
+            <summary>
+            用户忽略的属性名称集合
+            </summary>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService.BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo,System.String,System.String,System.String[]@)">
+            <summary>
+            生成代码文本集合
+            </summary>
+            <param name="table">表名</param>
+            <param name="namespacePfx">命名空间前辍</param>
+            <param name="type">类型</param>
+            <param name="fileNames">文件名集合</param>
+            <returns>代码文本集合</returns>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService.GetAttrCode(System.String)">
+            <summary>
+            获取特性代码
+            </summary>
+            <param name="attrName">特性名称</param>
+            <returns>特性代码</returns>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService.SubFolders">
+            <summary>
+            子文件夹集合
+            </summary>
+            <returns>子文件夹集合</returns>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService">
+            <summary>
+            持久生成服务
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService.interfaceTemplate">
+            <summary>
+            接口模板
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService.InterfaceTemplate">
+            <summary>
+            接口模板
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService.mySqlClassTemplate">
+            <summary>
+            MySql类模板
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService.MySqlClassTemplate">
+            <summary>
+            MySql类模板
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService.sqlSqlClassTemplate">
+            <summary>
+            SqlServer类模板
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService.SqlServerClassTemplate">
+            <summary>
+            SqlServer类模板
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService.getValueCaseTemplate">
+            <summary>
+            获取值分支模板
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService.GetValueCaseTemplate">
+            <summary>
+            获取值分支模板
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService.IGNORE_INSERT_PROPS">
+            <summary>
+            忽略的插入属性集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService.IGNORE_UPDATE_PROPS">
+            <summary>
+            忽略的修改属性集合
+            </summary>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService.BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo,System.String,System.String,System.String[]@)">
+            <summary>
+            生成代码文本集合
+            </summary>
+            <param name="table">表名</param>
+            <param name="namespacePfx">命名空间前辍</param>
+            <param name="type">类型</param>
+            <param name="fileNames">文件名集合</param>
+            <returns>代码文本集合</returns>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService.BuilderInterfaceCode(Hzdtf.CodeGenerator.Model.Standard.TableInfo,System.String,System.String,System.String@)">
+            <summary>
+            生成接口代码
+            </summary>
+            <param name="table">表名</param>
+            <param name="namespacePfx">命名空间前辍</param>
+            <param name="type">类型</param>
+            <param name="fileName">文件名</param>
+            <returns>接口代码</returns>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService.BuilderClassCode(Hzdtf.CodeGenerator.Model.Standard.TableInfo,System.String,System.String,System.String@)">
+            <summary>
+            生成类代码
+            </summary>
+            <param name="table">表名</param>
+            <param name="namespacePfx">命名空间前辍</param>
+            <param name="type">类型</param>
+            <param name="fileName">文件名</param>
+            <returns>类代码</returns>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService.SubFolders">
+            <summary>
+            子文件夹集合
+            </summary>
+            <returns>子文件夹集合</returns>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService.GetClassTemplate(System.String)">
+            <summary>
+            根据类型获取类模板
+            </summary>
+            <param name="type">类型</param>
+            <returns>类模板</returns>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService">
+            <summary>
+            服务生成服务
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService.interfaceTemplate">
+            <summary>
+            接口模板
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService.InterfaceTemplate">
+            <summary>
+            接口模板
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService.classTemplate">
+            <summary>
+            类模板
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService.ClassTemplate">
+            <summary>
+            类模板
+            </summary>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService.BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo,System.String,System.String,System.String[]@)">
+            <summary>
+            生成代码文本集合
+            </summary>
+            <param name="table">表名</param>
+            <param name="namespacePfx">命名空间前辍</param>
+            <param name="type">类型</param>
+            <param name="fileNames">文件名集合</param>
+            <returns>代码文本集合</returns>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService.BuilderInterfaceCode(Hzdtf.CodeGenerator.Model.Standard.TableInfo,System.String,System.String,System.String@)">
+            <summary>
+            生成接口代码
+            </summary>
+            <param name="table">表名</param>
+            <param name="namespacePfx">命名空间前辍</param>
+            <param name="type">类型</param>
+            <param name="fileName">文件名</param>
+            <returns>接口代码</returns>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService.BuilderClassCode(Hzdtf.CodeGenerator.Model.Standard.TableInfo,System.String,System.String,System.String@)">
+            <summary>
+            生成类代码
+            </summary>
+            <param name="table">表名</param>
+            <param name="namespacePfx">命名空间前辍</param>
+            <param name="type">类型</param>
+            <param name="fileName">文件名</param>
+            <returns>类代码</returns>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService.SubFolders">
+            <summary>
+            子文件夹集合
+            </summary>
+            <returns>子文件夹集合</returns>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Impl.Standard.TypeMapper.MySqlMapperService">
+            <summary>
+            MySql映射服务
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.TypeMapper.MySqlMapperService.GetPropertyTypeByDataType(Hzdtf.CodeGenerator.Model.Standard.ColumnInfo,System.Boolean@)">
+            <summary>
+            根据数据类型获取属性类型
+            </summary>
+            <param name="column">列信息</param>
+            <param name="isValueType">是否值类型</param>
+            <returns>属性类型</returns>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Impl.Standard.TypeMapper.SqlServerMapperService">
+            <summary>
+            Sql Server映射服务
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.TypeMapper.SqlServerMapperService.GetPropertyTypeByDataType(Hzdtf.CodeGenerator.Model.Standard.ColumnInfo,System.Boolean@)">
+            <summary>
+            根据数据类型获取属性类型
+            </summary>
+            <param name="column">列信息</param>
+            <param name="isValueType">是否值类型</param>
+            <returns>属性类型</returns>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Impl.Standard.TypeMapper.TypeMapperBase">
+            <summary>
+            类型映射基类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.TypeMapper.TypeMapperBase.GetPropertyType(Hzdtf.CodeGenerator.Model.Standard.ColumnInfo)">
+            <summary>
+            根据列信息获取属性类型
+            </summary>
+            <param name="column">列信息</param>
+            <returns>属性类型</returns>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.TypeMapper.TypeMapperBase.GetPropertyTypeByDataType(Hzdtf.CodeGenerator.Model.Standard.ColumnInfo,System.Boolean@)">
+            <summary>
+            根据数据类型获取属性类型
+            </summary>
+            <param name="column">列信息</param>
+            <param name="isValueType">是否值类型</param>
+            <returns>属性类型</returns>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Impl.Standard.TypeMapper.TypeMapperFactory">
+            <summary>
+            类型映射工厂
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.TypeMapper.TypeMapperFactory.Create(System.String)">
+            <summary>
+            创建
+            </summary>
+            <param name="type">类型</param>
+            <returns>产品</returns>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Impl.Standard.Util">
+            <summary>
+            辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Impl.Standard.Util.FOLDER_ROOT">
+            <summary>
+            文件夹根路径
+            </summary>
+        </member>
+    </members>
+</doc>

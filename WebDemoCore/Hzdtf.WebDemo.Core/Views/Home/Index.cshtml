@@ -1,0 +1,313 @@
+﻿@using Hzdtf.BasicFunction.Model.Standard.Expand.User
+@using Hzdtf.Utility.Standard.Model.Return
+@using Hzdtf.Utility.Standard.Utils
+@using System.Text
+
+@model ReturnInfo<UserMenuInfo>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>基础框架系统</title>
+
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html"/><![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+    <link href="/css/style.min.css?v=4.1.0" rel="stylesheet">
+    <link href="/css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <link href="/css/plugins/toastr/toastr.min.css" rel="stylesheet" />
+
+    <link href="/css/plugins/iCheck/custom.css" rel="stylesheet">
+
+</head>
+@{ 
+    string headUrl = Model.Data.Sex ? "man_header.png" : "woman_header.png";
+}
+<body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
+    <div id="wrapper">
+        <!--左侧导航开始-->
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="nav-close">
+                <i class="fa fa-times-circle"></i>
+            </div>
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <span><img alt="image" class="img-circle" width="64" height="64" src="~/img/@headUrl" /></span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear">
+                                    <span class="block m-t-xs"><strong class="font-bold">@Model.Data.LoginId</strong></span>
+                                    <span class="text-muted text-xs block">@Model.Data.Name<b class="caret"></b></span>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li>
+                                    <a class="J_menuItem" id="myData" data-toggle="modal" data-target="#editDialog">我的资料</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a class="J_menuItem" id="modifyPassword" data-toggle="modal" data-target="#editPasswordDialog">修改密码</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            基础框架系统
+                        </div>
+                    </li>
+
+                    @{
+                        if (Model.Failure())
+                        {
+                            <li>
+                                <a class="J_menuItem">
+                                    <span class="nav-label">@Model.Msg</span>
+                                </a>
+                            </li>
+                        }
+                        else if (Model.Data.Menus.IsNullOrCount0())
+                        {
+                            <li>
+                                <a class="J_menuItem">
+                                    <span class="nav-label">您没有权限使用此系统</span>
+                                </a>
+                            </li>
+                        }
+                        else
+                        {
+                            foreach (var item1 in Model.Data.Menus)
+                            {
+                                <li>
+                                    <a class="J_menuItem" href="@item1.Link">
+                                        <i class="@item1.Icon"></i>
+                                        <span class="nav-label">
+                                            @item1.Name
+                                            @if (!item1.Children.IsNullOrCount0())
+                                            {
+                                                <span class="fa arrow"></span>
+                                            }
+                                        </span>
+                                    </a>
+                                    @if (item1.Children.IsNullOrCount0())
+                                    {
+                                        continue;
+                                    }
+
+                                    @foreach (var item2 in item1.Children)
+                                    {
+                                        <ul class="nav nav-second-level">
+                                            <li>
+                                                <a class="J_menuItem" href="@item2.Link">
+                                                    @item2.Name
+                                                    @if (!item2.Children.IsNullOrCount0())
+                                                    {
+                                                        <span class="fa arrow"></span>
+                                                    }
+                                                </a>
+                                                @if (!item2.Children.IsNullOrCount0())
+                                                {
+                                                    <ul class="nav nav-third-level">
+                                                        @foreach (var item3 in item2.Children)
+                                                        {
+                                                            <li>
+                                                                <a class="J_menuItem" href="@item3.Link">@item3.Name</a>
+                                                            </li>
+                                                        }
+                                                    </ul>
+                                                }
+                                            </li>
+                                        </ul>
+                                    }
+                                </li>
+                            }
+                        }
+                    }
+            </div>
+        </nav>
+        <!--左侧导航结束-->
+        <!--右侧部分开始-->
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <form role="search" class="navbar-form-custom" method="post" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="基础框架系统" style="text-align:right;" class="form-control" readonly>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+            <div class="row content-tabs">
+                <button class="roll-nav roll-left J_tabLeft">
+                    <i class="fa fa-backward"></i>
+                </button>
+                <nav class="page-tabs J_menuTabs">
+                    <div class="page-tabs-content">
+                    </div>
+                </nav>
+                <button class="roll-nav roll-right J_tabRight">
+                    <i class="fa fa-forward"></i>
+                </button>
+                <div class="btn-group roll-nav roll-right">
+                    <button class="dropdown J_tabClose" data-toggle="dropdown">
+                        关闭操作<span class="caret"></span>
+
+                    </button>
+                    <ul role="menu" class="dropdown-menu dropdown-menu-right">
+                        <li class="J_tabShowActive">
+                            <a>定位当前选项卡</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="J_tabCloseAll">
+                            <a>关闭全部选项卡</a>
+                        </li>
+                        <li class="J_tabCloseOther">
+                            <a>关闭其他选项卡</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" logout class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
+            </div>
+            <div class="row J_mainContent" id="content-main">
+                <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="" frameborder="0" seamless></iframe>
+            </div>
+        </div>
+        <!--右侧部分结束-->
+    </div>
+
+    <button type="button" style="display:none" id="btnOpenEditDialog" data-toggle="modal" data-target="#editDialog"></button>
+    <div class="modal inmodal" id="editDialog" tabindex="-1" User="dialog" aria-hidden="true"></div>
+
+    <button type="button" style="display:none" id="btnOpenPasswordDialog" data-toggle="modal" data-target="#editPasswordDialog"></button>
+    <div class="modal inmodal" id="editPasswordDialog" tabindex="-1" User="dialog" aria-hidden="true"></div>
+
+    <input type="hidden" id="hidOwnRoles" value="@JsonUtil.SerializeIgnoreNull(Model.Data.OwnRoles)" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/plugins/toastr/toastr.min.js"></script>
+    <script type="text/javascript" src="/js/plugins/sweetalert/sweetalert.min.js"></script>
+    <script type="text/javascript" src="/js/plugins/validate/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/js/plugins/validate/messages_zh.min.js"></script>
+    <script type="text/javascript" src="/js/plugins/iCheck/icheck.min.js"></script>
+    <script src="/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/js/plugins/layer/layer.min.js"></script>
+    <script src="/js/hplus.min.js?v=4.1.0"></script>
+    <script type="text/javascript" src="/js/contabs.min.js"></script>
+    <script src="/js/plugins/pace/pace.min.js"></script>
+    <script type="text/javascript" src="/js/common/date.js"></script>
+    <script type="text/javascript" src="/js/common/common.js"></script>
+    <script type="text/javascript" src="/js/common/authorization.js"></script>
+    <script type="text/javascript" src="/js/common/hplus_dialog.js"></script>
+    <script type="text/javascript" src="/js/common/form.js?v=2.78"></script>
+
+    <script type="text/javascript" src="/js/login.js"></script>
+</body>
+
+</html>
+<script type="text/javascript">
+    $(function () {
+        $.validator.setDefaults({
+            submitHandler: function () {
+                modifyPasswordFormSubmit();
+                return false;
+            }
+        });
+
+        $("#myData").click(function () {
+            $("#btnOpenEditDialog").trigger("click");
+        });
+
+        $("#modifyPassword").click(function () {
+            $("#modifyPasswordForm")[0].reset();
+            $("#btnOpenPasswordDialog").trigger("click");
+        });
+
+        $("#editDialog").load("/html/BasicFunction/User/form.html", null, function () {
+            $("#spanSave").hide();
+            $("#divPassword").hide();
+
+            $("#preFormTitle").text("当前");
+
+            var myData = {
+                id: @Model.Data.Id,
+                name: "@Model.Data.Name",
+                loginId: "@Model.Data.LoginId",
+                code: "@Model.Data.Code",
+                sex: "@Model.Data.Sex".toLowerCase(),
+                enabled: "@Model.Data.Enabled".toLowerCase(),
+                memo: "@Model.Data.Memo"
+            };
+
+            var rowRoleJson = $.trim($("#hidOwnRoles").val());
+            if (rowRoleJson && rowRoleJson.length > 0) {
+                myData.ownRoles = $.parseJSON(rowRoleJson);
+
+                var roleOptionHtml = getRoleOptionHtml(myData.ownRoles);
+                if (roleOptionHtml != "") {
+                    $("select[name='ownRoles']").append(roleOptionHtml);
+                }
+            }
+
+            var form = new Form("editForm");
+            form.fill(myData, null, true);
+
+            initControlStyle();
+        });
+
+        $("#editPasswordDialog").load("/html/BasicFunction/User/modifyPassword.html", null, function () {
+            $("#modifyPasswordForm").validate();
+        });
+
+        /**
+         * 修改密码表单提交
+         * */
+        function modifyPasswordFormSubmit() {
+            var form = new Form("modifyPasswordForm");
+            var obj = form.getJsonObj();
+            obj.loginId = "@Model.Data.LoginId";
+            var url = "/api/User/ModifyCurrUserPassword";
+
+            ajaxJsonAsync(url, MODIFY_REQUEST_TYPE, obj, function (returnInfo, data) {
+                $("button[triggerClose]").trigger('click');
+                alert({
+                    text: returnInfo.msg,
+                    type: "success"
+                });
+            });
+
+            return false;
+        }      
+    });
+
+    /**
+    * 获取角色选项的HTML
+    * */
+    function getRoleOptionHtml(roles) {
+        var roleOptionHtml = "";
+
+        if (roles && roles.length > 0) {
+            for (var i = 0; i < roles.length; i++) {
+                var role = roles[i];
+                roleOptionHtml += "<option value='" + role.id + "'>" + role.name + "</option>";
+            }
+        }
+
+        return roleOptionHtml;
+    }
+</script>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.WebDemo.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.WebDemo.Core.AppStart.DependencyInjection">
+            <summary>
+            依赖注入
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WebDemo.Core.AppStart.DependencyInjection.RegisterComponents(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            注册组件
+            </summary>
+            <param name="services">服务</param>
+            <returns>服务提供者</returns>
+        </member>
+        <member name="T:Hzdtf.WebDemo.Core.AppStart.OtherConfig">
+            <summary>
+            其他配置
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WebDemo.Core.AppStart.OtherConfig.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WebDemo.Core.AppStart.UserConfig">
+            <summary>
+            用户配置
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WebDemo.Core.AppStart.UserConfig.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+    </members>
+</doc>

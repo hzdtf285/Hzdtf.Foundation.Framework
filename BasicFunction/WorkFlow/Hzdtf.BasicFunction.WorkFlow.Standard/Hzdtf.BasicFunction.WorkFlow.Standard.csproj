@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>黄振东</Authors>
+    <Company>Hzdtf</Company>
+    <Description>基础功能工作流Standard库</Description>
+    <Version>2.0.0</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>D:\Hzdtf.FoundationFramework-master\BasicFunction\WorkFlow\Hzdtf.BasicFunction.WorkFlow.Standard\Hzdtf.BasicFunction.WorkFlow.Standard.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\Hzdtf.BasicFunction.WorkFlow.Standard.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\IOC\Hzdtf.Autofac.Extend.Standard\Hzdtf.Autofac.Extend.Standard.csproj" />
+    <ProjectReference Include="..\..\..\WorkFlow\Service\Hzdtf.WorkFlow.Service.Contract.Standard\Hzdtf.WorkFlow.Service.Contract.Standard.csproj" />
+    <ProjectReference Include="..\..\..\WorkFlow\Service\Hzdtf.WorkFlow.Service.Impl.Standard\Hzdtf.WorkFlow.Service.Impl.Standard.csproj" />
+    <ProjectReference Include="..\..\Service\Hzdtf.BasicFunction.Service.Contract.Standard\Hzdtf.BasicFunction.Service.Contract.Standard.csproj" />
+  </ItemGroup>
+
+</Project>

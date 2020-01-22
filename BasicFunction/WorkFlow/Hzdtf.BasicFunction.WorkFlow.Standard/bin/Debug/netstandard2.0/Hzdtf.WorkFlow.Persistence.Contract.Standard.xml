@@ -1,0 +1,273 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.WorkFlow.Persistence.Contract.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.WorkFlow.Persistence.Contract.Standard.IFlowCensorshipPersistence">
+            <summary>
+            流程关卡持久化接口
+            @ 黄振东
+            </summary>
+            <summary>
+            流程关卡持久化接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Persistence.Contract.Standard.IFlowCensorshipPersistence.SelectByFlowId(System.Int32,System.String)">
+            <summary>
+            根据流程ID查询流程关卡列表
+            </summary>
+            <param name="flowId">流程ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>流程关卡列表</returns>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Persistence.Contract.Standard.IReturnFlowRoutePersistence">
+            <summary>
+            退件流程路线持久化接口
+            @ 黄振东
+            </summary>
+            <summary>
+            退件流程路线持久化接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Persistence.Contract.Standard.IReturnFlowRoutePersistence.SelectByFlowCensorshipId(System.Int32,System.String)">
+            <summary>
+            根据流程关卡ID查询退件流程路线列表
+            </summary>
+            <param name="flowCensorshipId">流程关卡ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>退件流程路线列表</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Persistence.Contract.Standard.IReturnFlowRoutePersistence.SelectByFlowCensorshipIds(System.Int32[],System.String)">
+            <summary>
+            根据流程关卡ID数组查询退件流程路线列表
+            </summary>
+            <param name="flowCensorshipIds">流程关卡ID数组</param>
+            <param name="connectionId">连接ID</param>
+            <returns>退件流程路线列表</returns>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Persistence.Contract.Standard.ISendFlowRoutePersistence">
+            <summary>
+            送件流程路线持久化接口
+            @ 黄振东
+            </summary>
+            <summary>
+            送件流程路线持久化接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Persistence.Contract.Standard.ISendFlowRoutePersistence.SelectByFlowCensorshipId(System.Int32,System.String)">
+            <summary>
+            根据流程关卡ID查询送件流程路线列表
+            </summary>
+            <param name="flowCensorshipId">流程关卡ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>送件流程路线列表</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Persistence.Contract.Standard.ISendFlowRoutePersistence.SelectByFlowCensorshipIds(System.Int32[],System.String)">
+            <summary>
+            根据流程关卡ID数组查询送件流程路线列表
+            </summary>
+            <param name="flowCensorshipIds">流程关卡ID数组</param>
+            <param name="connectionId">连接ID</param>
+            <returns>送件流程路线列表</returns>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Persistence.Contract.Standard.IWorkflowPersistence">
+            <summary>
+            工作流持久化接口
+            @ 黄振东
+            </summary>
+            <summary>
+            工作流持久化接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Persistence.Contract.Standard.IWorkflowPersistence.CountByApplyNo(System.String,System.String)">
+            <summary>
+            根据申请单号统计记录数
+            </summary>
+            <param name="applyNo">申请单号</param>
+            <param name="connectionId">连接ID</param>
+            <returns>记录数</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Persistence.Contract.Standard.IWorkflowPersistence.SelectWaitHandlePage(System.Int32,System.Int32,Hzdtf.WorkFlow.Model.Standard.Expand.Filter.WaitHandleFilterInfo,System.String)">
+            <summary>
+            查询待办的工作流列表并分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">每页记录数</param>
+            <param name="filter">筛选</param>
+            <param name="connectionId">连接ID</param>
+            <returns>分页信息</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Persistence.Contract.Standard.IWorkflowPersistence.SelectAuditedHandlePage(System.Int32,System.Int32,Hzdtf.WorkFlow.Model.Standard.Expand.Filter.AuditFlowFilterInfo,System.String)">
+            <summary>
+            查询已审核的工作流列表并分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">每页记录数</param>
+            <param name="filter">筛选</param>
+            <param name="connectionId">连接ID</param>
+            <returns>分页信息</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Persistence.Contract.Standard.IWorkflowPersistence.SelectApplyFlowPage(System.Int32,System.Int32,Hzdtf.WorkFlow.Model.Standard.Expand.Filter.ApplyFlowFilterInfo,System.String)">
+            <summary>
+            查询申请的工作流列表并分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">每页记录数</param>
+            <param name="filter">筛选</param>
+            <param name="connectionId">连接ID</param>
+            <returns>分页信息</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Persistence.Contract.Standard.IWorkflowPersistence.SelectContainHandles(System.Int32,System.String)">
+            <summary>
+            根据ID查询工作流信息且包含处理列表
+            </summary>
+            <param name="id">ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>工作流信息且包含处理列表</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Persistence.Contract.Standard.IWorkflowPersistence.UpdateFlowStatusAndCensorshipAndHandlerById(Hzdtf.WorkFlow.Model.Standard.WorkflowInfo,System.String)">
+            <summary>
+            根据ID更新流程状态和当前关卡、处理人信息
+            </summary>
+            <param name="workflow">工作流</param>
+            <param name="connectionId">连接ID</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Persistence.Contract.Standard.IWorkflowDefinePersistence">
+            <summary>
+            工作流定义持久化接口
+            @ 黄振东
+            </summary>
+            <summary>
+            工作流定义持久化接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Persistence.Contract.Standard.IWorkflowDefinePersistence.SelectByCode(System.String,System.String)">
+            <summary>
+            根据编码查询工作流定义信息
+            </summary>
+            <param name="code">编码</param>
+            <param name="connectionId">连接ID</param>
+            <returns>工作流定义信息</returns>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Persistence.Contract.Standard.IWorkflowHandlePersistence">
+            <summary>
+            工作流处理持久化接口
+            @ 黄振东
+            </summary>
+            <summary>
+            工作流处理持久化接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Persistence.Contract.Standard.IWorkflowHandlePersistence.UpdateIsReadedById(Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo,System.String)">
+            <summary>
+            根据ID更新是否已读
+            </summary>
+            <param name="workflowHandle">工作流处理</param>
+            <param name="connectionId">连接ID</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Persistence.Contract.Standard.IWorkflowHandlePersistence.UpdateHandleStatusById(Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo,System.String)">
+            <summary>
+            根据ID更新处理状态
+            </summary>
+            <param name="workflowHandle">工作流处理</param>
+            <param name="connectionId">连接ID</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Persistence.Contract.Standard.IWorkflowHandlePersistence.CountNotFlowCensorshipIdByWorkflowIdAndHandleStatus(System.Int32,Hzdtf.WorkFlow.Model.Standard.HandleStatusEnum,System.Int32,System.String)">
+            <summary>
+            根据工作流ID和处理状态统计个数但排除流程关卡ID
+            </summary>
+            <param name="workflowId">工作流ID</param>
+            <param name="handleStatus">处理状态</param>
+            <param name="notFlowCensorshipId">排除流程关卡ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>个数</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Persistence.Contract.Standard.IWorkflowHandlePersistence.UpdateEfficacyedNotIdByWorkflowIdAndFlowCensorshipId(Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo,System.String)">
+            <summary>
+            根据工作流ID和流程关卡ID更新处理状态为已失效但排除ID
+            </summary>
+            <param name="workflowHandle">工作流处理</param>
+            <param name="connectionId">连接ID</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Persistence.Contract.Standard.IWorkflowHandlePersistence.UpdateEfficacyedNotIdByWorkflowId(Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo,System.String)">
+            <summary>
+            根据工作流ID更新处理状态为已失效但排除ID
+            </summary>
+            <param name="workflowHandle">工作流处理</param>
+            <param name="connectionId">连接ID</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Persistence.Contract.Standard.IWorkflowHandlePersistence.SelectSendedByWorkflowIdAndFlowCensorshipIds(System.Int32,System.Int32[],System.String)">
+            <summary>
+            根据工作流ID和流程关卡ID集合查询已经送件的工作流处理列表
+            </summary>
+            <param name="workflowId">工作流ID</param>
+            <param name="flowCensorshipIds">流程关卡ID集合</param>
+            <param name="connectionId">连接ID</param>
+            <returns>已经送件的工作流处理列表</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Persistence.Contract.Standard.IWorkflowHandlePersistence.CountAuditAndUnhandleByHandleId(System.Int32,System.String)">
+            <summary>
+            根据处理人ID统计审核中且未处理的个数
+            </summary>
+            <param name="handlerId">处理人ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>审核中且未处理的个数</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Persistence.Contract.Standard.IWorkflowHandlePersistence.SelectByWorkflowIdAndFlowCensorshipIdAndHandlerId(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            根据工作流ID、流程关卡ID和处理人ID查询工作流处理信息
+            </summary>
+            <param name="workflowId">工作流ID</param>
+            <param name="flowCensorshipId">流程关卡ID</param>
+            <param name="handleId">处理人ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>工作流处理信息</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Persistence.Contract.Standard.IWorkflowHandlePersistence.SelectByWorkflowId(System.Int32,System.String)">
+            <summary>
+            根据工作流ID查询工作流处理信息列表
+            </summary>
+            <param name="workflowId">工作流ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>工作流处理信息列表</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Persistence.Contract.Standard.IWorkflowHandlePersistence.DeleteByWorkflowId(System.Int32,System.String)">
+            <summary>
+            根据工作流ID删除工作流处理信息列表
+            </summary>
+            <param name="workflowId">工作流ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Persistence.Contract.Standard.IFlowPersistence">
+            <summary>
+            流程持久化接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Persistence.Contract.Standard.IFormPersistence">
+            <summary>
+            表单持久化接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.Persistence.Contract.Standard.IStandardCensorshipPersistence">
+            <summary>
+            标准关卡持久化接口
+            @ 黄振东
+            </summary>
+        </member>
+    </members>
+</doc>

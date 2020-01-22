@@ -1,0 +1,14 @@
+﻿[
+  {
+    "name": "RpcExchange",
+    "persistent": true,
+    "type": "direct",
+    "queues": [
+      {
+        "name": "RpcServiceQueue",
+        "routingKeys": [ "RpcServiceQueueKey" ],
+        "qos": 4
+      }
+    ]
+  }
+]

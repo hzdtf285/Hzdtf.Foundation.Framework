@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的审核流程</title>
+    <!-- jqgrid-->
+    <link href="/css/plugins/jqgrid/ui.jqgridffe4.css?0820" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+
+    <link href="/css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <link href="/css/plugins/iCheck/custom.css" rel="stylesheet">
+
+    <link href="/css/style.min.css?v=4.1.0" rel="stylesheet">
+    <link href="/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="/css/plugins/toastr/toastr.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="/js/common/icon_common.js"></script>
+</head>
+
+<body class="gray-bg">
+    <input id="currOper" type="hidden" />
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox ">
+                    <div class="ibox-content">
+                        <form id="searchForm" role="form" class="form-inline">
+                            <div class="form-group">
+                                <label>申请日期：</label>
+                                <input placeholder="开始日期" date="true" class="form-control layer-date" style="width:100px;" id="startCreateTime" name="startCreateTime" />
+                                <input placeholder="结束日期" date="true" class="form-control layer-date" style="width:100px;" id="endCreateTime" name="endCreateTime" />
+                            </div>
+                            <div class="form-group">
+                                <label>关键字：</label>
+                                <input type="text" placeholder="按申请单号/标题模糊查询" name="keyword" class="form-control" maxlength="20" />
+                            </div>
+                            <div class="form-group">
+                                <label>流程状态：</label>
+                                <select class="form-control m-b" name="flowStatus">
+                                    <option value="">--请选择--</option>
+                                    <option value="1">审核中</option>
+                                    <option value="2">审核通过</option>
+                                    <option value="3">审核驳回</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary" id="btnQuery" functionCode="Query" style="display:none;">查询</button>
+                                <button type="reset" class="btn btn-primary" name="reset" functionCode="Query" id="btnReset" style="display:none;">重置</button>
+                                <button type="button" style="display:none" id="btnFlowDetailDialog" data-toggle="modal" data-target="#flowDetail"></button>
+                            </div>
+                        </form>
+                        <div class="jqGrid_wrapper">
+                            <table id="table_list"></table>
+                            <div id="pager_list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal inmodal" id="flowDetail" tabindex="-1" User="dialog" aria-hidden="true"></div>
+
+    <script src="/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="/js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="/js/plugins/jqgrid/i18n/grid.locale-cnffe4.js?0820"></script>
+    <script src="/js/plugins/jqgrid/jquery.jqGrid.minffe4.js?0820"></script>
+    <script src="/js/plugins/layer/laydate/laydate.js"></script>
+    <script src="/js/plugins/toastr/toastr.min.js"></script>
+
+    <script type="text/javascript" src="/js/plugins/sweetalert/sweetalert.min.js"></script>
+    <script type="text/javascript" src="/js/plugins/validate/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/js/plugins/validate/messages_zh.min.js"></script>
+    <script type="text/javascript" src="/js/plugins/iCheck/icheck.min.js"></script>
+
+    <script type="text/javascript" src="/js/common/common.js?v=1.7"></script>
+    <script type="text/javascript" src="/html/FlowHandle/Flow/flowCommon.js"></script>
+    <script type="text/javascript" src="/js/common/date.js"></script>
+    <script type="text/javascript" src="/js/common/form.js?v=1.0"></script>
+    <script type="text/javascript" src="/js/common/hplus_dialog.js"></script>
+    <script type="text/javascript" src="/js/common/aJqGrid.js?v=1.1"></script>
+    <script type="text/javascript" src="/js/common/basicManage.js"></script>
+
+    <script type="text/javascript" src="/html/FlowHandle/MyAuditedFlow/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>黄振东</Authors>
+    <Company>Hzdtf</Company>
+    <Description>代码生成器实现库</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>D:\Hzdtf.FoundationFramework-master\Tool\CodeGenerator\Hzdtf.CodeGenerator.Impl.Standard\Hzdtf.CodeGenerator.Impl.Standard.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\Hzdtf.CodeGenerator.Impl.Standard.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hzdtf.CodeGenerator.Contract.Standard\Hzdtf.CodeGenerator.Contract.Standard.csproj" />
+    <ProjectReference Include="..\Hzdtf.CodeGenerator.MySql.Standard\Hzdtf.CodeGenerator.MySql.Standard.csproj" />
+    <ProjectReference Include="..\Hzdtf.CodeGenerator.Persistence.Contract.Standard\Hzdtf.CodeGenerator.Persistence.Contract.Standard.csproj" />
+    <ProjectReference Include="..\Hzdtf.CodeGenerator.SqlServer.Standard\Hzdtf.CodeGenerator.SqlServer.Standard.csproj" />
+  </ItemGroup>
+
+</Project>

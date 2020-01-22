@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>黄振东</Authors>
+    <Company>Hzdtf</Company>
+    <Description>基础功能MySql Standard库
+增加根据角色ID查询所有的用户列表</Description>
+    <Version>2.0.0</Version>
+    <PackageReleaseNotes></PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>D:\Hzdtf.FoundationFramework-master\BasicFunction\Persistence\Hzdtf.BasicFunction.MySql.Standard\Hzdtf.BasicFunction.MySql.Standard.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\Hzdtf.BasicFunction.MySql.Standard.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Persistence\Hzdtf.MySql.Standard\Hzdtf.MySql.Standard.csproj" />
+    <ProjectReference Include="..\..\..\Persistence\Hzdtf.Persistence.Contract.Standard\Hzdtf.Persistence.Contract.Standard.csproj" />
+    <ProjectReference Include="..\..\Model\Hzdtf.BasicFunction.Model.Standard\Hzdtf.BasicFunction.Model.Standard.csproj" />
+    <ProjectReference Include="..\Hzdtf.BasicFunction.Persistence.Contract.Std\Hzdtf.BasicFunction.Persistence.Contract.Std.csproj" />
+  </ItemGroup>
+
+</Project>

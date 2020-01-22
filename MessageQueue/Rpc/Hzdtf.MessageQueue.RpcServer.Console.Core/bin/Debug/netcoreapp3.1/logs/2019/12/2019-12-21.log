@@ -1,0 +1,113 @@
+时间:2019-12-21 12:35:00.649
+级别:error
+来源:FEG.MessageQueue.RpcServer.Console.Core.RpcServiceHelper
+消息:找不到[FEG.MessageQueue.Rpc.Business.Contract.Standard]的接口程序集的配置
+标签:RpcServiceHelper
+异常:Message:找不到[FEG.MessageQueue.Rpc.Business.Contract.Standard]的接口程序集的配置.Description:System.Exception: 找不到[FEG.MessageQueue.Rpc.Business.Contract.Standard]的接口程序集的配置
+   at FEG.Utility.Standard.InterfaceImpl.InterfaceMapImplCache.Reader(String key) in D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\Common\FEG.Utility.Standard\InterfaceImpl\InterfaceMapImplCacheCache.cs:line 106
+   at FEG.MessageQueue.RpcServer.Console.Core.RpcServiceHelper.<>c__DisplayClass0_0.<StartReceive>b__0(Byte[] inData) in D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\MessageQueue\Rpc\FEG.MessageQueue.RpcServer.Console.Core\RpcServiceHelper.cs:line 52
+时间:2019-12-21 12:37:39.458
+级别:error
+来源:FEG.MessageQueue.RpcServer.Console.Core.RpcServiceHelper
+消息:This operation is only valid on generic types.
+标签:RpcServiceHelper
+异常:Message:This operation is only valid on generic types..Description:System.InvalidOperationException: This operation is only valid on generic types.
+   at System.RuntimeType.GetGenericTypeDefinition()
+   at FEG.Utility.Standard.InterfaceImpl.InterfaceMapImplCache.<>c.<Reader>b__6_0(Type t) in D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\Common\FEG.Utility.Standard\InterfaceImpl\InterfaceMapImplCacheCache.cs:line 87
+   at System.Linq.Enumerable.WhereArrayIterator`1.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at FEG.Utility.Standard.InterfaceImpl.InterfaceMapImplCache.Reader(String key) in D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\Common\FEG.Utility.Standard\InterfaceImpl\InterfaceMapImplCacheCache.cs:line 87
+   at FEG.MessageQueue.RpcServer.Console.Core.RpcServiceHelper.<>c__DisplayClass0_0.<StartReceive>b__0(Byte[] inData) in D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\MessageQueue\Rpc\FEG.MessageQueue.RpcServer.Console.Core\RpcServiceHelper.cs:line 52
+时间:2019-12-21 13:12:04.050
+级别:error
+来源:FEG.MessageQueue.RpcServer.Console.Core.RpcServiceHelper
+消息:This operation is only valid on generic types.
+标签:RpcServiceHelper
+异常:Message:This operation is only valid on generic types..Description:System.InvalidOperationException: This operation is only valid on generic types.
+   at System.RuntimeType.GetGenericTypeDefinition()
+   at FEG.Utility.Standard.InterfaceImpl.InterfaceMapImplCache.<>c__DisplayClass6_0.<Reader>b__0(Type t) in D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\Common\FEG.Utility.Standard\InterfaceImpl\InterfaceMapImplCacheCache.cs:line 87
+   at System.Linq.Enumerable.WhereArrayIterator`1.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at FEG.Utility.Standard.InterfaceImpl.InterfaceMapImplCache.Reader(String key) in D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\Common\FEG.Utility.Standard\InterfaceImpl\InterfaceMapImplCacheCache.cs:line 87
+   at FEG.MessageQueue.RpcServer.Console.Core.RpcServiceHelper.<>c__DisplayClass0_0.<StartReceive>b__0(Byte[] inData) in D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\MessageQueue\Rpc\FEG.MessageQueue.RpcServer.Console.Core\RpcServiceHelper.cs:line 52
+时间:2019-12-21 13:23:44.650
+级别:error
+来源:FEG.MessageQueue.RpcServer.Console.Core.RpcServiceHelper
+消息:Object reference not set to an instance of an object.
+标签:RpcServiceHelper
+异常:Message:Object reference not set to an instance of an object..Description:System.NullReferenceException: Object reference not set to an instance of an object.
+   at FEG.Utility.Standard.Utils.ReflectUtil.CreateInstanceFromMethodFullPath(String methodFullPath, MethodInfo& method) in D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\Common\FEG.Utility.Standard\Utils\ReflectUtil.cs:line 461
+   at FEG.Utility.Standard.ProcessCall.MethodCallCache.Invoke(String fullPath, Object[] parames) in D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\Common\FEG.Utility.Standard\ProcessCall\MethodCallCache.cs:line 56
+   at FEG.MessageQueue.RpcServer.Console.Core.RpcServiceHelper.<>c__DisplayClass0_0.<StartReceive>b__0(Byte[] inData) in D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\MessageQueue\Rpc\FEG.MessageQueue.RpcServer.Console.Core\RpcServiceHelper.cs:line 53
+时间:2019-12-21 13:25:33.013
+级别:error
+来源:FEG.MessageQueue.RpcServer.Console.Core.RpcServiceHelper
+消息:Object of type 'Newtonsoft.Json.Linq.JObject' cannot be converted to type 'FEG.MessageQueue.Rpc.Business.Contract.Standard.StudentInfo'.
+标签:RpcServiceHelper
+异常:Message:Object of type 'Newtonsoft.Json.Linq.JObject' cannot be converted to type 'FEG.MessageQueue.Rpc.Business.Contract.Standard.StudentInfo'..Description:System.ArgumentException: Object of type 'Newtonsoft.Json.Linq.JObject' cannot be converted to type 'FEG.MessageQueue.Rpc.Business.Contract.Standard.StudentInfo'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at FEG.Utility.Standard.ProcessCall.MethodCallCache.Invoke(String fullPath, Object[] parames) in D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\Common\FEG.Utility.Standard\ProcessCall\MethodCallCache.cs:line 64
+   at FEG.MessageQueue.RpcServer.Console.Core.RpcServiceHelper.<>c__DisplayClass0_0.<StartReceive>b__0(Byte[] inData) in D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\MessageQueue\Rpc\FEG.MessageQueue.RpcServer.Console.Core\RpcServiceHelper.cs:line 53
+时间:2019-12-21 13:25:33.012
+级别:error
+来源:FEG.MessageQueue.RpcServer.Console.Core.RpcServiceHelper
+消息:Object of type 'Newtonsoft.Json.Linq.JObject' cannot be converted to type 'FEG.MessageQueue.Rpc.Business.Contract.Standard.StudentInfo'.
+标签:RpcServiceHelper
+异常:Message:Object of type 'Newtonsoft.Json.Linq.JObject' cannot be converted to type 'FEG.MessageQueue.Rpc.Business.Contract.Standard.StudentInfo'..Description:System.ArgumentException: Object of type 'Newtonsoft.Json.Linq.JObject' cannot be converted to type 'FEG.MessageQueue.Rpc.Business.Contract.Standard.StudentInfo'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at FEG.Utility.Standard.ProcessCall.MethodCallCache.Invoke(String fullPath, Object[] parames) in D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\Common\FEG.Utility.Standard\ProcessCall\MethodCallCache.cs:line 64
+   at FEG.MessageQueue.RpcServer.Console.Core.RpcServiceHelper.<>c__DisplayClass0_0.<StartReceive>b__0(Byte[] inData) in D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\MessageQueue\Rpc\FEG.MessageQueue.RpcServer.Console.Core\RpcServiceHelper.cs:line 53
+时间:2019-12-21 14:11:12.629
+级别:error
+来源:FEG.MessageQueue.RpcServer.Console.Core.RpcServiceHelper
+消息:Object of type 'Newtonsoft.Json.Linq.JObject' cannot be converted to type 'FEG.MessageQueue.Rpc.Business.Contract.Standard.StudentInfo'.
+标签:RpcServiceHelper
+异常:Message:Object of type 'Newtonsoft.Json.Linq.JObject' cannot be converted to type 'FEG.MessageQueue.Rpc.Business.Contract.Standard.StudentInfo'..Description:System.ArgumentException: Object of type 'Newtonsoft.Json.Linq.JObject' cannot be converted to type 'FEG.MessageQueue.Rpc.Business.Contract.Standard.StudentInfo'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at FEG.Utility.Standard.ProcessCall.MethodCallCache.Invoke(String fullPath, Object[] parames) in D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\Common\FEG.Utility.Standard\ProcessCall\MethodCallCache.cs:line 96
+   at FEG.MessageQueue.RpcServer.Console.Core.RpcServiceHelper.<>c__DisplayClass0_0.<StartReceive>b__0(Byte[] inData) in D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\MessageQueue\Rpc\FEG.MessageQueue.RpcServer.Console.Core\RpcServiceHelper.cs:line 55
+时间:2019-12-21 14:12:33.840
+级别:error
+来源:FEG.MessageQueue.RpcServer.Console.Core.RpcServiceHelper
+消息:Object of type 'Newtonsoft.Json.Linq.JObject' cannot be converted to type 'FEG.MessageQueue.Rpc.Business.Contract.Standard.StudentInfo'.
+标签:RpcServiceHelper
+异常:Message:Object of type 'Newtonsoft.Json.Linq.JObject' cannot be converted to type 'FEG.MessageQueue.Rpc.Business.Contract.Standard.StudentInfo'..Description:System.ArgumentException: Object of type 'Newtonsoft.Json.Linq.JObject' cannot be converted to type 'FEG.MessageQueue.Rpc.Business.Contract.Standard.StudentInfo'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at FEG.Utility.Standard.ProcessCall.MethodCallCache.Invoke(String fullPath, Object[] parames) in D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\Common\FEG.Utility.Standard\ProcessCall\MethodCallCache.cs:line 96
+   at FEG.MessageQueue.RpcServer.Console.Core.RpcServiceHelper.<>c__DisplayClass0_0.<StartReceive>b__0(Byte[] inData) in D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\MessageQueue\Rpc\FEG.MessageQueue.RpcServer.Console.Core\RpcServiceHelper.cs:line 55
+时间:2019-12-21 14:14:13.291
+级别:error
+来源:FEG.MessageQueue.RpcServer.Console.Core.RpcServiceHelper
+消息:Object of type 'Newtonsoft.Json.Linq.JObject' cannot be converted to type 'FEG.MessageQueue.Rpc.Business.Contract.Standard.StudentInfo'.
+标签:RpcServiceHelper
+异常:Message:Object of type 'Newtonsoft.Json.Linq.JObject' cannot be converted to type 'FEG.MessageQueue.Rpc.Business.Contract.Standard.StudentInfo'..Description:System.ArgumentException: Object of type 'Newtonsoft.Json.Linq.JObject' cannot be converted to type 'FEG.MessageQueue.Rpc.Business.Contract.Standard.StudentInfo'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at FEG.Utility.Standard.ProcessCall.MethodCallCache.Invoke(String fullPath, Object[] parames) in D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\Common\FEG.Utility.Standard\ProcessCall\MethodCallCache.cs:line 96
+   at FEG.MessageQueue.RpcServer.Console.Core.RpcServiceHelper.<>c__DisplayClass0_0.<StartReceive>b__0(Byte[] inData) in D:\svn\00_FEG_FoundationFramework\FEG.FoundationFramework\MessageQueue\Rpc\FEG.MessageQueue.RpcServer.Console.Core\RpcServiceHelper.cs:line 55

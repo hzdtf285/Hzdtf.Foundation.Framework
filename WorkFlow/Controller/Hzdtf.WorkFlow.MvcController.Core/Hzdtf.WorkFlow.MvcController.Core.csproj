@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Authors>黄振东</Authors>
+    <Description>工作流控制器Core库</Description>
+    <Company>Hzdtf</Company>
+    <Version>2.0.0</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>D:\Hzdtf.FoundationFramework-master\WorkFlow\Controller\Hzdtf.WorkFlow.MvcController.Core\Hzdtf.WorkFlow.MvcController.Core.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\Hzdtf.WorkFlow.MvcController.Core.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Controller\Hzdtf.BasicController.Core\Hzdtf.BasicController.Core.csproj" />
+    <ProjectReference Include="..\..\Service\Hzdtf.WorkFlow.Service.Contract.Standard\Hzdtf.WorkFlow.Service.Contract.Standard.csproj" />
+  </ItemGroup>
+
+</Project>

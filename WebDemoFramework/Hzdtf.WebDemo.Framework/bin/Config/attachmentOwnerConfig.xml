@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--AllowExpands：允许扩展名，多个以,分隔，如果不限制则设为*-->
+<!--MaxSize：最大文件大小，单位KB-->
+<OwnerTypes>
+  <OwnerType Id="0">
+    <AllowExpands>*</AllowExpands>
+    <MaxSize>10000</MaxSize>
+  </OwnerType>
+</OwnerTypes>

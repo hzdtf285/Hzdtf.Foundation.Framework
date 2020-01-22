@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.Platform.Impl.Framework</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.Platform.Impl.Framework.Config.App.AppConfiguration">
+            <summary>
+            应用配置
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Impl.Framework.Config.App.AppConfiguration.Item(System.String)">
+            <summary>
+            根据键获取值
+            </summary>
+            <param name="key">键</param>
+            <returns>值</returns>
+        </member>
+        <member name="M:Hzdtf.Platform.Impl.Framework.Config.App.AppConfiguration.GetDirectConnectionString(System.String)">
+            <summary>
+            根据名称获取直通连接字符串
+            </summary>
+            <param name="name">名称</param>
+            <returns>连接字符串</returns>
+        </member>
+    </members>
+</doc>

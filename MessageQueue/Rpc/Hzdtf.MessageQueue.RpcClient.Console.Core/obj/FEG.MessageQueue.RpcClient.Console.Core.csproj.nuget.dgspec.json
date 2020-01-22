@@ -1,0 +1,89 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Hzdtf.FoundationFramework-master\\MessageQueue\\Rpc\\Hzdtf.MessageQueue.RpcClient.Console.Core\\FEG.MessageQueue.RpcClient.Console.Core.csproj": {}
+  },
+  "projects": {
+    "D:\\Hzdtf.FoundationFramework-master\\MessageQueue\\Rpc\\Hzdtf.MessageQueue.RpcClient.Console.Core\\FEG.MessageQueue.RpcClient.Console.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Hzdtf.FoundationFramework-master\\MessageQueue\\Rpc\\Hzdtf.MessageQueue.RpcClient.Console.Core\\FEG.MessageQueue.RpcClient.Console.Core.csproj",
+        "projectName": "FEG.MessageQueue.RpcClient.Console.Core",
+        "projectPath": "D:\\Hzdtf.FoundationFramework-master\\MessageQueue\\Rpc\\Hzdtf.MessageQueue.RpcClient.Console.Core\\FEG.MessageQueue.RpcClient.Console.Core.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\Hzdtf.FoundationFramework-master\\MessageQueue\\Rpc\\Hzdtf.MessageQueue.RpcClient.Console.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://sdlc.apfeg.com:9487/repository/nuget-hosted/": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Hzdtf.FoundationFramework-master\\IOC\\FEG.Autofac.Extend.Standard\\FEG.Autofac.Extend.Standard.csproj": {
+                "projectPath": "D:\\Hzdtf.FoundationFramework-master\\IOC\\FEG.Autofac.Extend.Standard\\FEG.Autofac.Extend.Standard.csproj"
+              },
+              "D:\\Hzdtf.FoundationFramework-master\\Logger\\FEG.Logger.Text.Impl.Standard\\FEG.Logger.Text.Impl.Standard.csproj": {
+                "projectPath": "D:\\Hzdtf.FoundationFramework-master\\Logger\\FEG.Logger.Text.Impl.Standard\\FEG.Logger.Text.Impl.Standard.csproj"
+              },
+              "D:\\Hzdtf.FoundationFramework-master\\MessageQueue\\Rabbit\\FEG.Rabbit.Impl.Standard\\FEG.Rabbit.Impl.Standard.csproj": {
+                "projectPath": "D:\\Hzdtf.FoundationFramework-master\\MessageQueue\\Rabbit\\FEG.Rabbit.Impl.Standard\\FEG.Rabbit.Impl.Standard.csproj"
+              },
+              "D:\\Hzdtf.FoundationFramework-master\\MessageQueue\\Rpc\\FEG.MessageQueue.Rpc.Business.Contract.Standard\\FEG.MessageQueue.Rpc.Business.Contract.Standard.csproj": {
+                "projectPath": "D:\\Hzdtf.FoundationFramework-master\\MessageQueue\\Rpc\\FEG.MessageQueue.Rpc.Business.Contract.Standard\\FEG.MessageQueue.Rpc.Business.Contract.Standard.csproj"
+              },
+              "D:\\Hzdtf.FoundationFramework-master\\Platform\\FEG.Platform.Contract.Standard\\FEG.Platform.Contract.Standard.csproj": {
+                "projectPath": "D:\\Hzdtf.FoundationFramework-master\\Platform\\FEG.Platform.Contract.Standard\\FEG.Platform.Contract.Standard.csproj"
+              },
+              "D:\\Hzdtf.FoundationFramework-master\\Platform\\FEG.Platform.Impl.Core\\FEG.Platform.Impl.Core.csproj": {
+                "projectPath": "D:\\Hzdtf.FoundationFramework-master\\Platform\\FEG.Platform.Impl.Core\\FEG.Platform.Impl.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

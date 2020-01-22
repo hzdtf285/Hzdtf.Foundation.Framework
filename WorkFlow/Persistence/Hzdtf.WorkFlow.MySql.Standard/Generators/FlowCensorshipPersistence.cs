@@ -1,0 +1,130 @@
+﻿﻿using Hzdtf.WorkFlow.Model.Standard;
+using Hzdtf.MySql.Standard;
+using Hzdtf.Utility.Standard.Attr;
+using System;
+using Hzdtf.WorkFlow.Persistence.Contract.Standard;
+
+namespace Hzdtf.WorkFlow.MySql.Standard
+{
+    /// <summary>
+    /// 流程关卡持久化
+    /// @ 黄振东
+    /// </summary>
+    [Inject]
+    public partial class FlowCensorshipPersistence : MySqlDapperBase<FlowCensorshipInfo>, IFlowCensorshipPersistence
+    {
+        /// <summary>
+        /// 表名
+        /// </summary>
+        public override string Table => "flow_censorship";
+
+        /// <summary>
+        /// 插入字段名称集合
+        /// </summary>
+        private readonly static string[] INSERT_FIELD_NAMES = new string[]
+        {
+            "create_time",
+            "creater",
+            "creater_id",
+            "flow_id",
+            "modifier",
+            "modifier_id",
+            "modify_time",
+            "owner_censorship_id",
+            "owner_censorship_type",
+        };
+
+        /// <summary>
+        /// 更新字段名称集合
+        /// </summary>
+        private readonly static string[] UPDATE_FIELD_NAMES = new string[]
+        {
+            "flow_id",
+            "modifier",
+            "modifier_id",
+            "modify_time",
+            "owner_censorship_id",
+            "owner_censorship_type",
+        };
+
+        /// <summary>
+        /// 所有字段映射集合
+        /// </summary>
+        private readonly static string[] FIELD_MAP_PROPS = new string[]
+        {
+            "create_time CreateTime",
+            "creater Creater",
+            "creater_id CreaterId",
+            "flow_id FlowId",
+            "id Id",
+            "modifier Modifier",
+            "modifier_id ModifierId",
+            "modify_time ModifyTime",
+            "owner_censorship_id OwnerCensorshipId",
+            "owner_censorship_type OwnerCensorshipType",
+        };
+
+        /// <summary>
+        /// 根据字段名获取模型的值
+        /// </summary>
+        /// <param name="model">模型</param>
+        /// <param name="field">字段名</param>
+        /// <returns>值</returns>
+        protected override object GetValueByFieldName(FlowCensorshipInfo model, string field)
+        {
+            switch (field)
+            {
+﻿                case "create_time":
+                    return model.CreateTime;
+
+﻿                case "creater":
+                    return model.Creater;
+
+﻿                case "creater_id":
+                    return model.CreaterId;
+
+﻿                case "flow_id":
+                    return model.FlowId;
+
+﻿                case "id":
+                    return model.Id;
+
+﻿                case "modifier":
+                    return model.Modifier;
+
+﻿                case "modifier_id":
+                    return model.ModifierId;
+
+﻿                case "modify_time":
+                    return model.ModifyTime;
+
+﻿                case "owner_censorship_id":
+                    return model.OwnerCensorshipId;
+
+﻿                case "owner_censorship_type":
+                    return model.OwnerCensorshipType;
+
+                default:
+                    return null;
+            }
+        }
+
+        /// <summary>
+        /// 插入字段名集合
+        /// </summary>
+        /// <returns>插入字段名集合</returns>
+        protected override string[] InsertFieldNames() => INSERT_FIELD_NAMES;
+
+        /// <summary>
+        /// 更新字段名称集合
+        /// </summary>
+        /// <returns>更新字段名称集合</returns>
+        protected override string[] UpdateFieldNames() => UPDATE_FIELD_NAMES;
+
+		/// <summary>
+        /// 所有字段映射集合
+        /// </summary>
+        /// <returns>所有字段映射集合</returns>
+        public override string[] AllFieldMapProps() => FIELD_MAP_PROPS;
+    }
+}

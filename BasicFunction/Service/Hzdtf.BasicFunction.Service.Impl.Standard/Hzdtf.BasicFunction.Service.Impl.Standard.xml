@@ -1,0 +1,847 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.BasicFunction.Service.Impl.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentOwnerLocalMember">
+            <summary>
+            附件归属本地内存
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentOwnerLocalMember.dicCache">
+            <summary>
+            字典缓存
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentOwnerLocalMember.syncDicCache">
+            <summary>
+            同步字典缓存
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentOwnerLocalMember.ProtoAttachmentOwnerReader">
+            <summary>
+            原生附件归属读取
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentOwnerLocalMember.ReaderByOwnerType(System.Int16)">
+            <summary>
+            根据归属类型读取附件归属信息
+            </summary>
+            <param name="type">归属类型</param>
+            <returns>附件归属信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentOwnerLocalMember.GetCache">
+            <summary>
+            获取缓存
+            </summary>
+            <returns>缓存</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentOwnerLocalMember.GetSyncCache">
+            <summary>
+            获取同步的缓存对象，是为了线程安全
+            </summary>
+            <returns>同步的缓存对象</returns>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentOwnerJson">
+            <summary>
+            附件归属JSON
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentOwnerJson.jsonFileName">
+            <summary>
+            JSON文件名
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentOwnerJson.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentOwnerJson.#ctor(System.String)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="jsonFileName">json文件名</param>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentOwnerJson.ReaderByOwnerType(System.Int16)">
+            <summary>
+            根据归属类型读取附件归属信息
+            </summary>
+            <param name="type">归属类型</param>
+            <returns>附件归属信息</returns>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentOwnerXml">
+            <summary>
+            附件归属XML
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentOwnerXml.xmlFileName">
+            <summary>
+            XML文件名
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentOwnerXml.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentOwnerXml.#ctor(System.String)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="xmlFileName">xml文件名</param>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentOwnerXml.ReaderByOwnerType(System.Int16)">
+            <summary>
+            根据归属类型读取附件归属信息
+            </summary>
+            <param name="type">归属类型</param>
+            <returns>附件归属信息</returns>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentStore">
+            <summary>
+            附件存储
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentStore.fileRoot">
+            <summary>
+            文件根路径
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentStore.syncFileRoot">
+            <summary>
+            同步文件根路径
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentStore.syncCreateRoot">
+            <summary>
+            同步创建文件夹
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentStore.FileRoot">
+            <summary>
+            文件根路径
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentStore.Upload(Hzdtf.BasicFunction.Model.Standard.Expand.Attachment.AttachmentStreamInfo[])">
+            <summary>
+            上传
+            </summary>
+            <param name="attachmentStream">附件流</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment.AttachmentStore.Remove(System.String[])">
+            <summary>
+            移除
+            </summary>
+            <param name="fileAddress">文件地址</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Sequence.DateSequenceRule">
+            <summary>
+            日期序列规则
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Sequence.DateSequenceRule.BuilderNo(System.String,System.Byte,System.Int32)">
+            <summary>
+            生成序列号
+            </summary>
+            <param name="seqType">序列类型</param>
+            <param name="noLength">序列号长度</param>
+            <param name="increment">增量</param>
+            <returns>序列号</returns>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.AttachmentService">
+            <summary>
+            附件服务
+            @ 黄振东
+            </summary>
+            <summary>
+            附件服务
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Service.Impl.Standard.AttachmentService.AttachmentUploadStore">
+            <summary>
+            附件上传存储
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Service.Impl.Standard.AttachmentService.AttachmentOwnerReader">
+            <summary>
+            附件归属读取
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.AttachmentService.Upload(System.Collections.Generic.IList{Hzdtf.BasicFunction.Model.Standard.AttachmentInfo},System.Collections.Generic.IList{System.IO.Stream})">
+            <summary>
+            上传
+            </summary>
+            <param name="attachments">附件信息列表</param>
+            <param name="streams">文件流列表</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.AttachmentService.Upload(Hzdtf.BasicFunction.Model.Standard.AttachmentInfo,System.IO.Stream)">
+            <summary>
+            上传
+            </summary>
+            <param name="attachment">附件信息</param>
+            <param name="stream">文件流列表</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.AttachmentService.RemoveById(System.Int32,System.String)">
+            <summary>
+            根据ID移除模型
+            </summary>
+            <param name="id">ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.AttachmentService.RemoveByIds(System.Int32[],System.String)">
+            <summary>
+            根据ID数组移除模型
+            </summary>
+            <param name="ids">ID集合</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.AttachmentService.QueryByOwner(System.Int16,System.Int32,System.String,System.String)">
+            <summary>
+            根据归属查询附件列表
+            </summary>
+            <param name="ownerType">归属类型</param>
+            <param name="ownerId">归属ID</param>
+            <param name="blurTitle">模糊标题</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.AttachmentService.CountByOwner(System.Int16,System.Int32,System.String,System.String)">
+            <summary>
+            根据归属统计附件个数
+            </summary>
+            <param name="ownerType">归属类型</param>
+            <param name="ownerId">归属ID</param>
+            <param name="blurTitle">模糊标题</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.AttachmentService.ExistsByOwner(System.Int16,System.Int32,System.String,System.String)">
+            <summary>
+            根据归属是否存在附件
+            </summary>
+            <param name="ownerType">归属类型</param>
+            <param name="ownerId">归属ID</param>
+            <param name="blurTitle">模糊标题</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.AttachmentService.RemoveByOwner(System.Int16,System.Int32,System.String)">
+            <summary>
+            根据归属移除
+            </summary>
+            <param name="ownerType">归属类型</param>
+            <param name="ownerId">归属ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.AttachmentService.ValiFile(Hzdtf.BasicFunction.Model.Standard.AttachmentInfo,Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean})">
+            <summary>
+            验证文件
+            </summary>
+            <param name="attachment">附件</param>
+            <param name="returnInfo">返回信息</param>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.DataDictionaryItemService">
+            <summary>
+            数据字典子项服务
+            @ 黄振东
+            </summary>
+            <summary>
+            数据字典子项服务
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Service.Impl.Standard.DataDictionaryItemService.DataDictionaryItemExpandPersistence">
+            <summary>
+            数据字典子项扩展持久化
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.DataDictionaryItemService.QueryByDataDictionaryId(System.Int32,System.String)">
+            <summary>
+            根据数据字典ID获取数据字典子项列表
+            </summary>
+            <param name="dataDictionaryId">数据字典ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.DataDictionaryItemService.QueryByDataDictionaryCode(System.String,System.String)">
+            <summary>
+            根据数据字典编码获取数据字典子项列表
+            </summary>
+            <param name="dataDictionaryCode">数据字典编码</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.DataDictionaryItemService.BeforeAdd(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemInfo,System.String@)">
+            <summary>
+            添加模型前
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="model">模型</param>
+            <param name="connectionId">连接ID</param>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.DataDictionaryItemService.BeforeModifyById(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemInfo,System.String@)">
+            <summary>
+            根据ID修改模型前
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="model">模型</param>
+            <param name="connectionId">连接ID</param>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.DataDictionaryItemService.BeforeAdd(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},System.Collections.Generic.IList{Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemInfo},System.String@)">
+            <summary>
+            添加模型列表前
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="models">模型列表</param>        
+            <param name="connectionId">连接ID</param>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.DataDictionaryItemService.AfterFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemInfo},System.Int32,System.String@)">
+            <summary>
+            根据ID查找模型后
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="id">ID</param>
+            <param name="connectionId">连接ID</param>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.DataDictionaryItemService.BeforeRemoveById(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},System.Int32,System.String@)">
+            <summary>
+            根据ID移除模型前
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="id">ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.DataDictionaryItemService.BeforeRemoveByIds(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},System.Int32[],System.String@)">
+            <summary>
+            根据ID集合移除模型前
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="ids">ID集合</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.DataDictionaryItemService.ValiExistsParam(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemInfo,System.Int32)">
+            <summary>
+            验证存在的参数
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="model">模型</param>
+            <param name="existsCount">存在的个数</param>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.DataDictionaryItemService.ValiCanRemove(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemInfo)">
+            <summary>
+            验证是否能移除
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="item">数据字典子项</param>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.MenuService">
+            <summary>
+            菜单服务
+            @ 黄振东
+            </summary>
+            <summary>
+            菜单服务
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.MenuService.QueryMenuTrees(System.String)">
+            <summary>
+            查询菜单树列表
+            </summary>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.RoleMenuFunctionService">
+            <summary>
+            角色菜单功能服务
+            @ 黄振东
+            </summary>
+            <summary>
+            角色菜单功能服务
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Service.Impl.Standard.RoleMenuFunctionService.RoleMenuFunctionPersistence">
+            <summary>
+            角色菜单功能持久化
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.RoleMenuFunctionService.QueryMenuFunctionsByRoleId(System.Int32,System.String)">
+            <summary>
+            根据角色ID查询菜单功能信息列表
+            </summary>
+            <param name="roleId">角色ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.RoleMenuFunctionService.SaveRoleMenuFunctions(System.Int32,System.Collections.Generic.IList{System.Int32},System.String)">
+            <summary>
+            保存角色拥有的菜单功能信息列表
+            </summary>
+            <param name="roleId">角色ID</param>
+            <param name="menuFunctionIds">菜单功能ID列表</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.RoleMenuFunctionService.ExecSaveRoleMenuFunctions(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},System.Int32,System.Collections.Generic.IList{Hzdtf.BasicFunction.Model.Standard.RoleMenuFunctionInfo},System.String)">
+            <summary>
+            执行保存保存角色拥有的菜单功能信息列表
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="roleId">角色ID</param>
+            <param name="rmfs">角色菜单功能列表</param>
+            <param name="connectionId">连接ID</param>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.RoleService">
+            <summary>
+            角色服务
+            @ 黄振东
+            </summary>
+            <summary>
+            角色服务
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.RoleService.QueryAndNotSystemHide(System.String)">
+            <summary>
+            查询角色列表并去掉系统隐藏
+            </summary>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.RoleService.QueryByFilter(Hzdtf.Utility.Standard.Model.KeywordFilterInfo,System.String)">
+            <summary>
+            根据筛选条件查询角色列表
+            </summary>
+            <param name="filter">筛选</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.RoleService.BeforeAdd(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},Hzdtf.BasicFunction.Model.Standard.RoleInfo,System.String@)">
+            <summary>
+            添加模型前
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="model">模型</param>
+            <param name="connectionId">连接ID</param>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.RoleService.BeforeModifyById(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},Hzdtf.BasicFunction.Model.Standard.RoleInfo,System.String@)">
+            <summary>
+            根据ID修改模型前
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="model">模型</param>
+            <param name="connectionId">连接ID</param>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.RoleService.BeforeAdd(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},System.Collections.Generic.IList{Hzdtf.BasicFunction.Model.Standard.RoleInfo},System.String@)">
+            <summary>
+            添加模型列表前
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="models">模型列表</param>        
+            <param name="connectionId">连接ID</param>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.RoleService.BeforeRemoveById(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},System.Int32,System.String@)">
+            <summary>
+            根据ID移除模型前
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="id">ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.RoleService.BeforeRemoveByIds(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},System.Int32[],System.String@)">
+            <summary>
+            根据ID集合移除模型前
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="ids">ID集合</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.RoleService.ValiExistsParam(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},Hzdtf.BasicFunction.Model.Standard.RoleInfo,System.Collections.Generic.IList{Hzdtf.BasicFunction.Model.Standard.RoleInfo})">
+            <summary>
+            验证存在的参数
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="model">模型</param>
+            <param name="existsRoles">存在的角色列表</param>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.RoleService.ValiCanRemove(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},Hzdtf.BasicFunction.Model.Standard.RoleInfo)">
+            <summary>
+            验证是否能移除
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="role">角色</param>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.SequenceService">
+            <summary>
+            序列服务
+            @ 黄振东
+            </summary>
+            <summary>
+            序列服务
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Service.Impl.Standard.SequenceService.SequenceRule">
+            <summary>
+            序列规则
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.SequenceService.BuildNo(System.String,System.Byte,System.String)">
+            <summary>
+            生成序列号
+            </summary>
+            <param name="seqType">序列类型</param>
+            <param name="noLength">序列号长度</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService">
+            <summary>
+            用户角色服务
+            @ 黄振东
+            </summary>
+            <summary>
+            用户角色服务
+            @ 黄振东
+            </summary>
+        </member>
+        <!-- 对于成员“M:Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService.OwnRolesByUserId(System.Int32,System.String)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService.OwnUsersByRoleId(System.Int32,System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService.OwnUsersByRoleCode(System.String,System.String)">
+            <summary>
+            根据角色编码查询拥有的用户列表
+            </summary>
+            <param name="roleCode">角色编码</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.UserService">
+            <summary>
+            用户服务
+            @ 黄振东
+            </summary>
+            <summary>
+            用户服务
+            @ 黄振东
+            </summary>
+            <summary>
+            用户服务
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.MenuPersistence">
+            <summary>
+            菜单持久化
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.UserRoleService">
+            <summary>
+            用户角色服务
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.RoleMenuFunctionPersistence">
+            <summary>
+            角色菜单功能持久化
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.UserMenuFunctionPersistence">
+            <summary>
+            用户菜单功能持久化
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.ModifyPasswordByLoginId(Hzdtf.BasicFunction.Model.Standard.Expand.User.CurrUserModifyPasswordInfo,System.String)">
+            <summary>
+            根据登录ID修改密码
+            </summary>
+            <param name="currUserModifyPassword">当前用户修改密码</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.ResetUserPassword(Hzdtf.BasicFunction.Model.Standard.Expand.User.ModifyPasswordInfo,System.String)">
+            <summary>
+            重置用户密码
+            </summary>
+            <param name="modifyPassword">修改密码</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.IsCurrUserPermission(System.String,System.String,System.String)">
+            <summary>
+            根据菜单编码和功能编码判断当前用户是否有权限
+            </summary>
+            <param name="userId">用户ID</param>
+            <param name="menuCode">菜单编码</param>
+            <param name="functionCode">功能编码</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.IsCurrUserPermission(System.String,System.String[],System.String)">
+            <summary>
+            根据菜单编码和功能编码集合判断当前用户是否有权限
+            </summary>
+            <param name="userId">用户ID</param>
+            <param name="menuCode">菜单编码</param>
+            <param name="functionCodes">功能编码集合</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.IsPermission(System.Int32,System.String,System.String[],System.String)">
+            <summary>
+            根据用户ID、菜单编码和功能编码集合判断用户是否有权限
+            </summary>
+            <param name="userId">用户ID</param>
+            <param name="menuCode">菜单编码</param>
+            <param name="functionCodes">功能编码集合</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.QueryCurrUserOwnFunctionsByMenuCode(System.String,System.String)">
+            <summary>
+            根据菜单编码查询当前用户所拥有的功能信息列表
+            </summary>
+            <param name="roleIds">用户ID</param>
+            <param name="menuCode">菜单编码</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.QueryUserOwnFunctionsByMenuCode(System.Int32,System.String,System.String)">
+            <summary>
+            根据用户ID和菜单编码查询用户所拥有的功能信息列表
+            </summary>
+            <param name="roleIds">用户ID</param>
+            <param name="menuCode">菜单编码</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.IsCurrUserAdministrators(System.String)">
+            <summary>
+            判断当前用户是否是系统管理组
+            </summary>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.IsUserAdministrators(System.Int32,System.String)">
+            <summary>
+            判断用户是否是系统管理组
+            </summary>
+            <param name="userId">用户ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.QueryByFilter(Hzdtf.BasicFunction.Model.Standard.Expand.User.UserFilterInfo,System.String)">
+            <summary>
+            根据筛选条件查询用户列表
+            </summary>
+            <param name="filter">筛选</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.Accredit(System.String,System.String)">
+            <summary>
+            授权
+            </summary>
+            <param name="user">用户</param>
+            <param name="password">密码</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.CanAccessMenus(System.Int32,System.String)">
+            <summary>
+            根据用户ID获取能访问的菜单列表
+            </summary>
+            <param name="userId">用户ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.BeforeAdd(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},Hzdtf.BasicFunction.Model.Standard.UserInfo,System.String@)">
+            <summary>
+            添加模型前
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="model">模型</param>
+            <param name="connectionId">连接ID</param>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.AfterFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{Hzdtf.BasicFunction.Model.Standard.UserInfo},System.Int32,System.String@)">
+            <summary>
+            根据ID查找模型后
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="id">ID</param>
+            <param name="connectionId">连接ID</param>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.BeforeModifyById(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},Hzdtf.BasicFunction.Model.Standard.UserInfo,System.String@)">
+            <summary>
+            根据ID修改模型前
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="model">模型</param>
+            <param name="connectionId">连接ID</param>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.BeforeAdd(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},System.Collections.Generic.IList{Hzdtf.BasicFunction.Model.Standard.UserInfo},System.String@)">
+            <summary>
+            添加模型列表前
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="models">模型列表</param>        
+            <param name="connectionId">连接ID</param>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.BeforeRemoveById(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},System.Int32,System.String@)">
+            <summary>
+            根据ID移除模型前
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="id">ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.BeforeRemoveByIds(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},System.Int32[],System.String@)">
+            <summary>
+            根据ID集合移除模型前
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="ids">ID集合</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.ValiExistsParam(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},Hzdtf.BasicFunction.Model.Standard.UserInfo,Hzdtf.BasicFunction.Model.Standard.UserInfo)">
+            <summary>
+            验证存在的参数
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="model">模型</param>
+            <param name="exists">存在的模型</param>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.ValiCanRemove(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},Hzdtf.BasicFunction.Model.Standard.UserInfo)">
+            <summary>
+            验证是否能移除
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="user">用户</param>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.UserRolePersistence">
+            <summary>
+            用户角色持久化
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.Add(Hzdtf.BasicFunction.Model.Standard.UserInfo,System.String)">
+            <summary>
+            添加模型
+            </summary>
+            <param name="model">模型</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.ModifyById(Hzdtf.BasicFunction.Model.Standard.UserInfo,System.String)">
+            <summary>
+            根据ID修改模型
+            </summary>
+            <param name="model">模型</param>
+            <param name="connectionId">连接ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.AfterQueryPage(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{Hzdtf.Utility.Standard.Model.Page.PagingInfo{Hzdtf.BasicFunction.Model.Standard.UserInfo}},System.Int32,System.Int32,System.String@,Hzdtf.Utility.Standard.Model.FilterInfo)">
+            <summary>
+            执行查询模型列表并分页后
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">每页记录数</param>
+            <param name="connectionId">连接ID</param>
+            <param name="filter">筛选</param>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.ExecAdd(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},Hzdtf.BasicFunction.Model.Standard.UserInfo,System.String)">
+            <summary>
+            执行添加
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="model">模型</param>
+            <param name="connectionId">连接ID</param>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.ExecModifyById(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},Hzdtf.BasicFunction.Model.Standard.UserInfo,System.String)">
+            <summary>
+            执行根据ID修改
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="model">模型</param>
+            <param name="connectionId">连接ID</param>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.AddUserRoles(Hzdtf.BasicFunction.Model.Standard.UserInfo,System.String)">
+            <summary>
+            添加用户角色
+            </summary>
+            <param name="model">模型</param>
+            <param name="connectionId">连接ID</param>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.DataDictionaryItemExpandService">
+            <summary>
+            数据字典子项扩展服务
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.DataDictionaryService">
+            <summary>
+            数据字典服务
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.FunctionService">
+            <summary>
+            功能服务
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.MenuFunctionService">
+            <summary>
+            菜单功能服务
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.UserMenuFunctionService">
+            <summary>
+            用户菜单功能服务
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.ProgramStartMapperConfig">
+            <summary>
+            程序启动映射配置
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.ProgramStartMapperConfig.Start(System.String[])">
+            <summary>
+            启动
+            </summary>
+            <param name="args">参数</param>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.UserMenuInfoProFile">
+            <summary>
+            用户菜单树信息配置文件
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserMenuInfoProFile.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.CodeGenerator.Model.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.CodeGenerator.Model.Standard.BasicInfo">
+            <summary>
+            基本信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.BasicInfo.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.BasicInfo.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Model.Standard.ColumnInfo">
+            <summary>
+            列信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.ColumnInfo.DataType">
+            <summary>
+            数据类型
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.ColumnInfo.ColumnType">
+            <summary>
+            列类型
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.ColumnInfo.IsNull">
+            <summary>
+            是否允许为null
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.ColumnInfo.Length">
+            <summary>
+            长度
+            </summary>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Model.Standard.CommentInfo">
+            <summary>
+            描述信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.CommentInfo.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.CommentInfo.Desc">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.CommentInfo.Range">
+            <summary>
+            范围
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.CommentInfo.MinLength">
+            <summary>
+            最小长度
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.CommentInfo.Enum">
+            <summary>
+            枚举，如果不为空，则输出枚举类型
+            </summary>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Model.Standard.EnumInfo">
+            <summary>
+            枚举信息
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.EnumInfo.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.EnumInfo.Desc">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.EnumInfo.Items">
+            <summary>
+            枚举子项集合
+            </summary>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Model.Standard.EnumItem">
+            <summary>
+            枚举子项
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.EnumItem.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.EnumItem.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.EnumItem.Desc">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Model.Standard.FunctionType">
+            <summary>
+            功能类型枚举
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Model.Standard.FunctionType.MODEL">
+            <summary>
+            模型
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Model.Standard.FunctionType.PERSISTENCE">
+            <summary>
+            持久
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Model.Standard.FunctionType.SERVICE">
+            <summary>
+            服务
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Model.Standard.FunctionType.FRAMEWORK_CONTROLLER">
+            <summary>
+            Framework控制
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Model.Standard.FunctionType.CORE_CONTROLLER">
+            <summary>
+            Core控制
+            </summary>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Model.Standard.ModelInfo">
+            <summary>
+            模型信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.ModelInfo.PropertyType">
+            <summary>
+            属性类型
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.ModelInfo.Attrs">
+            <summary>
+            特性列表
+            </summary>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Model.Standard.TableInfo">
+            <summary>
+            表信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.TableInfo.Columns">
+            <summary>
+            列列表
+            </summary>
+        </member>
+    </members>
+</doc>

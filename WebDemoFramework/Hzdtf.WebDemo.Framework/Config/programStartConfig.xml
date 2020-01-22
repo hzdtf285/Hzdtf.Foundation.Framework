@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--程序开始配置-->
+<ProgramStarts>
+  <ProgramStart>
+    <FullClass>Hzdtf.BasicFunction.Service.Impl.Standard,Hzdtf.BasicFunction.Service.Impl.Standard.ProgramStartMapperConfig</FullClass>
+  </ProgramStart>
+</ProgramStarts>

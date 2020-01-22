@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FEG.Rabbit.Model.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:FEG.Rabbit.Model.Standard.Connection.RabbitConnectionInfo">
+            <summary>
+            Rabbit连接信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Model.Standard.Connection.RabbitConnectionInfo.VirtualPath">
+            <summary>
+            虚拟路径
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Model.Standard.Connection.RabbitConnectionInfo.Heartbeat">
+            <summary>
+            心跳包间隔时间（单位：秒），默认为60秒
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Model.Standard.Connection.RabbitConnectionInfo.AutoRecovery">
+            <summary>
+            自动恢复连接，默认开启
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Model.Standard.Connection.RabbitConnectionInfo.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Model.Standard.Connection.RabbitConnectionInfo.From(FEG.Utility.Standard.Connection.ConnectionInfo)">
+            <summary>
+            将连接信息转换为Rabbit连接信息，如果转换失败则抛出异常
+            </summary>
+            <param name="connectionInfo">连接信息</param>
+            <returns>Rabbit连接信息</returns>
+        </member>
+        <member name="T:FEG.Rabbit.Model.Standard.MessageQueue.RabbitExchangeInfo">
+            <summary>
+            Rabbit交换机信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Model.Standard.MessageQueue.RabbitExchangeInfo.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Model.Standard.MessageQueue.RabbitExchangeInfo.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Model.Standard.MessageQueue.RabbitExchangeInfo.Persistent">
+            <summary>
+            持久化
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Model.Standard.MessageQueue.RabbitExchangeInfo.Queues">
+            <summary>
+            队列集合
+            </summary>
+        </member>
+        <member name="T:FEG.Rabbit.Model.Standard.MessageQueue.RabbitQueueModel">
+            <summary>
+            Rabbit队列 
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Model.Standard.MessageQueue.RabbitQueueModel.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Model.Standard.MessageQueue.RabbitQueueModel.RoutingKeys">
+            <summary>
+            路由键集合
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Model.Standard.MessageQueue.RabbitQueueModel.AutoDelQueue">
+            <summary>
+            自动删除队列
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Model.Standard.MessageQueue.RabbitQueueModel.Qos">
+            <summary>
+            接收质量数
+            </summary>
+        </member>
+        <member name="T:FEG.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo">
+            <summary>
+            Rabbit消息队列信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:FEG.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo.exchange">
+            <summary>
+            交换机
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo.Exchange">
+            <summary>
+            交换机
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo.Type">
+            <summary>
+            类型（默认直通)
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo.Persistent">
+            <summary>
+            持久化
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo.RoutingKeys">
+            <summary>
+            路由键集合
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo.AutoDelQueue">
+            <summary>
+            自动删除队列
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo.Qos">
+            <summary>
+            服务质量数
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo.From(FEG.MessageQueue.Contract.Standard.MessageQueue.MessageQueueInfo)">
+            <summary>
+            将消息队列信息转换为Rabbit消息队列信息
+            </summary>
+            <param name="messageQueueInfo">消息队列信息</param>
+            <returns>Rabbit消息队列信息</returns>
+        </member>
+        <member name="T:FEG.Rabbit.Model.Standard.Utils.RabbitConfigUtil">
+            <summary>
+            Rabbit配置辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:FEG.Rabbit.Model.Standard.Utils.RabbitConfigUtil.DIRECT_EXCHANGE_NAME">
+            <summary>
+            直通交换机名称
+            </summary>
+        </member>
+        <member name="F:FEG.Rabbit.Model.Standard.Utils.RabbitConfigUtil.FANOUT_EXCHANGE_NAME">
+            <summary>
+            广播交换机名称
+            </summary>
+        </member>
+        <member name="F:FEG.Rabbit.Model.Standard.Utils.RabbitConfigUtil.TOPIC_EXCHANGE_NAME">
+            <summary>
+            主题交换机名称
+            </summary>
+        </member>
+        <member name="F:FEG.Rabbit.Model.Standard.Utils.RabbitConfigUtil.DEFAULT_DIRECT_EXCHANGE">
+            <summary>
+            默认直通交换机
+            </summary>
+        </member>
+        <member name="F:FEG.Rabbit.Model.Standard.Utils.RabbitConfigUtil.DEFAULT_FANOUT_EXCHANGE">
+            <summary>
+            默认广播交换机
+            </summary>
+        </member>
+        <member name="F:FEG.Rabbit.Model.Standard.Utils.RabbitConfigUtil.DEFAULT_TOPIC_EXCHANGE">
+            <summary>
+            默认主题交换机
+            </summary>
+        </member>
+        <member name="T:FEG.Rabbit.Model.Standard.Utils.RabbitUtil">
+            <summary>
+            Rabbit辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Model.Standard.Utils.RabbitUtil.GetPublishKey(System.String,System.String[])">
+            <summary>
+            获取发布键
+            </summary>
+            <param name="publishKey">发布键</param>
+            <param name="protoKeys">原生键集合</param>
+            <returns>发布键</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Model.Standard.Utils.RabbitUtil.IsTwoExchangeEqual(System.String,System.String)">
+            <summary>
+            判断两个交换机名是否匹配
+            </summary>
+            <param name="exchange1">交换机1</param>
+            <param name="exchange2">交换机2</param>
+            <returns>两个交换机名是否匹配</returns>
+        </member>
+    </members>
+</doc>

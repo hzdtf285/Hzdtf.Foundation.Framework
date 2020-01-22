@@ -1,0 +1,291 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.Redis.Extend.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.Redis.Extend.Standard.BatchExtend">
+            <summary>
+            批量扩展类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.BatchExtend.ObjectSetAsync(StackExchange.Redis.IBatch,StackExchange.Redis.RedisKey,System.Object,System.Nullable{System.TimeSpan})">
+            <summary>
+            对象设置
+            </summary>
+            <param name="batch">批量</param>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="expiry">时间间隔</param>
+            <returns>任务</returns>
+        </member>
+        <member name="T:Hzdtf.Redis.Extend.Standard.ConnectionMultiplexerExtend">
+            <summary>
+            连接转换器扩展类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.ConnectionMultiplexerExtend.LockTake(StackExchange.Redis.IConnectionMultiplexer,StackExchange.Redis.RedisKey,System.Action,System.Int32)">
+            <summary>
+            锁住可用的资源，此方法是发布订阅模式，性能较好，推荐使用
+            </summary>
+            <param name="connectionMultiplexer">连接转换器，此处的连接器必须是可写的DB</param>
+            <param name="key">键</param>
+            <param name="action">动作</param>
+            <param name="timeoutMilliSecond">超时毫秒，默认为5秒</param>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.ConnectionMultiplexerExtend.ExecLockAction(StackExchange.Redis.ISubscriber,StackExchange.Redis.IDatabase,StackExchange.Redis.RedisKey,System.Action)">
+            <summary>
+            执行锁住后的动作
+            </summary>
+            <param name="subscriber">订阅者</param>
+            <param name="db">数据库</param>
+            <param name="key">键</param>
+            <param name="action">动作</param>
+        </member>
+        <member name="T:Hzdtf.Redis.Extend.Standard.ConnectionMultiplexerManager">
+            <summary>
+            连接转接管理器
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Redis.Extend.Standard.ConnectionMultiplexerManager.ConnectionStringFactory">
+            <summary>
+            连接字符串工厂
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Redis.Extend.Standard.ConnectionMultiplexerManager.dicConnMultis">
+            <summary>
+            连接转接器字典（Key：连接字符串，Value：连接转接器）
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Redis.Extend.Standard.ConnectionMultiplexerManager.syncDicConnMultis">
+            <summary>
+            同步连接转接器字典
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.ConnectionMultiplexerManager.GetDatabase(Hzdtf.Utility.Standard.Enums.AccessMode,System.Int32,System.String)">
+            <summary>
+            获取数据库
+            </summary>
+            <param name="accessMode">访问模式</param>
+            <param name="db">数据库索引</param>
+            <param name="key">键，如果不为空，则会按取模分区</param>
+            <returns>数据库</returns>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.ConnectionMultiplexerManager.Close(Hzdtf.Utility.Standard.Enums.AccessMode)">
+            <summary>
+            关闭连接
+            </summary>
+            <param name="accessMode">访问模式</param>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.ConnectionMultiplexerManager.CloseAll">
+            <summary>
+            关闭所有连接
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.ConnectionMultiplexerManager.GetConnectionString(Hzdtf.Utility.Standard.Enums.AccessMode,System.String)">
+            <summary>
+            根据访问模式获取连接字符串
+            </summary>
+            <param name="accessMode">访问模式</param>
+            <param name="key">键，如果不为空，则会按取模分区</param>
+            <returns>连接字符串</returns>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.ConnectionMultiplexerManager.GetConnectionMulti(Hzdtf.Utility.Standard.Enums.AccessMode,System.String)">
+            <summary>
+            根据访问模式获取连接转接器
+            </summary>
+            <param name="accessMode">访问模式</param>
+            <param name="key">键，如果不为空，则会按取模分区</param>
+            <returns>连接转接器</returns>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.ConnectionMultiplexerManager.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.ConnectionMultiplexerManager.Finalize">
+            <summary>
+            析构方法
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Redis.Extend.Standard.DatabaseExtend">
+            <summary>
+            数据库扩展类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.DatabaseExtend.ObjectSet(StackExchange.Redis.IDatabase,StackExchange.Redis.RedisKey,System.Object,System.Nullable{System.TimeSpan})">
+            <summary>
+            对象设置
+            </summary>
+            <param name="db">数据库</param>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="expiry">时间间隔</param>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.DatabaseExtend.ObjectSetAsync(StackExchange.Redis.IDatabase,StackExchange.Redis.RedisKey,System.Object,System.Nullable{System.TimeSpan})">
+            <summary>
+            异步对象设置
+            </summary>
+            <param name="db">数据库</param>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="expiry">时间间隔</param>
+            <returns>任务</returns>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.DatabaseExtend.ObjectGet``1(StackExchange.Redis.IDatabase,StackExchange.Redis.RedisKey)">
+            <summary>
+            对象获取
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="db">数据库</param>
+            <param name="key">键</param>
+            <returns>对象</returns>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.DatabaseExtend.ObjectGetAsync``1(StackExchange.Redis.IDatabase,StackExchange.Redis.RedisKey)">
+            <summary>
+            异步对象获取
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="db">数据库</param>
+            <param name="key">键</param>
+            <returns>任务</returns>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.DatabaseExtend.LockTake(StackExchange.Redis.IDatabase,StackExchange.Redis.RedisKey,System.Action,System.Int32)">
+            <summary>
+            锁住可用的资源，默认5秒超时，因是主动轮询机制，性能较差
+            </summary>
+            <param name="db">数据库</param>
+            <param name="key">键</param>
+            <param name="action">动作</param>
+            <param name="retryIntervalMillisecond">重试间隔毫秒数</param>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.DatabaseExtend.LockTake(StackExchange.Redis.IDatabase,StackExchange.Redis.RedisKey,System.Action,System.TimeSpan,System.Int32)">
+            <summary>
+            锁住可用的资源，因是主动轮询机制，性能较差
+            </summary>
+            <param name="db">数据库</param>
+            <param name="key">键</param>
+            <param name="expiry">时间间隔</param>
+            <param name="action">动作</param>
+            <param name="retryIntervalMillisecond">重试间隔毫秒数</param>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.DatabaseExtend.LockTake(StackExchange.Redis.IDatabase,StackExchange.Redis.RedisKey,StackExchange.Redis.RedisValue,System.Action,System.Int32)">
+            <summary>
+            锁住可用的资源，默认5秒超时，因是主动轮询机制，性能较差
+            </summary>
+            <param name="db">数据库</param>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="action">动作</param>
+            <param name="retryIntervalMillisecond">重试间隔毫秒数</param>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.DatabaseExtend.LockTake(StackExchange.Redis.IDatabase,StackExchange.Redis.RedisKey,StackExchange.Redis.RedisValue,System.Action,System.TimeSpan,System.Int32)">
+            <summary>
+            锁住可用的资源，因是主动轮询机制，性能较差
+            </summary>
+            <param name="db">数据库</param>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="expiry">时间间隔</param>
+            <param name="action">动作</param>
+            <param name="retryIntervalMillisecond">重试间隔毫秒数</param>
+        </member>
+        <member name="T:Hzdtf.Redis.Extend.Standard.DefaultConnectionStringFactory">
+            <summary>
+            默认连接字符串工厂
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Redis.Extend.Standard.DefaultConnectionStringFactory.AppConfig">
+            <summary>
+            应用配置
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Redis.Extend.Standard.DefaultConnectionStringFactory.ConnectionEncryption">
+            <summary>
+            连接加密
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.DefaultConnectionStringFactory.Create(Hzdtf.Utility.Standard.Enums.EnvironmentType)">
+            <summary>
+            创建
+            </summary>
+            <param name="type">类型</param>
+            <returns>产品</returns>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.DefaultConnectionStringFactory.GetConnectionStrings(System.String)">
+            <summary>
+            根据键获取连接字符串集合
+            </summary>
+            <param name="key">键</param>
+            <returns>连接字符串集合</returns>
+        </member>
+        <member name="T:Hzdtf.Redis.Extend.Standard.IConnectionMultiplexerManager">
+            <summary>
+            连接转接管理器接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.IConnectionMultiplexerManager.GetDatabase(Hzdtf.Utility.Standard.Enums.AccessMode,System.Int32,System.String)">
+            <summary>
+            获取数据库
+            </summary>
+            <param name="accessMode">访问模式</param>
+            <param name="db">数据库索引</param>
+            <param name="key">键，如果不为空，则会按取模分区</param>
+            <returns>数据库</returns>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.IConnectionMultiplexerManager.Close(Hzdtf.Utility.Standard.Enums.AccessMode)">
+            <summary>
+            关闭连接
+            </summary>
+            <param name="accessMode">访问模式</param>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.IConnectionMultiplexerManager.CloseAll">
+            <summary>
+            关闭所有连接
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Redis.Extend.Standard.RedisConnectionInfo">
+            <summary>
+            Redis连接信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Redis.Extend.Standard.RedisConnectionInfo.MasterConnectionStrings">
+            <summary>
+            主连接字符串集合
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Redis.Extend.Standard.RedisConnectionInfo.SlaveConnectionStrings">
+            <summary>
+            从连接字符串集合
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Redis.Extend.Standard.RedisUtil">
+            <summary>
+            Redis辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.RedisUtil.ToHashEntrys(System.Object)">
+            <summary>
+            将对象属性转换为哈希键值对数组
+            </summary>
+            <param name="obj">对象</param>
+            <returns>哈希键值对数组</returns>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.RedisUtil.FromHashEntrys``1(StackExchange.Redis.HashEntry[])">
+            <summary>
+            从哈希键值对数组转换为对象
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="hashEntries">哈希键值对数组</param>
+            <returns>对象</returns>
+        </member>
+    </members>
+</doc>

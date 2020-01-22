@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.Compressor.Framework</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.Compressor.Framework.Main">
+            <summary>
+            主界面
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Compressor.Framework.Main.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Compressor.Framework.Main.btnSelectJs_Click(System.Object,System.EventArgs)">
+            <summary>
+            点击选择JS按钮
+            </summary>
+            <param name="sender">引发对象</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:Hzdtf.Compressor.Framework.Main.btnJsCompress_Click(System.Object,System.EventArgs)">
+            <summary>
+            点击JS压缩按钮
+            </summary>
+            <param name="sender">引发对象</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:Hzdtf.Compressor.Framework.Main.btnSelectLanguageLib_Click(System.Object,System.EventArgs)">
+            <summary>
+            点击选择语系库按钮
+            </summary>
+            <param name="sender">引发对象</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:Hzdtf.Compressor.Framework.Main.btnMergeCompress_Click(System.Object,System.EventArgs)">
+            <summary>
+            点击合并压缩按钮
+            </summary>
+            <param name="sender">引发对象</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:Hzdtf.Compressor.Framework.Main.btnSelectCss_Click(System.Object,System.EventArgs)">
+            <summary>
+            点击选择CSS按钮
+            </summary>
+            <param name="sender">引发对象</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:Hzdtf.Compressor.Framework.Main.btnCssCompress_Click(System.Object,System.EventArgs)">
+            <summary>
+            点击CSS压缩按钮
+            </summary>
+            <param name="sender">引发对象</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="F:Hzdtf.Compressor.Framework.Main.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Compressor.Framework.Main.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:Hzdtf.Compressor.Framework.Main.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Compressor.Framework.Program.Main">
+            <summary>
+            应用程序的主入口点。
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Compressor.Framework.Properties.Resources">
+            <summary>
+              强类型资源类，用于查找本地化字符串等。
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Compressor.Framework.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Compressor.Framework.Properties.Resources.Culture">
+            <summary>
+              覆盖当前线程的 CurrentUICulture 属性
+              使用此强类型的资源类的资源查找。
+            </summary>
+        </member>
+    </members>
+</doc>

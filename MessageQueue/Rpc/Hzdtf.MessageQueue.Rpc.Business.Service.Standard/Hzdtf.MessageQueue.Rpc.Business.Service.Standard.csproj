@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\IOC\Hzdtf.Autofac.Extend.Standard\Hzdtf.Autofac.Extend.Standard.csproj" />
+    <ProjectReference Include="..\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.csproj" />
+  </ItemGroup>
+
+</Project>

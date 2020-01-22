@@ -1,0 +1,873 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.BasicFunction.Model.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.Expand.Attachment.AttachmentFilterInfo">
+            <summary>
+            附件筛选信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.Attachment.AttachmentFilterInfo.OwnerType">
+            <summary>
+            归属类型
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.Attachment.AttachmentFilterInfo.OwnerId">
+            <summary>
+            归属ID
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.Attachment.AttachmentFilterInfo.BlurTitle">
+            <summary>
+            模糊标题
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.Expand.Attachment.AttachmentOwnerInfo">
+            <summary>
+            附件归属信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.Attachment.AttachmentOwnerInfo.OwnerType">
+            <summary>
+            归属类型
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.Attachment.AttachmentOwnerInfo.AllowExpands">
+            <summary>
+            允许扩展名
+            如果有多个则以,分隔
+            不限制则用*
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Hzdtf.BasicFunction.Model.Standard.Expand.Attachment.AttachmentOwnerInfo.MaxSize" -->
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.Expand.Attachment.AttachmentStreamInfo">
+            <summary>
+            附件流信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.Attachment.AttachmentStreamInfo.FileName">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.Attachment.AttachmentStreamInfo.Stream">
+            <summary>
+            流
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.Expand.DataDictionaryItem.DataDictionaryItemExpandFilterInfo">
+            <summary>
+            数据子项扩展筛选信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.DataDictionaryItem.DataDictionaryItemExpandFilterInfo.DataDictionaryItemId">
+            <summary>
+            数据字典子项ID
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.Expand.DataDictionaryItem.DataDictionaryItemFilterInfo">
+            <summary>
+            数据子项筛选信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.DataDictionaryItem.DataDictionaryItemFilterInfo.DataDictionaryId">
+            <summary>
+            数据字典ID
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.Expand.Menu.MenuTreeInfo">
+            <summary>
+            菜单树信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.Menu.MenuTreeInfo.MenuFunctionId">
+            <summary>
+            功能菜单ID
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.Menu.MenuTreeInfo.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.Menu.MenuTreeInfo.Text">
+            <summary>
+            文本
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.Menu.MenuTreeInfo.Type">
+            <summary>
+            类型
+            默认为菜单
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.Menu.MenuTreeInfo.Children">
+            <summary>
+            子菜单树信息列表
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.Expand.Menu.MenuFunctionType">
+            <summary>
+            菜单功能类型
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.Expand.Menu.MenuFunctionType.MENU">
+            <summary>
+            菜单
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.Expand.Menu.MenuFunctionType.FUNCTION">
+            <summary>
+            功能
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.Expand.Menu.MenuUtil">
+            <summary>
+            菜单辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Model.Standard.Expand.Menu.MenuUtil.ToOrigAndSort(System.Collections.Generic.IList{Hzdtf.BasicFunction.Model.Standard.MenuInfo},System.Int32)">
+            <summary>
+            转换为有组织的列表并排序
+            </summary>m>
+            <param name="menus">菜单列表</param>
+            <param name="parentId">父ID</param>
+            <returns>有组织的列表</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Model.Standard.Expand.Menu.MenuUtil.ToOrig(System.Collections.Generic.IList{Hzdtf.BasicFunction.Model.Standard.MenuInfo},System.Int32)">
+            <summary>
+            转换为有组织的列表
+            </summary>
+            <param name="menus">菜单列表</param>
+            <param name="parentId">父ID</param>
+            <returns>有组织的列表</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Model.Standard.Expand.Menu.MenuUtil.Sort(System.Collections.Generic.IList{Hzdtf.BasicFunction.Model.Standard.MenuInfo})">
+            <summary>
+            排序
+            </summary>
+            <param name="menus">菜单列表</param>
+            <returns>有组织的菜单列表</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Model.Standard.Expand.Menu.MenuUtil.ToMenuTrees(System.Collections.Generic.IList{Hzdtf.BasicFunction.Model.Standard.MenuInfo})">
+            <summary>
+            转换为菜单树列表
+            </summary>
+            <param name="menus">菜单</param>
+            <returns>菜单树列表</returns>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.Expand.Menu.MenuUtil.MenuComparer">
+            <summary>
+            菜单比较
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Model.Standard.Expand.Menu.MenuUtil.MenuComparer.Compare(Hzdtf.BasicFunction.Model.Standard.MenuInfo,Hzdtf.BasicFunction.Model.Standard.MenuInfo)">
+            <summary>
+            比较
+            </summary>
+            <param name="x">菜单X</param>
+            <param name="y">菜单Y</param>
+            <returns>比较后的值</returns>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.Expand.User.CurrUserModifyPasswordInfo">
+            <summary>
+            当前用户修改密码信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.User.CurrUserModifyPasswordInfo.LoginId">
+            <summary>
+            登录ID
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.User.CurrUserModifyPasswordInfo.OldPassword">
+            <summary>
+            旧密码
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.Expand.User.LoginReturnInfo">
+            <summary>
+            登录返回信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.User.LoginReturnInfo.IsVerificationCode">
+            <summary>
+            是否需要验证码
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.Expand.User.ModifyPasswordInfo">
+            <summary>
+            修改密码信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.User.ModifyPasswordInfo.NewPassword">
+            <summary>
+            新密码
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.User.ModifyPasswordInfo.ConfirmPassword">
+            <summary>
+            确认密码
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.Expand.User.UserFilterInfo">
+            <summary>
+            用户筛选信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.User.UserFilterInfo.RoleId">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.User.UserFilterInfo.Enabled">
+            <summary>
+            启用
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.Expand.User.UserMenuInfo">
+            <summary>
+            用户菜单信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.User.UserMenuInfo.Menus">
+            <summary>
+            菜单列表
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.Expand.User.UserPageInfo">
+            <summary>
+            用户页面信息
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.User.UserPageInfo.Roles">
+            <summary>
+            角色列表
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemInfo">
+            <summary>
+            数据字典子项
+            @ 黄振东
+            </summary>
+            <summary>
+            数据字典子项信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemInfo.Expands">
+            <summary>
+            扩展列表
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemInfo.Code_Name">
+            <summary>
+            编码_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemInfo.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemInfo.DataDictionaryId_Name">
+            <summary>
+            数据字典Id_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemInfo.DataDictionaryId">
+            <summary>
+            数据字典Id
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemInfo.ExpandTable_Name">
+            <summary>
+            扩展表_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemInfo.ExpandTable">
+            <summary>
+            扩展表
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemInfo.SystemInlay_Name">
+            <summary>
+            系统内置_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemInfo.SystemInlay">
+            <summary>
+            系统内置
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemInfo.Text_Name">
+            <summary>
+            文本_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemInfo.Text">
+            <summary>
+            文本
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.FunctionInfo">
+            <summary>
+            功能信息
+            @ 黄振东
+            </summary>
+            <summary>
+            功能信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.FunctionInfo.MenuFunctionId">
+            <summary>
+            菜单功能ID
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.FunctionInfo.Code_Name">
+            <summary>
+            编码_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.FunctionInfo.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.FunctionInfo.Name_Name">
+            <summary>
+            名称_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.FunctionInfo.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.MenuFunctionInfo">
+            <summary>
+            菜单功能信息
+            @ 黄振东
+            </summary>
+            <summary>
+            菜单功能信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.MenuFunctionInfo.Function">
+            <summary>
+            功能
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.MenuFunctionInfo.FunctionId_Name">
+            <summary>
+            功能Id_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.MenuFunctionInfo.FunctionId">
+            <summary>
+            功能Id
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.MenuFunctionInfo.MenuId_Name">
+            <summary>
+            菜单Id_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.MenuFunctionInfo.MenuId">
+            <summary>
+            菜单Id
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.MenuInfo">
+            <summary>
+            菜单信息
+            @ 黄振东
+            </summary>
+            <summary>
+            菜单信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.MenuInfo.Functions">
+            <summary>
+            功能列表
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.MenuInfo.Children">
+            <summary>
+            子菜单列表
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.MenuInfo.Code_Name">
+            <summary>
+            编码_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.MenuInfo.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.MenuInfo.Icon_Name">
+            <summary>
+            图标_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.MenuInfo.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.MenuInfo.Link_Name">
+            <summary>
+            链接_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.MenuInfo.Link">
+            <summary>
+            链接
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.MenuInfo.Name_Name">
+            <summary>
+            名称_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.MenuInfo.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.MenuInfo.ParentId_Name">
+            <summary>
+            父ID_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.MenuInfo.ParentId">
+            <summary>
+            父ID
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.MenuInfo.Sort_Name">
+            <summary>
+            排序_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.MenuInfo.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.UserRoleInfo">
+            <summary>
+            用户角色信息
+            </summary>
+            <summary>
+            用户角色信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.UserRoleInfo.Role">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.UserRoleInfo.User">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.UserRoleInfo.RoleId_Name">
+            <summary>
+            角色Id_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.UserRoleInfo.RoleId">
+            <summary>
+            角色Id
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.UserRoleInfo.UserId_Name">
+            <summary>
+            用户Id_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.UserRoleInfo.UserId">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.UserInfo">
+            <summary>
+            用户信息
+            @ 黄振东
+            </summary>
+            <summary>
+            用户信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.UserInfo.OwnRoles">
+            <summary>
+            拥有的角色列表
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.UserInfo.Mail_Name">
+            <summary>
+            邮箱_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.UserInfo.Mail">
+            <summary>
+            邮箱
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.UserInfo.Memo_Name">
+            <summary>
+            备注_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.UserInfo.Memo">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.UserInfo.Mobile_Name">
+            <summary>
+            手机_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.UserInfo.Mobile">
+            <summary>
+            手机
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.UserInfo.QQ_Name">
+            <summary>
+            QQ_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.UserInfo.QQ">
+            <summary>
+            QQ
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.UserInfo.Sex_Name">
+            <summary>
+            性别_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.UserInfo.Sex">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.UserInfo.SystemHide_Name">
+            <summary>
+            系统隐藏_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.UserInfo.SystemHide">
+            <summary>
+            系统隐藏
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.UserInfo.Wechat_Name">
+            <summary>
+            微信_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.UserInfo.Wechat">
+            <summary>
+            微信
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.AttachmentInfo">
+            <summary>
+            附件信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.AttachmentInfo.ExpandName_Name">
+            <summary>
+            扩展名_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.AttachmentInfo.ExpandName">
+            <summary>
+            扩展名
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.AttachmentInfo.FileAddress_Name">
+            <summary>
+            文件地址_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.AttachmentInfo.FileAddress">
+            <summary>
+            文件地址
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.AttachmentInfo.FileName_Name">
+            <summary>
+            文件名_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.AttachmentInfo.FileName">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.AttachmentInfo.FileSize_Name">
+            <summary>
+            文件大小（KB）_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.AttachmentInfo.FileSize">
+            <summary>
+            文件大小（KB）
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.AttachmentInfo.Memo_Name">
+            <summary>
+            备注_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.AttachmentInfo.Memo">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.AttachmentInfo.OwnerId_Name">
+            <summary>
+            归属ID_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.AttachmentInfo.OwnerId">
+            <summary>
+            归属ID
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.AttachmentInfo.OwnerType_Name">
+            <summary>
+            归属类型_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.AttachmentInfo.OwnerType">
+            <summary>
+            归属类型
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.AttachmentInfo.Title_Name">
+            <summary>
+            标题_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.AttachmentInfo.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.DataDictionaryInfo">
+            <summary>
+            数据字典信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.DataDictionaryInfo.Code_Name">
+            <summary>
+            编码_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.DataDictionaryInfo.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.DataDictionaryInfo.Text_Name">
+            <summary>
+            文本_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.DataDictionaryInfo.Text">
+            <summary>
+            文本
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemExpandInfo">
+            <summary>
+            数据字典子项扩展信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemExpandInfo.DataDictionaryItemId_Name">
+            <summary>
+            数据字典子项Id_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemExpandInfo.DataDictionaryItemId">
+            <summary>
+            数据字典子项Id
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemExpandInfo.Name_Name">
+            <summary>
+            名称_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemExpandInfo.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemExpandInfo.Text_Name">
+            <summary>
+            文本_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.DataDictionaryItemExpandInfo.Text">
+            <summary>
+            文本
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.RoleInfo">
+            <summary>
+            角色信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.RoleInfo.Memo_Name">
+            <summary>
+            备注_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.RoleInfo.Memo">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.RoleInfo.SystemHide_Name">
+            <summary>
+            系统隐藏_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.RoleInfo.SystemHide">
+            <summary>
+            系统隐藏
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.RoleInfo.SystemInlay_Name">
+            <summary>
+            系统内置_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.RoleInfo.SystemInlay">
+            <summary>
+            系统内置
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.RoleMenuFunctionInfo">
+            <summary>
+            角色菜单功能信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.RoleMenuFunctionInfo.MenuFunctionId_Name">
+            <summary>
+            菜单功能Id_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.RoleMenuFunctionInfo.MenuFunctionId">
+            <summary>
+            菜单功能Id
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.RoleMenuFunctionInfo.RoleId_Name">
+            <summary>
+            角色Id_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.RoleMenuFunctionInfo.RoleId">
+            <summary>
+            角色Id
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.SequenceInfo">
+            <summary>
+            序列信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.SequenceInfo.Increment_Name">
+            <summary>
+            增量_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.SequenceInfo.Increment">
+            <summary>
+            增量
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.SequenceInfo.SeqType_Name">
+            <summary>
+            序列类型_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.SequenceInfo.SeqType">
+            <summary>
+            序列类型
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.SequenceInfo.UpdateDate_Name">
+            <summary>
+            更新日期_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.SequenceInfo.UpdateDate">
+            <summary>
+            更新日期
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.UserMenuFunctionInfo">
+            <summary>
+            用户菜单功能信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.UserMenuFunctionInfo.MenuFunctionId_Name">
+            <summary>
+            菜单功能Id_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.UserMenuFunctionInfo.MenuFunctionId">
+            <summary>
+            菜单功能Id
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.UserMenuFunctionInfo.UserId_Name">
+            <summary>
+            用户Id_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.UserMenuFunctionInfo.UserId">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+    </members>
+</doc>

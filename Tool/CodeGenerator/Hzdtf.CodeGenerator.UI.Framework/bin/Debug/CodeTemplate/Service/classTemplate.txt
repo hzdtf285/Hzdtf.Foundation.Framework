@@ -1,0 +1,20 @@
+﻿using |NamespacePfx|.Model.Standard;
+using |NamespacePfx|.Persistence.Contract.Standard;
+using |NamespacePfx|.Service.Contract.Standard;
+using Hzdtf.Service.Impl.Standard;
+using Hzdtf.Utility.Standard.Attr;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace |NamespacePfx|.Service.Impl.Standard
+{
+    /// <summary>
+    /// |Description|服务
+    /// @ 黄振东
+    /// </summary>
+    [Inject]
+    public partial class |Model|Service : ServiceBase<|Model|Info, I|Model|Persistence>, I|Model|Service
+    {
+    }
+}

@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.EncryptionAndDecryption.Framework</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.EncryptionAndDecryption.Framework.Main">
+            <summary>
+            主窗体
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.EncryptionAndDecryption.Framework.Main.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.EncryptionAndDecryption.Framework.Main.btnEncrypt_Click(System.Object,System.EventArgs)">
+            <summary>
+            点击加密按钮
+            </summary>
+            <param name="sender">引发对象</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:Hzdtf.EncryptionAndDecryption.Framework.Main.btnCopyCiphertext_Click(System.Object,System.EventArgs)">
+            <summary>
+            点击复制密文按钮
+            </summary>
+            <param name="sender">引发对象</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:Hzdtf.EncryptionAndDecryption.Framework.Main.btnDecode_Click(System.Object,System.EventArgs)">
+            <summary>
+            点击解密按钮
+            </summary>
+            <param name="sender">引发对象</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:Hzdtf.EncryptionAndDecryption.Framework.Main.btnCopyPlaintext_Click(System.Object,System.EventArgs)">
+            <summary>
+            点击复制明文按钮
+            </summary>
+            <param name="sender">引发对象</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:Hzdtf.EncryptionAndDecryption.Framework.Main.btnPasteToPlaintext_Click(System.Object,System.EventArgs)">
+            <summary>
+            点击粘贴到明文按钮
+            </summary>
+            <param name="sender">引发对象</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:Hzdtf.EncryptionAndDecryption.Framework.Main.btnPasteCiphertext_Click(System.Object,System.EventArgs)">
+            <summary>
+            点击粘贴到密文按钮
+            </summary>
+            <param name="sender">引发对象</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:Hzdtf.EncryptionAndDecryption.Framework.Main.CopyFromTextControll(System.Windows.Forms.TextBox,System.String)">
+            <summary>
+            复制来自文本控件
+            </summary>
+            <param name="textBox">文本控件</param>
+            <param name="name">名称</param>
+        </member>
+        <member name="M:Hzdtf.EncryptionAndDecryption.Framework.Main.PasteToTextControll(System.Windows.Forms.TextBox)">
+            <summary>
+            粘贴到文本控件里
+            </summary>
+            <param name="textBox">文本控件</param>
+        </member>
+        <member name="F:Hzdtf.EncryptionAndDecryption.Framework.Main.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:Hzdtf.EncryptionAndDecryption.Framework.Main.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:Hzdtf.EncryptionAndDecryption.Framework.Main.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:Hzdtf.EncryptionAndDecryption.Framework.Program.Main">
+            <summary>
+            应用程序的主入口点。
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="T:Hzdtf.EncryptionAndDecryption.Framework.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:Hzdtf.EncryptionAndDecryption.Framework.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:Hzdtf.EncryptionAndDecryption.Framework.Properties.Resources.Culture">
+            <summary>
+              重写当前线程的 CurrentUICulture 属性
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,698 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.WorkFlow.MySql.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.WorkFlow.MySql.Standard.FlowCensorshipPersistence">
+            <summary>
+            流程关卡持久化
+            @ 黄振东
+            </summary>
+            <summary>
+            流程关卡持久化
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.FlowCensorshipPersistence.SelectByFlowId(System.Int32,System.String)">
+            <summary>
+            根据流程ID查询流程关卡列表
+            </summary>
+            <param name="flowId">流程ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>流程关卡列表</returns>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.MySql.Standard.FlowCensorshipPersistence.Table">
+            <summary>
+            表名
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.FlowCensorshipPersistence.INSERT_FIELD_NAMES">
+            <summary>
+            插入字段名称集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.FlowCensorshipPersistence.UPDATE_FIELD_NAMES">
+            <summary>
+            更新字段名称集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.FlowCensorshipPersistence.FIELD_MAP_PROPS">
+            <summary>
+            所有字段映射集合
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.FlowCensorshipPersistence.GetValueByFieldName(Hzdtf.WorkFlow.Model.Standard.FlowCensorshipInfo,System.String)">
+            <summary>
+            根据字段名获取模型的值
+            </summary>
+            <param name="model">模型</param>
+            <param name="field">字段名</param>
+            <returns>值</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.FlowCensorshipPersistence.InsertFieldNames">
+            <summary>
+            插入字段名集合
+            </summary>
+            <returns>插入字段名集合</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.FlowCensorshipPersistence.UpdateFieldNames">
+            <summary>
+            更新字段名称集合
+            </summary>
+            <returns>更新字段名称集合</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.FlowCensorshipPersistence.AllFieldMapProps">
+            <summary>
+            所有字段映射集合
+            </summary>
+            <returns>所有字段映射集合</returns>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.MySql.Standard.ReturnFlowRoutePersistence">
+            <summary>
+            退件流程路线持久化
+            @ 黄振东
+            </summary>
+            <summary>
+            退件流程路线持久化
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.ReturnFlowRoutePersistence.SelectByFlowCensorshipId(System.Int32,System.String)">
+            <summary>
+            根据流程关卡ID查询退件流程路线列表
+            </summary>
+            <param name="flowCensorshipId">流程关卡ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>退件流程路线列表</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.ReturnFlowRoutePersistence.SelectByFlowCensorshipIds(System.Int32[],System.String)">
+            <summary>
+            根据流程关卡ID数组查询退件流程路线列表
+            </summary>
+            <param name="flowCensorshipIds">流程关卡ID数组</param>
+            <param name="connectionId">连接ID</param>
+            <returns>退件流程路线列表</returns>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.MySql.Standard.ReturnFlowRoutePersistence.Table">
+            <summary>
+            表名
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.ReturnFlowRoutePersistence.INSERT_FIELD_NAMES">
+            <summary>
+            插入字段名称集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.ReturnFlowRoutePersistence.UPDATE_FIELD_NAMES">
+            <summary>
+            更新字段名称集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.ReturnFlowRoutePersistence.FIELD_MAP_PROPS">
+            <summary>
+            所有字段映射集合
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.ReturnFlowRoutePersistence.GetValueByFieldName(Hzdtf.WorkFlow.Model.Standard.ReturnFlowRouteInfo,System.String)">
+            <summary>
+            根据字段名获取模型的值
+            </summary>
+            <param name="model">模型</param>
+            <param name="field">字段名</param>
+            <returns>值</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.ReturnFlowRoutePersistence.InsertFieldNames">
+            <summary>
+            插入字段名集合
+            </summary>
+            <returns>插入字段名集合</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.ReturnFlowRoutePersistence.UpdateFieldNames">
+            <summary>
+            更新字段名称集合
+            </summary>
+            <returns>更新字段名称集合</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.ReturnFlowRoutePersistence.AllFieldMapProps">
+            <summary>
+            所有字段映射集合
+            </summary>
+            <returns>所有字段映射集合</returns>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.MySql.Standard.SendFlowRoutePersistence">
+            <summary>
+            送件流程路线持久化
+            @ 黄振东
+            </summary>
+            <summary>
+            送件流程路线持久化
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.SendFlowRoutePersistence.SelectByFlowCensorshipId(System.Int32,System.String)">
+            <summary>
+            根据流程关卡ID查询送件流程路线列表
+            </summary>
+            <param name="flowCensorshipId">流程关卡ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>送件流程路线列表</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.SendFlowRoutePersistence.SelectByFlowCensorshipIds(System.Int32[],System.String)">
+            <summary>
+            根据流程关卡ID数组查询送件流程路线列表
+            </summary>
+            <param name="flowCensorshipIds">流程关卡ID数组</param>
+            <param name="connectionId">连接ID</param>
+            <returns>送件流程路线列表</returns>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.MySql.Standard.SendFlowRoutePersistence.Table">
+            <summary>
+            表名
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.SendFlowRoutePersistence.INSERT_FIELD_NAMES">
+            <summary>
+            插入字段名称集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.SendFlowRoutePersistence.UPDATE_FIELD_NAMES">
+            <summary>
+            更新字段名称集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.SendFlowRoutePersistence.FIELD_MAP_PROPS">
+            <summary>
+            所有字段映射集合
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.SendFlowRoutePersistence.GetValueByFieldName(Hzdtf.WorkFlow.Model.Standard.SendFlowRouteInfo,System.String)">
+            <summary>
+            根据字段名获取模型的值
+            </summary>
+            <param name="model">模型</param>
+            <param name="field">字段名</param>
+            <returns>值</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.SendFlowRoutePersistence.InsertFieldNames">
+            <summary>
+            插入字段名集合
+            </summary>
+            <returns>插入字段名集合</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.SendFlowRoutePersistence.UpdateFieldNames">
+            <summary>
+            更新字段名称集合
+            </summary>
+            <returns>更新字段名称集合</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.SendFlowRoutePersistence.AllFieldMapProps">
+            <summary>
+            所有字段映射集合
+            </summary>
+            <returns>所有字段映射集合</returns>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.MySql.Standard.WorkflowPersistence">
+            <summary>
+            工作流持久化接口
+            @ 黄振东
+            </summary>
+            <summary>
+            工作流持久化
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.MySql.Standard.WorkflowPersistence.WorkflowHandlePersistence">
+            <summary>
+            工作流处理持久化
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowPersistence.CountByApplyNo(System.String,System.String)">
+            <summary>
+            根据申请单号统计记录数
+            </summary>
+            <param name="applyNo">申请单号</param>
+            <param name="connectionId">连接ID</param>
+            <returns>记录数</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowPersistence.SelectWaitHandlePage(System.Int32,System.Int32,Hzdtf.WorkFlow.Model.Standard.Expand.Filter.WaitHandleFilterInfo,System.String)">
+            <summary>
+            查询待办的工作流列表并分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">每页记录数</param>
+            <param name="filter">筛选</param>
+            <param name="connectionId">连接ID</param>
+            <returns>分页信息</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowPersistence.SelectAuditedHandlePage(System.Int32,System.Int32,Hzdtf.WorkFlow.Model.Standard.Expand.Filter.AuditFlowFilterInfo,System.String)">
+            <summary>
+            查询已审核的工作流列表并分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">每页记录数</param>
+            <param name="filter">筛选</param>
+            <param name="connectionId">连接ID</param>
+            <returns>分页信息</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowPersistence.SelectApplyFlowPage(System.Int32,System.Int32,Hzdtf.WorkFlow.Model.Standard.Expand.Filter.ApplyFlowFilterInfo,System.String)">
+            <summary>
+            查询申请的工作流列表并分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">每页记录数</param>
+            <param name="filter">筛选</param>
+            <param name="connectionId">连接ID</param>
+            <returns>分页信息</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowPersistence.SelectContainHandles(System.Int32,System.String)">
+            <summary>
+            根据ID查询工作流信息且包含处理列表
+            </summary>
+            <param name="id">ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>工作流信息且包含处理列表</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowPersistence.UpdateFlowStatusAndCensorshipAndHandlerById(Hzdtf.WorkFlow.Model.Standard.WorkflowInfo,System.String)">
+            <summary>
+            根据ID更新流程状态和当前关卡、处理人信息
+            </summary>
+            <param name="workflow">工作流</param>
+            <param name="connectionId">连接ID</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowPersistence.GetPageKeywordFields">
+            <summary>
+            获取分页按关键字查询的字段集合
+            </summary>
+            <returns>分页按关键字查询的字段集合</returns>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.MySql.Standard.WorkflowPersistence.Table">
+            <summary>
+            表名
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.WorkflowPersistence.INSERT_FIELD_NAMES">
+            <summary>
+            插入字段名称集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.WorkflowPersistence.UPDATE_FIELD_NAMES">
+            <summary>
+            更新字段名称集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.WorkflowPersistence.FIELD_MAP_PROPS">
+            <summary>
+            所有字段映射集合
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowPersistence.GetValueByFieldName(Hzdtf.WorkFlow.Model.Standard.WorkflowInfo,System.String)">
+            <summary>
+            根据字段名获取模型的值
+            </summary>
+            <param name="model">模型</param>
+            <param name="field">字段名</param>
+            <returns>值</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowPersistence.InsertFieldNames">
+            <summary>
+            插入字段名集合
+            </summary>
+            <returns>插入字段名集合</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowPersistence.UpdateFieldNames">
+            <summary>
+            更新字段名称集合
+            </summary>
+            <returns>更新字段名称集合</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowPersistence.AllFieldMapProps">
+            <summary>
+            所有字段映射集合
+            </summary>
+            <returns>所有字段映射集合</returns>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.MySql.Standard.WorkflowDefinePersistence">
+            <summary>
+            工作流定义持久化
+            @ 黄振东
+            </summary>
+            <summary>
+            工作流定义持久化
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowDefinePersistence.SelectByCode(System.String,System.String)">
+            <summary>
+            根据编码查询工作流定义信息
+            </summary>
+            <param name="code">编码</param>
+            <param name="connectionId">连接ID</param>
+            <returns>工作流定义信息</returns>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.MySql.Standard.WorkflowDefinePersistence.Table">
+            <summary>
+            表名
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.WorkflowDefinePersistence.INSERT_FIELD_NAMES">
+            <summary>
+            插入字段名称集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.WorkflowDefinePersistence.UPDATE_FIELD_NAMES">
+            <summary>
+            更新字段名称集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.WorkflowDefinePersistence.FIELD_MAP_PROPS">
+            <summary>
+            所有字段映射集合
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowDefinePersistence.GetValueByFieldName(Hzdtf.WorkFlow.Model.Standard.WorkflowDefineInfo,System.String)">
+            <summary>
+            根据字段名获取模型的值
+            </summary>
+            <param name="model">模型</param>
+            <param name="field">字段名</param>
+            <returns>值</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowDefinePersistence.InsertFieldNames">
+            <summary>
+            插入字段名集合
+            </summary>
+            <returns>插入字段名集合</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowDefinePersistence.UpdateFieldNames">
+            <summary>
+            更新字段名称集合
+            </summary>
+            <returns>更新字段名称集合</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowDefinePersistence.AllFieldMapProps">
+            <summary>
+            所有字段映射集合
+            </summary>
+            <returns>所有字段映射集合</returns>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.MySql.Standard.WorkflowHandlePersistence">
+            <summary>
+            工作流处理持久化
+            @ 黄振东
+            </summary>
+            <summary>
+            工作流处理持久化
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowHandlePersistence.UpdateIsReadedById(Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo,System.String)">
+            <summary>
+            根据ID更新是否已读
+            </summary>
+            <param name="workflowHandle">工作流处理</param>
+            <param name="connectionId">连接ID</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowHandlePersistence.UpdateHandleStatusById(Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo,System.String)">
+            <summary>
+            根据ID更新处理状态
+            </summary>
+            <param name="workflowHandle">工作流处理</param>
+            <param name="connectionId">连接ID</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowHandlePersistence.CountNotFlowCensorshipIdByWorkflowIdAndHandleStatus(System.Int32,Hzdtf.WorkFlow.Model.Standard.HandleStatusEnum,System.Int32,System.String)">
+            <summary>
+            根据工作流ID和处理状态统计个数但排除流程关卡ID
+            </summary>
+            <param name="workflowId">工作流ID</param>
+            <param name="handleStatus">处理状态</param>
+            <param name="notFlowCensorshipId">排除流程关卡ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>个数</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowHandlePersistence.UpdateEfficacyedNotIdByWorkflowIdAndFlowCensorshipId(Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo,System.String)">
+            <summary>
+            根据工作流ID和流程关卡ID更新处理状态为已失效但排除ID
+            </summary>
+            <param name="workflowHandle">工作流处理</param>
+            <param name="connectionId">连接ID</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowHandlePersistence.UpdateEfficacyedNotIdByWorkflowId(Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo,System.String)">
+            <summary>
+            根据工作流ID更新处理状态为已失效但排除ID
+            </summary>
+            <param name="workflowHandle">工作流处理</param>
+            <param name="connectionId">连接ID</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowHandlePersistence.SelectSendedByWorkflowIdAndFlowCensorshipIds(System.Int32,System.Int32[],System.String)">
+            <summary>
+            根据工作流ID和流程关卡ID集合查询已经送件的工作流处理列表
+            </summary>
+            <param name="workflowId">工作流ID</param>
+            <param name="flowCensorshipIds">流程关卡ID集合</param>
+            <param name="connectionId">连接ID</param>
+            <returns>已经送件的工作流处理列表</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowHandlePersistence.CountAuditAndUnhandleByHandleId(System.Int32,System.String)">
+            <summary>
+            根据处理人ID统计审核且未处理的个数
+            </summary>
+            <param name="handlerId">处理人ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>审核中且未处理的个数</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowHandlePersistence.SelectByWorkflowIdAndFlowCensorshipIdAndHandlerId(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            根据工作流ID、流程关卡ID和处理人ID查询工作流处理信息
+            </summary>
+            <param name="workflowId">工作流ID</param>
+            <param name="flowCensorshipId">流程关卡ID</param>
+            <param name="handleId">处理人ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>工作流处理信息</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowHandlePersistence.SelectByWorkflowId(System.Int32,System.String)">
+            <summary>
+            根据工作流ID查询工作流处理信息列表
+            </summary>
+            <param name="workflowId">工作流ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>工作流处理信息列表</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowHandlePersistence.DeleteByWorkflowId(System.Int32,System.String)">
+            <summary>
+            根据工作流ID删除工作流处理信息列表
+            </summary>
+            <param name="workflowId">工作流ID</param>
+            <param name="connectionId">连接ID</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.MySql.Standard.WorkflowHandlePersistence.Table">
+            <summary>
+            表名
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.WorkflowHandlePersistence.INSERT_FIELD_NAMES">
+            <summary>
+            插入字段名称集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.WorkflowHandlePersistence.UPDATE_FIELD_NAMES">
+            <summary>
+            更新字段名称集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.WorkflowHandlePersistence.FIELD_MAP_PROPS">
+            <summary>
+            所有字段映射集合
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowHandlePersistence.GetValueByFieldName(Hzdtf.WorkFlow.Model.Standard.WorkflowHandleInfo,System.String)">
+            <summary>
+            根据字段名获取模型的值
+            </summary>
+            <param name="model">模型</param>
+            <param name="field">字段名</param>
+            <returns>值</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowHandlePersistence.InsertFieldNames">
+            <summary>
+            插入字段名集合
+            </summary>
+            <returns>插入字段名集合</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowHandlePersistence.UpdateFieldNames">
+            <summary>
+            更新字段名称集合
+            </summary>
+            <returns>更新字段名称集合</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.WorkflowHandlePersistence.AllFieldMapProps">
+            <summary>
+            所有字段映射集合
+            </summary>
+            <returns>所有字段映射集合</returns>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.MySql.Standard.FlowPersistence">
+            <summary>
+            流程持久化
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.MySql.Standard.FlowPersistence.Table">
+            <summary>
+            表名
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.FlowPersistence.INSERT_FIELD_NAMES">
+            <summary>
+            插入字段名称集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.FlowPersistence.UPDATE_FIELD_NAMES">
+            <summary>
+            更新字段名称集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.FlowPersistence.FIELD_MAP_PROPS">
+            <summary>
+            所有字段映射集合
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.FlowPersistence.GetValueByFieldName(Hzdtf.WorkFlow.Model.Standard.FlowInfo,System.String)">
+            <summary>
+            根据字段名获取模型的值
+            </summary>
+            <param name="model">模型</param>
+            <param name="field">字段名</param>
+            <returns>值</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.FlowPersistence.InsertFieldNames">
+            <summary>
+            插入字段名集合
+            </summary>
+            <returns>插入字段名集合</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.FlowPersistence.UpdateFieldNames">
+            <summary>
+            更新字段名称集合
+            </summary>
+            <returns>更新字段名称集合</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.FlowPersistence.AllFieldMapProps">
+            <summary>
+            所有字段映射集合
+            </summary>
+            <returns>所有字段映射集合</returns>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.MySql.Standard.FormPersistence">
+            <summary>
+            表单持久化
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.MySql.Standard.FormPersistence.Table">
+            <summary>
+            表名
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.FormPersistence.INSERT_FIELD_NAMES">
+            <summary>
+            插入字段名称集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.FormPersistence.UPDATE_FIELD_NAMES">
+            <summary>
+            更新字段名称集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.FormPersistence.FIELD_MAP_PROPS">
+            <summary>
+            所有字段映射集合
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.FormPersistence.GetValueByFieldName(Hzdtf.WorkFlow.Model.Standard.FormInfo,System.String)">
+            <summary>
+            根据字段名获取模型的值
+            </summary>
+            <param name="model">模型</param>
+            <param name="field">字段名</param>
+            <returns>值</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.FormPersistence.InsertFieldNames">
+            <summary>
+            插入字段名集合
+            </summary>
+            <returns>插入字段名集合</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.FormPersistence.UpdateFieldNames">
+            <summary>
+            更新字段名称集合
+            </summary>
+            <returns>更新字段名称集合</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.FormPersistence.AllFieldMapProps">
+            <summary>
+            所有字段映射集合
+            </summary>
+            <returns>所有字段映射集合</returns>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.MySql.Standard.StandardCensorshipPersistence">
+            <summary>
+            标准关卡持久化
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.MySql.Standard.StandardCensorshipPersistence.Table">
+            <summary>
+            表名
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.StandardCensorshipPersistence.INSERT_FIELD_NAMES">
+            <summary>
+            插入字段名称集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.StandardCensorshipPersistence.UPDATE_FIELD_NAMES">
+            <summary>
+            更新字段名称集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.MySql.Standard.StandardCensorshipPersistence.FIELD_MAP_PROPS">
+            <summary>
+            所有字段映射集合
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.StandardCensorshipPersistence.GetValueByFieldName(Hzdtf.WorkFlow.Model.Standard.StandardCensorshipInfo,System.String)">
+            <summary>
+            根据字段名获取模型的值
+            </summary>
+            <param name="model">模型</param>
+            <param name="field">字段名</param>
+            <returns>值</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.StandardCensorshipPersistence.InsertFieldNames">
+            <summary>
+            插入字段名集合
+            </summary>
+            <returns>插入字段名集合</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.StandardCensorshipPersistence.UpdateFieldNames">
+            <summary>
+            更新字段名称集合
+            </summary>
+            <returns>更新字段名称集合</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MySql.Standard.StandardCensorshipPersistence.AllFieldMapProps">
+            <summary>
+            所有字段映射集合
+            </summary>
+            <returns>所有字段映射集合</returns>
+        </member>
+    </members>
+</doc>

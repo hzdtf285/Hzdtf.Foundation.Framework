@@ -1,0 +1,971 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FEG.Rabbit.Impl.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:FEG.Rabbit.Impl.Standard.ConfigUtil">
+            <summary>
+            配置辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Impl.Standard.ConfigUtil.ConnectionEncryption">
+            <summary>
+            连接加密
+            </summary>
+        </member>
+        <member name="T:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection">
+            <summary>
+            Rabbit自动恢复的连接
+            创建渠道时如果出现过多渠道的异常或在构造方法里指定最大渠道数，如果超过，则会关闭全部的渠道，然后重新创建
+            需要用此恢复功能原生连接必须实现IRabbitChannel接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.ProtoConnection">
+            <summary>
+            原生消息连接
+            </summary>
+        </member>
+        <member name="F:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.maxChannelCount">
+            <summary>
+            最大渠道数
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.Log">
+            <summary>
+            日志
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.#ctor(System.Int32)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="maxChannelCount">最大渠道数</param>
+        </member>
+        <member name="E:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.Closed">
+            <summary>
+            关闭后事件
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.Open">
+            <summary>
+            打开
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.Open(System.String)">
+            <summary>
+            打开
+            </summary>
+            <param name="connectionString">连接字符串</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.Open(FEG.Utility.Standard.Connection.ConnectionInfo)">
+            <summary>
+            打开
+            </summary>
+            <param name="connectionInfo">连接信息</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.Close">
+            <summary>
+            关闭
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.CreateProducer(System.String)">
+            <summary>
+            创建生产者
+            </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <returns>生产者</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.CreateProducer(FEG.MessageQueue.Contract.Standard.MessageQueue.MessageQueueInfo)">
+            <summary>
+            创建生产者
+            </summary>
+            <param name="messageQueueInfo">消息队列信息</param>
+            <returns>生产者</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.CreateProducer(FEG.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+            <summary>
+            创建生产者
+            </summary>
+            <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+            <returns>生产者</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.CreateConsumer(System.String)">
+            <summary>
+            创建消费者
+            </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <returns>消费者</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.CreateConsumer(FEG.MessageQueue.Contract.Standard.MessageQueue.MessageQueueInfo)">
+            <summary>
+            创建消费者
+            </summary>
+            <param name="messageQueueInfo">消息队列信息</param>
+            <returns>消费者</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.CreateConsumer(FEG.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+            <summary>
+            创建消费者
+            </summary>
+            <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+            <returns>消费者</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.CreateRpcClient(System.String)">
+            <summary>
+            创建RPC客户端
+            </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <returns>RPC客户端</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.CreateRpcClient(FEG.MessageQueue.Contract.Standard.MessageQueue.MessageQueueInfo)">
+            <summary>
+            创建RPC客户端
+            </summary>
+            <param name="messageQueueInfo">消息队列信息</param>
+            <returns>RPC客户端</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.CreateRpcClient(FEG.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+            <summary>
+            创建RPC客户端
+            </summary>
+            <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+            <returns>RPC客户端</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.CreateRpcServer(System.String)">
+            <summary>
+            创建RPC服务端
+            </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <returns>RPC服务端</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.CreateRpcServer(FEG.MessageQueue.Contract.Standard.MessageQueue.MessageQueueInfo)">
+            <summary>
+            创建RPC服务端
+            </summary>
+            <param name="messageQueueInfo">消息队列信息</param>
+            <returns>RPC服务端</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.CreateRpcServer(FEG.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+            <summary>
+            创建RPC服务端
+            </summary>
+            <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+            <returns>RPC服务端</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.CreateChannelFromProto``1(System.Func{``0})">
+            <summary>
+            从原生里创建渠道
+            </summary>
+            <typeparam name="T">渠道类型</typeparam>
+            <param name="func">回调功能</param>
+            <returns>渠道</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.ValidateProtoConnIsRabbitChannel">
+            <summary>
+            判断原生连接是否实现IRabbitChannel接口
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.OnClosed(System.Object)">
+            <summary>
+            执行关闭事件
+            </summary>
+            <param name="data">数据</param>
+        </member>
+        <member name="T:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection">
+            <summary>
+            Rabbit连接
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.AppConfig">
+            <summary>
+            应用配置
+            </summary>
+        </member>
+        <member name="F:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.connection">
+            <summary>
+            连接
+            </summary>
+        </member>
+        <member name="F:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.channels">
+            <summary>
+            渠道列表
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.MessageQueueInfoFactory">
+            <summary>
+            消息队列信息工厂
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.CreateProducer(System.String)">
+            <summary>
+            创建生产者
+            </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <returns>生产者</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.CreateProducer(FEG.MessageQueue.Contract.Standard.MessageQueue.MessageQueueInfo)">
+            <summary>
+            创建生产者
+            </summary>
+            <param name="messageQueueInfo">消息队列信息</param>
+            <returns>生产者</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.CreateProducer(FEG.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+            <summary>
+            创建生产者
+            </summary>
+            <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+            <returns>生产者</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.CreateConsumer(System.String)">
+            <summary>
+            创建消费者
+            </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <returns>消费者</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.CreateConsumer(FEG.MessageQueue.Contract.Standard.MessageQueue.MessageQueueInfo)">
+            <summary>
+            创建消费者
+            </summary>
+            <param name="messageQueueInfo">消息队列信息</param>
+            <returns>消费者</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.CreateConsumer(FEG.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+            <summary>
+            创建消费者
+            </summary>
+            <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+            <returns>消费者</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.CreateRpcClient(System.String)">
+            <summary>
+            创建RPC客户端
+            </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <returns>RPC客户端</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.CreateRpcClient(FEG.MessageQueue.Contract.Standard.MessageQueue.MessageQueueInfo)">
+            <summary>
+            创建RPC客户端
+            </summary>
+            <param name="messageQueueInfo">消息队列信息</param>
+            <returns>RPC客户端</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.CreateRpcClient(FEG.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+            <summary>
+            创建RPC客户端
+            </summary>
+            <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+            <returns>RPC客户端</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.CreateRpcServer(System.String)">
+            <summary>
+            创建RPC服务端
+            </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <returns>RPC服务端</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.CreateRpcServer(FEG.MessageQueue.Contract.Standard.MessageQueue.MessageQueueInfo)">
+            <summary>
+            创建RPC服务端
+            </summary>
+            <param name="messageQueueInfo">消息队列信息</param>
+            <returns>RPC服务端</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.CreateRpcServer(FEG.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+            <summary>
+            创建RPC服务端
+            </summary>
+            <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+            <returns>RPC服务端</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.GetChannelCount">
+            <summary>
+            获取渠道数
+            </summary>
+            <returns>渠道数</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.CloseChannels(System.Int32)">
+            <summary>
+            关闭渠道集合
+            </summary>
+            <param name="topCount">前几个要关闭的，如果为-1则表示全部</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.Close">
+            <summary>
+            关闭
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.GetDefaultConnectionString">
+            <summary>
+            获取默认的连接字符串
+            </summary>
+            <returns>默认的连接字符串</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.ExecOpen(FEG.Utility.Standard.Connection.ConnectionInfo)">
+            <summary>
+            执行打开
+            </summary>
+            <param name="connectionInfo">连接信息</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.GetDefaultConnectionStringParse">
+            <summary>
+            获取默认的连接字符串解析器
+            </summary>
+            <returns>默认的连接字符串解析器</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.ValidateOpenParams(FEG.Utility.Standard.Connection.ConnectionInfo)">
+            <summary>
+            验证打开参数
+            </summary>
+            <param name="connectionInfo">连接信息</param>
+            <returns>Rabbit连接信息</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.GetConnectionFactory(FEG.Rabbit.Model.Standard.Connection.RabbitConnectionInfo)">
+            <summary>
+            根据Rabbit连接信息获取连接工厂
+            </summary>
+            <param name="rabbitConnectionInfo">Rabbit连接信息</param>
+            <returns>连接工厂</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.ValidateConnection">
+            <summary>
+            验证连接，如果为null或未打开则抛出异常
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.CreateChannel">
+            <summary>
+            创建渠道并添加到渠道列表里
+            </summary>
+            <returns>渠道</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.ValidateMessageQueueInfoFromConfig(System.String)">
+            <summary>
+            从配置里验证消息队列信息
+            </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <returns>Rabbit消息队列信息</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.AddClosedEventHandler(FEG.Utility.Standard.Release.ICloseable)">
+            <summary>
+            为渠道添加关闭后事件处理
+            </summary>
+            <param name="channel">渠道</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnection.Channel_Closed(System.Object,FEG.Utility.Standard.Data.DataEventArgs)">
+            <summary>
+            渠道关闭后
+            </summary>
+            <param name="o">引发对象</param>
+            <param name="e">对象事件参数</param>
+        </member>
+        <member name="T:FEG.Rabbit.Impl.Standard.Connection.RabbitConnectionStringParse">
+            <summary>
+            Rabbit连接字符串解析器
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnectionStringParse.SetOnlyHaveValue(FEG.Utility.Standard.Connection.ConnectionInfo,System.String,System.String)">
+            <summary>
+            设置独特的值
+            </summary>
+            <param name="connectionInfo">连接信息</param>
+            <param name="name">名称</param>
+            <param name="value">值</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnectionStringParse.ValidateOnlyHaveParams(FEG.Utility.Standard.Connection.ConnectionInfo)">
+            <summary>
+            验证独特的参数集合，如果不通过则抛出对应异常
+            </summary>
+            <param name="connectionInfo">连接信息</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Connection.RabbitConnectionStringParse.CreateConnectionInfo">
+            <summary>
+            创建连接信息
+            </summary>
+            <returns>连接信息</returns>
+        </member>
+        <member name="T:FEG.Rabbit.Impl.Standard.Core.RabbitConsumer">
+            <summary>
+            Rabbit消费者
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Impl.Standard.Core.RabbitConsumer.BytesSerialization">
+            <summary>
+            字节数组序列化，默认为JSON序列化
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Impl.Standard.Core.RabbitConsumer.BusinessExceptionProducer">
+            <summary>
+            业务异常生产者
+            </summary>
+        </member>
+        <member name="F:FEG.Rabbit.Impl.Standard.Core.RabbitConsumer.businessExceptionProducerRouteKey">
+            <summary>
+            业务异常生产者路由Key
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Impl.Standard.Core.RabbitConsumer.BusinessExceptionProducerRouteKey">
+            <summary>
+            业务异常生产者路由Key
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Impl.Standard.Core.RabbitConsumer.BusinessExceptionReturnAck">
+            <summary>
+            业务异常返回应答，默认为false
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitConsumer.#ctor(RabbitMQ.Client.IModel,FEG.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="channel">渠道</param>
+            <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitConsumer.#ctor(RabbitMQ.Client.IModel,FEG.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="channel">渠道</param>
+            <param name="RabbitMessageQueueInfo">Rabbit消息队列信息</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitConsumer.Subscribe(System.Func{System.String,System.Boolean},System.Boolean)">
+            <summary>
+            订阅消息
+            </summary>
+            <param name="receiveMessageFun">接收消息回调</param>
+            <param name="isAutoAck">是否自动应答，如果为否，则需要在回调里返回true</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitConsumer.Subscribe``1(System.Func{``0,System.Boolean},System.Boolean)">
+            <summary>
+            订阅消息
+            </summary>
+            <typeparam name="T">接收类型</typeparam>
+            <param name="receiveMessageFun">接收消息回调</param>
+            <param name="isAutoAck">是否自动应答，如果为否，则需要在回调里返回true</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitConsumer.Subscribe(System.Func{System.Byte[],System.Boolean},System.Boolean)">
+            <summary>
+            订阅消息
+            </summary>
+            <param name="receiveMessageFun">接收消息回调</param>
+            <param name="isAutoAck">是否自动应答，如果为否，则需要在回调里返回true</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitConsumer.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitConsumer.PublishExceptionQueue(System.Exception,System.Object,System.String)">
+            <summary>
+            推送异常队列
+            </summary>
+            <param name="ex">异常</param>
+            <param name="queueMessage">队列消息</param>
+            <param name="desc">描述</param>
+            <returns>是否推送成功</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitConsumer.GetLogTags(FEG.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo)">
+            <summary>
+            获取日志标签集合
+            </summary>
+            <param name="rabbitMessageQueueInfo">Rabbit消息队列信息</param>
+            <returns>日志标签集合</returns>
+        </member>
+        <member name="T:FEG.Rabbit.Impl.Standard.Core.RabbitCoreBase">
+            <summary>
+            Rabbit核心基类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:FEG.Rabbit.Impl.Standard.Core.RabbitCoreBase.channel">
+            <summary>
+            渠道
+            </summary>
+        </member>
+        <member name="F:FEG.Rabbit.Impl.Standard.Core.RabbitCoreBase.rabbitMessageQueueInfo">
+            <summary>
+            Rabbit消息队列信息
+            </summary>
+        </member>
+        <member name="F:FEG.Rabbit.Impl.Standard.Core.RabbitCoreBase.basicProperties">
+            <summary>
+            基本属性集合
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Impl.Standard.Core.RabbitCoreBase.Log">
+            <summary>
+            日志
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Impl.Standard.Core.RabbitCoreBase.AppConfig">
+            <summary>
+            应用配置
+            </summary>
+        </member>
+        <member name="E:FEG.Rabbit.Impl.Standard.Core.RabbitCoreBase.Closed">
+            <summary>
+            关闭后事件
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitCoreBase.#ctor(RabbitMQ.Client.IModel,FEG.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+            <summary>
+            构造方法
+            初始化各个对象以便就绪
+            </summary>
+            <param name="channel">渠道</param>
+            <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitCoreBase.#ctor(RabbitMQ.Client.IModel,FEG.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo)">
+            <summary>
+            构造方法
+            初始化各个对象以便就绪
+            只初始化交换机与基本属性，队列定义请重写Init方法进行操作
+            </summary>
+            <param name="channel">渠道</param>
+            <param name="RabbitMessageQueueInfo">Rabbit消息队列信息</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitCoreBase.Close">
+            <summary>
+            关闭
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitCoreBase.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitCoreBase.OnClosed(System.Object)">
+            <summary>
+            执行关闭事件
+            </summary>
+            <param name="data">数据</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitCoreBase.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitCoreBase.Finalize">
+            <summary>
+            析构方法
+            </summary>
+        </member>
+        <member name="T:FEG.Rabbit.Impl.Standard.Core.RabbitProducer">
+            <summary>
+            Rabbit生产者
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Impl.Standard.Core.RabbitProducer.BytesSerialization">
+            <summary>
+            字节数组序列化，默认为JSON序列化
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitProducer.#ctor(RabbitMQ.Client.IModel,FEG.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="channel">渠道</param>
+            <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitProducer.#ctor(RabbitMQ.Client.IModel,FEG.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="channel">渠道</param>
+            <param name="RabbitMessageQueueInfo">Rabbit消息队列信息</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitProducer.Publish(System.String,System.String)">
+            <summary>
+            发布消息
+            </summary>
+            <param name="message">消息</param>
+            <param name="publishRoutingKey">发布的路由规则</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitProducer.Publish(System.Object,System.String)">
+            <summary>
+            发布消息
+            </summary>
+            <param name="message">消息</param>
+            <param name="publishRoutingKey">发布的路由规则</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitProducer.Publish(System.Byte[],System.String)">
+            <summary>
+            发布消息
+            </summary>
+            <param name="message">消息</param>
+            <param name="publishRoutingKey">发布路由键</param>
+        </member>
+        <member name="T:FEG.Rabbit.Impl.Standard.Core.RabbitRpcClient">
+            <summary>
+            Rabbit RPC客户端
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitRpcClient.#ctor(RabbitMQ.Client.IModel,FEG.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="channel">渠道</param>
+            <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitRpcClient.#ctor(RabbitMQ.Client.IModel,FEG.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="channel">渠道</param>
+            <param name="RabbitMessageQueueInfo">Rabbit消息队列信息</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitRpcClient.Call(System.Byte[])">
+            <summary>
+            调用
+            </summary>
+            <param name="message">消息</param>
+            <returns>返回字节流</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitRpcClient.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="T:FEG.Rabbit.Impl.Standard.Core.RabbitRpcServer">
+            <summary>
+            Rabbit RPC服务端
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitRpcServer.#ctor(RabbitMQ.Client.IModel,FEG.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="channel">渠道</param>
+            <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitRpcServer.#ctor(RabbitMQ.Client.IModel,FEG.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="channel">渠道</param>
+            <param name="RabbitMessageQueueInfo">Rabbit消息队列信息</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitRpcServer.Receive(System.Func{System.Byte[],System.Byte[]})">
+            <summary>
+            接收消息
+            </summary>
+            <param name="receiveMessageFun">接收消息回调</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitRpcServer.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="T:FEG.Rabbit.Impl.Standard.Core.RabbitSimpleRpcServer">
+            <summary>
+            Rabbit简单 RPC服务端
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:FEG.Rabbit.Impl.Standard.Core.RabbitSimpleRpcServer.log">
+            <summary>
+            日志
+            </summary>
+        </member>
+        <member name="F:FEG.Rabbit.Impl.Standard.Core.RabbitSimpleRpcServer.receiveMessageFun">
+            <summary>
+            接收消息回调
+            </summary>
+        </member>
+        <member name="F:FEG.Rabbit.Impl.Standard.Core.RabbitSimpleRpcServer.returnClientMessage">
+            <summary>
+            返回客户端消息
+            </summary>
+        </member>
+        <member name="F:FEG.Rabbit.Impl.Standard.Core.RabbitSimpleRpcServer.thisName">
+            <summary>
+            本身名称
+            </summary>
+        </member>
+        <member name="F:FEG.Rabbit.Impl.Standard.Core.RabbitSimpleRpcServer.thisFullName">
+            <summary>
+            本身全名称
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitSimpleRpcServer.#ctor(RabbitMQ.Client.MessagePatterns.Subscription,System.Func{System.Byte[],System.Byte[]},FEG.Logger.Contract.Standard.ILogable)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="subscription">消费</param>
+            <param name="log">日志</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitSimpleRpcServer.HandleSimpleCall(System.Boolean,RabbitMQ.Client.IBasicProperties,System.Byte[],RabbitMQ.Client.IBasicProperties@)">
+            <summary>
+            执行完成后进行回调
+            </summary>
+            <param name="isRedelivered">是否传递</param>
+            <param name="requestProperties">请求属性</param>
+            <param name="body">由客户端发送过来的字节流</param>
+            <param name="replyProperties">回复属性</param>
+            <returns>需要返回给客户端的字节流</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.Core.RabbitSimpleRpcServer.ProcessRequest(RabbitMQ.Client.Events.BasicDeliverEventArgs)">
+            <summary>
+            进行处理
+            </summary>
+            <param name="evt">基本传递事件参数</param>
+        </member>
+        <member name="T:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase">
+            <summary>
+            Rabbit消息队列基类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.Reader(System.String)">
+            <summary>
+            根据队列读取消息队列信息
+            </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.ReaderAll">
+            <summary>
+            读取全部消息队列信息列表
+            </summary>
+            <returns>全部消息队列信息列表</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.ReaderByExchange(System.String)">
+            <summary>
+            根据交换机获取消息队列信息
+            </summary>
+            <param name="exchange">交换机</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.ReaderByQueue(System.String)">
+            <summary>
+            根据队列获取消息队列信息
+            </summary>
+            <param name="queue">队列</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.ReaderByExchangeAndQueue(System.String,System.String)">
+            <summary>
+            根据交换机和队列获取消息队列信息
+            </summary>
+            <param name="exchange">交换机</param>
+            <param name="queue">队列</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.QueryExchangeInfosFromSource">
+            <summary>
+            从源头查询交换机信息列表
+            </summary>
+            <returns>交换机信息列表</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.Trans(System.Collections.Generic.IList{FEG.Rabbit.Model.Standard.MessageQueue.RabbitExchangeInfo})">
+            <summary>
+            将交换机信息列表转换为消息队列信息列表
+            </summary>
+            <param name="exchanges">交换机信息列表</param>
+            <returns>消息队列信息列表</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.CreateBasicProps(FEG.Rabbit.Model.Standard.MessageQueue.RabbitExchangeInfo)">
+            <summary>
+            创建消息队列信息并赋基本值
+            </summary>
+            <param name="rabbitExchangeInfo">Rabbit交换机信息</param>
+            <returns>Rabbit消息队列信息</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.GetMessagQueueInfoByCondition(System.Func{FEG.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo,System.Boolean})">
+            <summary>
+            根据条件获取消息队列信息
+            </summary>
+            <param name="func">回调条件</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="T:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache">
+            <summary>
+            Rabbit消息队列缓存
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.ProtoMessageQueueReader">
+            <summary>
+            原生消息队列读取
+            </summary>
+        </member>
+        <member name="F:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.dicCaches">
+            <summary>
+            缓存键（以队列名为键）
+            </summary>
+        </member>
+        <member name="F:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.syncDicCaches">
+            <summary>
+            同步缓存键
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.Reader(System.String)">
+            <summary>
+            根据队列读取消息队列信息
+            </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.ReaderAll">
+            <summary>
+            读取全部消息队列信息列表
+            </summary>
+            <returns>全部消息队列信息列表</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.ReaderByExchange(System.String)">
+            <summary>
+            根据交换机获取消息队列信息
+            </summary>
+            <param name="exchange">交换机</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.ReaderByQueue(System.String)">
+            <summary>
+            根据队列获取消息队列信息
+            </summary>
+            <param name="queue">队列</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.ReaderByExchangeAndQueue(System.String,System.String)">
+            <summary>
+            根据交换机和队列获取消息队列信息
+            </summary>
+            <param name="exchange">交换机</param>
+            <param name="queue">队列</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.GetCache">
+            <summary>
+            获取缓存对象
+            </summary>
+            <returns>缓存对象</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.GetSyncCache">
+            <summary>
+            获取同步缓存对象
+            </summary>
+            <returns>同步缓存对象</returns>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.GetMessagQueueInfoByCondition(System.Func{FEG.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo,System.Boolean})">
+            <summary>
+            根据条件获取消息队列信息
+            </summary>
+            <param name="func">回调条件</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="T:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueJson">
+            <summary>
+            Rabbit消息队列JSON
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueJson.jsonFileName">
+            <summary>
+            JSON文件名
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueJson.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueJson.#ctor(System.String)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="jsonFileName">JSON文件名</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueJson.QueryExchangeInfosFromSource">
+            <summary>
+            从源头查询交换机信息列表
+            </summary>
+            <returns>交换机信息列表</returns>
+        </member>
+        <member name="T:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueInfoConfigFactory">
+            <summary>
+            Rabbit消息队列信息配置工厂
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueInfoConfigFactory.MessageQueueReader">
+            <summary>
+            消息队列读取
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueInfoConfigFactory.Create(System.String)">
+            <summary>
+            创建消息队列信息
+            </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="T:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueXml">
+            <summary>
+            Rabbit消息队列XML
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueXml.xmlDoc">
+            <summary>
+            XML文档
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueXml.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueXml.#ctor(System.String)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="xmlFileName">XML文件名</param>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueXml.QueryExchangeInfosFromSource">
+            <summary>
+            从源头查询交换机信息列表
+            </summary>
+            <returns>交换机信息列表</returns>
+        </member>
+        <member name="T:FEG.Rabbit.Impl.Standard.RabbitConnectionFactory">
+            <summary>
+            Rabbit连接工厂
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:FEG.Rabbit.Impl.Standard.RabbitConnectionFactory.CreateAndOpen(System.String,System.String,FEG.Utility.Standard.Enums.DataContentType)">
+            <summary>
+            创建连接且打开
+            </summary>
+            <param name="connectionStringConfigName">连接字符串配置名称</param>
+            <param name="messageQueueFilePath">消息队列文件路径</param>
+            <param name="dataContentType">数据内容类型。只支持JSON和XML</param>
+            <returns>连接</returns>
+        </member>
+    </members>
+</doc>

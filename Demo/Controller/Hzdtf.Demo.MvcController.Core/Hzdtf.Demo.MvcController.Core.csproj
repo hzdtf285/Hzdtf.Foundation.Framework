@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Controller\Hzdtf.BasicController.Core\Hzdtf.BasicController.Core.csproj" />
+    <ProjectReference Include="..\..\..\WorkFlow\Controller\Hzdtf.WorkFlow.MvcController.Core\Hzdtf.WorkFlow.MvcController.Core.csproj" />
+    <ProjectReference Include="..\..\..\WorkFlow\Service\Hzdtf.WorkFlow.Service.Contract.Standard\Hzdtf.WorkFlow.Service.Contract.Standard.csproj" />
+    <ProjectReference Include="..\..\Service\Hzdtf.Demo.Service.Contract.Standard\Hzdtf.Demo.Service.Contract.Standard.csproj" />
+  </ItemGroup>
+
+</Project>

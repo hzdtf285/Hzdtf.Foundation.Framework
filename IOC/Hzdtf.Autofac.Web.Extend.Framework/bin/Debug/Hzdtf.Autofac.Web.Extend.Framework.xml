@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.Autofac.Web.Extend.Framework</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.Autofac.Web.Extend.Framework.MvcContainerBuilderExtend">
+            <summary>
+            MVC容器生成器扩展类
+            引用MVC5
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Autofac.Web.Extend.Framework.MvcContainerBuilderExtend.UnifiedRegisterAssemblysForMvc5(Autofac.ContainerBuilder,Hzdtf.Autofac.Web.Extend.Framework.WebBuilderParam)">
+            <summary>
+            统一注册MVC及服务程序集
+            </summary>
+            <param name="containerBuilder">容器生成器</param>
+            <param name="param">参数</param>
+            <returns>容器</returns>
+        </member>
+        <member name="T:Hzdtf.Autofac.Web.Extend.Framework.WebApiContainerBuilderExtend">
+            <summary>
+            WebApi容器生成器扩展类
+            引入的是WebApi2
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Autofac.Web.Extend.Framework.WebApiContainerBuilderExtend.UnifiedRegisterAssemblysForWebApi2(Autofac.ContainerBuilder,System.Web.Http.HttpConfiguration,Hzdtf.Autofac.Web.Extend.Framework.WebBuilderParam)">
+            <summary>
+            为WebApi2统一注册MVC及服务程序集
+            WebApi2用于MVC5以上
+            </summary>
+            <param name="containerBuilder">容器生成器</param>
+            <param name="param">参数</param>
+            <returns>容器</returns>
+        </member>
+        <member name="T:Hzdtf.Autofac.Web.Extend.Framework.WebAutofacTool">
+            <summary>
+            Web Autofac工具
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Autofac.Web.Extend.Framework.WebAutofacTool.HttpDependencyResolver">
+            <summary>
+            Http注入解析器
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Autofac.Web.Extend.Framework.WebAutofacTool.MvcDependencyResolver">
+            <summary>
+            Mvc注入解析器
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Autofac.Web.Extend.Framework.WebAutofacTool.GetHttpService(System.Type)">
+            <summary>
+            获取Http服务
+            </summary>
+            <param name="type">类型</param>
+            <returns>服务</returns>
+        </member>
+        <member name="M:Hzdtf.Autofac.Web.Extend.Framework.WebAutofacTool.GetMvcService(System.Type)">
+            <summary>
+            获取Mvc服务
+            </summary>
+            <param name="type">类型</param>
+            <returns>服务</returns>
+        </member>
+        <member name="T:Hzdtf.Autofac.Web.Extend.Framework.WebBuilderParam">
+            <summary>
+            Web生成参数
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Autofac.Web.Extend.Framework.WebBuilderParam.AssemblyControllers">
+            <summary>
+            程序集控制器集合
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Autofac.Web.Extend.Framework.WebBuilderParam.RegisteringControllerAction">
+            <summary>
+            注册中服务动作
+            </summary>
+        </member>
+    </members>
+</doc>
