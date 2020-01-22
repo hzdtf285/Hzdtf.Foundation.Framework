@@ -57,9 +57,9 @@ namespace Hzdtf.Utility.Standard.Safety
 
                 return Convert.ToBase64String(ms.ToArray());
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                throw e;
+                throw new Exception(ex.Message, ex);
             }
             finally
             {
