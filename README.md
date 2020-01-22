@@ -1,7 +1,7 @@
 # Hzdtf.FoundationFramework
 基础框架系统，支持.NET和.NET Core平台，语言：C#，DB支持MySql和SqlServer，主要功能有抽象持久化、服务层，将业务基本的增删改查抽离复用；提供代码生成器从DB生成实体、持久化、服务以及MVC控制器，每层依赖接口，并需要在客户端将对应实现层用Autofac程序集依赖注入，用AOP提供日志跟踪、事务、模型验证等。对Autofac、Redis、RabbitMQ封装扩展；DB访问提供自动主从访问，Redis客户端分区。特别适合管理系统。
 
-本框架必须运行在.NET Standard 2.0、.NET Framework 4.6.1和.NET Core 2.2以上。下载源码用Visual Studio 2017打开。
+本框架必须运行在.NET Standard 2.0、.NET Framework 4.6.1和.NET Core 2.2（包含3.0）以上。下载源码用Visual Studio 2017/2019打开。
 工程以Standard或Std结尾是标准库，以Framework或Frm结尾为Framework库，以Core结尾为Core库。
 初始编译时会耗些时间，因为要从nuget下载包。
 框架使用依赖接口注入，使用对象要优先依赖接口，用Autofac属性注入方式。
@@ -41,10 +41,12 @@ DI与AOP的扩展功能，目前只实现Autofac扩展。提供了读入配置�
 使用时必须要IConnectionMultiplexerManager得到Database，否则框架扩展的功能都使用不上。
 
 2、扩展了针对对象存储到Redis的Hash类型，在ObjectSet(this IDatabase db, RedisKey key, object value, TimeSpan? expiry = null)里。
-3、扩展了针对分布式锁的功能，在LockTake(this IDatabase db, RedisKey key, RedisValue value, TimeSpan expiry, Action action, int retryIntervalMillisecond = 200)
+3、扩展了针对分布式锁的功能（轮询模式），在LockTake(this IDatabase db, RedisKey key, Action action, int retryIntervalMillisecond = 200)
+4、扩展了针对分布式锁的功能（发布订阅模式，推荐使用），在 LockTake(this IConnectionMultiplexer connectionMultiplexer, RedisKey key, Action action, int timeoutMilliSecond = 5000)
 
 九、MessageQueue包
-对消息队列进行扩展封装，目前只实现了RabbitMQ，核心都在rabbitMessageQueue.xml配置文件里，使用生产者或消费者，输入对应参数，会找这个配置文件找到对应的交换机和队列名。具体参考DEMO。
+1、对消息队列进行扩展封装，目前只实现了RabbitMQ，核心都在rabbitMessageQueue.xml配置文件里，使用生产者或消费者，输入对应参数，会找这个配置文件找到对应的交换机和队列名。具体参考DEMO。
+2、利用RabbitMQ对RPC进行封装，并巧妙使用了DispatchProxy代理类，使调用方使用调用远程，就像调用本地方法一样，具体参考RPC DEMO。
 
 十、Persistence包
 1、对持久化操作进行封装，包含一个表的基本增删改查（包括分页查）功能，并支持异步操作。此持久化依赖于Dapper组件。
