@@ -17,7 +17,7 @@ namespace Hzdtf.Rabbit.Model.Standard.MessageQueue
         /// <summary>
         /// 名称
         /// </summary>
-        [JsonProperty("name", DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty("name")]
         [Key("name")]
         public string Name
         {
@@ -28,7 +28,7 @@ namespace Hzdtf.Rabbit.Model.Standard.MessageQueue
         /// <summary>
         /// 类型
         /// </summary>
-        [JsonProperty("type", DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty("type")]
         [Key("type")]
         public string Type
         {
@@ -39,7 +39,7 @@ namespace Hzdtf.Rabbit.Model.Standard.MessageQueue
         /// <summary>
         /// 持久化
         /// </summary>
-        [JsonProperty("persistent", DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty("persistent")]
         [Key("persistent")]
         public bool Persistent
         {
@@ -50,7 +50,7 @@ namespace Hzdtf.Rabbit.Model.Standard.MessageQueue
         /// <summary>
         /// 队列集合
         /// </summary>
-        [JsonProperty("queues", DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty("queues")]
         [Key("queues")]
         public IList<RabbitQueueModel> Queues
         {
@@ -68,7 +68,7 @@ namespace Hzdtf.Rabbit.Model.Standard.MessageQueue
         /// <summary>
         /// 名称
         /// </summary>
-        [JsonProperty("name", DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty("name")]
         [Key("name")]
         public string Name
         {
@@ -90,7 +90,7 @@ namespace Hzdtf.Rabbit.Model.Standard.MessageQueue
         /// <summary>
         /// 自动删除队列
         /// </summary>
-        [JsonProperty("autoDelQueue", DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty("autoDelQueue")]
         [Key("autoDelQueue")]
         public bool AutoDelQueue
         {
@@ -101,7 +101,7 @@ namespace Hzdtf.Rabbit.Model.Standard.MessageQueue
         /// <summary>
         /// 接收质量数
         /// </summary>
-        [JsonProperty("qos", DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty("qos")]
         [Key("qos")]
         public ushort? Qos
         {

@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using MessagePack;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,6 +10,7 @@ namespace Hzdtf.Utility.Standard.Language
     /// 语系信息
     /// @ 黄振东
     /// </summary>
+    [MessagePackObject]
     public class LanguageInfo
     {
         /// <summary>
@@ -29,6 +31,8 @@ namespace Hzdtf.Utility.Standard.Language
         /// <summary>
         /// 键
         /// </summary>
+        [JsonProperty("key")]
+        [MessagePack.Key("key")]
         public string Key
         {
             get;
@@ -39,6 +43,7 @@ namespace Hzdtf.Utility.Standard.Language
         /// 简体中文
         /// </summary>
         [JsonProperty("zh-CN")]
+        [MessagePack.Key("zh-CN")]
         public string ZH_CN
         {
             get;
@@ -49,6 +54,7 @@ namespace Hzdtf.Utility.Standard.Language
         /// 繁体中文
         /// </summary>
         [JsonProperty("zh-TW")]
+        [MessagePack.Key("zh-TW")]
         public string ZH_TW
         {
             get;
@@ -59,6 +65,7 @@ namespace Hzdtf.Utility.Standard.Language
         /// 英文
         /// </summary>
         [JsonProperty("en-US")]
+        [MessagePack.Key("en-US")]
         public string EN_US
         {
             get;
