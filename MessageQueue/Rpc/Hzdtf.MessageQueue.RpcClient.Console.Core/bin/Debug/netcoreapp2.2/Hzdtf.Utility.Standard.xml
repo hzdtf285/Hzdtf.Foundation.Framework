@@ -1642,6 +1642,19 @@
             </summary>
             <param name="eventData">事件数据</param>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.Factory.IGeneralFactory`1">
+            <summary>
+            普通工厂接口
+            @ 黄振东
+            </summary>
+            <typeparam name="ProductT">产品类型</typeparam>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Factory.IGeneralFactory`1.Create">
+            <summary>
+            创建
+            </summary>
+            <returns>产品</returns>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Factory.ISimpleFactory`2">
             <summary>
             简单工厂接口

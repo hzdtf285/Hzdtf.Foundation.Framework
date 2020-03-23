@@ -1,5 +1,6 @@
 ﻿using Hzdtf.Logger.Contract.Standard;
 using Hzdtf.Utility.Standard.Data;
+using Hzdtf.Utility.Standard.Factory;
 using Hzdtf.Utility.Standard.ProcessCall;
 using System;
 using System.Collections.Generic;
@@ -14,9 +15,9 @@ namespace Hzdtf.MessageQueue.Contract.Standard
     public static class MessageQueueConfig
     {
         /// <summary>
-        /// RPC客户端
+        /// RPC客户端工厂
         /// </summary>
-        public static IRpcClient RpcClient
+        public static IGeneralFactory<IRpcClient> RpcClientFactory
         {
             get;
             set;

@@ -9,7 +9,7 @@ namespace Hzdtf.Utility.Standard.ProcessCall
     /// RPC服务端接口
     /// @ 黄振东
     /// </summary>
-    public interface IRpcServer : ICloseable
+    public interface IRpcServer : ICloseable, IDisposable
     {
         /// <summary>
         /// 接收消息

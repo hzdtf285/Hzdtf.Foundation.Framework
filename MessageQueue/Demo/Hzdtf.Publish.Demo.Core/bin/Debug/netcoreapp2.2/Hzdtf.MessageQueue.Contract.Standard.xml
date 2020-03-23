@@ -343,9 +343,9 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="P:Hzdtf.MessageQueue.Contract.Standard.MessageQueueConfig.RpcClient">
+        <member name="P:Hzdtf.MessageQueue.Contract.Standard.MessageQueueConfig.RpcClientFactory">
             <summary>
-            RPC客户端
+            RPC客户端工厂
             </summary>
         </member>
         <member name="P:Hzdtf.MessageQueue.Contract.Standard.MessageQueueConfig.BytesSerialization">

@@ -38,7 +38,7 @@ namespace Hzdtf.MessageQueue.RpcClient.Console.Core.AppStart
             });
             PlatformTool.AppConfig = AutofacTool.Resolve<IAppConfiguration>();
 
-            MessageQueueConfig.RpcClient = SingleConnectionTool.Connection.CreateRpcClient("RpcServiceQueue");
+            MessageQueueConfig.RpcClientFactory = new RpcClientFactory();
             MessageQueueConfig.BytesSerialization = AutofacTool.Resolve<IBytesSerialization>();
             MessageQueueConfig.Log = AutofacTool.Resolve<ILogable>();
         }

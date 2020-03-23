@@ -41,7 +41,13 @@ namespace Hzdtf.MessageQueue.Contract.Standard.Core
                 MethodParams = args
             };
 
-            var resultBytes = MessageQueueConfig.RpcClient.Call(MessageQueueConfig.BytesSerialization.Serialize(rpcData));
+            var inBytes = MessageQueueConfig.BytesSerialization.Serialize(rpcData);
+
+            byte[] resultBytes = null;
+            using (var rpcClient = MessageQueueConfig.RpcClientFactory.Create())
+            {
+                resultBytes = rpcClient.Call(inBytes);
+            }
 
             // 如果返回值是空或者类型是void，则直接返回null
             if (resultBytes.IsNullOrLength0() || targetMethod.ReturnType.IsTypeVoid())
