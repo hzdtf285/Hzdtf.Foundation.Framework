@@ -1896,6 +1896,56 @@
             </summary>
             <param name="cultureName">语言文化名称</param>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.LoadBalance.ILoadBalance`1">
+            <summary>
+            负载均衡接口
+            @ 黄振东
+            </summary>
+            <typeparam name="T">类型</typeparam>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.LoadBalance.ILoadBalance`1.Resolve(`0[])">
+            <summary>
+            解析
+            </summary>
+            <param name="array">数组</param>
+            <returns>元素</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.LoadBalance.PollingLoadBalance`1">
+            <summary>
+            轮询负载均衡
+            </summary>
+            <typeparam name="T">类型</typeparam>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.LoadBalance.PollingLoadBalance`1.index">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.LoadBalance.PollingLoadBalance`1.Resolve(`0[])">
+            <summary>
+            解析
+            </summary>
+            <param name="array">数组</param>
+            <returns>元素</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.LoadBalance.RandomLoadBalance`1">
+            <summary>
+            随机负载均衡
+            </summary>
+            <typeparam name="T">类型</typeparam>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.LoadBalance.RandomLoadBalance`1.random">
+            <summary>
+            随机
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.LoadBalance.RandomLoadBalance`1.Resolve(`0[])">
+            <summary>
+            解析
+            </summary>
+            <param name="array">数组</param>
+            <returns>元素</returns>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Model.BasicPermissionInfo">
             <summary>
             基本权限信息

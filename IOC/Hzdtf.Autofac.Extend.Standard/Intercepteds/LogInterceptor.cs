@@ -96,7 +96,7 @@ namespace Hzdtf.Autofac.Extend.Standard.Intercepteds
                 FilterReturnValue(invocation, null);
 
                 string returnValLog = null;
-                if (logAttr == null || !logAttr.IgnoreParamValues)
+                if (logAttr == null || !logAttr.IgnoreParamReturn)
                 {
                     returnValLog = $"ReturnValue:{invocation.ReturnValue},";
                 }
