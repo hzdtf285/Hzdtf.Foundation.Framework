@@ -1913,6 +1913,7 @@
         <member name="T:Hzdtf.Utility.Standard.LoadBalance.PollingLoadBalance`1">
             <summary>
             轮询负载均衡
+            @ 黄振东
             </summary>
             <typeparam name="T">类型</typeparam>
         </member>
@@ -1931,6 +1932,7 @@
         <member name="T:Hzdtf.Utility.Standard.LoadBalance.RandomLoadBalance`1">
             <summary>
             随机负载均衡
+            @ 黄振东
             </summary>
             <typeparam name="T">类型</typeparam>
         </member>
@@ -3171,6 +3173,52 @@
             <param name="iv">向量</param>
             <returns>解密后的字符串</returns>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.Safety.HashUtil">
+            <summary>
+            哈希辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Safety.HashUtil.ConsistentHash(System.Byte[])">
+            <summary>
+            一致性哈希取余数
+            </summary>
+            <param name="digest">字节数组</param>
+            <returns>哈希值</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Safety.HashUtil.ConsistentHashMD5(System.String)">
+            <summary>
+            一致性哈希取余数(MD5)
+            </summary>
+            <param name="text">文本</param>
+            <returns>哈希值</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Safety.IHash">
+            <summary>
+            哈希接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Safety.IHash.GenerateHashCode(System.String)">
+            <summary>
+            生成哈希值
+            </summary>
+            <param name="key">键</param>
+            <returns>哈希值</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Safety.MD5Hash">
+            <summary>
+            MD5哈希
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Safety.MD5Hash.GenerateHashCode(System.String)">
+            <summary>
+            生成哈希值
+            </summary>
+            <param name="key">键</param>
+            <returns>哈希值</returns>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Safety.MD5Util">
             <summary>
             MD5辅助类
@@ -3192,6 +3240,13 @@
             <param name="plaintext">明文</param>
             <param name="isToLower">是否转换为小写</param>
             <returns>密文</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Safety.MD5Util.GenerateMD5Bytes(System.String)">
+            <summary>
+            MD5流加密输出字节数组
+            </summary>
+            <param name="text">文本</param>
+            <returns>字节数组</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Safety.SignUtil">
             <summary>

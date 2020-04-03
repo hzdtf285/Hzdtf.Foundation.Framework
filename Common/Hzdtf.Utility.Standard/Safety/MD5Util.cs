@@ -54,5 +54,20 @@ namespace Hzdtf.Utility.Standard.Safety
 
             return result;
         }
+
+        /// <summary>
+        /// MD5流加密输出字节数组
+        /// </summary>
+        /// <param name="text">文本</param>
+        /// <returns>字节数组</returns>
+        public static byte[] GenerateMD5Bytes(string text)
+        {
+            using (var mi = MD5.Create())
+            {
+                byte[] buffer = Encoding.Default.GetBytes(text);
+                //开始加密
+                return mi.ComputeHash(buffer);
+            }
+        }
     }
 }

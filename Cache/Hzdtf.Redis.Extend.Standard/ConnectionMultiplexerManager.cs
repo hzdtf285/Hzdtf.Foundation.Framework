@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Hzdtf.Utility.Standard.Utils;
+using Hzdtf.Utility.Standard.Safety;
 
 namespace Hzdtf.Redis.Extend.Standard
 {
@@ -37,6 +38,15 @@ namespace Hzdtf.Redis.Extend.Standard
         /// 同步连接转接器字典
         /// </summary>
         private static readonly object syncDicConnMultis = new object();
+
+        /// <summary>
+        /// 哈希
+        /// </summary>
+        public IHash Hash
+        {
+            get;
+            set;
+        }
 
         #endregion
 
@@ -109,7 +119,7 @@ namespace Hzdtf.Redis.Extend.Standard
                 return conns[0];
             }
 
-            return conns[key.GetHashCode() % conns.Length];
+            return conns[Hash.GenerateHashCode(key) % conns.Length];
         }
 
         /// <summary>

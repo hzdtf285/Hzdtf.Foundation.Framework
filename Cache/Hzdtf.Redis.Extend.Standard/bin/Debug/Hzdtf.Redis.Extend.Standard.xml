@@ -65,6 +65,11 @@
             同步连接转接器字典
             </summary>
         </member>
+        <member name="P:Hzdtf.Redis.Extend.Standard.ConnectionMultiplexerManager.Hash">
+            <summary>
+            哈希
+            </summary>
+        </member>
         <member name="M:Hzdtf.Redis.Extend.Standard.ConnectionMultiplexerManager.GetDatabase(Hzdtf.Utility.Standard.Enums.AccessMode,System.Int32,System.String)">
             <summary>
             获取数据库
