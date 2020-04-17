@@ -95,5 +95,3 @@ public IUserService UserService
 }
 直接拿来使用，如要手工获取，则使用AutofacTool.Resolve<对象类型>()。
 5、程序启动时，必须先加载依赖注入的对象，具体参考DEMO。
-
-概括介绍基本功能远不足于完全描述框架的功能，一切看源码，运行DEMO，问题自然迎刃而解。框架曾分别部署到Windows与Linux（centos7)运行，暂无发现问题。如有更好的改进也可私信我：hzdtf285@126.com，有利于改善框架都无限感激！
