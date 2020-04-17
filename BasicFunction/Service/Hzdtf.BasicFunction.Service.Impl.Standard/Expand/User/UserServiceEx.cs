@@ -352,8 +352,6 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
 
                 if (result.Enabled)
                 {
-                    result.Password = null;                 
-
                     returnInfo.Data = result;
                     reInfo.SetSuccessMsg("登录成功");
 
