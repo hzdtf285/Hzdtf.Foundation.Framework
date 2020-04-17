@@ -359,8 +359,6 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
 
                     result.Memo = result.Password = result.Modifier = result.Creater = null;
 
-                    
-
                     Log.InfoAsync($"登录ID:{result.LoginId},用户编号:{result.Code},名称:{result.Name} 成功授权",
                         null, typeof(UserService).Name);
                 }
