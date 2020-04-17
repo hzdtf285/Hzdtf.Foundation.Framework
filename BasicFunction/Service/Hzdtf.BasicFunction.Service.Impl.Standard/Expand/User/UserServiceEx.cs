@@ -336,7 +336,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="user">用户</param>
         /// <param name="password">密码</param>
         /// <returns>返回信息</returns>
-        [Log(IgnoreParamValues = true)]
+        [ProcTrackLog(IgnoreParamValues = true)]
         public virtual ReturnInfo<BasicUserInfo> Accredit([DisplayName2("用户"), Required] string user, [DisplayName2("密码"), Required] string password)
         {
             ReturnInfo<BasicUserInfo> returnInfo = new ReturnInfo<BasicUserInfo>();

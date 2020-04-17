@@ -100,27 +100,6 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="T:Hzdtf.Utility.Standard.Attr.LogAttribute">
-            <summary>
-            日志特性
-            @ 黄振东
-            </summary>
-        </member>
-        <member name="P:Hzdtf.Utility.Standard.Attr.LogAttribute.ExecProc">
-            <summary>
-            是否记录执行过程
-            </summary>
-        </member>
-        <member name="P:Hzdtf.Utility.Standard.Attr.LogAttribute.IgnoreParamValues">
-            <summary>
-            忽略参数值
-            </summary>
-        </member>
-        <member name="P:Hzdtf.Utility.Standard.Attr.LogAttribute.IgnoreParamReturn">
-            <summary>
-            忽略返回值
-            </summary>
-        </member>
         <member name="T:Hzdtf.Utility.Standard.Attr.MenuAttribute">
             <summary>
             菜单特性

@@ -38,3 +38,4 @@ D:\MyProject\Hzdtf.Foundation.Framework\Hzdtf.Foundation.Framework\Common\Hzdtf.
 D:\MyProject\Hzdtf.Foundation.Framework\Hzdtf.Foundation.Framework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.AssemblyInfo.cs
 D:\MyProject\Hzdtf.Foundation.Framework\Hzdtf.Foundation.Framework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.dll
 D:\MyProject\Hzdtf.Foundation.Framework\Hzdtf.Foundation.Framework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.pdb
+D:\MyProject\Hzdtf.Foundation.Framework\Hzdtf.Foundation.Framework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.csprojAssemblyReference.cache
