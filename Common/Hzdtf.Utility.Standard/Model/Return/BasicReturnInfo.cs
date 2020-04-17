@@ -30,6 +30,22 @@ namespace Hzdtf.Utility.Standard.Model.Return
         public const int DEFAULT_FAILURE_CODE = -1;
 
         /// <summary>
+        /// 是否转换为JSON
+        /// </summary>
+        private readonly bool isToJsonString;
+
+        /// <summary>
+        /// 构造方法
+        /// </summary>
+        public BasicReturnInfo() : this(true) { }
+
+        /// <summary>
+        /// 构造方法
+        /// </summary>
+        /// <param name="isToJsonString">是否转换为JSON</param>
+        public BasicReturnInfo(bool isToJsonString) { this.isToJsonString = isToJsonString; }
+
+        /// <summary>
         /// 编码
         /// </summary>
         [JsonProperty("code")]
@@ -122,7 +138,10 @@ namespace Hzdtf.Utility.Standard.Model.Return
         /// 转换为字符串
         /// </summary>
         /// <returns>字符串</returns>
-        public override string ToString() => JsonUtil.SerializeIgnoreNull(this);
+        public override string ToString()
+        {
+            return isToJsonString ? JsonUtil.SerializeIgnoreNull(this) : base.ToString();
+        }
 
         /// <summary>
         /// 抛出异常

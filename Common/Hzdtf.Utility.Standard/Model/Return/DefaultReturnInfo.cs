@@ -28,5 +28,16 @@ namespace Hzdtf.Utility.Standard.Model.Return
         {
             return type != null ? BASIC_FULL_NAME.Equals(type.FullName) : false;
         }
+
+        /// <summary>
+        /// 构造方法
+        /// </summary>
+        public DefaultReturnInfo() { }
+
+        /// <summary>
+        /// 构造方法
+        /// </summary>
+        /// <param name="isToJsonString">是否转换为JSON</param>
+        public DefaultReturnInfo(bool isToJsonString) : base(isToJsonString) { }
     }
 }

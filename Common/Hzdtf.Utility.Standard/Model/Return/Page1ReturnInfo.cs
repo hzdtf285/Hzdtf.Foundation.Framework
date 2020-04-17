@@ -26,7 +26,7 @@ namespace Hzdtf.Utility.Standard.Model.Return
         /// 列表行
         /// </summary>
         [JsonProperty("rows")]
-        [Key("rows")]
+        [MessagePack.Key("rows")]
         public IList<RowT> Rows
         {
             get;
@@ -37,7 +37,7 @@ namespace Hzdtf.Utility.Standard.Model.Return
         /// 页码（从1开始）
         /// </summary>
         [JsonProperty("page")]
-        [Key("page")]
+        [MessagePack.Key("page")]
         public int Page
         {
             get;
@@ -48,7 +48,7 @@ namespace Hzdtf.Utility.Standard.Model.Return
         /// 每页记录数
         /// </summary>
         [JsonProperty("pageSize")]
-        [Key("pageSize")]
+        [MessagePack.Key("pageSize")]
         public int PageSize
         {
             get;
@@ -59,7 +59,7 @@ namespace Hzdtf.Utility.Standard.Model.Return
         /// 总记录数
         /// </summary>
         [JsonProperty("records")]
-        [Key("records")]
+        [MessagePack.Key("records")]
         public int Records
         {
             get;
@@ -70,7 +70,7 @@ namespace Hzdtf.Utility.Standard.Model.Return
         /// 总页数
         /// </summary>
         [JsonProperty("total")]
-        [Key("total")]
+        [MessagePack.Key("total")]
         public int Total
         {
             get => PagingUtil.PageCount(PageSize, Records);
@@ -103,10 +103,15 @@ namespace Hzdtf.Utility.Standard.Model.Return
         }
 
         /// <summary>
-        /// 转换为字符串
+        /// 构造方法
         /// </summary>
-        /// <returns>字符串</returns>
-        public override string ToString() => JsonUtil.SerializeIgnoreNull(this);
+        public Page1ReturnInfo() { }
+
+        /// <summary>
+        /// 构造方法
+        /// </summary>
+        /// <param name="isToJsonString">是否转换为JSON</param>
+        public Page1ReturnInfo(bool isToJsonString) : base(isToJsonString) { }
 
         /// <summary>
         /// 是否本身类型

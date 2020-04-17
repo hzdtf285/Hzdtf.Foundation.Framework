@@ -37,9 +37,10 @@
       </Names>
       <Lifecycle>SIGNLETON</Lifecycle>
       <Intercepteds>
+        <Intercepted>Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.TryExceptionInterceptor</Intercepted>
         <Intercepted>Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.AuthInterceptor</Intercepted>
+        <Intercepted>Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor</Intercepted>
         <Intercepted>Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.ParamValiInterceptor</Intercepted>
-        <Intercepted>Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.LogInterceptor</Intercepted>
         <Intercepted>Hzdtf.Persistence.Autofac.Standard,Hzdtf.Persistence.Autofac.Standard.TransactionInterceptor</Intercepted>
       </Intercepteds>
     </Assembly>

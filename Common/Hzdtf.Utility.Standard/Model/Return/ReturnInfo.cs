@@ -33,6 +33,17 @@ namespace Hzdtf.Utility.Standard.Model.Return
         }
 
         /// <summary>
+        /// 构造方法
+        /// </summary>
+        public ReturnInfo() { }
+
+        /// <summary>
+        /// 构造方法
+        /// </summary>
+        /// <param name="isToJsonString">是否转换为JSON</param>
+        public ReturnInfo(bool isToJsonString) : base(isToJsonString) { }
+
+        /// <summary>
         /// 是否本身类型
         /// </summary>
         /// <param name="type">类型</param>

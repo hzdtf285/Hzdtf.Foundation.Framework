@@ -40,7 +40,6 @@ namespace Hzdtf.Autofac.Extend.Standard.Intercepteds
         /// 拦截操作
         /// </summary>
         /// <param name="invocation">拦截参数</param>
-        /// <param name="attr">特性</param>
         /// <param name="isExecProceeded">是否已执行</param>
         /// <returns>基本返回信息</returns>
         protected abstract BasicReturnInfo InterceptOperation(IInvocation invocation, out bool isExecProceeded);

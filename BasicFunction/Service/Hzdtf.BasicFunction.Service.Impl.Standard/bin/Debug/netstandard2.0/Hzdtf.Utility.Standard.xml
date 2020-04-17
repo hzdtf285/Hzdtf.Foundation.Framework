@@ -155,6 +155,12 @@
             </summary>
             <param name="code">编码</param>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.Attr.NotTryExceptionAttribute">
+            <summary>
+            不捕获异常特性
+            @ 黄振东
+            </summary>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Attr.ParamAttr.ArrayNotEmptyAttribute">
             <summary>
             数组不为空特性
@@ -233,6 +239,27 @@
             构造方法
             </summary>
             <param name="maxPageSize">每页最大记录数</param>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Attr.ProcTrackLogAttribute">
+            <summary>
+            过程轨迹日志特性
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Attr.ProcTrackLogAttribute.ExecProc">
+            <summary>
+            记录执行过程，默认为是
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Attr.ProcTrackLogAttribute.IgnoreParamValues">
+            <summary>
+            忽略参数值
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Attr.ProcTrackLogAttribute.IgnoreParamReturn">
+            <summary>
+            忽略返回值
+            </summary>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Attr.TransactionAttribute">
             <summary>
@@ -2381,6 +2408,22 @@
             默认失败编码
             </summary>
         </member>
+        <member name="F:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.isToJsonString">
+            <summary>
+            是否转换为JSON
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.#ctor(System.Boolean)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="isToJsonString">是否转换为JSON</param>
+        </member>
         <member name="P:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.Code">
             <summary>
             编码
@@ -2509,6 +2552,17 @@
             <param name="type">类型</param>
             <returns>是否本身类型</returns>
         </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Return.DefaultReturnInfo.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Return.DefaultReturnInfo.#ctor(System.Boolean)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="isToJsonString">是否转换为JSON</param>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Model.Return.Page1ReturnConvert">
             <summary>
             分页从1开始的返回转换
@@ -2568,11 +2622,16 @@
             <param name="returnInfo">返回信息</param>
             <returns>分页从1开始的返回信息</returns>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Model.Return.Page1ReturnInfo`1.ToString">
+        <member name="M:Hzdtf.Utility.Standard.Model.Return.Page1ReturnInfo`1.#ctor">
             <summary>
-            转换为字符串
+            构造方法
             </summary>
-            <returns>字符串</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Return.Page1ReturnInfo`1.#ctor(System.Boolean)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="isToJsonString">是否转换为JSON</param>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Model.Return.Page1ReturnInfo`1.IsThisType(System.Type)">
             <summary>
@@ -2598,6 +2657,17 @@
             <summary>
             数据
             </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1.#ctor(System.Boolean)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="isToJsonString">是否转换为JSON</param>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1.IsThisType(System.Type)">
             <summary>

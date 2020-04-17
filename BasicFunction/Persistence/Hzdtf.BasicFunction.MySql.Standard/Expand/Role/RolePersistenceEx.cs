@@ -3,7 +3,6 @@ using Hzdtf.Utility.Standard.Model;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Hzdtf.Utility.Standard.Utils;
 using Hzdtf.Persistence.Contract.Standard.Management;
 using Hzdtf.Utility.Standard.Enums;
 using Hzdtf.BasicFunction.Model.Standard;
@@ -19,8 +18,8 @@ namespace Hzdtf.BasicFunction.MySql.Standard
         /// <summary>
         /// 根据编码或名称查询角色列表
         /// </summary>
-        /// <param name="role">编码</param>
-        /// <param name="notId">名称</param>
+        /// <param name="code">编码</param>
+        /// <param name="name">名称</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>角色列表</returns>
         public IList<RoleInfo> SelelctByCodeOrName(string code, string name, string connectionId = null)
@@ -38,8 +37,8 @@ namespace Hzdtf.BasicFunction.MySql.Standard
         /// <summary>
         /// 根据编码或名称查询角色列表，但排除ID
         /// </summary>
-        /// <param name="role">编码</param>
-        /// <param name="notId">名称</param>
+        /// <param name="code">编码</param>
+        /// <param name="name">名称</param>
         /// <param name="notId">排除ID</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>角色列表</returns>

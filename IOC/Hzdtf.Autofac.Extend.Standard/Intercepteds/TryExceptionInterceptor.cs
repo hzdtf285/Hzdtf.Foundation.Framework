@@ -6,16 +6,16 @@ using System.Text;
 using Autofac;
 using System.Reflection;
 using Hzdtf.Utility.Standard.Model.Return;
-using Hzdtf.Utility.Standard.Attr;
 using Hzdtf.Utility.Standard.Utils;
+using Hzdtf.Utility.Standard.Attr;
 
 namespace Hzdtf.Autofac.Extend.Standard.Intercepteds
 {
     /// <summary>
-    /// 日志拦截器
+    /// 捕获异常拦截器，方法的返回值必须是BasicReturnInfo或BasicReturnInfo子类，否则会抛出异常
     /// @ 黄振东
     /// </summary>
-    public class LogInterceptor : IInterceptor
+    public class TryExceptionInterceptor : IInterceptor
     {
         /// <summary>
         /// 同步日志
@@ -63,63 +63,22 @@ namespace Hzdtf.Autofac.Extend.Standard.Intercepteds
         /// <param name="invocation">拦截参数</param>
         public void Intercept(IInvocation invocation)
         {
-            LogAttribute logAttr = invocation.Method.GetAttribute<LogAttribute>();
-            string paraLog = null;
-
-            if (logAttr != null)
+            var attr = invocation.Method.GetAttribute<NotTryExceptionAttribute>();
+            if (attr != null)
             {
-                if (logAttr.ExecProc)
-                {
-                    if (!logAttr.IgnoreParamValues)
-                    {
-                        paraLog = $",params:{ string.Join(",", invocation.Arguments)}";
-                    }
-                }
-                else
-                {
-                    invocation.Proceed();
-
-                    return;
-                }
+                invocation.Proceed();
+                return;
             }
-            else
-            {
-                paraLog = $",params:{ string.Join(",", invocation.Arguments)}";
-            }
-
-            DateTime startTime = DateTime.Now;
-            StringBuilder logMsg = new StringBuilder($"{invocation.TargetType.FullName} {invocation.Method}{paraLog}");
 
             try
             {
                 invocation.Proceed();
                 FilterReturnValue(invocation, null);
-
-                string returnValLog = null;
-                if (logAttr == null || !logAttr.IgnoreParamReturn)
-                {
-                    returnValLog = $"ReturnValue:{invocation.ReturnValue},";
-                }
-
-                TimeSpan span = DateTime.Now - startTime;
-                logMsg.AppendFormat(",{0}timed:{1}ms", returnValLog, span.TotalMilliseconds);
-
-                Log.Debug(logMsg.ToString(), null, invocation.TargetType.Name);
             }
             catch (Exception ex)
             {
-                bool isHandledException = FilterReturnValue(invocation, ex);
-                if (isHandledException)
-                {
-                    logMsg.AppendFormat(",ReturnValue:{0}", invocation.ReturnValue);
-                }
-
-                TimeSpan span = DateTime.Now - startTime;
-                logMsg.AppendFormat(",timed:{0}ms", span.TotalMilliseconds);
-
-                Log.ErrorAsync(logMsg.ToString(), ex, invocation.TargetType.Name);
-
-                if (isHandledException)
+                Log.ErrorAsync(ex.Message, ex, invocation.Method.Name);
+                if (FilterReturnValue(invocation, ex))
                 {
                     return;
                 }
