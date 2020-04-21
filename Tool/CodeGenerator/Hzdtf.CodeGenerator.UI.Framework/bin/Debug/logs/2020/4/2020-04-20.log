@@ -1,0 +1,1987 @@
+时间:2020-04-20 18:02:54.746
+级别:info
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:[
+  {
+    "columns": [
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "id",
+        "description": "Id"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(50)",
+        "isNull": false,
+        "length": 50,
+        "name": "name",
+        "description": "名称"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(2000)",
+        "isNull": true,
+        "length": 2000,
+        "name": "desc",
+        "description": "描述"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "icon_address_id",
+        "description": "图标URL"
+      },
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "down_base_count",
+        "description": "下载次数基数"
+      },
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "real_down_count",
+        "description": "实际下载次数"
+      },
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "down_count",
+        "description": "下载次数"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(200)",
+        "isNull": true,
+        "length": 200,
+        "name": "company",
+        "description": "公司"
+      },
+      {
+        "dataType": "tinyint",
+        "columnType": "tinyint(4)",
+        "isNull": false,
+        "name": "status",
+        "description": "0：未审核，1：审核中，2：已上架，3：已下架"
+      },
+      {
+        "dataType": "tinyint",
+        "columnType": "tinyint(1)",
+        "isNull": false,
+        "name": "is_recommend",
+        "description": "是否推荐"
+      },
+      {
+        "dataType": "datetime",
+        "columnType": "datetime",
+        "isNull": true,
+        "name": "recommend_time",
+        "description": "推荐时间"
+      },
+      {
+        "dataType": "float",
+        "columnType": "float",
+        "isNull": false,
+        "name": "score",
+        "description": "评分"
+      },
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "comment_num",
+        "description": "评论数"
+      },
+      {
+        "dataType": "float",
+        "columnType": "float",
+        "isNull": false,
+        "name": "feedback_rate",
+        "description": "好评率"
+      },
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "install_base_count",
+        "description": "安装次数基数"
+      },
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "real_install_count",
+        "description": "实际安装次数"
+      },
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "install_count",
+        "description": "安装次数"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "creator_id",
+        "description": "创建人ID"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(50)",
+        "isNull": false,
+        "length": 50,
+        "name": "creator",
+        "description": "创建人"
+      },
+      {
+        "dataType": "datetime",
+        "columnType": "datetime",
+        "isNull": false,
+        "name": "create_time",
+        "description": "创建时间"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "modifier_id",
+        "description": "修改人ID"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(50)",
+        "isNull": false,
+        "length": 50,
+        "name": "modifier",
+        "description": "修改人"
+      },
+      {
+        "dataType": "datetime",
+        "columnType": "datetime",
+        "isNull": false,
+        "name": "modify_time",
+        "description": "修改时间"
+      },
+      {
+        "dataType": "tinyint",
+        "columnType": "tinyint(1)",
+        "isNull": false,
+        "name": "deleted",
+        "description": "删除"
+      }
+    ],
+    "name": "app",
+    "description": "应用"
+  },
+  "FEG",
+  "MySql",
+  null
+],ReturnValue:[
+  "﻿using Hzdtf.Utility.Standard.Model;\r\nusing Newtonsoft.Json;\r\nusing MessagePack;\r\nusing System;\r\nusing System.Collections.Generic;\r\nusing System.ComponentModel;\r\nusing System.ComponentModel.DataAnnotations;\r\nusing System.Text;\r\n\r\nnamespace FEG.Model.Standard\r\n{\r\n    /// <summary>\r\n    /// 应用信息\r\n    /// @ 黄振东\r\n    /// </summary>\r\n    public partial class AppInfo : PersonTimeInfo\r\n    {\r\n﻿        /// <summary>\r\n        /// 名称_名称\r\n        /// </summary>\r\n\t\tpublic const string Name_Name = \"Name\";\r\n\r\n\t\t/// <summary>\r\n        /// 名称\r\n        /// </summary>\r\n        [JsonProperty(\"name\")]\r\n        [MessagePack.Key(\"name\")]\r\n        [Required]\r\n        [MaxLength(50)]\r\n\r\n        [DisplayName(\"名称\")]\r\n        [Display(Name = \"名称\", Order = 2, AutoGenerateField = true)]\r\n        public string Name\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 描述_名称\r\n        /// </summary>\r\n\t\tpublic const string Desc_Name = \"Desc\";\r\n\r\n\t\t/// <summary>\r\n        /// 描述\r\n        /// </summary>\r\n        [JsonProperty(\"desc\")]\r\n        [MessagePack.Key(\"desc\")]\r\n        [MaxLength(2000)]\r\n\r\n        [DisplayName(\"描述\")]\r\n        [Display(Name = \"描述\", Order = 3, AutoGenerateField = true)]\r\n        public string Desc\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 图标URL_名称\r\n        /// </summary>\r\n\t\tpublic const string IconAddressId_Name = \"IconAddressId\";\r\n\r\n\t\t/// <summary>\r\n        /// 图标URL\r\n        /// </summary>\r\n        [JsonProperty(\"iconAddressId\")]\r\n        [MessagePack.Key(\"iconAddressId\")]\r\n        [Required]\r\n        [MaxLength(36)]\r\n\r\n        [DisplayName(\"图标URL\")]\r\n        [Display(Name = \"图标URL\", Order = 4, AutoGenerateField = true)]\r\n        public string IconAddressId\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 下载次数基数_名称\r\n        /// </summary>\r\n\t\tpublic const string DownBaseCount_Name = \"DownBaseCount\";\r\n\r\n\t\t/// <summary>\r\n        /// 下载次数基数\r\n        /// </summary>\r\n        [JsonProperty(\"downBaseCount\")]\r\n        [MessagePack.Key(\"downBaseCount\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"下载次数基数\")]\r\n        [Display(Name = \"下载次数基数\", Order = 5, AutoGenerateField = true)]\r\n        public int DownBaseCount\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 实际下载次数_名称\r\n        /// </summary>\r\n\t\tpublic const string RealDownCount_Name = \"RealDownCount\";\r\n\r\n\t\t/// <summary>\r\n        /// 实际下载次数\r\n        /// </summary>\r\n        [JsonProperty(\"realDownCount\")]\r\n        [MessagePack.Key(\"realDownCount\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"实际下载次数\")]\r\n        [Display(Name = \"实际下载次数\", Order = 6, AutoGenerateField = true)]\r\n        public int RealDownCount\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 下载次数_名称\r\n        /// </summary>\r\n\t\tpublic const string DownCount_Name = \"DownCount\";\r\n\r\n\t\t/// <summary>\r\n        /// 下载次数\r\n        /// </summary>\r\n        [JsonProperty(\"downCount\")]\r\n        [MessagePack.Key(\"downCount\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"下载次数\")]\r\n        [Display(Name = \"下载次数\", Order = 7, AutoGenerateField = true)]\r\n        public int DownCount\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 公司_名称\r\n        /// </summary>\r\n\t\tpublic const string Company_Name = \"Company\";\r\n\r\n\t\t/// <summary>\r\n        /// 公司\r\n        /// </summary>\r\n        [JsonProperty(\"company\")]\r\n        [MessagePack.Key(\"company\")]\r\n        [MaxLength(200)]\r\n\r\n        [DisplayName(\"公司\")]\r\n        [Display(Name = \"公司\", Order = 8, AutoGenerateField = true)]\r\n        public string Company\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 0：未审核，1：审核中，2：已上架，3：已下架_名称\r\n        /// </summary>\r\n\t\tpublic const string Status_Name = \"Status\";\r\n\r\n\t\t/// <summary>\r\n        /// 0：未审核，1：审核中，2：已上架，3：已下架\r\n        /// </summary>\r\n        [JsonProperty(\"status\")]\r\n        [MessagePack.Key(\"status\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"0：未审核，1：审核中，2：已上架，3：已下架\")]\r\n        [Display(Name = \"0：未审核，1：审核中，2：已上架，3：已下架\", Order = 9, AutoGenerateField = true)]\r\n        public int Status\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 是否推荐_名称\r\n        /// </summary>\r\n\t\tpublic const string IsRecommend_Name = \"IsRecommend\";\r\n\r\n\t\t/// <summary>\r\n        /// 是否推荐\r\n        /// </summary>\r\n        [JsonProperty(\"isRecommend\")]\r\n        [MessagePack.Key(\"isRecommend\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"是否推荐\")]\r\n        [Display(Name = \"是否推荐\", Order = 10, AutoGenerateField = true)]\r\n        public bool IsRecommend\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 推荐时间_名称\r\n        /// </summary>\r\n\t\tpublic const string RecommendTime_Name = \"RecommendTime\";\r\n\r\n\t\t/// <summary>\r\n        /// 推荐时间\r\n        /// </summary>\r\n        [JsonProperty(\"recommendTime\")]\r\n        [MessagePack.Key(\"recommendTime\")]\r\n\r\n        [DisplayName(\"推荐时间\")]\r\n        [Display(Name = \"推荐时间\", Order = 11, AutoGenerateField = true)]\r\n        public DateTime? RecommendTime\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 评分_名称\r\n        /// </summary>\r\n\t\tpublic const string Score_Name = \"Score\";\r\n\r\n\t\t/// <summary>\r\n        /// 评分\r\n        /// </summary>\r\n        [JsonProperty(\"score\")]\r\n        [MessagePack.Key(\"score\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"评分\")]\r\n        [Display(Name = \"评分\", Order = 12, AutoGenerateField = true)]\r\n        public float Score\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 评论数_名称\r\n        /// </summary>\r\n\t\tpublic const string CommentNum_Name = \"CommentNum\";\r\n\r\n\t\t/// <summary>\r\n        /// 评论数\r\n        /// </summary>\r\n        [JsonProperty(\"commentNum\")]\r\n        [MessagePack.Key(\"commentNum\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"评论数\")]\r\n        [Display(Name = \"评论数\", Order = 13, AutoGenerateField = true)]\r\n        public int CommentNum\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 好评率_名称\r\n        /// </summary>\r\n\t\tpublic const string FeedbackRate_Name = \"FeedbackRate\";\r\n\r\n\t\t/// <summary>\r\n        /// 好评率\r\n        /// </summary>\r\n        [JsonProperty(\"feedbackRate\")]\r\n        [MessagePack.Key(\"feedbackRate\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"好评率\")]\r\n        [Display(Name = \"好评率\", Order = 14, AutoGenerateField = true)]\r\n        public float FeedbackRate\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 安装次数基数_名称\r\n        /// </summary>\r\n\t\tpublic const string InstallBaseCount_Name = \"InstallBaseCount\";\r\n\r\n\t\t/// <summary>\r\n        /// 安装次数基数\r\n        /// </summary>\r\n        [JsonProperty(\"installBaseCount\")]\r\n        [MessagePack.Key(\"installBaseCount\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"安装次数基数\")]\r\n        [Display(Name = \"安装次数基数\", Order = 15, AutoGenerateField = true)]\r\n        public int InstallBaseCount\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 实际安装次数_名称\r\n        /// </summary>\r\n\t\tpublic const string RealInstallCount_Name = \"RealInstallCount\";\r\n\r\n\t\t/// <summary>\r\n        /// 实际安装次数\r\n        /// </summary>\r\n        [JsonProperty(\"realInstallCount\")]\r\n        [MessagePack.Key(\"realInstallCount\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"实际安装次数\")]\r\n        [Display(Name = \"实际安装次数\", Order = 16, AutoGenerateField = true)]\r\n        public int RealInstallCount\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 安装次数_名称\r\n        /// </summary>\r\n\t\tpublic const string InstallCount_Name = \"InstallCount\";\r\n\r\n\t\t/// <summary>\r\n        /// 安装次数\r\n        /// </summary>\r\n        [JsonProperty(\"installCount\")]\r\n        [MessagePack.Key(\"installCount\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"安装次数\")]\r\n        [Display(Name = \"安装次数\", Order = 17, AutoGenerateField = true)]\r\n        public int InstallCount\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 创建人ID_名称\r\n        /// </summary>\r\n\t\tpublic const string CreatorId_Name = \"CreatorId\";\r\n\r\n\t\t/// <summary>\r\n        /// 创建人ID\r\n        /// </summary>\r\n        [JsonProperty(\"creatorId\")]\r\n        [MessagePack.Key(\"creatorId\")]\r\n        [Required]\r\n        [MaxLength(36)]\r\n\r\n        [DisplayName(\"创建人ID\")]\r\n        [Display(Name = \"创建人ID\", Order = 18, AutoGenerateField = true)]\r\n        public string CreatorId\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 创建人_名称\r\n        /// </summary>\r\n\t\tpublic const string Creator_Name = \"Creator\";\r\n\r\n\t\t/// <summary>\r\n        /// 创建人\r\n        /// </summary>\r\n        [JsonProperty(\"creator\")]\r\n        [MessagePack.Key(\"creator\")]\r\n        [Required]\r\n        [MaxLength(50)]\r\n\r\n        [DisplayName(\"创建人\")]\r\n        [Display(Name = \"创建人\", Order = 19, AutoGenerateField = true)]\r\n        public string Creator\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 删除_名称\r\n        /// </summary>\r\n\t\tpublic const string Deleted_Name = \"Deleted\";\r\n\r\n\t\t/// <summary>\r\n        /// 删除\r\n        /// </summary>\r\n        [JsonProperty(\"deleted\")]\r\n        [MessagePack.Key(\"deleted\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"删除\")]\r\n        [Display(Name = \"删除\", Order = 24, AutoGenerateField = true)]\r\n        public bool Deleted\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n    }\r\n}\r\n"
+],timed:267ms
+时间:2020-04-20 18:02:54.746
+级别:info
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:[],ReturnValue:[
+  "Model"
+],timed:1ms
+时间:2020-04-20 18:02:54.813
+级别:info
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:[
+  {
+    "columns": [
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "id",
+        "description": "Id"
+      },
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "app_id",
+        "description": "应用_Id"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "creator_id",
+        "description": "创建人ID"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(50)",
+        "isNull": false,
+        "length": 50,
+        "name": "creator",
+        "description": "创建人"
+      },
+      {
+        "dataType": "datetime",
+        "columnType": "datetime",
+        "isNull": false,
+        "name": "create_time",
+        "description": "创建时间"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "modifier_id",
+        "description": "修改人ID"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(50)",
+        "isNull": false,
+        "length": 50,
+        "name": "modifier",
+        "description": "修改人"
+      },
+      {
+        "dataType": "datetime",
+        "columnType": "datetime",
+        "isNull": false,
+        "name": "modify_time",
+        "description": "修改时间"
+      },
+      {
+        "dataType": "tinyint",
+        "columnType": "tinyint(1)",
+        "isNull": false,
+        "name": "deleted",
+        "description": "删除"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "knowledge_id",
+        "description": "知识点ID"
+      }
+    ],
+    "name": "app_knowledge_point",
+    "description": "应用知识点"
+  },
+  "FEG",
+  "MySql",
+  [
+    "AppInfo.cs"
+  ]
+],ReturnValue:[
+  "﻿using Hzdtf.Utility.Standard.Model;\r\nusing Newtonsoft.Json;\r\nusing MessagePack;\r\nusing System;\r\nusing System.Collections.Generic;\r\nusing System.ComponentModel;\r\nusing System.ComponentModel.DataAnnotations;\r\nusing System.Text;\r\n\r\nnamespace FEG.Model.Standard\r\n{\r\n    /// <summary>\r\n    /// 应用知识点信息\r\n    /// @ 黄振东\r\n    /// </summary>\r\n    public partial class AppKnowledgePointInfo : PersonTimeInfo\r\n    {\r\n﻿        /// <summary>\r\n        /// 应用_Id_名称\r\n        /// </summary>\r\n\t\tpublic const string AppId_Name = \"AppId\";\r\n\r\n\t\t/// <summary>\r\n        /// 应用_Id\r\n        /// </summary>\r\n        [JsonProperty(\"appId\")]\r\n        [MessagePack.Key(\"appId\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"应用_Id\")]\r\n        [Display(Name = \"应用_Id\", Order = 2, AutoGenerateField = true)]\r\n        public int AppId\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 创建人ID_名称\r\n        /// </summary>\r\n\t\tpublic const string CreatorId_Name = \"CreatorId\";\r\n\r\n\t\t/// <summary>\r\n        /// 创建人ID\r\n        /// </summary>\r\n        [JsonProperty(\"creatorId\")]\r\n        [MessagePack.Key(\"creatorId\")]\r\n        [Required]\r\n        [MaxLength(36)]\r\n\r\n        [DisplayName(\"创建人ID\")]\r\n        [Display(Name = \"创建人ID\", Order = 3, AutoGenerateField = true)]\r\n        public string CreatorId\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 创建人_名称\r\n        /// </summary>\r\n\t\tpublic const string Creator_Name = \"Creator\";\r\n\r\n\t\t/// <summary>\r\n        /// 创建人\r\n        /// </summary>\r\n        [JsonProperty(\"creator\")]\r\n        [MessagePack.Key(\"creator\")]\r\n        [Required]\r\n        [MaxLength(50)]\r\n\r\n        [DisplayName(\"创建人\")]\r\n        [Display(Name = \"创建人\", Order = 4, AutoGenerateField = true)]\r\n        public string Creator\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 删除_名称\r\n        /// </summary>\r\n\t\tpublic const string Deleted_Name = \"Deleted\";\r\n\r\n\t\t/// <summary>\r\n        /// 删除\r\n        /// </summary>\r\n        [JsonProperty(\"deleted\")]\r\n        [MessagePack.Key(\"deleted\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"删除\")]\r\n        [Display(Name = \"删除\", Order = 9, AutoGenerateField = true)]\r\n        public bool Deleted\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 知识点ID_名称\r\n        /// </summary>\r\n\t\tpublic const string KnowledgeId_Name = \"KnowledgeId\";\r\n\r\n\t\t/// <summary>\r\n        /// 知识点ID\r\n        /// </summary>\r\n        [JsonProperty(\"knowledgeId\")]\r\n        [MessagePack.Key(\"knowledgeId\")]\r\n        [Required]\r\n        [MaxLength(36)]\r\n\r\n        [DisplayName(\"知识点ID\")]\r\n        [Display(Name = \"知识点ID\", Order = 10, AutoGenerateField = true)]\r\n        public string KnowledgeId\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n    }\r\n}\r\n"
+],timed:58ms
+时间:2020-04-20 18:02:54.813
+级别:info
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:[],ReturnValue:[
+  "Model"
+],timed:0ms
+时间:2020-04-20 18:02:54.915
+级别:info
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:[],ReturnValue:[
+  "Model"
+],timed:0ms
+时间:2020-04-20 18:02:54.915
+级别:info
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:[
+  {
+    "columns": [
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "id",
+        "description": "Id"
+      },
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "app_id",
+        "description": "应用_Id"
+      },
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "subjec_Id",
+        "description": "学科_Id"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "creator_id",
+        "description": "创建人ID"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(50)",
+        "isNull": false,
+        "length": 50,
+        "name": "creator",
+        "description": "创建人"
+      },
+      {
+        "dataType": "datetime",
+        "columnType": "datetime",
+        "isNull": false,
+        "name": "create_time",
+        "description": "创建时间"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "modifier_id",
+        "description": "修改人ID"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(50)",
+        "isNull": false,
+        "length": 50,
+        "name": "modifier",
+        "description": "修改人"
+      },
+      {
+        "dataType": "datetime",
+        "columnType": "datetime",
+        "isNull": false,
+        "name": "modify_time",
+        "description": "修改时间"
+      },
+      {
+        "dataType": "tinyint",
+        "columnType": "tinyint(1)",
+        "isNull": false,
+        "name": "deleted",
+        "description": "删除"
+      }
+    ],
+    "name": "app_subject",
+    "description": "应用学科"
+  },
+  "FEG",
+  "MySql",
+  [
+    "AppKnowledgePointInfo.cs"
+  ]
+],ReturnValue:[
+  "﻿using Hzdtf.Utility.Standard.Model;\r\nusing Newtonsoft.Json;\r\nusing MessagePack;\r\nusing System;\r\nusing System.Collections.Generic;\r\nusing System.ComponentModel;\r\nusing System.ComponentModel.DataAnnotations;\r\nusing System.Text;\r\n\r\nnamespace FEG.Model.Standard\r\n{\r\n    /// <summary>\r\n    /// 应用学科信息\r\n    /// @ 黄振东\r\n    /// </summary>\r\n    public partial class AppSubjectInfo : PersonTimeInfo\r\n    {\r\n﻿        /// <summary>\r\n        /// 应用_Id_名称\r\n        /// </summary>\r\n\t\tpublic const string AppId_Name = \"AppId\";\r\n\r\n\t\t/// <summary>\r\n        /// 应用_Id\r\n        /// </summary>\r\n        [JsonProperty(\"appId\")]\r\n        [MessagePack.Key(\"appId\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"应用_Id\")]\r\n        [Display(Name = \"应用_Id\", Order = 2, AutoGenerateField = true)]\r\n        public int AppId\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 学科_Id_名称\r\n        /// </summary>\r\n\t\tpublic const string SubjecId_Name = \"SubjecId\";\r\n\r\n\t\t/// <summary>\r\n        /// 学科_Id\r\n        /// </summary>\r\n        [JsonProperty(\"subjecId\")]\r\n        [MessagePack.Key(\"subjecId\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"学科_Id\")]\r\n        [Display(Name = \"学科_Id\", Order = 3, AutoGenerateField = true)]\r\n        public int SubjecId\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 创建人ID_名称\r\n        /// </summary>\r\n\t\tpublic const string CreatorId_Name = \"CreatorId\";\r\n\r\n\t\t/// <summary>\r\n        /// 创建人ID\r\n        /// </summary>\r\n        [JsonProperty(\"creatorId\")]\r\n        [MessagePack.Key(\"creatorId\")]\r\n        [Required]\r\n        [MaxLength(36)]\r\n\r\n        [DisplayName(\"创建人ID\")]\r\n        [Display(Name = \"创建人ID\", Order = 4, AutoGenerateField = true)]\r\n        public string CreatorId\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 创建人_名称\r\n        /// </summary>\r\n\t\tpublic const string Creator_Name = \"Creator\";\r\n\r\n\t\t/// <summary>\r\n        /// 创建人\r\n        /// </summary>\r\n        [JsonProperty(\"creator\")]\r\n        [MessagePack.Key(\"creator\")]\r\n        [Required]\r\n        [MaxLength(50)]\r\n\r\n        [DisplayName(\"创建人\")]\r\n        [Display(Name = \"创建人\", Order = 5, AutoGenerateField = true)]\r\n        public string Creator\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 删除_名称\r\n        /// </summary>\r\n\t\tpublic const string Deleted_Name = \"Deleted\";\r\n\r\n\t\t/// <summary>\r\n        /// 删除\r\n        /// </summary>\r\n        [JsonProperty(\"deleted\")]\r\n        [MessagePack.Key(\"deleted\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"删除\")]\r\n        [Display(Name = \"删除\", Order = 10, AutoGenerateField = true)]\r\n        public bool Deleted\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n    }\r\n}\r\n"
+],timed:59ms
+时间:2020-04-20 18:02:55.035
+级别:info
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:[],ReturnValue:[
+  "Model"
+],timed:0ms
+时间:2020-04-20 18:02:55.035
+级别:info
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:[
+  {
+    "columns": [
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "id",
+        "description": "Id"
+      },
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "app_id",
+        "description": "应用_Id"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "creator_id",
+        "description": "创建人ID"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(50)",
+        "isNull": false,
+        "length": 50,
+        "name": "creator",
+        "description": "创建人"
+      },
+      {
+        "dataType": "datetime",
+        "columnType": "datetime",
+        "isNull": false,
+        "name": "create_time",
+        "description": "创建时间"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "modifier_id",
+        "description": "修改人ID"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(50)",
+        "isNull": false,
+        "length": 50,
+        "name": "modifier",
+        "description": "修改人"
+      },
+      {
+        "dataType": "datetime",
+        "columnType": "datetime",
+        "isNull": false,
+        "name": "modify_time",
+        "description": "修改时间"
+      },
+      {
+        "dataType": "tinyint",
+        "columnType": "tinyint(1)",
+        "isNull": false,
+        "name": "deleted",
+        "description": "删除"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "down_address_id",
+        "description": "下载地址ID"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(20)",
+        "isNull": false,
+        "length": 20,
+        "name": "version",
+        "description": "版本"
+      },
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "version_num",
+        "description": "版本号"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(500)",
+        "isNull": false,
+        "length": 500,
+        "name": "update_content",
+        "description": "更新内容"
+      },
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "size",
+        "description": "大小（B）"
+      },
+      {
+        "dataType": "datetime",
+        "columnType": "datetime",
+        "isNull": false,
+        "name": "upload_time",
+        "description": "上传时间"
+      }
+    ],
+    "name": "app_version",
+    "description": "应用版本"
+  },
+  "FEG",
+  "MySql",
+  [
+    "AppSubjectInfo.cs"
+  ]
+],ReturnValue:[
+  "﻿using Hzdtf.Utility.Standard.Model;\r\nusing Newtonsoft.Json;\r\nusing MessagePack;\r\nusing System;\r\nusing System.Collections.Generic;\r\nusing System.ComponentModel;\r\nusing System.ComponentModel.DataAnnotations;\r\nusing System.Text;\r\n\r\nnamespace FEG.Model.Standard\r\n{\r\n    /// <summary>\r\n    /// 应用版本信息\r\n    /// @ 黄振东\r\n    /// </summary>\r\n    public partial class AppVersionInfo : PersonTimeInfo\r\n    {\r\n﻿        /// <summary>\r\n        /// 应用_Id_名称\r\n        /// </summary>\r\n\t\tpublic const string AppId_Name = \"AppId\";\r\n\r\n\t\t/// <summary>\r\n        /// 应用_Id\r\n        /// </summary>\r\n        [JsonProperty(\"appId\")]\r\n        [MessagePack.Key(\"appId\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"应用_Id\")]\r\n        [Display(Name = \"应用_Id\", Order = 2, AutoGenerateField = true)]\r\n        public int AppId\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 创建人ID_名称\r\n        /// </summary>\r\n\t\tpublic const string CreatorId_Name = \"CreatorId\";\r\n\r\n\t\t/// <summary>\r\n        /// 创建人ID\r\n        /// </summary>\r\n        [JsonProperty(\"creatorId\")]\r\n        [MessagePack.Key(\"creatorId\")]\r\n        [Required]\r\n        [MaxLength(36)]\r\n\r\n        [DisplayName(\"创建人ID\")]\r\n        [Display(Name = \"创建人ID\", Order = 3, AutoGenerateField = true)]\r\n        public string CreatorId\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 创建人_名称\r\n        /// </summary>\r\n\t\tpublic const string Creator_Name = \"Creator\";\r\n\r\n\t\t/// <summary>\r\n        /// 创建人\r\n        /// </summary>\r\n        [JsonProperty(\"creator\")]\r\n        [MessagePack.Key(\"creator\")]\r\n        [Required]\r\n        [MaxLength(50)]\r\n\r\n        [DisplayName(\"创建人\")]\r\n        [Display(Name = \"创建人\", Order = 4, AutoGenerateField = true)]\r\n        public string Creator\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 删除_名称\r\n        /// </summary>\r\n\t\tpublic const string Deleted_Name = \"Deleted\";\r\n\r\n\t\t/// <summary>\r\n        /// 删除\r\n        /// </summary>\r\n        [JsonProperty(\"deleted\")]\r\n        [MessagePack.Key(\"deleted\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"删除\")]\r\n        [Display(Name = \"删除\", Order = 9, AutoGenerateField = true)]\r\n        public bool Deleted\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 下载地址ID_名称\r\n        /// </summary>\r\n\t\tpublic const string DownAddressId_Name = \"DownAddressId\";\r\n\r\n\t\t/// <summary>\r\n        /// 下载地址ID\r\n        /// </summary>\r\n        [JsonProperty(\"downAddressId\")]\r\n        [MessagePack.Key(\"downAddressId\")]\r\n        [Required]\r\n        [MaxLength(36)]\r\n\r\n        [DisplayName(\"下载地址ID\")]\r\n        [Display(Name = \"下载地址ID\", Order = 10, AutoGenerateField = true)]\r\n        public string DownAddressId\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 版本_名称\r\n        /// </summary>\r\n\t\tpublic const string Version_Name = \"Version\";\r\n\r\n\t\t/// <summary>\r\n        /// 版本\r\n        /// </summary>\r\n        [JsonProperty(\"version\")]\r\n        [MessagePack.Key(\"version\")]\r\n        [Required]\r\n        [MaxLength(20)]\r\n\r\n        [DisplayName(\"版本\")]\r\n        [Display(Name = \"版本\", Order = 11, AutoGenerateField = true)]\r\n        public string Version\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 版本号_名称\r\n        /// </summary>\r\n\t\tpublic const string VersionNum_Name = \"VersionNum\";\r\n\r\n\t\t/// <summary>\r\n        /// 版本号\r\n        /// </summary>\r\n        [JsonProperty(\"versionNum\")]\r\n        [MessagePack.Key(\"versionNum\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"版本号\")]\r\n        [Display(Name = \"版本号\", Order = 12, AutoGenerateField = true)]\r\n        public int VersionNum\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 更新内容_名称\r\n        /// </summary>\r\n\t\tpublic const string UpdateContent_Name = \"UpdateContent\";\r\n\r\n\t\t/// <summary>\r\n        /// 更新内容\r\n        /// </summary>\r\n        [JsonProperty(\"updateContent\")]\r\n        [MessagePack.Key(\"updateContent\")]\r\n        [Required]\r\n        [MaxLength(500)]\r\n\r\n        [DisplayName(\"更新内容\")]\r\n        [Display(Name = \"更新内容\", Order = 13, AutoGenerateField = true)]\r\n        public string UpdateContent\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 大小（B）_名称\r\n        /// </summary>\r\n\t\tpublic const string Size_Name = \"Size\";\r\n\r\n\t\t/// <summary>\r\n        /// 大小（B）\r\n        /// </summary>\r\n        [JsonProperty(\"size\")]\r\n        [MessagePack.Key(\"size\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"大小（B）\")]\r\n        [Display(Name = \"大小（B）\", Order = 14, AutoGenerateField = true)]\r\n        public int Size\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 上传时间_名称\r\n        /// </summary>\r\n\t\tpublic const string UploadTime_Name = \"UploadTime\";\r\n\r\n\t\t/// <summary>\r\n        /// 上传时间\r\n        /// </summary>\r\n        [JsonProperty(\"uploadTime\")]\r\n        [MessagePack.Key(\"uploadTime\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"上传时间\")]\r\n        [Display(Name = \"上传时间\", Order = 15, AutoGenerateField = true)]\r\n        public DateTime UploadTime\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n    }\r\n}\r\n"
+],timed:109ms
+时间:2020-04-20 18:02:55.111
+级别:info
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:[
+  {
+    "columns": [
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "id",
+        "description": "Id"
+      },
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "app_id",
+        "description": "应用_Id"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "creator_id",
+        "description": "创建人ID"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(50)",
+        "isNull": false,
+        "length": 50,
+        "name": "creator",
+        "description": "创建人"
+      },
+      {
+        "dataType": "datetime",
+        "columnType": "datetime",
+        "isNull": false,
+        "name": "create_time",
+        "description": "创建时间"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "modifier_id",
+        "description": "修改人ID"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(50)",
+        "isNull": false,
+        "length": 50,
+        "name": "modifier",
+        "description": "修改人"
+      },
+      {
+        "dataType": "datetime",
+        "columnType": "datetime",
+        "isNull": false,
+        "name": "modify_time",
+        "description": "修改时间"
+      },
+      {
+        "dataType": "tinyint",
+        "columnType": "tinyint(1)",
+        "isNull": false,
+        "name": "deleted",
+        "description": "删除"
+      },
+      {
+        "dataType": "tinyint",
+        "columnType": "tinyint(4)",
+        "isNull": false,
+        "name": "level",
+        "description": "星级"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(200)",
+        "isNull": true,
+        "length": 200,
+        "name": "content",
+        "description": "内容"
+      }
+    ],
+    "name": "comment",
+    "description": "评论"
+  },
+  "FEG",
+  "MySql",
+  [
+    "AppVersionInfo.cs"
+  ]
+],ReturnValue:[
+  "﻿using Hzdtf.Utility.Standard.Model;\r\nusing Newtonsoft.Json;\r\nusing MessagePack;\r\nusing System;\r\nusing System.Collections.Generic;\r\nusing System.ComponentModel;\r\nusing System.ComponentModel.DataAnnotations;\r\nusing System.Text;\r\n\r\nnamespace FEG.Model.Standard\r\n{\r\n    /// <summary>\r\n    /// 评论信息\r\n    /// @ 黄振东\r\n    /// </summary>\r\n    public partial class CommentInfo : PersonTimeInfo\r\n    {\r\n﻿        /// <summary>\r\n        /// 应用_Id_名称\r\n        /// </summary>\r\n\t\tpublic const string AppId_Name = \"AppId\";\r\n\r\n\t\t/// <summary>\r\n        /// 应用_Id\r\n        /// </summary>\r\n        [JsonProperty(\"appId\")]\r\n        [MessagePack.Key(\"appId\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"应用_Id\")]\r\n        [Display(Name = \"应用_Id\", Order = 2, AutoGenerateField = true)]\r\n        public int AppId\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 创建人ID_名称\r\n        /// </summary>\r\n\t\tpublic const string CreatorId_Name = \"CreatorId\";\r\n\r\n\t\t/// <summary>\r\n        /// 创建人ID\r\n        /// </summary>\r\n        [JsonProperty(\"creatorId\")]\r\n        [MessagePack.Key(\"creatorId\")]\r\n        [Required]\r\n        [MaxLength(36)]\r\n\r\n        [DisplayName(\"创建人ID\")]\r\n        [Display(Name = \"创建人ID\", Order = 3, AutoGenerateField = true)]\r\n        public string CreatorId\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 创建人_名称\r\n        /// </summary>\r\n\t\tpublic const string Creator_Name = \"Creator\";\r\n\r\n\t\t/// <summary>\r\n        /// 创建人\r\n        /// </summary>\r\n        [JsonProperty(\"creator\")]\r\n        [MessagePack.Key(\"creator\")]\r\n        [Required]\r\n        [MaxLength(50)]\r\n\r\n        [DisplayName(\"创建人\")]\r\n        [Display(Name = \"创建人\", Order = 4, AutoGenerateField = true)]\r\n        public string Creator\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 删除_名称\r\n        /// </summary>\r\n\t\tpublic const string Deleted_Name = \"Deleted\";\r\n\r\n\t\t/// <summary>\r\n        /// 删除\r\n        /// </summary>\r\n        [JsonProperty(\"deleted\")]\r\n        [MessagePack.Key(\"deleted\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"删除\")]\r\n        [Display(Name = \"删除\", Order = 9, AutoGenerateField = true)]\r\n        public bool Deleted\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 星级_名称\r\n        /// </summary>\r\n\t\tpublic const string Level_Name = \"Level\";\r\n\r\n\t\t/// <summary>\r\n        /// 星级\r\n        /// </summary>\r\n        [JsonProperty(\"level\")]\r\n        [MessagePack.Key(\"level\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"星级\")]\r\n        [Display(Name = \"星级\", Order = 10, AutoGenerateField = true)]\r\n        public int Level\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 内容_名称\r\n        /// </summary>\r\n\t\tpublic const string Content_Name = \"Content\";\r\n\r\n\t\t/// <summary>\r\n        /// 内容\r\n        /// </summary>\r\n        [JsonProperty(\"content\")]\r\n        [MessagePack.Key(\"content\")]\r\n        [MaxLength(200)]\r\n\r\n        [DisplayName(\"内容\")]\r\n        [Display(Name = \"内容\", Order = 11, AutoGenerateField = true)]\r\n        public string Content\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n    }\r\n}\r\n"
+],timed:63ms
+时间:2020-04-20 18:02:55.111
+级别:info
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:[],ReturnValue:[
+  "Model"
+],timed:0ms
+时间:2020-04-20 18:02:55.185
+级别:info
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:[],ReturnValue:[
+  "Model"
+],timed:0ms
+时间:2020-04-20 18:02:55.185
+级别:info
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:[
+  {
+    "columns": [
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "id",
+        "description": "Id"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "creator_id",
+        "description": "创建人ID"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(50)",
+        "isNull": false,
+        "length": 50,
+        "name": "creator",
+        "description": "创建人"
+      },
+      {
+        "dataType": "datetime",
+        "columnType": "datetime",
+        "isNull": false,
+        "name": "create_time",
+        "description": "创建时间"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "modifier_id",
+        "description": "修改人ID"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(50)",
+        "isNull": false,
+        "length": 50,
+        "name": "modifier",
+        "description": "修改人"
+      },
+      {
+        "dataType": "datetime",
+        "columnType": "datetime",
+        "isNull": false,
+        "name": "modify_time",
+        "description": "修改时间"
+      },
+      {
+        "dataType": "tinyint",
+        "columnType": "tinyint(1)",
+        "isNull": false,
+        "name": "deleted",
+        "description": "删除"
+      },
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "app_version_id",
+        "description": "应用版本Id"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "oper_person_id",
+        "description": "操作人ID"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(50)",
+        "isNull": false,
+        "length": 50,
+        "name": "oper_person",
+        "description": "操作人"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(15)",
+        "isNull": false,
+        "length": 15,
+        "name": "source_ip",
+        "description": ""
+      }
+    ],
+    "name": "down_version_record",
+    "description": "下载版本记录"
+  },
+  "FEG",
+  "MySql",
+  [
+    "CommentInfo.cs"
+  ]
+],ReturnValue:[
+  "﻿using Hzdtf.Utility.Standard.Model;\r\nusing Newtonsoft.Json;\r\nusing MessagePack;\r\nusing System;\r\nusing System.Collections.Generic;\r\nusing System.ComponentModel;\r\nusing System.ComponentModel.DataAnnotations;\r\nusing System.Text;\r\n\r\nnamespace FEG.Model.Standard\r\n{\r\n    /// <summary>\r\n    /// 下载版本记录信息\r\n    /// @ 黄振东\r\n    /// </summary>\r\n    public partial class DownVersionRecordInfo : PersonTimeInfo\r\n    {\r\n﻿        /// <summary>\r\n        /// 创建人ID_名称\r\n        /// </summary>\r\n\t\tpublic const string CreatorId_Name = \"CreatorId\";\r\n\r\n\t\t/// <summary>\r\n        /// 创建人ID\r\n        /// </summary>\r\n        [JsonProperty(\"creatorId\")]\r\n        [MessagePack.Key(\"creatorId\")]\r\n        [Required]\r\n        [MaxLength(36)]\r\n\r\n        [DisplayName(\"创建人ID\")]\r\n        [Display(Name = \"创建人ID\", Order = 2, AutoGenerateField = true)]\r\n        public string CreatorId\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 创建人_名称\r\n        /// </summary>\r\n\t\tpublic const string Creator_Name = \"Creator\";\r\n\r\n\t\t/// <summary>\r\n        /// 创建人\r\n        /// </summary>\r\n        [JsonProperty(\"creator\")]\r\n        [MessagePack.Key(\"creator\")]\r\n        [Required]\r\n        [MaxLength(50)]\r\n\r\n        [DisplayName(\"创建人\")]\r\n        [Display(Name = \"创建人\", Order = 3, AutoGenerateField = true)]\r\n        public string Creator\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 删除_名称\r\n        /// </summary>\r\n\t\tpublic const string Deleted_Name = \"Deleted\";\r\n\r\n\t\t/// <summary>\r\n        /// 删除\r\n        /// </summary>\r\n        [JsonProperty(\"deleted\")]\r\n        [MessagePack.Key(\"deleted\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"删除\")]\r\n        [Display(Name = \"删除\", Order = 8, AutoGenerateField = true)]\r\n        public bool Deleted\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 应用版本Id_名称\r\n        /// </summary>\r\n\t\tpublic const string AppVersionId_Name = \"AppVersionId\";\r\n\r\n\t\t/// <summary>\r\n        /// 应用版本Id\r\n        /// </summary>\r\n        [JsonProperty(\"appVersionId\")]\r\n        [MessagePack.Key(\"appVersionId\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"应用版本Id\")]\r\n        [Display(Name = \"应用版本Id\", Order = 9, AutoGenerateField = true)]\r\n        public int AppVersionId\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 操作人ID_名称\r\n        /// </summary>\r\n\t\tpublic const string OperPersonId_Name = \"OperPersonId\";\r\n\r\n\t\t/// <summary>\r\n        /// 操作人ID\r\n        /// </summary>\r\n        [JsonProperty(\"operPersonId\")]\r\n        [MessagePack.Key(\"operPersonId\")]\r\n        [Required]\r\n        [MaxLength(36)]\r\n\r\n        [DisplayName(\"操作人ID\")]\r\n        [Display(Name = \"操作人ID\", Order = 10, AutoGenerateField = true)]\r\n        public string OperPersonId\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 操作人_名称\r\n        /// </summary>\r\n\t\tpublic const string OperPerson_Name = \"OperPerson\";\r\n\r\n\t\t/// <summary>\r\n        /// 操作人\r\n        /// </summary>\r\n        [JsonProperty(\"operPerson\")]\r\n        [MessagePack.Key(\"operPerson\")]\r\n        [Required]\r\n        [MaxLength(50)]\r\n\r\n        [DisplayName(\"操作人\")]\r\n        [Display(Name = \"操作人\", Order = 11, AutoGenerateField = true)]\r\n        public string OperPerson\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// SourceIp_名称\r\n        /// </summary>\r\n\t\tpublic const string SourceIp_Name = \"SourceIp\";\r\n\r\n\t\t/// <summary>\r\n        /// SourceIp\r\n        /// </summary>\r\n        [JsonProperty(\"sourceIp\")]\r\n        [MessagePack.Key(\"sourceIp\")]\r\n        [Required]\r\n        [MaxLength(15)]\r\n\r\n        [DisplayName(\"SourceIp\")]\r\n        [Display(Name = \"SourceIp\", Order = 12, AutoGenerateField = true)]\r\n        public string SourceIp\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n    }\r\n}\r\n"
+],timed:64ms
+时间:2020-04-20 18:02:55.267
+级别:info
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:[
+  {
+    "columns": [
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "id",
+        "description": "Id"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "creator_id",
+        "description": "创建人ID"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(50)",
+        "isNull": false,
+        "length": 50,
+        "name": "creator",
+        "description": "创建人"
+      },
+      {
+        "dataType": "datetime",
+        "columnType": "datetime",
+        "isNull": false,
+        "name": "create_time",
+        "description": "创建时间"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "modifier_id",
+        "description": "修改人ID"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(50)",
+        "isNull": false,
+        "length": 50,
+        "name": "modifier",
+        "description": "修改人"
+      },
+      {
+        "dataType": "datetime",
+        "columnType": "datetime",
+        "isNull": false,
+        "name": "modify_time",
+        "description": "修改时间"
+      },
+      {
+        "dataType": "tinyint",
+        "columnType": "tinyint(1)",
+        "isNull": false,
+        "name": "deleted",
+        "description": "删除"
+      },
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "app_version_Id",
+        "description": "应用版本Id"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "oper_person_id",
+        "description": "操作人ID"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(50)",
+        "isNull": false,
+        "length": 50,
+        "name": "oper_person",
+        "description": "操作人"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(15)",
+        "isNull": false,
+        "length": 15,
+        "name": "source_ip",
+        "description": ""
+      }
+    ],
+    "name": "install_version_record",
+    "description": "安装版本记录"
+  },
+  "FEG",
+  "MySql",
+  [
+    "DownVersionRecordInfo.cs"
+  ]
+],ReturnValue:[
+  "﻿using Hzdtf.Utility.Standard.Model;\r\nusing Newtonsoft.Json;\r\nusing MessagePack;\r\nusing System;\r\nusing System.Collections.Generic;\r\nusing System.ComponentModel;\r\nusing System.ComponentModel.DataAnnotations;\r\nusing System.Text;\r\n\r\nnamespace FEG.Model.Standard\r\n{\r\n    /// <summary>\r\n    /// 安装版本记录信息\r\n    /// @ 黄振东\r\n    /// </summary>\r\n    public partial class InstallVersionRecordInfo : PersonTimeInfo\r\n    {\r\n﻿        /// <summary>\r\n        /// 创建人ID_名称\r\n        /// </summary>\r\n\t\tpublic const string CreatorId_Name = \"CreatorId\";\r\n\r\n\t\t/// <summary>\r\n        /// 创建人ID\r\n        /// </summary>\r\n        [JsonProperty(\"creatorId\")]\r\n        [MessagePack.Key(\"creatorId\")]\r\n        [Required]\r\n        [MaxLength(36)]\r\n\r\n        [DisplayName(\"创建人ID\")]\r\n        [Display(Name = \"创建人ID\", Order = 2, AutoGenerateField = true)]\r\n        public string CreatorId\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 创建人_名称\r\n        /// </summary>\r\n\t\tpublic const string Creator_Name = \"Creator\";\r\n\r\n\t\t/// <summary>\r\n        /// 创建人\r\n        /// </summary>\r\n        [JsonProperty(\"creator\")]\r\n        [MessagePack.Key(\"creator\")]\r\n        [Required]\r\n        [MaxLength(50)]\r\n\r\n        [DisplayName(\"创建人\")]\r\n        [Display(Name = \"创建人\", Order = 3, AutoGenerateField = true)]\r\n        public string Creator\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 删除_名称\r\n        /// </summary>\r\n\t\tpublic const string Deleted_Name = \"Deleted\";\r\n\r\n\t\t/// <summary>\r\n        /// 删除\r\n        /// </summary>\r\n        [JsonProperty(\"deleted\")]\r\n        [MessagePack.Key(\"deleted\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"删除\")]\r\n        [Display(Name = \"删除\", Order = 8, AutoGenerateField = true)]\r\n        public bool Deleted\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 应用版本Id_名称\r\n        /// </summary>\r\n\t\tpublic const string AppVersionId_Name = \"AppVersionId\";\r\n\r\n\t\t/// <summary>\r\n        /// 应用版本Id\r\n        /// </summary>\r\n        [JsonProperty(\"appVersionId\")]\r\n        [MessagePack.Key(\"appVersionId\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"应用版本Id\")]\r\n        [Display(Name = \"应用版本Id\", Order = 9, AutoGenerateField = true)]\r\n        public int AppVersionId\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 操作人ID_名称\r\n        /// </summary>\r\n\t\tpublic const string OperPersonId_Name = \"OperPersonId\";\r\n\r\n\t\t/// <summary>\r\n        /// 操作人ID\r\n        /// </summary>\r\n        [JsonProperty(\"operPersonId\")]\r\n        [MessagePack.Key(\"operPersonId\")]\r\n        [Required]\r\n        [MaxLength(36)]\r\n\r\n        [DisplayName(\"操作人ID\")]\r\n        [Display(Name = \"操作人ID\", Order = 10, AutoGenerateField = true)]\r\n        public string OperPersonId\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 操作人_名称\r\n        /// </summary>\r\n\t\tpublic const string OperPerson_Name = \"OperPerson\";\r\n\r\n\t\t/// <summary>\r\n        /// 操作人\r\n        /// </summary>\r\n        [JsonProperty(\"operPerson\")]\r\n        [MessagePack.Key(\"operPerson\")]\r\n        [Required]\r\n        [MaxLength(50)]\r\n\r\n        [DisplayName(\"操作人\")]\r\n        [Display(Name = \"操作人\", Order = 11, AutoGenerateField = true)]\r\n        public string OperPerson\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// SourceIp_名称\r\n        /// </summary>\r\n\t\tpublic const string SourceIp_Name = \"SourceIp\";\r\n\r\n\t\t/// <summary>\r\n        /// SourceIp\r\n        /// </summary>\r\n        [JsonProperty(\"sourceIp\")]\r\n        [MessagePack.Key(\"sourceIp\")]\r\n        [Required]\r\n        [MaxLength(15)]\r\n\r\n        [DisplayName(\"SourceIp\")]\r\n        [Display(Name = \"SourceIp\", Order = 12, AutoGenerateField = true)]\r\n        public string SourceIp\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n    }\r\n}\r\n"
+],timed:65ms
+时间:2020-04-20 18:02:55.267
+级别:info
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:[],ReturnValue:[
+  "Model"
+],timed:0ms
+时间:2020-04-20 18:02:55.328
+级别:info
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:[
+  {
+    "columns": [
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "id",
+        "description": "Id"
+      },
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "app_id",
+        "description": "应用_Id"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "creator_id",
+        "description": "创建人ID"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(50)",
+        "isNull": false,
+        "length": 50,
+        "name": "creator",
+        "description": "创建人"
+      },
+      {
+        "dataType": "datetime",
+        "columnType": "datetime",
+        "isNull": false,
+        "name": "create_time",
+        "description": "创建时间"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "modifier_id",
+        "description": "修改人ID"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(50)",
+        "isNull": false,
+        "length": 50,
+        "name": "modifier",
+        "description": "修改人"
+      },
+      {
+        "dataType": "datetime",
+        "columnType": "datetime",
+        "isNull": false,
+        "name": "modify_time",
+        "description": "修改时间"
+      },
+      {
+        "dataType": "tinyint",
+        "columnType": "tinyint(1)",
+        "isNull": false,
+        "name": "deleted",
+        "description": "删除"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "school_id",
+        "description": "学校ID"
+      }
+    ],
+    "name": "school_assign_app",
+    "description": "学校指定应用"
+  },
+  "FEG",
+  "MySql",
+  [
+    "InstallVersionRecordInfo.cs"
+  ]
+],ReturnValue:[
+  "﻿using Hzdtf.Utility.Standard.Model;\r\nusing Newtonsoft.Json;\r\nusing MessagePack;\r\nusing System;\r\nusing System.Collections.Generic;\r\nusing System.ComponentModel;\r\nusing System.ComponentModel.DataAnnotations;\r\nusing System.Text;\r\n\r\nnamespace FEG.Model.Standard\r\n{\r\n    /// <summary>\r\n    /// 学校指定应用信息\r\n    /// @ 黄振东\r\n    /// </summary>\r\n    public partial class SchoolAssignAppInfo : PersonTimeInfo\r\n    {\r\n﻿        /// <summary>\r\n        /// 应用_Id_名称\r\n        /// </summary>\r\n\t\tpublic const string AppId_Name = \"AppId\";\r\n\r\n\t\t/// <summary>\r\n        /// 应用_Id\r\n        /// </summary>\r\n        [JsonProperty(\"appId\")]\r\n        [MessagePack.Key(\"appId\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"应用_Id\")]\r\n        [Display(Name = \"应用_Id\", Order = 2, AutoGenerateField = true)]\r\n        public int AppId\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 创建人ID_名称\r\n        /// </summary>\r\n\t\tpublic const string CreatorId_Name = \"CreatorId\";\r\n\r\n\t\t/// <summary>\r\n        /// 创建人ID\r\n        /// </summary>\r\n        [JsonProperty(\"creatorId\")]\r\n        [MessagePack.Key(\"creatorId\")]\r\n        [Required]\r\n        [MaxLength(36)]\r\n\r\n        [DisplayName(\"创建人ID\")]\r\n        [Display(Name = \"创建人ID\", Order = 3, AutoGenerateField = true)]\r\n        public string CreatorId\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 创建人_名称\r\n        /// </summary>\r\n\t\tpublic const string Creator_Name = \"Creator\";\r\n\r\n\t\t/// <summary>\r\n        /// 创建人\r\n        /// </summary>\r\n        [JsonProperty(\"creator\")]\r\n        [MessagePack.Key(\"creator\")]\r\n        [Required]\r\n        [MaxLength(50)]\r\n\r\n        [DisplayName(\"创建人\")]\r\n        [Display(Name = \"创建人\", Order = 4, AutoGenerateField = true)]\r\n        public string Creator\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 删除_名称\r\n        /// </summary>\r\n\t\tpublic const string Deleted_Name = \"Deleted\";\r\n\r\n\t\t/// <summary>\r\n        /// 删除\r\n        /// </summary>\r\n        [JsonProperty(\"deleted\")]\r\n        [MessagePack.Key(\"deleted\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"删除\")]\r\n        [Display(Name = \"删除\", Order = 9, AutoGenerateField = true)]\r\n        public bool Deleted\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 学校ID_名称\r\n        /// </summary>\r\n\t\tpublic const string SchoolId_Name = \"SchoolId\";\r\n\r\n\t\t/// <summary>\r\n        /// 学校ID\r\n        /// </summary>\r\n        [JsonProperty(\"schoolId\")]\r\n        [MessagePack.Key(\"schoolId\")]\r\n        [Required]\r\n        [MaxLength(36)]\r\n\r\n        [DisplayName(\"学校ID\")]\r\n        [Display(Name = \"学校ID\", Order = 10, AutoGenerateField = true)]\r\n        public string SchoolId\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n    }\r\n}\r\n"
+],timed:54ms
+时间:2020-04-20 18:02:55.328
+级别:info
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:[],ReturnValue:[
+  "Model"
+],timed:0ms
+时间:2020-04-20 18:02:55.390
+级别:info
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] SubFolders(),params:[],ReturnValue:[
+  "Model"
+],timed:0ms
+时间:2020-04-20 18:02:55.390
+级别:info
+来源:ModelGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService System.String[] BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo, System.String, System.String, System.String[] ByRef),params:[
+  {
+    "columns": [
+      {
+        "dataType": "int",
+        "columnType": "int(11)",
+        "isNull": false,
+        "name": "id",
+        "description": "Id"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(50)",
+        "isNull": false,
+        "length": 50,
+        "name": "name",
+        "description": "名称"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(2000)",
+        "isNull": true,
+        "length": 2000,
+        "name": "associate_other_ids",
+        "description": "关联其他ID集合，多个以,分隔，如果只有一个，前后也要求加,"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "creator_id",
+        "description": "创建人ID"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(50)",
+        "isNull": false,
+        "length": 50,
+        "name": "creator",
+        "description": "创建人"
+      },
+      {
+        "dataType": "datetime",
+        "columnType": "datetime",
+        "isNull": false,
+        "name": "create_time",
+        "description": "创建时间"
+      },
+      {
+        "dataType": "char",
+        "columnType": "char(36)",
+        "isNull": false,
+        "length": 36,
+        "name": "modifier_id",
+        "description": "修改人ID"
+      },
+      {
+        "dataType": "varchar",
+        "columnType": "varchar(50)",
+        "isNull": false,
+        "length": 50,
+        "name": "modifier",
+        "description": "修改人"
+      },
+      {
+        "dataType": "datetime",
+        "columnType": "datetime",
+        "isNull": false,
+        "name": "modify_time",
+        "description": "修改时间"
+      },
+      {
+        "dataType": "tinyint",
+        "columnType": "tinyint(1)",
+        "isNull": false,
+        "name": "deleted",
+        "description": "删除"
+      }
+    ],
+    "name": "subject",
+    "description": "学科"
+  },
+  "FEG",
+  "MySql",
+  [
+    "SchoolAssignAppInfo.cs"
+  ]
+],ReturnValue:[
+  "﻿using Hzdtf.Utility.Standard.Model;\r\nusing Newtonsoft.Json;\r\nusing MessagePack;\r\nusing System;\r\nusing System.Collections.Generic;\r\nusing System.ComponentModel;\r\nusing System.ComponentModel.DataAnnotations;\r\nusing System.Text;\r\n\r\nnamespace FEG.Model.Standard\r\n{\r\n    /// <summary>\r\n    /// 学科信息\r\n    /// @ 黄振东\r\n    /// </summary>\r\n    public partial class SubjectInfo : PersonTimeInfo\r\n    {\r\n﻿        /// <summary>\r\n        /// 名称_名称\r\n        /// </summary>\r\n\t\tpublic const string Name_Name = \"Name\";\r\n\r\n\t\t/// <summary>\r\n        /// 名称\r\n        /// </summary>\r\n        [JsonProperty(\"name\")]\r\n        [MessagePack.Key(\"name\")]\r\n        [Required]\r\n        [MaxLength(50)]\r\n\r\n        [DisplayName(\"名称\")]\r\n        [Display(Name = \"名称\", Order = 2, AutoGenerateField = true)]\r\n        public string Name\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 关联其他ID集合，多个以,分隔，如果只有一个，前后也要求加,_名称\r\n        /// </summary>\r\n\t\tpublic const string AssociateOtherIds_Name = \"AssociateOtherIds\";\r\n\r\n\t\t/// <summary>\r\n        /// 关联其他ID集合，多个以,分隔，如果只有一个，前后也要求加,\r\n        /// </summary>\r\n        [JsonProperty(\"associateOtherIds\")]\r\n        [MessagePack.Key(\"associateOtherIds\")]\r\n        [MaxLength(2000)]\r\n\r\n        [DisplayName(\"关联其他ID集合，多个以,分隔，如果只有一个，前后也要求加,\")]\r\n        [Display(Name = \"关联其他ID集合，多个以,分隔，如果只有一个，前后也要求加,\", Order = 3, AutoGenerateField = true)]\r\n        public string AssociateOtherIds\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 创建人ID_名称\r\n        /// </summary>\r\n\t\tpublic const string CreatorId_Name = \"CreatorId\";\r\n\r\n\t\t/// <summary>\r\n        /// 创建人ID\r\n        /// </summary>\r\n        [JsonProperty(\"creatorId\")]\r\n        [MessagePack.Key(\"creatorId\")]\r\n        [Required]\r\n        [MaxLength(36)]\r\n\r\n        [DisplayName(\"创建人ID\")]\r\n        [Display(Name = \"创建人ID\", Order = 4, AutoGenerateField = true)]\r\n        public string CreatorId\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 创建人_名称\r\n        /// </summary>\r\n\t\tpublic const string Creator_Name = \"Creator\";\r\n\r\n\t\t/// <summary>\r\n        /// 创建人\r\n        /// </summary>\r\n        [JsonProperty(\"creator\")]\r\n        [MessagePack.Key(\"creator\")]\r\n        [Required]\r\n        [MaxLength(50)]\r\n\r\n        [DisplayName(\"创建人\")]\r\n        [Display(Name = \"创建人\", Order = 5, AutoGenerateField = true)]\r\n        public string Creator\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n\r\n﻿        /// <summary>\r\n        /// 删除_名称\r\n        /// </summary>\r\n\t\tpublic const string Deleted_Name = \"Deleted\";\r\n\r\n\t\t/// <summary>\r\n        /// 删除\r\n        /// </summary>\r\n        [JsonProperty(\"deleted\")]\r\n        [MessagePack.Key(\"deleted\")]\r\n        [Required]\r\n\r\n        [DisplayName(\"删除\")]\r\n        [Display(Name = \"删除\", Order = 10, AutoGenerateField = true)]\r\n        public bool Deleted\r\n        {\r\n            get;\r\n            set;\r\n        }\r\n    }\r\n}\r\n"
+],timed:54ms
+时间:2020-04-20 18:02:55.403
+级别:info
+来源:CodeGeneratorService
+消息:Hzdtf.CodeGenerator.Impl.Standard.CodeGeneratorService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Boolean] Generator(System.Collections.Generic.IList`1[Hzdtf.CodeGenerator.Model.Standard.TableInfo], Hzdtf.CodeGenerator.Model.Standard.FunctionType[], System.String, System.String),params:[
+  [
+    {
+      "columns": [
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "id",
+          "description": "Id"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(50)",
+          "isNull": false,
+          "length": 50,
+          "name": "name",
+          "description": "名称"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(2000)",
+          "isNull": true,
+          "length": 2000,
+          "name": "desc",
+          "description": "描述"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "icon_address_id",
+          "description": "图标URL"
+        },
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "down_base_count",
+          "description": "下载次数基数"
+        },
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "real_down_count",
+          "description": "实际下载次数"
+        },
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "down_count",
+          "description": "下载次数"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(200)",
+          "isNull": true,
+          "length": 200,
+          "name": "company",
+          "description": "公司"
+        },
+        {
+          "dataType": "tinyint",
+          "columnType": "tinyint(4)",
+          "isNull": false,
+          "name": "status",
+          "description": "0：未审核，1：审核中，2：已上架，3：已下架"
+        },
+        {
+          "dataType": "tinyint",
+          "columnType": "tinyint(1)",
+          "isNull": false,
+          "name": "is_recommend",
+          "description": "是否推荐"
+        },
+        {
+          "dataType": "datetime",
+          "columnType": "datetime",
+          "isNull": true,
+          "name": "recommend_time",
+          "description": "推荐时间"
+        },
+        {
+          "dataType": "float",
+          "columnType": "float",
+          "isNull": false,
+          "name": "score",
+          "description": "评分"
+        },
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "comment_num",
+          "description": "评论数"
+        },
+        {
+          "dataType": "float",
+          "columnType": "float",
+          "isNull": false,
+          "name": "feedback_rate",
+          "description": "好评率"
+        },
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "install_base_count",
+          "description": "安装次数基数"
+        },
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "real_install_count",
+          "description": "实际安装次数"
+        },
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "install_count",
+          "description": "安装次数"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "creator_id",
+          "description": "创建人ID"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(50)",
+          "isNull": false,
+          "length": 50,
+          "name": "creator",
+          "description": "创建人"
+        },
+        {
+          "dataType": "datetime",
+          "columnType": "datetime",
+          "isNull": false,
+          "name": "create_time",
+          "description": "创建时间"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "modifier_id",
+          "description": "修改人ID"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(50)",
+          "isNull": false,
+          "length": 50,
+          "name": "modifier",
+          "description": "修改人"
+        },
+        {
+          "dataType": "datetime",
+          "columnType": "datetime",
+          "isNull": false,
+          "name": "modify_time",
+          "description": "修改时间"
+        },
+        {
+          "dataType": "tinyint",
+          "columnType": "tinyint(1)",
+          "isNull": false,
+          "name": "deleted",
+          "description": "删除"
+        }
+      ],
+      "name": "app",
+      "description": "应用"
+    },
+    {
+      "columns": [
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "id",
+          "description": "Id"
+        },
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "app_id",
+          "description": "应用_Id"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "creator_id",
+          "description": "创建人ID"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(50)",
+          "isNull": false,
+          "length": 50,
+          "name": "creator",
+          "description": "创建人"
+        },
+        {
+          "dataType": "datetime",
+          "columnType": "datetime",
+          "isNull": false,
+          "name": "create_time",
+          "description": "创建时间"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "modifier_id",
+          "description": "修改人ID"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(50)",
+          "isNull": false,
+          "length": 50,
+          "name": "modifier",
+          "description": "修改人"
+        },
+        {
+          "dataType": "datetime",
+          "columnType": "datetime",
+          "isNull": false,
+          "name": "modify_time",
+          "description": "修改时间"
+        },
+        {
+          "dataType": "tinyint",
+          "columnType": "tinyint(1)",
+          "isNull": false,
+          "name": "deleted",
+          "description": "删除"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "knowledge_id",
+          "description": "知识点ID"
+        }
+      ],
+      "name": "app_knowledge_point",
+      "description": "应用知识点"
+    },
+    {
+      "columns": [
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "id",
+          "description": "Id"
+        },
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "app_id",
+          "description": "应用_Id"
+        },
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "subjec_Id",
+          "description": "学科_Id"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "creator_id",
+          "description": "创建人ID"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(50)",
+          "isNull": false,
+          "length": 50,
+          "name": "creator",
+          "description": "创建人"
+        },
+        {
+          "dataType": "datetime",
+          "columnType": "datetime",
+          "isNull": false,
+          "name": "create_time",
+          "description": "创建时间"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "modifier_id",
+          "description": "修改人ID"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(50)",
+          "isNull": false,
+          "length": 50,
+          "name": "modifier",
+          "description": "修改人"
+        },
+        {
+          "dataType": "datetime",
+          "columnType": "datetime",
+          "isNull": false,
+          "name": "modify_time",
+          "description": "修改时间"
+        },
+        {
+          "dataType": "tinyint",
+          "columnType": "tinyint(1)",
+          "isNull": false,
+          "name": "deleted",
+          "description": "删除"
+        }
+      ],
+      "name": "app_subject",
+      "description": "应用学科"
+    },
+    {
+      "columns": [
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "id",
+          "description": "Id"
+        },
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "app_id",
+          "description": "应用_Id"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "creator_id",
+          "description": "创建人ID"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(50)",
+          "isNull": false,
+          "length": 50,
+          "name": "creator",
+          "description": "创建人"
+        },
+        {
+          "dataType": "datetime",
+          "columnType": "datetime",
+          "isNull": false,
+          "name": "create_time",
+          "description": "创建时间"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "modifier_id",
+          "description": "修改人ID"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(50)",
+          "isNull": false,
+          "length": 50,
+          "name": "modifier",
+          "description": "修改人"
+        },
+        {
+          "dataType": "datetime",
+          "columnType": "datetime",
+          "isNull": false,
+          "name": "modify_time",
+          "description": "修改时间"
+        },
+        {
+          "dataType": "tinyint",
+          "columnType": "tinyint(1)",
+          "isNull": false,
+          "name": "deleted",
+          "description": "删除"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "down_address_id",
+          "description": "下载地址ID"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(20)",
+          "isNull": false,
+          "length": 20,
+          "name": "version",
+          "description": "版本"
+        },
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "version_num",
+          "description": "版本号"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(500)",
+          "isNull": false,
+          "length": 500,
+          "name": "update_content",
+          "description": "更新内容"
+        },
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "size",
+          "description": "大小（B）"
+        },
+        {
+          "dataType": "datetime",
+          "columnType": "datetime",
+          "isNull": false,
+          "name": "upload_time",
+          "description": "上传时间"
+        }
+      ],
+      "name": "app_version",
+      "description": "应用版本"
+    },
+    {
+      "columns": [
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "id",
+          "description": "Id"
+        },
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "app_id",
+          "description": "应用_Id"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "creator_id",
+          "description": "创建人ID"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(50)",
+          "isNull": false,
+          "length": 50,
+          "name": "creator",
+          "description": "创建人"
+        },
+        {
+          "dataType": "datetime",
+          "columnType": "datetime",
+          "isNull": false,
+          "name": "create_time",
+          "description": "创建时间"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "modifier_id",
+          "description": "修改人ID"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(50)",
+          "isNull": false,
+          "length": 50,
+          "name": "modifier",
+          "description": "修改人"
+        },
+        {
+          "dataType": "datetime",
+          "columnType": "datetime",
+          "isNull": false,
+          "name": "modify_time",
+          "description": "修改时间"
+        },
+        {
+          "dataType": "tinyint",
+          "columnType": "tinyint(1)",
+          "isNull": false,
+          "name": "deleted",
+          "description": "删除"
+        },
+        {
+          "dataType": "tinyint",
+          "columnType": "tinyint(4)",
+          "isNull": false,
+          "name": "level",
+          "description": "星级"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(200)",
+          "isNull": true,
+          "length": 200,
+          "name": "content",
+          "description": "内容"
+        }
+      ],
+      "name": "comment",
+      "description": "评论"
+    },
+    {
+      "columns": [
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "id",
+          "description": "Id"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "creator_id",
+          "description": "创建人ID"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(50)",
+          "isNull": false,
+          "length": 50,
+          "name": "creator",
+          "description": "创建人"
+        },
+        {
+          "dataType": "datetime",
+          "columnType": "datetime",
+          "isNull": false,
+          "name": "create_time",
+          "description": "创建时间"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "modifier_id",
+          "description": "修改人ID"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(50)",
+          "isNull": false,
+          "length": 50,
+          "name": "modifier",
+          "description": "修改人"
+        },
+        {
+          "dataType": "datetime",
+          "columnType": "datetime",
+          "isNull": false,
+          "name": "modify_time",
+          "description": "修改时间"
+        },
+        {
+          "dataType": "tinyint",
+          "columnType": "tinyint(1)",
+          "isNull": false,
+          "name": "deleted",
+          "description": "删除"
+        },
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "app_version_id",
+          "description": "应用版本Id"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "oper_person_id",
+          "description": "操作人ID"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(50)",
+          "isNull": false,
+          "length": 50,
+          "name": "oper_person",
+          "description": "操作人"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(15)",
+          "isNull": false,
+          "length": 15,
+          "name": "source_ip",
+          "description": ""
+        }
+      ],
+      "name": "down_version_record",
+      "description": "下载版本记录"
+    },
+    {
+      "columns": [
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "id",
+          "description": "Id"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "creator_id",
+          "description": "创建人ID"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(50)",
+          "isNull": false,
+          "length": 50,
+          "name": "creator",
+          "description": "创建人"
+        },
+        {
+          "dataType": "datetime",
+          "columnType": "datetime",
+          "isNull": false,
+          "name": "create_time",
+          "description": "创建时间"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "modifier_id",
+          "description": "修改人ID"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(50)",
+          "isNull": false,
+          "length": 50,
+          "name": "modifier",
+          "description": "修改人"
+        },
+        {
+          "dataType": "datetime",
+          "columnType": "datetime",
+          "isNull": false,
+          "name": "modify_time",
+          "description": "修改时间"
+        },
+        {
+          "dataType": "tinyint",
+          "columnType": "tinyint(1)",
+          "isNull": false,
+          "name": "deleted",
+          "description": "删除"
+        },
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "app_version_Id",
+          "description": "应用版本Id"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "oper_person_id",
+          "description": "操作人ID"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(50)",
+          "isNull": false,
+          "length": 50,
+          "name": "oper_person",
+          "description": "操作人"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(15)",
+          "isNull": false,
+          "length": 15,
+          "name": "source_ip",
+          "description": ""
+        }
+      ],
+      "name": "install_version_record",
+      "description": "安装版本记录"
+    },
+    {
+      "columns": [
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "id",
+          "description": "Id"
+        },
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "app_id",
+          "description": "应用_Id"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "creator_id",
+          "description": "创建人ID"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(50)",
+          "isNull": false,
+          "length": 50,
+          "name": "creator",
+          "description": "创建人"
+        },
+        {
+          "dataType": "datetime",
+          "columnType": "datetime",
+          "isNull": false,
+          "name": "create_time",
+          "description": "创建时间"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "modifier_id",
+          "description": "修改人ID"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(50)",
+          "isNull": false,
+          "length": 50,
+          "name": "modifier",
+          "description": "修改人"
+        },
+        {
+          "dataType": "datetime",
+          "columnType": "datetime",
+          "isNull": false,
+          "name": "modify_time",
+          "description": "修改时间"
+        },
+        {
+          "dataType": "tinyint",
+          "columnType": "tinyint(1)",
+          "isNull": false,
+          "name": "deleted",
+          "description": "删除"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "school_id",
+          "description": "学校ID"
+        }
+      ],
+      "name": "school_assign_app",
+      "description": "学校指定应用"
+    },
+    {
+      "columns": [
+        {
+          "dataType": "int",
+          "columnType": "int(11)",
+          "isNull": false,
+          "name": "id",
+          "description": "Id"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(50)",
+          "isNull": false,
+          "length": 50,
+          "name": "name",
+          "description": "名称"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(2000)",
+          "isNull": true,
+          "length": 2000,
+          "name": "associate_other_ids",
+          "description": "关联其他ID集合，多个以,分隔，如果只有一个，前后也要求加,"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "creator_id",
+          "description": "创建人ID"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(50)",
+          "isNull": false,
+          "length": 50,
+          "name": "creator",
+          "description": "创建人"
+        },
+        {
+          "dataType": "datetime",
+          "columnType": "datetime",
+          "isNull": false,
+          "name": "create_time",
+          "description": "创建时间"
+        },
+        {
+          "dataType": "char",
+          "columnType": "char(36)",
+          "isNull": false,
+          "length": 36,
+          "name": "modifier_id",
+          "description": "修改人ID"
+        },
+        {
+          "dataType": "varchar",
+          "columnType": "varchar(50)",
+          "isNull": false,
+          "length": 50,
+          "name": "modifier",
+          "description": "修改人"
+        },
+        {
+          "dataType": "datetime",
+          "columnType": "datetime",
+          "isNull": false,
+          "name": "modify_time",
+          "description": "修改时间"
+        },
+        {
+          "dataType": "tinyint",
+          "columnType": "tinyint(1)",
+          "isNull": false,
+          "name": "deleted",
+          "description": "删除"
+        }
+      ],
+      "name": "subject",
+      "description": "学科"
+    }
+  ],
+  [
+    1
+  ],
+  "FEG",
+  "MySql"
+],ReturnValue:{
+  "data": false,
+  "code": 0
+},timed:957ms

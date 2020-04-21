@@ -13,16 +13,16 @@
         <Name>Hzdtf.CodeGenerator.SqlServer.Standard</Name>
         <Name>Hzdtf.CodeGenerator.MySql.Standard</Name>
       </Names>
-      "Lifecycle": "SIGNLETON"
+      <Lifecycle>SIGNLETON</Lifecycle>
     </Assembly>
     <Assembly>
       <Names>
         <Name>Hzdtf.CodeGenerator.Contract.Standard</Name>
         <Name>Hzdtf.CodeGenerator.Impl.Standard</Name>
       </Names>
-      "Lifecycle": "SIGNLETON"
+      <Lifecycle>SIGNLETON</Lifecycle>
       <Intercepteds>
-        <Intercepted>Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.LogInterceptor</Intercepted>
+        <Intercepted>Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor</Intercepted>
         <Intercepted>Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.ValiInterceptor</Intercepted>
       </Intercepteds>
     </Assembly>
