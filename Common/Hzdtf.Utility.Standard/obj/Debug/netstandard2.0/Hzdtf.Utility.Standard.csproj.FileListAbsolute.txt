@@ -39,3 +39,14 @@ D:\MyProject\Hzdtf.Foundation.Framework\Hzdtf.Foundation.Framework\Common\Hzdtf.
 D:\MyProject\Hzdtf.Foundation.Framework\Hzdtf.Foundation.Framework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.dll
 D:\MyProject\Hzdtf.Foundation.Framework\Hzdtf.Foundation.Framework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.pdb
 D:\MyProject\Hzdtf.Foundation.Framework\Hzdtf.Foundation.Framework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.csprojAssemblyReference.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Utility.Standard\bin\Debug\netstandard2.0\Config\LanguageLibrary\Hzdtf.Utility.Standard.LanguageLibrary.json
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Utility.Standard\bin\Debug\netstandard2.0\Hzdtf.Utility.Standard.deps.json
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Utility.Standard\bin\Debug\netstandard2.0\Hzdtf.Utility.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Utility.Standard\bin\Debug\netstandard2.0\Hzdtf.Utility.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Utility.Standard\bin\Debug\netstandard2.0\Hzdtf.Utility.Standard.xml
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.csprojAssemblyReference.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.csproj.CoreCompileInputs.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.AssemblyInfoInputs.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.AssemblyInfo.cs
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.pdb

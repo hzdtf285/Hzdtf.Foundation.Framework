@@ -107,7 +107,6 @@ namespace Hzdtf.Authorization.Web.Framework
         /// <summary>
         /// 从Http请求里移除授权
         /// </summary>
-        /// <param name="userIdentity">用户标识</param>
         /// <returns>是否移除成功</returns>
         public static bool RemoveAuthenticate()
         {

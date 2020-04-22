@@ -3043,23 +3043,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "2.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.MySql.Standard\\Hzdtf.WorkFlow.MySql.Standard.csproj",
+      "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.MySql.Standard\\Hzdtf.WorkFlow.MySql.Standard.csproj",
       "projectName": "Hzdtf.WorkFlow.MySql.Standard",
-      "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.MySql.Standard\\Hzdtf.WorkFlow.MySql.Standard.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.MySql.Standard\\obj\\",
+      "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.MySql.Standard\\Hzdtf.WorkFlow.MySql.Standard.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.MySql.Standard\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3073,11 +3069,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.MySql.Standard\\Hzdtf.MySql.Standard.csproj": {
-              "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.MySql.Standard\\Hzdtf.MySql.Standard.csproj"
+            "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.MySql.Standard\\Hzdtf.MySql.Standard.csproj": {
+              "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.MySql.Standard\\Hzdtf.MySql.Standard.csproj"
             },
-            "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj": {
-              "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj"
+            "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj": {
+              "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj"
             }
           }
         }
@@ -3108,7 +3104,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

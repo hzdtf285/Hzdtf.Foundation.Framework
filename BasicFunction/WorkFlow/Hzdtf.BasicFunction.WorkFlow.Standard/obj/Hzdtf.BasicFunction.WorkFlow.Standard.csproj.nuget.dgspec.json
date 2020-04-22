@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj": {}
+    "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj": {}
   },
   "projects": {
-    "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj": {
+    "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj",
+        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj",
         "projectName": "Hzdtf.BasicFunction.Model.Standard",
-        "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\obj\\",
+        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,8 +28,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               }
             }
           }
@@ -63,24 +60,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj": {
+    "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj",
+        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj",
         "projectName": "Hzdtf.BasicFunction.Service.Contract.Standard",
-        "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\obj\\",
+        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -94,11 +88,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj"
               },
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj"
               }
             }
           }
@@ -129,24 +123,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj": {
+    "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj",
+        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj",
         "projectName": "Hzdtf.BasicFunction.WorkFlow.Standard",
-        "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\obj\\",
+        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -160,17 +151,17 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj"
               },
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj"
               },
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj"
               },
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj"
               }
             }
           }
@@ -201,24 +192,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+    "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj",
+        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj",
         "projectName": "Hzdtf.Utility.Standard",
-        "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\obj\\",
+        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -284,24 +272,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj": {
+    "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj",
+        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj",
         "projectName": "Hzdtf.Autofac.Extend.Standard",
-        "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\obj\\",
+        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -315,14 +300,14 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               },
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj"
               },
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj"
               }
             }
           }
@@ -369,24 +354,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
+    "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj",
+        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj",
         "projectName": "Hzdtf.Logger.Contract.Standard",
-        "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\obj\\",
+        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Contract.Standard\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -400,11 +382,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               },
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj"
               }
             }
           }
@@ -435,24 +417,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
+    "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj",
+        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj",
         "projectName": "Hzdtf.Persistence.Contract.Standard",
-        "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\obj\\",
+        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -466,11 +445,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               },
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj"
               }
             }
           }
@@ -501,24 +480,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
+    "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj",
+        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj",
         "projectName": "Hzdtf.Platform.Contract.Standard",
-        "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\obj\\",
+        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Platform\\Hzdtf.Platform.Contract.Standard\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -532,8 +508,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               }
             }
           }
@@ -564,24 +540,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj": {
+    "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj",
+        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj",
         "projectName": "Hzdtf.Service.Contract.Standard",
-        "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\obj\\",
+        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Contract.Standard\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -595,8 +568,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               }
             }
           }
@@ -627,24 +600,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj": {
+    "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj",
+        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj",
         "projectName": "Hzdtf.Service.Impl.Standard",
-        "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\obj\\",
+        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -658,17 +628,17 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               },
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj"
               },
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj"
               },
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj"
               }
             }
           }
@@ -699,24 +669,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj": {
+    "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj",
+        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj",
         "projectName": "Hzdtf.WorkFlow.Model.Standard",
-        "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\obj\\",
+        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -730,8 +697,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               }
             }
           }
@@ -762,24 +729,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj": {
+    "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj",
+        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj",
         "projectName": "Hzdtf.WorkFlow.Persistence.Contract.Standard",
-        "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\obj\\",
+        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -793,11 +757,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj"
               },
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj"
               }
             }
           }
@@ -828,24 +792,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj": {
+    "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj",
+        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj",
         "projectName": "Hzdtf.WorkFlow.Service.Contract.Standard",
-        "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\obj\\",
+        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -859,11 +820,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj"
               },
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj"
               }
             }
           }
@@ -894,24 +855,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj": {
+    "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj",
+        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj",
         "projectName": "Hzdtf.WorkFlow.Service.Impl.Standard",
-        "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\obj\\",
+        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -925,14 +883,14 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj"
               },
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj"
               },
-              "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProject\\Hzdtf.Foundation.Framework\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj"
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj"
               }
             }
           }
@@ -963,7 +921,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
