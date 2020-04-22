@@ -23,7 +23,7 @@ namespace Hzdtf.Autofac.Extend.Standard
         {
             if (type.IsClass && !type.IsAbstract)
             {
-                return !type.GetCustomAttributes(typeof(InjectAttribute), false).IsNullOrLength0();
+                return !type.GetCustomAttributes(typeof(InjectAttribute), false).IsNullOrLength0();                
             }
 
             return false;

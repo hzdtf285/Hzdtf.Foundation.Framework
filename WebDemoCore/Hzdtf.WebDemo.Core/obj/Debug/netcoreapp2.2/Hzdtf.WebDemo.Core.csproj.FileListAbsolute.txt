@@ -558,8 +558,6 @@ D:\MyProject\Hzdtf.Foundation.Framework\Hzdtf.Foundation.Framework\WebDemoCore\H
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebDemo.Core\bin\Debug\netcoreapp2.2\Config\LanguageLibrary\Hzdtf.Utility.Standard.LanguageLibrary.json
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebDemo.Core\bin\Debug\netcoreapp2.2\appsettings.Development.json
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebDemo.Core\bin\Debug\netcoreapp2.2\appsettings.json
-C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebDemo.Core\bin\Debug\netcoreapp2.2\appsettings_bak.Development.json
-C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebDemo.Core\bin\Debug\netcoreapp2.2\appsettings_bak.json
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebDemo.Core\bin\Debug\netcoreapp2.2\Config\assemblyConfig.json
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebDemo.Core\bin\Debug\netcoreapp2.2\Config\attachmentOwnerConfig.json
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebDemo.Core\bin\Debug\netcoreapp2.2\Config\LanguageLibrary\test.min.json

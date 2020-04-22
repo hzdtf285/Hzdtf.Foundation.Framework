@@ -52,7 +52,6 @@ namespace Hzdtf.WebDemo.Core.AppStart
                     builder.RegisterType<WorkflowConfigCache>().As<IWorkflowConfigReader>().AsSelf().PropertiesAutowired();
                     builder.RegisterType<WorkflowInitSequenceService>().As<IWorkflowFormService>().AsSelf().PropertiesAutowired();
 
-                    //builder.RegisterInstance()
                     builder.RegisterType<LanguageLibraryCache>().As<ILanguageLibrary>().AsSelf().PropertiesAutowired();
                     builder.RegisterType<LanguageLibraryConfigJson>().As<IReaderAll<LanguageInfo>>().AsSelf().PropertiesAutowired();
                 }

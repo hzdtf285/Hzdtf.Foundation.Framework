@@ -42,10 +42,10 @@
       ],
       "Lifecycle": "SIGNLETON",
       "Intercepteds": [
-        "FEG.Autofac.Extend.Standard,FEG.Autofac.Extend.Standard.Intercepteds.TryExceptionInterceptor",
+        "Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.TryExceptionInterceptor",
         "Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.AuthInterceptor",
-        "FEG.Autofac.Extend.Standard,FEG.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor",
-        "FEG.Autofac.Extend.Standard,FEG.Autofac.Extend.Standard.Intercepteds.ParamValiInterceptor",
+        "Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor",
+        "Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.ParamValiInterceptor",
         "Hzdtf.Persistence.Autofac.Standard,Hzdtf.Persistence.Autofac.Standard.TransactionInterceptor"
       ]
     }
