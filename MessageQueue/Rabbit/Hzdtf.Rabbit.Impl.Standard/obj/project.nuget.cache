@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "teBrwsXBkDALL3c1y/IEK5dyyzpmiC+oWwGEAxXUNg8F0ulspDvjbnZI2R/yzr5DhFKiXZ8kvJvV3Xe/yMVIzg==",
+  "dgSpecHash": "fc0tqm6ZXKTI5c8MaCNwmhbRHq171R6/Rh2bipGKENpkL6wBnSpxmifhDS6lFLEmaiZQYa2WqcEijwCTckxWMg==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\MessageQueue\\Rabbit\\Hzdtf.Rabbit.Impl.Standard\\Hzdtf.Rabbit.Impl.Standard.csproj",
   "expectedPackageFiles": [

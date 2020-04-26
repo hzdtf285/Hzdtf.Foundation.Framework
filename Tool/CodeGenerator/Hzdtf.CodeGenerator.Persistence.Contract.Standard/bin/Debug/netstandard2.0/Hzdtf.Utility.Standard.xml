@@ -4254,24 +4254,21 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="F:Hzdtf.Utility.Standard.Utils.StreamUtil.syncWriteFile">
-            <summary>
-            同步写入文件
-            </summary>
-        </member>
-        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ReaderFileContent(System.String)">
+        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ReaderFileContent(System.String,System.Boolean)">
             <summary>
             根据文件名读取文件内容
             </summary>
             <param name="fileName">文件名</param>
+            <param name="outOfProcessLock">是否跨进程锁</param>
             <returns>文件内容</returns>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ReaderFileContent(System.String,System.Text.Encoding)">
+        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ReaderFileContent(System.String,System.Text.Encoding,System.Boolean)">
             <summary>
             根据文件名读取文件内容
             </summary>
             <param name="fileName">文件名</param>
             <param name="encoding">编码</param>
+            <param name="outOfProcessLock">是否跨进程锁</param>
             <returns>文件内容</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ReaderStreamToString(System.IO.Stream)">
@@ -4295,6 +4292,23 @@
             </summary>
             <param name="stream">流</param>
             <returns>字节数组</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.WriteFileContent(System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            写入文件内容
+            </summary>
+            <param name="fileName">文件名</param>
+            <param name="content">内容</param>
+            <param name="append">是否追加</param>
+            <param name="outOfProcessLock">是否跨进程锁</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.OperationFile(System.String,System.Action{System.String},System.Boolean)">
+            <summary>
+            操作文件
+            </summary>
+            <param name="fileName">文件名</param>
+            <param name="operAction">操作动作回调</param>
+            <param name="outOfProcessLock">是否跨进程锁</param>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.WriteFileContent(System.String,System.String,System.Boolean)">
             <summary>
@@ -4333,6 +4347,13 @@
             </summary>
             <param name="fileName">文件名</param>
             <param name="data">数据</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.GetFileLockName(System.String)">
+            <summary>
+            获取文件锁名
+            </summary>
+            <param name="fileName">文件名</param>
+            <returns>文件锁名</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Utils.StringUtil">
             <summary>

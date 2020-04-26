@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
+using System.Threading;
 
 namespace Hzdtf.Utility.Standard.Utils
 {
@@ -12,25 +13,31 @@ namespace Hzdtf.Utility.Standard.Utils
     public static class StreamUtil
     {
         /// <summary>
-        /// 同步写入文件
-        /// </summary>
-        private static readonly object syncWriteFile = new object();
-
-        /// <summary>
         /// 根据文件名读取文件内容
         /// </summary>
         /// <param name="fileName">文件名</param>
+        /// <param name="outOfProcessLock">是否跨进程锁</param>
         /// <returns>文件内容</returns>
-        public static string ReaderFileContent(this string fileName) => ReaderFileContent(fileName, Encoding.UTF8);
+        public static string ReaderFileContent(this string fileName, bool outOfProcessLock = false) => ReaderFileContent(fileName, Encoding.UTF8, outOfProcessLock);
 
         /// <summary>
         /// 根据文件名读取文件内容
         /// </summary>
         /// <param name="fileName">文件名</param>
         /// <param name="encoding">编码</param>
+        /// <param name="outOfProcessLock">是否跨进程锁</param>
         /// <returns>文件内容</returns>
-        public static string ReaderFileContent(this string fileName, Encoding encoding) => ReaderStreamToString(new FileStream(fileName, FileMode.Open));
-       
+        public static string ReaderFileContent(this string fileName, Encoding encoding, bool outOfProcessLock = false)
+        {
+            string result = null;
+            OperationFile(fileName, file =>
+            {
+                result = ReaderStreamToString(new FileStream(file, FileMode.Open));
+            }, outOfProcessLock);
+
+            return result;
+        }
+
         /// <summary>
         /// 读取流并转换为字符串
         /// </summary>
@@ -85,11 +92,63 @@ namespace Hzdtf.Utility.Standard.Utils
         /// <param name="fileName">文件名</param>
         /// <param name="content">内容</param>
         /// <param name="append">是否追加</param>
-        public static void WriteFileContent(this string fileName, string content, bool append = false)
+        /// <param name="outOfProcessLock">是否跨进程锁</param>
+        public static void WriteFileContent(this string fileName, string content, bool append = false, bool outOfProcessLock = false)
         {
-            byte[] logBytes = Encoding.UTF8.GetBytes(content);
+            OperationFile(fileName, file =>
+            {
+                WriteFileContent(file, content, append);
+            }, outOfProcessLock);
+        }
+
+        /// <summary>
+        /// 操作文件
+        /// </summary>
+        /// <param name="fileName">文件名</param>
+        /// <param name="operAction">操作动作回调</param>
+        /// <param name="outOfProcessLock">是否跨进程锁</param>
+        public static void OperationFile(string fileName, Action<string> operAction, bool outOfProcessLock = false)
+        {
+            if (outOfProcessLock)
+            {
+                using (var mutex = new Mutex(false, GetFileLockName(fileName)))
+                {
+                    mutex.WaitOne();
+                    try
+                    {
+                        operAction(fileName);
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception(ex.Message, ex);
+                    }
+                    finally
+                    {
+                        mutex.ReleaseMutex();
+                    }
+                }
+            }
+            else
+            {
+                lock (GetFileLockName(fileName))
+                {
+                    operAction(fileName);
+                }
+            }
+        }
+
+        /// <summary>
+        /// 写入文件内容
+        /// </summary>
+        /// <param name="fileName">文件名</param>
+        /// <param name="content">内容</param>
+        /// <param name="append">是否追加</param>
+        private static void WriteFileContent(string fileName, string content, bool append = false)
+        {
             Stream stream = null;
-            lock (syncWriteFile)
+            byte[] logBytes = Encoding.UTF8.GetBytes(content);
+
+            try
             {
                 if (File.Exists(fileName))
                 {
@@ -107,22 +166,19 @@ namespace Hzdtf.Utility.Standard.Utils
                     stream = File.Create(fileName);
                 }
 
-                try
+                stream.Write(logBytes, 0, logBytes.Length);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message, ex);
+            }
+            finally
+            {
+                if (stream != null)
                 {
-                    stream.Write(logBytes, 0, logBytes.Length);
-                }
-                catch (Exception ex)
-                {
-                    throw new Exception(ex.Message, ex);
-                }
-                finally
-                {
-                    if (stream != null)
-                    {
-                        stream.Close();
-                        stream.Dispose();
-                        stream = null;
-                    }
+                    stream.Close();
+                    stream.Dispose();
+                    stream = null;
                 }
             }
         }
@@ -153,7 +209,7 @@ namespace Hzdtf.Utility.Standard.Utils
         /// <returns>数据</returns>
         public static T ConvertData<T>(byte[] dataBytes)
         {
-            if (dataBytes.IsNullOrLength0())
+            if (dataBytes == null)
             {
                 return default(T);
             }
@@ -202,5 +258,12 @@ namespace Hzdtf.Utility.Standard.Utils
                 }
             }
         }
+
+        /// <summary>
+        /// 获取文件锁名
+        /// </summary>
+        /// <param name="fileName">文件名</param>
+        /// <returns>文件锁名</returns>
+        public static string GetFileLockName(this string fileName) => $"OperationFile:{fileName.Replace("\\", "/").ToLower()}";
     }
 }

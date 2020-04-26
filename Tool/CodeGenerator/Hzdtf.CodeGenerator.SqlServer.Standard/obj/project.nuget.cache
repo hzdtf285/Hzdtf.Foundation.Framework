@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YJkugz8R+HScaUsylKPLqEM3fcq/jHZPH4+Qxntncn3VjvGdtxC0AR4CzUfinhqQW8rnED8j7yOwJXwKzipI2g==",
+  "dgSpecHash": "bKMDK5nZgp6HxWs+2cUz/cEW/BS9CYQi6UoFGyzBz6c+m5CO3642hUkVJIF7+o3wXeOeAyeFKHDHlXyHG43S4w==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Tool\\CodeGenerator\\Hzdtf.CodeGenerator.SqlServer.Standard\\Hzdtf.CodeGenerator.SqlServer.Standard.csproj",
   "expectedPackageFiles": [

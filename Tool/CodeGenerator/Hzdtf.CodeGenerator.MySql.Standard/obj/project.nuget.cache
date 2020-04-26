@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "c404mLBe8vT8SU8QJYR0F/8wFfc2WRK1k1GVtZ1bhHsUJUNYHBVEylU1WOvK7QhP2z2p7E6B48SJcASYOjv/bQ==",
+  "dgSpecHash": "gBTJSxyvAP1kFN9IB4xoLQ9sPAbkKdZClAwYoUK35clSjlGSnX8Fa5E0nMLGTQkvwBHrS5heyXRFZ1UHQmGMgQ==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Tool\\CodeGenerator\\Hzdtf.CodeGenerator.MySql.Standard\\Hzdtf.CodeGenerator.MySql.Standard.csproj",
   "expectedPackageFiles": [

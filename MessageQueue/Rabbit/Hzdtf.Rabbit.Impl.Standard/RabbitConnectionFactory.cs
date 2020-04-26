@@ -2,7 +2,6 @@
 using Hzdtf.Platform.Contract.Standard;
 using Hzdtf.Rabbit.Impl.Standard.Connection;
 using Hzdtf.Rabbit.Impl.Standard.MessageQueue;
-using Hzdtf.Utility.Standard.Connection;
 using Hzdtf.Utility.Standard.Enums;
 using Hzdtf.Utility.Standard.Safety;
 using System;

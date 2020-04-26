@@ -30,8 +30,8 @@ namespace Hzdtf.MessageQueue.RpcClient.Console.Core
             var data = conTypeValue.To(a0.Result, typeof(IList<StudentInfo>)) as IList<StudentInfo>;
 
 
-            //var a1 = stuService.TestTask1Async();
-            //a1.Wait();
+            var a1 = stuService.TestTask1Async();
+            a1.Wait();
             //var a3 = stuService.TestTask3Async();
             //a3.Wait();
             //var a2 = stuService.TestTask2Async();
