@@ -17,7 +17,7 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// </summary>
         /// <param name="userId">用户ID</param>
         /// <param name="connectionId">连接ID</param>
-        /// <returns>返回信息/returns>
+        /// <returns>返回信息</returns>
         ReturnInfo<IList<RoleInfo>> OwnRolesByUserId(int userId, string connectionId = null);
 
         /// <summary>
@@ -25,7 +25,7 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// </summary>
         /// <param name="roleId">角色ID</param>
         /// <param name="connectionId">连接ID</param>
-        /// <returns>返回信息/returns>
+        /// <returns>返回信息</returns>
         ReturnInfo<IList<UserInfo>> OwnUsersByRoleId(int roleId, string connectionId = null);
 
         /// <summary>

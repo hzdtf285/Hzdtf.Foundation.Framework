@@ -284,6 +284,7 @@ namespace Hzdtf.Persistence.Dapper.Standard
         /// 插入模型列表SQL语句
         /// </summary>
         /// <param name="models">模型列表</param>
+        /// <param name="parameters">动态参数</param>
         /// <returns>SQL语句</returns>
         protected abstract string InsertSql(IList<ModelT> models, out DynamicParameters parameters);
 

@@ -13,7 +13,6 @@ namespace Hzdtf.BasicFunction.WorkFlow.Standard
     /// 工作流初始序列服务
     /// @ 黄振东
     /// </summary>
-    /// <typeparam name="FormT">表单类型</typeparam>
     [Inject]
     public class WorkflowInitSequenceService : WorkflowFormService
     {

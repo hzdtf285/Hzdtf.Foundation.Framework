@@ -14,7 +14,6 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
     /// 异步持久化基类
     /// @ 黄振东
     /// </summary>
-    /// <typeparam name="ModelT">模型类型</typeparam>
     public abstract partial class PersistenceBase<ModelT> where ModelT : SimpleInfo
     {
         #region 读取方法

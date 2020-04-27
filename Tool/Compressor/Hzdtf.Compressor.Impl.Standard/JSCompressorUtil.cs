@@ -95,7 +95,7 @@ namespace Hzdtf.Compressor.Impl.Standard
         /// <summary>
         /// 读取文件组内容并转换为语系信息列表
         /// </summary>
-        /// <param name="fileName">文件名组</param>
+        /// <param name="fileNames">文件名组</param>
         /// <returns>语系信息列表</returns>
         private static IList<LanguageInfo> ReaderFilesToLanguages(string[] fileNames)
         {

@@ -229,34 +229,39 @@ namespace Hzdtf.Utility.Standard.Utils
         /// </summary>
         /// <param name="fileName">文件名</param>
         /// <param name="stream">流</param>
-        public static void WriteFile(this string fileName, Stream stream) => WriteFile(fileName, stream.ReaderStream());
+        /// <param name="outOfProcessLock">是否跨进程锁</param>
+        public static void WriteFile(this string fileName, Stream stream, bool outOfProcessLock = false) => WriteFile(fileName, stream.ReaderStream(), outOfProcessLock);
 
         /// <summary>
         /// 写入文件
         /// </summary>
         /// <param name="fileName">文件名</param>
         /// <param name="data">数据</param>
-        public static void WriteFile(this string fileName, byte[] data)
+        /// <param name="outOfProcessLock">是否跨进程锁</param>
+        public static void WriteFile(this string fileName, byte[] data, bool outOfProcessLock = false)
         {
-            FileStream fileStream = null;
-            try
+            OperationFile(fileName, file =>
             {
-                fileStream = new FileStream(fileName, FileMode.OpenOrCreate);
-                fileStream.Write(data, 0, data.Length);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message, ex);
-            }
-            finally
-            {
-                if (fileStream != null)
+                FileStream fileStream = null;
+                try
                 {
-                    fileStream.Close();
-                    fileStream.Dispose();
-                    fileStream = null;
+                    fileStream = new FileStream(file, FileMode.OpenOrCreate);
+                    fileStream.Write(data, 0, data.Length);
                 }
-            }
+                catch (Exception ex)
+                {
+                    throw new Exception(ex.Message, ex);
+                }
+                finally
+                {
+                    if (fileStream != null)
+                    {
+                        fileStream.Close();
+                        fileStream.Dispose();
+                        fileStream = null;
+                    }
+                }
+            }, outOfProcessLock);
         }
 
         /// <summary>

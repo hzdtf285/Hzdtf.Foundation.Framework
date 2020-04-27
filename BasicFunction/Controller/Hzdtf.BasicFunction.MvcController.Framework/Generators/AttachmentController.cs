@@ -41,6 +41,6 @@ namespace Hzdtf.BasicFunction.MvcController.Framework
         [HttpDelete]
         [Function(FunCodeDefine.REMOVE_CODE)]
         [Route("BatchRemove")]
-        public virtual ReturnInfo<bool> BatchRemove(int[] ids) => Service.RemoveByIds(ids);
+        public override ReturnInfo<bool> BatchRemove(int[] ids) => Service.RemoveByIds(ids);
     }
 }

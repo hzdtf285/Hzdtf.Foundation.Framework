@@ -43,7 +43,12 @@
             不限制则用*
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "P:Hzdtf.BasicFunction.Model.Standard.Expand.Attachment.AttachmentOwnerInfo.MaxSize" -->
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.Attachment.AttachmentOwnerInfo.MaxSize">
+            <summary>
+            最大文件大小（单位：KB）
+            如果不限制，则为-1
+            </summary>
+        </member>
         <member name="T:Hzdtf.BasicFunction.Model.Standard.Expand.Attachment.AttachmentStreamInfo">
             <summary>
             附件流信息

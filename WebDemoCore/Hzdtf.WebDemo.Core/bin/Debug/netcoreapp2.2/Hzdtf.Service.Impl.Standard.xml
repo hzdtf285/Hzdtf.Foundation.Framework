@@ -31,8 +31,6 @@
             服务基类
             @ 黄振东
             </summary>
-            <typeparam name="ModelT">模型类型</typeparam>
-            <typeparam name="PersistenceT">持久化类型</typeparam>
         </member>
         <member name="P:Hzdtf.Service.Impl.Standard.ServiceBase`2.Persistence">
             <summary>
@@ -157,7 +155,6 @@
             执行统计模型数前事件
             </summary>
             <param name="returnInfo">返回信息</param>
-            <param name="id">ID</param>
             <param name="connectionId">连接ID</param>
         </member>
         <member name="E:Hzdtf.Service.Impl.Standard.ServiceBase`2.Counted">
@@ -170,7 +167,6 @@
             执行统计模型数后事件
             </summary>
             <param name="returnInfo">返回信息</param>
-            <param name="id">ID</param>
             <param name="connectionId">连接ID</param>
         </member>
         <member name="M:Hzdtf.Service.Impl.Standard.ServiceBase`2.Count(System.String)">
@@ -574,6 +570,7 @@
             统计模型数前
             </summary>
             <param name="returnInfo">返回信息</param>
+            <param name="connectionId">连接ID</param>
             <returns>返回信息</returns>
         </member>
         <member name="M:Hzdtf.Service.Impl.Standard.ServiceBase`2.AfterCount(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Int32},System.String@)">

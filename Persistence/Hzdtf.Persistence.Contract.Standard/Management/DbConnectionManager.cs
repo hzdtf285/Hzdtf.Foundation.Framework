@@ -53,6 +53,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Management
         /// </summary>
         /// <param name="connectionId">连接ID</param>
         /// <param name="persistenceConnection">持久化连接</param>
+        /// <param name="connectionString">连接字符串</param>
         /// <param name="accessMode">访问模式</param>
         /// <returns>数据库连接</returns>
         public static IDbConnection GetDbConnection(string connectionId, IPersistenceConnection persistenceConnection, out string connectionString, AccessMode accessMode = AccessMode.MASTER)
@@ -409,8 +410,8 @@ namespace Hzdtf.Persistence.Contract.Standard.Management
         /// <summary>
         /// 添加键值
         /// </summary>
-        /// <returns>连接ID</returns>
-        /// <param name="dbConnection">数据库连接</param>
+        /// <param name="connectionId">连接ID</param>
+        /// <param name="dbConnectionEx">数据库连接</param>
         private static void AddDicValue(string connectionId, DbConnectionEx dbConnectionEx)
         {
             if (dicDbConnections.ContainsKey(connectionId))

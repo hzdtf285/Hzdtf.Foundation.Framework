@@ -11,7 +11,6 @@ namespace Hzdtf.Autofac.Extend.Standard.Intercepteds
     /// 拦截器基类
     /// @ 黄振东
     /// </summary>
-    /// <typeparam name="AttrT">特性类型</typeparam>
     public abstract class InterceptorBase : IInterceptor
     {
         /// <summary>

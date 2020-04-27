@@ -13,8 +13,6 @@ namespace Hzdtf.Service.Impl.Standard
     /// 服务基类
     /// @ 黄振东
     /// </summary>
-    /// <typeparam name="ModelT">模型类型</typeparam>
-    /// <typeparam name="PersistenceT">持久化类型</typeparam>
     public abstract partial class ServiceBase<ModelT, PersistenceT> 
         where ModelT : SimpleInfo
         where PersistenceT : IPersistence<ModelT>

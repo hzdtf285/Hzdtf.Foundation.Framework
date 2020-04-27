@@ -352,7 +352,6 @@ namespace Hzdtf.Service.Impl.Standard
         /// 执行统计模型数前事件
         /// </summary>
         /// <param name="returnInfo">返回信息</param>
-        /// <param name="id">ID</param>
         /// <param name="connectionId">连接ID</param>
         protected void OnCounting(ReturnInfo<int> returnInfo, string connectionId)
         {
@@ -371,7 +370,6 @@ namespace Hzdtf.Service.Impl.Standard
         /// 执行统计模型数后事件
         /// </summary>
         /// <param name="returnInfo">返回信息</param>
-        /// <param name="id">ID</param>
         /// <param name="connectionId">连接ID</param>
         protected void OnCounted(ReturnInfo<int> returnInfo, string connectionId)
         {
@@ -1488,7 +1486,7 @@ namespace Hzdtf.Service.Impl.Standard
         /// 根据ID集合查找模型列表后
         /// </summary>
         /// <param name="returnInfo">返回信息</param>
-        /// <param name="ids">ID集合param>
+        /// <param name="ids">ID集合<param>
         /// <param name="connectionId">连接ID</param>
         protected virtual void AfterFind(ReturnInfo<IList<ModelT>> returnInfo, int[] ids, ref string connectionId) { }
 
@@ -1512,6 +1510,7 @@ namespace Hzdtf.Service.Impl.Standard
         /// 统计模型数前
         /// </summary>
         /// <param name="returnInfo">返回信息</param>
+        /// <param name="connectionId">连接ID</param>
         /// <returns>返回信息</returns>
         protected virtual void BeforeCount(ReturnInfo<int> returnInfo, ref string connectionId) { }
 

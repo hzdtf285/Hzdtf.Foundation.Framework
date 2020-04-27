@@ -32,7 +32,6 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// <summary>
         /// 根据菜单编码和功能编码判断当前用户是否有权限
         /// </summary>
-        /// <param name="userId">用户ID</param>
         /// <param name="menuCode">菜单编码</param>
         /// <param name="functionCode">功能编码</param>
         /// <param name="connectionId">连接ID</param>
@@ -42,7 +41,6 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// <summary>
         /// 根据菜单编码和功能编码集合判断当前用户是否有权限
         /// </summary>
-        /// <param name="userId">用户ID</param>
         /// <param name="menuCode">菜单编码</param>
         /// <param name="functionCodes">功能编码集合</param>
         /// <param name="connectionId">连接ID</param>
@@ -62,7 +60,6 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// <summary>
         /// 根据菜单编码查询当前用户所拥有的功能信息列表
         /// </summary>
-        /// <param name="roleIds">用户ID</param>
         /// <param name="menuCode">菜单编码</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>返回信息</returns>
@@ -71,7 +68,7 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// <summary>
         /// 根据用户ID和菜单编码查询用户所拥有的功能信息列表
         /// </summary>
-        /// <param name="roleIds">用户ID</param>
+        /// <param name="userId">用户ID</param>
         /// <param name="menuCode">菜单编码</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>返回信息</returns>

@@ -16,7 +16,6 @@ namespace Hzdtf.CodeGenerator.Contract.Standard.Function
         /// 生成
         /// </summary>
         /// <param name="tables">表信息列表</param>
-        /// <param name="functionTypes">功能类型集合</param>
         /// <param name="namespacePfx">命名空间前辍</param>
         /// <param name="type">类型</param>
         /// <returns>返回信息</returns>

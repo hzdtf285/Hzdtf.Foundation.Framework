@@ -108,7 +108,6 @@ namespace Hzdtf.MySql.Standard
         /// <summary>
         /// 组合条件SQL
         /// </summary>
-        /// <param name="whereSql">条件SQL</param>
         /// <param name="filter">筛选</param>
         /// <param name="parameters">参数</param>
         /// <returns>条件SQL</returns>
@@ -228,7 +227,7 @@ namespace Hzdtf.MySql.Standard
         /// 插入模型列表SQL语句
         /// </summary>
         /// <param name="models">模型列表</param>
-        /// <param name="parameters">参数集合</param>
+        /// <param name="para">参数集合</param>
         /// <returns>SQL语句</returns>
         protected override string InsertSql(IList<ModelT> models, out DynamicParameters para)
         {
@@ -240,6 +239,7 @@ namespace Hzdtf.MySql.Standard
         /// 根据ID更新模型SQL语句
         /// </summary>
         /// <param name="model">模型</param>
+        /// <param name="propertyNames">属性名称集合</param>
         /// <returns>SQL语句</returns>
         protected override string UpdateByIdSql(ModelT model, string[] propertyNames = null) => $"UPDATE `{Table}` SET {GetUpdateFieldsSql(propertyNames)} {WHERE_ID_EQUAL_PARAM_SQL}";
 
@@ -471,7 +471,7 @@ namespace Hzdtf.MySql.Standard
         /// 根据字段名获取排序SQL语句
         /// </summary>
         /// <param name="sort">排序</param>
-        /// <param name="prop">排序的属性名</param>
+        /// <param name="field">排序的字段名</param>
         /// <param name="pfx">前辍</param>
         /// <returns>排序SQL语句</returns>
         protected string GetSortSqlByField(SortEnum sort, string field, string pfx = null)

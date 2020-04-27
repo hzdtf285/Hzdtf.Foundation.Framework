@@ -40,8 +40,8 @@ namespace Hzdtf.BasicFunction.Model.Standard.Expand.Attachment
         /// <summary>
         /// 最大文件大小（单位：KB）
         /// 如果不限制，则为-1
-        [JsonProperty("maxSize")]
         /// </summary>
+        [JsonProperty("maxSize")]
         [MessagePack.Key("maxSize")]
         public float MaxSize
         {

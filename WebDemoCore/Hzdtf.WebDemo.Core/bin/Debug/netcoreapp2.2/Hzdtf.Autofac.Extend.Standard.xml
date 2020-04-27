@@ -189,7 +189,6 @@
             拦截器基类
             @ 黄振东
             </summary>
-            <typeparam name="AttrT">特性类型</typeparam>
         </member>
         <member name="M:Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(Castle.DynamicProxy.IInvocation)">
             <summary>

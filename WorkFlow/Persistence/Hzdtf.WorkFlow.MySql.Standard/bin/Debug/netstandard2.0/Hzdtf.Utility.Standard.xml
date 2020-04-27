@@ -4334,19 +4334,21 @@
             <param name="dataBytes">字节流</param>
             <returns>数据</returns>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.WriteFile(System.String,System.IO.Stream)">
+        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.WriteFile(System.String,System.IO.Stream,System.Boolean)">
             <summary>
             写入文件
             </summary>
             <param name="fileName">文件名</param>
             <param name="stream">流</param>
+            <param name="outOfProcessLock">是否跨进程锁</param>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.WriteFile(System.String,System.Byte[])">
+        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.WriteFile(System.String,System.Byte[],System.Boolean)">
             <summary>
             写入文件
             </summary>
             <param name="fileName">文件名</param>
             <param name="data">数据</param>
+            <param name="outOfProcessLock">是否跨进程锁</param>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.GetFileLockName(System.String)">
             <summary>

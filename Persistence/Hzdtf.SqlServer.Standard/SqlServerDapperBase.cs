@@ -113,7 +113,6 @@ namespace Hzdtf.SqlServer.Standard
         /// <summary>
         /// 组合条件SQL
         /// </summary>
-        /// <param name="whereSql">条件SQL</param>
         /// <param name="filter">筛选</param>
         /// <param name="parameters">参数</param>
         /// <returns>条件SQL</returns>
@@ -233,7 +232,7 @@ namespace Hzdtf.SqlServer.Standard
         /// 插入模型列表SQL语句
         /// </summary>
         /// <param name="models">模型列表</param>
-        /// <param name="parameters">参数集合</param>
+        /// <param name="para">参数集合</param>
         /// <returns>SQL语句</returns>
         protected override string InsertSql(IList<ModelT> models, out DynamicParameters para)
         {

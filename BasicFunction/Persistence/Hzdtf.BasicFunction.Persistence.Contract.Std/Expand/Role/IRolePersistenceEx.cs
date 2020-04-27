@@ -15,8 +15,8 @@ namespace Hzdtf.BasicFunction.Persistence.Contract.Standard
         /// <summary>
         /// 根据编码或名称查询角色列表
         /// </summary>
-        /// <param name="role">编码</param>
-        /// <param name="notId">名称</param>
+        /// <param name="code">编码</param>
+        /// <param name="name">名称</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>角色列表</returns>
         IList<RoleInfo> SelelctByCodeOrName(string code, string name, string connectionId = null);
@@ -24,8 +24,8 @@ namespace Hzdtf.BasicFunction.Persistence.Contract.Standard
         /// <summary>
         /// 根据编码或名称查询角色列表，但排除ID
         /// </summary>
-        /// <param name="role">编码</param>
-        /// <param name="notId">名称</param>
+        /// <param name="code">编码</param>
+        /// <param name="name">名称</param>
         /// <param name="notId">排除ID</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>角色列表</returns>

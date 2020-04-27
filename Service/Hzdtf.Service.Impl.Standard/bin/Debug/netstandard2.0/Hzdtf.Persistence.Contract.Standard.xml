@@ -518,7 +518,6 @@
             异步持久化基类
             @ 黄振东
             </summary>
-            <typeparam name="ModelT">模型类型</typeparam>
         </member>
         <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.Select(System.Int32,System.String)">
             <summary>
@@ -1014,6 +1013,7 @@
             </summary>
             <param name="connectionId">连接ID</param>
             <param name="persistenceConnection">持久化连接</param>
+            <param name="connectionString">连接字符串</param>
             <param name="accessMode">访问模式</param>
             <returns>数据库连接</returns>
         </member>
@@ -1083,8 +1083,8 @@
             <summary>
             添加键值
             </summary>
-            <returns>连接ID</returns>
-            <param name="dbConnection">数据库连接</param>
+            <param name="connectionId">连接ID</param>
+            <param name="dbConnectionEx">数据库连接</param>
         </member>
         <member name="M:Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.GetDbConnectionFromCache(System.String,System.String,System.Boolean@)">
             <summary>
