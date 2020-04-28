@@ -16,7 +16,5 @@ namespace Hzdtf.Utility.Standard.Proxy
         /// <typeparam name="T">类型</typeparam>
         /// <returns>类型实例</returns>
         T Create<T>() where T : class;
-
-       //void SetAsyncT<T>();
     }
 }
