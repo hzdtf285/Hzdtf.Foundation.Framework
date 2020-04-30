@@ -5,18 +5,17 @@ using System.Text;
 namespace Hzdtf.Utility.Standard.Resources
 {
     /// <summary>
-    /// 数据库持久化基类
+    /// 从数据库池接口
     /// @ 黄振东
     /// </summary>
-    public abstract class DatabasePersistenceBase
+    public interface ISlaveDatabasePool : IDatabasePool
     {
         /// <summary>
-        /// 数据库池
+        /// 是否存在从
         /// </summary>
-        public IDatabasePool DatabasePool
+        bool ExistsSlave
         {
             get;
-            set;
         }
     }
 }

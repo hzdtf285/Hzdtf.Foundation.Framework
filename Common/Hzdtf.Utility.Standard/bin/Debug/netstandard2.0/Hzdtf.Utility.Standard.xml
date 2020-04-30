@@ -3021,17 +3021,6 @@
             关闭后事件
             </summary>
         </member>
-        <member name="T:Hzdtf.Utility.Standard.Resources.DatabasePersistenceBase">
-            <summary>
-            数据库持久化基类
-            @ 黄振东
-            </summary>
-        </member>
-        <member name="P:Hzdtf.Utility.Standard.Resources.DatabasePersistenceBase.DatabasePool">
-            <summary>
-            数据库池
-            </summary>
-        </member>
         <member name="T:Hzdtf.Utility.Standard.Resources.DatabasePoolBase">
             <summary>
             数据库池基类
@@ -3043,6 +3032,30 @@
             创建一个新的键
             </summary>
             <returns>一个新的键</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Resources.DatabasePoolServiceBase">
+            <summary>
+            数据库服务基类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Resources.DatabasePoolServiceBase.DatabasePool">
+            <summary>
+            数据库池
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Resources.DatabasePoolServiceBase.SlaveDatabasePool">
+            <summary>
+            从数据库池
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Resources.DatabasePoolServiceBase.GetDatabasePool(Hzdtf.Utility.Standard.Enums.AccessMode)">
+            <summary>
+            获取数据库池
+            如果输入是从，且没找到从，自动返回主
+            </summary>
+            <param name="mode">访问模式</param>
+            <returns>数据库池</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Resources.IDatabasePool">
             <summary>
@@ -3093,6 +3106,17 @@
         <member name="M:Hzdtf.Utility.Standard.Resources.IResourcePool`2.ReleaseAll">
             <summary>
             释放所有资源
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Resources.ISlaveDatabasePool">
+            <summary>
+            从数据库池接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Resources.ISlaveDatabasePool.ExistsSlave">
+            <summary>
+            是否存在从
             </summary>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Resources.ResourcePoolBase`2">
