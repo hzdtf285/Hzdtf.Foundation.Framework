@@ -24,6 +24,8 @@ namespace Hzdtf.Utility.Standard.Conversion.ReverConversion
                 case "man":
                 case "male":
                 case "boy":
+                case "true":
+                case "t":
                 case "1":
 
                     return true;
@@ -32,6 +34,7 @@ namespace Hzdtf.Utility.Standard.Conversion.ReverConversion
                 case "woman":
                 case "womanhood":
                 case "gril":
+                case "false":
                 case "f":
                 case "0":
 
