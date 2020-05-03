@@ -3501,6 +3501,17 @@
             <param name="data">数据</param>
             <returns>签名字符串</returns>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.SystemV2.LocalSystemClock">
+            <summary>
+            本地系统时钟
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.SystemV2.LocalSystemClock.UtcNow">
+            <summary>
+            UTC当前时间
+            </summary>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Utils.AssemblyUtil">
             <summary>
             程序集辅助类

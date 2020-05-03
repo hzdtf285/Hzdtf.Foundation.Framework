@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "p10ZO0KH169wnVIR1qMhJSyfNVlF2IdT502vuNxwk9kPQSRyRh0mlrgDoLQm5+rixvjJ7kK8ke2s36lDq9JVXw==",
+  "dgSpecHash": "jPNyIoIIBcpR2PyTvWEyPa2iGLscF61V3f6WfcT5qcJ1cn7KQf3+X7NaZ5YrW9j0JtPLdHpCSrrwFCyKbp0d7A==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\MessageQueue\\Demo\\Hzdtf.Consumer.Demo.Core\\Hzdtf.Consumer.Demo.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\messagepack\\1.7.3.7\\messagepack.1.7.3.7.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\2.2.0\\microsoft.extensions.caching.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.configuration\\2.2.0\\microsoft.extensions.configuration.2.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.2.0\\microsoft.extensions.configuration.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\2.2.0\\microsoft.extensions.configuration.fileextensions.2.2.0.nupkg.sha512",
