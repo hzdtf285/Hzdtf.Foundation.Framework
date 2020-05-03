@@ -220,6 +220,7 @@
             插入模型列表SQL语句
             </summary>
             <param name="models">模型列表</param>
+            <param name="parameters">动态参数</param>
             <returns>SQL语句</returns>
         </member>
         <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.UpdateByIdSql(`0,System.String[])">

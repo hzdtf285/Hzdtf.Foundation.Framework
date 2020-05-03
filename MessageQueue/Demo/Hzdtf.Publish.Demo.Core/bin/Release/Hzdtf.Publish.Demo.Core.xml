@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.Publish.Demo.Core</name>
+    </assembly>
+    <members>
+        <member name="M:Hzdtf.Publish.Demo.Core.Program.InitConfig">
+            <summary>
+            初始化配置
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Publish.Demo.Core.Program.PublishString">
+            <summary>
+            生产者发布字符串
+            </summary>
+        </member>
+    </members>
+</doc>

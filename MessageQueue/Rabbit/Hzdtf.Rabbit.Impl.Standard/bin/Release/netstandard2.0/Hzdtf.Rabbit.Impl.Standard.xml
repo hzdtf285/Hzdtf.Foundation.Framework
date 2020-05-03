@@ -448,7 +448,7 @@
             构造方法
             </summary>
             <param name="channel">渠道</param>
-            <param name="RabbitMessageQueueInfo">Rabbit消息队列信息</param>
+            <param name="rabbitMessageQueueInfo">Rabbit消息队列信息</param>
         </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitConsumer.Subscribe(System.Func{System.String,System.Boolean},System.Boolean)">
             <summary>
@@ -544,7 +544,7 @@
             只初始化交换机与基本属性，队列定义请重写Init方法进行操作
             </summary>
             <param name="channel">渠道</param>
-            <param name="RabbitMessageQueueInfo">Rabbit消息队列信息</param>
+            <param name="rabbitMessageQueueInfo">Rabbit消息队列信息</param>
         </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitCoreBase.Close">
             <summary>
@@ -595,7 +595,7 @@
             构造方法
             </summary>
             <param name="channel">渠道</param>
-            <param name="RabbitMessageQueueInfo">Rabbit消息队列信息</param>
+            <param name="rabbitMessageQueueInfo">Rabbit消息队列信息</param>
         </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitProducer.Publish(System.String,System.String)">
             <summary>
@@ -636,7 +636,7 @@
             构造方法
             </summary>
             <param name="channel">渠道</param>
-            <param name="RabbitMessageQueueInfo">Rabbit消息队列信息</param>
+            <param name="rabbitMessageQueueInfo">Rabbit消息队列信息</param>
         </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcClient.Call(System.Byte[])">
             <summary>
@@ -668,7 +668,7 @@
             构造方法
             </summary>
             <param name="channel">渠道</param>
-            <param name="RabbitMessageQueueInfo">Rabbit消息队列信息</param>
+            <param name="rabbitMessageQueueInfo">Rabbit消息队列信息</param>
         </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcServer.Receive(System.Func{System.Byte[],System.Byte[]})">
             <summary>
@@ -717,6 +717,7 @@
             构造方法
             </summary>
             <param name="subscription">消费</param>
+            <param name="receiveMessageFun">接收消息回调</param>
             <param name="log">日志</param>
         </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitSimpleRpcServer.HandleSimpleCall(System.Boolean,RabbitMQ.Client.IBasicProperties,System.Byte[],RabbitMQ.Client.IBasicProperties@)">

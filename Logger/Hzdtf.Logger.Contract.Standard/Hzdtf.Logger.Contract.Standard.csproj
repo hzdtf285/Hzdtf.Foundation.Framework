@@ -14,7 +14,8 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>D:\Hzdtf.FoundationFramework-master\Logger\Hzdtf.Logger.Contract.Standard\Hzdtf.Logger.Contract.Standard.xml</DocumentationFile>
+    <DocumentationFile>Bin\Release\Hzdtf.Logger.Contract.Standard.xml</DocumentationFile>
+    <OutputPath>Bin\Release</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>

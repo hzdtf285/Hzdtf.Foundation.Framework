@@ -13,7 +13,8 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>D:\Hzdtf.FoundationFramework-master\Controller\Hzdtf.BasicController.Core\Hzdtf.BasicController.Core.xml</DocumentationFile>
+    <DocumentationFile>Bin\Release\Hzdtf.BasicController.Core.xml</DocumentationFile>
+    <OutputPath>Bin\Release</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,0 +1,15 @@
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.Authorization.Contract.Standard.csprojAssemblyReference.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.Authorization.Contract.Standard.csproj.CoreCompileInputs.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.Authorization.Contract.Standard.AssemblyInfoInputs.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.Authorization.Contract.Standard.AssemblyInfo.cs
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Contract.Standard\Bin\Release\netstandard2.0\Config\LanguageLibrary\Hzdtf.Utility.Standard.LanguageLibrary.json
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Contract.Standard\Bin\Release\netstandard2.0\Hzdtf.Authorization.Contract.Standard.deps.json
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Contract.Standard\Bin\Release\netstandard2.0\Hzdtf.Authorization.Contract.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Contract.Standard\Bin\Release\netstandard2.0\Hzdtf.Authorization.Contract.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Contract.Standard\Bin\Release\netstandard2.0\Hzdtf.Authorization.Contract.Standard.xml
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Contract.Standard\Bin\Release\netstandard2.0\Hzdtf.Utility.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Contract.Standard\Bin\Release\netstandard2.0\Hzdtf.Utility.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Contract.Standard\Bin\Release\netstandard2.0\Hzdtf.Utility.Standard.xml
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.Authorization.Contract.Standard.csproj.CopyComplete
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.Authorization.Contract.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.Authorization.Contract.Standard.pdb

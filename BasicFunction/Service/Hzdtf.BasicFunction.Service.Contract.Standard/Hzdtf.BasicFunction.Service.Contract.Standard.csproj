@@ -10,7 +10,8 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>D:\Hzdtf.FoundationFramework-master\BasicFunction\Service\Hzdtf.BasicFunction.Service.Contract.Standard\Hzdtf.BasicFunction.Service.Contract.Standard.xml</DocumentationFile>
+    <DocumentationFile>Bin\Release\Hzdtf.BasicFunction.Service.Contract.Standard.xml</DocumentationFile>
+    <OutputPath>Bin\Release</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

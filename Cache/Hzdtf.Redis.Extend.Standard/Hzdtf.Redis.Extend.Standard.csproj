@@ -9,7 +9,8 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>D:\Hzdtf.FoundationFramework-master\Cache\Hzdtf.Redis.Extend.Standard\Hzdtf.Redis.Extend.Standard.xml</DocumentationFile>
+    <DocumentationFile>Bin\Release\Hzdtf.Redis.Extend.Standard.xml</DocumentationFile>
+    <OutputPath>Bin\Release</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

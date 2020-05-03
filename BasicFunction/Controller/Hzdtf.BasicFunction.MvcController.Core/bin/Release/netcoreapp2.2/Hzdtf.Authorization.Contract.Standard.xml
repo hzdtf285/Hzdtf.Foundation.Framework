@@ -46,6 +46,7 @@
             验证参数
             </summary>
             <typeparam name="IdentityInfoT">身份模型类型</typeparam>
+            <param name="returnInfo">返回信息</param>
             <param name="user">用户</param>
             <param name="password">密码</param>
             <param name="userAlias">用户别名</param>

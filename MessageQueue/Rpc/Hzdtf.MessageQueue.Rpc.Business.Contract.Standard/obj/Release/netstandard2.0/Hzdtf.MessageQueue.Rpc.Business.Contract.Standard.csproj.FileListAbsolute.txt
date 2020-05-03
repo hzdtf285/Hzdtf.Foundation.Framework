@@ -24,3 +24,17 @@ F:\MyWorks\net\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc
 F:\MyWorks\net\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.csproj.CopyComplete
 F:\MyWorks\net\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.dll
 F:\MyWorks\net\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\bin\Release\netstandard2.0\Config\LanguageLibrary\Hzdtf.Utility.Standard.LanguageLibrary.json
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\bin\Release\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.deps.json
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\bin\Release\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\bin\Release\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\bin\Release\netstandard2.0\Hzdtf.Utility.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\bin\Release\netstandard2.0\Hzdtf.Utility.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\bin\Release\netstandard2.0\Hzdtf.Utility.Standard.xml
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.csprojAssemblyReference.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.csproj.CoreCompileInputs.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.AssemblyInfoInputs.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.AssemblyInfo.cs
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.csproj.CopyComplete
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.pdb

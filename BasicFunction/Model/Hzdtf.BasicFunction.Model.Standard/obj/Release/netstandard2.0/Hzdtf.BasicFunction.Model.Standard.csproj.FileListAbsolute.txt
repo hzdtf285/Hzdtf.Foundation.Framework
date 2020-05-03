@@ -1,0 +1,15 @@
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Model\Hzdtf.BasicFunction.Model.Standard\obj\Release\netstandard2.0\Hzdtf.BasicFunction.Model.Standard.csprojAssemblyReference.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Model\Hzdtf.BasicFunction.Model.Standard\obj\Release\netstandard2.0\Hzdtf.BasicFunction.Model.Standard.csproj.CoreCompileInputs.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Model\Hzdtf.BasicFunction.Model.Standard\obj\Release\netstandard2.0\Hzdtf.BasicFunction.Model.Standard.AssemblyInfoInputs.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Model\Hzdtf.BasicFunction.Model.Standard\obj\Release\netstandard2.0\Hzdtf.BasicFunction.Model.Standard.AssemblyInfo.cs
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Model\Hzdtf.BasicFunction.Model.Standard\Bin\Release\netstandard2.0\Config\LanguageLibrary\Hzdtf.Utility.Standard.LanguageLibrary.json
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Model\Hzdtf.BasicFunction.Model.Standard\Bin\Release\netstandard2.0\Hzdtf.BasicFunction.Model.Standard.deps.json
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Model\Hzdtf.BasicFunction.Model.Standard\Bin\Release\netstandard2.0\Hzdtf.BasicFunction.Model.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Model\Hzdtf.BasicFunction.Model.Standard\Bin\Release\netstandard2.0\Hzdtf.BasicFunction.Model.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Model\Hzdtf.BasicFunction.Model.Standard\Bin\Release\netstandard2.0\Hzdtf.BasicFunction.Model.Standard.xml
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Model\Hzdtf.BasicFunction.Model.Standard\Bin\Release\netstandard2.0\Hzdtf.Utility.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Model\Hzdtf.BasicFunction.Model.Standard\Bin\Release\netstandard2.0\Hzdtf.Utility.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Model\Hzdtf.BasicFunction.Model.Standard\Bin\Release\netstandard2.0\Hzdtf.Utility.Standard.xml
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Model\Hzdtf.BasicFunction.Model.Standard\obj\Release\netstandard2.0\Hzdtf.BasicFunction.Model.Standard.csproj.CopyComplete
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Model\Hzdtf.BasicFunction.Model.Standard\obj\Release\netstandard2.0\Hzdtf.BasicFunction.Model.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Model\Hzdtf.BasicFunction.Model.Standard\obj\Release\netstandard2.0\Hzdtf.BasicFunction.Model.Standard.pdb

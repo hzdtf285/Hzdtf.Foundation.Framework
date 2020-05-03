@@ -13,7 +13,9 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>D:\Hzdtf.FoundationFramework-master\BasicFunction\Model\Hzdtf.BasicFunction.Model.Standard\Hzdtf.BasicFunction.Model.Standard.xml</DocumentationFile>
+    <DocumentationFile>Bin\Release\Hzdtf.BasicFunction.Model.Standard.xml</DocumentationFile>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>Bin\Release</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,0 +1,15 @@
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Model\Hzdtf.WorkFlow.Model.Standard\obj\Release\netstandard2.0\Hzdtf.WorkFlow.Model.Standard.csprojAssemblyReference.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Model\Hzdtf.WorkFlow.Model.Standard\obj\Release\netstandard2.0\Hzdtf.WorkFlow.Model.Standard.csproj.CoreCompileInputs.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Model\Hzdtf.WorkFlow.Model.Standard\obj\Release\netstandard2.0\Hzdtf.WorkFlow.Model.Standard.AssemblyInfoInputs.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Model\Hzdtf.WorkFlow.Model.Standard\obj\Release\netstandard2.0\Hzdtf.WorkFlow.Model.Standard.AssemblyInfo.cs
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Model\Hzdtf.WorkFlow.Model.Standard\Bin\Release\netstandard2.0\Config\LanguageLibrary\Hzdtf.Utility.Standard.LanguageLibrary.json
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Model\Hzdtf.WorkFlow.Model.Standard\Bin\Release\netstandard2.0\Hzdtf.WorkFlow.Model.Standard.deps.json
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Model\Hzdtf.WorkFlow.Model.Standard\Bin\Release\netstandard2.0\Hzdtf.WorkFlow.Model.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Model\Hzdtf.WorkFlow.Model.Standard\Bin\Release\netstandard2.0\Hzdtf.WorkFlow.Model.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Model\Hzdtf.WorkFlow.Model.Standard\Bin\Release\netstandard2.0\Hzdtf.WorkFlow.Model.Standard.xml
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Model\Hzdtf.WorkFlow.Model.Standard\Bin\Release\netstandard2.0\Hzdtf.Utility.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Model\Hzdtf.WorkFlow.Model.Standard\Bin\Release\netstandard2.0\Hzdtf.Utility.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Model\Hzdtf.WorkFlow.Model.Standard\Bin\Release\netstandard2.0\Hzdtf.Utility.Standard.xml
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Model\Hzdtf.WorkFlow.Model.Standard\obj\Release\netstandard2.0\Hzdtf.WorkFlow.Model.Standard.csproj.CopyComplete
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Model\Hzdtf.WorkFlow.Model.Standard\obj\Release\netstandard2.0\Hzdtf.WorkFlow.Model.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Model\Hzdtf.WorkFlow.Model.Standard\obj\Release\netstandard2.0\Hzdtf.WorkFlow.Model.Standard.pdb

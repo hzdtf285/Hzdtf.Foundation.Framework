@@ -1,0 +1,17 @@
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Model\Hzdtf.Demo.Model.Standard\obj\Release\netstandard2.0\Hzdtf.Demo.Model.Standard.csproj.CoreCompileInputs.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Model\Hzdtf.Demo.Model.Standard\obj\Release\netstandard2.0\Hzdtf.Demo.Model.Standard.AssemblyInfoInputs.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Model\Hzdtf.Demo.Model.Standard\obj\Release\netstandard2.0\Hzdtf.Demo.Model.Standard.AssemblyInfo.cs
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Model\Hzdtf.Demo.Model.Standard\bin\Release\netstandard2.0\Config\LanguageLibrary\Hzdtf.Utility.Standard.LanguageLibrary.json
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Model\Hzdtf.Demo.Model.Standard\bin\Release\netstandard2.0\Hzdtf.Demo.Model.Standard.deps.json
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Model\Hzdtf.Demo.Model.Standard\bin\Release\netstandard2.0\Hzdtf.Demo.Model.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Model\Hzdtf.Demo.Model.Standard\bin\Release\netstandard2.0\Hzdtf.Demo.Model.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Model\Hzdtf.Demo.Model.Standard\bin\Release\netstandard2.0\Hzdtf.Utility.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Model\Hzdtf.Demo.Model.Standard\bin\Release\netstandard2.0\Hzdtf.WorkFlow.Model.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Model\Hzdtf.Demo.Model.Standard\bin\Release\netstandard2.0\Hzdtf.Utility.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Model\Hzdtf.Demo.Model.Standard\bin\Release\netstandard2.0\Hzdtf.Utility.Standard.xml
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Model\Hzdtf.Demo.Model.Standard\bin\Release\netstandard2.0\Hzdtf.WorkFlow.Model.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Model\Hzdtf.Demo.Model.Standard\bin\Release\netstandard2.0\Hzdtf.WorkFlow.Model.Standard.xml
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Model\Hzdtf.Demo.Model.Standard\obj\Release\netstandard2.0\Hzdtf.Demo.Model.Standard.csprojAssemblyReference.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Model\Hzdtf.Demo.Model.Standard\obj\Release\netstandard2.0\Hzdtf.Demo.Model.Standard.csproj.CopyComplete
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Model\Hzdtf.Demo.Model.Standard\obj\Release\netstandard2.0\Hzdtf.Demo.Model.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Model\Hzdtf.Demo.Model.Standard\obj\Release\netstandard2.0\Hzdtf.Demo.Model.Standard.pdb

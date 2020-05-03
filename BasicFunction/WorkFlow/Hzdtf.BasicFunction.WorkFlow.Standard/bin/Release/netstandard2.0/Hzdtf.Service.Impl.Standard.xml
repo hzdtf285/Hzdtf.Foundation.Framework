@@ -31,8 +31,6 @@
             服务基类
             @ 黄振东
             </summary>
-            <typeparam name="ModelT">模型类型</typeparam>
-            <typeparam name="PersistenceT">持久化类型</typeparam>
         </member>
         <member name="P:Hzdtf.Service.Impl.Standard.ServiceBase`2.Persistence">
             <summary>
@@ -157,7 +155,6 @@
             执行统计模型数前事件
             </summary>
             <param name="returnInfo">返回信息</param>
-            <param name="id">ID</param>
             <param name="connectionId">连接ID</param>
         </member>
         <member name="E:Hzdtf.Service.Impl.Standard.ServiceBase`2.Counted">
@@ -170,7 +167,6 @@
             执行统计模型数后事件
             </summary>
             <param name="returnInfo">返回信息</param>
-            <param name="id">ID</param>
             <param name="connectionId">连接ID</param>
         </member>
         <member name="M:Hzdtf.Service.Impl.Standard.ServiceBase`2.Count(System.String)">
@@ -552,7 +548,7 @@
             <param name="ids">ID集合</param>
             <param name="connectionId">连接ID</param>
         </member>
-        <!-- 对于成员“M:Hzdtf.Service.Impl.Standard.ServiceBase`2.AfterFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Collections.Generic.IList{`0}},System.Int32[],System.String@)”忽略有格式错误的 XML 注释 -->
+        <!-- Badly formed XML comment ignored for member "M:Hzdtf.Service.Impl.Standard.ServiceBase`2.AfterFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Collections.Generic.IList{`0}},System.Int32[],System.String@)" -->
         <member name="M:Hzdtf.Service.Impl.Standard.ServiceBase`2.BeforeExists(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},System.Int32,System.String@)">
             <summary>
             根据ID判断模型是否存在前
@@ -574,6 +570,7 @@
             统计模型数前
             </summary>
             <param name="returnInfo">返回信息</param>
+            <param name="connectionId">连接ID</param>
             <returns>返回信息</returns>
         </member>
         <member name="M:Hzdtf.Service.Impl.Standard.ServiceBase`2.AfterCount(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Int32},System.String@)">

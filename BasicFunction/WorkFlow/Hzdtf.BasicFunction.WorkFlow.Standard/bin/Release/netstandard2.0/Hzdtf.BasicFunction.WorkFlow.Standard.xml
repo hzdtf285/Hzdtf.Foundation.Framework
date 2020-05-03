@@ -82,7 +82,6 @@
             工作流初始序列服务
             @ 黄振东
             </summary>
-            <typeparam name="FormT">表单类型</typeparam>
         </member>
         <member name="P:Hzdtf.BasicFunction.WorkFlow.Standard.WorkflowInitSequenceService.SequenceService">
             <summary>

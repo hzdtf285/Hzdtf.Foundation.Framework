@@ -9,7 +9,8 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>D:\Hzdtf.FoundationFramework-master\Persistence\Hzdtf.MySql.Standard\Hzdtf.MySql.Standard.xml</DocumentationFile>
+    <DocumentationFile>Bin\Release\Hzdtf.MySql.Standard.xml</DocumentationFile>
+    <OutputPath>Bin\Release</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

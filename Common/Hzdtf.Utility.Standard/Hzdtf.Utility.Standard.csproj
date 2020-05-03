@@ -12,6 +12,8 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>bin\Debug\Hzdtf.Utility.Standard.xml</DocumentationFile>
+    <OutputPath>bin\Debug\</OutputPath>
+    <WarningLevel>3</WarningLevel>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

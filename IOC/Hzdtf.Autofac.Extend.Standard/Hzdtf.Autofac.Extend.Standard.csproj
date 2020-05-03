@@ -9,7 +9,8 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>D:\Hzdtf.FoundationFramework-master\IOC\Hzdtf.Autofac.Extend.Standard\Hzdtf.Autofac.Extend.Standard.xml</DocumentationFile>
+    <DocumentationFile>Bin\Release\Hzdtf.Autofac.Extend.Standard.xml</DocumentationFile>
+    <OutputPath>Bin\Release</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

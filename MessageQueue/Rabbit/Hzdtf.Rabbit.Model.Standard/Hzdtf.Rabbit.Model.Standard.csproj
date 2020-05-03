@@ -9,7 +9,8 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>D:\Hzdtf.FoundationFramework-master\MessageQueue\Rabbit\Hzdtf.Rabbit.Model.Standard\Hzdtf.Rabbit.Model.Standard.xml</DocumentationFile>
+    <DocumentationFile>Bin\Release\Hzdtf.Rabbit.Model.Standard.xml</DocumentationFile>
+    <OutputPath>Bin\Release</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
