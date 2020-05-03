@@ -9,8 +9,7 @@ namespace Hzdtf.Utility.Standard.LoadBalance
     /// 轮询负载均衡
     /// @ 黄振东
     /// </summary>
-    /// <typeparam name="T">类型</typeparam>
-    public class PollingLoadBalance<T> : ILoadBalance<T>
+    public class RoundRobinLoadBalance : ILoadBalance
     {
         /// <summary>
         /// 索引
@@ -18,23 +17,31 @@ namespace Hzdtf.Utility.Standard.LoadBalance
         private int index = -1;
 
         /// <summary>
+        /// 同步对象
+        /// </summary>
+        private readonly object syncObject = new object();
+
+        /// <summary>
         /// 解析
         /// </summary>
         /// <param name="array">数组</param>
         /// <returns>元素</returns>
-        public T Resolve(T[] array)
+        public string Resolve(string[] array)
         {
             if (array.IsNullOrLength0())
             {
                 throw new ArgumentNullException("数组不能为null或长度不能为0");
             }
 
-            if (index >= array.Length - 1)
+            lock (syncObject)
             {
-                index = -1;
-            }
+                if (index >= array.Length - 1)
+                {
+                    index = -1;
+                }
 
-            return array[++index];
+                return array[++index];
+            }
         }
     }
 }

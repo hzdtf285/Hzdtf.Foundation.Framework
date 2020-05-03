@@ -15,7 +15,9 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>D:\Hzdtf.FoundationFramework-master\Common\Hzdtf.Utility.Standard\Hzdtf.Utility.Standard.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\Hzdtf.Utility.Standard.xml</DocumentationFile>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <OutputPath>bin\Release</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>

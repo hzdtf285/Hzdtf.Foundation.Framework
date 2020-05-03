@@ -9,8 +9,7 @@ namespace Hzdtf.Utility.Standard.LoadBalance
     /// 随机负载均衡
     /// @ 黄振东
     /// </summary>
-    /// <typeparam name="T">类型</typeparam>
-    public class RandomLoadBalance<T> : ILoadBalance<T>
+    public class RandomLoadBalance : ILoadBalance
     {
         /// <summary>
         /// 随机
@@ -22,7 +21,7 @@ namespace Hzdtf.Utility.Standard.LoadBalance
         /// </summary>
         /// <param name="array">数组</param>
         /// <returns>元素</returns>
-        public T Resolve(T[] array)
+        public string Resolve(string[] array)
         {
             if (array.IsNullOrLength0())
             {

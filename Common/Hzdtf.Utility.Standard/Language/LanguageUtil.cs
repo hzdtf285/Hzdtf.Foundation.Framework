@@ -37,7 +37,7 @@ namespace Hzdtf.Utility.Standard.Language
             {
                 SetCurrentCulture(GetCurrentCultureName());                
             }
-
+            
             return ToLanguage(key, Thread.CurrentThread.CurrentUICulture.Name);
         }
 
