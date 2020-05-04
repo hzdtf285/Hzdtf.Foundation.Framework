@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.Utility.AspNet.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.Utility.AspNet.Core.LoadBalance.HashIpPortLoadBalanceExtensions">
+            <summary>
+            哈希+IP负载均衡扩展类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.AspNet.Core.LoadBalance.HashIpPortLoadBalanceExtensions.localPort">
+            <summary>
+            本地端口
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.LoadBalance.HashIpPortLoadBalanceExtensions.AddHashIpPortLoadBalance(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            添加哈希+IP负载均衡
+            </summary>
+            <param name="services">服务</param>
+            <returns>服务</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.LoadBalance.HashIpPortLoadBalanceExtensions.UseHashIpPortLoadBalance(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Nullable{System.Int32})">
+            <summary>
+            使用哈希+IP负载均衡
+            </summary>
+            <param name="app">应用生成器</param>
+            <param name="port">端口</param>
+            <returns>应用生成器</returns>
+        </member>
+    </members>
+</doc>

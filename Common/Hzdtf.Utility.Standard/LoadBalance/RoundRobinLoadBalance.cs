@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Hzdtf.Utility.Standard.Utils;
 
 namespace Hzdtf.Utility.Standard.LoadBalance
 {
@@ -9,7 +8,7 @@ namespace Hzdtf.Utility.Standard.LoadBalance
     /// 轮询负载均衡
     /// @ 黄振东
     /// </summary>
-    public class RoundRobinLoadBalance : ILoadBalance
+    public class RoundRobinLoadBalance : LoadBalanceBase
     {
         /// <summary>
         /// 索引
@@ -22,17 +21,12 @@ namespace Hzdtf.Utility.Standard.LoadBalance
         private readonly object syncObject = new object();
 
         /// <summary>
-        /// 解析
+        /// 获取索引
         /// </summary>
         /// <param name="array">数组</param>
-        /// <returns>元素</returns>
-        public string Resolve(string[] array)
+        /// <returns>索引</returns>
+        public override int GetIndex(string[] array)
         {
-            if (array.IsNullOrLength0())
-            {
-                throw new ArgumentNullException("数组不能为null或长度不能为0");
-            }
-
             lock (syncObject)
             {
                 if (index >= array.Length - 1)
@@ -40,7 +34,7 @@ namespace Hzdtf.Utility.Standard.LoadBalance
                     index = -1;
                 }
 
-                return array[++index];
+                return ++index;
             }
         }
     }

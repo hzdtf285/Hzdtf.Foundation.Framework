@@ -11,7 +11,7 @@ namespace Hzdtf.Utility.Standard.LoadBalance
     /// 如果要加上端口，则在静态属性里设置GetPort
     /// @ 黄振东
     /// </summary>
-    public class HashIpPortLoadBalance : ILoadBalance
+    public class HashIpPortLoadBalance : LoadBalanceBase
     {
         /// <summary>
         /// 哈希，默认是MD5哈希算法
@@ -50,7 +50,8 @@ namespace Hzdtf.Utility.Standard.LoadBalance
             {
                 if (localHashCode == -1)
                 {
-                    var str = GetPort == null ? NetworkUtil.LocalIP : $"{NetworkUtil.LocalIP}:{GetPort()}";
+                    int port = GetPort == null ? 0 : GetPort();
+                    var str = $"{NetworkUtil.LocalIP}:{port}";
                     lock (syncLocalHashCode)
                     {
                         localHashCode = Hash.GenerateHashCode(str);
@@ -62,18 +63,10 @@ namespace Hzdtf.Utility.Standard.LoadBalance
         }
 
         /// <summary>
-        /// 解析
+        /// 获取索引
         /// </summary>
         /// <param name="array">数组</param>
-        /// <returns>元素</returns>
-        public string Resolve(string[] array)
-        {
-            if (array.IsNullOrLength0())
-            {
-                throw new ArgumentNullException("数组不能为null或长度不能为0");
-            }
-            
-            return array[LocalHashCode % array.Length];
-        }
+        /// <returns>索引</returns>
+        public override int GetIndex(string[] array) => Convert.ToInt32(LocalHashCode % array.Length);
     }
 }

@@ -54,5 +54,50 @@ namespace Hzdtf.Utility.Standard.Utils
             int i = 0;
             return InternetGetConnectedState(out i, 0);
         }
+
+        /// <summary>
+        /// 从域名获取端口，如果是合格的域名，没有指定端口，默认http返回80，https返回443
+        /// </summary>
+        /// <param name="domain">域名</param>
+        /// <returns>端口</returns>
+        public static int GetPortFromDomain(string domain)
+        {
+            if (string.IsNullOrWhiteSpace(domain))
+            {
+                return 0;
+            }
+
+            domain = domain.ToLower();
+            if (!domain.StartsWith("http://") && !domain.StartsWith("https://"))
+            {
+                domain = "http://" + domain;
+            }
+
+            return new Uri(domain).Port;
+        }
+
+        /// <summary>
+        /// 过滤URL，将带有*或[::]替换为本地IP
+        /// </summary>
+        /// <param name="url">URL</param>
+        /// <returns>过滤后的URL</returns>
+        public static string FilterUrl(string url)
+        {
+            if (string.IsNullOrWhiteSpace(url))
+            {
+                return url;
+            }
+
+            if (url.Contains("*"))
+            {
+                url = url.Replace("*", NetworkUtil.LocalIP);
+            }
+            else if (url.Contains("[::]"))
+            {
+                url = url.Replace("[::]", NetworkUtil.LocalIP);
+            }
+
+            return url;
+        }
     }
 }

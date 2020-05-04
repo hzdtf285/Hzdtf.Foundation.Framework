@@ -94,6 +94,17 @@
           }
         }
       },
+      "Microsoft.Extensions.Caching.Abstractions/2.2.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
+        }
+      },
       "Microsoft.Extensions.DependencyInjection/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0"
@@ -108,6 +119,18 @@
       "Microsoft.Extensions.DependencyInjection.Abstractions/2.2.0": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/2.2.0": {
+        "dependencies": {
+          "System.Memory": "4.5.1",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18315"
           }
@@ -427,16 +450,16 @@
           }
         }
       },
-      "System.Memory/4.5.0": {
+      "System.Memory/4.5.1": {
         "dependencies": {
           "System.Buffers": "4.4.0",
           "System.Numerics.Vectors": "4.4.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
         },
         "runtime": {
           "lib/netstandard2.0/System.Memory.dll": {
             "assemblyVersion": "4.0.1.0",
-            "fileVersion": "4.6.26515.6"
+            "fileVersion": "4.6.26606.5"
           }
         }
       },
@@ -564,7 +587,7 @@
           "Microsoft.NETCore.Targets": "1.1.0"
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
             "assemblyVersion": "4.0.4.0",
@@ -621,7 +644,7 @@
       },
       "System.Security.Cryptography.ProtectedData/4.5.0": {
         "dependencies": {
-          "System.Memory": "4.5.0"
+          "System.Memory": "4.5.1"
         },
         "runtime": {
           "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
@@ -790,6 +813,7 @@
       "Hzdtf.Utility.Standard/2.0.0": {
         "dependencies": {
           "MessagePack": "1.7.3.7",
+          "Microsoft.Extensions.Caching.Abstractions": "2.2.0",
           "NPOI": "2.4.1",
           "Newtonsoft.Json": "12.0.1",
           "System.ComponentModel.Annotations": "4.5.0",
@@ -843,6 +867,13 @@
       "path": "messagepack/1.7.3.7",
       "hashPath": "messagepack.1.7.3.7.nupkg.sha512"
     },
+    "Microsoft.Extensions.Caching.Abstractions/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-spsJkYo8gGJapaxTSQFN/wqA+ghpJMLwB4ZyTB+fSdpd7AmMFP/YSpIcGmczcw4KggpxLGhLk7lCkSIlgvHaqQ==",
+      "path": "microsoft.extensions.caching.abstractions/2.2.0",
+      "hashPath": "microsoft.extensions.caching.abstractions.2.2.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.DependencyInjection/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -856,6 +887,13 @@
       "sha512": "sha512-f9hstgjVmr6rmrfGSpfsVOl2irKAgr1QjrSi3FgnS7kulxband50f2brRLwySAQTADPZeTdow0mpSMcoAdadCw==",
       "path": "microsoft.extensions.dependencyinjection.abstractions/2.2.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-azyQtqbm4fSaDzZHD/J+V6oWMFaf2tWP4WEGIYePLCMw3+b2RQdj9ybgbQyjCshcitQKQ4lEDOZjmSlTTrHxUg==",
+      "path": "microsoft.extensions.primitives/2.2.0",
+      "hashPath": "microsoft.extensions.primitives.2.2.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -1046,12 +1084,12 @@
       "path": "system.linq.expressions/4.3.0",
       "hashPath": "system.linq.expressions.4.3.0.nupkg.sha512"
     },
-    "System.Memory/4.5.0": {
+    "System.Memory/4.5.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-m0psCSpUxTGfvwyO0i03ajXVhgBqyXlibXz0Mo1dtKGjaHrXFLnuQ8rNBTmWRqbfRjr4eC6Wah4X5FfuFDu5og==",
-      "path": "system.memory/4.5.0",
-      "hashPath": "system.memory.4.5.0.nupkg.sha512"
+      "sha512": "sha512-sDJYJpGtTgx+23Ayu5euxG5mAXWdkDb4+b0rD0Cab0M1oQS9H0HXGPriKcqpXuiJDTV7fTp/d+fMDJmnr6sNvA==",
+      "path": "system.memory/4.5.1",
+      "hashPath": "system.memory.4.5.1.nupkg.sha512"
     },
     "System.Numerics.Vectors/4.4.0": {
       "type": "package",
@@ -1137,12 +1175,12 @@
       "path": "system.runtime/4.3.0",
       "hashPath": "system.runtime.4.3.0.nupkg.sha512"
     },
-    "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+    "System.Runtime.CompilerServices.Unsafe/4.5.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-YrzNWduCDHhUaSRBxHxL11UkM2fD6y8hITHis4/LbQZ6vj3vdRjoH3IoPWWC9uDXK2wHIqn+b5gv1Np/VKyM1g==",
-      "path": "system.runtime.compilerservices.unsafe/4.5.0",
-      "hashPath": "system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512"
+      "sha512": "sha512-Zh8t8oqolRaFa9vmOZfdQm/qKejdqz0J9kr7o2Fu0vPeoH3BL1EOXipKWwkWtLT1JPzjByrF19fGuFlNbmPpiw==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.1",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
     },
     "System.Runtime.Extensions/4.3.0": {
       "type": "package",

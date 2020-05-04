@@ -1934,12 +1934,12 @@
             本地哈希值
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.LoadBalance.HashIpPortLoadBalance.Resolve(System.String[])">
+        <member name="M:Hzdtf.Utility.Standard.LoadBalance.HashIpPortLoadBalance.GetIndex(System.String[])">
             <summary>
-            解析
+            获取索引
             </summary>
             <param name="array">数组</param>
-            <returns>元素</returns>
+            <returns>索引</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.LoadBalance.ILoadBalance">
             <summary>
@@ -1953,6 +1953,26 @@
             </summary>
             <param name="array">数组</param>
             <returns>元素</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.LoadBalance.LoadBalanceBase">
+            <summary>
+            负载均衡基类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.LoadBalance.LoadBalanceBase.Resolve(System.String[])">
+            <summary>
+            解析
+            </summary>
+            <param name="array">数组</param>
+            <returns>元素</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.LoadBalance.LoadBalanceBase.GetIndex(System.String[])">
+            <summary>
+            获取索引
+            </summary>
+            <param name="array">数组</param>
+            <returns>索引</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.LoadBalance.LoadBalanceType">
             <summary>
@@ -1986,12 +2006,12 @@
             随机
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.LoadBalance.RandomLoadBalance.Resolve(System.String[])">
+        <member name="M:Hzdtf.Utility.Standard.LoadBalance.RandomLoadBalance.GetIndex(System.String[])">
             <summary>
-            解析
+            获取索引
             </summary>
             <param name="array">数组</param>
-            <returns>元素</returns>
+            <returns>索引</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.LoadBalance.RoundRobinLoadBalance">
             <summary>
@@ -2009,12 +2029,12 @@
             同步对象
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.LoadBalance.RoundRobinLoadBalance.Resolve(System.String[])">
+        <member name="M:Hzdtf.Utility.Standard.LoadBalance.RoundRobinLoadBalance.GetIndex(System.String[])">
             <summary>
-            解析
+            获取索引
             </summary>
             <param name="array">数组</param>
-            <returns>元素</returns>
+            <returns>索引</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Model.BasicPermissionInfo">
             <summary>
@@ -4148,6 +4168,20 @@
             判断网络是否已连接
             </summary>
             <returns>网络是否已连接</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.NetworkUtil.GetPortFromDomain(System.String)">
+            <summary>
+            从域名获取端口，如果是合格的域名，没有指定端口，默认http返回80，https返回443
+            </summary>
+            <param name="domain">域名</param>
+            <returns>端口</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.NetworkUtil.FilterUrl(System.String)">
+            <summary>
+            过滤URL，将带有*或[::]替换为本地IP
+            </summary>
+            <param name="url">URL</param>
+            <returns>过滤后的URL</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Utils.NumberUtil">
             <summary>
