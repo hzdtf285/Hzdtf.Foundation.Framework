@@ -99,7 +99,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment
             catch (Exception ex)
             {
                 Log.ErrorAsync(ex.Message, ex, this.GetType().FullName);
-                returnInfo.SetFailureMsg(ex.Message);
+                returnInfo.SetFailureMsg(ex.Message, ex.StackTrace, ex);
             }
 
             return returnInfo;
@@ -125,7 +125,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment
             catch (Exception ex)
             {
                 Log.ErrorAsync(ex.Message, ex, this.GetType().FullName);
-                returnInfo.SetFailureMsg(ex.Message);
+                returnInfo.SetFailureMsg(ex.Message, ex.StackTrace, ex);
             }
 
             return returnInfo;

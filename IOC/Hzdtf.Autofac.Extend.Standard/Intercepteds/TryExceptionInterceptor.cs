@@ -124,7 +124,7 @@ namespace Hzdtf.Autofac.Extend.Standard.Intercepteds
                 else
                 {
                     BasicReturnInfo basicReturnInfo = invocation.Method.ReturnType.CreateInstance<BasicReturnInfo>();
-                    basicReturnInfo.SetFailureMsg("操作异常，请联系管理员", ex.Message);
+                    basicReturnInfo.SetFailureMsg("操作异常，请联系管理员", ex.Message, ex);
                     invocation.ReturnValue = basicReturnInfo;
                 }
 

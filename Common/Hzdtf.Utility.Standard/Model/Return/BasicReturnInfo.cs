@@ -79,6 +79,17 @@ namespace Hzdtf.Utility.Standard.Model.Return
         }
 
         /// <summary>
+        /// 异常
+        /// </summary>
+        [JsonIgnore]
+        [IgnoreMember]
+        public Exception Ex
+        {
+            get;
+            set;
+        }       
+
+        /// <summary>
         /// 是否成功
         /// </summary>
         /// <returns>是否成功</returns>
@@ -102,7 +113,12 @@ namespace Hzdtf.Utility.Standard.Model.Return
         /// </summary>
         /// <param name="msg">消息</param>
         /// <param name="desc">描述</param>
-        public void SetFailureMsg(string msg, string desc = null) => SetCodeMsg(DEFAULT_FAILURE_CODE, msg, desc);
+        /// <param name="ex">异常</param>
+        public void SetFailureMsg(string msg, string desc = null, Exception ex = null)
+        {
+            SetCodeMsg(DEFAULT_FAILURE_CODE, msg, desc);
+            this.Ex = ex;
+        }
 
         /// <summary>
         /// 设置编码和消息

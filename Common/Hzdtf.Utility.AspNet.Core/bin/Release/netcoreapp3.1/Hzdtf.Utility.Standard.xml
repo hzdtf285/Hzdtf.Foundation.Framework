@@ -2526,6 +2526,11 @@
             描述
             </summary>
         </member>
+        <member name="P:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.Ex">
+            <summary>
+            异常
+            </summary>
+        </member>
         <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.Success">
             <summary>
             是否成功
@@ -2545,12 +2550,13 @@
             <param name="msg">消息</param>
             <param name="desc">描述</param>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.SetFailureMsg(System.String,System.String)">
+        <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.SetFailureMsg(System.String,System.String,System.Exception)">
             <summary>
             设置失败消息
             </summary>
             <param name="msg">消息</param>
             <param name="desc">描述</param>
+            <param name="ex">异常</param>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.SetCodeMsg(System.Int32,System.String,System.String)">
             <summary>

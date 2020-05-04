@@ -2526,6 +2526,11 @@
             描述
             </summary>
         </member>
+        <member name="P:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.Ex">
+            <summary>
+            异常
+            </summary>
+        </member>
         <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.Success">
             <summary>
             是否成功
@@ -2545,12 +2550,13 @@
             <param name="msg">消息</param>
             <param name="desc">描述</param>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.SetFailureMsg(System.String,System.String)">
+        <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.SetFailureMsg(System.String,System.String,System.Exception)">
             <summary>
             设置失败消息
             </summary>
             <param name="msg">消息</param>
             <param name="desc">描述</param>
+            <param name="ex">异常</param>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.SetCodeMsg(System.Int32,System.String,System.String)">
             <summary>
@@ -5418,6 +5424,53 @@
             <param name="param">参数</param>
             <param name="paramIndex">参数索引位置</param>
             <returns>返回信息</returns>
+        </member>
+        <member name="T:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory">
+            <summary>
+            服务提供者内存缓存
+            必须手工设置原生服务提供者
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.cache">
+            <summary>
+            缓存
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.ProtoServicesProvider">
+            <summary>
+            原生服务提供者
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.cacheExpire">
+            <summary>
+            缓存过期时间
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.#ctor(System.Int32)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="cacheExpire">缓存失效时间（单位：秒），-1为永不过期</param>
+        </member>
+        <member name="M:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.#ctor(Microsoft.Extensions.Caching.Memory.IMemoryCache)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="cache">缓存</param>
+        </member>
+        <member name="M:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.GetAddresses(System.String,System.String)">
+            <summary>
+            异步根据服务名获取地址数组
+            </summary>
+            <param name="serviceName">服务名</param>
+            <param name="tag">标签</param>
+            <returns>地址数组任务</returns>
         </member>
     </members>
 </doc>

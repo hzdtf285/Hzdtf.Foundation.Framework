@@ -1934,12 +1934,12 @@
             本地哈希值
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.LoadBalance.HashIpPortLoadBalance.Resolve(System.String[])">
+        <member name="M:Hzdtf.Utility.Standard.LoadBalance.HashIpPortLoadBalance.GetIndex(System.String[])">
             <summary>
-            解析
+            获取索引
             </summary>
             <param name="array">数组</param>
-            <returns>元素</returns>
+            <returns>索引</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.LoadBalance.ILoadBalance">
             <summary>
@@ -1953,6 +1953,26 @@
             </summary>
             <param name="array">数组</param>
             <returns>元素</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.LoadBalance.LoadBalanceBase">
+            <summary>
+            负载均衡基类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.LoadBalance.LoadBalanceBase.Resolve(System.String[])">
+            <summary>
+            解析
+            </summary>
+            <param name="array">数组</param>
+            <returns>元素</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.LoadBalance.LoadBalanceBase.GetIndex(System.String[])">
+            <summary>
+            获取索引
+            </summary>
+            <param name="array">数组</param>
+            <returns>索引</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.LoadBalance.LoadBalanceType">
             <summary>
@@ -1975,6 +1995,32 @@
             哈希IP+端口
             </summary>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.LoadBalance.LoadBalanceMode">
+            <summary>
+            负载均衡模式
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.LoadBalance.LoadBalanceMode.RANDOM">
+            <summary>
+            随机
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.LoadBalance.LoadBalanceMode.ROUND_ROBIN">
+            <summary>
+            轮询
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.LoadBalance.LoadBalanceMode.HASH_IP_PORT">
+            <summary>
+            哈希IP+端口
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.LoadBalance.LoadBalanceMode.OTHER">
+            <summary>
+            其它
+            </summary>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.LoadBalance.RandomLoadBalance">
             <summary>
             随机负载均衡
@@ -1986,12 +2032,12 @@
             随机
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.LoadBalance.RandomLoadBalance.Resolve(System.String[])">
+        <member name="M:Hzdtf.Utility.Standard.LoadBalance.RandomLoadBalance.GetIndex(System.String[])">
             <summary>
-            解析
+            获取索引
             </summary>
             <param name="array">数组</param>
-            <returns>元素</returns>
+            <returns>索引</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.LoadBalance.RoundRobinLoadBalance">
             <summary>
@@ -2009,12 +2055,12 @@
             同步对象
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.LoadBalance.RoundRobinLoadBalance.Resolve(System.String[])">
+        <member name="M:Hzdtf.Utility.Standard.LoadBalance.RoundRobinLoadBalance.GetIndex(System.String[])">
             <summary>
-            解析
+            获取索引
             </summary>
             <param name="array">数组</param>
-            <returns>元素</returns>
+            <returns>索引</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Model.BasicPermissionInfo">
             <summary>
@@ -2480,6 +2526,11 @@
             描述
             </summary>
         </member>
+        <member name="P:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.Ex">
+            <summary>
+            异常
+            </summary>
+        </member>
         <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.Success">
             <summary>
             是否成功
@@ -2499,12 +2550,13 @@
             <param name="msg">消息</param>
             <param name="desc">描述</param>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.SetFailureMsg(System.String,System.String)">
+        <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.SetFailureMsg(System.String,System.String,System.Exception)">
             <summary>
             设置失败消息
             </summary>
             <param name="msg">消息</param>
             <param name="desc">描述</param>
+            <param name="ex">异常</param>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.SetCodeMsg(System.Int32,System.String,System.String)">
             <summary>
@@ -3083,6 +3135,44 @@
             关闭后事件
             </summary>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.RemoteService.HttpServicesBuilder">
+            <summary>
+            Http服务生成
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.RemoteService.HttpServicesBuilder.ServiceProvider">
+            <summary>
+            服务提供者
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.RemoteService.HttpServicesBuilder.ServiceName">
+            <summary>
+            服务名
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.RemoteService.HttpServicesBuilder.Sheme">
+            <summary>
+            方案
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.RemoteService.HttpServicesBuilder.Tag">
+            <summary>
+            标签
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.RemoteService.HttpServicesBuilder.LoadBalance">
+            <summary>
+            负载均衡策略
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.HttpServicesBuilder.BuilderAsync(System.String)">
+            <summary>
+            异步生成地址
+            </summary>
+            <param name="path">路径</param>
+            <returns>生成地址任务</returns>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.RemoteService.IServicesBuilder">
             <summary>
             服务生成器接口
@@ -3116,10 +3206,10 @@
         </member>
         <member name="M:Hzdtf.Utility.Standard.RemoteService.IServicesBuilder.BuilderAsync(System.String)">
             <summary>
-            异步生成Uri
+            异步生成地址
             </summary>
             <param name="path">路径</param>
-            <returns>生成Uri任务</returns>
+            <returns>生成地址任务</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.RemoteService.IServicesProvider">
             <summary>
@@ -3135,43 +3225,89 @@
             <param name="tag">标签</param>
             <returns>地址数组任务</returns>
         </member>
-        <member name="T:Hzdtf.Utility.Standard.RemoteService.ServicesBuilder">
+        <member name="T:Hzdtf.Utility.Standard.RemoteService.IUnityServicesBuilder">
             <summary>
-            服务生成
+            统一服务生成器接口
             @ 黄振东
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Standard.RemoteService.ServicesBuilder.ServiceProvider">
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.IUnityServicesBuilder.BuilderAsync(System.String,System.String,System.String)">
             <summary>
-            服务提供者
+            异步生成地址
+            </summary>
+            <param name="serviceName">服务名</param>
+            <param name="path">路径</param>
+            <param name="tag">标签</param>
+            <returns>生成地址任务</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.RemoteService.ServicesBasicOptions">
+            <summary>
+            服务基本选项配置
+            @ 黄振东
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Standard.RemoteService.ServicesBuilder.ServiceName">
+        <member name="P:Hzdtf.Utility.Standard.RemoteService.ServicesBasicOptions.LoadBalanceMode">
             <summary>
-            服务名
+            负载均衡模式
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Standard.RemoteService.ServicesBuilder.Sheme">
+        <member name="P:Hzdtf.Utility.Standard.RemoteService.ServicesBasicOptions.Sheme">
             <summary>
             方案
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Standard.RemoteService.ServicesBuilder.Tag">
+        <member name="P:Hzdtf.Utility.Standard.RemoteService.ServicesBasicOptions.Tag">
             <summary>
             标签
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Standard.RemoteService.ServicesBuilder.LoadBalance">
+        <member name="T:Hzdtf.Utility.Standard.RemoteService.ServicesOptions">
             <summary>
-            负载均衡策略
+            服务选项配置
+            @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.RemoteService.ServicesBuilder.BuilderAsync(System.String)">
+        <member name="P:Hzdtf.Utility.Standard.RemoteService.ServicesOptions.ServiceName">
             <summary>
-            异步生成Uri
+            服务名
             </summary>
-            <param name="path">路径</param>
-            <returns>生成Uri任务</returns>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.RemoteService.ServicesOptions.LoadBalance">
+            <summary>
+            负载均衡
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.RemoteService.ServicesOptions.ServicesBuilder">
+            <summary>
+            服务生成器
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.RemoteService.GlobalServicesOptions">
+            <summary>
+            全局服务配置选项
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.RemoteService.UnityServicesOptions">
+            <summary>
+            统一服务选项配置
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.RemoteService.UnityServicesOptions.Services">
+            <summary>
+            服务配置数组
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.RemoteService.UnityServicesOptions.GlobalConfiguration">
+            <summary>
+            全局配置
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.UnityServicesOptions.Reset">
+            <summary>
+            重置，如果Services没有配置而GlobalConfiguration有配置，则用GlobalConfiguration代替。并设置默认值
+            </summary>
         </member>
         <member name="T:Hzdtf.Utility.Standard.RemoteService.ServicesProviderExtensions">
             <summary>
@@ -3186,6 +3322,62 @@
             <param name="service">服务提供者</param>
             <param name="config">配置回调</param>
             <returns>服务生成器</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.RemoteService.UnityServicesBuilderCache">
+            <summary>
+            统一服务生成缓存
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.RemoteService.UnityServicesBuilderCache.syncOptions">
+            <summary>
+            同步统一服务选项配置
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.RemoteService.UnityServicesBuilderCache.options">
+            <summary>
+            统一服务选项配置
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.RemoteService.UnityServicesBuilderCache.servicesProvider">
+            <summary>
+            服务提供者
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.UnityServicesBuilderCache.#ctor(Hzdtf.Utility.Standard.RemoteService.IServicesProvider)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="servicesProvider">服务提供者</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.UnityServicesBuilderCache.SetOptionsJsonFile(System.String)">
+            <summary>
+            设置统一服务选项配置JSON文件
+            </summary>
+            <param name="unityServicesOptionsJsonFile">统一服务选项配置JSON文件</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.UnityServicesBuilderCache.SetOptions(Hzdtf.Utility.Standard.RemoteService.UnityServicesOptions)">
+            <summary>
+            设置统一服务选项配置
+            </summary>
+            <param name="options">统一服务选项配置</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.UnityServicesBuilderCache.BuilderAsync(System.String,System.String,System.String)">
+            <summary>
+            异步生成地址
+            </summary>
+            <param name="serviceName">服务名</param>
+            <param name="path">路径</param>
+            <param name="tag">标签</param>
+            <returns>生成地址任务</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.UnityServicesBuilderCache.GetServicesOptions(System.String,System.String)">
+            <summary>
+            根据服务名和标签获取服务选项配置
+            </summary>
+            <param name="serviceName">服务名</param>
+            <param name="tag">标签</param>
+            <returns>服务选项配置</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Resources.DatabasePoolBase">
             <summary>
@@ -4155,6 +4347,13 @@
             </summary>
             <param name="domain">域名</param>
             <returns>端口</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.NetworkUtil.FilterUrl(System.String)">
+            <summary>
+            过滤URL，将带有*或[::]替换为本地IP
+            </summary>
+            <param name="url">URL</param>
+            <returns>过滤后的URL</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Utils.NumberUtil">
             <summary>
@@ -5225,6 +5424,53 @@
             <param name="param">参数</param>
             <param name="paramIndex">参数索引位置</param>
             <returns>返回信息</returns>
+        </member>
+        <member name="T:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory">
+            <summary>
+            服务提供者内存缓存
+            必须手工设置原生服务提供者
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.cache">
+            <summary>
+            缓存
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.ProtoServicesProvider">
+            <summary>
+            原生服务提供者
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.cacheExpire">
+            <summary>
+            缓存过期时间
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.#ctor(System.Int32)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="cacheExpire">缓存失效时间（单位：秒），-1为永不过期</param>
+        </member>
+        <member name="M:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.#ctor(Microsoft.Extensions.Caching.Memory.IMemoryCache)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="cache">缓存</param>
+        </member>
+        <member name="M:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.GetAddresses(System.String,System.String)">
+            <summary>
+            异步根据服务名获取地址数组
+            </summary>
+            <param name="serviceName">服务名</param>
+            <param name="tag">标签</param>
+            <returns>地址数组任务</returns>
         </member>
     </members>
 </doc>
