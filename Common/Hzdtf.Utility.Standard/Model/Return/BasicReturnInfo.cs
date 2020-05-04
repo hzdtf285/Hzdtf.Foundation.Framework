@@ -83,6 +83,8 @@ namespace Hzdtf.Utility.Standard.Model.Return
         /// </summary>
         [JsonIgnore]
         [IgnoreMember]
+        [JsonProperty("ex")]
+        [Key("ex")]
         public Exception Ex
         {
             get;
