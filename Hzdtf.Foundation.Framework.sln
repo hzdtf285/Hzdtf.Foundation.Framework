@@ -203,7 +203,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.MessageQueue.RpcClien
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.MessageQueue.RpcServer.Console.Core", "MessageQueue\Rpc\Hzdtf.MessageQueue.RpcServer.Console.Core\Hzdtf.MessageQueue.RpcServer.Console.Core.csproj", "{4B739314-545B-4F05-8888-3BEF3A377940}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hzdtf.Utility.AspNet.Core", "Common\Hzdtf.Utility.AspNet.Core\Hzdtf.Utility.AspNet.Core.csproj", "{C5905D6F-408E-4312-82C8-9E66BD42E6A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Utility.AspNet.Core", "Common\Hzdtf.Utility.AspNet.Core\Hzdtf.Utility.AspNet.Core.csproj", "{C5905D6F-408E-4312-82C8-9E66BD42E6A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hzdtf.WebTest3.1.Core", "WebDemoCore\Hzdtf.WebTest3.1.Core\Hzdtf.WebTest3.1.Core.csproj", "{47AC23E7-B002-4B13-8CE9-7DF880B8A11B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -475,6 +477,10 @@ Global
 		{C5905D6F-408E-4312-82C8-9E66BD42E6A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5905D6F-408E-4312-82C8-9E66BD42E6A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5905D6F-408E-4312-82C8-9E66BD42E6A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47AC23E7-B002-4B13-8CE9-7DF880B8A11B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47AC23E7-B002-4B13-8CE9-7DF880B8A11B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47AC23E7-B002-4B13-8CE9-7DF880B8A11B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47AC23E7-B002-4B13-8CE9-7DF880B8A11B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -565,6 +571,7 @@ Global
 		{1AF9E061-C032-4CCC-AA01-8C2B015D993F} = {1AEEF665-096B-4F36-AEAD-8886442CEC11}
 		{4B739314-545B-4F05-8888-3BEF3A377940} = {1AEEF665-096B-4F36-AEAD-8886442CEC11}
 		{C5905D6F-408E-4312-82C8-9E66BD42E6A1} = {E47A5D02-9409-4AA7-AB74-9329DD789BC8}
+		{47AC23E7-B002-4B13-8CE9-7DF880B8A11B} = {0E5D4923-AD7A-4348-8D18-A8BE0E0B3967}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0297FB00-2BBF-4140-9158-6FD32EBD51A9}

@@ -58,10 +58,10 @@ namespace Hzdtf.Utility.Standard.RemoteService
         }
 
         /// <summary>
-        /// 异步生成Uri
+        /// 异步生成地址
         /// </summary>
         /// <param name="path">路径</param>
-        /// <returns>生成Uri任务</returns>
-        Task<Uri> BuilderAsync(string path);
+        /// <returns>生成地址任务</returns>
+        Task<string> BuilderAsync(string path);
     }
 }

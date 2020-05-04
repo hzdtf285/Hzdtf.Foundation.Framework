@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "OG2lBtMejL5l3IZ05RxMebINBOH3FfOSHsx0kB/AlqUevbus+QHWdtlJMiJNqlKMXGq7YLtICTYoWwcNNYNvtQ==",
+  "dgSpecHash": "7761Mykn/wC/OTHueZj6IR1agEMBSdT3w5WCul13wEql4MzEmUrsCnT+G5OYjuG8vFuTeKu8ZvvGYxK8yTxKUg==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Tool\\CodeGenerator\\Hzdtf.CodeGenerator.Model.Standard\\Hzdtf.CodeGenerator.Model.Standard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\messagepack\\1.7.3.7\\messagepack.1.7.3.7.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\2.2.0\\microsoft.extensions.caching.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.caching.memory\\2.2.0\\microsoft.extensions.caching.memory.2.2.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.2.0\\microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.options\\2.2.0\\microsoft.extensions.options.2.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

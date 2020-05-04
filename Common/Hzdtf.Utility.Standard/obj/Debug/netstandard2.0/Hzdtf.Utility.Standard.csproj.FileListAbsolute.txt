@@ -44,9 +44,9 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Utility.Standard\bi
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Utility.Standard\bin\Debug\netstandard2.0\Hzdtf.Utility.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Utility.Standard\bin\Debug\netstandard2.0\Hzdtf.Utility.Standard.pdb
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Utility.Standard\bin\Debug\netstandard2.0\Hzdtf.Utility.Standard.xml
-C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.csproj.CoreCompileInputs.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.AssemblyInfoInputs.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.AssemblyInfo.cs
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.pdb
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.csprojAssemblyReference.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.csproj.CoreCompileInputs.cache

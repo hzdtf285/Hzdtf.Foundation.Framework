@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 namespace Hzdtf.Utility.Standard.RemoteService
 {
     /// <summary>
-    /// 服务生成
+    /// Http服务生成
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public class ServicesBuilder : IServicesBuilder
+    public class HttpServicesBuilder : IServicesBuilder
     {
         /// <summary>
         /// 服务提供者
@@ -60,17 +60,17 @@ namespace Hzdtf.Utility.Standard.RemoteService
         } = LoadBalanceType.Random;
 
         /// <summary>
-        /// 异步生成Uri
+        /// 异步生成地址
         /// </summary>
         /// <param name="path">路径</param>
-        /// <returns>生成Uri任务</returns>
-        public async Task<Uri> BuilderAsync(string path)
+        /// <returns>生成地址任务</returns>
+        public async Task<string> BuilderAsync(string path)
         {
             var addresses = await ServiceProvider.GetAddresses(ServiceName, Tag);
             var address = LoadBalance.Resolve(addresses);
             var baseUri = new Uri($"{Sheme}://{address}");
 
-            return new Uri(baseUri, path);
+            return new Uri(baseUri, path).AbsoluteUri;
         }
     }
 }

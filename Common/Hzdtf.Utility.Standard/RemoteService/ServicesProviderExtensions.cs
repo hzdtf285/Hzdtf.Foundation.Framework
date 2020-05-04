@@ -18,7 +18,7 @@ namespace Hzdtf.Utility.Standard.RemoteService
         /// <returns>服务生成器</returns>
         public static IServicesBuilder CreateServiceBuilder(this IServicesProvider service, Action<IServicesBuilder> config)
         {
-            var builder = new ServicesBuilder();
+            var builder = new HttpServicesBuilder();
             builder.ServiceProvider = service;
             config(builder);
 
