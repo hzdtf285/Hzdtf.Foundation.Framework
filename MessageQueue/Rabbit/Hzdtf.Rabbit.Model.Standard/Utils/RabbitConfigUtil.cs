@@ -39,6 +39,5 @@ namespace Hzdtf.Rabbit.Model.Standard.Utils
         /// 默认主题交换机
         /// </summary>
         public const string DEFAULT_TOPIC_EXCHANGE = "amq.topic";
-
     }
 }
