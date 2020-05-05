@@ -2567,13 +2567,14 @@
             <param name="desc">描述</param>
             <param name="ex">异常</param>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.SetCodeMsg(System.Int32,System.String,System.String)">
+        <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.SetCodeMsg(System.Int32,System.String,System.String,System.Exception)">
             <summary>
             设置编码和消息
             </summary>
             <param name="code">编码</param>
             <param name="msg">消息</param>
             <param name="desc">描述</param>
+            <param name="ex">异常</param>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.SetMsg(System.String,System.String)">
             <summary>

@@ -89,7 +89,7 @@ namespace Hzdtf.Utility.Standard.Model.Return
             }
 
             Page1ReturnInfo<RowT> page1Return = new Page1ReturnInfo<RowT>();
-            page1Return.SetCodeMsg(returnInfo.Code, returnInfo.Msg, returnInfo.Desc);
+            page1Return.SetCodeMsg(returnInfo.Code, returnInfo.Msg, returnInfo.Desc, returnInfo.Ex);
 
             if (returnInfo.Data != null)
             {

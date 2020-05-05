@@ -125,11 +125,7 @@ namespace Hzdtf.Utility.Standard.Model.Return
         /// <param name="msg">消息</param>
         /// <param name="desc">描述</param>
         /// <param name="ex">异常</param>
-        public void SetFailureMsg(int code, string msg, string desc = null, Exception ex = null)
-        {
-            SetCodeMsg(code, msg, desc);
-            this.Ex = ex;
-        }
+        public void SetFailureMsg(int code, string msg, string desc = null, Exception ex = null) => SetCodeMsg(code, msg, desc, ex);
 
         /// <summary>
         /// 设置编码和消息
@@ -137,11 +133,12 @@ namespace Hzdtf.Utility.Standard.Model.Return
         /// <param name="code">编码</param>
         /// <param name="msg">消息</param>
         /// <param name="desc">描述</param>
-        public void SetCodeMsg(int code, string msg, string desc = null)
+        /// <param name="ex">异常</param>
+        public void SetCodeMsg(int code, string msg, string desc = null, Exception ex = null)
         {
             Code = code;
-
             SetMsg(msg, desc);
+            Ex = ex;
         }
 
         /// <summary>
@@ -159,7 +156,7 @@ namespace Hzdtf.Utility.Standard.Model.Return
         /// 设置来自另外一个基本返回对象
         /// </summary>
         /// <param name="basicReturn">基本返回</param>
-        public void FromBasic(BasicReturnInfo basicReturn) => SetCodeMsg(basicReturn.Code, basicReturn.Msg, basicReturn.Desc);
+        public void FromBasic(BasicReturnInfo basicReturn) => SetCodeMsg(basicReturn.Code, basicReturn.Msg, basicReturn.Desc, basicReturn.Ex);
 
         /// <summary>
         /// 转换为字符串
