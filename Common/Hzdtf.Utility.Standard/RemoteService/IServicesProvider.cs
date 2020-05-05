@@ -9,7 +9,7 @@ namespace Hzdtf.Utility.Standard.RemoteService
     /// 服务提供者接口
     /// @ 黄振东
     /// </summary>
-    public interface IServicesProvider
+    public interface IServicesProvider : IDisposable
     {
         /// <summary>
         /// 异步根据服务名获取地址数组

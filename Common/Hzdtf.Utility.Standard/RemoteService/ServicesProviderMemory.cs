@@ -81,5 +81,25 @@ namespace Hzdtf.Consul.Extensions.Common.Standard
                 return ProtoServicesProvider.GetAddresses(serviceName, tag);
             });
         }
+
+        /// <summary>
+        /// 释放资源
+        /// </summary>
+        [ProcTrackLog(ExecProc = false)]
+        public virtual void Dispose()
+        {
+            if (ProtoServicesProvider != null)
+            {
+                ProtoServicesProvider.Dispose();
+            }
+        }
+
+        /// <summary>
+        /// 析构方法
+        /// </summary>
+        ~ServicesProviderMemory()
+        {
+            Dispose();
+        }
     }
 }
