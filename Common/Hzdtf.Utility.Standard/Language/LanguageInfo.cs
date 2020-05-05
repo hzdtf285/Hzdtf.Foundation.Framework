@@ -32,7 +32,7 @@ namespace Hzdtf.Utility.Standard.Language
         /// 键
         /// </summary>
         [JsonProperty("key")]
-        [MessagePack.Key("key")]
+        [Key("key")]
         public string Key
         {
             get;
@@ -43,7 +43,7 @@ namespace Hzdtf.Utility.Standard.Language
         /// 简体中文
         /// </summary>
         [JsonProperty("zh-CN")]
-        [MessagePack.Key("zh-CN")]
+        [Key("zh-CN")]
         public string ZH_CN
         {
             get;
@@ -54,7 +54,7 @@ namespace Hzdtf.Utility.Standard.Language
         /// 繁体中文
         /// </summary>
         [JsonProperty("zh-TW")]
-        [MessagePack.Key("zh-TW")]
+        [Key("zh-TW")]
         public string ZH_TW
         {
             get;
@@ -65,7 +65,7 @@ namespace Hzdtf.Utility.Standard.Language
         /// 英文
         /// </summary>
         [JsonProperty("en-US")]
-        [MessagePack.Key("en-US")]
+        [Key("en-US")]
         public string EN_US
         {
             get;

@@ -2558,13 +2558,23 @@
             <param name="desc">描述</param>
             <param name="ex">异常</param>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.SetCodeMsg(System.Int32,System.String,System.String)">
+        <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.SetFailureMsg(System.Int32,System.String,System.String,System.Exception)">
+            <summary>
+            设置失败消息
+            </summary>
+            <param name="code">编码</param>
+            <param name="msg">消息</param>
+            <param name="desc">描述</param>
+            <param name="ex">异常</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.SetCodeMsg(System.Int32,System.String,System.String,System.Exception)">
             <summary>
             设置编码和消息
             </summary>
             <param name="code">编码</param>
             <param name="msg">消息</param>
             <param name="desc">描述</param>
+            <param name="ex">异常</param>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.SetMsg(System.String,System.String)">
             <summary>
@@ -5471,6 +5481,16 @@
             <param name="serviceName">服务名</param>
             <param name="tag">标签</param>
             <returns>地址数组任务</returns>
+        </member>
+        <member name="M:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.Finalize">
+            <summary>
+            析构方法
+            </summary>
         </member>
     </members>
 </doc>
