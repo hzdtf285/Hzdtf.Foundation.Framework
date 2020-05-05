@@ -116,9 +116,18 @@ namespace Hzdtf.Utility.Standard.Model.Return
         /// <param name="msg">消息</param>
         /// <param name="desc">描述</param>
         /// <param name="ex">异常</param>
-        public void SetFailureMsg(string msg, string desc = null, Exception ex = null)
+        public void SetFailureMsg(string msg, string desc = null, Exception ex = null) => SetFailureMsg(DEFAULT_FAILURE_CODE, msg, desc, ex);
+
+        /// <summary>
+        /// 设置失败消息
+        /// </summary>
+        /// <param name="code">编码</param>
+        /// <param name="msg">消息</param>
+        /// <param name="desc">描述</param>
+        /// <param name="ex">异常</param>
+        public void SetFailureMsg(int code, string msg, string desc = null, Exception ex = null)
         {
-            SetCodeMsg(DEFAULT_FAILURE_CODE, msg, desc);
+            SetCodeMsg(code, msg, desc);
             this.Ex = ex;
         }
 
