@@ -56,19 +56,22 @@ namespace Hzdtf.WebDemo.Core
             });
             services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.All));
 
-            services.AddSwaggerGen(options =>
+            if (PlatformCodeTool.Config.GetValue<bool>("Swagger:Enabled"))
             {
-                options.SwaggerDoc("v1", new Info
+                services.AddSwaggerGen(options =>
                 {
-                    Version = "v1",
-                    Title = "基础框架系统-API"
-                });
+                    options.SwaggerDoc("v1", new Info
+                    {
+                        Version = "v1",
+                        Title = "基础框架系统-API"
+                    });
 
-                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Hzdtf.Utility.Standard.xml"));
-                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Hzdtf.BasicFunction.Model.Standard.xml"));
-                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Hzdtf.BasicController.Core.xml"));
-                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Hzdtf.BasicFunction.MvcController.Core.xml"));
-            });
+                    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Hzdtf.Utility.Standard.xml"));
+                    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Hzdtf.BasicFunction.Model.Standard.xml"));
+                    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Hzdtf.BasicController.Core.xml"));
+                    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Hzdtf.BasicFunction.MvcController.Core.xml"));
+                });
+            }
 
             return DependencyInjection.RegisterComponents(services);
         }
