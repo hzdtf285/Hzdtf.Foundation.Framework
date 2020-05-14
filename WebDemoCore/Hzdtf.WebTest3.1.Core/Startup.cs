@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Autofac;
+using Hzdtf.WebTest3_1.Core.AppStart;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -10,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Hzdtf.Utility.AspNet.Core.ExceptionHandle;
 
 namespace Hzdtf.WebTest3._1.Core
 {
@@ -26,6 +29,8 @@ namespace Hzdtf.WebTest3._1.Core
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddApiExceptionHandle();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,10 +47,16 @@ namespace Hzdtf.WebTest3._1.Core
 
             app.UseAuthorization();
 
+            app.UseApiExceptionHandle();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+        }
+        public void ConfigureContainer(ContainerBuilder builder)
+        {
+            DependencyInjection.RegisterComponents(builder);
         }
     }
 }

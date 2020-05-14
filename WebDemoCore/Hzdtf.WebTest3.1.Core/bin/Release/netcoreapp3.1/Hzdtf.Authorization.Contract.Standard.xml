@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.Authorization.Contract.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.Authorization.Contract.Standard.IdentityAuthBase">
+            <summary>
+            身份授权基类
+            先执行原生验证，原生通过后再把授权信息保存到存储器里
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Authorization.Contract.Standard.IdentityAuthBase.protoIdentityAuth">
+            <summary>
+            原生身份授权
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Authorization.Contract.Standard.IdentityAuthBase.ProtoIdentityAuth">
+            <summary>
+            原生身份授权
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Authorization.Contract.Standard.IdentityAuthBase.Accredit(System.String,System.String)">
+            <summary>
+            授权
+            </summary>
+            <param name="user">用户</param>
+            <param name="password">密码</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.Authorization.Contract.Standard.IdentityAuthBase.SaveUserInfo(Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+            <summary>
+            保存用户信息
+            </summary>
+            <param name="basicUser">基本用户</param>
+        </member>
+        <member name="T:Hzdtf.Authorization.Contract.Standard.IdentityAuthUtil">
+            <summary>
+            身份授权辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Authorization.Contract.Standard.IdentityAuthUtil.ValiParams``1(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{``0},System.String,System.String,System.String)">
+            <summary>
+            验证参数
+            </summary>
+            <typeparam name="IdentityInfoT">身份模型类型</typeparam>
+            <param name="returnInfo">返回信息</param>
+            <param name="user">用户</param>
+            <param name="password">密码</param>
+            <param name="userAlias">用户别名</param>
+            <returns>是否验证通过</returns>
+        </member>
+        <member name="T:Hzdtf.Authorization.Contract.Standard.IIdentityAuth">
+            <summary>
+            身份授权接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Authorization.Contract.Standard.IIdentityAuth.Accredit(System.String,System.String)">
+            <summary>
+            授权
+            </summary>
+            <param name="user">用户</param>
+            <param name="password">密码</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="T:Hzdtf.Authorization.Contract.Standard.IIdentityAuthVali">
+            <summary>
+            身份授权验证接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Authorization.Contract.Standard.IIdentityAuthVali.IsAuthed">
+            <summary>
+            判断是否已授权
+            </summary>
+            <returns>返回信息</returns>
+        </member>
+        <member name="T:Hzdtf.Authorization.Contract.Standard.IIdentityExit">
+            <summary>
+            身份退出接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Authorization.Contract.Standard.IIdentityExit.Exit">
+            <summary>
+            退出
+            </summary>
+            <returns>返回信息</returns>
+        </member>
+        <member name="T:Hzdtf.Authorization.Contract.Standard.UserIdentity">
+            <summary>
+            用户标识
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Authorization.Contract.Standard.UserIdentity.DEFAULT_USER_IDENTITY">
+            <summary>
+            默认用户标识
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Authorization.Contract.Standard.UserIdentity.name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Authorization.Contract.Standard.UserIdentity.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Authorization.Contract.Standard.UserIdentity.authenticationType">
+            <summary>
+            授权类型
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Authorization.Contract.Standard.UserIdentity.AuthenticationType">
+            <summary>
+            授权类型
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Authorization.Contract.Standard.UserIdentity.isAuthenticated">
+            <summary>
+            是否已授权
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Authorization.Contract.Standard.UserIdentity.IsAuthenticated">
+            <summary>
+            是否已授权
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Authorization.Contract.Standard.UserIdentity.#ctor(System.Boolean,System.String,System.String)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="isAuthenticated">是否已授权</param>
+            <param name="name">名称</param>
+            <param name="authenticationType">授权类型</param>
+        </member>
+    </members>
+</doc>

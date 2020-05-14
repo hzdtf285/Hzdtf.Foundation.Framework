@@ -18,6 +18,20 @@
           "lib/netstandard2.0/MessagePack.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Hosting.Abstractions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Server.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Hosting.Abstractions": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Hosting.Server.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -643,6 +657,33 @@
           "lib/netstandard1.0/System.ValueTuple.dll": {}
         }
       },
+      "Hzdtf.Logger.Contract.Standard/2.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Hzdtf.Platform.Contract.Standard": "2.0.0",
+          "Hzdtf.Utility.Standard": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Hzdtf.Logger.Contract.Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hzdtf.Logger.Contract.Standard.dll": {}
+        }
+      },
+      "Hzdtf.Platform.Contract.Standard/2.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Hzdtf.Utility.Standard": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Hzdtf.Platform.Contract.Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hzdtf.Platform.Contract.Standard.dll": {}
+        }
+      },
       "Hzdtf.Utility.Standard/2.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -683,6 +724,19 @@
         "lib/netstandard2.0/MessagePack.xml",
         "messagepack.1.7.3.7.nupkg.sha512",
         "messagepack.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Hosting.Abstractions/2.2.0": {
+      "sha512": "ubycklv+ZY7Kutdwuy1W4upWcZ6VFR8WUXU7l7B2+mvbDBBPAcfpi+E+Y5GFe+Q157YfA3C49D2GCjAZc7Mobw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.hosting.abstractions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.xml",
+        "microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.hosting.abstractions.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Hosting.Server.Abstractions/2.2.0": {
@@ -2342,6 +2396,16 @@
         "system.valuetuple.nuspec"
       ]
     },
+    "Hzdtf.Logger.Contract.Standard/2.0.0": {
+      "type": "project",
+      "path": "../../Logger/Hzdtf.Logger.Contract.Standard/Hzdtf.Logger.Contract.Standard.csproj",
+      "msbuildProject": "../../Logger/Hzdtf.Logger.Contract.Standard/Hzdtf.Logger.Contract.Standard.csproj"
+    },
+    "Hzdtf.Platform.Contract.Standard/2.0.0": {
+      "type": "project",
+      "path": "../../Platform/Hzdtf.Platform.Contract.Standard/Hzdtf.Platform.Contract.Standard.csproj",
+      "msbuildProject": "../../Platform/Hzdtf.Platform.Contract.Standard/Hzdtf.Platform.Contract.Standard.csproj"
+    },
     "Hzdtf.Utility.Standard/2.0.0": {
       "type": "project",
       "path": "../Hzdtf.Utility.Standard/Hzdtf.Utility.Standard.csproj",
@@ -2350,8 +2414,9 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Hzdtf.Logger.Contract.Standard >= 2.0.0",
       "Hzdtf.Utility.Standard >= 2.0.0",
-      "Microsoft.AspNetCore.Hosting.Server.Abstractions >= 2.2.0",
+      "Microsoft.AspNetCore.Hosting.Abstractions >= 2.2.0",
       "Microsoft.AspNetCore.Http.Abstractions >= 2.2.0",
       "Microsoft.Extensions.Configuration >= 3.1.0",
       "Microsoft.Extensions.Configuration.Json >= 3.1.0",
@@ -2393,6 +2458,9 @@
           "projectReferences": {
             "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
               "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+            },
+            "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
+              "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj"
             }
           }
         }
@@ -2406,7 +2474,7 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
-          "Microsoft.AspNetCore.Hosting.Server.Abstractions": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": {
             "target": "Package",
             "version": "[2.2.0, )"
           },

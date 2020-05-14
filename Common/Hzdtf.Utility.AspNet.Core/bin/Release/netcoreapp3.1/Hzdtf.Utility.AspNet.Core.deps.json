@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Hzdtf.Utility.AspNet.Core/1.0.0": {
         "dependencies": {
+          "Hzdtf.Logger.Contract.Standard": "2.0.0",
           "Hzdtf.Utility.Standard": "2.0.0",
           "Microsoft.AspNetCore.Hosting.Server.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
@@ -500,6 +501,23 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "Hzdtf.Logger.Contract.Standard/2.0.0": {
+        "dependencies": {
+          "Hzdtf.Platform.Contract.Standard": "2.0.0",
+          "Hzdtf.Utility.Standard": "2.0.0"
+        },
+        "runtime": {
+          "Hzdtf.Logger.Contract.Standard.dll": {}
+        }
+      },
+      "Hzdtf.Platform.Contract.Standard/2.0.0": {
+        "dependencies": {
+          "Hzdtf.Utility.Standard": "2.0.0"
+        },
+        "runtime": {
+          "Hzdtf.Platform.Contract.Standard.dll": {}
+        }
+      },
       "Hzdtf.Utility.Standard/2.0.0": {
         "dependencies": {
           "MessagePack": "1.7.3.7",
@@ -872,6 +890,16 @@
       "sha512": "sha512-cNLEvBX3d6MMQRZe3SMFNukVbitDAEpVZO17qa0/2FHxZ7Y7PpFRpr6m2615XYM/tYYYf0B+WyHNujqIw8Luwg==",
       "path": "system.valuetuple/4.3.0",
       "hashPath": "system.valuetuple.4.3.0.nupkg.sha512"
+    },
+    "Hzdtf.Logger.Contract.Standard/2.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hzdtf.Platform.Contract.Standard/2.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Hzdtf.Utility.Standard/2.0.0": {
       "type": "project",

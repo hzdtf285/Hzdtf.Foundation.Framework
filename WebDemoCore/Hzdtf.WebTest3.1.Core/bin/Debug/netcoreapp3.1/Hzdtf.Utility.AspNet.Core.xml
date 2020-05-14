@@ -4,6 +4,107 @@
         <name>Hzdtf.Utility.AspNet.Core</name>
     </assembly>
     <members>
+        <member name="T:Hzdtf.Utility.AspNet.Core.ExceptionHandle.ApiExceptionHandleMiddleware">
+            <summary>
+            API异常处理中间件
+            只有对路径是从传过来的配置前辍才处理
+            会对下一个中间件捕获异常，如果发生异常，会返回BasicReturnInfo对象
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.AspNet.Core.ExceptionHandle.ApiExceptionHandleMiddleware.next">
+            <summary>
+            下一个中间件处理委托
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.AspNet.Core.ExceptionHandle.ApiExceptionHandleMiddleware.options">
+            <summary>
+            Api异常处理选项配置
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.AspNet.Core.ExceptionHandle.ApiExceptionHandleMiddleware.log">
+            <summary>
+            日志
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.ExceptionHandle.ApiExceptionHandleMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions{Hzdtf.Utility.AspNet.Core.ExceptionHandle.ApiExceptionHandleOptions},Hzdtf.Logger.Contract.Standard.ILogable)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="next">下一个中间件处理委托</param>
+            <param name="options">Api异常处理选项配置</param>
+            <param name="log">日志</param>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.ExceptionHandle.ApiExceptionHandleMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            执行
+            </summary>
+            <param name="context">http上下文</param>
+            <returns>任务</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.AspNet.Core.ExceptionHandle.ApiExceptionHandleMiddlewareExtensions">
+            <summary>
+            Api异常处理中间件扩展类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.ExceptionHandle.ApiExceptionHandleMiddlewareExtensions.UseApiExceptionHandle(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            使用Api异常处理
+            </summary>
+            <param name="app">应用</param>
+            <returns>应用</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.AspNet.Core.ExceptionHandle.ApiExceptionHandleOptions">
+            <summary>
+            Api异常处理选项配置
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.AspNet.Core.ExceptionHandle.ApiExceptionHandleOptions.IsDevelopment">
+            <summary>
+            是否开发环境
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.AspNet.Core.ExceptionHandle.ApiExceptionHandleOptions.PfxApiPath">
+            <summary>
+            Api路径前辍，默认是/api/
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.AspNet.Core.ExceptionHandle.ApiExceptionHandleOptions.Serialization">
+            <summary>
+            序列化，默认为Json
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.AspNet.Core.ExceptionHandle.ApiExceptionHandleOptions.ExceptionCode">
+            <summary>
+            异常编码，默认为500
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.AspNet.Core.ExceptionHandle.ApiExceptionHandleOptions.ExceptionMsg">
+            <summary>
+            异常消息，默认为“操作失败”
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.AspNet.Core.ExceptionHandle.ApiExceptionHandleOptions.HttpStatusCode">
+            <summary>
+            Http状态码，默认返回200
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Utility.AspNet.Core.ExceptionHandle.ApiExceptionHandleServiceExtensions">
+            <summary>
+            Api异常处理服务扩展类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.ExceptionHandle.ApiExceptionHandleServiceExtensions.AddApiExceptionHandle(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hzdtf.Utility.AspNet.Core.ExceptionHandle.ApiExceptionHandleOptions})">
+            <summary>
+            添加Api异常处理服务
+            </summary>
+            <param name="services">服务收藏</param>
+            <param name="options">Api异常处理选项配置</param>
+            <returns>服务收藏</returns>
+        </member>
         <member name="T:Hzdtf.Utility.AspNet.Core.LoadBalance.HashIpPortLoadBalanceExtensions">
             <summary>
             哈希+IP负载均衡扩展类

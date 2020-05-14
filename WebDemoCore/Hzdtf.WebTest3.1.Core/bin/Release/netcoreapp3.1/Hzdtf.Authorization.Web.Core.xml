@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.Authorization.Web.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.Authorization.Web.Core.IdentityCookieAuth">
+            <summary>
+            身份Cookie授权
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Authorization.Web.Core.IdentityCookieAuth.HttpContextAccessor">
+            <summary>
+            Http上下文访问
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Authorization.Web.Core.IdentityCookieAuth.IsAuthed">
+            <summary>
+            判断是否已授权
+            </summary>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.Authorization.Web.Core.IdentityCookieAuth.Exit">
+            <summary>
+            退出
+            </summary>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.Authorization.Web.Core.IdentityCookieAuth.Reader">
+            <summary>
+            读取
+            </summary>
+            <returns>数据</returns>
+        </member>
+        <member name="M:Hzdtf.Authorization.Web.Core.IdentityCookieAuth.SaveUserInfo(Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+            <summary>
+            保存用户信息
+            </summary>
+            <param name="basicUser">基本用户</param>
+        </member>
+    </members>
+</doc>

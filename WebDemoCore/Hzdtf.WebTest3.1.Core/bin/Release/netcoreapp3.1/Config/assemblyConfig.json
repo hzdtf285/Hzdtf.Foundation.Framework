@@ -1,0 +1,23 @@
+{
+  "Services": [
+    {
+      "Names": [
+        "Hzdtf.WebTest3.1.Core"
+      ],
+      "Intercepteds": [
+        "Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.DisabledInterceptor",
+        "Hzdtf.BasicFunction.Service.Autofac.Standard,Hzdtf.BasicFunction.Service.Autofac.Standard.PermissionValiInterceptor"
+      ]
+    },
+    {
+      "Names": [
+        "Hzdtf.Utility.Standard",
+        "Hzdtf.Platform.Contract.Standard",
+        "Hzdtf.Platform.Impl.Core",
+        "Hzdtf.Logger.Contract.Standard",
+        "Hzdtf.Logger.Text.Impl.Standard"
+      ],
+      "Lifecycle": "SIGNLETON"
+    }
+  ]
+}
