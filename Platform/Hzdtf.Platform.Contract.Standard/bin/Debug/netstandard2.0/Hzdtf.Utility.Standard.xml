@@ -4086,11 +4086,106 @@
             </summary>
             <returns>本月第1天日期</returns>
         </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.MonthFristDay(System.DateTime)">
+            <summary>
+            获取指定日期的月份第1天日期
+            </summary>
+            <returns>月份第1天日期</returns>
+        </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ThisMonthLastDay">
             <summary>
             获取本月最后1天日期
             </summary>
             <returns>本月最后1天日期</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.MonthLastDay(System.DateTime)">
+            <summary>
+            获取指定日期的月份最后1天日期
+            </summary>
+            <param name="dateTime">日期时间</param>
+            <returns>月份最后1天日期</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.IsOrdinaryLeapYear">
+            <summary>
+            判断当前日期是否为普通闰年
+            普通闰年：能被4整除但不能被100整除
+            </summary>
+            <returns>当前日期是否为普通闰年</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.IsOrdinaryLeapYear(System.DateTime)">
+            <summary>
+            判断日期是否为普通闰年
+            普通闰年：能被4整除但不能被100整除
+            </summary>
+            <param name="dateTime">日期时间</param>
+            <returns>日期是否为普通闰年</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.IsOrdinaryLeapYear(System.Int32)">
+            <summary>
+            判断年份是否为普通闰年
+            普通闰年：能被4整除但不能被100整除
+            </summary>
+            <param name="year">年份</param>
+            <returns>年份是否为普通闰年</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.IsCenturyLeapYear">
+            <summary>
+            判断当前日期是否为世纪闰年
+            世纪闰年：能被400整除
+            </summary>
+            <returns>当前日期是否为世纪闰年</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.IsCenturyLeapYear(System.DateTime)">
+            <summary>
+            判断日期是否为世纪闰年
+            世纪闰年：能被400整除
+            </summary>
+            <param name="dateTime">日期时间</param>
+            <returns>日期是否为世纪闰年</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.IsCenturyLeapYear(System.Int32)">
+            <summary>
+            判断年份是否为世纪闰年
+            世纪闰年：能被400整除
+            </summary>
+            <param name="year">年份</param>
+            <returns>年份是否为世纪闰年</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.IsLeapYear">
+            <summary>
+            判断当前日期是否为闰年
+            闰年：能被4整除但不能被100整除或能被400整除
+            </summary>
+            <returns>当前日期是否为闰年</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.IsLeapYear(System.DateTime)">
+            <summary>
+            判断日期是否为闰年
+            闰年：能被4整除但不能被100整除或能被400整除
+            </summary>
+            <param name="dateTime">日期时间</param>
+            <returns>日期是否为世纪闰年</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.IsLeapYear(System.Int32)">
+            <summary>
+            判断年份是否为闰年
+            闰年：能被4整除但不能被100整除或能被400整除
+            </summary>
+            <param name="year">年份</param>
+            <returns>年份是否为闰年</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.PlaceMonthOfDay">
+            <summary>
+            获取当前日期的所在的月份的天数
+            </summary>
+            <returns>当前日期的所在的月份的天数</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.PlaceMonthOfDay(System.DateTime)">
+            <summary>
+            获取日期的所在的月份的天数
+            </summary>
+            <param name="dateTime">日期时间</param>
+            <returns>日期的所在的月份的天数</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.RangeMonths(System.DateTime,System.DateTime)">
             <summary>
@@ -4116,11 +4211,30 @@
             </summary>
             <returns>当前年的第一天</returns>
         </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.FristDay(System.DateTime)">
+            <summary>
+            指定日期的年的第一天
+            </summary>
+            <returns>年的第一天</returns>
+        </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.LastDay">
             <summary>
             当前年的最后一天
             </summary>
             <returns>当前年的最后一天</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.LastDay(System.DateTime)">
+            <summary>
+            指定日期的年的最后一天
+            </summary>
+            <param name="dateTime">日期时间</param>
+            <returns>年的最后一天</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToLongDateTimeNumString">
+            <summary>
+            将当前日期时间转换为长数字字符串
+            </summary>
+            <returns>长数字字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToLongDateTimeNumString(System.DateTime)">
             <summary>

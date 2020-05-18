@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Text;
 
 namespace Hzdtf.Utility.Standard.Utils
@@ -162,21 +163,129 @@ namespace Hzdtf.Utility.Standard.Utils
         /// 获取本月第1天日期
         /// </summary>
         /// <returns>本月第1天日期</returns>
-        public static DateTime ThisMonthFristDay()
+        public static DateTime ThisMonthFristDay() => DateTime.Now.MonthFristDay();
+
+        /// <summary>
+        /// 获取指定日期的月份第1天日期
+        /// </summary>
+        /// <returns>月份第1天日期</returns>
+        public static DateTime MonthFristDay(this DateTime dateTime)
         {
-            DateTime curr = DateTime.Now;
-            return new DateTime(curr.Year, curr.Month, 1);
+            return new DateTime(dateTime.Year, dateTime.Month, 1);
         }
 
         /// <summary>
         /// 获取本月最后1天日期
         /// </summary>
         /// <returns>本月最后1天日期</returns>
-        public static DateTime ThisMonthLastDay()
+        public static DateTime ThisMonthLastDay() => DateTime.Now.MonthLastDay();
+
+        /// <summary>
+        /// 获取指定日期的月份最后1天日期
+        /// </summary>
+        /// <param name="dateTime">日期时间</param>
+        /// <returns>月份最后1天日期</returns>
+        public static DateTime MonthLastDay(this DateTime dateTime)
         {
-            DateTime curr = DateTime.Now;
+            return new DateTime(dateTime.Year, dateTime.Month, dateTime.PlaceMonthOfDay(), 23, 59, 59, 999);
+        }
+
+        #region 普通闰年
+
+        /// <summary>
+        /// 判断当前日期是否为普通闰年
+        /// 普通闰年：能被4整除但不能被100整除
+        /// </summary>
+        /// <returns>当前日期是否为普通闰年</returns>
+        public static bool IsOrdinaryLeapYear() => DateTime.Now.Year.IsOrdinaryLeapYear();
+
+        /// <summary>
+        /// 判断日期是否为普通闰年
+        /// 普通闰年：能被4整除但不能被100整除
+        /// </summary>
+        /// <param name="dateTime">日期时间</param>
+        /// <returns>日期是否为普通闰年</returns>
+        public static bool IsOrdinaryLeapYear(this DateTime dateTime) => dateTime.Year.IsOrdinaryLeapYear();
+
+        /// <summary>
+        /// 判断年份是否为普通闰年
+        /// 普通闰年：能被4整除但不能被100整除
+        /// </summary>
+        /// <param name="year">年份</param>
+        /// <returns>年份是否为普通闰年</returns>
+        public static bool IsOrdinaryLeapYear(this int year) => year % 4 == 0 && year % 100 != 0;
+
+        #endregion
+
+        #region 世纪闰年
+
+        /// <summary>
+        /// 判断当前日期是否为世纪闰年
+        /// 世纪闰年：能被400整除
+        /// </summary>
+        /// <returns>当前日期是否为世纪闰年</returns>
+        public static bool IsCenturyLeapYear() => DateTime.Now.Year.IsCenturyLeapYear();
+
+        /// <summary>
+        /// 判断日期是否为世纪闰年
+        /// 世纪闰年：能被400整除
+        /// </summary>
+        /// <param name="dateTime">日期时间</param>
+        /// <returns>日期是否为世纪闰年</returns>
+        public static bool IsCenturyLeapYear(this DateTime dateTime) => dateTime.Year.IsCenturyLeapYear();
+
+        /// <summary>
+        /// 判断年份是否为世纪闰年
+        /// 世纪闰年：能被400整除
+        /// </summary>
+        /// <param name="year">年份</param>
+        /// <returns>年份是否为世纪闰年</returns>
+        public static bool IsCenturyLeapYear(this int year) => year % 400 == 0;
+
+        #endregion
+
+        #region 闰年
+
+        /// <summary>
+        /// 判断当前日期是否为闰年
+        /// 闰年：能被4整除但不能被100整除或能被400整除
+        /// </summary>
+        /// <returns>当前日期是否为闰年</returns>
+        public static bool IsLeapYear() => DateTime.Now.Year.IsLeapYear();
+
+        /// <summary>
+        /// 判断日期是否为闰年
+        /// 闰年：能被4整除但不能被100整除或能被400整除
+        /// </summary>
+        /// <param name="dateTime">日期时间</param>
+        /// <returns>日期是否为世纪闰年</returns>
+        public static bool IsLeapYear(this DateTime dateTime) => dateTime.Year.IsLeapYear();
+
+        /// <summary>
+        /// 判断年份是否为闰年
+        /// 闰年：能被4整除但不能被100整除或能被400整除
+        /// </summary>
+        /// <param name="year">年份</param>
+        /// <returns>年份是否为闰年</returns>
+        public static bool IsLeapYear(this int year) => year.IsOrdinaryLeapYear() || year.IsCenturyLeapYear();
+
+        #endregion
+
+        /// <summary>
+        /// 获取当前日期的所在的月份的天数
+        /// </summary>
+        /// <returns>当前日期的所在的月份的天数</returns>
+        public static int PlaceMonthOfDay() => DateTime.Now.PlaceMonthOfDay();
+
+        /// <summary>
+        /// 获取日期的所在的月份的天数
+        /// </summary>
+        /// <param name="dateTime">日期时间</param>
+        /// <returns>日期的所在的月份的天数</returns>
+        public static int PlaceMonthOfDay(this DateTime dateTime)
+        {
             int day = 30;
-            switch (curr.Month)
+            switch (dateTime.Month)
             {
                 case 1:
                 case 3:
@@ -190,12 +299,12 @@ namespace Hzdtf.Utility.Standard.Utils
                     break;
 
                 case 2:
-                    day = curr.Year % 4 == 0 && curr.Year % 100 != 0 || curr.Year % 400 == 0 ? 29 : 28;
+                    day = dateTime.IsLeapYear() ? 29 : 28;
 
                     break;
             }
 
-            return new DateTime(curr.Year, curr.Month, day, 23, 59, 59, 999);
+            return day;
         }
 
         /// <summary>
@@ -248,7 +357,13 @@ namespace Hzdtf.Utility.Standard.Utils
         /// 当前年的第一天
         /// </summary>
         /// <returns>当前年的第一天</returns>
-        public static DateTime FristDay()
+        public static DateTime FristDay() => DateTime.Now.FristDay();
+
+        /// <summary>
+        /// 指定日期的年的第一天
+        /// </summary>
+        /// <returns>年的第一天</returns>
+        public static DateTime FristDay(this DateTime dateTime)
         {
             return new DateTime(DateTime.Now.Year, 1, 1);
         }
@@ -257,10 +372,23 @@ namespace Hzdtf.Utility.Standard.Utils
         /// 当前年的最后一天
         /// </summary>
         /// <returns>当前年的最后一天</returns>
-        public static DateTime LastDay()
+        public static DateTime LastDay() => DateTime.Now.LastDay();
+
+        /// <summary>
+        /// 指定日期的年的最后一天
+        /// </summary>
+        /// <param name="dateTime">日期时间</param>
+        /// <returns>年的最后一天</returns>
+        public static DateTime LastDay(this DateTime dateTime)
         {
-            return new DateTime(DateTime.Now.Year, 12, 31, 23, 59, 59, 999);
+            return new DateTime(dateTime.Year, 12, 31, 23, 59, 59, 999);
         }
+
+        /// <summary>
+        /// 将当前日期时间转换为长数字字符串
+        /// </summary>
+        /// <returns>长数字字符串</returns>
+        public static string ToLongDateTimeNumString() => DateTime.Now.ToLongDateTimeNumString();
 
         /// <summary>
         /// 将日期时间转换为长数字字符串
