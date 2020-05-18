@@ -12,6 +12,19 @@ namespace Hzdtf.Logger.Contract.Standard
     public partial class LogBase
     {
         /// <summary>
+        /// 异步跟踪
+        /// </summary>
+        /// <param name="msg">消息</param>
+        /// <param name="ex">异常</param>
+        /// <param name="source">来源</param>
+        /// <param name="tags">标签</param>
+        /// <returns>任务</returns>
+        public Task TraceAsync(string msg, Exception ex = null, string source = null, params string[] tags)
+        {
+            return Task.Factory.StartNew(() => Trace(msg, ex, source, tags));
+        }
+
+        /// <summary>
         /// 异步调试
         /// </summary>
         /// <param name="msg">消息</param>

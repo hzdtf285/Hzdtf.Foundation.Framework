@@ -82,6 +82,15 @@
             @ 黄振东
             </summary>
         </member>
+        <member name="M:Hzdtf.Logger.Contract.Standard.ILogable.Trace(System.String,System.Exception,System.String,System.String[])">
+            <summary>
+            跟踪
+            </summary>
+            <param name="msg">消息</param>
+            <param name="ex">异常</param>
+            <param name="source">来源</param>
+            <param name="tags">标签</param>
+        </member>
         <member name="M:Hzdtf.Logger.Contract.Standard.ILogable.Debug(System.String,System.Exception,System.String,System.String[])">
             <summary>
             调试
@@ -132,6 +141,16 @@
             可记录日志的异步接口
             @ 黄振东
             </summary>
+        </member>
+        <member name="M:Hzdtf.Logger.Contract.Standard.ILogableAsync.TraceAsync(System.String,System.Exception,System.String,System.String[])">
+            <summary>
+            异步跟踪
+            </summary>
+            <param name="msg">消息</param>
+            <param name="ex">异常</param>
+            <param name="source">来源</param>
+            <param name="tags">标签</param>
+            <returns>任务</returns>
         </member>
         <member name="M:Hzdtf.Logger.Contract.Standard.ILogableAsync.DebugAsync(System.String,System.Exception,System.String,System.String[])">
             <summary>
@@ -221,6 +240,15 @@
             日志记录级别
             </summary>
         </member>
+        <member name="M:Hzdtf.Logger.Contract.Standard.LogBase.Trace(System.String,System.Exception,System.String,System.String[])">
+            <summary>
+            跟踪
+            </summary>
+            <param name="msg">消息</param>
+            <param name="ex">异常</param>
+            <param name="source">来源</param>
+            <param name="tags">标签</param>
+        </member>
         <member name="M:Hzdtf.Logger.Contract.Standard.LogBase.Debug(System.String,System.Exception,System.String,System.String[])">
             <summary>
             调试
@@ -285,6 +313,16 @@
             <param name="ex">异常</param>
             <param name="source">来源</param>
             <param name="tags">标签</param>
+        </member>
+        <member name="M:Hzdtf.Logger.Contract.Standard.LogBase.TraceAsync(System.String,System.Exception,System.String,System.String[])">
+            <summary>
+            异步跟踪
+            </summary>
+            <param name="msg">消息</param>
+            <param name="ex">异常</param>
+            <param name="source">来源</param>
+            <param name="tags">标签</param>
+            <returns>任务</returns>
         </member>
         <member name="M:Hzdtf.Logger.Contract.Standard.LogBase.DebugAsync(System.String,System.Exception,System.String,System.String[])">
             <summary>
@@ -362,6 +400,11 @@
             @ 黄振东
             </summary>
         </member>
+        <member name="F:Hzdtf.Logger.Contract.Standard.LogLevelEnum.TRACE">
+            <summary>
+            跟踪
+            </summary>
+        </member>
         <member name="F:Hzdtf.Logger.Contract.Standard.LogLevelEnum.DEBUG">
             <summary>
             调试
@@ -385,6 +428,11 @@
         <member name="F:Hzdtf.Logger.Contract.Standard.LogLevelEnum.FATAL">
             <summary>
             致命
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Logger.Contract.Standard.LogLevelEnum.NONE">
+            <summary>
+            无
             </summary>
         </member>
         <member name="T:Hzdtf.Logger.Contract.Standard.LogTool">

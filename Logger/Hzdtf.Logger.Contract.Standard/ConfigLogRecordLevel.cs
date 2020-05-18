@@ -42,19 +42,29 @@ namespace Hzdtf.Logger.Contract.Standard
         {
             if (string.IsNullOrWhiteSpace(level))
             {
-                if (string.IsNullOrWhiteSpace(AppConfig["HzdtfLog:LogLevel:Default"]))
+                if (string.IsNullOrWhiteSpace(AppConfig["Logging:LogLevel:Default"]))
                 {
-                    ILogRecordLevel logLevel = new DefaultLogRecordLevel();
-                    lock (syncLevel)
+                    if (string.IsNullOrWhiteSpace(AppConfig["HzdtfLog:LogLevel:Default"]))
                     {
-                        level = logLevel.GetRecordLevel();
+                        ILogRecordLevel logLevel = new DefaultLogRecordLevel();
+                        lock (syncLevel)
+                        {
+                            level = logLevel.GetRecordLevel();
+                        }
+                    }
+                    else
+                    {
+                        lock (syncLevel)
+                        {
+                            level = AppConfig["HzdtfLog:LogLevel:Default"];
+                        }
                     }
                 }
                 else
                 {
                     lock (syncLevel)
                     {
-                        level = AppConfig["HzdtfLog:LogLevel:Default"];
+                        level = AppConfig["Logging:LogLevel:Default"];
                     }
                 }
             }

@@ -26,6 +26,18 @@ namespace Hzdtf.Logger.Contract.Standard
         #region ILog 接口
 
         /// <summary>
+        /// 跟踪
+        /// </summary>
+        /// <param name="msg">消息</param>
+        /// <param name="ex">异常</param>
+        /// <param name="source">来源</param>
+        /// <param name="tags">标签</param>
+        public void Trace(string msg, Exception ex = null, string source = null, params string[] tags)
+        {
+            BeforeWriteStorage("trace", msg, ex, source, tags);
+        }
+
+        /// <summary>
         /// 调试
         /// </summary>
         /// <param name="msg">消息</param>
@@ -132,23 +144,29 @@ namespace Hzdtf.Logger.Contract.Standard
         {
             switch (level.ToLower())
             {
+                case "trace":
+                    return LogLevelEnum.TRACE;
+
                 case "debug":
                     return LogLevelEnum.DEBUG;
 
                 case "info":
+                case "information":
                     return LogLevelEnum.INFO;
 
                 case "wran":
+                case "warning":
                     return LogLevelEnum.WRAN;
 
                 case "error":
                     return LogLevelEnum.ERROR;
 
                 case "fatal":
+                case "critical":
                     return LogLevelEnum.FATAL;
 
                 default:
-                    return LogLevelEnum.DEBUG;
+                    return LogLevelEnum.NONE;
             }
         }
 
@@ -161,6 +179,11 @@ namespace Hzdtf.Logger.Contract.Standard
         public static bool IsNeedWriteLog(string level, string recordLogLevel)
         {
             LogLevelEnum levelEnum = Parse(level);
+            if (levelEnum == LogLevelEnum.NONE)
+            {
+                return false;
+            }
+
             return levelEnum >= Parse(recordLogLevel);
         }
     }

@@ -205,7 +205,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.MessageQueue.RpcServe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Utility.AspNet.Core", "Common\Hzdtf.Utility.AspNet.Core\Hzdtf.Utility.AspNet.Core.csproj", "{C5905D6F-408E-4312-82C8-9E66BD42E6A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hzdtf.WebTest3.1.Core", "WebDemoCore\Hzdtf.WebTest3.1.Core\Hzdtf.WebTest3.1.Core.csproj", "{47AC23E7-B002-4B13-8CE9-7DF880B8A11B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.WebTest3.1.Core", "WebDemoCore\Hzdtf.WebTest3.1.Core\Hzdtf.WebTest3.1.Core.csproj", "{47AC23E7-B002-4B13-8CE9-7DF880B8A11B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1AC13387-F88E-439C-B149-ADE1207F3A56}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

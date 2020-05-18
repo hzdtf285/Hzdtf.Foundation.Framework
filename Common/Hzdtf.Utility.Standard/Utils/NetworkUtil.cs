@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
 using System.Net;
+using System.Net.NetworkInformation;
 using System.Net.Sockets;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
 
@@ -13,8 +17,19 @@ namespace Hzdtf.Utility.Standard.Utils
     /// </summary>
     public static class NetworkUtil
     {
+        /// <summary>
+        /// 网络连接状态
+        /// </summary>
+        /// <param name="connectionDescription">连接描述</param>
+        /// <param name="reservedValue">返回值</param>
+        /// <returns>是否连接</returns>
         [DllImport("wininet.dll")]
         private extern static bool InternetGetConnectedState(out int connectionDescription, int reservedValue);
+
+        /// <summary>
+        /// 同步本地IP
+        /// </summary>
+        private static readonly object syncLocalIP = new object();
 
         /// <summary>
         /// 本地IP
@@ -31,17 +46,56 @@ namespace Hzdtf.Utility.Standard.Utils
                 if (localIP == null)
                 {
                     IPHostEntry ipEntry = Dns.GetHostEntry(Dns.GetHostName());
-                    for (int i = 0; i < ipEntry.AddressList.Length; i++)
+                    if (ipEntry == null)
                     {
-                        if (ipEntry.AddressList[i].AddressFamily == AddressFamily.InterNetwork)
+                        SetLocalIP("127.0.0.1");
+
+                        return localIP;
+                    }
+
+                    var adds = ipEntry.AddressList.Where(q => q.AddressFamily == AddressFamily.InterNetwork).ToArray();
+                    if (adds.IsNullOrLength0())
+                    {
+                        SetLocalIP("127.0.0.1");
+
+                        return localIP;
+                    }
+
+                    if (adds.Length == 1)
+                    {
+                        SetLocalIP(adds[0].ToString());
+
+                        return localIP;
+                    }
+
+                    var ping = new Ping();
+                    // 如果有多个地址，则使用ping命令，是否能ping通，如果能则返回能ping通的
+                    foreach (var add in adds)
+                    {
+                        var pingReply = ping.SendPingAsync(add).Result;
+                        if (pingReply.Status == IPStatus.Success)
                         {
-                            localIP = ipEntry.AddressList[i].ToString();
-                            break;
+                            SetLocalIP(add.ToString());
+
+                            return localIP;
                         }
                     }
                 }
 
                 return localIP;
+            }
+            set => SetLocalIP(value);
+        }
+
+        /// <summary>
+        /// 设置本地IP
+        /// </summary>
+        /// <param name="localIP">本地IP</param>
+        private static void SetLocalIP(string localIP)
+        {
+            lock(syncLocalIP)
+            {
+                NetworkUtil.localIP = localIP;
             }
         }
 
@@ -98,6 +152,22 @@ namespace Hzdtf.Utility.Standard.Utils
             }
 
             return url;
+        }
+
+        /// <summary>
+        /// 是否能ping通
+        /// </summary>
+        /// <param name="hostNameOrAddress">主机名或地址</param>
+        /// <returns>是否能ping通</returns>
+        public static bool IsPingSuccess(string hostNameOrAddress)
+        {
+            if (string.IsNullOrWhiteSpace(hostNameOrAddress))
+            {
+                return false;
+            }
+
+            var result = new Ping().SendPingAsync(hostNameOrAddress).Result;
+            return result.Status == IPStatus.Success;
         }
     }
 }

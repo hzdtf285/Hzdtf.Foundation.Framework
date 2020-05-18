@@ -10,5 +10,11 @@ namespace Hzdtf.Utility.Standard.Resources
     /// </summary>
     public interface IDatabasePool : IResourcePool<string, object>
     {
+        /// <summary>
+        /// 提交
+        /// </summary>
+        /// <param name="value">值对象</param>
+        /// <returns>影响行数</returns>
+        int Submit(object value);
     }
 }

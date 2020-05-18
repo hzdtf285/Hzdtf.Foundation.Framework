@@ -11,6 +11,15 @@ namespace Hzdtf.Logger.Contract.Standard
     public interface ILogable : ILogableAsync
     {
         /// <summary>
+        /// 跟踪
+        /// </summary>
+        /// <param name="msg">消息</param>
+        /// <param name="ex">异常</param>
+        /// <param name="source">来源</param>
+        /// <param name="tags">标签</param>
+        void Trace(string msg, Exception ex = null, string source = null, params string[] tags);
+
+        /// <summary>
         /// 调试
         /// </summary>
         /// <param name="msg">消息</param>

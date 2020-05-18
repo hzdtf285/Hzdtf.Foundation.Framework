@@ -3395,6 +3395,13 @@
             @ 黄振东
             </summary>
         </member>
+        <member name="M:Hzdtf.Utility.Standard.Resources.DatabasePoolBase.Submit(System.Object)">
+            <summary>
+            提交
+            </summary>
+            <param name="value">值对象</param>
+            <returns>影响行数</returns>
+        </member>
         <member name="M:Hzdtf.Utility.Standard.Resources.DatabasePoolBase.CreateKey">
             <summary>
             创建一个新的键
@@ -3425,11 +3432,36 @@
             <param name="mode">访问模式</param>
             <returns>数据库池</returns>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.Resources.DatabasePoolUtil">
+            <summary>
+            数据库池辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Resources.DatabasePoolUtil.StartExecCore(Hzdtf.Utility.Standard.Resources.IDatabasePool,System.Func{System.String,System.Object,System.Boolean},System.String,System.Boolean)">
+            <summary>
+            开始执行核心业务，此方法是为了封装统一的数据库池操作
+            1、如果传入的键存在，则在此方法里不会释放此键的资源，由外面释放
+            2、如果传入的键不存在，则创建新的键，并在此方法里释放资源
+            </summary>
+            <param name="databasePool">数据库池</param>
+            <param name="func">处理业务回调</param>
+            <param name="key">键</param>
+            <param name="isHaveUpdate">是否有更新，如果为true，且key不存在，业务回调又返回true，则会调用databasePool.Submit()</param>
+            <returns>影响行数</returns>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Resources.IDatabasePool">
             <summary>
             数据库池接口
             @ 黄振东
             </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Resources.IDatabasePool.Submit(System.Object)">
+            <summary>
+            提交
+            </summary>
+            <param name="value">值对象</param>
+            <returns>影响行数</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Resources.IResourcePool`2">
             <summary>
@@ -3453,6 +3485,13 @@
             <param name="isExists">是否已存在</param>
             <param name="key">键</param>
             <returns>键</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Resources.IResourcePool`2.GetValue(`0)">
+            <summary>
+            根据键获取值
+            </summary>
+            <param name="key">键</param>
+            <returns>值</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Resources.IResourcePool`2.GetNewValue(`0)">
             <summary>
@@ -3516,6 +3555,13 @@
             1、如果键不存在，则返回默认值
             2、如果键存在，值不存在，则自动创建值返回
             3、如果键存在，值存在，则返回已存在的值
+            </summary>
+            <param name="key">键</param>
+            <returns>值</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Resources.ResourcePoolBase`2.GetValue(`0)">
+            <summary>
+            根据键获取值
             </summary>
             <param name="key">键</param>
             <returns>值</returns>
@@ -4335,6 +4381,19 @@
             @ 黄振东
             </summary>
         </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.NetworkUtil.InternetGetConnectedState(System.Int32@,System.Int32)">
+            <summary>
+            网络连接状态
+            </summary>
+            <param name="connectionDescription">连接描述</param>
+            <param name="reservedValue">返回值</param>
+            <returns>是否连接</returns>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Utils.NetworkUtil.syncLocalIP">
+            <summary>
+            同步本地IP
+            </summary>
+        </member>
         <member name="F:Hzdtf.Utility.Standard.Utils.NetworkUtil.localIP">
             <summary>
             本地IP
@@ -4344,6 +4403,12 @@
             <summary>
             本地IP
             </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.NetworkUtil.SetLocalIP(System.String)">
+            <summary>
+            设置本地IP
+            </summary>
+            <param name="localIP">本地IP</param>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.NetworkUtil.IsNetConnected">
             <summary>
@@ -4364,6 +4429,13 @@
             </summary>
             <param name="url">URL</param>
             <returns>过滤后的URL</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.NetworkUtil.IsPingSuccess(System.String)">
+            <summary>
+            是否能ping通
+            </summary>
+            <param name="hostNameOrAddress">主机名或地址</param>
+            <returns>是否能ping通</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Utils.NumberUtil">
             <summary>

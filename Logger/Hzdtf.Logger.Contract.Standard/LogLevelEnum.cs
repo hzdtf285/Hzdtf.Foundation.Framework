@@ -11,28 +11,38 @@ namespace Hzdtf.Logger.Contract.Standard
     public enum LogLevelEnum : byte
     {
         /// <summary>
+        /// 跟踪
+        /// </summary>
+        TRACE = 0,
+
+        /// <summary>
         /// 调试
         /// </summary>
-        DEBUG = 0,
+        DEBUG = 1,
 
         /// <summary>
         /// 信息
         /// </summary>
-        INFO = 1,
+        INFO = 2,
 
         /// <summary>
         /// 警告
         /// </summary>
-        WRAN = 2,
+        WRAN = 3,
 
         /// <summary>
         /// 错误
         /// </summary>
-        ERROR = 3,
+        ERROR = 4,
 
         /// <summary>
         /// 致命
         /// </summary>
-        FATAL = 4
+        FATAL = 5,
+
+        /// <summary>
+        /// 无
+        /// </summary>
+        NONE = 6
     }
 }

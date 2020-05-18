@@ -28,6 +28,13 @@ namespace Hzdtf.Utility.Standard.Resources
         KeyT GetNewKey(out bool isExists, KeyT key = default(KeyT));
 
         /// <summary>
+        /// 根据键获取值
+        /// </summary>
+        /// <param name="key">键</param>
+        /// <returns>值</returns>
+        ValueT GetValue(KeyT key);
+
+        /// <summary>
         /// 根据键获取新值
         /// 1、如果键不存在，则返回默认值
         /// 2、如果键存在，值不存在，则自动创建值返回

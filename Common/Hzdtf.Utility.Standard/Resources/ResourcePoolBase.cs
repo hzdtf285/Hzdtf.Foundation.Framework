@@ -84,6 +84,21 @@ namespace Hzdtf.Utility.Standard.Resources
         }
 
         /// <summary>
+        /// 根据键获取值
+        /// </summary>
+        /// <param name="key">键</param>
+        /// <returns>值</returns>
+        public ValueT GetValue(KeyT key)
+        {
+            if (key == null || !GetCache().ContainsKey(key))
+            {
+                return default(ValueT);
+            }
+
+            return GetCache()[key];
+        }
+
+        /// <summary>
         /// 根据键释放资源
         /// </summary>
         /// <param name="key">键</param>

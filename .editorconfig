@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CS0675: 对进行了带符号扩展的操作数使用了按位或运算符
+dotnet_diagnostic.CS0675.severity = none
