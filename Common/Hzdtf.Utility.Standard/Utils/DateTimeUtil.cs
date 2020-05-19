@@ -396,5 +396,41 @@ namespace Hzdtf.Utility.Standard.Utils
         /// <param name="dateTime">日期时间</param>
         /// <returns>长数字字符串</returns>
         public static string ToLongDateTimeNumString(this DateTime dateTime) => dateTime.ToString("yyMMddHHmmssfff");
+
+        /// <summary>
+        /// 转换为周一日期
+        /// </summary>
+        /// <param name="dateTime">日期时间</param>
+        /// <returns>周一日期</returns>
+        public static DateTime ToMonday(this DateTime dateTime)
+        {
+            var weekNum = (int)dateTime.DayOfWeek;
+            var newDateTime = weekNum == 1 ? dateTime : dateTime.AddDays(1 - weekNum);
+
+            return new DateTime(newDateTime.Year, newDateTime.Month, newDateTime.Day);
+        }
+
+        /// <summary>
+        /// 转换为周日日期
+        /// </summary>
+        /// <param name="dateTime">日期时间</param>
+        /// <returns>周日日期</returns>
+        public static DateTime ToSunday(this DateTime dateTime)
+        {
+            var weekNum = (int)dateTime.DayOfWeek;
+            var newDateTime = weekNum == 0 ? dateTime : dateTime.AddDays(7 - weekNum);
+
+            return new DateTime(newDateTime.Year, newDateTime.Month, newDateTime.Day);
+        }
+
+        /// <summary>
+        /// 过滤掉时间
+        /// </summary>
+        /// <param name="dateTime">日期时间</param>
+        /// <returns>日期</returns>
+        public static DateTime FilterTime(this DateTime dateTime)
+        {
+            return new DateTime(dateTime.Year, dateTime.Month, dateTime.Day);
+        }
     }
 }
