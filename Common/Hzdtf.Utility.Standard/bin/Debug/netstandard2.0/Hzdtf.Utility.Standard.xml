@@ -2334,6 +2334,24 @@
             <param name="methodName">方法名</param>
             <returns>方法</returns>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.Model.KeyValueInfo`2">
+            <summary>
+            键值信息
+            @ 黄振东
+            </summary>
+            <typeparam name="KeyT">键类型</typeparam>
+            <typeparam name="ValueT">值类型</typeparam>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Model.KeyValueInfo`2.Key">
+            <summary>
+            键
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Model.KeyValueInfo`2.Value">
+            <summary>
+            值
+            </summary>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Model.KeywordFilterInfo">
             <summary>
             关键字筛选信息
@@ -2546,6 +2564,13 @@
         <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.SetSuccessMsg(System.String,System.String)">
             <summary>
             设置成功消息
+            </summary>
+            <param name="msg">消息</param>
+            <param name="desc">描述</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.SetFailureMsg(System.String,System.String)">
+            <summary>
+            设置失败消息
             </summary>
             <param name="msg">消息</param>
             <param name="desc">描述</param>
@@ -3332,6 +3357,63 @@
             <param name="service">服务提供者</param>
             <param name="config">配置回调</param>
             <returns>服务生成器</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.RemoteService.ServicesProviderMemory">
+            <summary>
+            服务提供者内存缓存
+            必须手工设置原生服务提供者
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.RemoteService.ServicesProviderMemory.cache">
+            <summary>
+            缓存
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.RemoteService.ServicesProviderMemory.ProtoServicesProvider">
+            <summary>
+            原生服务提供者
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.RemoteService.ServicesProviderMemory.cacheExpire">
+            <summary>
+            缓存过期时间
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.ServicesProviderMemory.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.ServicesProviderMemory.#ctor(System.Int32)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="cacheExpire">缓存失效时间（单位：秒），-1为永不过期</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.ServicesProviderMemory.#ctor(Microsoft.Extensions.Caching.Memory.IMemoryCache)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="cache">缓存</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.ServicesProviderMemory.GetAddresses(System.String,System.String)">
+            <summary>
+            异步根据服务名获取地址数组
+            </summary>
+            <param name="serviceName">服务名</param>
+            <param name="tag">标签</param>
+            <returns>地址数组任务</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.ServicesProviderMemory.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.ServicesProviderMemory.Finalize">
+            <summary>
+            析构方法
+            </summary>
         </member>
         <member name="T:Hzdtf.Utility.Standard.RemoteService.UnityServicesBuilderCache">
             <summary>
@@ -4242,6 +4324,27 @@
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>长数字字符串</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToMonday(System.DateTime)">
+            <summary>
+            转换为周一日期
+            </summary>
+            <param name="dateTime">日期时间</param>
+            <returns>周一日期</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToSunday(System.DateTime)">
+            <summary>
+            转换为周日日期
+            </summary>
+            <param name="dateTime">日期时间</param>
+            <returns>周日日期</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.FilterTime(System.DateTime)">
+            <summary>
+            过滤掉时间
+            </summary>
+            <param name="dateTime">日期时间</param>
+            <returns>日期</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Utils.ExcelUtil">
             <summary>
@@ -5620,63 +5723,6 @@
             <param name="param">参数</param>
             <param name="paramIndex">参数索引位置</param>
             <returns>返回信息</returns>
-        </member>
-        <member name="T:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory">
-            <summary>
-            服务提供者内存缓存
-            必须手工设置原生服务提供者
-            @ 黄振东
-            </summary>
-        </member>
-        <member name="F:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.cache">
-            <summary>
-            缓存
-            </summary>
-        </member>
-        <member name="P:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.ProtoServicesProvider">
-            <summary>
-            原生服务提供者
-            </summary>
-        </member>
-        <member name="F:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.cacheExpire">
-            <summary>
-            缓存过期时间
-            </summary>
-        </member>
-        <member name="M:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.#ctor">
-            <summary>
-            构造方法
-            </summary>
-        </member>
-        <member name="M:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.#ctor(System.Int32)">
-            <summary>
-            构造方法
-            </summary>
-            <param name="cacheExpire">缓存失效时间（单位：秒），-1为永不过期</param>
-        </member>
-        <member name="M:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.#ctor(Microsoft.Extensions.Caching.Memory.IMemoryCache)">
-            <summary>
-            构造方法
-            </summary>
-            <param name="cache">缓存</param>
-        </member>
-        <member name="M:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.GetAddresses(System.String,System.String)">
-            <summary>
-            异步根据服务名获取地址数组
-            </summary>
-            <param name="serviceName">服务名</param>
-            <param name="tag">标签</param>
-            <returns>地址数组任务</returns>
-        </member>
-        <member name="M:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.Dispose">
-            <summary>
-            释放资源
-            </summary>
-        </member>
-        <member name="M:Hzdtf.Consul.Extensions.Common.Standard.ServicesProviderMemory.Finalize">
-            <summary>
-            析构方法
-            </summary>
         </member>
     </members>
 </doc>

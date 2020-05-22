@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hzdtf.Consul.Extensions.Common.Standard
+namespace Hzdtf.Utility.Standard.RemoteService
 {
     /// <summary>
     /// 服务提供者内存缓存
