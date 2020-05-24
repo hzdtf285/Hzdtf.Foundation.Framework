@@ -159,6 +159,43 @@
             <param name="key">键</param>
             <returns>任务</returns>
         </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.DatabaseExtend.JsonObjectSet(StackExchange.Redis.IDatabase,StackExchange.Redis.RedisKey,System.Object,System.Nullable{System.TimeSpan})">
+            <summary>
+            Json对象设置
+            </summary>
+            <param name="db">数据库</param>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="expiry">时间间隔</param>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.DatabaseExtend.JsonObjectSetAsync(StackExchange.Redis.IDatabase,StackExchange.Redis.RedisKey,System.Object,System.Nullable{System.TimeSpan})">
+            <summary>
+            Json异步对象设置
+            </summary>
+            <param name="db">数据库</param>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="expiry">时间间隔</param>
+            <returns>任务</returns>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.DatabaseExtend.JsonObjectGet``1(StackExchange.Redis.IDatabase,StackExchange.Redis.RedisKey)">
+            <summary>
+            Json对象获取
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="db">数据库</param>
+            <param name="key">键</param>
+            <returns>对象</returns>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Standard.DatabaseExtend.JsonObjectGetAsync``1(StackExchange.Redis.IDatabase,StackExchange.Redis.RedisKey)">
+            <summary>
+            Json异步对象获取
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="db">数据库</param>
+            <param name="key">键</param>
+            <returns>任务</returns>
+        </member>
         <member name="M:Hzdtf.Redis.Extend.Standard.DatabaseExtend.LockTake(StackExchange.Redis.IDatabase,StackExchange.Redis.RedisKey,System.Action,System.Int32)">
             <summary>
             锁住可用的资源，默认5秒超时，因是主动轮询机制，性能较差

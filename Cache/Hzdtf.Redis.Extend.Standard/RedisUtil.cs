@@ -20,6 +20,11 @@ namespace Hzdtf.Redis.Extend.Standard
         /// <returns>哈希键值对数组</returns>
         public static HashEntry[] ToHashEntrys(object obj)
         {
+            if (obj == null)
+            {
+                return null;
+            }
+
             Type type = obj.GetType();
             PropertyInfo[] properties = type.GetProperties();
             if (properties.IsNullOrLength0())

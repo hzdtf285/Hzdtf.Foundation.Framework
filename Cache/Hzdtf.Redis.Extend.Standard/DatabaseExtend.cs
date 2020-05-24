@@ -3,6 +3,7 @@ using System;
 using Hzdtf.Utility.Standard.Utils;
 using System.Threading.Tasks;
 using System.Threading;
+using System.Collections.Generic;
 
 namespace Hzdtf.Redis.Extend.Standard
 {
@@ -12,6 +13,8 @@ namespace Hzdtf.Redis.Extend.Standard
     /// </summary>
     public static class DatabaseExtend
     {
+        #region 对象
+
         /// <summary>
         /// 对象设置
         /// </summary>
@@ -26,7 +29,7 @@ namespace Hzdtf.Redis.Extend.Standard
             {
                 return;
             }
-            
+
             if (db.KeyExists(key))
             {
                 db.KeyDelete(key);
@@ -80,6 +83,74 @@ namespace Hzdtf.Redis.Extend.Standard
                 return ObjectGet<T>(db, key);
             });
         }
+
+        #endregion
+
+        #region Json对象
+
+        /// <summary>
+        /// Json对象设置
+        /// </summary>
+        /// <param name="db">数据库</param>
+        /// <param name="key">键</param>
+        /// <param name="value">值</param>
+        /// <param name="expiry">时间间隔</param>
+        public static void JsonObjectSet(this IDatabase db, RedisKey key, object value, TimeSpan? expiry = null)
+        {
+            if (value == null)
+            {
+                return;
+            }
+
+            var jsonStr = JsonUtil.SerializeIgnoreNull(value);
+            db.StringSet(key, jsonStr, expiry);
+        }
+
+        /// <summary>
+        /// Json异步对象设置
+        /// </summary>
+        /// <param name="db">数据库</param>
+        /// <param name="key">键</param>
+        /// <param name="value">值</param>
+        /// <param name="expiry">时间间隔</param>
+        /// <returns>任务</returns>
+        public static Task JsonObjectSetAsync(this IDatabase db, RedisKey key, object value, TimeSpan? expiry = null)
+        {
+            return Task.Factory.StartNew(() =>
+            {
+                JsonObjectSet(db, key, value, expiry);
+            });
+        }
+
+        /// <summary>
+        /// Json对象获取
+        /// </summary>
+        /// <typeparam name="T">对象类型</typeparam>
+        /// <param name="db">数据库</param>
+        /// <param name="key">键</param>
+        /// <returns>对象</returns>
+        public static T JsonObjectGet<T>(this IDatabase db, RedisKey key)
+            where T : class => JsonUtil.Deserialize<T>(db.StringGet(key));
+
+        /// <summary>
+        /// Json异步对象获取
+        /// </summary>
+        /// <typeparam name="T">对象类型</typeparam>
+        /// <param name="db">数据库</param>
+        /// <param name="key">键</param>
+        /// <returns>任务</returns>
+        public static Task<T> JsonObjectGetAsync<T>(this IDatabase db, RedisKey key)
+            where T : class
+        {
+            return Task.Factory.StartNew<T>(() =>
+            {
+                return JsonObjectGet<T>(db, key);
+            });
+        }
+
+        #endregion
+
+        #region 锁
 
         /// <summary>
         /// 锁住可用的资源，默认5秒超时，因是主动轮询机制，性能较差
@@ -160,5 +231,7 @@ namespace Hzdtf.Redis.Extend.Standard
                 }
             }
         }
+
+        #endregion
     }
 }
