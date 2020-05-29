@@ -9,12 +9,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>Bin\Release\Hzdtf.Rabbit.Impl.Standard.xml</DocumentationFile>
-    <OutputPath>Bin\Release</OutputPath>
+    <DocumentationFile>Hzdtf.Rabbit.Impl.Standard.xml</DocumentationFile>
+    <OutputPath></OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\Hzdtf.Rabbit.Impl.Standard.xml</DocumentationFile>
+    <DocumentationFile>Hzdtf.Rabbit.Impl.Standard.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

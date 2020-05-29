@@ -10,12 +10,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>Bin\Release\Hzdtf.Persistence.Contract.Standard.xml</DocumentationFile>
-    <OutputPath>Bin\Release</OutputPath>
+    <DocumentationFile>Hzdtf.Persistence.Contract.Standard.xml</DocumentationFile>
+    <OutputPath></OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\Hzdtf.Persistence.Contract.Standard.xml</DocumentationFile>
+    <DocumentationFile>Hzdtf.Persistence.Contract.Standard.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

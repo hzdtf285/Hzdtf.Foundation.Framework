@@ -9,12 +9,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>Bin\Release\Hzdtf.Redis.Extend.Standard.xml</DocumentationFile>
-    <OutputPath>Bin\Release</OutputPath>
+    <DocumentationFile>Hzdtf.Redis.Extend.Standard.xml</DocumentationFile>
+    <OutputPath></OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\Hzdtf.Redis.Extend.Standard.xml</DocumentationFile>
+    <DocumentationFile>Hzdtf.Redis.Extend.Standard.xml</DocumentationFile>
     <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
   </PropertyGroup>
 

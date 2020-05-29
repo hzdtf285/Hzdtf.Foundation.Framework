@@ -2568,6 +2568,13 @@
             <param name="msg">消息</param>
             <param name="desc">描述</param>
         </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.SetFailureMsg(System.String,System.String)">
+            <summary>
+            设置失败消息
+            </summary>
+            <param name="msg">消息</param>
+            <param name="desc">描述</param>
+        </member>
         <member name="M:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.SetFailureMsg(System.String,System.String,System.Exception)">
             <summary>
             设置失败消息

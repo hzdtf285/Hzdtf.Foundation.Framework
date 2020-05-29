@@ -11,15 +11,15 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\Hzdtf.Utility.Standard.xml</DocumentationFile>
-    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Hzdtf.Utility.Standard.xml</DocumentationFile>
+    <OutputPath></OutputPath>
     <WarningLevel>3</WarningLevel>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\Hzdtf.Utility.Standard.xml</DocumentationFile>
+    <DocumentationFile>Hzdtf.Utility.Standard.xml</DocumentationFile>
     <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
-    <OutputPath>bin\Release</OutputPath>
+    <OutputPath></OutputPath>
   </PropertyGroup>
 
   <ItemGroup>

@@ -35,14 +35,23 @@ DI与AOP的扩展功能，目前只实现Autofac扩展。提供了读入配置�
 
 八、Cache包
 第三方的缓存组件封装，目前只实现了对Redis扩展，依赖于StackExchange.Redis组件。
-1、封装了ConnectionMultiplexer对象，使用IConnectionMultiplexerManager接口，自动通过传入的访问模式的参数来判断操作主或从，在GetDatabase(AccessMode accessMode = AccessMode.MASTER, int db = -1, string key = null)里，这里有个key，如果传入了，则会在客户端分区，经过key的HashCode % Redis实例个数，得到哪个实例进行操作。
-（1）、主库数据库字符串配置Key名：Redis:Production:DefaultConnection，如果有多个字符串，则以|分隔。
-（2）、键名Redis:Encrypt，表示对字符串是否加密
+1、封装了ConnectionMultiplexer对象，使用IConnectionMultiplexerManager接口
 使用时必须要IConnectionMultiplexerManager得到Database，否则框架扩展的功能都使用不上。
-
-2、扩展了针对对象存储到Redis的Hash类型，在ObjectSet(this IDatabase db, RedisKey key, object value, TimeSpan? expiry = null)里。
-3、扩展了针对分布式锁的功能（轮询模式），在LockTake(this IDatabase db, RedisKey key, Action action, int retryIntervalMillisecond = 200)
-4、扩展了针对分布式锁的功能（发布订阅模式，推荐使用），在 LockTake(this IConnectionMultiplexer connectionMultiplexer, RedisKey key, Action action, int timeoutMilliSecond = 5000)
+2、扩展了针对对象存储到Redis的Hash类型，在ObjectSet(this IDatabase db, RedisKey key, object value, TimeSpan? expiry = null, CommandFlags flags = CommandFlags.None)里。
+3、扩展了针对分布式锁的功能（轮询模式），在LockTake(this IDatabase db, RedisKey key, Action action, int retryIntervalMillisecond = 200, CommandFlags flags = CommandFlags.None)
+4、扩展了针对分布式锁的功能（发布订阅模式，推荐使用），在 LockTake(this IConnectionMultiplexer connectionMultiplexer, RedisKey key, Action action, int timeoutMilliSecond = 5000, CommandFlags flags = CommandFlags.None)
+5、如使用Core，则添加Hzdtf.Redis.Extend.Core引用。在appsetting.json里配置：
+"Redis": {
+    "ConnectionEncrypt": false,
+    "Connections": [
+      {
+        "Key": "Key1",
+        "ConnectionString": "127.0.0.1:6379,127.0.0.1:6380,127.0.0.1:6381"
+      }
+    ]    
+  }
+如果有多种Redis，则用Key区分。
+如果有主从，在使用从时，flags应使用CommandFlags.PreferSlave,会优先找从，如果从不可用，则找主。默认是找主
 
 九、MessageQueue包
 1、对消息队列进行扩展封装，目前只实现了RabbitMQ，核心都在rabbitMessageQueue.xml配置文件里，使用生产者或消费者，输入对应参数，会找这个配置文件找到对应的交换机和队列名。具体参考DEMO。

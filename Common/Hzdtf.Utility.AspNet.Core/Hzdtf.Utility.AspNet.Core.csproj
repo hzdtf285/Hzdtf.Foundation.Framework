@@ -8,13 +8,14 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <OutputPath>bin\Release</OutputPath>
-    <DocumentationFile>bin\Release\Hzdtf.Utility.AspNet.Core.xml</DocumentationFile>
+    <OutputPath></OutputPath>
+    <DocumentationFile>Hzdtf.Utility.AspNet.Core.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath>bin\Debug</OutputPath>
+    <OutputPath></OutputPath>
     <DocumentationFile>bin\Debug\Hzdtf.Utility.AspNet.Core.xml</DocumentationFile>
+    <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>

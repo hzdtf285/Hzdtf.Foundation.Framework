@@ -3,7 +3,6 @@ using System;
 using Hzdtf.Utility.Standard.Utils;
 using System.Threading.Tasks;
 using System.Threading;
-using System.Collections.Generic;
 
 namespace Hzdtf.Redis.Extend.Standard
 {
@@ -22,23 +21,24 @@ namespace Hzdtf.Redis.Extend.Standard
         /// <param name="key">键</param>
         /// <param name="value">值</param>
         /// <param name="expiry">时间间隔</param>
-        public static void ObjectSet(this IDatabase db, RedisKey key, object value, TimeSpan? expiry = null)
+        /// <param name="flags">命令标记</param>
+        public static void ObjectSet(this IDatabase db, RedisKey key, object value, TimeSpan? expiry = null, CommandFlags flags = CommandFlags.None)
         {
             HashEntry[] hashEntries = RedisUtil.ToHashEntrys(value);
             if (hashEntries.IsNullOrLength0())
             {
                 return;
             }
-
-            if (db.KeyExists(key))
+            
+            if (db.KeyExists(key, flags: flags))
             {
-                db.KeyDelete(key);
+                db.KeyDelete(key, flags: flags);
             }
 
-            db.HashSet(key, hashEntries);
+            db.HashSet(key, hashEntries, flags: flags);
             if (expiry != null)
             {
-                db.KeyExpire(key, expiry);
+                db.KeyExpire(key, expiry, flags: flags);
             }
         }
 
@@ -49,12 +49,13 @@ namespace Hzdtf.Redis.Extend.Standard
         /// <param name="key">键</param>
         /// <param name="value">值</param>
         /// <param name="expiry">时间间隔</param>
+        /// <param name="flags">命令标记</param>
         /// <returns>任务</returns>
-        public static Task ObjectSetAsync(this IDatabase db, RedisKey key, object value, TimeSpan? expiry = null)
+        public static Task ObjectSetAsync(this IDatabase db, RedisKey key, object value, TimeSpan? expiry = null, CommandFlags flags = CommandFlags.None)
         {
             return Task.Factory.StartNew(() =>
             {
-                ObjectSet(db, key, value, expiry);
+                ObjectSet(db, key, value, expiry, flags);
             });
         }
 
@@ -64,9 +65,10 @@ namespace Hzdtf.Redis.Extend.Standard
         /// <typeparam name="T">对象类型</typeparam>
         /// <param name="db">数据库</param>
         /// <param name="key">键</param>
+        /// <param name="flags">命令标记</param>
         /// <returns>对象</returns>
-        public static T ObjectGet<T>(this IDatabase db, RedisKey key)
-            where T : class => RedisUtil.FromHashEntrys<T>(db.HashGetAll(key));
+        public static T ObjectGet<T>(this IDatabase db, RedisKey key, CommandFlags flags = CommandFlags.None)
+            where T : class => RedisUtil.FromHashEntrys<T>(db.HashGetAll(key, flags));
 
         /// <summary>
         /// 异步对象获取
@@ -74,13 +76,14 @@ namespace Hzdtf.Redis.Extend.Standard
         /// <typeparam name="T">对象类型</typeparam>
         /// <param name="db">数据库</param>
         /// <param name="key">键</param>
+        /// <param name="flags">命令标记</param>
         /// <returns>任务</returns>
-        public static Task<T> ObjectGetAsync<T>(this IDatabase db, RedisKey key)
+        public static Task<T> ObjectGetAsync<T>(this IDatabase db, RedisKey key, CommandFlags flags = CommandFlags.None)
             where T : class
         {
             return Task.Factory.StartNew<T>(() =>
             {
-                return ObjectGet<T>(db, key);
+                return ObjectGet<T>(db, key, flags);
             });
         }
 
@@ -95,7 +98,8 @@ namespace Hzdtf.Redis.Extend.Standard
         /// <param name="key">键</param>
         /// <param name="value">值</param>
         /// <param name="expiry">时间间隔</param>
-        public static void JsonObjectSet(this IDatabase db, RedisKey key, object value, TimeSpan? expiry = null)
+        /// <param name="flags">命令标记</param>
+        public static void JsonObjectSet(this IDatabase db, RedisKey key, object value, TimeSpan? expiry = null, CommandFlags flags = CommandFlags.None)
         {
             if (value == null)
             {
@@ -103,7 +107,7 @@ namespace Hzdtf.Redis.Extend.Standard
             }
 
             var jsonStr = JsonUtil.SerializeIgnoreNull(value);
-            db.StringSet(key, jsonStr, expiry);
+            db.StringSet(key, jsonStr, expiry, flags: flags);
         }
 
         /// <summary>
@@ -113,12 +117,13 @@ namespace Hzdtf.Redis.Extend.Standard
         /// <param name="key">键</param>
         /// <param name="value">值</param>
         /// <param name="expiry">时间间隔</param>
+        /// <param name="flags">命令标记</param>
         /// <returns>任务</returns>
-        public static Task JsonObjectSetAsync(this IDatabase db, RedisKey key, object value, TimeSpan? expiry = null)
+        public static Task JsonObjectSetAsync(this IDatabase db, RedisKey key, object value, TimeSpan? expiry = null, CommandFlags flags = CommandFlags.None)
         {
             return Task.Factory.StartNew(() =>
             {
-                JsonObjectSet(db, key, value, expiry);
+                JsonObjectSet(db, key, value, expiry, flags);
             });
         }
 
@@ -128,9 +133,10 @@ namespace Hzdtf.Redis.Extend.Standard
         /// <typeparam name="T">对象类型</typeparam>
         /// <param name="db">数据库</param>
         /// <param name="key">键</param>
+        /// <param name="flags">命令标记</param>
         /// <returns>对象</returns>
-        public static T JsonObjectGet<T>(this IDatabase db, RedisKey key)
-            where T : class => JsonUtil.Deserialize<T>(db.StringGet(key));
+        public static T JsonObjectGet<T>(this IDatabase db, RedisKey key, CommandFlags flags = CommandFlags.None)
+            where T : class => JsonUtil.Deserialize<T>(db.StringGet(key, flags));
 
         /// <summary>
         /// Json异步对象获取
@@ -138,13 +144,14 @@ namespace Hzdtf.Redis.Extend.Standard
         /// <typeparam name="T">对象类型</typeparam>
         /// <param name="db">数据库</param>
         /// <param name="key">键</param>
+        /// <param name="flags">命令标记</param>
         /// <returns>任务</returns>
-        public static Task<T> JsonObjectGetAsync<T>(this IDatabase db, RedisKey key)
+        public static Task<T> JsonObjectGetAsync<T>(this IDatabase db, RedisKey key, CommandFlags flags = CommandFlags.None)
             where T : class
         {
             return Task.Factory.StartNew<T>(() =>
             {
-                return JsonObjectGet<T>(db, key);
+                return JsonObjectGet<T>(db, key, flags);
             });
         }
 
@@ -159,10 +166,11 @@ namespace Hzdtf.Redis.Extend.Standard
         /// <param name="key">键</param>
         /// <param name="action">动作</param>
         /// <param name="retryIntervalMillisecond">重试间隔毫秒数</param>
+        /// <param name="flags">命令标记</param>
         [Obsolete("此方法是主动轮询检查资源是否已释放，增加了Redis负担，应弃用；应改为发布订阅模式，请使用IConnectionMultiplexer.LockTake方法")]
-        public static void LockTake(this IDatabase db, RedisKey key, Action action, int retryIntervalMillisecond = 200)
+        public static void LockTake(this IDatabase db, RedisKey key, Action action, int retryIntervalMillisecond = 200, CommandFlags flags = CommandFlags.None)
         {
-            LockTake(db, key, StringUtil.NewShortGuid(), action, TimeSpan.FromSeconds(5), retryIntervalMillisecond);
+            LockTake(db, key, StringUtil.NewShortGuid(), action, TimeSpan.FromSeconds(5), retryIntervalMillisecond, flags);
         }
 
         /// <summary>
@@ -173,10 +181,11 @@ namespace Hzdtf.Redis.Extend.Standard
         /// <param name="expiry">时间间隔</param>
         /// <param name="action">动作</param>
         /// <param name="retryIntervalMillisecond">重试间隔毫秒数</param>
+        /// <param name="flags">命令标记</param>
         [Obsolete("此方法是主动轮询检查资源是否已释放，增加了Redis负担，应弃用；应改为发布订阅模式，请使用IConnectionMultiplexer.LockTake方法")]
-        public static void LockTake(this IDatabase db, RedisKey key, Action action, TimeSpan expiry, int retryIntervalMillisecond = 200)
+        public static void LockTake(this IDatabase db, RedisKey key, Action action, TimeSpan expiry, int retryIntervalMillisecond = 200, CommandFlags flags = CommandFlags.None)
         {
-            LockTake(db, key, StringUtil.NewShortGuid(), action, expiry, retryIntervalMillisecond);
+            LockTake(db, key, StringUtil.NewShortGuid(), action, expiry, retryIntervalMillisecond, flags);
         }
 
         /// <summary>
@@ -187,10 +196,11 @@ namespace Hzdtf.Redis.Extend.Standard
         /// <param name="value">值</param>
         /// <param name="action">动作</param>
         /// <param name="retryIntervalMillisecond">重试间隔毫秒数</param>
+        /// <param name="flags">命令标记</param>
         [Obsolete("此方法是主动轮询检查资源是否已释放，增加了Redis负担，应弃用；应改为发布订阅模式，请使用IConnectionMultiplexer.LockTake方法")]
-        public static void LockTake(this IDatabase db, RedisKey key, RedisValue value, Action action, int retryIntervalMillisecond = 200)
+        public static void LockTake(this IDatabase db, RedisKey key, RedisValue value, Action action, int retryIntervalMillisecond = 200, CommandFlags flags = CommandFlags.None)
         {
-            LockTake(db, key, value, action, TimeSpan.FromSeconds(5), retryIntervalMillisecond);
+            LockTake(db, key, value, action, TimeSpan.FromSeconds(5), retryIntervalMillisecond, flags);
         }
 
         /// <summary>
@@ -202,12 +212,13 @@ namespace Hzdtf.Redis.Extend.Standard
         /// <param name="expiry">时间间隔</param>
         /// <param name="action">动作</param>
         /// <param name="retryIntervalMillisecond">重试间隔毫秒数</param>
+        /// <param name="flags">命令标记</param>
         [Obsolete("此方法是主动轮询检查资源是否已释放，增加了Redis负担，应弃用；应改为发布订阅模式，请使用IConnectionMultiplexer.LockTake方法")]
-        public static void LockTake(this IDatabase db, RedisKey key, RedisValue value, Action action, TimeSpan expiry, int retryIntervalMillisecond = 200)
+        public static void LockTake(this IDatabase db, RedisKey key, RedisValue value, Action action, TimeSpan expiry, int retryIntervalMillisecond = 200, CommandFlags flags = CommandFlags.None)
         {
             while (true)
             {
-                bool canLock = db.LockTake(key, value, expiry);
+                bool canLock = db.LockTake(key, value, expiry, flags);
                 if (canLock)
                 {
                     try
@@ -220,7 +231,7 @@ namespace Hzdtf.Redis.Extend.Standard
                     }
                     finally
                     {
-                        db.LockReleaseAsync(key, value);
+                        db.LockReleaseAsync(key, value, flags);
                     }
 
                     return;

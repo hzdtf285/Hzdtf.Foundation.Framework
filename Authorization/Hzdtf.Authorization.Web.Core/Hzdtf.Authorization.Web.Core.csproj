@@ -9,12 +9,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>Bin\Release\Hzdtf.Authorization.Web.Core.xml</DocumentationFile>
-    <OutputPath>Bin\Release</OutputPath>
+    <DocumentationFile>Hzdtf.Authorization.Web.Core.xml</DocumentationFile>
+    <OutputPath></OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\Hzdtf.Authorization.Web.Core.xml</DocumentationFile>
+    <DocumentationFile>Hzdtf.Authorization.Web.Core.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

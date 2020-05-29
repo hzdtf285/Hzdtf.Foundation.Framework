@@ -9,12 +9,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>Bin\Release\Hzdtf.WorkFlow.MvcController.Core.xml</DocumentationFile>
-    <OutputPath>Bin\Release</OutputPath>
+    <DocumentationFile>Hzdtf.WorkFlow.MvcController.Core.xml</DocumentationFile>
+    <OutputPath></OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\Hzdtf.WorkFlow.MvcController.Core.xml</DocumentationFile>
+    <DocumentationFile>Hzdtf.WorkFlow.MvcController.Core.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

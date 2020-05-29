@@ -1,13 +1,9 @@
-﻿using Hzdtf.Utility.Standard;
-using Hzdtf.Utility.Standard.Attr;
-using Hzdtf.Utility.Standard.Enums;
-using Hzdtf.Utility.Standard.Factory;
+﻿using Hzdtf.Utility.Standard.Attr;
 using StackExchange.Redis;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using Hzdtf.Utility.Standard.Utils;
-using Hzdtf.Utility.Standard.Safety;
 
 namespace Hzdtf.Redis.Extend.Standard
 {
@@ -21,16 +17,16 @@ namespace Hzdtf.Redis.Extend.Standard
         #region 属性与字段
 
         /// <summary>
-        /// 连接字符串工厂
+        /// Redis配置选项解析
         /// </summary>
-        public ISimpleFactory<EnvironmentType, RedisConnectionInfo> ConnectionStringFactory
+        public IRedisConfigOptionParse RedisConfigOptionParse
         {
             get;
             set;
         }
 
         /// <summary>
-        /// 连接转接器字典（Key：连接字符串，Value：连接转接器）
+        /// 连接转接器字典（Key：连接键，Value：连接转接器）
         /// </summary>
         private static readonly IDictionary<string, IConnectionMultiplexer> dicConnMultis = new Dictionary<string, IConnectionMultiplexer>();
 
@@ -40,12 +36,24 @@ namespace Hzdtf.Redis.Extend.Standard
         private static readonly object syncDicConnMultis = new object();
 
         /// <summary>
-        /// 哈希
+        /// Redis配置选项
         /// </summary>
-        public IHash Hash
+        private RedisConfigOptions _RedisConfigOptions;
+
+        /// <summary>
+        /// Redis配置选项
+        /// </summary>
+        private RedisConfigOptions RedisConfigOptions
         {
-            get;
-            set;
+            get
+            {
+                if (_RedisConfigOptions == null)
+                {
+                    _RedisConfigOptions = RedisConfigOptionParse.Parse();
+                }
+
+                return _RedisConfigOptions;
+            }
         }
 
         #endregion
@@ -55,27 +63,26 @@ namespace Hzdtf.Redis.Extend.Standard
         /// <summary>
         /// 获取数据库
         /// </summary>
-        /// <param name="accessMode">访问模式</param>
+        /// <param name="connKey">连接键</param>
         /// <param name="db">数据库索引</param>
-        /// <param name="key">键，如果不为空，则会按取模分区</param>
         /// <returns>数据库</returns>
-        public IDatabase GetDatabase(AccessMode accessMode = AccessMode.MASTER, int db = -1, string key = null) => GetConnectionMulti(accessMode, key).GetDatabase(db);
+        public IDatabase GetDatabase(string connKey = null, int db = -1) => GetConnectionMultiplexer(connKey).GetDatabase(db);
 
         /// <summary>
         /// 关闭连接
         /// </summary>
-        /// <param name="accessMode">访问模式</param>
-        public void Close(AccessMode accessMode = AccessMode.MASTER)
+        /// <param name="connKey">连接键</param>
+        public void Close(string connKey = null)
         {
-            string connString = GetConnectionString(accessMode);
-            if (string.IsNullOrWhiteSpace(connString))
+            var options = RedisConfigOptions.Get(connKey);
+            if (options == null)
             {
                 return;
             }
-
-            if (dicConnMultis.ContainsKey(connString))
+            
+            if (dicConnMultis.ContainsKey(options.Key))
             {
-                dicConnMultis[connString].CloseAsync();
+                dicConnMultis[connKey].CloseAsync();
             }
         }
 
@@ -100,55 +107,37 @@ namespace Hzdtf.Redis.Extend.Standard
         #region 私有方法
 
         /// <summary>
-        /// 根据访问模式获取连接字符串
+        /// 根据连接键获取连接转接器
         /// </summary>
-        /// <param name="accessMode">访问模式</param>
-        /// <param name="key">键，如果不为空，则会按取模分区</param>
-        /// <returns>连接字符串</returns>
-        private string GetConnectionString(AccessMode accessMode = AccessMode.MASTER, string key = null)
-        {
-            RedisConnectionInfo connInfo = ConnectionStringFactory.Create(UtilTool.CurrEnvironmentType);
-            string[] conns = accessMode == AccessMode.MASTER || connInfo.SlaveConnectionStrings.IsNullOrLength0() ? connInfo.MasterConnectionStrings : connInfo.SlaveConnectionStrings;
-            if (conns.IsNullOrLength0())
-            {
-                return null;
-            }
-
-            if (string.IsNullOrWhiteSpace(key) || conns.Length == 1)
-            {
-                return conns[0];
-            }
-
-            return conns[Hash.GenerateHashCode(key) % conns.Length];
-        }
-
-        /// <summary>
-        /// 根据访问模式获取连接转接器
-        /// </summary>
-        /// <param name="accessMode">访问模式</param>
-        /// <param name="key">键，如果不为空，则会按取模分区</param>
+        /// <param name="connKey">连接键</param>
         /// <returns>连接转接器</returns>
-        private IConnectionMultiplexer GetConnectionMulti(AccessMode accessMode = AccessMode.MASTER, string key = null)
+        public IConnectionMultiplexer GetConnectionMultiplexer(string connKey = null)
         {
-            string connString = GetConnectionString(accessMode, key);
-            if (dicConnMultis.ContainsKey(connString))
+            var options = RedisConfigOptions.Get(connKey);
+            if (options == null)
             {
-                return dicConnMultis[connString];
+                throw new NotImplementedException($"未找到[{connKey}]的连接键的配置");
             }
 
+            if (dicConnMultis.ContainsKey(options.Key))
+            {
+                return dicConnMultis[options.Key];
+            }
+
+            var connString = RedisConfigOptions.GetPlaintextConnectionString(options.ConnectionString);
             lock (syncDicConnMultis)
             {
                 IConnectionMultiplexer connectionMultiplexer = ConnectionMultiplexer.Connect(connString);
                 try
                 {
-                    dicConnMultis.Add(connString, connectionMultiplexer);
+                    dicConnMultis.Add(options.Key, connectionMultiplexer);
 
                     return connectionMultiplexer;
                 }
                 catch (ArgumentException)
                 {
                     connectionMultiplexer.Close();
-                    return dicConnMultis[connString];
+                    return dicConnMultis[options.Key];
                 }
             }
         }

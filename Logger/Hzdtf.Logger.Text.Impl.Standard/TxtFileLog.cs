@@ -39,6 +39,11 @@ namespace Hzdtf.Logger.Text.Impl.Standard
                     else
                     {
                         logRootDirectory = AppConfig["Logging:LogRoot"];
+                        if (logRootDirectory.Contains("{LocalApplicationData}"))
+                        {
+                            var appData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+                            logRootDirectory = logRootDirectory.Replace("{LocalApplicationData}", appData);
+                        }
                     }
                 }
 

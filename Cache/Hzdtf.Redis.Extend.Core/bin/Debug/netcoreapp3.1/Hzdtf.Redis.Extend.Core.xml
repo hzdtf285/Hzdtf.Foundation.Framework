@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.Redis.Extend.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.Redis.Extend.Core.RedisConfigOptionParse">
+            <summary>
+            Redis配置选项解析
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Redis.Extend.Core.RedisConfigOptionParse.Parse">
+            <summary>
+            解析
+            </summary>
+            <returns>Redis配置选项</returns>
+        </member>
+    </members>
+</doc>

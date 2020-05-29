@@ -9,13 +9,13 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>Bin\Release\Hzdtf.WorkFlow.Model.Standard.xml</DocumentationFile>
+    <DocumentationFile>Hzdtf.WorkFlow.Model.Standard.xml</DocumentationFile>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <OutputPath>Bin\Release</OutputPath>
+    <OutputPath></OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\Hzdtf.WorkFlow.Model.Standard.xml</DocumentationFile>
+    <DocumentationFile>Hzdtf.WorkFlow.Model.Standard.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

@@ -18,21 +18,22 @@ namespace Hzdtf.Redis.Extend.Standard
         /// <param name="key">键</param>
         /// <param name="value">值</param>
         /// <param name="expiry">时间间隔</param>
+        /// <param name="flags">命令标记</param>
         /// <returns>任务</returns>
-        public static Task ObjectSetAsync(this IBatch batch, RedisKey key, object value, TimeSpan? expiry = null)
+        public static Task ObjectSetAsync(this IBatch batch, RedisKey key, object value, TimeSpan? expiry = null, CommandFlags flags = CommandFlags.None)
         {
             HashEntry[] hashEntries = RedisUtil.ToHashEntrys(value);
             if (hashEntries.IsNullOrLength0())
             {
                 return Task.Factory.StartNew(() => { });
             }
+            
+            batch.KeyDeleteAsync(key, flags: flags);
 
-            batch.KeyDeleteAsync(key);
-
-            Task task = batch.HashSetAsync(key, hashEntries);
+            Task task = batch.HashSetAsync(key, hashEntries, flags: flags);
             if (expiry != null)
             {
-                batch.KeyExpireAsync(key, expiry);
+                batch.KeyExpireAsync(key, expiry, flags: flags);
             }
 
             return task;

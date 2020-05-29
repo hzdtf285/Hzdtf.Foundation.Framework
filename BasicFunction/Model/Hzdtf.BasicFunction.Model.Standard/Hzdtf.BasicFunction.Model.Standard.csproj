@@ -9,13 +9,13 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\Hzdtf.BasicFunction.Model.Standard.xml</DocumentationFile>
+    <DocumentationFile>Hzdtf.BasicFunction.Model.Standard.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>Bin\Release\Hzdtf.BasicFunction.Model.Standard.xml</DocumentationFile>
+    <DocumentationFile>Hzdtf.BasicFunction.Model.Standard.xml</DocumentationFile>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <OutputPath>Bin\Release</OutputPath>
+    <OutputPath></OutputPath>
   </PropertyGroup>
 
   <ItemGroup>

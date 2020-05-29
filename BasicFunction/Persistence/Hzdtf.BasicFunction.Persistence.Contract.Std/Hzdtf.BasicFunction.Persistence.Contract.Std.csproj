@@ -9,12 +9,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>Bin\Release\Hzdtf.BasicFunction.Persistence.Contract.Std.xml</DocumentationFile>
-    <OutputPath>Bin\Release</OutputPath>
+    <DocumentationFile>Hzdtf.BasicFunction.Persistence.Contract.Std.xml</DocumentationFile>
+    <OutputPath></OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\Hzdtf.BasicFunction.Persistence.Contract.Std.xml</DocumentationFile>
+    <DocumentationFile>Hzdtf.BasicFunction.Persistence.Contract.Std.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
