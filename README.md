@@ -11,7 +11,7 @@
 一、Comnon包
 所有公共工具类库
 
-二、Platform包
+二、Platform包 
 基于不同平台实现不同的配置类
 使用配置是，直接用Contract项目里的IAppConfiguration
 
