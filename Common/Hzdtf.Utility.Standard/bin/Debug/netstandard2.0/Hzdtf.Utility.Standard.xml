@@ -1648,6 +1648,44 @@
             </summary>
             <param name="eventData">事件数据</param>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.Expressions.PredicateBuilder">
+            <summary>
+            条件生成器
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Expressions.PredicateBuilder.True``1">
+            <summary>
+            True表达式
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <returns>True表达式</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Expressions.PredicateBuilder.False``1">
+            <summary>
+            False表达式
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <returns>False表达式</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Expressions.PredicateBuilder.Or``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            组合Or表达式
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="expr1">表达式1</param>
+            <param name="expr2">表达式2</param>
+            <returns>组合Or后的表达式</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Expressions.PredicateBuilder.And``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            组合And表达式
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="expr1">表达式1</param>
+            <param name="expr2">表达式2</param>
+            <returns>组合And后的表达式</returns>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Factory.IGeneralFactory`1">
             <summary>
             普通工厂接口
