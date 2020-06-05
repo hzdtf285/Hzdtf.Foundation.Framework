@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Reflection;
+using System.Linq;
 
 namespace Hzdtf.Utility.Standard.Utils
 {
@@ -574,6 +575,38 @@ namespace Hzdtf.Utility.Standard.Utils
             var assembly = GetAssembly(assemblyName);
 
             return assembly.GetType(className);
+        }
+
+        /// <summary>
+        /// 从当前执行的程序集里获取指定接口类型的所有实现类类型数组
+        /// </summary>
+        /// <param name="interfaceType">接口类型</param>
+        /// <returns>实现类类型数组</returns>
+        public static Type[] GetImplClassTypeFromCurrExecAssembly(Type interfaceType)
+            => GetImplClassType(new Assembly[] { Assembly.GetExecutingAssembly() }, interfaceType);
+
+        /// <summary>
+        /// 获取指定接口类型的所有实现类类型数组
+        /// </summary>
+        /// <param name="interfaceType">接口类型</param>
+        /// <returns>实现类类型数组</returns>
+        public static Type[] GetImplClassType(Type interfaceType)
+            => GetImplClassType(AppDomain.CurrentDomain.GetAssemblies(), interfaceType);
+
+        /// <summary>
+        /// 在程序集数组里获取指定接口类型的所有实现类类型数组
+        /// </summary>
+        /// <param name="assemblies">程序集数组</param>
+        /// <param name="interfaceType">接口类型</param>
+        /// <returns>实现类类型数组</returns>
+        public static Type[] GetImplClassType(Assembly[] assemblies, Type interfaceType)
+        {
+            if (assemblies.IsNullOrLength0())
+            {
+                return null;
+            }
+
+            return assemblies.SelectMany(a => a.GetTypes().Where(t => t.GetInterfaces().Contains(interfaceType))).ToArray();
         }
     }
 }

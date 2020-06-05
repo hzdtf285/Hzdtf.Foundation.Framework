@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "tW5NlWuHqcdwBGVhc/j8/Ny3YboKEuI7WWpv9n8E96CfOem0nUL7bMEffGtuOKDMmOY4K4JG3c58MdAVkCySJw==",
+  "dgSpecHash": "/9hjrqDUHvdTfSR0W+npkyoTRALh+cuSG16d+mnPlKr0VkstO44nlVooBsu/kvCb/1jDCPGGOOgrulRrKD81iw==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\MessageQueue\\Demo\\Hzdtf.Consumer.Demo.Core\\Hzdtf.Consumer.Demo.Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\messagepack\\1.7.3.7\\messagepack.1.7.3.7.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\2.2.0\\microsoft.extensions.caching.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.caching.memory\\2.2.0\\microsoft.extensions.caching.memory.2.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.configuration\\2.2.0\\microsoft.extensions.configuration.2.2.0.nupkg.sha512",

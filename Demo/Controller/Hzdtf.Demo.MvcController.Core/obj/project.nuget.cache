@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4hSOiy+IeyQnBqPyiplEv7u4752mj+kzFJi6+wvGtc2qQ+8S01O64J3n8nTLxstblKXlSQv6pnX6KOwkmoowTw==",
+  "dgSpecHash": "7zC/C+f7YfFqXWfwI+xmcPFm9Bu7jBi/CQCLnkqpa+2em8Pu4dGZvK8kFEdMEzV99p1HEU5+gOzsM1Nwp05/AA==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\Hzdtf.Demo.MvcController.Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\messagepack\\1.7.3.7\\messagepack.1.7.3.7.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

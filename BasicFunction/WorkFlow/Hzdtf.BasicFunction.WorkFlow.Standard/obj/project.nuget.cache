@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "lsDw+20CbSNApfLkOV1yE236PUWZp1SuaEnah5UvrSe72rjt7IxqQUJnH+u49xwYpvhv4l2sy9x0s2zOml6eEw==",
+  "dgSpecHash": "lhRGBXpz7NMcjT9Hdzz8zOfW8YhBIvElnNRmcnvJG/yx+g9l7z0XzYtJrGS2VeDpWxWtk2k7GGIhX6dyCJI1fQ==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\autofac\\4.8.1\\autofac.4.8.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\autofac.extensions.dependencyinjection\\4.3.1\\autofac.extensions.dependencyinjection.4.3.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\autofac.extras.dynamicproxy\\4.5.0\\autofac.extras.dynamicproxy.4.5.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\castle.core\\4.3.1\\castle.core.4.3.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\messagepack\\1.7.3.7\\messagepack.1.7.3.7.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\2.2.0\\microsoft.extensions.caching.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.caching.memory\\2.2.0\\microsoft.extensions.caching.memory.2.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\2.2.0\\microsoft.extensions.dependencyinjection.2.2.0.nupkg.sha512",

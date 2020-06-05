@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "hU0b3Aa3V3N3yQSaI7XvYWWfqqpEU9iA1OhAHiTBv9ONfeG7tK0qKNLjddy2PdXVCruaEcCC/IsUA5WItGnoEg==",
+  "dgSpecHash": "KJVwD/Dt15Ri76XGxlz1yLYMjsdKlnxYWEtCg7DV9xCTtv49de5j+9UmbA6AS7V3eHfg48M3GtxQt1lhBLWKOQ==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.SqlServer.Standard\\Hzdtf.SqlServer.Standard.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\dapper\\1.50.5\\dapper.1.50.5.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\messagepack\\1.7.3.7\\messagepack.1.7.3.7.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\2.2.0\\microsoft.extensions.caching.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.caching.memory\\2.2.0\\microsoft.extensions.caching.memory.2.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.2.0\\microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg.sha512",

@@ -273,6 +273,80 @@
             处理集合
             </summary>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.AutoMapperExtensions.AutoMapperUtil">
+            <summary>
+            自动映射辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.AutoMapperExtensions.AutoMapperUtil.mapperConfiguration">
+            <summary>
+            自动映射配置
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.AutoMapperExtensions.AutoMapperUtil.syncMapper">
+            <summary>
+            同步映射
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.AutoMapperExtensions.AutoMapperUtil.mapper">
+            <summary>
+            映射
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.AutoMapperExtensions.AutoMapperUtil.Mapper">
+            <summary>
+            映射
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.AutoMapperExtensions.AutoMapperUtil.configs">
+            <summary>
+            配置列表
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.AutoMapperExtensions.AutoMapperUtil.mapperConfigs">
+            <summary>
+            自动映射配置列表
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.AutoMapperExtensions.AutoMapperUtil.RegisterConfig(System.Action{AutoMapper.IMapperConfigurationExpression})">
+            <summary>
+            注册配置
+            </summary>
+            <param name="config">配置回调</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.AutoMapperExtensions.AutoMapperUtil.AutoRegisterConfig(System.String[])">
+            <summary>
+            自动找出实现IAutoMapperConfig接口的配置
+            </summary>
+            <param name="assemblyNames">程序集名数组</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.AutoMapperExtensions.AutoMapperUtil.AutoRegisterConfig(System.Reflection.Assembly[])">
+            <summary>
+            自动找出实现IAutoMapperConfig接口的配置
+            </summary>
+            <param name="assemblies">程序集数组</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.AutoMapperExtensions.AutoMapperUtil.Builder">
+            <summary>
+            生成映射配置
+            会循环生成注册的配置
+            程序启动时执行，只需执行一次
+            如果已经生成过，则会忽略
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.AutoMapperExtensions.IAutoMapperConfig">
+            <summary>
+            自动映射配置接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.AutoMapperExtensions.IAutoMapperConfig.Register(AutoMapper.IMapperConfigurationExpression)">
+            <summary>
+            注册
+            </summary>
+            <param name="config">配置</param>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Cache.IListCache`1">
             <summary>
             列表缓存接口
@@ -4962,6 +5036,28 @@
             </summary>
             <param name="classFullPath">类全路径</param>
             <returns>类类型</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.ReflectUtil.GetImplClassTypeFromCurrExecAssembly(System.Type)">
+            <summary>
+            从当前执行的程序集里获取指定接口类型的所有实现类类型数组
+            </summary>
+            <param name="interfaceType">接口类型</param>
+            <returns>实现类类型数组</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.ReflectUtil.GetImplClassType(System.Type)">
+            <summary>
+            获取指定接口类型的所有实现类类型数组
+            </summary>
+            <param name="interfaceType">接口类型</param>
+            <returns>实现类类型数组</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.ReflectUtil.GetImplClassType(System.Reflection.Assembly[],System.Type)">
+            <summary>
+            在程序集数组里获取指定接口类型的所有实现类类型数组
+            </summary>
+            <param name="assemblies">程序集数组</param>
+            <param name="interfaceType">接口类型</param>
+            <returns>实现类类型数组</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Utils.SqlUtil">
             <summary>

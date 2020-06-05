@@ -49,5 +49,6 @@
         "Hzdtf.Persistence.Autofac.Standard,Hzdtf.Persistence.Autofac.Standard.TransactionInterceptor"
       ]
     }
-  ]
+  ],
+  "IsLoadAutoMapperConfig": true
 }

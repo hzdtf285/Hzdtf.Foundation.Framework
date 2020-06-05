@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "VDdGDx35nISwNyyjZ27aYi2Nt6GMs11esVpGG4gtANTN23hK/yB3dbm01UerQ3Jl8NuQNZ53GAYU4okVZDzbNw==",
+  "dgSpecHash": "qnEVkuF+Y6z49fAZ/ijh+eE4c29I/uRqZFCfk3dZp50I61EVK9HyY3S7dV7MEsLjfdt+zfcWW5YwL6AHowDI3w==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\messagepack\\1.7.3.7\\messagepack.1.7.3.7.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\2.2.0\\microsoft.extensions.caching.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.caching.memory\\2.2.0\\microsoft.extensions.caching.memory.2.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.2.0\\microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg.sha512",

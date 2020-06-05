@@ -29,6 +29,52 @@ namespace Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig
             get;
             set;
         }
+
+        /// <summary>
+        /// 程序集名称
+        /// </summary>
+        private string[] assemblyNames;
+
+        /// <summary>
+        /// 程序集名称
+        /// </summary>
+        public string[] AssemblyNames
+        {
+            get
+            {
+                if (assemblyNames == null)
+                {
+                    var list = new List<string>();
+                    if (!Services.IsNullOrLength0())
+                    {
+                        foreach (var item in Services)
+                        {
+                            list.AddRange(item.Names);
+                        }
+                    }
+                    if (!Entrances.IsNullOrLength0())
+                    {
+                        foreach (var item in Entrances)
+                        {
+                            list.AddRange(item.Names);
+                        }
+                    }
+
+                    assemblyNames = list.ToArray();
+                }
+
+                return assemblyNames;
+            }
+        }
+
+        /// <summary>
+        /// 是否加载自动映射配置
+        /// </summary>
+        public bool IsLoadAutoMapperConfig
+        {
+            get;
+            set;
+        }
     }
 
     /// <summary>

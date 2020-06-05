@@ -7,6 +7,8 @@ using System.Reflection;
 using System.Web.Mvc;
 using Autofac.Extras.DynamicProxy;
 using Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig;
+using System.Collections.Generic;
+using Hzdtf.Utility.Standard.AutoMapperExtensions;
 
 namespace Hzdtf.Autofac.Web.Extend.Framework
 {
@@ -25,6 +27,7 @@ namespace Hzdtf.Autofac.Web.Extend.Framework
         /// <returns>容器</returns>
         public static IContainer UnifiedRegisterAssemblysForMvc5(this ContainerBuilder containerBuilder, WebBuilderParam param)
         {
+            var assemblyList = new List<Assembly>();
             foreach (BasicAssemblyInfo assembly in param.AssemblyControllers)
             {
                 Assembly[] assemblies = AssemblyUtil.Load(assembly.Names);
@@ -32,6 +35,7 @@ namespace Hzdtf.Autofac.Web.Extend.Framework
                 {
                     return null;
                 }
+                assemblyList.AddRange(assemblies);
 
                 if (!assembly.InterceptedTypes.IsNullOrLength0())
                 {
@@ -72,6 +76,11 @@ namespace Hzdtf.Autofac.Web.Extend.Framework
 
             WebAutofacTool.MvcDependencyResolver = DependencyResolver.Current;
             Hzdtf.Autofac.Extend.Standard.AutofacTool.ResolveFunc = WebAutofacTool.GetMvcService;
+
+            if (param.IsLoadAutoMapperConfig)
+            {
+                AutoMapperUtil.AutoRegisterConfig(assemblyList.ToArray());
+            }
 
             return container;
         }

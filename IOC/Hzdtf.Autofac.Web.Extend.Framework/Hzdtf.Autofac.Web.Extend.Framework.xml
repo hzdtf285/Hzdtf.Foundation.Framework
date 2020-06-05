@@ -32,6 +32,7 @@
             WebApi2用于MVC5以上
             </summary>
             <param name="containerBuilder">容器生成器</param>
+            <param name="configuration">配置</param>
             <param name="param">参数</param>
             <returns>容器</returns>
         </member>

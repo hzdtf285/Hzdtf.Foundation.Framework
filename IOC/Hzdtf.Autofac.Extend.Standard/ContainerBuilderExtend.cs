@@ -7,6 +7,8 @@ using Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig;
 using Microsoft.Extensions.DependencyInjection;
 using Autofac.Extensions.DependencyInjection;
 using Hzdtf.Utility.Standard.Enums;
+using System.Collections.Generic;
+using Hzdtf.Utility.Standard.AutoMapperExtensions;
 
 namespace Hzdtf.Autofac.Extend.Standard
 {
@@ -25,6 +27,7 @@ namespace Hzdtf.Autofac.Extend.Standard
         /// <returns>容器</returns>
         public static IContainer UnifiedRegisterAssemblys(this ContainerBuilder containerBuilder, BuilderParam param, bool isExecBuilderContainer = true)
         {
+            var assemblyList = new List<Assembly>();
             foreach (AssemblyExpandInfo assembly in param.AssemblyServices)
             {
                 Assembly[] assemblies = AssemblyUtil.Load(assembly.Names);
@@ -32,6 +35,7 @@ namespace Hzdtf.Autofac.Extend.Standard
                 {
                     return null;
                 }
+                assemblyList.AddRange(assemblies);
 
                 var registerBuilder = containerBuilder.RegisterAssemblyTypes(assemblies)
                        .PropertiesAutowired()
@@ -92,6 +96,11 @@ namespace Hzdtf.Autofac.Extend.Standard
                 containerBuilder.RegisterBuildCallback(container => AutofacTool.Container = container);
             }
 
+            if (param.IsLoadAutoMapperConfig)
+            {
+                AutoMapperUtil.AutoRegisterConfig(assemblyList.ToArray());
+            }
+
             return AutofacTool.Container;
         }
 
@@ -109,6 +118,7 @@ namespace Hzdtf.Autofac.Extend.Standard
             IContainer container = UnifiedRegisterAssemblys(containerBuilder, new BuilderParam()
             {
                 AssemblyServices = param.AssemblyServices,
+                IsLoadAutoMapperConfig = param.IsLoadAutoMapperConfig,
                 RegisteringServiceAction = () =>
                 {
                     if (param.RegisteringServiceAction != null)
@@ -136,6 +146,7 @@ namespace Hzdtf.Autofac.Extend.Standard
             UnifiedRegisterAssemblys(containerBuilder, new BuilderParam()
             {
                 AssemblyServices = param.AssemblyServices,
+                IsLoadAutoMapperConfig = param.IsLoadAutoMapperConfig,
                 RegisteringServiceAction = () =>
                 {
                     if (param.RegisteringServiceAction != null)

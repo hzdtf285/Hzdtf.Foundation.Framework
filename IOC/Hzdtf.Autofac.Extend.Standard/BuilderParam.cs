@@ -27,6 +27,15 @@ namespace Hzdtf.Autofac.Extend.Standard
         {
             get;
             set;
-        }        
+        }
+
+        /// <summary>
+        /// 是否加载自动映射配置
+        /// </summary>
+        public bool IsLoadAutoMapperConfig
+        {
+            get;
+            set;
+        }
     }
 }

@@ -42,6 +42,7 @@ namespace Hzdtf.WebDemo.Core.AppStart
             builder.UnifiedRegisterAssemblys(services, new BuilderParam()
             {
                 AssemblyServices = assemblyConfig.Services,
+                IsLoadAutoMapperConfig = assemblyConfig.IsLoadAutoMapperConfig,
                 RegisteringServiceAction = () =>
                 {
                     builder.RegisterType<HttpContextAccessor>().As<IHttpContextAccessor>().AsSelf().PropertiesAutowired();

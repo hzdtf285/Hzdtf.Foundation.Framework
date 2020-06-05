@@ -4,6 +4,18 @@
         <name>Hzdtf.BasicFunction.Service.Contract.Standard</name>
     </assembly>
     <members>
+        <member name="T:Hzdtf.BasicFunction.Service.Contract.Standard.BasicFunctionAutoMapperConfig">
+            <summary>
+            基本功能自动映射配置
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.BasicFunctionAutoMapperConfig.Register(AutoMapper.IMapperConfigurationExpression)">
+            <summary>
+            注册
+            </summary>
+            <param name="config">配置</param>
+        </member>
         <member name="T:Hzdtf.BasicFunction.Service.Contract.Standard.Expand.Attachment.IAttachmentOwnerReader">
             <summary>
             附件归属读取接口

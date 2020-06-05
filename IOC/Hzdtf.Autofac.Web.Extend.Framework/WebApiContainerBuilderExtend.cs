@@ -9,6 +9,8 @@ using Autofac.Integration.Mvc;
 using System.Web.Mvc;
 using Autofac.Extras.DynamicProxy;
 using Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig;
+using System.Collections.Generic;
+using Hzdtf.Utility.Standard.AutoMapperExtensions;
 
 namespace Hzdtf.Autofac.Web.Extend.Framework
 {
@@ -24,10 +26,12 @@ namespace Hzdtf.Autofac.Web.Extend.Framework
         /// WebApi2用于MVC5以上
         /// </summary>
         /// <param name="containerBuilder">容器生成器</param>
+        /// <param name="configuration">配置</param>
         /// <param name="param">参数</param>
         /// <returns>容器</returns>
         public static IContainer UnifiedRegisterAssemblysForWebApi2(this ContainerBuilder containerBuilder, HttpConfiguration configuration, WebBuilderParam param)
         {
+            var assemblyList = new List<Assembly>();
             foreach (BasicAssemblyInfo assembly in param.AssemblyControllers)
             {
                 Assembly[] assemblies = AssemblyUtil.Load(assembly.Names);
@@ -35,6 +39,7 @@ namespace Hzdtf.Autofac.Web.Extend.Framework
                 {
                     return null;
                 }
+                assemblyList.AddRange(assemblies);
 
                 if (!assembly.InterceptedTypes.IsNullOrLength0())
                 {
@@ -91,6 +96,11 @@ namespace Hzdtf.Autofac.Web.Extend.Framework
 
             WebAutofacTool.HttpDependencyResolver = configuration.DependencyResolver;
             AutofacTool.ResolveFunc = WebAutofacTool.GetHttpService;
+
+            if (param.IsLoadAutoMapperConfig)
+            {
+                AutoMapperUtil.AutoRegisterConfig(assemblyList.ToArray());
+            }
 
             return container;
         }

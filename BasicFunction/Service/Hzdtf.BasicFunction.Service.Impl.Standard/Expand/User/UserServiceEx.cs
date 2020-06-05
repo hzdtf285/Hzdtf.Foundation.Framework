@@ -17,6 +17,7 @@ using Hzdtf.BasicFunction.Service.Contract.Standard.User;
 using Hzdtf.BasicFunction.Service.Contract.Standard;
 using Hzdtf.Utility.Standard.Attr.ParamAttr;
 using System.ComponentModel.DataAnnotations;
+using Hzdtf.Utility.Standard.AutoMapperExtensions;
 
 namespace Hzdtf.BasicFunction.Service.Impl.Standard
 {
@@ -403,7 +404,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
                 }
                 protoReturnInfo.Data.OwnRoles = reRoleInfo.Data;                
 
-                var result = Mapper.Map<UserInfo, UserMenuInfo>(protoReturnInfo.Data);
+                var result = AutoMapperUtil.Mapper.Map<UserInfo, UserMenuInfo>(protoReturnInfo.Data);
 
                 // 查找能拥有的权限菜单
                 IList<MenuInfo> menus = null;

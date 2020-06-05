@@ -5,8 +5,8 @@ using System.Linq;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
 using System.Threading.Tasks;
-using Hzdtf.Platform.Contract.Standard.Config.ProgramStart;
 using Hzdtf.Platform.Impl.Core;
+using Hzdtf.Utility.Standard.AutoMapperExtensions;
 using Hzdtf.WebDemo.Core.AppStart;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
@@ -113,8 +113,7 @@ namespace Hzdtf.WebDemo.Core
             UserConfig.Init();
             OtherConfig.Init();
 
-            PrgramConfigManager.ProgramConfigReader = new ProgramStartConfigJson();
-            PrgramConfigManager.Start();
+            AutoMapperUtil.Builder();
         }
     }
 }
