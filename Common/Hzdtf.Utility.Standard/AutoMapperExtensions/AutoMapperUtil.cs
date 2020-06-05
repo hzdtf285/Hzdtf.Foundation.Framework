@@ -4,7 +4,6 @@ using System.Reflection;
 using System.Text;
 using AutoMapper;
 using Hzdtf.Utility.Standard.Utils;
-using NPOI.SS.Formula.Functions;
 
 namespace Hzdtf.Utility.Standard.AutoMapperExtensions
 {
