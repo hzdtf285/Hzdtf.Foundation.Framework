@@ -123,12 +123,9 @@ namespace Hzdtf.Utility.Standard.AutoMapperExtensions
 
             mapperConfiguration = new MapperConfiguration(config =>
             {
-                if (!mapperConfigs.IsNullOrCount0())
+                foreach (var m in mapperConfigs)
                 {
-                    foreach (var m in mapperConfigs)
-                    {
-                        m.Register(config);
-                    }
+                    m.Register(config);
                 }
 
                 foreach (var c in configs)
