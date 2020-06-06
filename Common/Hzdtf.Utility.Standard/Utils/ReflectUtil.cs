@@ -115,7 +115,6 @@ namespace Hzdtf.Utility.Standard.Utils
 
                             break;
                     }
-
                 }
 
                 className = className.Substring(0, startIndex);
