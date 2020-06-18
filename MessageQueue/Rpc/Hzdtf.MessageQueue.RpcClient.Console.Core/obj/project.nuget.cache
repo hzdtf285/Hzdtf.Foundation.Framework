@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "kZsfmPG2uaLg9/jtQdoxUOD0UUIi0ZLTUBdT39P7nbHCt/ziG4+jAnLY6M7NI2Z/ZEzXfSmJzHq1tuh2HtGehA==",
+  "dgSpecHash": "K6Ud3LLiMEAxA+pTT+lddGDQIxUoNVNuUHBNtpjSR0Jrsz9zuUUVJa5OW4M+izL5S6TgvDZ7k9K8njj1aQE8eA==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\MessageQueue\\Rpc\\Hzdtf.MessageQueue.RpcClient.Console.Core\\Hzdtf.MessageQueue.RpcClient.Console.Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\androidxml\\1.1.14\\androidxml.1.1.14.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\autofac\\4.8.1\\autofac.4.8.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\autofac.extensions.dependencyinjection\\4.3.1\\autofac.extensions.dependencyinjection.4.3.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\autofac.extras.dynamicproxy\\4.5.0\\autofac.extras.dynamicproxy.4.5.0.nupkg.sha512",
@@ -53,7 +54,7 @@
     "C:\\Users\\admin\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\sharpziplib\\1.0.0\\sharpziplib.1.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\sharpziplib\\1.2.0\\sharpziplib.1.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.collections.nongeneric\\4.3.0\\system.collections.nongeneric.4.3.0.nupkg.sha512",

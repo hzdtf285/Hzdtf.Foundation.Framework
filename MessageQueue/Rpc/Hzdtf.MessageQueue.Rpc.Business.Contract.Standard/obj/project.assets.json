@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "AndroidXml/1.1.14": {
+        "type": "package",
+        "dependencies": {
+          "System.Drawing.Common": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AndroidXml.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AndroidXml.dll": {}
+        }
+      },
       "AutoMapper/9.0.0": {
         "type": "package",
         "dependencies": {
@@ -164,7 +176,7 @@
           "lib/netstandard2.0/NPOI.dll": {}
         }
       },
-      "SharpZipLib/1.0.0": {
+      "SharpZipLib/1.2.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll": {}
@@ -517,9 +529,11 @@
           "Microsoft.Extensions.Caching.Memory": "2.2.0",
           "NPOI": "2.4.1",
           "Newtonsoft.Json": "12.0.1",
+          "SharpZipLib": "1.2.0",
           "System.ComponentModel.Annotations": "4.5.0",
           "System.Drawing.Common": "4.5.1",
-          "System.Reflection.DispatchProxy": "4.7.0"
+          "System.Reflection.DispatchProxy": "4.7.0",
+          "androidxml": "1.1.14"
         },
         "compile": {
           "bin/placeholder/Hzdtf.Utility.Standard.dll": {}
@@ -531,6 +545,19 @@
     }
   },
   "libraries": {
+    "AndroidXml/1.1.14": {
+      "sha512": "O/beg4/EB0cbRR72pgMCGz47zMQaEg4x2l+r+qRR27xSwvqPpLLrKmI/ieBrOPjZjtT8Qz32F/xek+ajWTAADQ==",
+      "type": "package",
+      "path": "androidxml/1.1.14",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "androidxml.1.1.14.nupkg.sha512",
+        "androidxml.nuspec",
+        "lib/net45/AndroidXml.dll",
+        "lib/netstandard2.0/AndroidXml.dll"
+      ]
+    },
     "AutoMapper/9.0.0": {
       "sha512": "xCqvoxT4HIrNY/xlXG9W+BA/awdrhWvMTKTK/igkGSRbhOhpl3Q8O8Gxlhzjc9JsYqE7sS6AxgyuUUvZ6R5/Bw==",
       "type": "package",
@@ -931,18 +958,20 @@
         "npoi.nuspec"
       ]
     },
-    "SharpZipLib/1.0.0": {
-      "sha512": "YuYztmY3jEb21F6e5LIPHJjApdtzdCPQ284UzsCKNfkgW71bukFHJES6RbKi+wm053XzFg0LX5/2vj/9gl8F/g==",
+    "SharpZipLib/1.2.0": {
+      "sha512": "zvWa/L02JHNatdtjya6Swpudb2YEHaOLHL1eRrqpjm71iGRNUNONO5adUF/9CHbSJbzhELW1UoH4NGy7n7+3bQ==",
       "type": "package",
-      "path": "sharpziplib/1.0.0",
+      "path": "sharpziplib/1.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/ICSharpCode.SharpZipLib.dll",
+        "lib/net45/ICSharpCode.SharpZipLib.pdb",
         "lib/net45/ICSharpCode.SharpZipLib.xml",
         "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.pdb",
         "lib/netstandard2.0/ICSharpCode.SharpZipLib.xml",
-        "sharpziplib.1.0.0.nupkg.sha512",
+        "sharpziplib.1.2.0.nupkg.sha512",
         "sharpziplib.nuspec"
       ]
     },
@@ -2341,7 +2370,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

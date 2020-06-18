@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "hNRNtv8qocVsoO61G2+6Xn6D5LfZ6GNYRY6FgchL3frFmDJvwaDmd212fn3h0FTSvpsasJW1z+nFIN4kfkY78w==",
+  "dgSpecHash": "yvPszP2TrhWxL+HKfjXGNVZKZdvKNptcPIdtCnC8B2r/NJaCdtjgJieguEevjUSv5BqVql2ai7oA71NL8ddJlQ==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\androidxml\\1.1.14\\androidxml.1.1.14.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\messagepack\\1.7.3.7\\messagepack.1.7.3.7.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -17,7 +18,7 @@
     "C:\\Users\\admin\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\npoi\\2.4.1\\npoi.2.4.1.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\sharpziplib\\1.0.0\\sharpziplib.1.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\sharpziplib\\1.2.0\\sharpziplib.1.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.componentmodel.annotations\\4.5.0\\system.componentmodel.annotations.4.5.0.nupkg.sha512",

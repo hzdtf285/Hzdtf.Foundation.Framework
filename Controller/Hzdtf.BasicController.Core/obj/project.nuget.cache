@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "BmV7aLjK4kzsw+ZF05AsgotcTdg6ez4CifTRhbhon4WFIaK7im7jqdxxyh9g06j6k0+XHRUij9tkvP+o5i8nhg==",
+  "dgSpecHash": "RLNuMeiJVVjgnbyNQsA0Ck0HeBBZrox/UuG+wHFY3ObozR2X2e2lXKDoRXYD/VAqOkGZnkSCJd6XAzr/nNZYTQ==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\androidxml\\1.1.14\\androidxml.1.1.14.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\messagepack\\1.7.3.7\\messagepack.1.7.3.7.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
@@ -48,7 +49,7 @@
     "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\npoi\\2.4.1\\npoi.2.4.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\runtime.native.system\\4.0.0\\runtime.native.system.4.0.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\sharpziplib\\1.0.0\\sharpziplib.1.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\sharpziplib\\1.2.0\\sharpziplib.1.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

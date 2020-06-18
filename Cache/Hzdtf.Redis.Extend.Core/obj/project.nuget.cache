@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "IQuS4qwU2uOj2fFsXWv8VXuT24j0Ruek9Aezq0+80M+vAyaYM1NBxDZMpGZkm/luY09XPc34xokSaE6Jh0DfNw==",
+  "dgSpecHash": "UcsFA3qT11IqeeYz8gMWBsCiLN6rR7UxCY96sbF7i166AfCDfBXsfbOXZ5mbN9RSDGi1CD1GNyi/Fae5GP0Kwg==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Cache\\Hzdtf.Redis.Extend.Core\\Hzdtf.Redis.Extend.Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\androidxml\\1.1.14\\androidxml.1.1.14.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\messagepack\\1.7.3.7\\messagepack.1.7.3.7.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -22,7 +23,7 @@
     "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\npoi\\2.4.1\\npoi.2.4.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\pipelines.sockets.unofficial\\1.0.7\\pipelines.sockets.unofficial.1.0.7.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\sharpziplib\\1.0.0\\sharpziplib.1.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\sharpziplib\\1.2.0\\sharpziplib.1.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\stackexchange.redis\\2.0.519\\stackexchange.redis.2.0.519.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
@@ -50,8 +51,7 @@
     "C:\\Users\\admin\\.nuget\\packages\\system.threading.channels\\4.5.0\\system.threading.channels.4.5.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\system.valuetuple\\4.3.0\\system.valuetuple.4.3.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+    "C:\\Users\\admin\\.nuget\\packages\\system.valuetuple\\4.3.0\\system.valuetuple.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

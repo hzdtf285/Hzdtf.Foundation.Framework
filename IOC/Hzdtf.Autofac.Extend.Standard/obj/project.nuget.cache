@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "oSLnMUCoOhZN16hD98u+lJYqIBCDCX2VN98WkrsnUwoftrcTRN+1R7KtNK2TZGq5xFB8VLgEhw2rpFCGR1pU1w==",
+  "dgSpecHash": "iiUq5uHhSiYR37rG4x43QTsyzT3ZNhsAh3ZWVZ7DeJsNegKUiU8/lBjYXgd76gBPixyC+nuiwuRU9g0U9iYpOg==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\androidxml\\1.1.14\\androidxml.1.1.14.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\autofac\\4.8.1\\autofac.4.8.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\autofac.extensions.dependencyinjection\\4.3.1\\autofac.extensions.dependencyinjection.4.3.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\autofac.extras.dynamicproxy\\4.5.0\\autofac.extras.dynamicproxy.4.5.0.nupkg.sha512",
@@ -23,7 +24,7 @@
     "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\npoi\\2.4.1\\npoi.2.4.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\sharpziplib\\1.0.0\\sharpziplib.1.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\sharpziplib\\1.2.0\\sharpziplib.1.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.collections.nongeneric\\4.3.0\\system.collections.nongeneric.4.3.0.nupkg.sha512",
