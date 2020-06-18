@@ -82,6 +82,13 @@
             <param name="androids">安卓信息列表</param>
             <returns>安卓应用信息</returns>
         </member>
+        <member name="M:Hzdtf.Utility.Standard.Android.ApkUtil.ReaderApkFileName(System.String,System.Action{System.IO.Stream})">
+            <summary>
+            读取apk文件流
+            </summary>
+            <param name="apkFileName">apk文件名</param>
+            <param name="action">回调</param>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Attr.AuthAttribute">
             <summary>
             授权特性

@@ -43,15 +43,13 @@ namespace Hzdtf.Utility.Standard.Android
         /// <returns>安卓信息列表</returns>
         public static IList<AndroidInfo> GetManifestInfo(string apkFileName)
         {
-            if (string.IsNullOrWhiteSpace(apkFileName))
+            IList<AndroidInfo> result = null;
+            ReaderApkFileName(apkFileName, stream =>
             {
-                return null;
-            }
+                result = GetManifestInfo(stream);
+            });
 
-            using (var stream  = new FileStream(apkFileName, FileMode.Open))
-            {
-                return GetManifestInfo(stream);
-            }
+            return result;
         }
 
         /// <summary>
@@ -61,6 +59,11 @@ namespace Hzdtf.Utility.Standard.Android
         /// <returns>安卓信息列表</returns>
         public static IList<AndroidInfo> GetManifestInfo(Stream apkStream)
         {
+            if (apkStream == null)
+            {
+                throw new ArgumentNullException("apk流不能为null");
+            }
+
             var androidInfos = new List<AndroidInfo>();
             byte[] manifestData = null;
 
@@ -172,6 +175,28 @@ namespace Hzdtf.Utility.Standard.Android
             }
 
             return appInfo;
+        }
+
+        /// <summary>
+        /// 读取apk文件流
+        /// </summary>
+        /// <param name="apkFileName">apk文件名</param>
+        /// <param name="action">回调</param>
+        private static void ReaderApkFileName(string apkFileName, Action<Stream> action)
+        {
+            if (string.IsNullOrWhiteSpace(apkFileName))
+            {
+                throw new ArgumentNullException("apk文件名不能为空");
+            }
+            if (apkFileName.ToLower().EndsWith(".apk"))
+            {
+                throw new ArgumentException("文件的后辍不是.apk格式");
+            }
+
+            using (var stream = new FileStream(apkFileName, FileMode.Open))
+            {
+                action(stream);
+            }
         }
     }
 }
