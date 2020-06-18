@@ -96,7 +96,6 @@ namespace Hzdtf.Utility.Standard.Android
             {
                 using (var reader = new AndroidXmlReader(stream))
                 {
-
                     while (reader.Read())
                     {
                         switch (reader.NodeType)
