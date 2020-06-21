@@ -42,23 +42,26 @@ namespace Hzdtf.Utility.Standard.Utils
         /// 读取流并转换为字符串
         /// </summary>
         /// <param name="stream">流</param>
+        /// <param name="isCloseStream">是否关闭流</param>
         /// <returns>字符串</returns>
-        public static string ReaderStreamToString(this Stream stream) => ReaderStreamToString(stream, Encoding.UTF8);
+        public static string ReaderStreamToString(this Stream stream, bool isCloseStream = true) => ReaderStreamToString(stream, Encoding.UTF8, isCloseStream);
 
         /// <summary>
         /// 读取流并转换为字符串
         /// </summary>
         /// <param name="stream">流</param>
         /// <param name="encoding">编码</param>
+        /// <param name="isCloseStream">是否关闭流</param>
         /// <returns>字符串</returns>
-        public static string ReaderStreamToString(this Stream stream, Encoding encoding) => encoding.GetString(ReaderStream(stream));
+        public static string ReaderStreamToString(this Stream stream, Encoding encoding, bool isCloseStream = true) => encoding.GetString(ReaderStream(stream, isCloseStream));
 
         /// <summary>
         /// 读取流
         /// </summary>
         /// <param name="stream">流</param>
+        /// <param name="isCloseStream">是否关闭流</param>
         /// <returns>字节数组</returns>
-        public static byte[] ReaderStream(this Stream stream)
+        public static byte[] ReaderStream(this Stream stream, bool isCloseStream = true)
         {
             try
             {
@@ -77,7 +80,7 @@ namespace Hzdtf.Utility.Standard.Utils
             }
             finally
             {
-                if (stream != null)
+                if (stream != null && isCloseStream)
                 {
                     stream.Close();
                     stream.Dispose();

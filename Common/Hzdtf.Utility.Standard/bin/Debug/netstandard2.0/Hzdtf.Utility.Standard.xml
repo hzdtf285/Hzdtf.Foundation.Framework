@@ -5196,26 +5196,29 @@
             <param name="outOfProcessLock">是否跨进程锁</param>
             <returns>文件内容</returns>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ReaderStreamToString(System.IO.Stream)">
+        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ReaderStreamToString(System.IO.Stream,System.Boolean)">
             <summary>
             读取流并转换为字符串
             </summary>
             <param name="stream">流</param>
+            <param name="isCloseStream">是否关闭流</param>
             <returns>字符串</returns>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ReaderStreamToString(System.IO.Stream,System.Text.Encoding)">
+        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ReaderStreamToString(System.IO.Stream,System.Text.Encoding,System.Boolean)">
             <summary>
             读取流并转换为字符串
             </summary>
             <param name="stream">流</param>
             <param name="encoding">编码</param>
+            <param name="isCloseStream">是否关闭流</param>
             <returns>字符串</returns>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ReaderStream(System.IO.Stream)">
+        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ReaderStream(System.IO.Stream,System.Boolean)">
             <summary>
             读取流
             </summary>
             <param name="stream">流</param>
+            <param name="isCloseStream">是否关闭流</param>
             <returns>字节数组</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.WriteFileContent(System.String,System.String,System.Boolean,System.Boolean)">
