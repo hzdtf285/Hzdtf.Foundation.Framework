@@ -1,0 +1,16 @@
+时间:2020-06-22 23:30:19.976
+级别:info
+来源:
+消息:test:eventId:0,bbaaaa1,a2
+时间:2020-06-22 23:30:20.159
+级别:info
+来源:
+消息:Microsoft.Hosting.Lifetime:eventId:0,Now listening on: http://localhost:5000
+时间:2020-06-22 23:32:36.050
+级别:info
+来源:
+消息:test:eventId:0,bbaaaa1,a2
+时间:2020-06-22 23:32:36.212
+级别:info
+来源:
+消息:Microsoft.Hosting.Lifetime:eventId:0,Now listening on: http://localhost:5000

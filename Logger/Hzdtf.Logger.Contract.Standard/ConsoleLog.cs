@@ -23,6 +23,12 @@ namespace Hzdtf.Logger.Contract.Standard
             Console.WriteLine(logContent);
         }
 
+        /// <summary>
+        /// 分段分隔符
+        /// </summary>
+        /// <returns>分段分隔符</returns>
+        protected override string SectionPartitionSymbol() => Environment.NewLine;
+
         #endregion
     }
 }

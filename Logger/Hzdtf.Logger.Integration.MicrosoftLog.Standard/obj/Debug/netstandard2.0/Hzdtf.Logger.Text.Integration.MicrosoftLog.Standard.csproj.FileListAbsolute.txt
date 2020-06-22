@@ -1,0 +1,4 @@
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Text.Integration.MicrosoftLog.Standard\bin\Debug\netstandard2.0\Hzdtf.Logger.Text.Integration.MicrosoftLog.Standard.deps.json
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Text.Integration.MicrosoftLog.Standard\bin\Debug\netstandard2.0\Hzdtf.Logger.Text.Integration.MicrosoftLog.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Text.Integration.MicrosoftLog.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Text.Integration.MicrosoftLog.Standard.AssemblyInfoInputs.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Text.Integration.MicrosoftLog.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Text.Integration.MicrosoftLog.Standard.AssemblyInfo.cs

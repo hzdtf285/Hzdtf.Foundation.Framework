@@ -17,6 +17,17 @@
           "Hzdtf.MessageQueue.Rpc.Business.Service.Standard.dll": {}
         }
       },
+      "AndroidXml/1.1.14": {
+        "dependencies": {
+          "System.Drawing.Common": "4.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AndroidXml.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.14.221"
+          }
+        }
+      },
       "Autofac/4.8.1": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
@@ -194,7 +205,7 @@
       },
       "NPOI/2.4.1": {
         "dependencies": {
-          "SharpZipLib": "1.0.0",
+          "SharpZipLib": "1.2.0",
           "System.Configuration.ConfigurationManager": "4.5.0",
           "System.Drawing.Common": "4.5.1"
         },
@@ -223,11 +234,11 @@
           "Microsoft.NETCore.Targets": "1.1.0"
         }
       },
-      "SharpZipLib/1.0.0": {
+      "SharpZipLib/1.2.0": {
         "runtime": {
           "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll": {
-            "assemblyVersion": "1.0.0.999",
-            "fileVersion": "1.0.0.999"
+            "assemblyVersion": "1.2.0.246",
+            "fileVersion": "1.2.0.246"
           }
         }
       },
@@ -881,9 +892,11 @@
           "Microsoft.Extensions.Caching.Memory": "2.2.0",
           "NPOI": "2.4.1",
           "Newtonsoft.Json": "12.0.1",
+          "SharpZipLib": "1.2.0",
           "System.ComponentModel.Annotations": "4.5.0",
           "System.Drawing.Common": "4.5.1",
-          "System.Reflection.DispatchProxy": "4.7.0"
+          "System.Reflection.DispatchProxy": "4.7.0",
+          "AndroidXml": "1.1.14"
         },
         "runtime": {
           "Hzdtf.Utility.Standard.dll": {}
@@ -896,6 +909,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AndroidXml/1.1.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-O/beg4/EB0cbRR72pgMCGz47zMQaEg4x2l+r+qRR27xSwvqPpLLrKmI/ieBrOPjZjtT8Qz32F/xek+ajWTAADQ==",
+      "path": "androidxml/1.1.14",
+      "hashPath": "androidxml.1.1.14.nupkg.sha512"
     },
     "Autofac/4.8.1": {
       "type": "package",
@@ -1030,12 +1050,12 @@
       "path": "runtime.native.system/4.3.0",
       "hashPath": "runtime.native.system.4.3.0.nupkg.sha512"
     },
-    "SharpZipLib/1.0.0": {
+    "SharpZipLib/1.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-YuYztmY3jEb21F6e5LIPHJjApdtzdCPQ284UzsCKNfkgW71bukFHJES6RbKi+wm053XzFg0LX5/2vj/9gl8F/g==",
-      "path": "sharpziplib/1.0.0",
-      "hashPath": "sharpziplib.1.0.0.nupkg.sha512"
+      "sha512": "sha512-zvWa/L02JHNatdtjya6Swpudb2YEHaOLHL1eRrqpjm71iGRNUNONO5adUF/9CHbSJbzhELW1UoH4NGy7n7+3bQ==",
+      "path": "sharpziplib/1.2.0",
+      "hashPath": "sharpziplib.1.2.0.nupkg.sha512"
     },
     "System.Buffers/4.4.0": {
       "type": "package",

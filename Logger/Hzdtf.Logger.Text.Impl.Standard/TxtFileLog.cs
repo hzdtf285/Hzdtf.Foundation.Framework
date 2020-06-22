@@ -32,6 +32,7 @@ namespace Hzdtf.Logger.Text.Impl.Standard
             {
                 if (string.IsNullOrWhiteSpace(logRootDirectory))
                 {
+                    logRootDirectory = AppContext.BaseDirectory + "/logs/";
                     if (string.IsNullOrWhiteSpace(AppConfig["Logging:LogRoot"]))
                     {
                         logRootDirectory = AppContext.BaseDirectory + "/logs/";

@@ -488,6 +488,139 @@
         }
       }
     },
+    "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj",
+        "projectName": "Hzdtf.Logger.Integration.MicrosoftLog.Core",
+        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://sdlc.apfeg.com:9487/repository/nuget-hosted/": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj",
+        "projectName": "Hzdtf.Logger.Integration.MicrosoftLog.Standard",
+        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://sdlc.apfeg.com:9487/repository/nuget-hosted/": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Text.Impl.Standard\\Hzdtf.Logger.Text.Impl.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
@@ -723,6 +856,12 @@
               "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj": {
                 "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj"
               },
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj"
+              },
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj"
+              },
               "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Text.Impl.Standard\\Hzdtf.Logger.Text.Impl.Standard.csproj": {
                 "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Text.Impl.Standard\\Hzdtf.Logger.Text.Impl.Standard.csproj"
               },
@@ -741,6 +880,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.2, )"

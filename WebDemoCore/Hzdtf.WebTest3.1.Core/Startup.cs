@@ -13,6 +13,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Hzdtf.Utility.AspNet.Core.ExceptionHandle;
+using Hzdtf.Logger.Integration.MicrosoftLog.Standard;
+using Hzdtf.Logger.Text.Impl.Standard;
+using NPOI.SS.Formula.Functions;
+using Autofac.Core;
+using Hzdtf.Logger.Integration.MicrosoftLog.Core;
 
 namespace Hzdtf.WebTest3._1.Core
 {
@@ -30,12 +35,26 @@ namespace Hzdtf.WebTest3._1.Core
         {
             services.AddControllers();
 
+            services.AddLogging(builder =>
+            {
+                builder.SetMinimumLevel(LogLevel.Warning);
+                builder.AddConsole();
+                builder.AddHzdtf(options =>
+                {
+                    options.ProtoLog = new TxtFileLog();
+                    //options.LogRecordLevel.SetRecordLevel(LogLevel.Warning.ToString());
+                });
+            });
+
             services.AddApiExceptionHandle();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory factory)
         {
+            var log = factory.CreateLogger("test");
+            log.LogInformation("bbaaa{0},{1}", "a1", "a2");
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

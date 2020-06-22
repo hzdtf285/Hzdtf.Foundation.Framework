@@ -13,6 +13,16 @@ namespace Hzdtf.Utility.Standard.Utils
     public static class StreamUtil
     {
         /// <summary>
+        /// 同步字典对象
+        /// </summary>
+        private static readonly object syncDicObject = new object();
+
+        /// <summary>
+        /// 同步文件名字典,key:文件名,value:同步对象
+        /// </summary>
+        private static readonly IDictionary<string, object> syncDicFileName = new Dictionary<string, object>();
+
+        /// <summary>
         /// 根据文件名读取文件内容
         /// </summary>
         /// <param name="fileName">文件名</param>
@@ -133,9 +143,76 @@ namespace Hzdtf.Utility.Standard.Utils
             }
             else
             {
-                lock (GetFileLockName(fileName))
+                var syncFileName = GetFileLockName(fileName);
+                var syncObj = GetSyncFileObject(syncFileName);
+                try
                 {
-                    operAction(fileName);
+                    lock (syncObj)
+                    {
+                        operAction(fileName);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception(ex.Message, ex);
+                }
+                finally
+                {
+                    RemoveSyncFileObject(syncFileName);
+                }
+            }
+        }
+
+        /// <summary>
+        /// 获取文件的同步对象
+        /// </summary>
+        /// <param name="fileName">文件名</param>
+        /// <returns>文件的同步对象</returns>
+        private static object GetSyncFileObject(string fileName)
+        {
+            if (syncDicFileName.ContainsKey(fileName))
+            {
+                return syncDicFileName[fileName];
+            }
+            else
+            {
+                var obj = new object();
+                lock (syncDicObject)
+                {
+                    try
+                    {
+                        syncDicFileName.Add(fileName, obj);
+                    }
+                    catch (ArgumentException)
+                    {
+                        if (syncDicFileName.ContainsKey(fileName))
+                        {
+                            return syncDicFileName[fileName];
+                        }
+                    }
+                }
+
+                return obj;
+            }
+        }
+
+        /// <summary>
+        /// 移除文件同步对象
+        /// </summary>
+        /// <param name="fileName">文件名</param>
+        private static void RemoveSyncFileObject(string fileName)
+        {
+            if (syncDicFileName.ContainsKey(fileName))
+            {
+                lock (syncDicObject)
+                {
+                    try
+                    {
+                        syncDicFileName.Remove(fileName);
+                    }
+                    catch (ArgumentException)
+                    {
+                    }
                 }
             }
         }

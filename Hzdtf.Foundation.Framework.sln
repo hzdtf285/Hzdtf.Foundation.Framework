@@ -212,7 +212,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hzdtf.Redis.Extend.Core", "Cache\Hzdtf.Redis.Extend.Core\Hzdtf.Redis.Extend.Core.csproj", "{9371A4DE-E99C-4787-8AC3-DF822A0B9EBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Redis.Extend.Core", "Cache\Hzdtf.Redis.Extend.Core\Hzdtf.Redis.Extend.Core.csproj", "{9371A4DE-E99C-4787-8AC3-DF822A0B9EBB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Logger.Integration.MicrosoftLog.Standard", "Logger\Hzdtf.Logger.Integration.MicrosoftLog.Standard\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj", "{96E9E9F2-8D74-4427-A152-FC27EF59EEA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hzdtf.Logger.Integration.MicrosoftLog.Core", "Logger\Hzdtf.Logger.Integration.MicrosoftLog.Core\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj", "{EA849154-E692-4B1E-8C43-07FBB685A0FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -492,6 +496,14 @@ Global
 		{9371A4DE-E99C-4787-8AC3-DF822A0B9EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9371A4DE-E99C-4787-8AC3-DF822A0B9EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9371A4DE-E99C-4787-8AC3-DF822A0B9EBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96E9E9F2-8D74-4427-A152-FC27EF59EEA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96E9E9F2-8D74-4427-A152-FC27EF59EEA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96E9E9F2-8D74-4427-A152-FC27EF59EEA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96E9E9F2-8D74-4427-A152-FC27EF59EEA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA849154-E692-4B1E-8C43-07FBB685A0FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA849154-E692-4B1E-8C43-07FBB685A0FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA849154-E692-4B1E-8C43-07FBB685A0FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA849154-E692-4B1E-8C43-07FBB685A0FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -584,6 +596,8 @@ Global
 		{C5905D6F-408E-4312-82C8-9E66BD42E6A1} = {E47A5D02-9409-4AA7-AB74-9329DD789BC8}
 		{47AC23E7-B002-4B13-8CE9-7DF880B8A11B} = {0E5D4923-AD7A-4348-8D18-A8BE0E0B3967}
 		{9371A4DE-E99C-4787-8AC3-DF822A0B9EBB} = {54A2AF8C-8962-4B1C-AB67-5024CBD3F7B5}
+		{96E9E9F2-8D74-4427-A152-FC27EF59EEA2} = {6D14ACBF-4A8E-463C-982C-7E54E0E82E90}
+		{EA849154-E692-4B1E-8C43-07FBB685A0FC} = {6D14ACBF-4A8E-463C-982C-7E54E0E82E90}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0297FB00-2BBF-4140-9158-6FD32EBD51A9}

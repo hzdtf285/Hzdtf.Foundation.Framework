@@ -4,6 +4,91 @@
         <name>Hzdtf.Utility.Standard</name>
     </assembly>
     <members>
+        <member name="T:Hzdtf.Utility.Standard.Android.AndroidInfo">
+            <summary>
+            安卓信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Android.AndroidInfo.Name">
+            <summary>
+            节点名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Android.AndroidInfo.Settings">
+            <summary>
+            节点属性集合
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Android.AndroidAppInfo">
+            <summary>
+            安卓应用信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Android.AndroidAppInfo.PackageName">
+            <summary>
+            包名
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Android.AndroidAppInfo.VersionCode">
+            <summary>
+            版本号
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Android.AndroidAppInfo.VersionName">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Android.ApkUtil">
+            <summary>
+            Apk辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Android.ApkUtil.GetAppInfo(System.String)">
+            <summary>
+            获取应用信息
+            </summary>
+            <param name="apkFileName">apk文件名</param>
+            <returns>应用信息</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Android.ApkUtil.GetAppInfo(System.IO.Stream)">
+            <summary>
+            获取应用信息
+            </summary>
+            <param name="apkStream">apk流</param>
+            <returns>应用信息</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Android.ApkUtil.GetManifestInfo(System.String)">
+            <summary>
+            获取主配置文件信息
+            </summary>
+            <param name="apkFileName">apk文件名</param>
+            <returns>安卓信息列表</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Android.ApkUtil.GetManifestInfo(System.IO.Stream)">
+            <summary>
+            获取主配置文件信息
+            </summary>
+            <param name="apkStream">apk流</param>
+            <returns>安卓信息列表</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Android.ApkUtil.ToAppInfo(System.Collections.Generic.IList{Hzdtf.Utility.Standard.Android.AndroidInfo})">
+            <summary>
+            将安卓信息列表转换为安卓应用信息
+            </summary>
+            <param name="androids">安卓信息列表</param>
+            <returns>安卓应用信息</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Android.ApkUtil.ReaderApkFileName(System.String,System.Action{System.IO.Stream})">
+            <summary>
+            读取apk文件流
+            </summary>
+            <param name="apkFileName">apk文件名</param>
+            <param name="action">回调</param>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Attr.AuthAttribute">
             <summary>
             授权特性
@@ -5094,6 +5179,16 @@
             @ 黄振东
             </summary>
         </member>
+        <member name="F:Hzdtf.Utility.Standard.Utils.StreamUtil.syncDicObject">
+            <summary>
+            同步字典对象
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Utils.StreamUtil.syncDicFileName">
+            <summary>
+            同步文件名字典,key:文件名,value:同步对象
+            </summary>
+        </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ReaderFileContent(System.String,System.Boolean)">
             <summary>
             根据文件名读取文件内容
@@ -5111,26 +5206,29 @@
             <param name="outOfProcessLock">是否跨进程锁</param>
             <returns>文件内容</returns>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ReaderStreamToString(System.IO.Stream)">
+        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ReaderStreamToString(System.IO.Stream,System.Boolean)">
             <summary>
             读取流并转换为字符串
             </summary>
             <param name="stream">流</param>
+            <param name="isCloseStream">是否关闭流</param>
             <returns>字符串</returns>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ReaderStreamToString(System.IO.Stream,System.Text.Encoding)">
+        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ReaderStreamToString(System.IO.Stream,System.Text.Encoding,System.Boolean)">
             <summary>
             读取流并转换为字符串
             </summary>
             <param name="stream">流</param>
             <param name="encoding">编码</param>
+            <param name="isCloseStream">是否关闭流</param>
             <returns>字符串</returns>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ReaderStream(System.IO.Stream)">
+        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ReaderStream(System.IO.Stream,System.Boolean)">
             <summary>
             读取流
             </summary>
             <param name="stream">流</param>
+            <param name="isCloseStream">是否关闭流</param>
             <returns>字节数组</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.WriteFileContent(System.String,System.String,System.Boolean,System.Boolean)">
@@ -5149,6 +5247,19 @@
             <param name="fileName">文件名</param>
             <param name="operAction">操作动作回调</param>
             <param name="outOfProcessLock">是否跨进程锁</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.GetSyncFileObject(System.String)">
+            <summary>
+            获取文件的同步对象
+            </summary>
+            <param name="fileName">文件名</param>
+            <returns>文件的同步对象</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.RemoveSyncFileObject(System.String)">
+            <summary>
+            移除文件同步对象
+            </summary>
+            <param name="fileName">文件名</param>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.WriteFileContent(System.String,System.String,System.Boolean)">
             <summary>

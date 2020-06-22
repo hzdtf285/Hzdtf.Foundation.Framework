@@ -5179,6 +5179,16 @@
             @ 黄振东
             </summary>
         </member>
+        <member name="F:Hzdtf.Utility.Standard.Utils.StreamUtil.syncDicObject">
+            <summary>
+            同步字典对象
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Utils.StreamUtil.syncDicFileName">
+            <summary>
+            同步文件名字典,key:文件名,value:同步对象
+            </summary>
+        </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ReaderFileContent(System.String,System.Boolean)">
             <summary>
             根据文件名读取文件内容
@@ -5237,6 +5247,19 @@
             <param name="fileName">文件名</param>
             <param name="operAction">操作动作回调</param>
             <param name="outOfProcessLock">是否跨进程锁</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.GetSyncFileObject(System.String)">
+            <summary>
+            获取文件的同步对象
+            </summary>
+            <param name="fileName">文件名</param>
+            <returns>文件的同步对象</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.RemoveSyncFileObject(System.String)">
+            <summary>
+            移除文件同步对象
+            </summary>
+            <param name="fileName">文件名</param>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.WriteFileContent(System.String,System.String,System.Boolean)">
             <summary>

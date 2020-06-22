@@ -27,6 +27,8 @@ namespace Hzdtf.WebTest3._1.Core.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            _logger.LogInformation(new Exception("异常"), "这是一个测试日剧");
+
             UnityServicesBuilderCache.SetOptionsJsonFile();
 
             var rng = new Random();

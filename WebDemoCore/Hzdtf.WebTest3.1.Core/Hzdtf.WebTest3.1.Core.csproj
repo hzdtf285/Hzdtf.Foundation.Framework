@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.2" />
   </ItemGroup>
 
@@ -13,6 +14,8 @@
     <ProjectReference Include="..\..\Authorization\Hzdtf.Authorization.Web.Core\Hzdtf.Authorization.Web.Core.csproj" />
     <ProjectReference Include="..\..\Common\Hzdtf.Utility.AspNet.Core\Hzdtf.Utility.AspNet.Core.csproj" />
     <ProjectReference Include="..\..\IOC\Hzdtf.Autofac.Extend.Standard\Hzdtf.Autofac.Extend.Standard.csproj" />
+    <ProjectReference Include="..\..\Logger\Hzdtf.Logger.Integration.MicrosoftLog.Core\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj" />
+    <ProjectReference Include="..\..\Logger\Hzdtf.Logger.Integration.MicrosoftLog.Standard\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj" />
     <ProjectReference Include="..\..\Logger\Hzdtf.Logger.Text.Impl.Standard\Hzdtf.Logger.Text.Impl.Standard.csproj" />
     <ProjectReference Include="..\..\Platform\Hzdtf.Platform.impl.Core\Hzdtf.Platform.Impl.Core.csproj" />
   </ItemGroup>

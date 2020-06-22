@@ -132,8 +132,9 @@ namespace Hzdtf.Logger.Contract.Standard
 
     /// <summary>
     /// 日志级别帮助类
+    /// @ 黄振东
     /// </summary>
-    class LogLevelHelper
+    public static class LogLevelHelper
     {
         /// <summary>
         /// 解析日志级别枚举

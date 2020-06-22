@@ -624,6 +624,21 @@
           "lib/netcoreapp3.1/Microsoft.Extensions.Hosting.Abstractions.dll": {}
         }
       },
+      "Microsoft.Extensions.Logging/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Binder": "3.1.0",
+          "Microsoft.Extensions.DependencyInjection": "3.1.0",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.0",
+          "Microsoft.Extensions.Options": "3.1.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Logging.dll": {}
+        }
+      },
       "Microsoft.Extensions.Logging.Abstractions/3.1.0": {
         "type": "package",
         "compile": {
@@ -631,6 +646,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Logging.Debug/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "3.1.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Logging.Debug.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Logging.Debug.dll": {}
         }
       },
       "Microsoft.Extensions.Options/3.1.0": {
@@ -2576,6 +2603,34 @@
           "bin/placeholder/Hzdtf.Logger.Contract.Standard.dll": {}
         }
       },
+      "Hzdtf.Logger.Integration.MicrosoftLog.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Hzdtf.Logger.Integration.MicrosoftLog.Standard": "1.0.0",
+          "Microsoft.Extensions.Logging": "3.1.0"
+        },
+        "compile": {
+          "bin/placeholder/Hzdtf.Logger.Integration.MicrosoftLog.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hzdtf.Logger.Integration.MicrosoftLog.Core.dll": {}
+        }
+      },
+      "Hzdtf.Logger.Integration.MicrosoftLog.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Hzdtf.Logger.Contract.Standard": "2.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.0"
+        },
+        "compile": {
+          "bin/placeholder/Hzdtf.Logger.Integration.MicrosoftLog.Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hzdtf.Logger.Integration.MicrosoftLog.Standard.dll": {}
+        }
+      },
       "Hzdtf.Logger.Text.Impl.Standard/2.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -3372,6 +3427,22 @@
         "packageIcon.png"
       ]
     },
+    "Microsoft.Extensions.Logging/3.1.0": {
+      "sha512": "P+8sKQ8L4ooL79sxxqwFPxGGC3aBrUDLB/dZqhs4J0XjTyrkeeyJQ4D4nzJB6OnAhy78HIIgQ/RbD6upOXLynw==",
+      "type": "package",
+      "path": "microsoft.extensions.logging/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Logging.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Logging.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.xml",
+        "microsoft.extensions.logging.3.1.0.nupkg.sha512",
+        "microsoft.extensions.logging.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "Microsoft.Extensions.Logging.Abstractions/3.1.0": {
       "sha512": "jjo4YXRx6MIpv6DiRxJjSpl+sPP0+5VW0clMEdLyIAz44PPwrDTFrd5PZckIxIXl1kKZ2KK6IL2nkt0+ug2MQg==",
       "type": "package",
@@ -3383,6 +3454,22 @@
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
         "microsoft.extensions.logging.abstractions.3.1.0.nupkg.sha512",
         "microsoft.extensions.logging.abstractions.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Microsoft.Extensions.Logging.Debug/3.1.0": {
+      "sha512": "pTuUb46wKuZD2nuvzmlHQfbm9sUAiOg1x1pe1fzxDHaocXaZQDjKGYYZifnTLeJk35OSi8ouEIcbuKLVF16yfg==",
+      "type": "package",
+      "path": "microsoft.extensions.logging.debug/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Logging.Debug.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Logging.Debug.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Debug.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Debug.xml",
+        "microsoft.extensions.logging.debug.3.1.0.nupkg.sha512",
+        "microsoft.extensions.logging.debug.nuspec",
         "packageIcon.png"
       ]
     },
@@ -8326,6 +8413,16 @@
       "path": "../../Logger/Hzdtf.Logger.Contract.Standard/Hzdtf.Logger.Contract.Standard.csproj",
       "msbuildProject": "../../Logger/Hzdtf.Logger.Contract.Standard/Hzdtf.Logger.Contract.Standard.csproj"
     },
+    "Hzdtf.Logger.Integration.MicrosoftLog.Core/1.0.0": {
+      "type": "project",
+      "path": "../../Logger/Hzdtf.Logger.Integration.MicrosoftLog.Core/Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj",
+      "msbuildProject": "../../Logger/Hzdtf.Logger.Integration.MicrosoftLog.Core/Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj"
+    },
+    "Hzdtf.Logger.Integration.MicrosoftLog.Standard/1.0.0": {
+      "type": "project",
+      "path": "../../Logger/Hzdtf.Logger.Integration.MicrosoftLog.Standard/Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj",
+      "msbuildProject": "../../Logger/Hzdtf.Logger.Integration.MicrosoftLog.Standard/Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj"
+    },
     "Hzdtf.Logger.Text.Impl.Standard/2.0.0": {
       "type": "project",
       "path": "../../Logger/Hzdtf.Logger.Text.Impl.Standard/Hzdtf.Logger.Text.Impl.Standard.csproj",
@@ -8356,9 +8453,12 @@
     ".NETCoreApp,Version=v3.1": [
       "Hzdtf.Authorization.Web.Core >= 2.0.0",
       "Hzdtf.Autofac.Extend.Standard >= 2.0.0",
+      "Hzdtf.Logger.Integration.MicrosoftLog.Core >= 1.0.0",
+      "Hzdtf.Logger.Integration.MicrosoftLog.Standard >= 1.0.0",
       "Hzdtf.Logger.Text.Impl.Standard >= 2.0.0",
       "Hzdtf.Platform.Impl.Core >= 2.0.0",
       "Hzdtf.Utility.AspNet.Core >= 1.0.0",
+      "Microsoft.Extensions.Logging.Debug >= 3.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.2"
     ]
   },
@@ -8402,6 +8502,12 @@
             "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj": {
               "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj"
             },
+            "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj": {
+              "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj"
+            },
+            "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj": {
+              "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj"
+            },
             "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Text.Impl.Standard\\Hzdtf.Logger.Text.Impl.Standard.csproj": {
               "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Text.Impl.Standard\\Hzdtf.Logger.Text.Impl.Standard.csproj"
             },
@@ -8420,6 +8526,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": {
+            "target": "Package",
+            "version": "[3.1.0, )"
+          },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[3.1.2, )"

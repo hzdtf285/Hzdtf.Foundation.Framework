@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nk53p4hIqfC2NmbfDIRMUZMspewDLXnPAaYesIeJGoKqrCUbiwoP2YbfW9EomLPwnK40L0qd7FLe9CSDzq/KAA==",
+  "dgSpecHash": "7nmdKwGXvwyKn6K8ce5VpOnP+9xJgJ79E+PaAjPe67/vttTX3lfIjgtHSoIONU3EPZGiNlF+w1x615CWFRPFdA==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WebDemoCore\\Hzdtf.WebTest3.1.Core\\Hzdtf.WebTest3.1.Core.csproj",
   "expectedPackageFiles": [
@@ -40,7 +40,9 @@
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\3.1.0\\microsoft.extensions.fileproviders.physical.3.1.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\3.1.0\\microsoft.extensions.filesystemglobbing.3.1.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\3.1.0\\microsoft.extensions.hosting.abstractions.3.1.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.logging\\3.1.0\\microsoft.extensions.logging.3.1.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.0\\microsoft.extensions.logging.abstractions.3.1.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.logging.debug\\3.1.0\\microsoft.extensions.logging.debug.3.1.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.options\\3.1.0\\microsoft.extensions.options.3.1.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\3.1.0\\microsoft.extensions.options.configurationextensions.3.1.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.0\\microsoft.extensions.primitives.3.1.0.nupkg.sha512",
