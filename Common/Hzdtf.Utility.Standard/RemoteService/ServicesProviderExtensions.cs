@@ -18,6 +18,11 @@ namespace Hzdtf.Utility.Standard.RemoteService
         /// <returns>服务生成器</returns>
         public static IServicesBuilder CreateServiceBuilder(this IServicesProvider service, Action<IServicesBuilder> config)
         {
+            if (config == null)
+            {
+                throw new ArgumentNullException("配置回调不能为null");
+            }
+
             var builder = new HttpServicesBuilder();
             builder.ServiceProvider = service;
             config(builder);
