@@ -1763,11 +1763,6 @@
             数据
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Event.EventData.#ctor">
-            <summary>
-            构造方法
-            </summary>
-        </member>
         <member name="T:Hzdtf.Utility.Standard.Event.IEventBus">
             <summary>
             事件总线接口
@@ -3547,9 +3542,9 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.RemoteService.ServicesProviderExtensions.CreateServiceBuilder(Hzdtf.Utility.Standard.RemoteService.IServicesProvider,System.Action{Hzdtf.Utility.Standard.RemoteService.IServicesBuilder})">
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.ServicesProviderExtensions.CreateHttpServiceBuilder(Hzdtf.Utility.Standard.RemoteService.IServicesProvider,System.Action{Hzdtf.Utility.Standard.RemoteService.IServicesBuilder})">
             <summary>
-            创建服务生成器
+            创建Http服务生成器
             </summary>
             <param name="service">服务提供者</param>
             <param name="config">配置回调</param>
@@ -3574,7 +3569,7 @@
         </member>
         <member name="F:Hzdtf.Utility.Standard.RemoteService.ServicesProviderMemory.cacheExpire">
             <summary>
-            缓存过期时间
+            缓存过期时间（单位：秒）
             </summary>
         </member>
         <member name="M:Hzdtf.Utility.Standard.RemoteService.ServicesProviderMemory.#ctor">
@@ -3606,6 +3601,14 @@
             <summary>
             释放资源
             </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.ServicesProviderMemory.GetCacheKey(System.String,System.String)">
+            <summary>
+            获取缓存键
+            </summary>
+            <param name="serviceName">服务名</param>
+            <param name="tag">标签</param>
+            <returns>缓存键</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.RemoteService.ServicesProviderMemory.Finalize">
             <summary>

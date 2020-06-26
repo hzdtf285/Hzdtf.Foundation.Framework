@@ -88,7 +88,7 @@ namespace Hzdtf.Utility.Standard.RemoteService
 
             if (ser.ServicesBuilder == null)
             {
-                var serviceBuilder = servicesProvider.CreateServiceBuilder(builder =>
+                var serviceBuilder = servicesProvider.CreateHttpServiceBuilder(builder =>
                 {
                     builder.LoadBalance = ser.LoadBalance;
                     builder.ServiceName = ser.ServiceName;

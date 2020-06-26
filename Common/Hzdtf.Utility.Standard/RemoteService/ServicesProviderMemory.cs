@@ -4,6 +4,7 @@ using Hzdtf.Utility.Standard.SystemV2;
 using Microsoft.Extensions.Caching.Memory;
 using System;
 using System.Collections.Generic;
+using System.Drawing.Imaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -32,7 +33,7 @@ namespace Hzdtf.Utility.Standard.RemoteService
         }
 
         /// <summary>
-        /// 缓存过期时间
+        /// 缓存过期时间（单位：秒）
         /// </summary>
         protected int cacheExpire = 5;
 
@@ -71,7 +72,7 @@ namespace Hzdtf.Utility.Standard.RemoteService
         /// <returns>地址数组任务</returns>
         public async Task<string[]> GetAddresses(string serviceName, string tag = null)
         {
-            return await cache.GetOrCreateAsync<string[]>($"{serviceName}_{tag}", entry =>
+            return await cache.GetOrCreateAsync<string[]>(GetCacheKey(serviceName, tag), entry =>
             {
                 if (cacheExpire != -1)
                 {
@@ -93,6 +94,15 @@ namespace Hzdtf.Utility.Standard.RemoteService
                 ProtoServicesProvider.Dispose();
             }
         }
+
+        /// <summary>
+        /// 获取缓存键
+        /// </summary>
+        /// <param name="serviceName">服务名</param>
+        /// <param name="tag">标签</param>
+        /// <returns>缓存键</returns>
+        protected virtual string GetCacheKey(string serviceName, string tag = null)
+            => $"ServicesProvider_{serviceName}_{tag}";
 
         /// <summary>
         /// 析构方法
