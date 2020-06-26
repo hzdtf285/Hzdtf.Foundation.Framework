@@ -10,16 +10,14 @@ namespace Hzdtf.Utility.Standard.Event
     /// </summary>
     public class EventData
     {
-        private DateTime _Time;
-
         /// <summary>
         /// 时间
         /// </summary>
         public DateTime Time
         {
-            get { return _Time; }
-            set { _Time = value; }
-        }
+            get;
+            set;
+        } = DateTime.Now;
 
         /// <summary>
         /// 源
@@ -38,10 +36,5 @@ namespace Hzdtf.Utility.Standard.Event
             get;
             set;
         }
-
-        /// <summary>
-        /// 构造方法
-        /// </summary>
-        public EventData() => _Time = DateTime.Now;
     }
 }
