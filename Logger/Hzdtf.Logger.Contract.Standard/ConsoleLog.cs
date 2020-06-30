@@ -18,7 +18,8 @@ namespace Hzdtf.Logger.Contract.Standard
         /// 将日志内容写入到存储设备里
         /// </summary>
         /// <param name="logContent">日志内容</param>
-        protected override void WriteStorage(string logContent)
+        /// <param name="level">等级</param>
+        protected override void WriteStorage(string logContent, string level)
         {
             Console.WriteLine(logContent);
         }

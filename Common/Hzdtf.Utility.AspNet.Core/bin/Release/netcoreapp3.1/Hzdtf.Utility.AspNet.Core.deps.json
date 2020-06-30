@@ -10,7 +10,7 @@
         "dependencies": {
           "Hzdtf.Logger.Contract.Standard": "2.0.0",
           "Hzdtf.Utility.Standard": "2.0.0",
-          "Microsoft.AspNetCore.Hosting.Server.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.Extensions.Configuration": "3.1.0",
           "Microsoft.Extensions.Configuration.Json": "3.1.0",
@@ -20,6 +20,29 @@
         },
         "runtime": {
           "Hzdtf.Utility.AspNet.Core.dll": {}
+        }
+      },
+      "AndroidXml/1.1.14": {
+        "dependencies": {
+          "System.Drawing.Common": "4.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AndroidXml.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.14.221"
+          }
+        }
+      },
+      "AutoMapper/9.0.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "System.Reflection.Emit": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.0.0"
+          }
         }
       },
       "MessagePack/1.7.3.7": {
@@ -34,6 +57,19 @@
           "lib/netstandard2.0/MessagePack.dll": {
             "assemblyVersion": "1.7.3.7",
             "fileVersion": "1.7.3.7"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Hosting.Abstractions/2.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Server.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Hosting.Abstractions": "3.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
           }
         }
       },
@@ -72,6 +108,7 @@
           }
         }
       },
+      "Microsoft.CSharp/4.5.0": {},
       "Microsoft.Extensions.Caching.Abstractions/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "3.1.0"
@@ -279,7 +316,7 @@
       },
       "NPOI/2.4.1": {
         "dependencies": {
-          "SharpZipLib": "1.0.0",
+          "SharpZipLib": "1.2.0",
           "System.Configuration.ConfigurationManager": "4.5.0",
           "System.Drawing.Common": "4.5.1"
         },
@@ -302,11 +339,11 @@
           }
         }
       },
-      "SharpZipLib/1.0.0": {
+      "SharpZipLib/1.2.0": {
         "runtime": {
           "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll": {
-            "assemblyVersion": "1.0.0.999",
-            "fileVersion": "1.0.0.999"
+            "assemblyVersion": "1.2.0.246",
+            "fileVersion": "1.2.0.246"
           }
         }
       },
@@ -520,14 +557,17 @@
       },
       "Hzdtf.Utility.Standard/2.0.0": {
         "dependencies": {
+          "AutoMapper": "9.0.0",
           "MessagePack": "1.7.3.7",
           "Microsoft.Extensions.Caching.Abstractions": "2.2.0",
           "Microsoft.Extensions.Caching.Memory": "2.2.0",
           "NPOI": "2.4.1",
           "Newtonsoft.Json": "12.0.1",
+          "SharpZipLib": "1.2.0",
           "System.ComponentModel.Annotations": "4.5.0",
           "System.Drawing.Common": "4.5.1",
-          "System.Reflection.DispatchProxy": "4.7.0"
+          "System.Reflection.DispatchProxy": "4.7.0",
+          "AndroidXml": "1.1.14"
         },
         "runtime": {
           "Hzdtf.Utility.Standard.dll": {}
@@ -541,12 +581,33 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AndroidXml/1.1.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-O/beg4/EB0cbRR72pgMCGz47zMQaEg4x2l+r+qRR27xSwvqPpLLrKmI/ieBrOPjZjtT8Qz32F/xek+ajWTAADQ==",
+      "path": "androidxml/1.1.14",
+      "hashPath": "androidxml.1.1.14.nupkg.sha512"
+    },
+    "AutoMapper/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xCqvoxT4HIrNY/xlXG9W+BA/awdrhWvMTKTK/igkGSRbhOhpl3Q8O8Gxlhzjc9JsYqE7sS6AxgyuUUvZ6R5/Bw==",
+      "path": "automapper/9.0.0",
+      "hashPath": "automapper.9.0.0.nupkg.sha512"
+    },
     "MessagePack/1.7.3.7": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-gyJ8m987yI1O7h4P2DS7YjOfOWqJ+WcvX/jST+vYxCt004FYRm6cHfCK20fa1ehpQhOwRIezVennku+pFWwtiw==",
       "path": "messagepack/1.7.3.7",
       "hashPath": "messagepack.1.7.3.7.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Hosting.Abstractions/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ubycklv+ZY7Kutdwuy1W4upWcZ6VFR8WUXU7l7B2+mvbDBBPAcfpi+E+Y5GFe+Q157YfA3C49D2GCjAZc7Mobw==",
+      "path": "microsoft.aspnetcore.hosting.abstractions/2.2.0",
+      "hashPath": "microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Hosting.Server.Abstractions/2.2.0": {
       "type": "package",
@@ -568,6 +629,13 @@
       "sha512": "sha512-ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
       "path": "microsoft.aspnetcore.http.features/2.2.0",
       "hashPath": "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.CSharp/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+      "path": "microsoft.csharp/4.5.0",
+      "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/2.2.0": {
       "type": "package",
@@ -716,12 +784,12 @@
       "path": "npoi/2.4.1",
       "hashPath": "npoi.2.4.1.nupkg.sha512"
     },
-    "SharpZipLib/1.0.0": {
+    "SharpZipLib/1.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-YuYztmY3jEb21F6e5LIPHJjApdtzdCPQ284UzsCKNfkgW71bukFHJES6RbKi+wm053XzFg0LX5/2vj/9gl8F/g==",
-      "path": "sharpziplib/1.0.0",
-      "hashPath": "sharpziplib.1.0.0.nupkg.sha512"
+      "sha512": "sha512-zvWa/L02JHNatdtjya6Swpudb2YEHaOLHL1eRrqpjm71iGRNUNONO5adUF/9CHbSJbzhELW1UoH4NGy7n7+3bQ==",
+      "path": "sharpziplib/1.2.0",
+      "hashPath": "sharpziplib.1.2.0.nupkg.sha512"
     },
     "System.Collections/4.3.0": {
       "type": "package",

@@ -3542,9 +3542,9 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.RemoteService.ServicesProviderExtensions.CreateHttpServiceBuilder(Hzdtf.Utility.Standard.RemoteService.IServicesProvider,System.Action{Hzdtf.Utility.Standard.RemoteService.IServicesBuilder})">
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.ServicesProviderExtensions.CreateServiceBuilder(Hzdtf.Utility.Standard.RemoteService.IServicesProvider,System.Action{Hzdtf.Utility.Standard.RemoteService.IServicesBuilder})">
             <summary>
-            创建Http服务生成器
+            创建服务生成器
             </summary>
             <param name="service">服务提供者</param>
             <param name="config">配置回调</param>
@@ -4041,6 +4041,20 @@
             <summary>
             UTC当前时间
             </summary>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Utils.AppContextUtil">
+            <summary>
+            应用上下文辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.AppContextUtil.SetHttp2UnencryptedSupport(System.Boolean)">
+            <summary>
+            设置http2非加密是否支持
+            例如：GRpc如果要对http进行支持，则需要启用
+            执行此方法后，默认是启用
+            </summary>
+            <param name="enable">是否启动</param>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Utils.AssemblyUtil">
             <summary>

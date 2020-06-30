@@ -89,6 +89,21 @@
             服务集合
             </summary>
         </member>
+        <member name="F:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigInfo.assemblyNames">
+            <summary>
+            程序集名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigInfo.AssemblyNames">
+            <summary>
+            程序集名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigInfo.IsLoadAutoMapperConfig">
+            <summary>
+            是否加载自动映射配置
+            </summary>
+        </member>
         <member name="T:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.BasicAssemblyInfo">
             <summary>
             基本程序集信息

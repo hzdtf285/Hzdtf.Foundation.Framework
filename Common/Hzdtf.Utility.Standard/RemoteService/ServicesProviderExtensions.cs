@@ -11,12 +11,12 @@ namespace Hzdtf.Utility.Standard.RemoteService
     public static class ServicesProviderExtensions
     {
         /// <summary>
-        /// 创建Http服务生成器
+        /// 创建服务生成器
         /// </summary>
         /// <param name="service">服务提供者</param>
         /// <param name="config">配置回调</param>
         /// <returns>服务生成器</returns>
-        public static IServicesBuilder CreateHttpServiceBuilder(this IServicesProvider service, Action<IServicesBuilder> config)
+        public static IServicesBuilder CreateServiceBuilder(this IServicesProvider service, Action<IServicesBuilder> config)
         {
             if (config == null)
             {

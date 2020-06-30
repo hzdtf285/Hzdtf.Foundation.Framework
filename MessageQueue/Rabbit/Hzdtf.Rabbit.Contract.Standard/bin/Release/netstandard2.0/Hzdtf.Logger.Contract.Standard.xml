@@ -15,19 +15,9 @@
             应用配置
             </summary>
         </member>
-        <member name="F:Hzdtf.Logger.Contract.Standard.ConfigLogRecordLevel.level">
+        <member name="M:Hzdtf.Logger.Contract.Standard.ConfigLogRecordLevel.GetDefaultRecordLevel">
             <summary>
-            级别
-            </summary>
-        </member>
-        <member name="F:Hzdtf.Logger.Contract.Standard.ConfigLogRecordLevel.syncLevel">
-            <summary>
-            同步级别
-            </summary>
-        </member>
-        <member name="M:Hzdtf.Logger.Contract.Standard.ConfigLogRecordLevel.GetRecordLevel">
-            <summary>
-            获取记录级别
+            获取默认的记录等级
             </summary>
             <returns>记录级别</returns>
         </member>
@@ -37,11 +27,18 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Logger.Contract.Standard.ConsoleLog.WriteStorage(System.String)">
+        <member name="M:Hzdtf.Logger.Contract.Standard.ConsoleLog.WriteStorage(System.String,System.String)">
             <summary>
             将日志内容写入到存储设备里
             </summary>
             <param name="logContent">日志内容</param>
+            <param name="level">等级</param>
+        </member>
+        <member name="M:Hzdtf.Logger.Contract.Standard.ConsoleLog.SectionPartitionSymbol">
+            <summary>
+            分段分隔符
+            </summary>
+            <returns>分段分隔符</returns>
         </member>
         <member name="T:Hzdtf.Logger.Contract.Standard.ContentLogBase">
             <summary>
@@ -59,11 +56,12 @@
             <param name="source">来源</param>
             <param name="tags">标签</param>
         </member>
-        <member name="M:Hzdtf.Logger.Contract.Standard.ContentLogBase.WriteStorage(System.String)">
+        <member name="M:Hzdtf.Logger.Contract.Standard.ContentLogBase.WriteStorage(System.String,System.String)">
             <summary>
             将日志内容写入到存储设备里
             </summary>
             <param name="logContent">日志内容</param>
+            <param name="level">等级</param>
         </member>
         <member name="M:Hzdtf.Logger.Contract.Standard.ContentLogBase.GetLogContent(System.String,System.String,System.Exception,System.String,System.String[])">
             <summary>
@@ -76,11 +74,26 @@
             <param name="tags">标签</param>
             <returns>日志内容</returns>
         </member>
+        <member name="M:Hzdtf.Logger.Contract.Standard.ContentLogBase.SectionPartitionSymbol">
+            <summary>
+            分段分隔符
+            </summary>
+            <returns>分段分隔符</returns>
+        </member>
         <member name="T:Hzdtf.Logger.Contract.Standard.ILogable">
             <summary>
             可记录日志的接口
             @ 黄振东
             </summary>
+        </member>
+        <member name="M:Hzdtf.Logger.Contract.Standard.ILogable.Trace(System.String,System.Exception,System.String,System.String[])">
+            <summary>
+            跟踪
+            </summary>
+            <param name="msg">消息</param>
+            <param name="ex">异常</param>
+            <param name="source">来源</param>
+            <param name="tags">标签</param>
         </member>
         <member name="M:Hzdtf.Logger.Contract.Standard.ILogable.Debug(System.String,System.Exception,System.String,System.String[])">
             <summary>
@@ -132,6 +145,16 @@
             可记录日志的异步接口
             @ 黄振东
             </summary>
+        </member>
+        <member name="M:Hzdtf.Logger.Contract.Standard.ILogableAsync.TraceAsync(System.String,System.Exception,System.String,System.String[])">
+            <summary>
+            异步跟踪
+            </summary>
+            <param name="msg">消息</param>
+            <param name="ex">异常</param>
+            <param name="source">来源</param>
+            <param name="tags">标签</param>
+            <returns>任务</returns>
         </member>
         <member name="M:Hzdtf.Logger.Contract.Standard.ILogableAsync.DebugAsync(System.String,System.Exception,System.String,System.String[])">
             <summary>
@@ -195,14 +218,55 @@
             </summary>
             <returns>记录级别</returns>
         </member>
+        <member name="M:Hzdtf.Logger.Contract.Standard.ILogRecordLevel.SetRecordLevel(System.String)">
+            <summary>
+            设置记录级别
+            </summary>
+            <param name="level">记录级别</param>
+        </member>
+        <member name="T:Hzdtf.Logger.Contract.Standard.LogRecordLevelBase">
+            <summary>
+            日志记录等级基类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Logger.Contract.Standard.LogRecordLevelBase.level">
+            <summary>
+            等级
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Logger.Contract.Standard.LogRecordLevelBase.syncLevel">
+            <summary>
+            同步等级
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Logger.Contract.Standard.LogRecordLevelBase.GetRecordLevel">
+            <summary>
+            获取记录级别
+            </summary>
+            <returns>记录级别</returns>
+        </member>
+        <member name="M:Hzdtf.Logger.Contract.Standard.LogRecordLevelBase.SetRecordLevel(System.String)">
+            <summary>
+            设置记录级别
+            </summary>
+            <param name="level">记录级别</param>
+        </member>
+        <member name="M:Hzdtf.Logger.Contract.Standard.LogRecordLevelBase.GetDefaultRecordLevel">
+            <summary>
+            获取默认的记录等级
+            </summary>
+            <returns>记录级别</returns>
+        </member>
         <member name="T:Hzdtf.Logger.Contract.Standard.DefaultLogRecordLevel">
             <summary>
             默认日志记录级别
+            @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Logger.Contract.Standard.DefaultLogRecordLevel.GetRecordLevel">
+        <member name="M:Hzdtf.Logger.Contract.Standard.DefaultLogRecordLevel.GetDefaultRecordLevel">
             <summary>
-            获取记录级别
+            获取默认的记录等级
             </summary>
             <returns>记录级别</returns>
         </member>
@@ -220,6 +284,15 @@
             <summary>
             日志记录级别
             </summary>
+        </member>
+        <member name="M:Hzdtf.Logger.Contract.Standard.LogBase.Trace(System.String,System.Exception,System.String,System.String[])">
+            <summary>
+            跟踪
+            </summary>
+            <param name="msg">消息</param>
+            <param name="ex">异常</param>
+            <param name="source">来源</param>
+            <param name="tags">标签</param>
         </member>
         <member name="M:Hzdtf.Logger.Contract.Standard.LogBase.Debug(System.String,System.Exception,System.String,System.String[])">
             <summary>
@@ -286,6 +359,16 @@
             <param name="source">来源</param>
             <param name="tags">标签</param>
         </member>
+        <member name="M:Hzdtf.Logger.Contract.Standard.LogBase.TraceAsync(System.String,System.Exception,System.String,System.String[])">
+            <summary>
+            异步跟踪
+            </summary>
+            <param name="msg">消息</param>
+            <param name="ex">异常</param>
+            <param name="source">来源</param>
+            <param name="tags">标签</param>
+            <returns>任务</returns>
+        </member>
         <member name="M:Hzdtf.Logger.Contract.Standard.LogBase.DebugAsync(System.String,System.Exception,System.String,System.String[])">
             <summary>
             异步调试
@@ -339,6 +422,7 @@
         <member name="T:Hzdtf.Logger.Contract.Standard.LogLevelHelper">
             <summary>
             日志级别帮助类
+            @ 黄振东
             </summary>
         </member>
         <member name="M:Hzdtf.Logger.Contract.Standard.LogLevelHelper.Parse(System.String)">
@@ -360,6 +444,11 @@
             <summary>
             日志级别枚举
             @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Logger.Contract.Standard.LogLevelEnum.TRACE">
+            <summary>
+            跟踪
             </summary>
         </member>
         <member name="F:Hzdtf.Logger.Contract.Standard.LogLevelEnum.DEBUG">
@@ -385,6 +474,11 @@
         <member name="F:Hzdtf.Logger.Contract.Standard.LogLevelEnum.FATAL">
             <summary>
             致命
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Logger.Contract.Standard.LogLevelEnum.NONE">
+            <summary>
+            无
             </summary>
         </member>
         <member name="T:Hzdtf.Logger.Contract.Standard.LogTool">

@@ -11,7 +11,6 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebDemo.Core\b
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebDemo.Core\bin\Release\netcoreapp2.2\Properties\launchSettings.json
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebDemo.Core\bin\Release\netcoreapp2.2\Config\assemblyConfig.json
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebDemo.Core\bin\Release\netcoreapp2.2\Config\attachmentOwnerConfig.json
-C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebDemo.Core\bin\Release\netcoreapp2.2\Config\programStartConfig.json
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebDemo.Core\bin\Release\netcoreapp2.2\Hzdtf.WebDemo.Core.deps.json
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebDemo.Core\bin\Release\netcoreapp2.2\Hzdtf.WebDemo.Core.runtimeconfig.json
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebDemo.Core\bin\Release\netcoreapp2.2\Hzdtf.WebDemo.Core.runtimeconfig.dev.json

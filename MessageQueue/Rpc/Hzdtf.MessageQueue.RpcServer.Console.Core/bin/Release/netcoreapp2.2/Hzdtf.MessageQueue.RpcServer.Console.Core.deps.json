@@ -23,6 +23,17 @@
           "Hzdtf.MessageQueue.RpcServer.Console.Core.dll": {}
         }
       },
+      "AndroidXml/1.1.14": {
+        "dependencies": {
+          "System.Drawing.Common": "4.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AndroidXml.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.14.221"
+          }
+        }
+      },
       "Autofac/4.8.1": {
         "dependencies": {
           "System.ComponentModel": "4.3.0"
@@ -55,6 +66,18 @@
           "lib/netstandard1.3/Autofac.Extras.DynamicProxy.dll": {
             "assemblyVersion": "4.5.0.0",
             "fileVersion": "4.5.0.0"
+          }
+        }
+      },
+      "AutoMapper/9.0.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "System.Reflection.Emit": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.0.0"
           }
         }
       },
@@ -100,6 +123,7 @@
           }
         }
       },
+      "Microsoft.CSharp/4.5.0": {},
       "Microsoft.Extensions.Caching.Abstractions/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "3.1.0"
@@ -278,7 +302,7 @@
       },
       "NPOI/2.4.1": {
         "dependencies": {
-          "SharpZipLib": "1.0.0",
+          "SharpZipLib": "1.2.0",
           "System.Configuration.ConfigurationManager": "4.5.0",
           "System.Drawing.Common": "4.5.1"
         },
@@ -361,11 +385,11 @@
       "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
-      "SharpZipLib/1.0.0": {
+      "SharpZipLib/1.2.0": {
         "runtime": {
           "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll": {
-            "assemblyVersion": "1.0.0.999",
-            "fileVersion": "1.0.0.999"
+            "assemblyVersion": "1.2.0.246",
+            "fileVersion": "1.2.0.246"
           }
         }
       },
@@ -1153,14 +1177,17 @@
       },
       "Hzdtf.Utility.Standard/2.0.0": {
         "dependencies": {
+          "AutoMapper": "9.0.0",
           "MessagePack": "1.7.3.7",
           "Microsoft.Extensions.Caching.Abstractions": "2.2.0",
           "Microsoft.Extensions.Caching.Memory": "2.2.0",
           "NPOI": "2.4.1",
           "Newtonsoft.Json": "12.0.1",
+          "SharpZipLib": "1.2.0",
           "System.ComponentModel.Annotations": "4.5.0",
           "System.Drawing.Common": "4.5.1",
-          "System.Reflection.DispatchProxy": "4.7.0"
+          "System.Reflection.DispatchProxy": "4.7.0",
+          "AndroidXml": "1.1.14"
         },
         "runtime": {
           "Hzdtf.Utility.Standard.dll": {}
@@ -1173,6 +1200,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AndroidXml/1.1.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-O/beg4/EB0cbRR72pgMCGz47zMQaEg4x2l+r+qRR27xSwvqPpLLrKmI/ieBrOPjZjtT8Qz32F/xek+ajWTAADQ==",
+      "path": "androidxml/1.1.14",
+      "hashPath": "androidxml.1.1.14.nupkg.sha512"
     },
     "Autofac/4.8.1": {
       "type": "package",
@@ -1195,6 +1229,13 @@
       "path": "autofac.extras.dynamicproxy/4.5.0",
       "hashPath": "autofac.extras.dynamicproxy.4.5.0.nupkg.sha512"
     },
+    "AutoMapper/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xCqvoxT4HIrNY/xlXG9W+BA/awdrhWvMTKTK/igkGSRbhOhpl3Q8O8Gxlhzjc9JsYqE7sS6AxgyuUUvZ6R5/Bw==",
+      "path": "automapper/9.0.0",
+      "hashPath": "automapper.9.0.0.nupkg.sha512"
+    },
     "Castle.Core/4.3.1": {
       "type": "package",
       "serviceable": true,
@@ -1215,6 +1256,13 @@
       "sha512": "sha512-1Am6l4Vpn3/K32daEqZI+FFr96OlZkgwK2LcT3pZ2zWubR5zTPW3/FkO1Rat9kb7oQOa4rxgl9LJHc5tspCWfg==",
       "path": "microsoft.bcl.asyncinterfaces/1.1.0",
       "hashPath": "microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.CSharp/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+      "path": "microsoft.csharp/4.5.0",
+      "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/2.2.0": {
       "type": "package",
@@ -1454,12 +1502,12 @@
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
     },
-    "SharpZipLib/1.0.0": {
+    "SharpZipLib/1.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-YuYztmY3jEb21F6e5LIPHJjApdtzdCPQ284UzsCKNfkgW71bukFHJES6RbKi+wm053XzFg0LX5/2vj/9gl8F/g==",
-      "path": "sharpziplib/1.0.0",
-      "hashPath": "sharpziplib.1.0.0.nupkg.sha512"
+      "sha512": "sha512-zvWa/L02JHNatdtjya6Swpudb2YEHaOLHL1eRrqpjm71iGRNUNONO5adUF/9CHbSJbzhELW1UoH4NGy7n7+3bQ==",
+      "path": "sharpziplib/1.2.0",
+      "hashPath": "sharpziplib.1.2.0.nupkg.sha512"
     },
     "System.Collections/4.3.0": {
       "type": "package",

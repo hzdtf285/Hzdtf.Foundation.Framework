@@ -36,11 +36,12 @@
             </summary>
             <param name="logRootDirectory">日志根目录</param>
         </member>
-        <member name="M:Hzdtf.Logger.Text.Impl.Standard.TxtFileLog.WriteStorage(System.String)">
+        <member name="M:Hzdtf.Logger.Text.Impl.Standard.TxtFileLog.WriteStorage(System.String,System.String)">
             <summary>
             将日志内容写入到存储设备里
             </summary>
             <param name="logContent">日志内容</param>
+            <param name="level">等级</param>
         </member>
         <member name="M:Hzdtf.Logger.Text.Impl.Standard.TxtFileLog.GetFileFullName">
             <summary>

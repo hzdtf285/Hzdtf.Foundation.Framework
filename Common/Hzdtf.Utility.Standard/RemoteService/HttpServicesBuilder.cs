@@ -64,11 +64,15 @@ namespace Hzdtf.Utility.Standard.RemoteService
         /// </summary>
         /// <param name="path">路径</param>
         /// <returns>生成地址任务</returns>
-        public async Task<string> BuilderAsync(string path)
+        public async Task<string> BuilderAsync(string path = null)
         {
             var addresses = await ServiceProvider.GetAddresses(ServiceName, Tag);
             var address = LoadBalance.Resolve(addresses);
             var baseUri = new Uri($"{Sheme}://{address}");
+            if (string.IsNullOrWhiteSpace(path))
+            {
+                return baseUri.AbsoluteUri;
+            }
 
             return new Uri(baseUri, path).AbsoluteUri;
         }

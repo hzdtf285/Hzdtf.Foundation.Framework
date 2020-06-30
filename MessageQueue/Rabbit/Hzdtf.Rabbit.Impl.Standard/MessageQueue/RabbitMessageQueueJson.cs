@@ -1,6 +1,5 @@
 ﻿using Hzdtf.Rabbit.Model.Standard.MessageQueue;
 using Hzdtf.Utility.Standard.Attr;
-using Hzdtf.Utility.Standard.Data;
 using Hzdtf.Utility.Standard.Utils;
 using System;
 using System.Collections.Generic;
@@ -57,7 +56,7 @@ namespace Hzdtf.Rabbit.Impl.Standard.MessageQueue
         /// <returns>交换机信息列表</returns>
         protected override IList<RabbitExchangeInfo> QueryExchangeInfosFromSource()
         {
-            return new JsonConvert().Deserialize<IList<RabbitExchangeInfo>>(File.ReadAllText(jsonFileName));
+            return JsonUtil.Deserialize<IList<RabbitExchangeInfo>>(File.ReadAllText(jsonFileName));
         }
 
         #endregion

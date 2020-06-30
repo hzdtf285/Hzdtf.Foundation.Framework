@@ -54,6 +54,20 @@
           "Hzdtf.WebDemo.Core.dll": {}
         }
       },
+      "AndroidXml/1.1.14": {
+        "dependencies": {
+          "System.Drawing.Common": "4.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AndroidXml.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.14.221"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AndroidXml.dll": {}
+        }
+      },
       "Autofac/4.8.1": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
@@ -100,15 +114,15 @@
           "lib/netstandard1.3/Autofac.Extras.DynamicProxy.dll": {}
         }
       },
-      "AutoMapper/8.0.0": {
+      "AutoMapper/9.0.0": {
         "dependencies": {
           "Microsoft.CSharp": "4.5.0",
           "System.Reflection.Emit": "4.3.0"
         },
         "runtime": {
           "lib/netstandard2.0/AutoMapper.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.0.0"
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.0.0"
           }
         },
         "compile": {
@@ -235,7 +249,7 @@
       },
       "NPOI/2.4.1": {
         "dependencies": {
-          "SharpZipLib": "1.0.0",
+          "SharpZipLib": "1.2.0",
           "System.Configuration.ConfigurationManager": "4.5.0",
           "System.Drawing.Common": "4.5.1"
         },
@@ -279,11 +293,11 @@
           "lib/netcoreapp2.1/Pipelines.Sockets.Unofficial.dll": {}
         }
       },
-      "SharpZipLib/1.0.0": {
+      "SharpZipLib/1.2.0": {
         "runtime": {
           "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll": {
-            "assemblyVersion": "1.0.0.999",
-            "fileVersion": "1.0.0.999"
+            "assemblyVersion": "1.2.0.246",
+            "fileVersion": "1.2.0.246"
           }
         },
         "compile": {
@@ -652,7 +666,6 @@
       },
       "Hzdtf.BasicFunction.Service.Impl.Standard/2.0.0": {
         "dependencies": {
-          "AutoMapper": "8.0.0",
           "Hzdtf.Authorization.Contract.Standard": "2.0.0",
           "Hzdtf.BasicFunction.Model.Standard": "2.0.0",
           "Hzdtf.BasicFunction.Persistence.Contract.Std": "2.0.0",
@@ -918,14 +931,17 @@
       },
       "Hzdtf.Utility.Standard/2.0.0": {
         "dependencies": {
+          "AutoMapper": "9.0.0",
           "MessagePack": "1.7.3.7",
           "Microsoft.Extensions.Caching.Abstractions": "2.2.0",
           "Microsoft.Extensions.Caching.Memory": "2.2.0",
           "NPOI": "2.4.1",
           "Newtonsoft.Json": "12.0.1",
+          "SharpZipLib": "1.2.0",
           "System.ComponentModel.Annotations": "4.5.0",
           "System.Drawing.Common": "4.5.1",
-          "System.Reflection.DispatchProxy": "4.7.0"
+          "System.Reflection.DispatchProxy": "4.7.0",
+          "AndroidXml": "1.1.14"
         },
         "runtime": {
           "Hzdtf.Utility.Standard.dll": {}
@@ -4198,6 +4214,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AndroidXml/1.1.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-O/beg4/EB0cbRR72pgMCGz47zMQaEg4x2l+r+qRR27xSwvqPpLLrKmI/ieBrOPjZjtT8Qz32F/xek+ajWTAADQ==",
+      "path": "androidxml/1.1.14",
+      "hashPath": "androidxml.1.1.14.nupkg.sha512"
+    },
     "Autofac/4.8.1": {
       "type": "package",
       "serviceable": true,
@@ -4219,12 +4242,12 @@
       "path": "autofac.extras.dynamicproxy/4.5.0",
       "hashPath": "autofac.extras.dynamicproxy.4.5.0.nupkg.sha512"
     },
-    "AutoMapper/8.0.0": {
+    "AutoMapper/9.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-px8ZMtIq84dxciB29V+ZYOtsRLZP4JlflDDMW13LyeRdwsnIInzlcSHSxpWmVD6U3bbOl2FeLlgomnVtm0jvXw==",
-      "path": "automapper/8.0.0",
-      "hashPath": "automapper.8.0.0.nupkg.sha512"
+      "sha512": "sha512-xCqvoxT4HIrNY/xlXG9W+BA/awdrhWvMTKTK/igkGSRbhOhpl3Q8O8Gxlhzjc9JsYqE7sS6AxgyuUUvZ6R5/Bw==",
+      "path": "automapper/9.0.0",
+      "hashPath": "automapper.9.0.0.nupkg.sha512"
     },
     "Castle.Core/4.3.1": {
       "type": "package",
@@ -4289,12 +4312,12 @@
       "path": "pipelines.sockets.unofficial/1.0.7",
       "hashPath": "pipelines.sockets.unofficial.1.0.7.nupkg.sha512"
     },
-    "SharpZipLib/1.0.0": {
+    "SharpZipLib/1.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-YuYztmY3jEb21F6e5LIPHJjApdtzdCPQ284UzsCKNfkgW71bukFHJES6RbKi+wm053XzFg0LX5/2vj/9gl8F/g==",
-      "path": "sharpziplib/1.0.0",
-      "hashPath": "sharpziplib.1.0.0.nupkg.sha512"
+      "sha512": "sha512-zvWa/L02JHNatdtjya6Swpudb2YEHaOLHL1eRrqpjm71iGRNUNONO5adUF/9CHbSJbzhELW1UoH4NGy7n7+3bQ==",
+      "path": "sharpziplib/1.2.0",
+      "hashPath": "sharpziplib.1.2.0.nupkg.sha512"
     },
     "StackExchange.Redis/2.0.519": {
       "type": "package",

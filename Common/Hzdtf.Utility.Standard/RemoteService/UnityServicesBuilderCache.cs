@@ -69,7 +69,7 @@ namespace Hzdtf.Utility.Standard.RemoteService
         /// <param name="path">路径</param>
         /// <param name="tag">标签</param>
         /// <returns>生成地址任务</returns>
-        public async Task<string> BuilderAsync(string serviceName, string path, string tag = null)
+        public async Task<string> BuilderAsync(string serviceName, string path = null, string tag = null)
         {
             if (string.IsNullOrWhiteSpace(serviceName))
             {
@@ -88,7 +88,7 @@ namespace Hzdtf.Utility.Standard.RemoteService
 
             if (ser.ServicesBuilder == null)
             {
-                var serviceBuilder = servicesProvider.CreateHttpServiceBuilder(builder =>
+                var serviceBuilder = servicesProvider.CreateServiceBuilder(builder =>
                 {
                     builder.LoadBalance = ser.LoadBalance;
                     builder.ServiceName = ser.ServiceName;

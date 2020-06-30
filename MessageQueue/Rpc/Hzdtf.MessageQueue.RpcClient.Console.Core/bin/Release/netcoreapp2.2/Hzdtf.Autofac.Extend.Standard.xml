@@ -96,6 +96,11 @@
             注册中服务动作
             </summary>
         </member>
+        <member name="P:Hzdtf.Autofac.Extend.Standard.BuilderParam.IsLoadAutoMapperConfig">
+            <summary>
+            是否加载自动映射配置
+            </summary>
+        </member>
         <member name="T:Hzdtf.Autofac.Extend.Standard.ContainerBuilderExtend">
             <summary>
             容器生成器扩展类

@@ -22,7 +22,7 @@ namespace Hzdtf.Logger.Contract.Standard
         /// <param name="tags">标签</param>
         protected override void WriteStorage(string level, string msg, Exception ex = null, string source = null, params string[] tags)
         {
-            WriteStorage(GetLogContent(level, msg, ex, source, tags));
+            WriteStorage(GetLogContent(level, msg, ex, source, tags), level);
         }
 
         #endregion
@@ -33,7 +33,8 @@ namespace Hzdtf.Logger.Contract.Standard
         /// 将日志内容写入到存储设备里
         /// </summary>
         /// <param name="logContent">日志内容</param>
-        protected abstract void WriteStorage(string logContent);
+        /// <param name="level">等级</param>
+        protected abstract void WriteStorage(string logContent, string level);
 
         #endregion
 

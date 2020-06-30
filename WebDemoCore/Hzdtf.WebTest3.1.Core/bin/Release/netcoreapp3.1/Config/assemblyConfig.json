@@ -5,8 +5,7 @@
         "Hzdtf.WebTest3.1.Core"
       ],
       "Intercepteds": [
-        "Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.DisabledInterceptor",
-        "Hzdtf.BasicFunction.Service.Autofac.Standard,Hzdtf.BasicFunction.Service.Autofac.Standard.PermissionValiInterceptor"
+        "Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.DisabledInterceptor"
       ]
     },
     {

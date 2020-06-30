@@ -908,6 +908,15 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "NLog/4.7.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {}
+        }
+      },
       "NPOI/2.4.1": {
         "type": "package",
         "dependencies": {
@@ -2603,6 +2612,20 @@
           "bin/placeholder/Hzdtf.Logger.Contract.Standard.dll": {}
         }
       },
+      "Hzdtf.Logger.Integration.ENLog.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Hzdtf.Logger.Contract.Standard": "2.0.0",
+          "NLog": "4.7.2"
+        },
+        "compile": {
+          "bin/placeholder/Hzdtf.Logger.Integration.ENLog.Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hzdtf.Logger.Integration.ENLog.Standard.dll": {}
+        }
+      },
       "Hzdtf.Logger.Integration.MicrosoftLog.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -4073,6 +4096,39 @@
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "newtonsoft.json.12.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec"
+      ]
+    },
+    "NLog/4.7.2": {
+      "sha512": "tfZNTOYr0TwvJNrXsJsVdZPSgIpYN1rXHnAZAadeaIbz+v18agNCCxgZXnXQqNKNizkogJ68zYTNKavyQFWwrg==",
+      "type": "package",
+      "path": "nlog/4.7.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid44/NLog.dll",
+        "lib/monoandroid44/NLog.xml",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net40-client/NLog.dll",
+        "lib/net40-client/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/netstandard1.3/NLog.dll",
+        "lib/netstandard1.3/NLog.xml",
+        "lib/netstandard1.5/NLog.dll",
+        "lib/netstandard1.5/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "lib/sl4/NLog.dll",
+        "lib/sl4/NLog.xml",
+        "lib/sl5/NLog.dll",
+        "lib/sl5/NLog.xml",
+        "lib/wp8/NLog.dll",
+        "lib/wp8/NLog.xml",
+        "lib/xamarinios10/NLog.dll",
+        "lib/xamarinios10/NLog.xml",
+        "nlog.4.7.2.nupkg.sha512",
+        "nlog.nuspec"
       ]
     },
     "NPOI/2.4.1": {
@@ -8413,6 +8469,11 @@
       "path": "../../Logger/Hzdtf.Logger.Contract.Standard/Hzdtf.Logger.Contract.Standard.csproj",
       "msbuildProject": "../../Logger/Hzdtf.Logger.Contract.Standard/Hzdtf.Logger.Contract.Standard.csproj"
     },
+    "Hzdtf.Logger.Integration.ENLog.Standard/1.0.0": {
+      "type": "project",
+      "path": "../../Logger/Hzdtf.Logger.Integration.ENLog.Standard/Hzdtf.Logger.Integration.ENLog.Standard.csproj",
+      "msbuildProject": "../../Logger/Hzdtf.Logger.Integration.ENLog.Standard/Hzdtf.Logger.Integration.ENLog.Standard.csproj"
+    },
     "Hzdtf.Logger.Integration.MicrosoftLog.Core/1.0.0": {
       "type": "project",
       "path": "../../Logger/Hzdtf.Logger.Integration.MicrosoftLog.Core/Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj",
@@ -8453,6 +8514,7 @@
     ".NETCoreApp,Version=v3.1": [
       "Hzdtf.Authorization.Web.Core >= 2.0.0",
       "Hzdtf.Autofac.Extend.Standard >= 2.0.0",
+      "Hzdtf.Logger.Integration.ENLog.Standard >= 1.0.0",
       "Hzdtf.Logger.Integration.MicrosoftLog.Core >= 1.0.0",
       "Hzdtf.Logger.Integration.MicrosoftLog.Standard >= 1.0.0",
       "Hzdtf.Logger.Text.Impl.Standard >= 2.0.0",
@@ -8501,6 +8563,9 @@
             },
             "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj": {
               "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj"
+            },
+            "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.ENLog.Standard\\Hzdtf.Logger.Integration.ENLog.Standard.csproj": {
+              "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.ENLog.Standard\\Hzdtf.Logger.Integration.ENLog.Standard.csproj"
             },
             "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj": {
               "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj"

@@ -1763,11 +1763,6 @@
             数据
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Event.EventData.#ctor">
-            <summary>
-            构造方法
-            </summary>
-        </member>
         <member name="T:Hzdtf.Utility.Standard.Event.IEventBus">
             <summary>
             事件总线接口
@@ -3574,7 +3569,7 @@
         </member>
         <member name="F:Hzdtf.Utility.Standard.RemoteService.ServicesProviderMemory.cacheExpire">
             <summary>
-            缓存过期时间
+            缓存过期时间（单位：秒）
             </summary>
         </member>
         <member name="M:Hzdtf.Utility.Standard.RemoteService.ServicesProviderMemory.#ctor">
@@ -3606,6 +3601,14 @@
             <summary>
             释放资源
             </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.ServicesProviderMemory.GetCacheKey(System.String,System.String)">
+            <summary>
+            获取缓存键
+            </summary>
+            <param name="serviceName">服务名</param>
+            <param name="tag">标签</param>
+            <returns>缓存键</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.RemoteService.ServicesProviderMemory.Finalize">
             <summary>
@@ -4038,6 +4041,20 @@
             <summary>
             UTC当前时间
             </summary>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Utils.AppContextUtil">
+            <summary>
+            应用上下文辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.AppContextUtil.SetHttp2UnencryptedSupport(System.Boolean)">
+            <summary>
+            设置http2非加密是否支持
+            例如：GRpc如果要对http进行支持，则需要启用
+            执行此方法后，默认是启用
+            </summary>
+            <param name="enable">是否启动</param>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Utils.AssemblyUtil">
             <summary>

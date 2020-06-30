@@ -216,7 +216,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Redis.Extend.Core", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Logger.Integration.MicrosoftLog.Standard", "Logger\Hzdtf.Logger.Integration.MicrosoftLog.Standard\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj", "{96E9E9F2-8D74-4427-A152-FC27EF59EEA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hzdtf.Logger.Integration.MicrosoftLog.Core", "Logger\Hzdtf.Logger.Integration.MicrosoftLog.Core\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj", "{EA849154-E692-4B1E-8C43-07FBB685A0FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Logger.Integration.MicrosoftLog.Core", "Logger\Hzdtf.Logger.Integration.MicrosoftLog.Core\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj", "{EA849154-E692-4B1E-8C43-07FBB685A0FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hzdtf.Logger.Integration.ENLog.Standard", "Logger\Hzdtf.Logger.Integration.ENLog.Standard\Hzdtf.Logger.Integration.ENLog.Standard.csproj", "{2943C090-67F8-4657-9FCA-D328185DB7ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -504,6 +506,10 @@ Global
 		{EA849154-E692-4B1E-8C43-07FBB685A0FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA849154-E692-4B1E-8C43-07FBB685A0FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA849154-E692-4B1E-8C43-07FBB685A0FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2943C090-67F8-4657-9FCA-D328185DB7ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2943C090-67F8-4657-9FCA-D328185DB7ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2943C090-67F8-4657-9FCA-D328185DB7ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2943C090-67F8-4657-9FCA-D328185DB7ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -598,6 +604,7 @@ Global
 		{9371A4DE-E99C-4787-8AC3-DF822A0B9EBB} = {54A2AF8C-8962-4B1C-AB67-5024CBD3F7B5}
 		{96E9E9F2-8D74-4427-A152-FC27EF59EEA2} = {6D14ACBF-4A8E-463C-982C-7E54E0E82E90}
 		{EA849154-E692-4B1E-8C43-07FBB685A0FC} = {6D14ACBF-4A8E-463C-982C-7E54E0E82E90}
+		{2943C090-67F8-4657-9FCA-D328185DB7ED} = {6D14ACBF-4A8E-463C-982C-7E54E0E82E90}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0297FB00-2BBF-4140-9158-6FD32EBD51A9}

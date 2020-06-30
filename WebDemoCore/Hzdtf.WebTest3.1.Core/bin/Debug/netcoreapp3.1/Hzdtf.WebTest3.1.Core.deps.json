@@ -26,6 +26,7 @@
         "dependencies": {
           "Hzdtf.Authorization.Web.Core": "2.0.0",
           "Hzdtf.Autofac.Extend.Standard": "2.0.0",
+          "Hzdtf.Logger.Integration.ENLog.Standard": "1.0.0",
           "Hzdtf.Logger.Integration.MicrosoftLog.Core": "1.0.0",
           "Hzdtf.Logger.Integration.MicrosoftLog.Standard": "1.0.0",
           "Hzdtf.Logger.Text.Impl.Standard": "2.0.0",
@@ -1040,6 +1041,17 @@
         },
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NLog/4.7.2": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.7.2.11786"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {}
         }
       },
       "NPOI/2.4.1": {
@@ -2059,6 +2071,18 @@
         },
         "compile": {
           "Hzdtf.Logger.Contract.Standard.dll": {}
+        }
+      },
+      "Hzdtf.Logger.Integration.ENLog.Standard/1.0.0": {
+        "dependencies": {
+          "Hzdtf.Logger.Contract.Standard": "2.0.0",
+          "NLog": "4.7.2"
+        },
+        "runtime": {
+          "Hzdtf.Logger.Integration.ENLog.Standard.dll": {}
+        },
+        "compile": {
+          "Hzdtf.Logger.Integration.ENLog.Standard.dll": {}
         }
       },
       "Hzdtf.Logger.Integration.MicrosoftLog.Core/1.0.0": {
@@ -4247,6 +4271,13 @@
       "path": "newtonsoft.json/12.0.1",
       "hashPath": "newtonsoft.json.12.0.1.nupkg.sha512"
     },
+    "NLog/4.7.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tfZNTOYr0TwvJNrXsJsVdZPSgIpYN1rXHnAZAadeaIbz+v18agNCCxgZXnXQqNKNizkogJ68zYTNKavyQFWwrg==",
+      "path": "nlog/4.7.2",
+      "hashPath": "nlog.4.7.2.nupkg.sha512"
+    },
     "NPOI/2.4.1": {
       "type": "package",
       "serviceable": true,
@@ -4977,6 +5008,11 @@
       "sha512": ""
     },
     "Hzdtf.Logger.Contract.Standard/2.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hzdtf.Logger.Integration.ENLog.Standard/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

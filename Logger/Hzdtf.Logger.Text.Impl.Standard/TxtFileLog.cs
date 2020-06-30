@@ -86,7 +86,8 @@ namespace Hzdtf.Logger.Text.Impl.Standard
         /// 将日志内容写入到存储设备里
         /// </summary>
         /// <param name="logContent">日志内容</param>
-        protected override void WriteStorage(string logContent) => GetFileFullName().WriteFileContent(logContent, true);
+        /// <param name="level">等级</param>
+        protected override void WriteStorage(string logContent, string level) => GetFileFullName().WriteFileContent(logContent, true);
 
         #endregion
 

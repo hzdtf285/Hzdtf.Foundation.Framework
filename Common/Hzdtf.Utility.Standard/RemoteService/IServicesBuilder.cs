@@ -62,6 +62,6 @@ namespace Hzdtf.Utility.Standard.RemoteService
         /// </summary>
         /// <param name="path">路径</param>
         /// <returns>生成地址任务</returns>
-        Task<string> BuilderAsync(string path);
+        Task<string> BuilderAsync(string path = null);
     }
 }

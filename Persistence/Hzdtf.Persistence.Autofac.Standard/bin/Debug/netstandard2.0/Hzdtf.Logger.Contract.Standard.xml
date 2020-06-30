@@ -27,11 +27,12 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Logger.Contract.Standard.ConsoleLog.WriteStorage(System.String)">
+        <member name="M:Hzdtf.Logger.Contract.Standard.ConsoleLog.WriteStorage(System.String,System.String)">
             <summary>
             将日志内容写入到存储设备里
             </summary>
             <param name="logContent">日志内容</param>
+            <param name="level">等级</param>
         </member>
         <member name="M:Hzdtf.Logger.Contract.Standard.ConsoleLog.SectionPartitionSymbol">
             <summary>
@@ -55,11 +56,12 @@
             <param name="source">来源</param>
             <param name="tags">标签</param>
         </member>
-        <member name="M:Hzdtf.Logger.Contract.Standard.ContentLogBase.WriteStorage(System.String)">
+        <member name="M:Hzdtf.Logger.Contract.Standard.ContentLogBase.WriteStorage(System.String,System.String)">
             <summary>
             将日志内容写入到存储设备里
             </summary>
             <param name="logContent">日志内容</param>
+            <param name="level">等级</param>
         </member>
         <member name="M:Hzdtf.Logger.Contract.Standard.ContentLogBase.GetLogContent(System.String,System.String,System.Exception,System.String,System.String[])">
             <summary>

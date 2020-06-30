@@ -18,6 +18,7 @@ using Hzdtf.Logger.Text.Impl.Standard;
 using NPOI.SS.Formula.Functions;
 using Autofac.Core;
 using Hzdtf.Logger.Integration.MicrosoftLog.Core;
+using Hzdtf.Logger.Integration.ENLog.Standard;
 
 namespace Hzdtf.WebTest3._1.Core
 {
@@ -41,7 +42,7 @@ namespace Hzdtf.WebTest3._1.Core
                 builder.AddConsole();
                 builder.AddHzdtf(options =>
                 {
-                    options.ProtoLog = new TxtFileLog();
+                    options.ProtoLog = new IntegrationNLog();
                     //options.LogRecordLevel.SetRecordLevel(LogLevel.Warning.ToString());
                 });
             });
