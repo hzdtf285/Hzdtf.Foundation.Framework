@@ -1,4 +1,5 @@
 ﻿using Hzdtf.Utility.Standard.Attr;
+using Hzdtf.Utility.Standard.Data;
 using Hzdtf.Utility.Standard.RemoteService;
 using Hzdtf.Utility.Standard.SystemV2;
 using Microsoft.Extensions.Caching.Memory;
@@ -8,15 +9,14 @@ using System.Drawing.Imaging;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hzdtf.Utility.Standard.RemoteService
+namespace Hzdtf.Utility.Standard.RemoteService.Provider
 {
     /// <summary>
     /// 服务提供者内存缓存
     /// 必须手工设置原生服务提供者
     /// @ 黄振东
     /// </summary>
-    [Inject]
-    public class ServicesProviderMemory : IServicesProvider
+    public class ServicesProviderMemory : IServicesProvider, ISetObject<IServicesProvider>
     {
         /// <summary>
         /// 缓存
@@ -26,7 +26,7 @@ namespace Hzdtf.Utility.Standard.RemoteService
         /// <summary>
         /// 原生服务提供者
         /// </summary>
-        public virtual IServicesProvider ProtoServicesProvider
+        protected virtual IServicesProvider ProtoServicesProvider
         {
             get;
             set;
@@ -93,6 +93,15 @@ namespace Hzdtf.Utility.Standard.RemoteService
             {
                 ProtoServicesProvider.Dispose();
             }
+        }
+
+        /// <summary>
+        /// 设置对象
+        /// </summary>
+        /// <param name="obj">对象</param>
+        public void Set(IServicesProvider obj)
+        {
+            this.ProtoServicesProvider = obj;
         }
 
         /// <summary>

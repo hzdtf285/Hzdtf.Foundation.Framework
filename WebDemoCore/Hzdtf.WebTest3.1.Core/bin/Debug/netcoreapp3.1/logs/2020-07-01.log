@@ -1,0 +1,65 @@
+2020-07-01 22:02:44.4125 INFO eventId:0,bbaaaa1,a2
+2020-07-01 22:02:44.5117 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-07-01 22:02:44.5117 INFO eventId:0,Hosting environment: Development
+2020-07-01 22:02:44.5437 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-07-01 22:02:44.7083 ERROR eventId:UnhandledException,An unhandled exception has occurred while executing the request.
+2020-07-01 22:05:12.9939 INFO eventId:0,bbaaaa1,a2
+2020-07-01 22:05:13.1022 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-07-01 22:05:13.1030 INFO eventId:0,Hosting environment: Development
+2020-07-01 22:05:13.1030 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-07-01 22:05:16.8224 INFO eventId:0,这是一个测试日剧
+2020-07-01 22:08:06.7383 INFO eventId:0,bbaaaa1,a2
+2020-07-01 22:08:06.8342 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-07-01 22:08:06.8342 INFO eventId:0,Hosting environment: Development
+2020-07-01 22:08:06.8617 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-07-01 22:08:08.3284 INFO eventId:0,这是一个测试日剧
+2020-07-01 22:33:28.1687 INFO eventId:0,bbaaaa1,a2
+2020-07-01 22:33:28.2708 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-07-01 22:33:28.2708 INFO eventId:0,Hosting environment: Development
+2020-07-01 22:33:28.2965 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-07-01 22:33:31.0430 INFO eventId:0,这是一个测试日剧
+2020-07-01 22:34:01.6090 INFO eventId:0,bbaaaa1,a2
+2020-07-01 22:34:01.7016 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-07-01 22:34:01.7016 INFO eventId:0,Hosting environment: Development
+2020-07-01 22:34:01.7016 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-07-01 22:34:03.0188 INFO eventId:0,这是一个测试日剧
+2020-07-01 22:51:37.3438 INFO eventId:0,bbaaaa1,a2
+2020-07-01 22:51:37.4350 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-07-01 22:51:37.4350 INFO eventId:0,Hosting environment: Development
+2020-07-01 22:51:37.4350 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-07-01 22:51:43.9611 INFO eventId:0,这是一个测试日剧
+2020-07-01 22:55:48.5924 INFO eventId:0,bbaaaa1,a2
+2020-07-01 22:55:48.6890 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-07-01 22:55:48.6890 INFO eventId:0,Hosting environment: Development
+2020-07-01 22:55:48.6969 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-07-01 22:55:50.5357 INFO eventId:0,这是一个测试日剧
+2020-07-01 23:00:40.4157 INFO eventId:0,bbaaaa1,a2
+2020-07-01 23:00:40.5089 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-07-01 23:00:40.5103 INFO eventId:0,Hosting environment: Development
+2020-07-01 23:00:40.5103 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-07-01 23:00:42.0803 INFO eventId:0,这是一个测试日剧
+2020-07-01 23:03:27.2732 INFO eventId:0,bbaaaa1,a2
+2020-07-01 23:03:27.3678 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-07-01 23:03:27.3691 INFO eventId:0,Hosting environment: Development
+2020-07-01 23:03:27.3691 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-07-01 23:03:29.2285 INFO eventId:0,这是一个测试日剧
+2020-07-01 23:03:46.8400 INFO eventId:0,bbaaaa1,a2
+2020-07-01 23:03:46.9279 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-07-01 23:03:46.9279 INFO eventId:0,Hosting environment: Development
+2020-07-01 23:03:46.9357 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-07-01 23:03:48.7083 INFO eventId:0,这是一个测试日剧
+2020-07-01 23:04:02.5077 INFO eventId:0,bbaaaa1,a2
+2020-07-01 23:04:02.6249 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-07-01 23:04:02.6249 INFO eventId:0,Hosting environment: Development
+2020-07-01 23:04:02.6368 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-07-01 23:04:04.2982 INFO eventId:0,这是一个测试日剧
+2020-07-01 23:06:23.3964 INFO eventId:0,bbaaaa1,a2
+2020-07-01 23:06:23.4881 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-07-01 23:06:23.4881 INFO eventId:0,Hosting environment: Development
+2020-07-01 23:06:23.4968 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-07-01 23:06:23.6259 ERROR eventId:UnhandledException,An unhandled exception has occurred while executing the request.
+2020-07-01 23:17:09.5127 INFO eventId:0,bbaaaa1,a2
+2020-07-01 23:17:09.6285 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-07-01 23:17:09.6285 INFO eventId:0,Hosting environment: Development
+2020-07-01 23:17:09.6388 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-07-01 23:17:13.8976 INFO eventId:0,这是一个测试日剧

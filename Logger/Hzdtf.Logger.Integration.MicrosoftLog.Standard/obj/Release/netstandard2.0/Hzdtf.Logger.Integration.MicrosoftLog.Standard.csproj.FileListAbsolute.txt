@@ -11,7 +11,6 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Integration.
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Integration.MicrosoftLog.Standard\bin\Release\netstandard2.0\Hzdtf.Platform.Contract.Standard.xml
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Integration.MicrosoftLog.Standard\bin\Release\netstandard2.0\Hzdtf.Utility.Standard.pdb
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Integration.MicrosoftLog.Standard\bin\Release\netstandard2.0\Hzdtf.Utility.Standard.xml
-C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Integration.MicrosoftLog.Standard\obj\Release\netstandard2.0\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csprojAssemblyReference.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Integration.MicrosoftLog.Standard\obj\Release\netstandard2.0\Hzdtf.Logger.Integration.MicrosoftLog.Standard.AssemblyInfoInputs.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Integration.MicrosoftLog.Standard\obj\Release\netstandard2.0\Hzdtf.Logger.Integration.MicrosoftLog.Standard.AssemblyInfo.cs
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Integration.MicrosoftLog.Standard\obj\Release\netstandard2.0\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj.CoreCompileInputs.cache

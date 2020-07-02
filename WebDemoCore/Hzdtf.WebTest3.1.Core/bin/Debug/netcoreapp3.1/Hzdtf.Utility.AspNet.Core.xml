@@ -137,21 +137,89 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesBuilderCacheExtensions.AddUnityServicesBuilderCache(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)">
+        <member name="M:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesBuilderCacheExtensions.AddUnityServicesBuilderCache(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hzdtf.Utility.Standard.RemoteService.UnitServiceBuilderOptions})">
             <summary>
             添加统一服务生成器缓存
             </summary>
             <param name="services">服务</param>
-            <param name="unityServicesOptionsJsonFile">统一服务选项配置JSON文件</param>
+            <param name="options">配置回调</param>
             <returns>服务</returns>
         </member>
-        <member name="M:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesBuilderCacheExtensions.UseUnityServicesBuilderCache(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Action{Hzdtf.Utility.Standard.RemoteService.UnityServicesOptions})">
+        <member name="M:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesBuilderCacheExtensions.AddUnityServicesBuilderConfigure(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hzdtf.Utility.Standard.RemoteService.UnitServiceBuilderOptions},System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder})">
             <summary>
-            使用统一服务生成器缓存
+            添加统一服务生成器微软配置
             </summary>
-            <param name="app">应用</param>
-            <param name="config">配置</param>
-            <returns>应用</returns>
+            <param name="services">服务</param>
+            <param name="options">配置回调</param>
+            <param name="beforeConfigBuilder">生成配置前回调</param>
+            <returns>服务</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesBuilderCacheExtensions.AddUnityServicesBuilder(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{Hzdtf.Utility.Standard.RemoteService.UnitServiceBuilderOptions,Hzdtf.Utility.Standard.RemoteService.Options.IUnityServicesOptions},System.Action{Hzdtf.Utility.Standard.RemoteService.UnitServiceBuilderOptions})">
+            <summary>
+            添加统一服务生成器
+            </summary>
+            <param name="services">服务</param>
+            <param name="callbackServiceOptions">回调服务配置</param>
+            <param name="options">配置回调</param>
+            <returns>服务</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesOptionsConfiguration">
+            <summary>
+            统一服务配置来自微软配置对象里
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesOptionsConfiguration.configuration">
+            <summary>
+            配置
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesOptionsConfiguration.beforeConfigurationBuilder">
+            <summary>
+            配置生成前回调
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesOptionsConfiguration.services">
+            <summary>
+            服务配置数组，目的是为了从配置里读取时，能将部分对象还原
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesOptionsConfiguration.syncServices">
+            <summary>
+            同步服务配置列表
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesOptionsConfiguration.#ctor(System.String,System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder})">
+            <summary>
+            构造方法
+            </summary>
+            <param name="jsonFile">json文件</param>
+            <param name="beforeConfigurationBuilder">配置生成前回调</param>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesOptionsConfiguration.#ctor(Hzdtf.Utility.Standard.RemoteService.Options.UnityServicesOptions,System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder})">
+            <summary>
+            构造方法
+            </summary>
+            <param name="options">配置</param>
+            <param name="beforeConfigurationBuilder">配置生成前回调</param>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesOptionsConfiguration.Reader">
+            <summary>
+            读取
+            </summary>
+            <returns>数据</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesOptionsConfiguration.WriteToStorage(Hzdtf.Utility.Standard.RemoteService.Options.UnityServicesOptions)">
+            <summary>
+            写入到存储里
+            </summary>
+            <param name="data">数据</param>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesOptionsConfiguration.SetServiceOptions(Hzdtf.Utility.Standard.RemoteService.Options.ServicesOptions[])">
+            <summary>
+            设置服务配置数组
+            </summary>
+            <param name="services">服务配置数组</param>
         </member>
     </members>
 </doc>

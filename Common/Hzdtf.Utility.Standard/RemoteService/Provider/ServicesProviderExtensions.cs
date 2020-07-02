@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Hzdtf.Utility.Standard.RemoteService.Builder;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Hzdtf.Utility.Standard.RemoteService
+namespace Hzdtf.Utility.Standard.RemoteService.Provider
 {
     /// <summary>
     /// 服务提供者扩展类

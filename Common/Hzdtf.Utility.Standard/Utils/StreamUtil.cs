@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using System.Threading;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Hzdtf.Utility.Standard.Utils
 {
@@ -350,5 +351,57 @@ namespace Hzdtf.Utility.Standard.Utils
         /// <param name="fileName">文件名</param>
         /// <returns>文件锁名</returns>
         public static string GetFileLockName(this string fileName) => $"OperationFile:{fileName.Replace("\\", "/").ToLower()}";
+
+        /// <summary>
+        /// 将对象序列化为二进制流，对象必须标识[Serializable]特性
+        /// </summary>
+        /// <param name="obj">对象</param>
+        /// <returns>流</returns>
+        public static Stream SerializeToStream(this object obj)
+        {
+            if (obj == null)
+            {
+                return null;
+            }
+
+            var formatter = new BinaryFormatter();
+            var stream = new MemoryStream();
+            formatter.Serialize(stream, obj);
+
+            return stream;
+        }
+
+        /// <summary>
+        /// 将流反序列化为对象，对象必须标识[Serializable]特性
+        /// </summary>
+        /// <param name="stream">流</param>
+        /// <returns>对象</returns>
+        public static object DeserializeToObject(this Stream stream)
+        {
+            if (stream == null)
+            {
+                return null;
+            }
+
+            var formatter = new BinaryFormatter();
+            stream.Position = 0;
+
+            return formatter.Deserialize(stream);
+        }
+        
+        /// <summary>
+        /// 将字符串以utf8写入到流中
+        /// </summary>
+        /// <param name="str">字符串</param>
+        /// <returns>流</returns>
+        public static Stream WriteStream(string str)
+        {
+            if (str == null)
+            {
+                return null;
+            }
+
+            return new MemoryStream(Encoding.UTF8.GetBytes(str));
+        }
     }
 }

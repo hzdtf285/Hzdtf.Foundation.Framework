@@ -1,17 +1,18 @@
 ﻿using Hzdtf.Utility.Standard.Attr;
 using Hzdtf.Utility.Standard.LoadBalance;
+using Hzdtf.Utility.Standard.RemoteService.Provider;
+using Hzdtf.Utility.Standard.Utils;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hzdtf.Utility.Standard.RemoteService
+namespace Hzdtf.Utility.Standard.RemoteService.Builder
 {
     /// <summary>
     /// Http服务生成
     /// @ 黄振东
     /// </summary>
-    [Inject]
     public class HttpServicesBuilder : IServicesBuilder
     {
         /// <summary>
@@ -67,6 +68,11 @@ namespace Hzdtf.Utility.Standard.RemoteService
         public async Task<string> BuilderAsync(string path = null)
         {
             var addresses = await ServiceProvider.GetAddresses(ServiceName, Tag);
+            if (addresses.IsNullOrLength0())
+            {
+                throw new Exception($"获取服务[{ServiceName}],标签[{Tag}]的地址列表为空");
+            }
+
             var address = LoadBalance.Resolve(addresses);
             var baseUri = new Uri($"{Sheme}://{address}");
             if (string.IsNullOrWhiteSpace(path))

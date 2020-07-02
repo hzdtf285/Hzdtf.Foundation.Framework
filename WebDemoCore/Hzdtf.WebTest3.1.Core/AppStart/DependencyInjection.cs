@@ -29,7 +29,6 @@ namespace Hzdtf.WebTest3_1.Core.AppStart
                 RegisteringServiceAction = () =>
                 {
                     builder.RegisterType<AutofacInstance>().As<IInstance>().AsSelf().PropertiesAutowired().SingleInstance();
-
                 }
             });
             builder.RegisterBuildCallback(container =>

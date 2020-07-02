@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing.Printing;
 using System.Text;
 
 namespace Hzdtf.Utility.Standard.Utils
@@ -9,7 +10,7 @@ namespace Hzdtf.Utility.Standard.Utils
     /// @ 黄振东
     /// </summary>
     public static class AppContextUtil
-    {
+    {        
         /// <summary>
         /// 设置http2非加密是否支持
         /// 例如：GRpc如果要对http进行支持，则需要启用

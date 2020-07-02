@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Hzdtf.Utility.Standard.RemoteService;
+using Hzdtf.Utility.Standard.RemoteService.Builder;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -19,9 +20,12 @@ namespace Hzdtf.WebTest3._1.Core.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        private readonly IUnityServicesBuilder unityServicesBuilder;
+
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IUnityServicesBuilder unityServicesBuilder)
         {
             _logger = logger;
+            this.unityServicesBuilder = unityServicesBuilder;
         }
 
         [HttpGet]
@@ -29,7 +33,7 @@ namespace Hzdtf.WebTest3._1.Core.Controllers
         {
             _logger.LogInformation(new Exception("异常"), "这是一个测试日剧");
 
-            UnityServicesBuilderCache.SetOptionsJsonFile();
+            var url = unityServicesBuilder.BuilderAsync("ServiceExampleA", "/Health", "M1").Result;
 
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast

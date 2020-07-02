@@ -56,7 +56,7 @@ namespace Hzdtf.Rabbit.Impl.Standard.MessageQueue
         /// <returns>交换机信息列表</returns>
         protected override IList<RabbitExchangeInfo> QueryExchangeInfosFromSource()
         {
-            return JsonUtil.Deserialize<IList<RabbitExchangeInfo>>(File.ReadAllText(jsonFileName));
+            return JsonUtil.DeserializeFromFile<IList<RabbitExchangeInfo>>(jsonFileName);
         }
 
         #endregion

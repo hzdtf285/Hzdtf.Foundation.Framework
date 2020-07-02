@@ -19,6 +19,7 @@ using NPOI.SS.Formula.Functions;
 using Autofac.Core;
 using Hzdtf.Logger.Integration.MicrosoftLog.Core;
 using Hzdtf.Logger.Integration.ENLog.Standard;
+using Hzdtf.Utility.AspNet.Core.RemoteService;
 
 namespace Hzdtf.WebTest3._1.Core
 {
@@ -48,6 +49,9 @@ namespace Hzdtf.WebTest3._1.Core
             });
 
             services.AddApiExceptionHandle();
+
+            //services.AddUnityServicesBuilderCache();
+            services.AddUnityServicesBuilderConfigure();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

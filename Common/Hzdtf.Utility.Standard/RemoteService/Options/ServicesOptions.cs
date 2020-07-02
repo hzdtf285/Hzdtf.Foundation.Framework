@@ -3,18 +3,24 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Hzdtf.Utility.Standard.Utils;
+using Hzdtf.Utility.Standard.RemoteService.Builder;
+using Newtonsoft.Json;
+using MessagePack;
 
-namespace Hzdtf.Utility.Standard.RemoteService
+namespace Hzdtf.Utility.Standard.RemoteService.Options
 {
     /// <summary>
     /// 服务基本选项配置
     /// @ 黄振东
     /// </summary>
+    [MessagePackObject]
     public class ServicesBasicOptions
     {
         /// <summary>
         /// 负载均衡模式
         /// </summary>
+        [JsonProperty("loadBalanceMode")]
+        [MessagePack.Key("loadBalanceMode")]
         public LoadBalanceMode? LoadBalanceMode
         {
             get;
@@ -24,6 +30,8 @@ namespace Hzdtf.Utility.Standard.RemoteService
         /// <summary>
         /// 方案
         /// </summary>
+        [JsonProperty("sheme")]
+        [MessagePack.Key("sheme")]
         public string Sheme
         {
             get;
@@ -33,6 +41,8 @@ namespace Hzdtf.Utility.Standard.RemoteService
         /// <summary>
         /// 标签
         /// </summary>
+        [JsonProperty("tag")]
+        [MessagePack.Key("tag")]
         public string Tag
         {
             get;
@@ -44,11 +54,14 @@ namespace Hzdtf.Utility.Standard.RemoteService
     /// 服务选项配置
     /// @ 黄振东
     /// </summary>
+    [MessagePackObject]
     public class ServicesOptions : ServicesBasicOptions
     {
         /// <summary>
         /// 服务名
         /// </summary>
+        [JsonProperty("serviceName")]
+        [MessagePack.Key("serviceName")]
         public string ServiceName
         {
             get;
@@ -58,6 +71,8 @@ namespace Hzdtf.Utility.Standard.RemoteService
         /// <summary>
         /// 负载均衡
         /// </summary>
+        [JsonIgnore]
+        [IgnoreMember]
         public ILoadBalance LoadBalance
         {
             get;
@@ -67,6 +82,8 @@ namespace Hzdtf.Utility.Standard.RemoteService
         /// <summary>
         /// 服务生成器
         /// </summary>
+        [JsonIgnore]
+        [IgnoreMember]
         public IServicesBuilder ServicesBuilder
         {
             get;
@@ -78,6 +95,7 @@ namespace Hzdtf.Utility.Standard.RemoteService
     /// 全局服务配置选项
     /// @ 黄振东
     /// </summary>
+    [MessagePackObject]
     public class GlobalServicesOptions : ServicesBasicOptions
     {
     }
@@ -86,11 +104,14 @@ namespace Hzdtf.Utility.Standard.RemoteService
     /// 统一服务选项配置
     /// @ 黄振东
     /// </summary>
+    [MessagePackObject]
     public class UnityServicesOptions
     {
         /// <summary>
         /// 服务配置数组
         /// </summary>
+        [JsonProperty("services")]
+        [MessagePack.Key("services")]
         public ServicesOptions[] Services
         {
             get;
@@ -100,6 +121,8 @@ namespace Hzdtf.Utility.Standard.RemoteService
         /// <summary>
         /// 全局配置
         /// </summary>
+        [JsonProperty("globalConfiguration")]
+        [MessagePack.Key("globalConfiguration")]
         public GlobalServicesOptions GlobalConfiguration
         {
             get;

@@ -1,9 +1,9 @@
 ﻿using Hzdtf.Utility.Standard.RemoteService;
-using Microsoft.AspNetCore.Builder;
+using Hzdtf.Utility.Standard.RemoteService.Builder;
+using Hzdtf.Utility.Standard.RemoteService.Options;
+using Hzdtf.Utility.Standard.RemoteService.Provider;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -20,36 +20,87 @@ namespace Hzdtf.Utility.AspNet.Core.RemoteService
         /// 添加统一服务生成器缓存
         /// </summary>
         /// <param name="services">服务</param>
-        /// <param name="unityServicesOptionsJsonFile">统一服务选项配置JSON文件</param>
+        /// <param name="options">配置回调</param>
         /// <returns>服务</returns>
-        public static IServiceCollection AddUnityServicesBuilderCache(this IServiceCollection services, string unityServicesOptionsJsonFile = "Config/serviceBuilderConfig.json")
+        public static IServiceCollection AddUnityServicesBuilderCache(this IServiceCollection services, Action<UnitServiceBuilderOptions> options = null)
         {
-            var config = new ConfigurationBuilder().AddJsonFile(unityServicesOptionsJsonFile).Build();
-            services.Configure<UnityServicesOptions>(config);
-
-            return services;
+            return services.AddUnityServicesBuilder(builderOptions =>
+            {
+                if (builderOptions.ServicesOptions == null)
+                {
+                    return new UnityServicesOptionsCache(builderOptions.ServiceBuilderConfigJsonFile);
+                }
+                else
+                {
+                    return new UnityServicesOptionsCache(builderOptions.ServicesOptions);
+                }    
+            }, options);
         }
 
         /// <summary>
-        /// 使用统一服务生成器缓存
+        /// 添加统一服务生成器微软配置
         /// </summary>
-        /// <param name="app">应用</param>
-        /// <param name="config">配置</param>
-        /// <returns>应用</returns>
-        public static IApplicationBuilder UseUnityServicesBuilderCache(this IApplicationBuilder app, Action<UnityServicesOptions> config = null)
+        /// <param name="services">服务</param>
+        /// <param name="options">配置回调</param>
+        /// <param name="beforeConfigBuilder">生成配置前回调</param>
+        /// <returns>服务</returns>
+        public static IServiceCollection AddUnityServicesBuilderConfigure(this IServiceCollection services, Action<UnitServiceBuilderOptions> options = null, Action<IConfigurationBuilder> beforeConfigBuilder = null)
         {
-            // 获取主机的生命周期管理对象
-            var lifetime = app.ApplicationServices.GetRequiredService<IHostApplicationLifetime>();
-            // 获取服务配置对象
-            var serviceOptions = app.ApplicationServices.GetRequiredService<IOptions<UnityServicesOptions>>().Value;
-            if (config != null)
+            return services.AddUnityServicesBuilder(builderOptions =>
             {
-                config(serviceOptions);
+                UnityServicesOptionsConfiguration service = null;
+                if (builderOptions.ServicesOptions == null)
+                {
+                    service = new UnityServicesOptionsConfiguration(builderOptions.ServiceBuilderConfigJsonFile, beforeConfigBuilder);
+                }
+                else
+                {
+                    service = new UnityServicesOptionsConfiguration(builderOptions.ServicesOptions, beforeConfigBuilder);
+                }
+
+                return service;
+            }, options);
+        }
+
+        /// <summary>
+        /// 添加统一服务生成器
+        /// </summary>
+        /// <param name="services">服务</param>
+        /// <param name="callbackServiceOptions">回调服务配置</param>
+        /// <param name="options">配置回调</param>
+        /// <returns>服务</returns>
+        private static IServiceCollection AddUnityServicesBuilder(this IServiceCollection services, Func<UnitServiceBuilderOptions, IUnityServicesOptions> callbackServiceOptions, Action<UnitServiceBuilderOptions> options = null)
+        {
+            var builderOptions = new UnitServiceBuilderOptions();
+            if (options != null)
+            {
+                options(builderOptions);
             }
 
-            UnityServicesBuilderCache.SetOptions(serviceOptions);
+            if (builderOptions.UnityServicesOptions == null)
+            {
+                builderOptions.UnityServicesOptions = callbackServiceOptions(builderOptions);
+            }
 
-            return app;
+            services.AddSingleton<IUnityServicesOptions>(builderOptions.UnityServicesOptions);
+            if (builderOptions.UnityServicesBuilder == null)
+            {
+                services.AddSingleton<IUnityServicesBuilder, UnityServicesBuilder>();
+            }
+            else
+            {
+                services.AddSingleton<IUnityServicesBuilder>(builderOptions.UnityServicesBuilder);
+            }
+            if (builderOptions.ServiceProvider == null)
+            {
+                services.AddSingleton<IServicesProvider, ServicesProviderMemory>();
+            }
+            else
+            {
+                services.AddSingleton<IServicesProvider>(builderOptions.ServiceProvider);
+            }
+            
+            return services;
         }
     }
 }

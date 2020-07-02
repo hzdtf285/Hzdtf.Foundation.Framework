@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hzdtf.Utility.Standard.RemoteService
+namespace Hzdtf.Utility.Standard.RemoteService.Builder
 {
     /// <summary>
     /// 统一服务生成器接口

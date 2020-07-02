@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NPOI.SS.Formula.Functions;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -13,7 +14,7 @@ namespace Hzdtf.Utility.Standard.LoadBalance
         /// <summary>
         /// 随机
         /// </summary>
-        private readonly Random random = new Random();
+        private Random random = new Random();
 
         /// <summary>
         /// 获取索引

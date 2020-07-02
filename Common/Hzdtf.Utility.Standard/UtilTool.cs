@@ -22,6 +22,31 @@ namespace Hzdtf.Utility.Standard
         } = -1;
 
         /// <summary>
+        /// 同步当前应用程序名称
+        /// </summary>
+        private static readonly object syncCurrApplicationName = new object();
+
+        /// <summary>
+        /// 当前应用程序名称
+        /// </summary>
+        private static string currApplicationName = null;
+
+        /// <summary>
+        /// 当前应用程序名称
+        /// </summary>
+        public static string CurrApplicationName
+        {
+            get => currApplicationName;
+            set
+            {
+                lock (syncCurrApplicationName)
+                {
+                    currApplicationName = value;
+                }
+            }
+        }
+
+        /// <summary>
         /// 当前环境类型
         /// </summary>
         public static EnvironmentType CurrEnvironmentType

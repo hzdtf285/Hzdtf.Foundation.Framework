@@ -1,10 +1,11 @@
 ﻿using Hzdtf.Utility.Standard.LoadBalance;
+using Hzdtf.Utility.Standard.RemoteService.Provider;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hzdtf.Utility.Standard.RemoteService
+namespace Hzdtf.Utility.Standard.RemoteService.Builder
 {
     /// <summary>
     /// 服务生成器接口

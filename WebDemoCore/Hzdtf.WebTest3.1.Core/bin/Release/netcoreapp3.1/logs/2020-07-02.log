@@ -1,0 +1,13 @@
+2020-07-02 01:37:25.5309 INFO eventId:0,bbaaaa1,a2
+2020-07-02 01:37:25.6416 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-07-02 01:37:25.6416 INFO eventId:0,Hosting environment: Development
+2020-07-02 01:37:25.6416 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-07-02 01:37:25.7186 INFO eventId:0,这是一个测试日剧
+2020-07-02 01:37:25.7954 ERROR eventId:UnhandledException,An unhandled exception has occurred while executing the request.
+2020-07-02 01:37:51.8611 INFO eventId:0,bbaaaa1,a2
+2020-07-02 02:07:22.8781 INFO eventId:0,bbaaaa1,a2
+2020-07-02 02:07:22.9956 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-07-02 02:07:22.9956 INFO eventId:0,Hosting environment: Development
+2020-07-02 02:07:22.9956 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-07-02 02:07:23.0824 INFO eventId:0,这是一个测试日剧
+2020-07-02 02:07:23.1583 ERROR eventId:UnhandledException,An unhandled exception has occurred while executing the request.
