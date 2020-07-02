@@ -1077,6 +1077,93 @@
             <param name="value">值</param>
             <returns>新值</returns>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.Data.Config.FileConfigurationBase`1">
+            <summary>
+            文件配置基类
+            @ 黄振东
+            </summary>
+            <typeparam name="T">数据类型</typeparam>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Data.Config.FileConfigurationBase`1.#ctor(System.String,System.Boolean)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="file">文件</param>
+            <param name="isExecWrite">是否执行写入</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Data.Config.FileConfigurationBase`1.#ctor(`0,System.Boolean)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="data">数据</param>
+            <param name="isExecWrite">是否执行写入</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Data.Config.FileConfigurationBase`1.Reader">
+            <summary>
+            读取
+            </summary>
+            <returns>数据</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Data.Config.FileConfigurationBase`1.Write(`0)">
+            <summary>
+            写入
+            </summary>
+            <param name="data">数据</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Data.Config.FileConfigurationBase`1.InitFile(System.String)">
+            <summary>
+            初始化文件
+            </summary>
+            <param name="file">文件</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Data.Config.FileConfigurationBase`1.WriteToStorage(`0)">
+            <summary>
+            写入到存储里
+            </summary>
+            <param name="data">数据</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Data.Config.FileConfigurationBase`1.ConvertFromFile(System.String)">
+            <summary>
+            从文件里转换为数据
+            </summary>
+            <param name="file">文件</param>
+            <returns>数据</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Data.Config.IConfigurationData`1">
+            <summary>
+            配置数据接口
+            @ 黄振东
+            </summary>
+            <typeparam name="T">数据类型</typeparam>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Data.Config.JsonFileConfigurationBase`1">
+            <summary>
+            Json文件配置基类
+            @ 黄振东
+            </summary>
+            <typeparam name="T">数据类型</typeparam>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Data.Config.JsonFileConfigurationBase`1.#ctor(System.String,System.Boolean)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="file">文件</param>
+            <param name="isExecWrite">是否执行写入</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Data.Config.JsonFileConfigurationBase`1.#ctor(`0,System.Boolean)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="data">数据</param>
+            <param name="isExecWrite">是否执行写入</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Data.Config.JsonFileConfigurationBase`1.ConvertFromFile(System.String)">
+            <summary>
+            从文件里转换为数据
+            </summary>
+            <param name="file">文件</param>
+            <returns>数据</returns>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Data.DataHandler">
             <summary>
             数据处理委托
@@ -2172,18 +2259,6 @@
             <param name="array">数组</param>
             <returns>元素</returns>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.LoadBalance.LoadBalanceBase.SaveStateToMemento">
-            <summary>
-            保存状态到备忘录
-            </summary>
-            <returns>备忘录</returns>
-        </member>
-        <member name="M:Hzdtf.Utility.Standard.LoadBalance.LoadBalanceBase.RestoreStateFromMemento(Hzdtf.Utility.Standard.Memorandum.IMemento{System.Object})">
-            <summary>
-            从备忘录里还原状态
-            </summary>
-            <param name="memento">备忘录</param>
-        </member>
         <member name="M:Hzdtf.Utility.Standard.LoadBalance.LoadBalanceBase.GetIndex(System.String[])">
             <summary>
             获取索引
@@ -2256,18 +2331,6 @@
             <param name="array">数组</param>
             <returns>索引</returns>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.LoadBalance.RandomLoadBalance.SaveStateToMemento">
-            <summary>
-            保存状态到备忘录
-            </summary>
-            <returns>备忘录</returns>
-        </member>
-        <member name="M:Hzdtf.Utility.Standard.LoadBalance.RandomLoadBalance.RestoreStateFromMemento(Hzdtf.Utility.Standard.Memorandum.IMemento{System.Object})">
-            <summary>
-            从备忘录里还原状态
-            </summary>
-            <param name="memento">备忘录</param>
-        </member>
         <member name="T:Hzdtf.Utility.Standard.LoadBalance.RoundRobinLoadBalance">
             <summary>
             轮询负载均衡
@@ -2290,18 +2353,6 @@
             </summary>
             <param name="array">数组</param>
             <returns>索引</returns>
-        </member>
-        <member name="M:Hzdtf.Utility.Standard.LoadBalance.RoundRobinLoadBalance.SaveStateToMemento">
-            <summary>
-            保存状态到备忘录
-            </summary>
-            <returns>备忘录</returns>
-        </member>
-        <member name="M:Hzdtf.Utility.Standard.LoadBalance.RoundRobinLoadBalance.RestoreStateFromMemento(Hzdtf.Utility.Standard.Memorandum.IMemento{System.Object})">
-            <summary>
-            从备忘录里还原状态
-            </summary>
-            <param name="memento">备忘录</param>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Memorandum.CareTaker`1">
             <summary>
@@ -3735,17 +3786,19 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.RemoteService.Options.UnitServicesOptionsBase.#ctor(System.String)">
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.Options.UnitServicesOptionsBase.#ctor(System.String,System.Boolean)">
             <summary>
             构造方法
             </summary>
             <param name="jsonFile">json文件</param>
+            <param name="isExecWrite">是否执行写入</param>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.RemoteService.Options.UnitServicesOptionsBase.#ctor(Hzdtf.Utility.Standard.RemoteService.Options.UnityServicesOptions)">
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.Options.UnitServicesOptionsBase.#ctor(Hzdtf.Utility.Standard.RemoteService.Options.UnityServicesOptions,System.Boolean)">
             <summary>
             构造方法
             </summary>
             <param name="options">配置</param>
+            <param name="isExecWrite">是否执行写入</param>
         </member>
         <member name="M:Hzdtf.Utility.Standard.RemoteService.Options.UnitServicesOptionsBase.Reader">
             <summary>

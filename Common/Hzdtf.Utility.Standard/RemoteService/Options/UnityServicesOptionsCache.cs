@@ -1,4 +1,5 @@
 ﻿using Hzdtf.Utility.Standard.Attr;
+using Hzdtf.Utility.Standard.Data.Config;
 using Hzdtf.Utility.Standard.RemoteService.Options;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace Hzdtf.Utility.Standard.RemoteService.Options
     /// 统一服务配置缓存
     /// @ 黄振东
     /// </summary>
-    public class UnityServicesOptionsCache : UnitServicesOptionsBase
+    public class UnityServicesOptionsCache : JsonFileConfigurationBase<UnityServicesOptions>, IUnityServicesOptions
     {
         /// <summary>
         /// 同步统一服务选项配置

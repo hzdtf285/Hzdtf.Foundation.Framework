@@ -4,6 +4,49 @@
         <name>Hzdtf.Utility.AspNet.Core</name>
     </assembly>
     <members>
+        <member name="T:Hzdtf.Utility.AspNet.Core.Config.JsonFileMicrosoftConfigurationBase`1">
+            <summary>
+            Json文件微软配置基类
+            @ 黄振东
+            </summary>
+            <typeparam name="T">数据类型</typeparam>
+        </member>
+        <member name="F:Hzdtf.Utility.AspNet.Core.Config.JsonFileMicrosoftConfigurationBase`1.configuration">
+            <summary>
+            配置
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.AspNet.Core.Config.JsonFileMicrosoftConfigurationBase`1.beforeConfigurationBuilder">
+            <summary>
+            配置生成前回调
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.Config.JsonFileMicrosoftConfigurationBase`1.#ctor(System.String,System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder})">
+            <summary>
+            构造方法
+            </summary>
+            <param name="jsonFile">json文件</param>
+            <param name="beforeConfigurationBuilder">配置生成前回调</param>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.Config.JsonFileMicrosoftConfigurationBase`1.#ctor(`0,System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder})">
+            <summary>
+            构造方法
+            </summary>
+            <param name="data">数据</param>
+            <param name="beforeConfigurationBuilder">配置生成前回调</param>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.Config.JsonFileMicrosoftConfigurationBase`1.Reader">
+            <summary>
+            读取
+            </summary>
+            <returns>数据</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.Config.JsonFileMicrosoftConfigurationBase`1.WriteToStorage(`0)">
+            <summary>
+            写入到存储里
+            </summary>
+            <param name="data">数据</param>
+        </member>
         <member name="T:Hzdtf.Utility.AspNet.Core.ExceptionHandle.ApiExceptionHandleMiddleware">
             <summary>
             API异常处理中间件
@@ -167,16 +210,6 @@
             <summary>
             统一服务配置来自微软配置对象里
             @ 黄振东
-            </summary>
-        </member>
-        <member name="F:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesOptionsConfiguration.configuration">
-            <summary>
-            配置
-            </summary>
-        </member>
-        <member name="F:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesOptionsConfiguration.beforeConfigurationBuilder">
-            <summary>
-            配置生成前回调
             </summary>
         </member>
         <member name="F:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesOptionsConfiguration.services">

@@ -1,4 +1,4 @@
-﻿using Hzdtf.Utility.Standard.Data;
+﻿using Hzdtf.Utility.Standard.Data.Config;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,7 +9,7 @@ namespace Hzdtf.Utility.Standard.RemoteService.Options
     /// 统一服务配置接口
     /// @ 黄振东
     /// </summary>
-    public interface IUnityServicesOptions : IReader<UnityServicesOptions>, IWrite<UnityServicesOptions>
+    public interface IUnityServicesOptions : IConfigurationData<UnityServicesOptions>
     {
     }
 }

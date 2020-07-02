@@ -33,7 +33,7 @@ namespace Hzdtf.Utility.AspNet.Core.RemoteService
                 else
                 {
                     return new UnityServicesOptionsCache(builderOptions.ServicesOptions);
-                }    
+                }
             }, options);
         }
 

@@ -1,5 +1,4 @@
-﻿using Hzdtf.Utility.Standard.Attr;
-using Hzdtf.Utility.Standard.Memorandum;
+﻿using Hzdtf.Utility.AspNet.Core.Config;
 using Hzdtf.Utility.Standard.RemoteService.Options;
 using Hzdtf.Utility.Standard.Utils;
 using Microsoft.Extensions.Configuration;
@@ -14,18 +13,8 @@ namespace Hzdtf.Utility.AspNet.Core.RemoteService
     /// 统一服务配置来自微软配置对象里
     /// @ 黄振东
     /// </summary>
-    public class UnityServicesOptionsConfiguration : UnitServicesOptionsBase
+    public class UnityServicesOptionsConfiguration : JsonFileMicrosoftConfigurationBase<UnityServicesOptions>, IUnityServicesOptions
     {
-        /// <summary>
-        /// 配置
-        /// </summary>
-        private IConfiguration configuration;
-
-        /// <summary>
-        /// 配置生成前回调
-        /// </summary>
-        private readonly Action<IConfigurationBuilder> beforeConfigurationBuilder;
-
         /// <summary>
         /// 服务配置数组，目的是为了从配置里读取时，能将部分对象还原
         /// </summary>
@@ -42,10 +31,8 @@ namespace Hzdtf.Utility.AspNet.Core.RemoteService
         /// <param name="jsonFile">json文件</param>
         /// <param name="beforeConfigurationBuilder">配置生成前回调</param>
         public UnityServicesOptionsConfiguration(string jsonFile = "Config/serviceBuilderConfig.json", Action<IConfigurationBuilder> beforeConfigurationBuilder = null) 
-            : base(jsonFile, false)
+            : base(jsonFile, beforeConfigurationBuilder)
         {
-            this.beforeConfigurationBuilder = beforeConfigurationBuilder;
-            InitJsonFile(jsonFile);
         }
 
         /// <summary>
@@ -54,10 +41,8 @@ namespace Hzdtf.Utility.AspNet.Core.RemoteService
         /// <param name="options">配置</param>
         /// <param name="beforeConfigurationBuilder">配置生成前回调</param>
         public UnityServicesOptionsConfiguration(UnityServicesOptions options, Action<IConfigurationBuilder> beforeConfigurationBuilder = null)
-            : base(options, false)
+            : base(options, beforeConfigurationBuilder)
         {
-            this.beforeConfigurationBuilder = beforeConfigurationBuilder;
-            Write(options);
         }
 
         /// <summary>
@@ -66,7 +51,7 @@ namespace Hzdtf.Utility.AspNet.Core.RemoteService
         /// <returns>数据</returns>
         public override UnityServicesOptions Reader()
         {
-            var options = configuration.Get<UnityServicesOptions>();
+            var options = base.Reader();
             options.Reset();
             if (options != null && !options.Services.IsNullOrLength0() && !services.IsNullOrLength0())
             {
@@ -93,17 +78,7 @@ namespace Hzdtf.Utility.AspNet.Core.RemoteService
         protected override void WriteToStorage(UnityServicesOptions data)
         {
             SetServiceOptions(data.Services);
-
-            var jsonStr = JsonUtil.SerializeIgnoreNull(data);
-            using (var stream = StreamUtil.WriteStream(jsonStr))
-            {
-                var builder = new ConfigurationBuilder().AddJsonStream(stream);
-                if (beforeConfigurationBuilder != null)
-                {
-                    beforeConfigurationBuilder(builder);
-                }
-                configuration = builder.Build();
-            }
+            base.WriteToStorage(data);
         }
 
         /// <summary>
