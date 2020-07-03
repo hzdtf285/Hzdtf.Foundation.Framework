@@ -189,6 +189,11 @@
             释放资源
             </summary>
         </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.Finalize">
+            <summary>
+            析构方法
+            </summary>
+        </member>
         <member name="T:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection">
             <summary>
             Rabbit连接
@@ -383,6 +388,11 @@
             </summary>
             <param name="o">引发对象</param>
             <param name="e">对象事件参数</param>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection.Finalize">
+            <summary>
+            析构方法
+            </summary>
         </member>
         <member name="T:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnectionStringParse">
             <summary>

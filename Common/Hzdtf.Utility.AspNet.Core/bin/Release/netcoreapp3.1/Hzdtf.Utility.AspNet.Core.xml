@@ -174,13 +174,13 @@
             <param name="port">端口</param>
             <returns>应用生成器</returns>
         </member>
-        <member name="T:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesBuilderCacheExtensions">
+        <member name="T:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesBuilderExtensions">
             <summary>
-            统一服务生成器缓存扩展类
+            统一服务生成器扩展类
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesBuilderCacheExtensions.AddUnityServicesBuilderCache(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hzdtf.Utility.Standard.RemoteService.UnitServiceBuilderOptions})">
+        <member name="M:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesBuilderExtensions.AddUnityServicesBuilderCache(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hzdtf.Utility.Standard.RemoteService.UnitServiceBuilderOptions})">
             <summary>
             添加统一服务生成器缓存
             </summary>
@@ -188,7 +188,7 @@
             <param name="options">配置回调</param>
             <returns>服务</returns>
         </member>
-        <member name="M:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesBuilderCacheExtensions.AddUnityServicesBuilderConfigure(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hzdtf.Utility.Standard.RemoteService.UnitServiceBuilderOptions},System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder})">
+        <member name="M:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesBuilderExtensions.AddUnityServicesBuilderConfigure(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hzdtf.Utility.Standard.RemoteService.UnitServiceBuilderOptions},System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder})">
             <summary>
             添加统一服务生成器微软配置
             </summary>
@@ -197,7 +197,7 @@
             <param name="beforeConfigBuilder">生成配置前回调</param>
             <returns>服务</returns>
         </member>
-        <member name="M:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesBuilderCacheExtensions.AddUnityServicesBuilder(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{Hzdtf.Utility.Standard.RemoteService.UnitServiceBuilderOptions,Hzdtf.Utility.Standard.RemoteService.Options.IUnityServicesOptions},System.Action{Hzdtf.Utility.Standard.RemoteService.UnitServiceBuilderOptions})">
+        <member name="M:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesBuilderExtensions.AddUnityServicesBuilder(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{Hzdtf.Utility.Standard.RemoteService.UnitServiceBuilderOptions,Hzdtf.Utility.Standard.RemoteService.Options.IUnityServicesOptions},System.Action{Hzdtf.Utility.Standard.RemoteService.UnitServiceBuilderOptions})">
             <summary>
             添加统一服务生成器
             </summary>

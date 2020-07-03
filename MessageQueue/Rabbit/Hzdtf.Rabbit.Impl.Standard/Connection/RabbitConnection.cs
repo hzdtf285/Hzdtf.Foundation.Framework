@@ -503,5 +503,13 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
         }
 
         #endregion
+
+        /// <summary>
+        /// 析构方法
+        /// </summary>
+        ~RabbitConnection()
+        {
+            Dispose();
+        }
     }
 }
