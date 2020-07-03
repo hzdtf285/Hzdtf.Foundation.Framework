@@ -141,5 +141,17 @@ namespace Hzdtf.Utility.Standard.Connection
         }
 
         #endregion
+
+        #region IDisposable 接口
+
+        /// <summary>
+        /// 释放资源
+        /// </summary>
+        public virtual void Dispose()
+        {
+            Close();
+        }
+
+        #endregion
     }
 }

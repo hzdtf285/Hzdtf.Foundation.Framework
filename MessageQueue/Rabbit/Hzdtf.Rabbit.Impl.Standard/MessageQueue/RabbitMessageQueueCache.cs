@@ -5,8 +5,6 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Hzdtf.Utility.Standard.Utils;
-using Hzdtf.Rabbit.Model.Standard.Utils;
-using Hzdtf.Utility.Standard.Attr;
 
 namespace Hzdtf.Rabbit.Impl.Standard.MessageQueue
 {
@@ -14,7 +12,6 @@ namespace Hzdtf.Rabbit.Impl.Standard.MessageQueue
     /// Rabbit消息队列缓存
     /// @ 黄振东
     /// </summary>
-    [Inject]
     public class RabbitMessageQueueCache : SingleTypeLocalMemoryBase<string, RabbitMessageQueueInfo>, IRabbitMessageQueueReader
     {
         #region 属性与字段
@@ -49,33 +46,7 @@ namespace Hzdtf.Rabbit.Impl.Standard.MessageQueue
         /// <returns>消息队列信息</returns>
         public RabbitMessageQueueInfo Reader(string queueOrOtherIdentify)
         {
-            if (string.IsNullOrWhiteSpace(queueOrOtherIdentify))
-            {
-                throw new ArgumentNullException("队列或其他标识不能为空");
-            }
-
-            RabbitMessageQueueInfo info = null;
-            if (queueOrOtherIdentify.Contains(":"))
-            {
-                var names = queueOrOtherIdentify.Split(':');
-                if (string.IsNullOrWhiteSpace(names[0]) || string.IsNullOrWhiteSpace(names[1]))
-                {
-                    throw new ArgumentNullException("交换机和队列不能为空");
-                }
-
-                info = ReaderByExchangeAndQueue(names[0], names[1]);
-            }
-            else
-            {
-                // 先按队列名去找，找不到再按交换机名去找
-                info = ReaderByQueue(queueOrOtherIdentify);
-                if (info == null)
-                {
-                    info = ReaderByExchange(queueOrOtherIdentify);
-                }
-            }
-
-            return info;
+            return RabbitMessageQueueUtil.Reader(queueOrOtherIdentify, GetAllList());
         }
 
         /// <summary>
@@ -112,21 +83,7 @@ namespace Hzdtf.Rabbit.Impl.Standard.MessageQueue
         /// <returns>消息队列信息</returns>
         public RabbitMessageQueueInfo ReaderByExchange(string exchange)
         {
-            IList<RabbitMessageQueueInfo> list = dicCaches.Count == 0 ? ReaderAll() : dicCaches.ValuesToList();
-            if (list.IsNullOrCount0())
-            {
-                return null;
-            }
-
-            foreach (RabbitMessageQueueInfo item in list)
-            {
-                if (RabbitUtil.IsTwoExchangeEqual(exchange, item.Exchange))
-                {
-                    return item;
-                }
-            }
-
-            return null;
+            return RabbitMessageQueueUtil.ReaderByExchange(exchange, GetAllList());
         }
 
         /// <summary>
@@ -136,45 +93,7 @@ namespace Hzdtf.Rabbit.Impl.Standard.MessageQueue
         /// <returns>消息队列信息</returns>
         public RabbitMessageQueueInfo ReaderByQueue(string queue)
         {
-            if (string.IsNullOrWhiteSpace(queue))
-            {
-                return null;
-            }
-
-            IList<RabbitMessageQueueInfo> list = dicCaches.Count == 0 ? ReaderAll() : dicCaches.ValuesToList();
-            if (list.IsNullOrCount0())
-            {
-                return null;
-            }
-
-            foreach (RabbitMessageQueueInfo item in list)
-            {
-                if (queue.Equals(item.Queue))
-                {
-                    return item;
-                }
-            }
-
-            return null;
-        }
-
-        /// <summary>
-        /// 根据交换机和队列获取消息队列信息
-        /// </summary>
-        /// <param name="exchange">交换机</param>
-        /// <param name="queue">队列</param>
-        /// <returns>消息队列信息</returns>
-        public RabbitMessageQueueInfo ReaderByExchangeAndQueue(string exchange, string queue)
-        {
-            if (string.IsNullOrWhiteSpace(exchange) || string.IsNullOrWhiteSpace(queue))
-            {
-                return null;
-            }
-
-            return GetMessagQueueInfoByCondition(x =>
-            {
-                return RabbitUtil.IsTwoExchangeEqual(exchange, x.Exchange) && queue.Equals(x.Queue);
-            });
+            return RabbitMessageQueueUtil.ReaderByQueue(queue, GetAllList());
         }
 
         #endregion
@@ -225,6 +144,15 @@ namespace Hzdtf.Rabbit.Impl.Standard.MessageQueue
             }
 
             return null;
+        }
+
+        /// <summary>
+        /// 获取所有列表
+        /// </summary>
+        /// <returns>所有列表</returns>
+        private IList<RabbitMessageQueueInfo> GetAllList()
+        {
+            return dicCaches.Count == 0 ? ReaderAll() : dicCaches.ValuesToList();
         }
 
         #endregion

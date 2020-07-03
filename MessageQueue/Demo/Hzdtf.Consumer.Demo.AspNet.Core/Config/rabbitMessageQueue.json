@@ -1,0 +1,24 @@
+﻿[
+  {
+    "name": "TestExchange",
+    "persistent": true,
+    "type": "direct",
+    "queues": [
+      {
+        "name": "TestQueue1",
+        "routingKeys": [ "TestKey1" ],
+        "qos": 4
+      },
+      {
+        "name": "TestQueue2",
+        "routingKeys": [ "TestKey2" ],
+        "qos": 4
+      },
+      {
+        "name": "TestQueue3",
+        "routingKeys": [ "TestKey1" ],
+        "qos": 4
+      }
+    ]
+  }
+]

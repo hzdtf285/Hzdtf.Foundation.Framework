@@ -1,5 +1,4 @@
 ﻿using Hzdtf.Rabbit.Model.Standard.MessageQueue;
-using Hzdtf.Utility.Standard.Attr;
 using Hzdtf.Utility.Standard.Utils;
 using System;
 using System.Collections.Generic;
@@ -13,7 +12,6 @@ namespace Hzdtf.Rabbit.Impl.Standard.MessageQueue
     /// Rabbit消息队列JSON
     /// @ 黄振东
     /// </summary>
-    [Inject]
     public class RabbitMessageQueueJson : RabbitMessageQueueBase
     {
         #region 属性与字段

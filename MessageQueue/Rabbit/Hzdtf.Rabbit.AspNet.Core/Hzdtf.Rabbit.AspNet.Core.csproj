@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>黄振东</Authors>
+    <Company>Hzdtf</Company>
+    <Description>Rabbit Asp.Net Core库，运行在Asp.Net Core 3.1以上</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Hzdtf.Utility.AspNet.Core\Hzdtf.Utility.AspNet.Core.csproj" />
+    <ProjectReference Include="..\Hzdtf.Rabbit.Impl.Standard\Hzdtf.Rabbit.Impl.Standard.csproj" />
+  </ItemGroup>
+
+</Project>

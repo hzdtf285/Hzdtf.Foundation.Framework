@@ -8,7 +8,6 @@ using System.Collections.Generic;
 using System.Text;
 using Hzdtf.Utility.Standard.Utils;
 using Hzdtf.Rabbit.Model.Standard.Utils;
-using Hzdtf.Utility.Standard.Attr;
 
 namespace Hzdtf.Rabbit.Impl.Standard.Core
 {
@@ -16,7 +15,6 @@ namespace Hzdtf.Rabbit.Impl.Standard.Core
     /// Rabbit生产者
     /// @ 黄振东
     /// </summary>
-    [Inject]
     public class RabbitProducer : RabbitCoreBase, IProducer
     {
         #region 属性与字段

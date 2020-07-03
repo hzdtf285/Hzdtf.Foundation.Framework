@@ -8,7 +8,6 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Hzdtf.Utility.Standard.Utils;
-using Hzdtf.Utility.Standard.Attr;
 using Hzdtf.MessageQueue.Contract.Standard;
 
 namespace Hzdtf.Rabbit.Impl.Standard.Core
@@ -17,7 +16,6 @@ namespace Hzdtf.Rabbit.Impl.Standard.Core
     /// Rabbit消费者
     /// @ 黄振东
     /// </summary>
-    [Inject]
     public class RabbitConsumer : RabbitCoreBase, IConsumer
     {
         #region 属性与字段

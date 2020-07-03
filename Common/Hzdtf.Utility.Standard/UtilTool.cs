@@ -47,6 +47,40 @@ namespace Hzdtf.Utility.Standard
         }
 
         /// <summary>
+        /// 同步服务名
+        /// </summary>
+        private static readonly object syncCurrServiceName = new object();
+
+        /// <summary>
+        /// 当前服务名
+        /// </summary>
+        private static string currServiceName = null;
+
+        /// <summary>
+        /// 当前服务名
+        /// </summary>
+        public static string CurrServiceName
+        {
+            get => currServiceName;
+            set
+            {
+                lock (syncCurrServiceName)
+                {
+                    currServiceName = value;
+                }
+            }
+        }
+
+        /// <summary>
+        /// 应用服务名
+        /// 如果当前服务名不为空，则取当前服务名，否则取当前应用程序名
+        /// </summary>
+        public static string AppServiceName
+        {
+            get => string.IsNullOrWhiteSpace(currServiceName) ? currApplicationName : currServiceName;
+        }
+
+        /// <summary>
         /// 当前环境类型
         /// </summary>
         public static EnvironmentType CurrEnvironmentType

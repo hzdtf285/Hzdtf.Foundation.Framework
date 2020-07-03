@@ -760,6 +760,11 @@
             </summary>
             <param name="data">数据</param>
         </member>
+        <member name="M:Hzdtf.Utility.Standard.Connection.ConnectionBase.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Connection.ConnectionInfo">
             <summary>
             连接信息
@@ -5887,6 +5892,27 @@
         <member name="P:Hzdtf.Utility.Standard.UtilTool.CurrApplicationName">
             <summary>
             当前应用程序名称
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.UtilTool.syncCurrServiceName">
+            <summary>
+            同步服务名
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.UtilTool.currServiceName">
+            <summary>
+            当前服务名
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.UtilTool.CurrServiceName">
+            <summary>
+            当前服务名
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.UtilTool.AppServiceName">
+            <summary>
+            应用服务名
+            如果当前服务名不为空，则取当前服务名，否则取当前应用程序名
             </summary>
         </member>
         <member name="P:Hzdtf.Utility.Standard.UtilTool.CurrEnvironmentType">

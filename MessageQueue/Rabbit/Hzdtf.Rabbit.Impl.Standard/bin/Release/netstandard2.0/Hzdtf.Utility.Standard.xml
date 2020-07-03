@@ -1077,6 +1077,93 @@
             <param name="value">值</param>
             <returns>新值</returns>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.Data.Config.FileConfigurationBase`1">
+            <summary>
+            文件配置基类
+            @ 黄振东
+            </summary>
+            <typeparam name="T">数据类型</typeparam>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Data.Config.FileConfigurationBase`1.#ctor(System.String,System.Boolean)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="file">文件</param>
+            <param name="isExecWrite">是否执行写入</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Data.Config.FileConfigurationBase`1.#ctor(`0,System.Boolean)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="data">数据</param>
+            <param name="isExecWrite">是否执行写入</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Data.Config.FileConfigurationBase`1.Reader">
+            <summary>
+            读取
+            </summary>
+            <returns>数据</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Data.Config.FileConfigurationBase`1.Write(`0)">
+            <summary>
+            写入
+            </summary>
+            <param name="data">数据</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Data.Config.FileConfigurationBase`1.InitFile(System.String)">
+            <summary>
+            初始化文件
+            </summary>
+            <param name="file">文件</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Data.Config.FileConfigurationBase`1.WriteToStorage(`0)">
+            <summary>
+            写入到存储里
+            </summary>
+            <param name="data">数据</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Data.Config.FileConfigurationBase`1.ConvertFromFile(System.String)">
+            <summary>
+            从文件里转换为数据
+            </summary>
+            <param name="file">文件</param>
+            <returns>数据</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Data.Config.IConfigurationData`1">
+            <summary>
+            配置数据接口
+            @ 黄振东
+            </summary>
+            <typeparam name="T">数据类型</typeparam>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Data.Config.JsonFileConfigurationBase`1">
+            <summary>
+            Json文件配置基类
+            @ 黄振东
+            </summary>
+            <typeparam name="T">数据类型</typeparam>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Data.Config.JsonFileConfigurationBase`1.#ctor(System.String,System.Boolean)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="file">文件</param>
+            <param name="isExecWrite">是否执行写入</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Data.Config.JsonFileConfigurationBase`1.#ctor(`0,System.Boolean)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="data">数据</param>
+            <param name="isExecWrite">是否执行写入</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Data.Config.JsonFileConfigurationBase`1.ConvertFromFile(System.String)">
+            <summary>
+            从文件里转换为数据
+            </summary>
+            <param name="file">文件</param>
+            <returns>数据</returns>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Data.DataHandler">
             <summary>
             数据处理委托

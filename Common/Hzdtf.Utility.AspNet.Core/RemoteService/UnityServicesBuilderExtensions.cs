@@ -11,10 +11,10 @@ using System.Text;
 namespace Hzdtf.Utility.AspNet.Core.RemoteService
 {
     /// <summary>
-    /// 统一服务生成器缓存扩展类
+    /// 统一服务生成器扩展类
     /// @ 黄振东
     /// </summary>
-    public static class UnityServicesBuilderCacheExtensions
+    public static class UnityServicesBuilderExtensions
     {
         /// <summary>
         /// 添加统一服务生成器缓存

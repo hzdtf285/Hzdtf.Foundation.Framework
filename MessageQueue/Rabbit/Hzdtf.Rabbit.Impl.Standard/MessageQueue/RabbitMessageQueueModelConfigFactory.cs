@@ -1,6 +1,5 @@
 ﻿using Hzdtf.MessageQueue.Contract.Standard.MessageQueue;
 using Hzdtf.Rabbit.Contract.Standard.MessageQueue;
-using Hzdtf.Utility.Standard.Attr;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -11,7 +10,6 @@ namespace Hzdtf.Rabbit.Impl.Standard.MessageQueue
     /// Rabbit消息队列信息配置工厂
     /// @ 黄振东
     /// </summary>
-    [Inject]
     public class RabbitMessageQueueInfoConfigFactory : IMessageQueueInfoFactory
     {
         #region 属性与字段

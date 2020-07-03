@@ -8,7 +8,6 @@ using Hzdtf.Rabbit.Impl.Standard.Core;
 using Hzdtf.Rabbit.Impl.Standard.MessageQueue;
 using Hzdtf.Rabbit.Model.Standard.Connection;
 using Hzdtf.Rabbit.Model.Standard.MessageQueue;
-using Hzdtf.Utility.Standard.Attr;
 using Hzdtf.Utility.Standard.Connection;
 using Hzdtf.Utility.Standard.Data;
 using Hzdtf.Utility.Standard.ProcessCall;
@@ -26,7 +25,6 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
     /// Rabbit连接
     /// @ 黄振东
     /// </summary>
-    [Inject]
     public class RabbitConnection : ConnectionBase, IMessageQueueConnection, IRabbitChannel
     {
         #region 属性与字段

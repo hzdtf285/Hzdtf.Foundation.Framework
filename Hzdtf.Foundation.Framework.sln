@@ -218,7 +218,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Logger.Integration.Mi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Logger.Integration.MicrosoftLog.Core", "Logger\Hzdtf.Logger.Integration.MicrosoftLog.Core\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj", "{EA849154-E692-4B1E-8C43-07FBB685A0FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hzdtf.Logger.Integration.ENLog.Standard", "Logger\Hzdtf.Logger.Integration.ENLog.Standard\Hzdtf.Logger.Integration.ENLog.Standard.csproj", "{2943C090-67F8-4657-9FCA-D328185DB7ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Logger.Integration.ENLog.Standard", "Logger\Hzdtf.Logger.Integration.ENLog.Standard\Hzdtf.Logger.Integration.ENLog.Standard.csproj", "{2943C090-67F8-4657-9FCA-D328185DB7ED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Rabbit.AspNet.Core", "MessageQueue\Rabbit\Hzdtf.Rabbit.AspNet.Core\Hzdtf.Rabbit.AspNet.Core.csproj", "{974C4BAA-55D1-4DC2-BF0C-60D538EB7762}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Consumer.Demo.AspNet.Core", "MessageQueue\Demo\Hzdtf.Consumer.Demo.AspNet.Core\Hzdtf.Consumer.Demo.AspNet.Core.csproj", "{D8052086-7335-4F0C-94A3-59F26B74AEB0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Publish.Demo.AspNet.Core", "MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\Hzdtf.Publish.Demo.AspNet.Core.csproj", "{276CB18D-7EFE-4CE0-B7ED-848A2AFBD800}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -510,6 +516,18 @@ Global
 		{2943C090-67F8-4657-9FCA-D328185DB7ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2943C090-67F8-4657-9FCA-D328185DB7ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2943C090-67F8-4657-9FCA-D328185DB7ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{974C4BAA-55D1-4DC2-BF0C-60D538EB7762}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{974C4BAA-55D1-4DC2-BF0C-60D538EB7762}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{974C4BAA-55D1-4DC2-BF0C-60D538EB7762}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{974C4BAA-55D1-4DC2-BF0C-60D538EB7762}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8052086-7335-4F0C-94A3-59F26B74AEB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8052086-7335-4F0C-94A3-59F26B74AEB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8052086-7335-4F0C-94A3-59F26B74AEB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8052086-7335-4F0C-94A3-59F26B74AEB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{276CB18D-7EFE-4CE0-B7ED-848A2AFBD800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{276CB18D-7EFE-4CE0-B7ED-848A2AFBD800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{276CB18D-7EFE-4CE0-B7ED-848A2AFBD800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{276CB18D-7EFE-4CE0-B7ED-848A2AFBD800}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -605,6 +623,9 @@ Global
 		{96E9E9F2-8D74-4427-A152-FC27EF59EEA2} = {6D14ACBF-4A8E-463C-982C-7E54E0E82E90}
 		{EA849154-E692-4B1E-8C43-07FBB685A0FC} = {6D14ACBF-4A8E-463C-982C-7E54E0E82E90}
 		{2943C090-67F8-4657-9FCA-D328185DB7ED} = {6D14ACBF-4A8E-463C-982C-7E54E0E82E90}
+		{974C4BAA-55D1-4DC2-BF0C-60D538EB7762} = {717D6842-8AF8-4729-8157-FDC5E61D96AF}
+		{D8052086-7335-4F0C-94A3-59F26B74AEB0} = {33176005-E59C-4A38-AF7E-870F339C9C8C}
+		{276CB18D-7EFE-4CE0-B7ED-848A2AFBD800} = {33176005-E59C-4A38-AF7E-870F339C9C8C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0297FB00-2BBF-4140-9158-6FD32EBD51A9}

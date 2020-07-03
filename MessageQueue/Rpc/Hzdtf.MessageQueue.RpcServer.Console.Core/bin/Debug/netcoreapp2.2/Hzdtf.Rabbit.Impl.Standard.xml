@@ -184,6 +184,11 @@
             </summary>
             <param name="data">数据</param>
         </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
         <member name="T:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection">
             <summary>
             Rabbit连接
@@ -852,14 +857,6 @@
             <param name="queue">队列</param>
             <returns>消息队列信息</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.ReaderByExchangeAndQueue(System.String,System.String)">
-            <summary>
-            根据交换机和队列获取消息队列信息
-            </summary>
-            <param name="exchange">交换机</param>
-            <param name="queue">队列</param>
-            <returns>消息队列信息</returns>
-        </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.GetCache">
             <summary>
             获取缓存对象
@@ -878,6 +875,12 @@
             </summary>
             <param name="func">回调条件</param>
             <returns>消息队列信息</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.GetAllList">
+            <summary>
+            获取所有列表
+            </summary>
+            <returns>所有列表</returns>
         </member>
         <member name="T:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueJson">
             <summary>
@@ -923,6 +926,53 @@
             创建消息队列信息
             </summary>
             <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="T:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueUtil">
+            <summary>
+            Rabbit消息队列辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueUtil.Reader(System.String,System.Collections.Generic.IList{Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo})">
+            <summary>
+            根据队列读取消息队列信息
+            </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <param name="allList">所有列表</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueUtil.ReaderByExchange(System.String,System.Collections.Generic.IList{Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo})">
+            <summary>
+            根据交换机获取消息队列信息
+            </summary>
+            <param name="exchange">交换机</param>
+            <param name="allList">所有列表</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueUtil.ReaderByQueue(System.String,System.Collections.Generic.IList{Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo})">
+            <summary>
+            根据队列获取消息队列信息
+            </summary>
+            <param name="queue">队列</param>
+            <param name="allList">所有列表</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueUtil.ReaderByExchangeAndQueue(System.String,System.String,System.Collections.Generic.IList{Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo})">
+            <summary>
+            根据交换机和队列获取消息队列信息
+            </summary>
+            <param name="exchange">交换机</param>
+            <param name="queue">队列</param>
+            <param name="allList">所有列表</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueUtil.GetMessagQueueInfoByCondition(System.Func{Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo,System.Boolean},System.Collections.Generic.IList{Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo})">
+            <summary>
+            根据条件获取消息队列信息
+            </summary>
+            <param name="func">回调条件</param>
+            <param name="allList">所有列表</param>
             <returns>消息队列信息</returns>
         </member>
         <member name="T:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueXml">

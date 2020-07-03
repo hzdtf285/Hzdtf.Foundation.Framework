@@ -1,4 +1,5 @@
 ﻿using Hzdtf.Utility.Standard.Release;
+using System;
 
 namespace Hzdtf.Utility.Standard.Connection
 {
@@ -6,7 +7,7 @@ namespace Hzdtf.Utility.Standard.Connection
     /// 连接接口
     /// @ 黄振东
     /// </summary>
-    public interface IConnection : ICloseable
+    public interface IConnection : ICloseable, IDisposable
     {
         #region 属性
 

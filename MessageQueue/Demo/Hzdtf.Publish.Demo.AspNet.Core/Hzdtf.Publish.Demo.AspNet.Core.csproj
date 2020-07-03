@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Config\rabbitMessageQueue.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Config\rabbitMessageQueue.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Platform\Hzdtf.Platform.impl.Core\Hzdtf.Platform.Impl.Core.csproj" />
+    <ProjectReference Include="..\..\Rabbit\Hzdtf.Rabbit.AspNet.Core\Hzdtf.Rabbit.AspNet.Core.csproj" />
+  </ItemGroup>
+
+
+</Project>

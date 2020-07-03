@@ -1,5 +1,4 @@
 ﻿using Hzdtf.Rabbit.Model.Standard.Connection;
-using Hzdtf.Utility.Standard.Attr;
 using Hzdtf.Utility.Standard.Connection;
 using Hzdtf.Utility.Standard.Utils;
 using System;
@@ -12,7 +11,6 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
     /// Rabbit连接字符串解析器
     /// @ 黄振东
     /// </summary>
-    [Inject]
     public class RabbitConnectionStringParse : ConnectionStringParse
     {
         #region 重写父类的方法

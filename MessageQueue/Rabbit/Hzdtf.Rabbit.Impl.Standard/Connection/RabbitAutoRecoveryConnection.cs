@@ -3,7 +3,6 @@ using Hzdtf.MessageQueue.Contract.Standard.Connection;
 using Hzdtf.MessageQueue.Contract.Standard.Core;
 using Hzdtf.MessageQueue.Contract.Standard.MessageQueue;
 using Hzdtf.Rabbit.Contract.Standard.Connection;
-using Hzdtf.Utility.Standard.Attr;
 using Hzdtf.Utility.Standard.Connection;
 using Hzdtf.Utility.Standard.Data;
 using Hzdtf.Utility.Standard.ProcessCall;
@@ -20,7 +19,6 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
     /// 需要用此恢复功能原生连接必须实现IRabbitChannel接口
     /// @ 黄振东
     /// </summary>
-    [Inject]
     public class RabbitAutoRecoveryConnection : IMessageQueueConnection
     {
         #region 属性与字段
@@ -366,6 +364,18 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
             {
                 Closed(this, new DataEventArgs(data));
             }
+        }
+
+        #endregion
+
+        #region IDisposable 接口
+
+        /// <summary>
+        /// 释放资源
+        /// </summary>
+        public void Dispose()
+        {
+            Close();
         }
 
         #endregion

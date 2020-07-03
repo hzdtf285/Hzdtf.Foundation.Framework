@@ -7,7 +7,6 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Hzdtf.Utility.Standard.Utils;
-using Hzdtf.Utility.Standard.Attr;
 using Hzdtf.Logger.Contract.Standard;
 using Hzdtf.Utility.Standard.ProcessCall;
 
@@ -17,7 +16,6 @@ namespace Hzdtf.Rabbit.Impl.Standard.Core
     /// Rabbit RPC服务端
     /// @ 黄振东
     /// </summary>
-    [Inject]
     public class RabbitRpcServer : RabbitCoreBase, IRpcServer
     {
         #region 初始化
