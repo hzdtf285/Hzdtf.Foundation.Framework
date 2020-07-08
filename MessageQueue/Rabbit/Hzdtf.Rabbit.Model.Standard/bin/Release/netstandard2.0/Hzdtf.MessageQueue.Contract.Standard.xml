@@ -86,10 +86,11 @@
             <param name="MessageQueueInfo">消息队列信息</param>
             <returns>生产者</returns>
         </member>
-        <member name="M:Hzdtf.MessageQueue.Contract.Standard.Connection.IMessageQueueConnection.CreateProducer(Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+        <member name="M:Hzdtf.MessageQueue.Contract.Standard.Connection.IMessageQueueConnection.CreateProducer(System.String,Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
             <summary>
             创建生产者
             </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
             <param name="MessageQueueInfoFactory">消息队列信息工厂</param>
             <returns>生产者</returns>
         </member>
@@ -107,10 +108,11 @@
             <param name="MessageQueueInfo">消息队列信息</param>
             <returns>消费者</returns>
         </member>
-        <member name="M:Hzdtf.MessageQueue.Contract.Standard.Connection.IMessageQueueConnection.CreateConsumer(Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+        <member name="M:Hzdtf.MessageQueue.Contract.Standard.Connection.IMessageQueueConnection.CreateConsumer(System.String,Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
             <summary>
             创建消费者
             </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
             <param name="MessageQueueInfoFactory">消息队列信息工厂</param>
             <returns>消费者</returns>
         </member>
@@ -128,10 +130,11 @@
             <param name="MessageQueueInfo">消息队列信息</param>
             <returns>RPC客户端</returns>
         </member>
-        <member name="M:Hzdtf.MessageQueue.Contract.Standard.Connection.IMessageQueueConnection.CreateRpcClient(Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+        <member name="M:Hzdtf.MessageQueue.Contract.Standard.Connection.IMessageQueueConnection.CreateRpcClient(System.String,Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
             <summary>
             创建RPC客户端
             </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
             <param name="MessageQueueInfoFactory">消息队列信息工厂</param>
             <returns>RPC客户端</returns>
         </member>
@@ -149,12 +152,46 @@
             <param name="MessageQueueInfo">消息队列信息</param>
             <returns>RPC服务端</returns>
         </member>
-        <member name="M:Hzdtf.MessageQueue.Contract.Standard.Connection.IMessageQueueConnection.CreateRpcServer(Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+        <member name="M:Hzdtf.MessageQueue.Contract.Standard.Connection.IMessageQueueConnection.CreateRpcServer(System.String,Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
             <summary>
             创建RPC服务端
             </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
             <param name="MessageQueueInfoFactory">消息队列信息工厂</param>
             <returns>RPC服务端</returns>
+        </member>
+        <member name="T:Hzdtf.MessageQueue.Contract.Standard.Connection.IMessageQueueConnectionFactory`1">
+            <summary>
+            消息队列连接工厂接口
+            @ 黄振东
+            </summary>
+            <typeparam name="ConnectionWrapInfoT">连接包装信息类型</typeparam>
+        </member>
+        <member name="T:Hzdtf.MessageQueue.Contract.Standard.Connection.IMessageQueueConnectionFactory">
+            <summary>
+            消息队列连接工厂接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="T:Hzdtf.MessageQueue.Contract.Standard.Connection.MessageQueueConnectionFactoryBase`1">
+            <summary>
+            消息队列连接工厂基类
+            @ 黄振东
+            </summary>
+            <typeparam name="ConnectionWrapInfoT">连接包装信息类型</typeparam>
+        </member>
+        <member name="M:Hzdtf.MessageQueue.Contract.Standard.Connection.MessageQueueConnectionFactoryBase`1.#ctor(Hzdtf.Utility.Standard.Safety.ISymmetricalEncryption,Hzdtf.Platform.Config.Contract.Standard.Config.App.IAppConfiguration)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="symmetricalEncryption">加密</param>
+            <param name="appConfig">应用配置</param>
+        </member>
+        <member name="M:Hzdtf.MessageQueue.Contract.Standard.Connection.MessageQueueConnectionFactoryBase`1.AppConfigConnectionEncryption">
+            <summary>
+            应用配置连接是否加密，默认为否
+            </summary>
+            <returns>应用配置连接是否加密</returns>
         </member>
         <member name="T:Hzdtf.MessageQueue.Contract.Standard.Core.IConsumer">
             <summary>
@@ -242,30 +279,6 @@
             异步监听
             </summary>
         </member>
-        <member name="T:Hzdtf.MessageQueue.Contract.Standard.Core.RpcDispatchProxyClient">
-            <summary>
-            RPC动态代理客户端
-            @ 黄振东
-            </summary>
-        </member>
-        <member name="F:Hzdtf.MessageQueue.Contract.Standard.Core.RpcDispatchProxyClient.thisFullName">
-            <summary>
-            本身全名
-            </summary>
-        </member>
-        <member name="F:Hzdtf.MessageQueue.Contract.Standard.Core.RpcDispatchProxyClient.thisName">
-            <summary>
-            本身名
-            </summary>
-        </member>
-        <member name="M:Hzdtf.MessageQueue.Contract.Standard.Core.RpcDispatchProxyClient.InvokeBusiness(System.Reflection.MethodInfo,System.Object[])">
-            <summary>
-            执行业务
-            </summary>
-            <param name="targetMethod">目标方法</param>
-            <param name="args">方法参数数组</param>
-            <returns>业务返回值</returns>
-        </member>
         <member name="T:Hzdtf.MessageQueue.Contract.Standard.Core.RpcServerListen">
             <summary>
             RPC服务监听
@@ -337,26 +350,18 @@
             执行关闭后事件
             </summary>
         </member>
-        <member name="T:Hzdtf.MessageQueue.Contract.Standard.MessageQueueConfig">
+        <member name="T:Hzdtf.MessageQueue.Contract.Standard.MessageQueueUtil">
             <summary>
-            消息队列配置
+            消息队列辅助类
             @ 黄振东
             </summary>
         </member>
-        <member name="P:Hzdtf.MessageQueue.Contract.Standard.MessageQueueConfig.RpcClientFactory">
+        <member name="M:Hzdtf.MessageQueue.Contract.Standard.MessageQueueUtil.ConnectionEncrypt(Hzdtf.Platform.Config.Contract.Standard.Config.App.IAppConfiguration)">
             <summary>
-            RPC客户端工厂
+            连接是否加密
             </summary>
-        </member>
-        <member name="P:Hzdtf.MessageQueue.Contract.Standard.MessageQueueConfig.BytesSerialization">
-            <summary>
-            字节数组序列化
-            </summary>
-        </member>
-        <member name="P:Hzdtf.MessageQueue.Contract.Standard.MessageQueueConfig.Log">
-            <summary>
-            日志
-            </summary>
+            <param name="appConfig">应用配置</param>
+            <returns>连接是否加密</returns>
         </member>
         <member name="T:Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory">
             <summary>
@@ -364,11 +369,12 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory.Create(System.String)">
+        <member name="M:Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory.Create(System.String,System.Collections.Generic.IDictionary{System.String,System.String})">
             <summary>
             创建消息队列信息
             </summary>
             <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <param name="extend">扩展</param>
             <returns>消息队列信息</returns>
         </member>
         <member name="T:Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueReader`1">
@@ -378,17 +384,19 @@
             </summary>
             <typeparam name="T">数据类型</typeparam>
         </member>
-        <member name="M:Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueReader`1.Reader(System.String)">
+        <member name="M:Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueReader`1.Reader(System.String,System.Collections.Generic.IDictionary{System.String,System.String})">
             <summary>
             根据队列读取消息队列信息
             </summary>
             <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <param name="extend">扩展</param>
             <returns>消息队列信息</returns>
         </member>
-        <member name="M:Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueReader`1.ReaderAll">
+        <member name="M:Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueReader`1.ReaderAll(System.Collections.Generic.IDictionary{System.String,System.String})">
             <summary>
             读取全部消息队列信息列表
             </summary>
+            <param name="extend">扩展</param>
             <returns>全部消息队列信息列表</returns>
         </member>
         <member name="T:Hzdtf.MessageQueue.Contract.Standard.MessageQueue.MessageQueueInfo">
@@ -430,6 +438,39 @@
             <summary>
             可用的连接且是打开状态
             </summary>
+        </member>
+        <member name="M:Hzdtf.MessageQueue.Contract.Standard.SingleConnectionTool.CreateConnectionFromConfigName(System.String)">
+            <summary>
+            根据配置名称创建一个连接并打开
+            </summary>
+            <param name="configName">配置名称</param>
+            <returns>连接</returns>
+        </member>
+        <member name="M:Hzdtf.MessageQueue.Contract.Standard.SingleConnectionTool.CreateConnection">
+            <summary>
+            创建一个连接并打开
+            </summary>
+            <returns>连接</returns>
+        </member>
+        <member name="M:Hzdtf.MessageQueue.Contract.Standard.SingleConnectionTool.CreateConnectionFromConnString(System.String)">
+            <summary>
+            根据连接字符串创建一个连接并打开
+            </summary>
+            <param name="connectionString">连接字符串</param>
+            <returns>连接</returns>
+        </member>
+        <member name="M:Hzdtf.MessageQueue.Contract.Standard.SingleConnectionTool.CreateConnectionFromInfo(Hzdtf.Utility.Standard.Connection.ConnectionInfo)">
+            <summary>
+            根据信息创建一个连接并打开
+            </summary>
+            <param name="connInfo">连接信息</param>
+            <returns>连接</returns>
+        </member>
+        <member name="M:Hzdtf.MessageQueue.Contract.Standard.SingleConnectionTool.CreateSimpleConnection">
+            <summary>
+            创建一个简单连接
+            </summary>
+            <returns>简单连接</returns>
         </member>
         <member name="M:Hzdtf.MessageQueue.Contract.Standard.SingleConnectionTool.Close">
             <summary>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.Consumer.Demo.Core</name>
+    </assembly>
+    <members>
+        <member name="M:Hzdtf.Consumer.Demo.Core.Program.InitConfig">
+            <summary>
+            初始化配置
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Consumer.Demo.Core.Program.ConsumerReceString">
+            <summary>
+            消费者接收字符串
+            </summary>
+        </member>
+    </members>
+</doc>

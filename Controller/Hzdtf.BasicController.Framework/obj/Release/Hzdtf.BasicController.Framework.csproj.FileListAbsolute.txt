@@ -165,3 +165,7 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Controller\Hzdtf.BasicController
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Controller\Hzdtf.BasicController.Framework\obj\Release\Hzdtf.BasicController.Framework.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Controller\Hzdtf.BasicController.Framework\obj\Release\Hzdtf.BasicController.Framework.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Controller\Hzdtf.BasicController.Framework\obj\Release\Hzdtf.BasicController.Framework.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Controller\Hzdtf.BasicController.Framework\Bin\Release\System.Memory.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Controller\Hzdtf.BasicController.Framework\Bin\Release\System.Numerics.Vectors.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Controller\Hzdtf.BasicController.Framework\Bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Controller\Hzdtf.BasicController.Framework\Bin\Release\System.Buffers.dll

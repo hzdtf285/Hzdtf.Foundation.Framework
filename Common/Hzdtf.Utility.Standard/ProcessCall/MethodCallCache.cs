@@ -30,22 +30,22 @@ namespace Hzdtf.Utility.Standard.ProcessCall
         private static readonly object syncDicCaches = new object();
 
         /// <summary>
-        /// 参数值转换
+        /// 参数值转换,默认是JsonConvertTypeValue
         /// </summary>
         public IConvertTypeValue ParamValueConvert
         {
             get;
             set;
-        }
+        } = new JsonConvertTypeValue();
 
         /// <summary>
-        /// 实例
+        /// 实例,默认是ReflectInstance
         /// </summary>
         public IInstance Instance
         {
             get;
             set;
-        }
+        } = new ReflectInstance();
 
         /// <summary>
         /// 执行

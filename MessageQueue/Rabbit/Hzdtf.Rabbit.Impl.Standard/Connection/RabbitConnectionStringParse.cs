@@ -11,7 +11,7 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
     /// Rabbit连接字符串解析器
     /// @ 黄振东
     /// </summary>
-    public class RabbitConnectionStringParse : ConnectionStringParse
+    public class RabbitConnectionStringParse : ConnectionStringParse, IConnectionStringParse
     {
         #region 重写父类的方法
 

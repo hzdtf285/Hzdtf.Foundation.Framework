@@ -136,7 +136,6 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Fra
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Autofac.Integration.WebApi.pdb
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Autofac.Integration.WebApi.xml
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Castle.Core.xml
-C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Newtonsoft.Json.pdb
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Newtonsoft.Json.xml
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\System.Net.Http.Formatting.xml
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\System.Web.Helpers.xml
@@ -148,3 +147,15 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Fra
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\System.Web.WebPages.Razor.xml
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Hzdtf.Logger.Contract.Standard.pdb
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Hzdtf.Logger.Contract.Standard.xml
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Microsoft.Bcl.AsyncInterfaces.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\System.Runtime.CompilerServices.Unsafe.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\System.Threading.Tasks.Extensions.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\System.Memory.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\System.Numerics.Vectors.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\System.Buffers.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Autofac.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Microsoft.Bcl.AsyncInterfaces.xml
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\System.Runtime.CompilerServices.Unsafe.xml
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\System.Threading.Tasks.Extensions.xml
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\zh-Hans\System.Web.Http.resources.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\zh-Hans\System.Web.Razor.resources.dll

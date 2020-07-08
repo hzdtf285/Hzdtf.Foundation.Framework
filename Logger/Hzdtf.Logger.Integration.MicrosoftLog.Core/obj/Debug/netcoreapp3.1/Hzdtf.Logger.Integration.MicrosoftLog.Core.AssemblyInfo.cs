@@ -14,11 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hzdtf")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("日志集成微软日志Core库")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("3.1.5.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("3.1.5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hzdtf.Logger.Integration.MicrosoftLog.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hzdtf.Logger.Integration.MicrosoftLog.Core")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("3.1.5.0")]
 
 // 由 MSBuild WriteCodeFragment 类生成。
 

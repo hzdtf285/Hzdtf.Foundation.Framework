@@ -1,12 +1,16 @@
 ﻿using Hzdtf.Autofac.Extend.Standard;
+using Hzdtf.MessageQueue.Contract.Standard;
+using Hzdtf.MessageQueue.Contract.Standard.Core;
 using Hzdtf.MessageQueue.Rpc.Business.Contract.Standard;
 using Hzdtf.MessageQueue.RpcClient.Console.Core.AppStart;
 using Hzdtf.Platform.Impl.Core;
 using Hzdtf.Utility.Standard.Conversion;
+using Hzdtf.Utility.Standard.ProcessCall;
 using Hzdtf.Utility.Standard.Proxy;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace Hzdtf.MessageQueue.RpcClient.Console.Core
@@ -21,17 +25,28 @@ namespace Hzdtf.MessageQueue.RpcClient.Console.Core
 
             DependencyInjection.RegisterComponents();
 
+            //var client = SingleConnectionTool.Connection.CreateRpcClient("RpcServiceQueue");
+            //var rep = client.Call(Encoding.UTF8.GetBytes("这是一个测试RPC"));
+            //var rep2 = client.Call(null);
+
+            //System.Console.Read();
+            var kq = AutofacTool.Resolve<IRpcClientMethod>();
             var proxy = AutofacTool.Resolve<IBusinessDispatchProxy>();
             var conTypeValue = AutofacTool.Resolve<IConvertTypeValue>();
             var stuService = proxy.Create<IStudentService>();
 
-            var a0 = stuService.TestTask5Async();
-            a0.Wait();
-            var data = conTypeValue.To(a0.Result, typeof(IList<StudentInfo>)) as IList<StudentInfo>;
+            var k = stuService.Get(1);
+            var k2 = stuService.Get(2);
 
 
-            var a1 = stuService.TestTask1Async();
-            a1.Wait();
+            System.Console.WriteLine("wait...");
+
+            //a0.Wait();
+            //var data = conTypeValue.To(a0.Result, typeof(IList<StudentInfo>)) as IList<StudentInfo>;
+
+
+            //var a1 = stuService.TestTask1Async();
+            //a1.Wait();
             //var a3 = stuService.TestTask3Async();
             //a3.Wait();
             //var a2 = stuService.TestTask2Async();

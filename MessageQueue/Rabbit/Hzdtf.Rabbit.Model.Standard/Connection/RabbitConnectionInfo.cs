@@ -15,6 +15,16 @@ namespace Hzdtf.Rabbit.Model.Standard.Connection
     public class RabbitConnectionInfo : ConnectionInfo
     {
         /// <summary>
+        /// 虚拟路径名称
+        /// </summary>
+        public const string VIRTUAL_PATH_NAME = "virtualPath";
+
+        /// <summary>
+        /// 默认虚拟路径
+        /// </summary>
+        public const string DEFAULT_VIRTUAL_PATH = "/";
+
+        /// <summary>
         /// 虚拟路径
         /// </summary>
         [JsonProperty("virtualPath")]
@@ -23,7 +33,7 @@ namespace Hzdtf.Rabbit.Model.Standard.Connection
         {
             get;
             set;
-        } = "/";
+        } = RabbitConnectionInfo.DEFAULT_VIRTUAL_PATH;
 
         /// <summary>
         /// 心跳包间隔时间（单位：秒），默认为60秒

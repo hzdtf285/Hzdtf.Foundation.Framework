@@ -38,6 +38,25 @@ namespace Hzdtf.Utility.Standard.Utils
         public static bool IsNullOrCount0<KeyT, ValueT>(this IDictionary<KeyT, ValueT> dic) => dic == null || dic.Count == 0 ? true : false;
 
         /// <summary>
+        /// 获取字典的值，如果未找到，则返回ValueT默认值
+        /// </summary>
+        /// <typeparam name="KeyT">键类型</typeparam>
+        /// <typeparam name="ValueT">值类型</typeparam>
+        /// <param name="dic">字典</param>
+        /// <param name="key">键</param>
+        /// <param name="defaultValue">默认值</param>
+        /// <returns>字典的值</returns>
+        public static ValueT GetValue<KeyT, ValueT>(this IDictionary<KeyT, ValueT> dic, KeyT key, ValueT defaultValue = default(ValueT))
+        {
+            if (dic.IsNullOrCount0() || !dic.ContainsKey(key))
+            {
+                return defaultValue;
+            }
+
+            return dic[key];
+        }
+
+        /// <summary>
         /// 将列表转换为数组
         /// </summary>
         /// <typeparam name="T">数据类型</typeparam>

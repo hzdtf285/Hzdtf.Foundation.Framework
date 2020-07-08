@@ -4,10 +4,41 @@
         <name>Hzdtf.Rabbit.Model.Standard</name>
     </assembly>
     <members>
+        <member name="T:Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionConfigNameUtil">
+            <summary>
+            Rabbit连接配置辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionConfigNameUtil.ConnectionInfo_Name">
+            <summary>
+            连接信息名称
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionConfigNameUtil.ConnectionString_Name">
+            <summary>
+            连接字符串名称
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionConfigNameUtil.ConnectionStringAppConfigName_Name">
+            <summary>
+            连接字符串应用配置名称
+            </summary>
+        </member>
         <member name="T:Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionInfo">
             <summary>
             Rabbit连接信息
             @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionInfo.VIRTUAL_PATH_NAME">
+            <summary>
+            虚拟路径名称
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionInfo.DEFAULT_VIRTUAL_PATH">
+            <summary>
+            默认虚拟路径
             </summary>
         </member>
         <member name="P:Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionInfo.VirtualPath">
@@ -36,6 +67,44 @@
             </summary>
             <param name="connectionInfo">连接信息</param>
             <returns>Rabbit连接信息</returns>
+        </member>
+        <member name="T:Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionWrapInfo">
+            <summary>
+            Rabbit连接包装信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionWrapInfo.MessageQueueJsonFile">
+            <summary>
+            消息队列Json文件路径
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitConfigInfo">
+            <summary>
+            Rabbit配置信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitConfigInfo.Rabbit">
+            <summary>
+            虚拟路径
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitVirtualPathInfo">
+            <summary>
+            Rabbit虚拟路径信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitVirtualPathInfo.VirtualPath">
+            <summary>
+            虚拟路径
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitVirtualPathInfo.Exchanges">
+            <summary>
+            交换机列表
+            </summary>
         </member>
         <member name="T:Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitExchangeInfo">
             <summary>

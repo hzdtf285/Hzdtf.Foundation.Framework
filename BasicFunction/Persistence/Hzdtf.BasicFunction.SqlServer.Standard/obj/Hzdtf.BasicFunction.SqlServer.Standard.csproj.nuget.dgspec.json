@@ -242,19 +242,19 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[10.0.0, )"
             },
             "MessagePack": {
               "target": "Package",
-              "version": "[1.7.3.7, )"
+              "version": "[2.1.152, )"
             },
             "Microsoft.Extensions.Caching.Abstractions": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[3.1.5, )"
             },
             "Microsoft.Extensions.Caching.Memory": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[3.1.5, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -264,11 +264,11 @@
             },
             "NPOI": {
               "target": "Package",
-              "version": "[2.4.1, )"
+              "version": "[2.5.1, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[12.0.1, )"
+              "version": "[12.0.3, )"
             },
             "SharpZipLib": {
               "target": "Package",
@@ -276,15 +276,15 @@
             },
             "System.ComponentModel.Annotations": {
               "target": "Package",
-              "version": "[4.5.0, )"
+              "version": "[4.7.0, )"
             },
             "System.Drawing.Common": {
               "target": "Package",
-              "version": "[4.5.1, )"
+              "version": "[4.7.0, )"
             },
             "System.Reflection.DispatchProxy": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[4.7.1, )"
             },
             "androidxml": {
               "target": "Package",
@@ -418,7 +418,7 @@
           "dependencies": {
             "Dapper": {
               "target": "Package",
-              "version": "[1.50.5, )"
+              "version": "[2.0.35, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -488,6 +488,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.1, )"
             }
           },
           "imports": [

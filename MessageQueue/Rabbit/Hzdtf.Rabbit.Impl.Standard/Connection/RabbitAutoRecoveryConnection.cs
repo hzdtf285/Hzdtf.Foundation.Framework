@@ -54,6 +54,14 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
             get => ProtoConnection.Status;
         }
 
+        /// <summary>
+        /// 连接信息
+        /// </summary>
+        public ConnectionInfo ConnectionInfo
+        {
+            get => ProtoConnection.ConnectionInfo;
+        }
+
         #endregion
 
         #region 初始化
@@ -155,13 +163,14 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
         /// <summary>
         /// 创建生产者
         /// </summary>
+        /// <param name="queueOrOtherIdentify">队列或其他标识</param>
         /// <param name="messageQueueInfoFactory">消息队列信息工厂</param>
         /// <returns>生产者</returns>
-        public IProducer CreateProducer(IMessageQueueInfoFactory messageQueueInfoFactory)
+        public IProducer CreateProducer(string queueOrOtherIdentify, IMessageQueueInfoFactory messageQueueInfoFactory)
         {
             return CreateChannelFromProto<IProducer>(() =>
             {
-                return ProtoConnection.CreateProducer(messageQueueInfoFactory);
+                return ProtoConnection.CreateProducer(queueOrOtherIdentify, messageQueueInfoFactory);
             });
         }
 
@@ -198,13 +207,14 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
         /// <summary>
         /// 创建消费者
         /// </summary>
+        /// <param name="queueOrOtherIdentify">队列或其他标识</param>
         /// <param name="messageQueueInfoFactory">消息队列信息工厂</param>
         /// <returns>消费者</returns>
-        public IConsumer CreateConsumer(IMessageQueueInfoFactory messageQueueInfoFactory)
+        public IConsumer CreateConsumer(string queueOrOtherIdentify, IMessageQueueInfoFactory messageQueueInfoFactory)
         {
             return CreateChannelFromProto<IConsumer>(() =>
             {
-                return ProtoConnection.CreateConsumer(messageQueueInfoFactory);
+                return ProtoConnection.CreateConsumer(queueOrOtherIdentify, messageQueueInfoFactory);
             });
         }
 
@@ -241,13 +251,14 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
         /// <summary>
         /// 创建RPC客户端
         /// </summary>
+        /// <param name="queueOrOtherIdentify">队列或其他标识</param>
         /// <param name="messageQueueInfoFactory">消息队列信息工厂</param>
         /// <returns>RPC客户端</returns>
-        public IRpcClient CreateRpcClient(IMessageQueueInfoFactory messageQueueInfoFactory)
+        public IRpcClient CreateRpcClient(string queueOrOtherIdentify, IMessageQueueInfoFactory messageQueueInfoFactory)
         {
             return CreateChannelFromProto<IRpcClient>(() =>
             {
-                return ProtoConnection.CreateRpcClient(messageQueueInfoFactory);
+                return ProtoConnection.CreateRpcClient(queueOrOtherIdentify, messageQueueInfoFactory);
             });
         }
 
@@ -284,13 +295,14 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
         /// <summary>
         /// 创建RPC服务端
         /// </summary>
+        /// <param name="queueOrOtherIdentify">队列或其他标识</param>
         /// <param name="messageQueueInfoFactory">消息队列信息工厂</param>
         /// <returns>RPC服务端</returns>
-        public IRpcServer CreateRpcServer(IMessageQueueInfoFactory messageQueueInfoFactory)
+        public IRpcServer CreateRpcServer(string queueOrOtherIdentify, IMessageQueueInfoFactory messageQueueInfoFactory)
         {
             return CreateChannelFromProto<IRpcServer>(() =>
             {
-                return ProtoConnection.CreateRpcServer(messageQueueInfoFactory);
+                return ProtoConnection.CreateRpcServer(queueOrOtherIdentify, messageQueueInfoFactory);
             });
         }
 

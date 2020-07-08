@@ -8,18 +8,33 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Authorization\Hzdtf.Authorization.Web.Core\Hzdtf.Authorization.Web.Core.csproj" />
+    <ProjectReference Include="..\..\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\Hzdtf.BasicFunction.MvcController.Core.csproj" />
+    <ProjectReference Include="..\..\BasicFunction\Persistence\Hzdtf.BasicFunction.MySql.Standard\Hzdtf.BasicFunction.MySql.Standard.csproj" />
+    <ProjectReference Include="..\..\BasicFunction\Service\Hzdtf.BasicFunction.Service.Impl.Standard\Hzdtf.BasicFunction.Service.Impl.Standard.csproj" />
+    <ProjectReference Include="..\..\BasicFunction\WorkFlow\Hzdtf.BasicFunction.WorkFlow.Standard\Hzdtf.BasicFunction.WorkFlow.Standard.csproj" />
     <ProjectReference Include="..\..\Common\Hzdtf.Utility.AspNet.Core\Hzdtf.Utility.AspNet.Core.csproj" />
+    <ProjectReference Include="..\..\Controller\Hzdtf.BasicController.Core\Hzdtf.BasicController.Core.csproj" />
+    <ProjectReference Include="..\..\Demo\Controller\Hzdtf.Demo.MvcController.Core\Hzdtf.Demo.MvcController.Core.csproj" />
+    <ProjectReference Include="..\..\Demo\Persistence\Hzdtf.Demo.MySql.Standard\Hzdtf.Demo.MySql.Standard.csproj" />
+    <ProjectReference Include="..\..\Demo\Service\Hzdtf.Demo.Service.Impl.Standard\Hzdtf.Demo.Service.Impl.Standard.csproj" />
     <ProjectReference Include="..\..\IOC\Hzdtf.Autofac.Extend.Standard\Hzdtf.Autofac.Extend.Standard.csproj" />
     <ProjectReference Include="..\..\Logger\Hzdtf.Logger.Integration.ENLog.Standard\Hzdtf.Logger.Integration.ENLog.Standard.csproj" />
     <ProjectReference Include="..\..\Logger\Hzdtf.Logger.Integration.MicrosoftLog.Core\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj" />
     <ProjectReference Include="..\..\Logger\Hzdtf.Logger.Integration.MicrosoftLog.Standard\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj" />
-    <ProjectReference Include="..\..\Logger\Hzdtf.Logger.Text.Impl.Standard\Hzdtf.Logger.Text.Impl.Standard.csproj" />
+    <ProjectReference Include="..\..\Persistence\Hzdtf.Persistence.Autofac.Standard\Hzdtf.Persistence.Autofac.Standard.csproj" />
     <ProjectReference Include="..\..\Platform\Hzdtf.Platform.impl.Core\Hzdtf.Platform.Impl.Core.csproj" />
+    <ProjectReference Include="..\..\Service\Hzdtf.BasicFunction.Service.Autofac.Standard\Hzdtf.BasicFunction.Service.Autofac.Standard.csproj" />
+    <ProjectReference Include="..\..\WorkFlow\Controller\Hzdtf.WorkFlow.MvcController.Core\Hzdtf.WorkFlow.MvcController.Core.csproj" />
+    <ProjectReference Include="..\..\WorkFlow\Persistence\Hzdtf.WorkFlow.MySql.Standard\Hzdtf.WorkFlow.MySql.Standard.csproj" />
+    <ProjectReference Include="..\..\WorkFlow\Service\Hzdtf.WorkFlow.Service.Impl.Standard\Hzdtf.WorkFlow.Service.Impl.Standard.csproj" />
   </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties config_4assemblyconfig_1json__JsonSchema="https://json.schemastore.org/appsscript" /></VisualStudio></ProjectExtensions>
 
 
 </Project>

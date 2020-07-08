@@ -7,7 +7,9 @@ namespace Hzdtf.Utility.Standard.Connection
     /// 连接接口
     /// @ 黄振东
     /// </summary>
-    public interface IConnection : ICloseable, IDisposable
+    /// <typeparam name="ConnectionInfoT">连接信息类型</typeparam>
+    public interface IConnection<ConnectionInfoT> : ICloseable, IDisposable
+        where ConnectionInfoT : ConnectionInfo
     {
         #region 属性
 
@@ -15,6 +17,14 @@ namespace Hzdtf.Utility.Standard.Connection
         /// 状态
         /// </summary>
         ConnectionStatusType Status
+        {
+            get;
+        }
+
+        /// <summary>
+        /// 连接信息
+        /// </summary>
+        ConnectionInfoT ConnectionInfo
         {
             get;
         }
@@ -38,8 +48,16 @@ namespace Hzdtf.Utility.Standard.Connection
         /// 打开
         /// </summary>
         /// <param name="connectionInfo">连接信息</param>
-        void Open(ConnectionInfo connectionInfo);
+        void Open(ConnectionInfoT connectionInfo);
 
         #endregion
+    }
+
+    /// <summary>
+    /// 连接接口
+    /// @ 黄振东
+    /// </summary>
+    public interface IConnection : IConnection<ConnectionInfo>
+    {
     }
 }

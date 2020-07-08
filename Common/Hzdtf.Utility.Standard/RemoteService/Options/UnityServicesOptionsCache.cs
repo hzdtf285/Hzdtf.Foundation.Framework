@@ -47,6 +47,10 @@ namespace Hzdtf.Utility.Standard.RemoteService.Options
         /// <param name="data">数据</param>
         protected override void WriteToStorage(UnityServicesOptions data)
         {
+            if (data != null)
+            {
+                data.Reset();
+            }
             lock (syncOptions)
             {
                 UnityServicesOptionsCache.options = data;

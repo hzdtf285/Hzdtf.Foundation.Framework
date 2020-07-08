@@ -33,9 +33,10 @@ namespace Hzdtf.MessageQueue.Contract.Standard.Connection
         /// <summary>
         /// 创建生产者
         /// </summary>
+        /// <param name="queueOrOtherIdentify">队列或其他标识</param>
         /// <param name="MessageQueueInfoFactory">消息队列信息工厂</param>
         /// <returns>生产者</returns>
-        IProducer CreateProducer(IMessageQueueInfoFactory MessageQueueInfoFactory);
+        IProducer CreateProducer(string queueOrOtherIdentify, IMessageQueueInfoFactory MessageQueueInfoFactory);
 
         #endregion
 
@@ -58,9 +59,10 @@ namespace Hzdtf.MessageQueue.Contract.Standard.Connection
         /// <summary>
         /// 创建消费者
         /// </summary>
+        /// <param name="queueOrOtherIdentify">队列或其他标识</param>
         /// <param name="MessageQueueInfoFactory">消息队列信息工厂</param>
         /// <returns>消费者</returns>
-        IConsumer CreateConsumer(IMessageQueueInfoFactory MessageQueueInfoFactory);
+        IConsumer CreateConsumer(string queueOrOtherIdentify, IMessageQueueInfoFactory MessageQueueInfoFactory);
 
         #endregion
 
@@ -83,9 +85,10 @@ namespace Hzdtf.MessageQueue.Contract.Standard.Connection
         /// <summary>
         /// 创建RPC客户端
         /// </summary>
+        /// <param name="queueOrOtherIdentify">队列或其他标识</param>
         /// <param name="MessageQueueInfoFactory">消息队列信息工厂</param>
         /// <returns>RPC客户端</returns>
-        IRpcClient CreateRpcClient(IMessageQueueInfoFactory MessageQueueInfoFactory);
+        IRpcClient CreateRpcClient(string queueOrOtherIdentify, IMessageQueueInfoFactory MessageQueueInfoFactory);
 
         #endregion
 
@@ -108,9 +111,10 @@ namespace Hzdtf.MessageQueue.Contract.Standard.Connection
         /// <summary>
         /// 创建RPC服务端
         /// </summary>
+        /// <param name="queueOrOtherIdentify">队列或其他标识</param>
         /// <param name="MessageQueueInfoFactory">消息队列信息工厂</param>
         /// <returns>RPC服务端</returns>
-        IRpcServer CreateRpcServer(IMessageQueueInfoFactory MessageQueueInfoFactory);
+        IRpcServer CreateRpcServer(string queueOrOtherIdentify, IMessageQueueInfoFactory MessageQueueInfoFactory);
 
         #endregion
     }

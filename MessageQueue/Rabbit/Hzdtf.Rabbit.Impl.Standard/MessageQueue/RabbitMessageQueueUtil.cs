@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Text;
 using Hzdtf.Utility.Standard.Utils;
 using Hzdtf.Rabbit.Model.Standard.Utils;
+using System.Linq;
+using Hzdtf.Rabbit.Model.Standard.Connection;
 
 namespace Hzdtf.Rabbit.Impl.Standard.MessageQueue
 {
@@ -140,6 +142,80 @@ namespace Hzdtf.Rabbit.Impl.Standard.MessageQueue
             }
 
             return null;
+        }
+
+        /// <summary>
+        /// 根据虚拟路径获取交换机列表
+        /// </summary>
+        /// <param name="rabbitConfig">rabbit配置</param>
+        /// <param name="virtualPath">虚拟路径</param>
+        /// <returns>交换机列表</returns>
+        public static IList<RabbitExchangeInfo> GetExchanges(this RabbitConfigInfo rabbitConfig, string virtualPath = RabbitConnectionInfo.DEFAULT_VIRTUAL_PATH)
+        {
+            if (rabbitConfig == null)
+            {
+                return null;
+            }
+            
+            var virtObj = rabbitConfig.Rabbit.Where(p => p.VirtualPath == virtualPath).FirstOrDefault();
+            if (virtObj == null)
+            {
+                return null;
+            }
+
+            return virtObj.Exchanges;
+        }
+
+        /// <summary>
+        /// 将交换机信息列表转换为消息队列信息列表
+        /// </summary>
+        /// <param name="exchanges">交换机信息列表</param>
+        /// <returns>消息队列信息列表</returns>
+        public static IList<RabbitMessageQueueInfo> ToMessageQueues(this IList<RabbitExchangeInfo> exchanges)
+        {
+            if (exchanges.IsNullOrCount0())
+            {
+                return null;
+            }
+
+            IList<RabbitMessageQueueInfo> result = new List<RabbitMessageQueueInfo>();
+            foreach (RabbitExchangeInfo item in exchanges)
+            {
+                if (item.Queues.IsNullOrCount0())
+                {
+                    result.Add(ToMessageQueue(item));
+                }
+                else
+                {
+                    foreach (RabbitQueueModel item2 in item.Queues)
+                    {
+                        RabbitMessageQueueInfo model = ToMessageQueue(item);
+                        model.AutoDelQueue = item2.AutoDelQueue;
+                        model.Qos = item2.Qos;
+                        model.Queue = item2.Name;
+                        model.RoutingKeys = item2.RoutingKeys;
+
+                        result.Add(model);
+                    }
+                }
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// 创建消息队列信息并赋基本值
+        /// </summary>
+        /// <param name="rabbitExchangeInfo">Rabbit交换机信息</param>
+        /// <returns>Rabbit消息队列信息</returns>
+        public static RabbitMessageQueueInfo ToMessageQueue(this RabbitExchangeInfo rabbitExchangeInfo)
+        {
+            RabbitMessageQueueInfo model = new RabbitMessageQueueInfo();
+            model.Exchange = rabbitExchangeInfo.Name;
+            model.Type = rabbitExchangeInfo.Type;
+            model.Persistent = rabbitExchangeInfo.Persistent;
+
+            return model;
         }
     }
 }

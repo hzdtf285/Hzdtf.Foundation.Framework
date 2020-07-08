@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using Hzdtf.Utility.Standard.Proxy;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -89,6 +90,16 @@ namespace Hzdtf.Autofac.Extend.Standard
             }
 
             return null;
+        }
+
+        /// <summary>
+        /// 解析来自业务动态代理创建的对象
+        /// </summary>
+        /// <typeparam name="T">类型</typeparam>
+        /// <returns>由业务动态代理创建的对象</returns>
+        public static T ResolveFromBusinessDispatchProxy<T>() where T : class
+        {
+            return Resolve<IBusinessDispatchProxy>().Create<T>();
         }
     }
 }

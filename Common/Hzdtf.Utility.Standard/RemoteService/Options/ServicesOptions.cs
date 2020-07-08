@@ -163,22 +163,10 @@ namespace Hzdtf.Utility.Standard.RemoteService.Options
                     ser.Sheme = Uri.UriSchemeHttp;
                 }
 
-                switch ((Standard.LoadBalance.LoadBalanceMode)ser.LoadBalanceMode)
+                ser.LoadBalance = LoadBalanceSimpleFactory.Create((Standard.LoadBalance.LoadBalanceMode)ser.LoadBalanceMode);
+                if (ser.LoadBalance == null)
                 {
-                    case Standard.LoadBalance.LoadBalanceMode.RANDOM:
-                        ser.LoadBalance = new RandomLoadBalance();
-
-                        break;
-
-                    case Standard.LoadBalance.LoadBalanceMode.ROUND_ROBIN:
-                        ser.LoadBalance = new RoundRobinLoadBalance();
-
-                        break;
-
-                    case Standard.LoadBalance.LoadBalanceMode.HASH_IP_PORT:
-                        ser.LoadBalance = new HashIpPortLoadBalance();
-
-                        break;
+                    throw new KeyNotFoundException($"服务名:{ser.ServiceName},模式:{ser.LoadBalanceMode}.未找到负载均衡");
                 }
             }
         }

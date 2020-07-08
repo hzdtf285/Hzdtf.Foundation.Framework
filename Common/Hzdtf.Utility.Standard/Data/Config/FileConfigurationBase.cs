@@ -13,12 +13,18 @@ namespace Hzdtf.Utility.Standard.Data.Config
     public abstract class FileConfigurationBase<T> : IConfigurationData<T>
     {
         /// <summary>
+        /// 文件
+        /// </summary>
+        protected readonly string file;
+
+        /// <summary>
         /// 构造方法
         /// </summary>
         /// <param name="file">文件</param>
         /// <param name="isExecWrite">是否执行写入</param>
         public FileConfigurationBase(string file, bool isExecWrite = true)
         {
+            this.file = file;
             if (isExecWrite)
             {
                 InitFile(file);

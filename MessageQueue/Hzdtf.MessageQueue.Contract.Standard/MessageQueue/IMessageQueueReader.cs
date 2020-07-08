@@ -15,13 +15,15 @@ namespace Hzdtf.MessageQueue.Contract.Standard.MessageQueue
         /// 根据队列读取消息队列信息
         /// </summary>
         /// <param name="queueOrOtherIdentify">队列或其他标识</param>
+        /// <param name="extend">扩展</param>
         /// <returns>消息队列信息</returns>
-        T Reader(string queueOrOtherIdentify);
+        T Reader(string queueOrOtherIdentify, IDictionary<string, string> extend = null);
 
         /// <summary>
         /// 读取全部消息队列信息列表
         /// </summary>
+        /// <param name="extend">扩展</param>
         /// <returns>全部消息队列信息列表</returns>
-        IList<T> ReaderAll();
+        IList<T> ReaderAll(IDictionary<string, string> extend = null);
     }
 }

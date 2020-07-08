@@ -5,6 +5,15 @@
     <Authors>黄振东</Authors>
     <Company>Hzdtf</Company>
     <Description>Rabbit Asp.Net Core库，运行在Asp.Net Core 3.1以上</Description>
+    <Version>3.1.5</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>Hzdtf.Rabbit.AspNet.Core.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>Hzdtf.Rabbit.AspNet.Core.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

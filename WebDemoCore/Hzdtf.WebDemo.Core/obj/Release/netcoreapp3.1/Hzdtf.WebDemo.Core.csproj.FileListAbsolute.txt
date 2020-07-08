@@ -1,6 +1,0 @@
-C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebDemo.Core\obj\Release\netcoreapp3.1\Hzdtf.WebDemo.Core.csprojAssemblyReference.cache
-C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebDemo.Core\obj\Release\netcoreapp3.1\Hzdtf.WebDemo.Core.csproj.CoreCompileInputs.cache
-C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebDemo.Core\obj\Release\netcoreapp3.1\Hzdtf.WebDemo.Core.MvcApplicationPartsAssemblyInfo.cs
-C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebDemo.Core\obj\Release\netcoreapp3.1\Hzdtf.WebDemo.Core.MvcApplicationPartsAssemblyInfo.cache
-C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebDemo.Core\obj\Release\netcoreapp3.1\Hzdtf.WebDemo.Core.AssemblyInfoInputs.cache
-C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebDemo.Core\obj\Release\netcoreapp3.1\Hzdtf.WebDemo.Core.AssemblyInfo.cs

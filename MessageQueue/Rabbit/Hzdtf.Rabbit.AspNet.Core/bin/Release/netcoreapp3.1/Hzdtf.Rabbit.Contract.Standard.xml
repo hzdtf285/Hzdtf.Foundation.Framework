@@ -22,24 +22,32 @@
             </summary>
             <param name="topCount">前几个要关闭的，如果为-1则表示全部</param>
         </member>
+        <member name="T:Hzdtf.Rabbit.Contract.Standard.MessageQueue.IRabbitConfigReader">
+            <summary>
+            Rabbit配置读取接口
+            @ 黄振东
+            </summary>
+        </member>
         <member name="T:Hzdtf.Rabbit.Contract.Standard.MessageQueue.IRabbitMessageQueueReader">
             <summary>
             Rabbit消息队列读取接口
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Rabbit.Contract.Standard.MessageQueue.IRabbitMessageQueueReader.ReaderByExchange(System.String)">
+        <member name="M:Hzdtf.Rabbit.Contract.Standard.MessageQueue.IRabbitMessageQueueReader.ReaderByExchange(System.String,System.String)">
             <summary>
             根据交换机获取消息队列信息
             </summary>
             <param name="exchange">交换机</param>
+            <param name="virtualPath">虚拟路径</param>
             <returns>消息队列信息</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.Contract.Standard.MessageQueue.IRabbitMessageQueueReader.ReaderByQueue(System.String)">
+        <member name="M:Hzdtf.Rabbit.Contract.Standard.MessageQueue.IRabbitMessageQueueReader.ReaderByQueue(System.String,System.String)">
             <summary>
             根据队列获取消息队列信息
             </summary>
             <param name="queue">队列</param>
+            <param name="virtualPath">虚拟路径</param>
             <returns>消息队列信息</returns>
         </member>
     </members>

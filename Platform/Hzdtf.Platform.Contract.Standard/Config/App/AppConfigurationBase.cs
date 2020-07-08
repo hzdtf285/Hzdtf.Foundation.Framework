@@ -104,7 +104,7 @@ namespace Hzdtf.Platform.Contract.Standard.Config.App
                 return connectionString;
             }
 
-            return ConnectionEncryption? DESUtil.Decrypt(connectionString, this["DES:Key"], this["DES:IV"]) : connectionString;
+            return ConnectionEncryption? DESUtil.Decrypt(connectionString) : connectionString;
         }
 
         #endregion

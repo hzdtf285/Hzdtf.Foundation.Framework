@@ -67,6 +67,13 @@
             <param name="type">类型</param>
             <returns>服务</returns>
         </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.AutofacTool.ResolveFromBusinessDispatchProxy``1">
+            <summary>
+            解析来自业务动态代理创建的对象
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <returns>由业务动态代理创建的对象</returns>
+        </member>
         <member name="T:Hzdtf.Autofac.Extend.Standard.AutofacUtil">
             <summary>
             Autofac辅助类

@@ -2,6 +2,7 @@
 using Hzdtf.MessageQueue.Contract.Standard.MessageQueue;
 using Hzdtf.Platform.Config.Contract.Standard.Config.App;
 using Hzdtf.Platform.Contract.Standard;
+using Hzdtf.Rabbit.Model.Standard.Connection;
 using Hzdtf.Rabbit.Model.Standard.MessageQueue;
 using Hzdtf.Utility.Standard.Data;
 using Hzdtf.Utility.Standard.Release;
@@ -66,17 +67,6 @@ namespace Hzdtf.Rabbit.Impl.Standard.Core
         /// <summary>
         /// 构造方法
         /// 初始化各个对象以便就绪
-        /// </summary>
-        /// <param name="channel">渠道</param>
-        /// <param name="messageQueueInfoFactory">消息队列信息工厂</param>
-        public RabbitCoreBase(IModel channel, IMessageQueueInfoFactory messageQueueInfoFactory)
-            : this(channel, RabbitMessageQueueInfo.From(messageQueueInfoFactory.Create()))
-        {
-        }
-
-        /// <summary>
-        /// 构造方法
-        /// 初始化各个对象以便就绪
         /// 只初始化交换机与基本属性，队列定义请重写Init方法进行操作
         /// </summary>
         /// <param name="channel">渠道</param>
@@ -99,6 +89,19 @@ namespace Hzdtf.Rabbit.Impl.Standard.Core
             basicProperties.Persistent = rabbitMessageQueueInfo.Persistent;
 
             Init();
+        }
+
+        /// <summary>
+        /// 构造方法
+        /// 初始化各个对象以便就绪
+        /// </summary>
+        /// <param name="channel">渠道</param>
+        /// <param name="queueOrOtherIdentify">队列或其他标识</param>
+        /// <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+        /// <param name="virtualPath">虚拟路径</param>
+        public RabbitCoreBase(IModel channel, string queueOrOtherIdentify, IMessageQueueInfoFactory messageQueueInfoFactory, string virtualPath = RabbitConnectionInfo.DEFAULT_VIRTUAL_PATH)
+            : this(channel, RabbitMessageQueueInfo.From(messageQueueInfoFactory.Create(queueOrOtherIdentify, ConfigUtil.CreateContainerVirtualPathDic(virtualPath))))
+        {
         }
 
         #endregion

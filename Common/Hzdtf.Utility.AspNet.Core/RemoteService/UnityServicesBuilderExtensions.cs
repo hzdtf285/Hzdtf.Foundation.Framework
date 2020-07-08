@@ -44,7 +44,7 @@ namespace Hzdtf.Utility.AspNet.Core.RemoteService
         /// <param name="options">配置回调</param>
         /// <param name="beforeConfigBuilder">生成配置前回调</param>
         /// <returns>服务</returns>
-        public static IServiceCollection AddUnityServicesBuilderConfigure(this IServiceCollection services, Action<UnitServiceBuilderOptions> options = null, Action<IConfigurationBuilder> beforeConfigBuilder = null)
+        public static IServiceCollection AddUnityServicesBuilderConfigure(this IServiceCollection services, Action<UnitServiceBuilderOptions> options = null, Action<IConfigurationBuilder, string, object> beforeConfigBuilder = null)
         {
             return services.AddUnityServicesBuilder(builderOptions =>
             {

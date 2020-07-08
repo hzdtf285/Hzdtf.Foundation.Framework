@@ -10,10 +10,26 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="P:Hzdtf.Rabbit.Impl.Standard.ConfigUtil.ConnectionEncryption">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.ConfigUtil.GetVirtualPath(System.Collections.Generic.IDictionary{System.String,System.String})">
             <summary>
-            连接加密
+            获取虚拟路径，如果传入的为空或未找到key=virtualPath，则默认返回"/"
             </summary>
+            <param name="extend">扩展</param>
+            <returns>虚拟路径</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.ConfigUtil.CreateContainerVirtualPathDic(System.String)">
+            <summary>
+            创建一个包含虚拟路径的字典
+            </summary>
+            <param name="virtualPath">虚拟路径</param>
+            <returns>字典</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.ConfigUtil.SetMessageQueueReader(Hzdtf.MessageQueue.Contract.Standard.Connection.IMessageQueueConnection,Hzdtf.Rabbit.Contract.Standard.MessageQueue.IRabbitMessageQueueReader)">
+            <summary>
+            设置消息队列读取
+            </summary>
+            <param name="conn">消息队列连接</param>
+            <param name="reader">消息队列读取</param>
         </member>
         <member name="T:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection">
             <summary>
@@ -41,6 +57,11 @@
         <member name="P:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.Status">
             <summary>
             状态
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.ConnectionInfo">
+            <summary>
+            连接信息
             </summary>
         </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.#ctor">
@@ -95,10 +116,11 @@
             <param name="messageQueueInfo">消息队列信息</param>
             <returns>生产者</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.CreateProducer(Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.CreateProducer(System.String,Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
             <summary>
             创建生产者
             </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
             <param name="messageQueueInfoFactory">消息队列信息工厂</param>
             <returns>生产者</returns>
         </member>
@@ -116,10 +138,11 @@
             <param name="messageQueueInfo">消息队列信息</param>
             <returns>消费者</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.CreateConsumer(Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.CreateConsumer(System.String,Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
             <summary>
             创建消费者
             </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
             <param name="messageQueueInfoFactory">消息队列信息工厂</param>
             <returns>消费者</returns>
         </member>
@@ -137,10 +160,11 @@
             <param name="messageQueueInfo">消息队列信息</param>
             <returns>RPC客户端</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.CreateRpcClient(Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.CreateRpcClient(System.String,Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
             <summary>
             创建RPC客户端
             </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
             <param name="messageQueueInfoFactory">消息队列信息工厂</param>
             <returns>RPC客户端</returns>
         </member>
@@ -158,10 +182,11 @@
             <param name="messageQueueInfo">消息队列信息</param>
             <returns>RPC服务端</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.CreateRpcServer(Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.CreateRpcServer(System.String,Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
             <summary>
             创建RPC服务端
             </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
             <param name="messageQueueInfoFactory">消息队列信息工厂</param>
             <returns>RPC服务端</returns>
         </member>
@@ -183,6 +208,16 @@
             执行关闭事件
             </summary>
             <param name="data">数据</param>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.Finalize">
+            <summary>
+            析构方法
+            </summary>
         </member>
         <member name="T:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection">
             <summary>
@@ -215,6 +250,11 @@
             消息队列信息工厂
             </summary>
         </member>
+        <member name="F:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection.virtualPath">
+            <summary>
+            虚拟路径
+            </summary>
+        </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection.CreateProducer(System.String)">
             <summary>
             创建生产者
@@ -229,10 +269,11 @@
             <param name="messageQueueInfo">消息队列信息</param>
             <returns>生产者</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection.CreateProducer(Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection.CreateProducer(System.String,Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
             <summary>
             创建生产者
             </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
             <param name="messageQueueInfoFactory">消息队列信息工厂</param>
             <returns>生产者</returns>
         </member>
@@ -250,10 +291,11 @@
             <param name="messageQueueInfo">消息队列信息</param>
             <returns>消费者</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection.CreateConsumer(Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection.CreateConsumer(System.String,Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
             <summary>
             创建消费者
             </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
             <param name="messageQueueInfoFactory">消息队列信息工厂</param>
             <returns>消费者</returns>
         </member>
@@ -271,10 +313,11 @@
             <param name="messageQueueInfo">消息队列信息</param>
             <returns>RPC客户端</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection.CreateRpcClient(Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection.CreateRpcClient(System.String,Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
             <summary>
             创建RPC客户端
             </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
             <param name="messageQueueInfoFactory">消息队列信息工厂</param>
             <returns>RPC客户端</returns>
         </member>
@@ -292,10 +335,11 @@
             <param name="messageQueueInfo">消息队列信息</param>
             <returns>RPC服务端</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection.CreateRpcServer(Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection.CreateRpcServer(System.String,Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
             <summary>
             创建RPC服务端
             </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
             <param name="messageQueueInfoFactory">消息队列信息工厂</param>
             <returns>RPC服务端</returns>
         </member>
@@ -311,10 +355,11 @@
             </summary>
             <param name="topCount">前几个要关闭的，如果为-1则表示全部</param>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection.Close">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection.ExecClose">
             <summary>
-            关闭
+            执行关闭
             </summary>
+            <returns>事件数据</returns>
         </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection.GetDefaultConnectionString">
             <summary>
@@ -334,7 +379,7 @@
             </summary>
             <returns>默认的连接字符串解析器</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection.ValidateOpenParams(Hzdtf.Utility.Standard.Connection.ConnectionInfo)">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection.ValidateOpenParams2(Hzdtf.Utility.Standard.Connection.ConnectionInfo)">
             <summary>
             验证打开参数
             </summary>
@@ -379,6 +424,30 @@
             <param name="o">引发对象</param>
             <param name="e">对象事件参数</param>
         </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection.Finalize">
+            <summary>
+            析构方法
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnectionFactory">
+            <summary>
+            Rabbit连接工厂
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnectionFactory.#ctor(Hzdtf.Utility.Standard.Safety.ISymmetricalEncryption,Hzdtf.Platform.Config.Contract.Standard.Config.App.IAppConfiguration)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="symmetricalEncryption">加密</param>
+            <param name="appConfig">应用配置</param>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnectionFactory.Create">
+            <summary>
+            创建
+            </summary>
+            <returns>连接</returns>
+        </member>
         <member name="T:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnectionStringParse">
             <summary>
             Rabbit连接字符串解析器
@@ -404,6 +473,114 @@
             创建连接信息
             </summary>
             <returns>连接信息</returns>
+        </member>
+        <member name="T:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitRpcClientMethod">
+            <summary>
+            Rabbit RPC 客户端方法
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitRpcClientMethod.connectionFactoy">
+            <summary>
+            消息队列连接工厂
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitRpcClientMethod.rabbitConfigReader">
+            <summary>
+            Rabbit配置读取
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitRpcClientMethod.jsonSerialation">
+            <summary>
+            JSON字节流序列化
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitRpcClientMethod.messagePackSerialztion">
+            <summary>
+            MessagePack字节流序列化
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitRpcClientMethod.dicVirtualPathMapRpcClient">
+            <summary>
+            虚拟路径映射RPC客户端字典
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitRpcClientMethod.syncDicVirtualPathMapRpcClient">
+            <summary>
+            同步虚拟路径映射RPC客户端字典
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitRpcClientMethod.connections">
+            <summary>
+            连接列表
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitRpcClientMethod.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitRpcClientMethod.#ctor(Hzdtf.MessageQueue.Contract.Standard.Connection.IMessageQueueConnectionFactory,Hzdtf.Rabbit.Contract.Standard.MessageQueue.IRabbitConfigReader)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="connectionFactoy">消息队列连接工厂</param>
+            <param name="rabbitConfigReader">Rabbit配置读取</param>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitRpcClientMethod.Call(System.Reflection.MethodInfo,System.Object)">
+            <summary>
+            调用
+            </summary>
+            <param name="method">方法</param>
+            <param name="message">消息</param>
+            <returns>返回数据</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitRpcClientMethod.Close">
+            <summary>
+            关闭
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitRpcClientMethod.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitRpcClientMethod.Finalize">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitRpcClientMethod.GetMessageQueueByAssemblyName(Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitConfigInfo,System.String,Hzdtf.Rabbit.Impl.Standard.Connection.RpcClientAssemblyWrapInfo@)">
+            <summary>
+            根据程序集名获取消息队列信息
+            </summary>
+            <param name="rabbitConfig">rabbit配置</param>
+            <param name="assemblyName">程序集名</param>
+            <param name="rpcClientAssemblyWrap">rpc客户端程序集包装</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitRpcClientMethod.GetByteSerialization(System.String)">
+            <summary>
+            根据数据类型获取字节流序列化
+            </summary>
+            <param name="dataType">数据类型</param>
+            <returns>字节流序列化</returns>
+        </member>
+        <member name="T:Hzdtf.Rabbit.Impl.Standard.Connection.RpcClientAssemblyWrapInfo">
+            <summary>
+            Rpc客户端程序集包装信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Rabbit.Impl.Standard.Connection.RpcClientAssemblyWrapInfo.RpcClientAssembly">
+            <summary>
+            Rpc客户端程序集对象
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Rabbit.Impl.Standard.Connection.RpcClientAssemblyWrapInfo.RabbitVirtualPath">
+            <summary>
+            Rabbit虚拟路径对象
+            </summary>
         </member>
         <member name="T:Hzdtf.Rabbit.Impl.Standard.Core.RabbitConsumer">
             <summary>
@@ -436,19 +613,21 @@
             业务异常返回应答，默认为false
             </summary>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitConsumer.#ctor(RabbitMQ.Client.IModel,Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
-            <summary>
-            构造方法
-            </summary>
-            <param name="channel">渠道</param>
-            <param name="messageQueueInfoFactory">消息队列信息工厂</param>
-        </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitConsumer.#ctor(RabbitMQ.Client.IModel,Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo)">
             <summary>
             构造方法
             </summary>
             <param name="channel">渠道</param>
-            <param name="RabbitMessageQueueInfo">Rabbit消息队列信息</param>
+            <param name="rabbitMessageQueueInfo">Rabbit消息队列信息</param>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitConsumer.#ctor(RabbitMQ.Client.IModel,System.String,Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory,System.String)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="channel">渠道</param>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+            <param name="virtualPath">虚拟路径</param>
         </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitConsumer.Subscribe(System.Func{System.String,System.Boolean},System.Boolean)">
             <summary>
@@ -529,14 +708,6 @@
             关闭后事件
             </summary>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitCoreBase.#ctor(RabbitMQ.Client.IModel,Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
-            <summary>
-            构造方法
-            初始化各个对象以便就绪
-            </summary>
-            <param name="channel">渠道</param>
-            <param name="messageQueueInfoFactory">消息队列信息工厂</param>
-        </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitCoreBase.#ctor(RabbitMQ.Client.IModel,Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo)">
             <summary>
             构造方法
@@ -544,7 +715,17 @@
             只初始化交换机与基本属性，队列定义请重写Init方法进行操作
             </summary>
             <param name="channel">渠道</param>
-            <param name="RabbitMessageQueueInfo">Rabbit消息队列信息</param>
+            <param name="rabbitMessageQueueInfo">Rabbit消息队列信息</param>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitCoreBase.#ctor(RabbitMQ.Client.IModel,System.String,Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory,System.String)">
+            <summary>
+            构造方法
+            初始化各个对象以便就绪
+            </summary>
+            <param name="channel">渠道</param>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+            <param name="virtualPath">虚拟路径</param>
         </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitCoreBase.Close">
             <summary>
@@ -583,19 +764,21 @@
             字节数组序列化，默认为JSON序列化
             </summary>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitProducer.#ctor(RabbitMQ.Client.IModel,Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
-            <summary>
-            构造方法
-            </summary>
-            <param name="channel">渠道</param>
-            <param name="messageQueueInfoFactory">消息队列信息工厂</param>
-        </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitProducer.#ctor(RabbitMQ.Client.IModel,Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo)">
             <summary>
             构造方法
             </summary>
             <param name="channel">渠道</param>
-            <param name="RabbitMessageQueueInfo">Rabbit消息队列信息</param>
+            <param name="rabbitMessageQueueInfo">Rabbit消息队列信息</param>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitProducer.#ctor(RabbitMQ.Client.IModel,System.String,Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory,System.String)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="channel">渠道</param>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+            <param name="virtualPath">虚拟路径</param>
         </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitProducer.Publish(System.String,System.String)">
             <summary>
@@ -624,19 +807,54 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcClient.#ctor(RabbitMQ.Client.IModel,Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+        <member name="E:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcClient.Closed">
             <summary>
-            构造方法
+            关闭后事件
             </summary>
-            <param name="channel">渠道</param>
-            <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+        </member>
+        <member name="F:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcClient._channel">
+            <summary>
+            渠道
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcClient._replyQueueName">
+            <summary>
+            回复队列名
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcClient._consumer">
+            <summary>
+            回复消费者
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcClient._callbackMapper">
+            <summary>
+            回调映射
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcClient.rabbitMessageQueueInfo">
+            <summary>
+            Rabbit消息队列信息
+            </summary>
         </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcClient.#ctor(RabbitMQ.Client.IModel,Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo)">
             <summary>
             构造方法
+            初始化各个对象以便就绪
+            只初始化交换机与基本属性，队列定义请重写Init方法进行操作
             </summary>
             <param name="channel">渠道</param>
-            <param name="RabbitMessageQueueInfo">Rabbit消息队列信息</param>
+            <param name="rabbitMessageQueueInfo">Rabbit消息队列信息</param>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcClient.#ctor(RabbitMQ.Client.IModel,System.String,Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory,System.String)">
+            <summary>
+            构造方法
+            初始化各个对象以便就绪
+            </summary>
+            <param name="channel">渠道</param>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+            <param name="virtualPath">虚拟路径</param>
         </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcClient.Call(System.Byte[])">
             <summary>
@@ -645,10 +863,45 @@
             <param name="message">消息</param>
             <returns>返回字节流</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcClient.Init">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcClient.CallAsync(System.Byte[])">
             <summary>
-            初始化
+            异步调用
             </summary>
+            <param name="message">消息</param>
+            <returns>返回字节流任务</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcClient.Close">
+            <summary>
+            关闭
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcClient.OnClosed(System.Object)">
+            <summary>
+            执行关闭事件
+            </summary>
+            <param name="data">数据</param>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcClient.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcClient.Finalize">
+            <summary>
+            析构方法
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcDispatchProxyClient">
+            <summary>
+            Rabbit RPC 动态代理客户端
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcDispatchProxyClient.CreateRpcClientMethod">
+            <summary>
+            创建默认Rpc客户端方法
+            </summary>
+            <returns>Rpc客户端方法</returns>
         </member>
         <member name="T:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcServer">
             <summary>
@@ -656,19 +909,44 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcServer.#ctor(RabbitMQ.Client.IModel,Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory)">
+        <member name="P:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcServer.Log">
             <summary>
-            构造方法
+            日志
             </summary>
-            <param name="channel">渠道</param>
-            <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+        </member>
+        <member name="E:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcServer.Closed">
+            <summary>
+            关闭后事件
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcServer._channel">
+            <summary>
+            渠道
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcServer.rabbitMessageQueueInfo">
+            <summary>
+            Rabbit消息队列信息
+            </summary>
         </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcServer.#ctor(RabbitMQ.Client.IModel,Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo)">
             <summary>
             构造方法
+            初始化各个对象以便就绪
+            只初始化交换机与基本属性，队列定义请重写Init方法进行操作
             </summary>
             <param name="channel">渠道</param>
-            <param name="RabbitMessageQueueInfo">Rabbit消息队列信息</param>
+            <param name="rabbitMessageQueueInfo">Rabbit消息队列信息</param>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcServer.#ctor(RabbitMQ.Client.IModel,System.String,Hzdtf.MessageQueue.Contract.Standard.MessageQueue.IMessageQueueInfoFactory,System.String)">
+            <summary>
+            构造方法
+            初始化各个对象以便就绪
+            </summary>
+            <param name="channel">渠道</param>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+            <param name="virtualPath">虚拟路径</param>
         </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcServer.Receive(System.Func{System.Byte[],System.Byte[]})">
             <summary>
@@ -676,64 +954,26 @@
             </summary>
             <param name="receiveMessageFun">接收消息回调</param>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcServer.Init">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcServer.Close">
             <summary>
-            初始化
+            关闭
             </summary>
         </member>
-        <member name="T:Hzdtf.Rabbit.Impl.Standard.Core.RabbitSimpleRpcServer">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcServer.OnClosed(System.Object)">
             <summary>
-            Rabbit简单 RPC服务端
-            @ 黄振东
+            执行关闭事件
+            </summary>
+            <param name="data">数据</param>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcServer.Dispose">
+            <summary>
+            释放资源
             </summary>
         </member>
-        <member name="F:Hzdtf.Rabbit.Impl.Standard.Core.RabbitSimpleRpcServer.log">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitRpcServer.Finalize">
             <summary>
-            日志
+            析构方法
             </summary>
-        </member>
-        <member name="F:Hzdtf.Rabbit.Impl.Standard.Core.RabbitSimpleRpcServer.receiveMessageFun">
-            <summary>
-            接收消息回调
-            </summary>
-        </member>
-        <member name="F:Hzdtf.Rabbit.Impl.Standard.Core.RabbitSimpleRpcServer.returnClientMessage">
-            <summary>
-            返回客户端消息
-            </summary>
-        </member>
-        <member name="F:Hzdtf.Rabbit.Impl.Standard.Core.RabbitSimpleRpcServer.thisName">
-            <summary>
-            本身名称
-            </summary>
-        </member>
-        <member name="F:Hzdtf.Rabbit.Impl.Standard.Core.RabbitSimpleRpcServer.thisFullName">
-            <summary>
-            本身全名称
-            </summary>
-        </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitSimpleRpcServer.#ctor(RabbitMQ.Client.MessagePatterns.Subscription,System.Func{System.Byte[],System.Byte[]},Hzdtf.Logger.Contract.Standard.ILogable)">
-            <summary>
-            构造方法
-            </summary>
-            <param name="subscription">消费</param>
-            <param name="log">日志</param>
-        </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitSimpleRpcServer.HandleSimpleCall(System.Boolean,RabbitMQ.Client.IBasicProperties,System.Byte[],RabbitMQ.Client.IBasicProperties@)">
-            <summary>
-            执行完成后进行回调
-            </summary>
-            <param name="isRedelivered">是否传递</param>
-            <param name="requestProperties">请求属性</param>
-            <param name="body">由客户端发送过来的字节流</param>
-            <param name="replyProperties">回复属性</param>
-            <returns>需要返回给客户端的字节流</returns>
-        </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.Core.RabbitSimpleRpcServer.ProcessRequest(RabbitMQ.Client.Events.BasicDeliverEventArgs)">
-            <summary>
-            进行处理
-            </summary>
-            <param name="evt">基本传递事件参数</param>
         </member>
         <member name="T:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase">
             <summary>
@@ -741,141 +981,78 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.Reader(System.String)">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.Reader(System.String,System.Collections.Generic.IDictionary{System.String,System.String})">
             <summary>
             根据队列读取消息队列信息
             </summary>
             <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <param name="extend">扩展</param>
             <returns>消息队列信息</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.ReaderAll">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.ReaderAll(System.Collections.Generic.IDictionary{System.String,System.String})">
             <summary>
             读取全部消息队列信息列表
             </summary>
+            <param name="extend">扩展</param>
             <returns>全部消息队列信息列表</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.ReaderByExchange(System.String)">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.ReaderByExchange(System.String,System.String)">
             <summary>
             根据交换机获取消息队列信息
             </summary>
             <param name="exchange">交换机</param>
+            <param name="virtualPath">虚拟路径</param>
             <returns>消息队列信息</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.ReaderByQueue(System.String)">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.ReaderByQueue(System.String,System.String)">
             <summary>
             根据队列获取消息队列信息
             </summary>
             <param name="queue">队列</param>
+            <param name="virtualPath">虚拟路径</param>
             <returns>消息队列信息</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.ReaderByExchangeAndQueue(System.String,System.String)">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.ReaderByExchangeAndQueue(System.String,System.String,System.String)">
             <summary>
             根据交换机和队列获取消息队列信息
             </summary>
             <param name="exchange">交换机</param>
             <param name="queue">队列</param>
+            <param name="virtualPath">虚拟路径</param>
             <returns>消息队列信息</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.QueryExchangeInfosFromSource">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.QueryExchangeInfosFromSource(System.String)">
             <summary>
             从源头查询交换机信息列表
             </summary>
+            <param name="virtualPath">虚拟路径</param>
             <returns>交换机信息列表</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.Trans(System.Collections.Generic.IList{Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitExchangeInfo})">
-            <summary>
-            将交换机信息列表转换为消息队列信息列表
-            </summary>
-            <param name="exchanges">交换机信息列表</param>
-            <returns>消息队列信息列表</returns>
-        </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.CreateBasicProps(Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitExchangeInfo)">
-            <summary>
-            创建消息队列信息并赋基本值
-            </summary>
-            <param name="rabbitExchangeInfo">Rabbit交换机信息</param>
-            <returns>Rabbit消息队列信息</returns>
-        </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.GetMessagQueueInfoByCondition(System.Func{Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo,System.Boolean})">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueBase.GetMessagQueueInfoByCondition(System.Func{Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo,System.Boolean},System.Collections.Generic.IDictionary{System.String,System.String})">
             <summary>
             根据条件获取消息队列信息
             </summary>
             <param name="func">回调条件</param>
+            <param name="extend">扩展</param>
             <returns>消息队列信息</returns>
         </member>
-        <member name="T:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache">
+        <member name="T:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueInfoConfigFactory">
             <summary>
-            Rabbit消息队列缓存
+            Rabbit消息队列信息配置工厂
             @ 黄振东
             </summary>
         </member>
-        <member name="P:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.ProtoMessageQueueReader">
+        <member name="P:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueInfoConfigFactory.MessageQueueReader">
             <summary>
-            原生消息队列读取
+            消息队列读取
             </summary>
         </member>
-        <member name="F:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.dicCaches">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueInfoConfigFactory.Create(System.String,System.Collections.Generic.IDictionary{System.String,System.String})">
             <summary>
-            缓存键（以队列名为键）
-            </summary>
-        </member>
-        <member name="F:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.syncDicCaches">
-            <summary>
-            同步缓存键
-            </summary>
-        </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.Reader(System.String)">
-            <summary>
-            根据队列读取消息队列信息
+            创建消息队列信息
             </summary>
             <param name="queueOrOtherIdentify">队列或其他标识</param>
-            <returns>消息队列信息</returns>
-        </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.ReaderAll">
-            <summary>
-            读取全部消息队列信息列表
-            </summary>
-            <returns>全部消息队列信息列表</returns>
-        </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.ReaderByExchange(System.String)">
-            <summary>
-            根据交换机获取消息队列信息
-            </summary>
-            <param name="exchange">交换机</param>
-            <returns>消息队列信息</returns>
-        </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.ReaderByQueue(System.String)">
-            <summary>
-            根据队列获取消息队列信息
-            </summary>
-            <param name="queue">队列</param>
-            <returns>消息队列信息</returns>
-        </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.ReaderByExchangeAndQueue(System.String,System.String)">
-            <summary>
-            根据交换机和队列获取消息队列信息
-            </summary>
-            <param name="exchange">交换机</param>
-            <param name="queue">队列</param>
-            <returns>消息队列信息</returns>
-        </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.GetCache">
-            <summary>
-            获取缓存对象
-            </summary>
-            <returns>缓存对象</returns>
-        </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.GetSyncCache">
-            <summary>
-            获取同步缓存对象
-            </summary>
-            <returns>同步缓存对象</returns>
-        </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueCache.GetMessagQueueInfoByCondition(System.Func{Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo,System.Boolean})">
-            <summary>
-            根据条件获取消息队列信息
-            </summary>
-            <param name="func">回调条件</param>
+            <param name="extend">扩展</param>
             <returns>消息队列信息</returns>
         </member>
         <member name="T:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueJson">
@@ -889,6 +1066,16 @@
             JSON文件名
             </summary>
         </member>
+        <member name="F:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueJson.dicVirtPathMapConfig">
+            <summary>
+            文件映射配置字典，key：虚拟路径；value：Rabbit交换机列表
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueJson.syncDicFileMapConfig">
+            <summary>
+            同步文件映射配置字典
+            </summary>
+        </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueJson.#ctor">
             <summary>
             构造方法
@@ -900,72 +1087,118 @@
             </summary>
             <param name="jsonFileName">JSON文件名</param>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueJson.QueryExchangeInfosFromSource">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueJson.Reader">
+            <summary>
+            读取
+            </summary>
+            <returns>数据</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueJson.QueryExchangeInfosFromSource(System.String)">
             <summary>
             从源头查询交换机信息列表
             </summary>
             <returns>交换机信息列表</returns>
         </member>
-        <member name="T:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueInfoConfigFactory">
+        <member name="T:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueUtil">
             <summary>
-            Rabbit消息队列信息配置工厂
+            Rabbit消息队列辅助类
             @ 黄振东
             </summary>
         </member>
-        <member name="P:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueInfoConfigFactory.MessageQueueReader">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueUtil.Reader(System.String,System.Collections.Generic.IList{Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo})">
             <summary>
-            消息队列读取
-            </summary>
-        </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueInfoConfigFactory.Create(System.String)">
-            <summary>
-            创建消息队列信息
+            根据队列读取消息队列信息
             </summary>
             <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <param name="allList">所有列表</param>
             <returns>消息队列信息</returns>
         </member>
-        <member name="T:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueXml">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueUtil.ReaderByExchange(System.String,System.Collections.Generic.IList{Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo})">
             <summary>
-            Rabbit消息队列XML
+            根据交换机获取消息队列信息
+            </summary>
+            <param name="exchange">交换机</param>
+            <param name="allList">所有列表</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueUtil.ReaderByQueue(System.String,System.Collections.Generic.IList{Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo})">
+            <summary>
+            根据队列获取消息队列信息
+            </summary>
+            <param name="queue">队列</param>
+            <param name="allList">所有列表</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueUtil.ReaderByExchangeAndQueue(System.String,System.String,System.Collections.Generic.IList{Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo})">
+            <summary>
+            根据交换机和队列获取消息队列信息
+            </summary>
+            <param name="exchange">交换机</param>
+            <param name="queue">队列</param>
+            <param name="allList">所有列表</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueUtil.GetMessagQueueInfoByCondition(System.Func{Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo,System.Boolean},System.Collections.Generic.IList{Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitMessageQueueInfo})">
+            <summary>
+            根据条件获取消息队列信息
+            </summary>
+            <param name="func">回调条件</param>
+            <param name="allList">所有列表</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueUtil.GetExchanges(Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitConfigInfo,System.String)">
+            <summary>
+            根据虚拟路径获取交换机列表
+            </summary>
+            <param name="rabbitConfig">rabbit配置</param>
+            <param name="virtualPath">虚拟路径</param>
+            <returns>交换机列表</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueUtil.ToMessageQueues(System.Collections.Generic.IList{Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitExchangeInfo})">
+            <summary>
+            将交换机信息列表转换为消息队列信息列表
+            </summary>
+            <param name="exchanges">交换机信息列表</param>
+            <returns>消息队列信息列表</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueUtil.ToMessageQueue(Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitExchangeInfo)">
+            <summary>
+            创建消息队列信息并赋基本值
+            </summary>
+            <param name="rabbitExchangeInfo">Rabbit交换机信息</param>
+            <returns>Rabbit消息队列信息</returns>
+        </member>
+        <member name="T:Hzdtf.Rabbit.Impl.Standard.RabbitConnectionDefaultFactory">
+            <summary>
+            Rabbit连接默认工厂
             @ 黄振东
             </summary>
         </member>
-        <member name="F:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueXml.xmlDoc">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.RabbitConnectionDefaultFactory.CreateConnectionAndOpen(System.Func{System.String,Hzdtf.Rabbit.Contract.Standard.MessageQueue.IRabbitMessageQueueReader},System.Action{Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionWrapInfo})">
             <summary>
-            XML文档
+            创建消息队列连接并打开
             </summary>
+            <param name="funQueueReader">消息队列读取</param>
+            <param name="options">配置</param>
+            <returns>消息队列连接</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueXml.#ctor">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.RabbitConnectionDefaultFactory.CreateConnectionAndOpen(Hzdtf.MessageQueue.Contract.Standard.Connection.IMessageQueueConnectionFactory@,System.Func{System.String,Hzdtf.Rabbit.Contract.Standard.MessageQueue.IRabbitMessageQueueReader},System.Action{Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionWrapInfo})">
             <summary>
-            构造方法
+            创建消息队列连接并打开
             </summary>
+            <param name="factory">Rabbit连接工厂</param>
+            <param name="funQueueReader">消息队列读取</param>
+            <param name="options">配置</param>
+            <returns>消息队列连接</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueXml.#ctor(System.String)">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.RabbitConnectionDefaultFactory.CreateConnectionAndOpen(Hzdtf.MessageQueue.Contract.Standard.Connection.IMessageQueueConnectionFactory,System.Func{System.String,Hzdtf.Rabbit.Contract.Standard.MessageQueue.IRabbitMessageQueueReader},System.Action{Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionWrapInfo})">
             <summary>
-            构造方法
+            创建消息队列连接并打开
             </summary>
-            <param name="xmlFileName">XML文件名</param>
-        </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.MessageQueue.RabbitMessageQueueXml.QueryExchangeInfosFromSource">
-            <summary>
-            从源头查询交换机信息列表
-            </summary>
-            <returns>交换机信息列表</returns>
-        </member>
-        <member name="T:Hzdtf.Rabbit.Impl.Standard.RabbitConnectionFactory">
-            <summary>
-            Rabbit连接工厂
-            @ 黄振东
-            </summary>
-        </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.RabbitConnectionFactory.CreateAndOpen(System.String,System.String,Hzdtf.Utility.Standard.Enums.DataContentType)">
-            <summary>
-            创建连接且打开
-            </summary>
-            <param name="connectionStringConfigName">连接字符串配置名称</param>
-            <param name="messageQueueFilePath">消息队列文件路径</param>
-            <param name="dataContentType">数据内容类型。只支持JSON和XML</param>
-            <returns>连接</returns>
+            <param name="factory">Rabbit连接工厂</param>
+            <param name="funQueueReader">消息队列读取</param>
+            <param name="options">配置</param>
+            <returns>消息队列连接</returns>
         </member>
     </members>
 </doc>

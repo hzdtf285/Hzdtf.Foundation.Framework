@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.Rabbit.AspNet.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.Rabbit.AspNet.Core.RabbitConnectionConfigureDefaultFactory">
+            <summary>
+            Rabbit连接来自微软配置默认工厂
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitConnectionConfigureDefaultFactory.CreateConnectionConfigureAndOpen(System.Func{System.String,Hzdtf.Rabbit.Contract.Standard.MessageQueue.IRabbitMessageQueueReader},System.Action{Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionWrapInfo},System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.Object})">
+            <summary>
+            创建消息队列连接来自微软配置并打开
+            </summary>
+            <param name="funQueueReader">消息队列读取</param>
+            <param name="options">配置</param>
+            <param name="beforeConfigBuilder">生成配置前回调</param>
+            <returns>消息队列连接</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitConnectionConfigureDefaultFactory.CreateConnectionConfigureAndOpen(Hzdtf.MessageQueue.Contract.Standard.Connection.IMessageQueueConnectionFactory@,System.Func{System.String,Hzdtf.Rabbit.Contract.Standard.MessageQueue.IRabbitMessageQueueReader},System.Action{Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionWrapInfo},System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.Object})">
+            <summary>
+            创建消息队列连接来自微软配置并打开
+            </summary>
+            <param name="factory">Rabbit连接工厂</param>
+            <param name="funQueueReader">消息队列读取</param>
+            <param name="options">配置</param>
+            <param name="beforeConfigBuilder">生成配置前回调</param>
+            <returns>消息队列连接</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitConnectionConfigureDefaultFactory.CreateConnectionConfigureAndOpen(Hzdtf.MessageQueue.Contract.Standard.Connection.IMessageQueueConnectionFactory,System.Func{System.String,Hzdtf.Rabbit.Contract.Standard.MessageQueue.IRabbitMessageQueueReader},System.Action{Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionWrapInfo},System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.Object})">
+            <summary>
+            创建消息队列连接来自微软配置并打开
+            </summary>
+            <param name="factory">Rabbit连接工厂</param>
+            <param name="funQueueReader">消息队列读取</param>
+            <param name="options">配置</param>
+            <param name="beforeConfigBuilder">生成配置前回调</param>
+            <returns>消息队列连接</returns>
+        </member>
+        <member name="T:Hzdtf.Rabbit.AspNet.Core.RabbitMessageQueueConfiguration">
+            <summary>
+            Rabbit消息队列来自微软配置对象里
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitMessageQueueConfiguration.#ctor(System.String,System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.Object})">
+            <summary>
+            构造方法
+            </summary>
+            <param name="jsonFile">json文件</param>
+            <param name="beforeConfigurationBuilder">配置生成前回调</param>
+        </member>
+        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitMessageQueueConfiguration.#ctor(Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitConfigInfo,System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.Object})">
+            <summary>
+            构造方法
+            </summary>
+            <param name="options">配置</param>
+            <param name="beforeConfigurationBuilder">配置生成前回调</param>
+        </member>
+        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitMessageQueueConfiguration.Reader(System.String,System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            根据队列读取消息队列信息
+            </summary>
+            <param name="queueOrOtherIdentify">队列或其他标识</param>
+            <param name="extend">扩展</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitMessageQueueConfiguration.ReaderAll(System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            读取全部消息队列信息列表
+            </summary>
+            <param name="extend">扩展</param>
+            <returns>全部消息队列信息列表</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitMessageQueueConfiguration.ReaderByExchange(System.String,System.String)">
+            <summary>
+            根据交换机获取消息队列信息
+            </summary>
+            <param name="exchange">交换机</param>
+            <param name="virtualPath">虚拟路径</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitMessageQueueConfiguration.ReaderByQueue(System.String,System.String)">
+            <summary>
+            根据队列获取消息队列信息
+            </summary>
+            <param name="queue">队列</param>
+            <param name="virtualPath">虚拟路径</param>
+            <returns>消息队列信息</returns>
+        </member>
+        <member name="T:Hzdtf.Rabbit.AspNet.Core.RabbitMessageQueueExtensions">
+            <summary>
+            Rabbit消息队列扩展类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitMessageQueueExtensions.AddRabbit(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionWrapInfo})">
+            <summary>
+            添加Rabbit
+            </summary>
+            <param name="services">服务</param>
+            <param name="options">配置回调</param>
+            <returns>服务</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitMessageQueueExtensions.AddRabbitConfigure(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionWrapInfo},System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.Object})">
+            <summary>
+            添加Rabbit微软配置
+            </summary>
+            <param name="services">服务</param>
+            <param name="options">配置回调</param>
+            <param name="beforeConfigBuilder">生成配置前回调</param>
+            <returns>服务</returns>
+        </member>
+        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitMessageQueueExtensions.AddRabbitDesc(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.String,Hzdtf.Rabbit.Contract.Standard.MessageQueue.IRabbitMessageQueueReader},System.Action{Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionWrapInfo})">
+            <summary>
+            添加Rabbit详细
+            </summary>
+            <param name="services">服务</param>
+            <param name="funQueueReader">消息队列读取回调</param>
+            <param name="options">配置回调</param>
+            <returns>消息队列连接</returns>
+        </member>
+    </members>
+</doc>

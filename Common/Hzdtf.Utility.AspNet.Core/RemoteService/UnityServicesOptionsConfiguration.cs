@@ -30,7 +30,7 @@ namespace Hzdtf.Utility.AspNet.Core.RemoteService
         /// </summary>
         /// <param name="jsonFile">json文件</param>
         /// <param name="beforeConfigurationBuilder">配置生成前回调</param>
-        public UnityServicesOptionsConfiguration(string jsonFile = "Config/serviceBuilderConfig.json", Action<IConfigurationBuilder> beforeConfigurationBuilder = null) 
+        public UnityServicesOptionsConfiguration(string jsonFile = "Config/serviceBuilderConfig.json", Action<IConfigurationBuilder, string, object> beforeConfigurationBuilder = null) 
             : base(jsonFile, beforeConfigurationBuilder)
         {
         }
@@ -40,7 +40,7 @@ namespace Hzdtf.Utility.AspNet.Core.RemoteService
         /// </summary>
         /// <param name="options">配置</param>
         /// <param name="beforeConfigurationBuilder">配置生成前回调</param>
-        public UnityServicesOptionsConfiguration(UnityServicesOptions options, Action<IConfigurationBuilder> beforeConfigurationBuilder = null)
+        public UnityServicesOptionsConfiguration(UnityServicesOptions options, Action<IConfigurationBuilder, string, object> beforeConfigurationBuilder = null)
             : base(options, beforeConfigurationBuilder)
         {
         }

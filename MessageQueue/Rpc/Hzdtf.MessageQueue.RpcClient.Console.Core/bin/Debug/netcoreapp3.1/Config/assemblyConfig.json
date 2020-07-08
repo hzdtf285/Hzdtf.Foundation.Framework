@@ -2,12 +2,14 @@
   "Services": [
     {
       "Names": [
-        "FEG.Utility.Standard",
-        "FEG.Platform.Contract.Standard",
-        "FEG.Platform.Impl.Core",
-        "FEG.Logger.Contract.Standard",
-        "FEG.Logger.Text.Impl.Standard",
-        "FEG.MessageQueue.Contract.Standard"
+        "Hzdtf.Utility.Standard",
+        "Hzdtf.Platform.Contract.Standard",
+        "Hzdtf.Platform.Impl.Core",
+        "Hzdtf.Logger.Contract.Standard",
+        "Hzdtf.Logger.Text.Impl.Standard",
+        "Hzdtf.MessageQueue.Contract.Standard",
+        "Hzdtf.Rabbit.Contract.Standard",
+        "Hzdtf.Rabbit.Impl.Standard"
       ],
       "Lifecycle": "SIGNLETON"
     }

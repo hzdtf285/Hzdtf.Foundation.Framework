@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Text;
 using Hzdtf.Utility.Standard.Utils;
 using Hzdtf.MessageQueue.Contract.Standard;
+using Hzdtf.Rabbit.Model.Standard.Connection;
 
 namespace Hzdtf.Rabbit.Impl.Standard.Core
 {
@@ -70,17 +71,7 @@ namespace Hzdtf.Rabbit.Impl.Standard.Core
 
         #endregion
 
-        #region 初始化
-
-        /// <summary>
-        /// 构造方法
-        /// </summary>
-        /// <param name="channel">渠道</param>
-        /// <param name="messageQueueInfoFactory">消息队列信息工厂</param>
-        public RabbitConsumer(IModel channel, IMessageQueueInfoFactory messageQueueInfoFactory)
-            : base(channel, messageQueueInfoFactory)
-        {
-        }
+        #region 初始化       
 
         /// <summary>
         /// 构造方法
@@ -89,6 +80,18 @@ namespace Hzdtf.Rabbit.Impl.Standard.Core
         /// <param name="rabbitMessageQueueInfo">Rabbit消息队列信息</param>
         public RabbitConsumer(IModel channel, RabbitMessageQueueInfo rabbitMessageQueueInfo)
             : base(channel, rabbitMessageQueueInfo)
+        {
+        }
+
+        /// <summary>
+        /// 构造方法
+        /// </summary>
+        /// <param name="channel">渠道</param>
+        /// <param name="queueOrOtherIdentify">队列或其他标识</param>
+        /// <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+        /// <param name="virtualPath">虚拟路径</param>
+        public RabbitConsumer(IModel channel, string queueOrOtherIdentify, IMessageQueueInfoFactory messageQueueInfoFactory, string virtualPath = RabbitConnectionInfo.DEFAULT_VIRTUAL_PATH)
+            : base(channel, queueOrOtherIdentify, messageQueueInfoFactory, virtualPath)
         {
         }
 
@@ -197,14 +200,14 @@ namespace Hzdtf.Rabbit.Impl.Standard.Core
             consumer.Received += (o, e) =>
             {
                 bool isAck = true;
-                if (receiveMessageFun != null && !e.Body.IsNullOrLength0())
+                if (receiveMessageFun != null && !e.Body.IsEmpty)
                 {
                     string logMsg = string.Format("接收到消息,队列:{0}", rabbitMessageQueueInfo.Queue);
                     Log.DebugAsync(logMsg, null, tags: GetLogTags(rabbitMessageQueueInfo));
 
                     try
                     {
-                        isAck = receiveMessageFun(e.Body);
+                        isAck = receiveMessageFun(e.Body.ToArray());
                     }
                     catch (Exception ex)
                     {

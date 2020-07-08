@@ -90,17 +90,6 @@
             <param name="additionalInterfaces">Additional interface types. Calls to their members will be proxied as well.</param>
             <returns>Registration builder allowing the registration to be configured.</returns>
         </member>
-        <member name="M:Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2})">
-            <summary>
-            Enable interface interception on the target type. Interceptors will be determined
-            via Intercept attributes on the class or interface, or added with InterceptedBy() calls.
-            </summary>
-            <typeparam name="TLimit">Registration limit type.</typeparam>
-            <typeparam name="TActivatorData">Activator data type.</typeparam>
-            <typeparam name="TSingleRegistrationStyle">Registration style.</typeparam>
-            <param name="registration">Registration to apply interception to.</param>
-            <returns>Registration builder allowing the registration to be configured.</returns>
-        </member>
         <member name="M:Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},Castle.DynamicProxy.ProxyGenerationOptions)">
             <summary>
             Enable interface interception on the target type. Interceptors will be determined

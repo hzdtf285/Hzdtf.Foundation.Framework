@@ -14,11 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hzdtf")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("授权Web Core库")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("2.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.0.0")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("3.1.5.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("3.1.5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hzdtf.Authorization.Web.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hzdtf.Authorization.Web.Core")]
-[assembly: System.Reflection.AssemblyVersionAttribute("2.0.0.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("3.1.5.0")]
 
 // 由 MSBuild WriteCodeFragment 类生成。
 

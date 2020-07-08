@@ -60,7 +60,7 @@ namespace Hzdtf.Redis.Extend.Standard
                 return connectionString;
             }
 
-            return DESUtil.Decrypt(connectionString, PlatformTool.AppConfig["DES:Key"], PlatformTool.AppConfig["DES:IV"]);
+            return DESUtil.Decrypt(connectionString);
         }
     }
 

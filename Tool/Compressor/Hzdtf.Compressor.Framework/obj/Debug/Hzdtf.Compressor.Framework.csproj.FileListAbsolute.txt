@@ -591,3 +591,7 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\Compressor\Hzdtf.Compressor
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\Compressor\Hzdtf.Compressor.Framework\obj\Debug\Hzdtf.Compressor.Framework.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\Compressor\Hzdtf.Compressor.Framework\obj\Debug\Hzdtf.Compressor.Framework.exe
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\Compressor\Hzdtf.Compressor.Framework\obj\Debug\Hzdtf.Compressor.Framework.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\Compressor\Hzdtf.Compressor.Framework\bin\Debug\System.Memory.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\Compressor\Hzdtf.Compressor.Framework\bin\Debug\System.Numerics.Vectors.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\Compressor\Hzdtf.Compressor.Framework\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\Compressor\Hzdtf.Compressor.Framework\bin\Debug\System.Buffers.dll

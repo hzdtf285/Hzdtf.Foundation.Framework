@@ -16,12 +16,12 @@ namespace Hzdtf.Utility.Standard.Safety
         /// <summary>
         /// 默认KEY
         /// </summary>
-        private const string DEFAULT_KEY = "0efst^%$9";
+        private const string DEFAULT_KEY = "jyP[^%$4";
 
         /// <summary>
         /// 默认向量
         /// </summary>
-        private const string DEFAULT_IV = ";57`fde?";
+        private const string DEFAULT_IV = ";8@fSse?";
 
         /// <summary>
         /// 加密

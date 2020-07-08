@@ -110,9 +110,9 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.SqlServer.Stan
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.SqlServer.Standard\bin\Debug\netstandard2.0\Hzdtf.Utility.Standard.pdb
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.SqlServer.Standard\bin\Debug\netstandard2.0\Hzdtf.Utility.Standard.xml
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.SqlServer.Standard\obj\Debug\netstandard2.0\Hzdtf.SqlServer.Standard.csprojAssemblyReference.cache
-C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.SqlServer.Standard\obj\Debug\netstandard2.0\Hzdtf.SqlServer.Standard.csproj.CoreCompileInputs.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.SqlServer.Standard\obj\Debug\netstandard2.0\Hzdtf.SqlServer.Standard.AssemblyInfoInputs.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.SqlServer.Standard\obj\Debug\netstandard2.0\Hzdtf.SqlServer.Standard.AssemblyInfo.cs
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.SqlServer.Standard\obj\Debug\netstandard2.0\Hzdtf.SqlServer.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.SqlServer.Standard\obj\Debug\netstandard2.0\Hzdtf.SqlServer.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.SqlServer.Standard\obj\Debug\netstandard2.0\Hzdtf.SqlServer.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.SqlServer.Standard\obj\Debug\netstandard2.0\Hzdtf.SqlServer.Standard.csproj.CoreCompileInputs.cache

@@ -46,18 +46,11 @@ namespace Hzdtf.MessageQueue.Contract.Standard
             {
                 if (connection == null)
                 {
-                    string classFullPath = AppConfig["MessageQueue:ConnectionClassFullPath"];
-                    IMessageQueueConnection messageQueueConnection = null;
-                    if (!string.IsNullOrWhiteSpace(classFullPath))
-                    {
-                        messageQueueConnection = ReflectUtil.CreateInstance<IMessageQueueConnection>(classFullPath);
-                    }
                     lock (syncConnection)
                     {
                         if (connection == null)
                         {
-                            connection = messageQueueConnection;
-                            connection.Open();
+                            connection = CreateConnection();
                         }
                     }
                 }
@@ -79,6 +72,87 @@ namespace Hzdtf.MessageQueue.Contract.Standard
             {
                 connection = value;
             }
+        }
+
+        /// <summary>
+        /// 根据配置名称创建一个连接并打开
+        /// </summary>
+        /// <param name="configName">配置名称</param>
+        /// <returns>连接</returns>
+        public static IMessageQueueConnection CreateConnectionFromConfigName(string configName)
+        {
+            if (string.IsNullOrWhiteSpace(configName))
+            {
+                throw new ArgumentNullException("配置名称不能为空");
+            }
+            if (AppConfig == null)
+            {
+                throw new NullReferenceException("配置对象为null，请先设置PlatformTool.AppConfig");
+            }
+            var connStr = AppConfig[configName];
+            if (string.IsNullOrWhiteSpace(connStr))
+            {
+                throw new ArgumentNullException($"[{configName}]配置的连接字符串为空");
+            }
+
+            return CreateConnectionFromConnString(connStr);
+        }
+
+        /// <summary>
+        /// 创建一个连接并打开
+        /// </summary>
+        /// <returns>连接</returns>
+        public static IMessageQueueConnection CreateConnection()
+        {
+            var connection = CreateSimpleConnection();
+            connection.Open();
+
+            return connection;
+        }
+
+        /// <summary>
+        /// 根据连接字符串创建一个连接并打开
+        /// </summary>
+        /// <param name="connectionString">连接字符串</param>
+        /// <returns>连接</returns>
+        public static IMessageQueueConnection CreateConnectionFromConnString(string connectionString)
+        {
+            if (string.IsNullOrWhiteSpace(connectionString))
+            {
+                throw new ArgumentNullException("连接字符串不能为空");
+            }
+            var connection = CreateSimpleConnection();
+            connection.Open(connectionString);
+
+            return connection;
+        }
+
+        /// <summary>
+        /// 根据信息创建一个连接并打开
+        /// </summary>
+        /// <param name="connInfo">连接信息</param>
+        /// <returns>连接</returns>
+        public static IMessageQueueConnection CreateConnectionFromInfo(ConnectionInfo connInfo)
+        {
+            var connection = CreateSimpleConnection();
+            connection.Open(connInfo);
+
+            return connection;
+        }
+
+        /// <summary>
+        /// 创建一个简单连接
+        /// </summary>
+        /// <returns>简单连接</returns>
+        private static IMessageQueueConnection CreateSimpleConnection()
+        {
+            string classFullPath = AppConfig["MessageQueue:ConnectionClassFullPath"];
+            if (string.IsNullOrWhiteSpace(classFullPath))
+            {
+                throw new Exception("请在配置文件里配置[MessageQueue:ConnectionClassFullPath]连接执行类路径");
+            }
+
+            return ReflectUtil.CreateInstance<IMessageQueueConnection>(classFullPath);
         }
 
         /// <summary>

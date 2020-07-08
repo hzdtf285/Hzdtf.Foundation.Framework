@@ -334,6 +334,7 @@ namespace Hzdtf.Logger.Text.Integration.MicrosoftLog.Standard
         /// 处理消息和来源
         /// </summary>
         /// <param name="msg">消息</param>
+        /// <param name="source">来源</param>
         private void HandleMsgAndSource(ref string msg, ref string source)
         {
             if (string.IsNullOrWhiteSpace(categoryName))

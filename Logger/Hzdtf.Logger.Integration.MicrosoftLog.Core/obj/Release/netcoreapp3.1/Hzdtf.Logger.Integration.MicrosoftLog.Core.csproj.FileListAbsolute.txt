@@ -20,3 +20,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Integration.
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Integration.MicrosoftLog.Core\obj\Release\netcoreapp3.1\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Integration.MicrosoftLog.Core\obj\Release\netcoreapp3.1\Hzdtf.Logger.Integration.MicrosoftLog.Core.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Integration.MicrosoftLog.Core\obj\Release\netcoreapp3.1\Hzdtf.Logger.Integration.MicrosoftLog.Core.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Integration.MicrosoftLog.Core\bin\Release\netcoreapp3.1\Hzdtf.Logger.Integration.MicrosoftLog.Core.xml
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Integration.MicrosoftLog.Core\bin\Release\netcoreapp3.1\Hzdtf.Logger.Integration.MicrosoftLog.Standard.xml

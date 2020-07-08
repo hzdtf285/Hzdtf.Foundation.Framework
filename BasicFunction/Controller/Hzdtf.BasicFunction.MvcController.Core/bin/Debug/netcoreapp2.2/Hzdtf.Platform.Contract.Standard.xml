@@ -253,6 +253,39 @@
             <param name="node">节点</param>
             <returns>程序集扩展信息</returns>
         </member>
+        <member name="T:Hzdtf.Platform.Contract.Standard.Config.Connection.ConnectionAppConfigFactoryBase`2">
+            <summary>
+            连接带有应用配置的工厂基类
+            @ 黄振东
+            </summary>
+            <typeparam name="ConnectionT">连接类型</typeparam>
+            <typeparam name="ConnectionWrapInfoT">连接包装信息类型</typeparam>
+        </member>
+        <member name="F:Hzdtf.Platform.Contract.Standard.Config.Connection.ConnectionAppConfigFactoryBase`2.appConfig">
+            <summary>
+            应用配置
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.Connection.ConnectionAppConfigFactoryBase`2.#ctor(Hzdtf.Platform.Config.Contract.Standard.Config.App.IAppConfiguration)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="appConfig">应用配置</param>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.Connection.ConnectionAppConfigFactoryBase`2.GetConnectionStringByAppConfigName(System.String)">
+            <summary>
+            根据应用配置名称获取连接字符串
+            </summary>
+            <param name="appConfigName">应用配置名称</param>
+            <returns>连接字符串</returns>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.Connection.ConnectionAppConfigFactoryBase`2.GetDESKeyAndIV(System.String@)">
+            <summary>
+            获取DES的键和向量
+            </summary>
+            <param name="iv">向量</param>
+            <returns>键</returns>
+        </member>
         <member name="T:Hzdtf.Platform.Contract.Standard.Config.Language.LanguageLibraryConfigJson">
             <summary>
             语系库配置JSON
@@ -381,6 +414,28 @@
             <summary>
             应用配置
             </summary>
+        </member>
+        <member name="F:Hzdtf.Platform.Contract.Standard.PlatformTool.DEFAULT_DES_KEY_APP_CONFIG_NAME">
+            <summary>
+            默认DES键应用配置名称
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Platform.Contract.Standard.PlatformTool.DEFAULT_DES_IV_APP_CONFIG_NAME">
+            <summary>
+            默认DES向量应用配置名称
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.PlatformTool.GetDefaultDESKey_Value">
+            <summary>
+            获取默认的DES键的值
+            </summary>
+            <returns>默认的DES键的值</returns>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.PlatformTool.GetDefaultDESIV_Value">
+            <summary>
+            获取默认的DES向量的值
+            </summary>
+            <returns>默认的DES向量的值</returns>
         </member>
         <member name="T:Hzdtf.Platform.Config.Contract.Standard.Config.App.IAppConfiguration">
             <summary>

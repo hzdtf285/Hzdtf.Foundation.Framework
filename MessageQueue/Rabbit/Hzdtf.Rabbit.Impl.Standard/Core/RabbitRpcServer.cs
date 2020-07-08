@@ -1,14 +1,17 @@
 ﻿using Hzdtf.MessageQueue.Contract.Standard.MessageQueue;
 using Hzdtf.Rabbit.Model.Standard.MessageQueue;
 using RabbitMQ.Client;
-using RabbitMQ.Client.Events;
-using RabbitMQ.Client.MessagePatterns;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using Hzdtf.Utility.Standard.Utils;
-using Hzdtf.Logger.Contract.Standard;
 using Hzdtf.Utility.Standard.ProcessCall;
+using Hzdtf.Rabbit.Model.Standard.Connection;
+using RabbitMQ.Client.Events;
+using Hzdtf.Utility.Standard.Model.Return;
+using Hzdtf.Utility.Standard.Release;
+using Hzdtf.Utility.Standard.Data;
+using Hzdtf.Logger.Contract.Standard;
 
 namespace Hzdtf.Rabbit.Impl.Standard.Core
 {
@@ -16,27 +19,64 @@ namespace Hzdtf.Rabbit.Impl.Standard.Core
     /// Rabbit RPC服务端
     /// @ 黄振东
     /// </summary>
-    public class RabbitRpcServer : RabbitCoreBase, IRpcServer
+    public class RabbitRpcServer : IRpcServer, ICloseable, IDisposable
     {
+        #region 属性与字段
+
+        /// <summary>
+        /// 日志
+        /// </summary>
+        public ILogable Log
+        {
+            get;
+            set;
+        } = LogTool.DefaultLog;
+
+        /// <summary>
+        /// 关闭后事件
+        /// </summary>
+        public event DataHandler Closed;
+
+        /// <summary>
+        /// 渠道
+        /// </summary>
+        private readonly IModel _channel;
+
+        /// <summary>
+        /// Rabbit消息队列信息
+        /// </summary>
+        private readonly RabbitMessageQueueInfo rabbitMessageQueueInfo;
+
+        #endregion
+
         #region 初始化
 
         /// <summary>
         /// 构造方法
-        /// </summary>
-        /// <param name="channel">渠道</param>
-        /// <param name="messageQueueInfoFactory">消息队列信息工厂</param>
-        public RabbitRpcServer(IModel channel, IMessageQueueInfoFactory messageQueueInfoFactory)
-            : base(channel, messageQueueInfoFactory)
-        {
-        }
-
-        /// <summary>
-        /// 构造方法
+        /// 初始化各个对象以便就绪
+        /// 只初始化交换机与基本属性，队列定义请重写Init方法进行操作
         /// </summary>
         /// <param name="channel">渠道</param>
         /// <param name="rabbitMessageQueueInfo">Rabbit消息队列信息</param>
         public RabbitRpcServer(IModel channel, RabbitMessageQueueInfo rabbitMessageQueueInfo)
-            : base(channel, rabbitMessageQueueInfo)
+        {
+            ValidateUtil.ValidateNull(channel, "渠道");
+            ValidateUtil.ValidateNull(rabbitMessageQueueInfo, "消息队列信息");
+
+            this._channel = channel;
+            this.rabbitMessageQueueInfo = rabbitMessageQueueInfo;
+        }
+
+        /// <summary>
+        /// 构造方法
+        /// 初始化各个对象以便就绪
+        /// </summary>
+        /// <param name="channel">渠道</param>
+        /// <param name="queueOrOtherIdentify">队列或其他标识</param>
+        /// <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+        /// <param name="virtualPath">虚拟路径</param>
+        public RabbitRpcServer(IModel channel, string queueOrOtherIdentify, IMessageQueueInfoFactory messageQueueInfoFactory, string virtualPath = RabbitConnectionInfo.DEFAULT_VIRTUAL_PATH)
+            : this(channel, RabbitMessageQueueInfo.From(messageQueueInfoFactory.Create(queueOrOtherIdentify, ConfigUtil.CreateContainerVirtualPathDic(virtualPath))))
         {
         }
 
@@ -50,113 +90,121 @@ namespace Hzdtf.Rabbit.Impl.Standard.Core
         /// <param name="receiveMessageFun">接收消息回调</param>
         public void Receive(Func<byte[], byte[]> receiveMessageFun)
         {
-            RabbitSimpleRpcServer rabbitSimpleRpcServer = new RabbitSimpleRpcServer(new Subscription(channel, rabbitMessageQueueInfo.Queue), receiveMessageFun, Log);
-            rabbitSimpleRpcServer.MainLoop();
-        }
-
-        #endregion
-
-        #region 重写父类的方法
-
-        /// <summary>
-        /// 初始化
-        /// </summary>
-        protected override void Init()
-        {
-            channel.QueueDeclare(rabbitMessageQueueInfo.Queue, rabbitMessageQueueInfo.Persistent, false, rabbitMessageQueueInfo.AutoDelQueue, null);
-            if (rabbitMessageQueueInfo.RoutingKeys.IsNullOrLength0())
+            _channel.QueueDeclare(queue: rabbitMessageQueueInfo.Queue, durable: rabbitMessageQueueInfo.Persistent, exclusive: false, autoDelete: rabbitMessageQueueInfo.AutoDelQueue, arguments: null);
+            if (rabbitMessageQueueInfo.Qos != null)
             {
-                return;
+                _channel.BasicQos(0, rabbitMessageQueueInfo.Qos.GetValueOrDefault(), false);
             }
 
-            foreach (string key in rabbitMessageQueueInfo.RoutingKeys)
+            _channel.QueueBind(rabbitMessageQueueInfo.Queue, rabbitMessageQueueInfo.Exchange, rabbitMessageQueueInfo.Queue);
+
+            var consumer = new EventingBasicConsumer(_channel);
+            _channel.BasicConsume(queue: rabbitMessageQueueInfo.Queue, autoAck: false, consumer: consumer);
+
+            consumer.Received += (model, ea) =>
             {
-                channel.QueueBind(rabbitMessageQueueInfo.Queue, rabbitMessageQueueInfo.Exchange, key);
-            }
-        }
+                // 错误返回信息
+                BasicReturnInfo errorReturn = null;
 
-        #endregion
-    }
+                // 返回给客户端的数据
+                byte[] outData = null;
 
-    /// <summary>
-    /// Rabbit简单 RPC服务端
-    /// @ 黄振东
-    /// </summary>
-    class RabbitSimpleRpcServer : SimpleRpcServer
-    {
-        /// <summary>
-        /// 日志
-        /// </summary>
-        private readonly ILogable log;
-
-        /// <summary>
-        /// 接收消息回调
-        /// </summary>
-        private readonly Func<byte[], byte[]> receiveMessageFun;
-
-        /// <summary>
-        /// 返回客户端消息
-        /// </summary>
-        private byte[] returnClientMessage;
-
-        /// <summary>
-        /// 本身名称
-        /// </summary>
-        private static readonly string thisName = typeof(RabbitSimpleRpcServer).Name;
-
-        /// <summary>
-        /// 本身全名称
-        /// </summary>
-        private static readonly string thisFullName = typeof(RabbitSimpleRpcServer).FullName;
-
-        /// <summary>
-        /// 构造方法
-        /// </summary>
-        /// <param name="subscription">消费</param>
-        /// <param name="receiveMessageFun">接收消息回调</param>
-        /// <param name="log">日志</param>
-        public RabbitSimpleRpcServer(Subscription subscription, Func<byte[], byte[]> receiveMessageFun, ILogable log) : base(subscription)
-        {
-            this.receiveMessageFun = receiveMessageFun;
-            this.log = log;
-        }
-
-        /// <summary>
-        /// 执行完成后进行回调
-        /// </summary>
-        /// <param name="isRedelivered">是否传递</param>
-        /// <param name="requestProperties">请求属性</param>
-        /// <param name="body">由客户端发送过来的字节流</param>
-        /// <param name="replyProperties">回复属性</param>
-        /// <returns>需要返回给客户端的字节流</returns>
-        public override byte[] HandleSimpleCall(bool isRedelivered, IBasicProperties requestProperties, byte[] body, out IBasicProperties replyProperties)
-        {
-            replyProperties = null;
-
-            // 这里是返回给客户端
-            return returnClientMessage;
-        }
-
-        /// <summary>
-        /// 进行处理
-        /// </summary>
-        /// <param name="evt">基本传递事件参数</param>
-        public override void ProcessRequest(BasicDeliverEventArgs evt)
-        {
-            try
-            {
-                if (receiveMessageFun != null)
+                // 关联ID
+                string correlationId = null;
+                IBasicProperties props = null;
+                IBasicProperties replyProps = null;
+                try
                 {
-                    // 这里调用处理业务
-                    returnClientMessage = receiveMessageFun(evt.Body);
-                }
+                    props = ea.BasicProperties;
+                    replyProps = _channel.CreateBasicProperties();
+                    replyProps.CorrelationId = props.CorrelationId;
+                    correlationId = props.CorrelationId;
 
-                base.ProcessRequest(evt);
-            }
-            catch (Exception ex)
+                    byte[] inData = ea.Body.IsEmpty ? null : ea.Body.ToArray();
+                    try
+                    {
+                        outData = receiveMessageFun(inData);
+                    }
+                    catch (Exception ex)
+                    {
+                        Log.ErrorAsync("RpcServer回调业务处理出现异常", ex, typeof(RabbitRpcServer).Name, correlationId);
+
+                        errorReturn = new BasicReturnInfo();
+                        errorReturn.SetFailureMsg("业务处理出现异常", ex.Message);
+
+                        outData = Encoding.UTF8.GetBytes(JsonUtil.SerializeIgnoreNull(errorReturn));
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Log.ErrorAsync("RpcServer接收消息处理出现异常", ex, typeof(RabbitRpcServer).Name, correlationId);
+
+                    errorReturn = new BasicReturnInfo();
+                    errorReturn.SetFailureMsg("RpcServer接收消息处理出现异常", ex.Message);
+
+                    outData = Encoding.UTF8.GetBytes(JsonUtil.SerializeIgnoreNull(errorReturn));
+                }
+                finally
+                {
+                    if (props != null && replyProps != null)
+                    {
+                        _channel.BasicPublish(exchange: rabbitMessageQueueInfo.Exchange, routingKey: props.ReplyTo, basicProperties: replyProps, body: outData);
+                        _channel.BasicAck(deliveryTag: ea.DeliveryTag, multiple: false);
+                    }
+                }
+            };
+        }
+
+        #endregion
+
+        #region ICloseable 接口
+
+        /// <summary>
+        /// 关闭
+        /// </summary>
+        public void Close()
+        {
+            if (_channel != null && _channel.IsOpen)
             {
-                log.ErrorAsync(ex.Message, ex, thisName, thisFullName);
+                _channel.Close();
+                _channel.Dispose();
             }
+
+            OnClosed();
+        }
+
+        #endregion
+
+        #region 私有方法
+
+        /// <summary>
+        /// 执行关闭事件
+        /// </summary>
+        /// <param name="data">数据</param>
+        protected void OnClosed(object data = null)
+        {
+            if (Closed != null)
+            {
+                Closed(this, new DataEventArgs(data));
+            }
+        }
+
+        #endregion
+
+        /// <summary>
+        /// 释放资源
+        /// </summary>
+        public void Dispose()
+        {
+            Close();
+        }
+
+        /// <summary>
+        /// 析构方法
+        /// </summary>
+        ~RabbitRpcServer()
+        {
+            Dispose();
         }
     }
 }

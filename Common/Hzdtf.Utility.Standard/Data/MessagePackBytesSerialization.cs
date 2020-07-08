@@ -3,6 +3,7 @@ using Hzdtf.Utility.Standard.Utils;
 using MessagePack;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace Hzdtf.Utility.Standard.Data
@@ -35,6 +36,17 @@ namespace Hzdtf.Utility.Standard.Data
         /// <param name="data">数据</param>
         /// <param name="type">类型</param>
         /// <returns>对象</returns>
-        public object Deserialize(byte[] data, Type type) => data.IsNullOrLength0() ? null : MessagePackSerializer.NonGeneric.Deserialize(type, data);
+        public object Deserialize(byte[] data, Type type)
+        {
+            if (data.IsNullOrLength0())
+            {
+                return null;
+            }
+
+            using (var stream = new MemoryStream(data))
+            {
+                return MessagePackSerializer.Deserialize(type, stream);
+            }                
+        }
     }
 }

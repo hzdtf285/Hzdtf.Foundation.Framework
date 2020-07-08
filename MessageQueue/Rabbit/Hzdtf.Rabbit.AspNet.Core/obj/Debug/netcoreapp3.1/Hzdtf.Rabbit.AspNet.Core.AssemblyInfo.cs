@@ -14,11 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hzdtf")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Rabbit Asp.Net Core库，运行在Asp.Net Core 3.1以上")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("3.1.5.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("3.1.5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hzdtf.Rabbit.AspNet.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hzdtf.Rabbit.AspNet.Core")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("3.1.5.0")]
 
 // 由 MSBuild WriteCodeFragment 类生成。
 

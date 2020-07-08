@@ -551,3 +551,7 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Platform\Hzdtf.Platform.Impl.Fra
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Platform\Hzdtf.Platform.Impl.Framework\Hzdtf.Utility.Standard.xml
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Platform\Hzdtf.Platform.Impl.Framework\Hzdtf.Platform.Contract.Standard.pdb
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Platform\Hzdtf.Platform.Impl.Framework\Hzdtf.Platform.Contract.Standard.xml
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Platform\Hzdtf.Platform.Impl.Framework\System.Memory.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Platform\Hzdtf.Platform.Impl.Framework\System.Numerics.Vectors.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Platform\Hzdtf.Platform.Impl.Framework\System.Runtime.CompilerServices.Unsafe.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Platform\Hzdtf.Platform.Impl.Framework\System.Buffers.dll

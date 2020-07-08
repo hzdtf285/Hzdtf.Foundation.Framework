@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Hzdtf.Utility.Standard.Utils;
+using Hzdtf.Rabbit.Model.Standard.Connection;
 
 namespace Hzdtf.Rabbit.Impl.Standard.MessageQueue
 {
@@ -20,13 +21,16 @@ namespace Hzdtf.Rabbit.Impl.Standard.MessageQueue
         /// 根据队列读取消息队列信息
         /// </summary>
         /// <param name="queueOrOtherIdentify">队列或其他标识</param>
+        /// <param name="extend">扩展</param>
         /// <returns>消息队列信息</returns>
-        public RabbitMessageQueueInfo Reader(string queueOrOtherIdentify)
+        public RabbitMessageQueueInfo Reader(string queueOrOtherIdentify, IDictionary<string, string> extend = null)
         {
             if (string.IsNullOrWhiteSpace(queueOrOtherIdentify))
             {
                 throw new ArgumentNullException("队列或其他标识不能为空");
             }
+
+            var virtualPath = extend.GetVirtualPath();
 
             RabbitMessageQueueInfo info = null;
             if (queueOrOtherIdentify.Contains(":"))
@@ -37,15 +41,15 @@ namespace Hzdtf.Rabbit.Impl.Standard.MessageQueue
                     throw new ArgumentNullException("交换机和队列不能为空");
                 }
 
-                info = ReaderByExchangeAndQueue(names[0], names[1]);
+                info = ReaderByExchangeAndQueue(names[0], names[1], virtualPath);
             }
             else
             {
                 // 先按队列名去找，找不到再按交换机名去找
-                info = ReaderByQueue(queueOrOtherIdentify);
+                info = ReaderByQueue(queueOrOtherIdentify, virtualPath);
                 if (info == null)
                 {
-                    info = ReaderByExchange(queueOrOtherIdentify);
+                    info = ReaderByExchange(queueOrOtherIdentify, virtualPath);
                 }
             }
 
@@ -55,41 +59,47 @@ namespace Hzdtf.Rabbit.Impl.Standard.MessageQueue
         /// <summary>
         /// 读取全部消息队列信息列表
         /// </summary>
+        /// <param name="extend">扩展</param>
         /// <returns>全部消息队列信息列表</returns>
-        public IList<RabbitMessageQueueInfo> ReaderAll()
+        public IList<RabbitMessageQueueInfo> ReaderAll(IDictionary<string, string> extend = null)
         {
-            return Trans(QueryExchangeInfosFromSource());
+            return QueryExchangeInfosFromSource(extend.GetVirtualPath()).ToMessageQueues();
         }
 
         /// <summary>
         /// 根据交换机获取消息队列信息
         /// </summary>
         /// <param name="exchange">交换机</param>
+        /// <param name="virtualPath">虚拟路径</param>
         /// <returns>消息队列信息</returns>
-        public RabbitMessageQueueInfo ReaderByExchange(string exchange)
+        public RabbitMessageQueueInfo ReaderByExchange(string exchange, string virtualPath = RabbitConnectionInfo.DEFAULT_VIRTUAL_PATH)
         {
+            var extend = ConfigUtil.CreateContainerVirtualPathDic(virtualPath);
             return GetMessagQueueInfoByCondition(x =>
             {
                 return RabbitUtil.IsTwoExchangeEqual(exchange, x.Exchange);
-            });
+            }, extend);
         }
 
         /// <summary>
         /// 根据队列获取消息队列信息
         /// </summary>
         /// <param name="queue">队列</param>
+        /// <param name="virtualPath">虚拟路径</param>
         /// <returns>消息队列信息</returns>
-        public RabbitMessageQueueInfo ReaderByQueue(string queue)
+        public RabbitMessageQueueInfo ReaderByQueue(string queue, string virtualPath = RabbitConnectionInfo.DEFAULT_VIRTUAL_PATH)
         {
             if (string.IsNullOrWhiteSpace(queue))
             {
                 return null;
             }
 
+            var extend = ConfigUtil.CreateContainerVirtualPathDic(virtualPath);
+
             return GetMessagQueueInfoByCondition(x =>
             {
                 return queue.Equals(x.Queue);
-            });
+            }, extend);
         }
 
         /// <summary>
@@ -97,18 +107,21 @@ namespace Hzdtf.Rabbit.Impl.Standard.MessageQueue
         /// </summary>
         /// <param name="exchange">交换机</param>
         /// <param name="queue">队列</param>
+        /// <param name="virtualPath">虚拟路径</param>
         /// <returns>消息队列信息</returns>
-        public RabbitMessageQueueInfo ReaderByExchangeAndQueue(string exchange, string queue)
+        protected RabbitMessageQueueInfo ReaderByExchangeAndQueue(string exchange, string queue, string virtualPath = RabbitConnectionInfo.DEFAULT_VIRTUAL_PATH)
         {
             if (string.IsNullOrWhiteSpace(exchange) || string.IsNullOrWhiteSpace(queue))
             {
                 return null;
             }
 
+            var extend = ConfigUtil.CreateContainerVirtualPathDic(virtualPath);
+
             return GetMessagQueueInfoByCondition(x =>
             {
                 return RabbitUtil.IsTwoExchangeEqual(exchange, x.Exchange) && queue.Equals(x.Queue);
-            });
+            }, extend);
         }
 
         #endregion
@@ -118,73 +131,23 @@ namespace Hzdtf.Rabbit.Impl.Standard.MessageQueue
         /// <summary>
         /// 从源头查询交换机信息列表
         /// </summary>
+        /// <param name="virtualPath">虚拟路径</param>
         /// <returns>交换机信息列表</returns>
-        protected abstract IList<RabbitExchangeInfo> QueryExchangeInfosFromSource();
+        protected abstract IList<RabbitExchangeInfo> QueryExchangeInfosFromSource(string virtualPath = RabbitConnectionInfo.DEFAULT_VIRTUAL_PATH);
 
         #endregion
 
         #region 私有方法
 
         /// <summary>
-        /// 将交换机信息列表转换为消息队列信息列表
-        /// </summary>
-        /// <param name="exchanges">交换机信息列表</param>
-        /// <returns>消息队列信息列表</returns>
-        private IList<RabbitMessageQueueInfo> Trans(IList<RabbitExchangeInfo> exchanges)
-        {
-            if (exchanges.IsNullOrCount0())
-            {
-                return null;
-            }
-
-            IList<RabbitMessageQueueInfo> result = new List<RabbitMessageQueueInfo>();
-            foreach (RabbitExchangeInfo item in exchanges)
-            {
-                if (item.Queues.IsNullOrCount0())
-                {
-                    result.Add(CreateBasicProps(item));
-                }
-                else
-                {
-                    foreach (RabbitQueueModel item2 in item.Queues)
-                    {
-                        RabbitMessageQueueInfo model = CreateBasicProps(item);
-                        model.AutoDelQueue = item2.AutoDelQueue;
-                        model.Qos = item2.Qos;
-                        model.Queue = item2.Name;
-                        model.RoutingKeys = item2.RoutingKeys;
-
-                        result.Add(model);
-                    }
-                }
-            }
-
-            return result;
-        }
-
-        /// <summary>
-        /// 创建消息队列信息并赋基本值
-        /// </summary>
-        /// <param name="rabbitExchangeInfo">Rabbit交换机信息</param>
-        /// <returns>Rabbit消息队列信息</returns>
-        private RabbitMessageQueueInfo CreateBasicProps(RabbitExchangeInfo rabbitExchangeInfo)
-        {
-            RabbitMessageQueueInfo model = new RabbitMessageQueueInfo();
-            model.Exchange = rabbitExchangeInfo.Name;
-            model.Type = rabbitExchangeInfo.Type;
-            model.Persistent = rabbitExchangeInfo.Persistent;
-
-            return model;
-        }
-
-        /// <summary>
         /// 根据条件获取消息队列信息
         /// </summary>
         /// <param name="func">回调条件</param>
+        /// <param name="extend">扩展</param>
         /// <returns>消息队列信息</returns>
-        private RabbitMessageQueueInfo GetMessagQueueInfoByCondition(Func<RabbitMessageQueueInfo, bool> func)
+        private RabbitMessageQueueInfo GetMessagQueueInfoByCondition(Func<RabbitMessageQueueInfo, bool> func, IDictionary<string, string> extend = null)
         {
-            IList<RabbitMessageQueueInfo> list = ReaderAll();
+            IList<RabbitMessageQueueInfo> list = ReaderAll(extend);
             if (list.IsNullOrCount0())
             {
                 return null;

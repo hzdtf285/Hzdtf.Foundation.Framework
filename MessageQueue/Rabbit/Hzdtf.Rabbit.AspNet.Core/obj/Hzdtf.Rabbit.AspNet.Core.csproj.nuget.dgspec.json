@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.AspNet.Core\\Hzdtf.Utility.AspNet.Core.csproj": {
-      "version": "1.0.0",
+      "version": "3.1.5",
       "restore": {
         "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.AspNet.Core\\Hzdtf.Utility.AspNet.Core.csproj",
         "projectName": "Hzdtf.Utility.AspNet.Core",
@@ -59,23 +59,23 @@
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.1.5, )"
             },
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.1.5, )"
             },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.5, )"
             },
             "Microsoft.Extensions.Hosting.Abstractions": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.1.5, )"
             },
             "Microsoft.Extensions.Options.ConfigurationExtensions": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.1.5, )"
             }
           },
           "imports": [
@@ -137,19 +137,19 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[10.0.0, )"
             },
             "MessagePack": {
               "target": "Package",
-              "version": "[1.7.3.7, )"
+              "version": "[2.1.152, )"
             },
             "Microsoft.Extensions.Caching.Abstractions": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[3.1.5, )"
             },
             "Microsoft.Extensions.Caching.Memory": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[3.1.5, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -159,11 +159,11 @@
             },
             "NPOI": {
               "target": "Package",
-              "version": "[2.4.1, )"
+              "version": "[2.5.1, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[12.0.1, )"
+              "version": "[12.0.3, )"
             },
             "SharpZipLib": {
               "target": "Package",
@@ -171,15 +171,15 @@
             },
             "System.ComponentModel.Annotations": {
               "target": "Package",
-              "version": "[4.5.0, )"
+              "version": "[4.7.0, )"
             },
             "System.Drawing.Common": {
               "target": "Package",
-              "version": "[4.5.1, )"
+              "version": "[4.7.0, )"
             },
             "System.Reflection.DispatchProxy": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[4.7.1, )"
             },
             "androidxml": {
               "target": "Package",
@@ -336,7 +336,7 @@
       }
     },
     "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\MessageQueue\\Rabbit\\Hzdtf.Rabbit.AspNet.Core\\Hzdtf.Rabbit.AspNet.Core.csproj": {
-      "version": "1.0.0",
+      "version": "3.1.5",
       "restore": {
         "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\MessageQueue\\Rabbit\\Hzdtf.Rabbit.AspNet.Core\\Hzdtf.Rabbit.AspNet.Core.csproj",
         "projectName": "Hzdtf.Rabbit.AspNet.Core",
@@ -520,7 +520,7 @@
             },
             "RabbitMQ.Client": {
               "target": "Package",
-              "version": "[5.1.0, )"
+              "version": "[6.1.0, )"
             }
           },
           "imports": [

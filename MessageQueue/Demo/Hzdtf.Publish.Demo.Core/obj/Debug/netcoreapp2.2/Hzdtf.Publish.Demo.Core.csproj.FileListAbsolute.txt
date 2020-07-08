@@ -172,7 +172,6 @@ D:\MyProject\Hzdtf.Foundation.Framework\Hzdtf.Foundation.Framework\MessageQueue\
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\bin\Debug\netcoreapp2.2\Config\LanguageLibrary\Hzdtf.Utility.Standard.LanguageLibrary.json
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\bin\Debug\netcoreapp2.2\appsettings.json
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\bin\Debug\netcoreapp2.2\Config\rabbitMessageQueue.json
-C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\bin\Debug\netcoreapp2.2\Config\rabbitMessageQueue.xml
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\bin\Debug\netcoreapp2.2\Hzdtf.Publish.Demo.Core.deps.json
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\bin\Debug\netcoreapp2.2\Hzdtf.Publish.Demo.Core.runtimeconfig.json
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\bin\Debug\netcoreapp2.2\Hzdtf.Publish.Demo.Core.runtimeconfig.dev.json

@@ -40,7 +40,9 @@ namespace Hzdtf.Consumer.Demo.Core
         /// </summary>
         static void ConsumerReceString()
         {
-            IConsumer consumer = SingleConnectionTool.Connection.CreateConsumer("TestQueue1");// 此处是队列名
+            var conn = SingleConnectionTool.CreateConnectionFromConfigName("MessageQueue:RabbitConnectionString_vtest");
+            var consumer = conn.CreateConsumer("TestExchange2");
+            //IConsumer consumer = SingleConnectionTool.Connection.CreateConsumer("TestQueue1");// 此处是队列名
             consumer.Subscribe((string str) =>
             {
                 Console.WriteLine("a msg:" + str);

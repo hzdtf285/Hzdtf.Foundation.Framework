@@ -4,9 +4,7 @@ using Hzdtf.Autofac.Extend.Standard;
 using Autofac;
 using Hzdtf.Platform.Contract.Standard;
 using Hzdtf.Platform.Config.Contract.Standard.Config.App;
-using Hzdtf.MessageQueue.Contract.Standard;
 using Hzdtf.Utility.Standard.Data;
-using Hzdtf.Logger.Contract.Standard;
 using Hzdtf.Utility.Standard.Conversion;
 
 namespace Hzdtf.MessageQueue.RpcClient.Console.Core.AppStart
@@ -37,10 +35,6 @@ namespace Hzdtf.MessageQueue.RpcClient.Console.Core.AppStart
                 }
             });
             PlatformTool.AppConfig = AutofacTool.Resolve<IAppConfiguration>();
-
-            MessageQueueConfig.RpcClientFactory = new RpcClientFactory();
-            MessageQueueConfig.BytesSerialization = AutofacTool.Resolve<IBytesSerialization>();
-            MessageQueueConfig.Log = AutofacTool.Resolve<ILogable>();
         }
     }
 }

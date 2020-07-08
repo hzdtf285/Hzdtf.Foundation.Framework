@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.Logger.Integration.MicrosoftLog.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.Logger.Integration.MicrosoftLog.Core.IntegrationLogExtensions">
+            <summary>
+            集成日志扩展类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Logger.Integration.MicrosoftLog.Core.IntegrationLogExtensions.AddHzdtf(Microsoft.Extensions.Logging.ILoggingBuilder,System.Action{Hzdtf.Logger.Integration.MicrosoftLog.Standard.IntegrationLogProvider})">
+            <summary>
+            添加Hzdtf
+            </summary>
+            <param name="logBuilder">日志生成器</param>
+            <param name="options">回调选项，如果需要指定原生日志对象，则需要配置；否则使用默认的原生日志</param>
+            <returns>日志生成器</returns>
+        </member>
+    </members>
+</doc>

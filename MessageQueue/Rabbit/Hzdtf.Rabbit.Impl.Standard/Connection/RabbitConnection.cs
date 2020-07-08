@@ -1,4 +1,5 @@
-﻿using Hzdtf.MessageQueue.Contract.Standard.Connection;
+﻿using Hzdtf.MessageQueue.Contract.Standard;
+using Hzdtf.MessageQueue.Contract.Standard.Connection;
 using Hzdtf.MessageQueue.Contract.Standard.Core;
 using Hzdtf.MessageQueue.Contract.Standard.MessageQueue;
 using Hzdtf.Platform.Config.Contract.Standard.Config.App;
@@ -73,6 +74,11 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
             set;
         }
 
+        /// <summary>
+        /// 虚拟路径
+        /// </summary>
+        protected string virtualPath = RabbitConnectionInfo.DEFAULT_VIRTUAL_PATH;
+
         #endregion
 
         #region IMessageQueueConnection 接口
@@ -108,14 +114,15 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
         /// <summary>
         /// 创建生产者
         /// </summary>
+        /// <param name="queueOrOtherIdentify">队列或其他标识</param>
         /// <param name="messageQueueInfoFactory">消息队列信息工厂</param>
         /// <returns>生产者</returns>
-        public IProducer CreateProducer(IMessageQueueInfoFactory messageQueueInfoFactory)
+        public IProducer CreateProducer(string queueOrOtherIdentify, IMessageQueueInfoFactory messageQueueInfoFactory)
         {
             ValidateUtil.ValidateNull(messageQueueInfoFactory, "消息队列信息工厂");
             ValidateConnection();
 
-            IProducer producer = new RabbitProducer(CreateChannel(), messageQueueInfoFactory);
+            IProducer producer = new RabbitProducer(CreateChannel(), queueOrOtherIdentify, messageQueueInfoFactory, virtualPath: virtualPath);
             AddClosedEventHandler(producer);
 
             return producer;
@@ -154,14 +161,15 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
         /// <summary>
         /// 创建消费者
         /// </summary>
+        /// <param name="queueOrOtherIdentify">队列或其他标识</param>
         /// <param name="messageQueueInfoFactory">消息队列信息工厂</param>
         /// <returns>消费者</returns>
-        public IConsumer CreateConsumer(IMessageQueueInfoFactory messageQueueInfoFactory)
+        public IConsumer CreateConsumer(string queueOrOtherIdentify, IMessageQueueInfoFactory messageQueueInfoFactory)
         {
             ValidateUtil.ValidateNull(messageQueueInfoFactory, "消息队列信息工厂");
             ValidateConnection();
 
-            IConsumer consumer = new RabbitConsumer(CreateChannel(), messageQueueInfoFactory);
+            IConsumer consumer = new RabbitConsumer(CreateChannel(), queueOrOtherIdentify, messageQueueInfoFactory, virtualPath: virtualPath);
             AddClosedEventHandler(consumer);
 
             return consumer;
@@ -200,14 +208,15 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
         /// <summary>
         /// 创建RPC客户端
         /// </summary>
+        /// <param name="queueOrOtherIdentify">队列或其他标识</param>
         /// <param name="messageQueueInfoFactory">消息队列信息工厂</param>
         /// <returns>RPC客户端</returns>
-        public IRpcClient CreateRpcClient(IMessageQueueInfoFactory messageQueueInfoFactory)
+        public IRpcClient CreateRpcClient(string queueOrOtherIdentify, IMessageQueueInfoFactory messageQueueInfoFactory)
         {
             ValidateUtil.ValidateNull(messageQueueInfoFactory, "消息队列信息工厂");
             ValidateConnection();
 
-            IRpcClient rpcClient = new RabbitRpcClient(CreateChannel(), messageQueueInfoFactory);
+            IRpcClient rpcClient = new RabbitRpcClient(CreateChannel(), queueOrOtherIdentify, messageQueueInfoFactory, virtualPath: virtualPath);
             AddClosedEventHandler(rpcClient);
 
             return rpcClient;
@@ -246,14 +255,15 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
         /// <summary>
         /// 创建RPC服务端
         /// </summary>
+        /// <param name="queueOrOtherIdentify">队列或其他标识</param>
         /// <param name="messageQueueInfoFactory">消息队列信息工厂</param>
         /// <returns>RPC服务端</returns>
-        public IRpcServer CreateRpcServer(IMessageQueueInfoFactory messageQueueInfoFactory)
+        public IRpcServer CreateRpcServer(string queueOrOtherIdentify, IMessageQueueInfoFactory messageQueueInfoFactory)
         {
             ValidateUtil.ValidateNull(messageQueueInfoFactory, "消息队列信息工厂");
             ValidateConnection();
 
-            IRpcServer rpcServer = new RabbitRpcServer(CreateChannel(), messageQueueInfoFactory);
+            IRpcServer rpcServer = new RabbitRpcServer(CreateChannel(), queueOrOtherIdentify, messageQueueInfoFactory, virtualPath: virtualPath);
             AddClosedEventHandler(rpcServer);
 
             return rpcServer;
@@ -313,9 +323,10 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
         #region 打开关闭
 
         /// <summary>
-        /// 关闭
+        /// 执行关闭
         /// </summary>
-        public override void Close()
+        /// <returns>事件数据</returns>
+        protected override object ExecClose()
         {
             if (channels.Count > 0)
             {
@@ -338,8 +349,9 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
             }
 
             connection = null;
+            virtualPath = RabbitConnectionInfo.DEFAULT_VIRTUAL_PATH;
 
-            OnClosed();
+            return null;
         }
 
         #endregion
@@ -358,7 +370,7 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
                 return connString;
             }
 
-            return ConfigUtil.ConnectionEncryption ? DESUtil.Decrypt(connString, AppConfig["DES:Key"], AppConfig["DES:IV"]) : connString;
+            return MessageQueueUtil.ConnectionEncrypt(AppConfig) ? DESUtil.Decrypt(connString) : connString;
         }
 
         /// <summary>
@@ -367,14 +379,14 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
         /// <param name="connectionInfo">连接信息</param>
         protected override void ExecOpen(ConnectionInfo connectionInfo)
         {
-            connection = GetConnectionFactory(ValidateOpenParams(connectionInfo)).CreateConnection();
+            connection = GetConnectionFactory(ValidateOpenParams2(connectionInfo)).CreateConnection();
         }
 
         /// <summary>
         /// 获取默认的连接字符串解析器
         /// </summary>
         /// <returns>默认的连接字符串解析器</returns>
-        protected override IConnectionStringParse GetDefaultConnectionStringParse()
+        protected override IConnectionStringParse<ConnectionInfo> GetDefaultConnectionStringParse()
         {
             return new RabbitConnectionStringParse();
         }
@@ -390,7 +402,7 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
         /// </summary>
         /// <param name="connectionInfo">连接信息</param>
         /// <returns>Rabbit连接信息</returns>
-        private RabbitConnectionInfo ValidateOpenParams(ConnectionInfo connectionInfo)
+        private RabbitConnectionInfo ValidateOpenParams2(ConnectionInfo connectionInfo)
         {
             ValidateUtil.ValidateNull(connectionInfo, "连接信息");
             RabbitConnectionInfo rabbitConnectionInfo = RabbitConnectionInfo.From(connectionInfo);
@@ -398,6 +410,8 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
             {
                 throw new Exception("已打开连接，不允许重复打开。如需打开不同连接请先关闭原有连接");
             }
+
+            virtualPath = rabbitConnectionInfo.VirtualPath;
 
             return rabbitConnectionInfo;
         }
@@ -409,7 +423,7 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
         /// <returns>连接工厂</returns>
         private ConnectionFactory GetConnectionFactory(RabbitConnectionInfo rabbitConnectionInfo)
         {
-            return new ConnectionFactory()
+            var factory = new ConnectionFactory()
             {
                 HostName = rabbitConnectionInfo.Host,
                 VirtualHost = rabbitConnectionInfo.VirtualPath,
@@ -417,8 +431,10 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
                 UserName = rabbitConnectionInfo.User,
                 Port = rabbitConnectionInfo.Port,
                 AutomaticRecoveryEnabled = rabbitConnectionInfo.AutoRecovery,
-                RequestedHeartbeat = rabbitConnectionInfo.Heartbeat
+                RequestedHeartbeat = TimeSpan.FromSeconds(rabbitConnectionInfo.Heartbeat)
             };
+
+            return factory;
         }
 
         /// <summary>
@@ -456,7 +472,7 @@ namespace Hzdtf.Rabbit.Impl.Standard.Connection
                 MessageQueueInfoFactory = new RabbitMessageQueueInfoConfigFactory();
             }
 
-            RabbitMessageQueueInfo rabbitMessageQueueInfo = MessageQueueInfoFactory.Create(queueOrOtherIdentify) as RabbitMessageQueueInfo;
+            RabbitMessageQueueInfo rabbitMessageQueueInfo = MessageQueueInfoFactory.Create(queueOrOtherIdentify, ConfigUtil.CreateContainerVirtualPathDic(virtualPath)) as RabbitMessageQueueInfo;
             ValidateUtil.ValidateNull2(rabbitMessageQueueInfo, string.Format("队列或其他标识[{0}]在配置里不存在", queueOrOtherIdentify));            
 
             return rabbitMessageQueueInfo;

@@ -48,21 +48,18 @@
             <summary>
             Gets a value indicating whether the <see cref="T:System.Collections.IDictionary"></see> object has a fixed size.
             </summary>
-            <value></value>
             <returns>true if the <see cref="T:System.Collections.IDictionary"></see> object has a fixed size; otherwise, false.</returns>
         </member>
         <member name="P:Castle.Components.DictionaryAdapter.AbstractDictionaryAdapter.IsReadOnly">
             <summary>
             Gets a value indicating whether the <see cref="T:System.Collections.IDictionary"></see> object is read-only.
             </summary>
-            <value></value>
             <returns>true if the <see cref="T:System.Collections.IDictionary"></see> object is read-only; otherwise, false.</returns>
         </member>
         <member name="P:Castle.Components.DictionaryAdapter.AbstractDictionaryAdapter.Keys">
             <summary>
             Gets an <see cref="T:System.Collections.ICollection"></see> object containing the keys of the <see cref="T:System.Collections.IDictionary"></see> object.
             </summary>
-            <value></value>
             <returns>An <see cref="T:System.Collections.ICollection"></see> object containing the keys of the <see cref="T:System.Collections.IDictionary"></see> object.</returns>
         </member>
         <member name="M:Castle.Components.DictionaryAdapter.AbstractDictionaryAdapter.Remove(System.Object)">
@@ -77,14 +74,12 @@
             <summary>
             Gets an <see cref="T:System.Collections.ICollection"></see> object containing the values in the <see cref="T:System.Collections.IDictionary"></see> object.
             </summary>
-            <value></value>
             <returns>An <see cref="T:System.Collections.ICollection"></see> object containing the values in the <see cref="T:System.Collections.IDictionary"></see> object.</returns>
         </member>
         <member name="P:Castle.Components.DictionaryAdapter.AbstractDictionaryAdapter.Item(System.Object)">
             <summary>
             Gets or sets the <see cref="T:System.Object"/> with the specified key.
             </summary>
-            <value></value>
         </member>
         <member name="M:Castle.Components.DictionaryAdapter.AbstractDictionaryAdapter.CopyTo(System.Array,System.Int32)">
             <summary>
@@ -101,21 +96,18 @@
             <summary>
             Gets the number of elements contained in the <see cref="T:System.Collections.ICollection"></see>.
             </summary>
-            <value></value>
             <returns>The number of elements contained in the <see cref="T:System.Collections.ICollection"></see>.</returns>
         </member>
         <member name="P:Castle.Components.DictionaryAdapter.AbstractDictionaryAdapter.IsSynchronized">
             <summary>
             Gets a value indicating whether access to the <see cref="T:System.Collections.ICollection"></see> is synchronized (thread safe).
             </summary>
-            <value></value>
             <returns>true if access to the <see cref="T:System.Collections.ICollection"></see> is synchronized (thread safe); otherwise, false.</returns>
         </member>
         <member name="P:Castle.Components.DictionaryAdapter.AbstractDictionaryAdapter.SyncRoot">
             <summary>
             Gets an object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection"></see>.
             </summary>
-            <value></value>
             <returns>An object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection"></see>.</returns>
         </member>
         <member name="M:Castle.Components.DictionaryAdapter.AbstractDictionaryAdapter.System#Collections#IEnumerable#GetEnumerator">
@@ -171,7 +163,6 @@
             <summary>
             Instructs fetching according to <paramref name="fetch"/>
             </summary>
-            <param name="fetch"></param>
         </member>
         <member name="P:Castle.Components.DictionaryAdapter.FetchAttribute.Fetch">
             <summary>
@@ -344,8 +335,6 @@
             Initializes a new instance of the <see cref="T:Castle.Components.DictionaryAdapter.Xml.XmlAdapter"/> class
             that represents a child object in a larger object graph.
             </summary>
-            <param name="node"></param>
-            <param name="references"></param>
         </member>
         <member name="T:Castle.Components.DictionaryAdapter.DefaultPropertyGetter">
             <summary>
@@ -563,7 +552,6 @@
             <summary>
             Builds the dictionary behaviors.
             </summary>
-            <returns></returns>
         </member>
         <member name="T:Castle.Components.DictionaryAdapter.IDictionaryCreate">
             <summary>
@@ -728,7 +716,6 @@
             <summary>
             Gets a value indicating whether the <see cref="T:System.Collections.IDictionary"></see> object is read-only.
             </summary>
-            <value></value>
             <returns>true if the <see cref="T:System.Collections.IDictionary"></see> object is read-only; otherwise, false.</returns>
         </member>
         <member name="M:Castle.Components.DictionaryAdapter.NameValueCollectionAdapter.Contains(System.Object)">
@@ -745,14 +732,12 @@
             <summary>
             Gets or sets the <see cref="T:System.Object"/> with the specified key.
             </summary>
-            <value></value>
         </member>
         <member name="M:Castle.Components.DictionaryAdapter.NameValueCollectionAdapter.Adapt(System.Collections.Specialized.NameValueCollection)">
             <summary>
             Adapts the specified name values.
             </summary>
             <param name="nameValues">The name values.</param>
-            <returns></returns>
         </member>
         <member name="T:Castle.Components.DictionaryAdapter.PropertyDescriptor">
             <summary>
@@ -780,8 +765,6 @@
             <summary>
              Copies an existing instance of the <see cref="T:Castle.Components.DictionaryAdapter.PropertyDescriptor"/> class.
             </summary>
-            <param name="source"></param>
-            <param name="copyBehaviors"></param>
         </member>
         <member name="P:Castle.Components.DictionaryAdapter.PropertyDescriptor.ExecutionOrder">
             <summary>
@@ -888,7 +871,6 @@
             <param name="dictionaryAdapter">The dictionary adapter.</param>
             <param name="key">The key.</param>
             <param name="descriptor">The descriptor.</param>
-            <returns></returns>
         </member>
         <member name="M:Castle.Components.DictionaryAdapter.PropertyDescriptor.GetPropertyValue(Castle.Components.DictionaryAdapter.IDictionaryAdapter,System.String,System.Object,Castle.Components.DictionaryAdapter.PropertyDescriptor,System.Boolean)">
             <summary>
@@ -899,7 +881,6 @@
             <param name="storedValue">The stored value.</param>
             <param name="descriptor">The descriptor.</param>
             <param name="ifExists">true if return only existing.</param>
-            <returns></returns>
         </member>
         <member name="M:Castle.Components.DictionaryAdapter.PropertyDescriptor.SetPropertyValue(Castle.Components.DictionaryAdapter.IDictionaryAdapter,System.String,System.Object@,Castle.Components.DictionaryAdapter.PropertyDescriptor)">
             <summary>
@@ -909,7 +890,6 @@
             <param name="key">The key.</param>
             <param name="value">The value.</param>
             <param name="descriptor">The descriptor.</param>
-            <returns></returns>
         </member>
         <member name="M:Castle.Components.DictionaryAdapter.PropertyDescriptor.AddBehavior(Castle.Components.DictionaryAdapter.IDictionaryBehavior)">
             <summary>
@@ -933,14 +913,11 @@
             <summary>
             Copies the behaviors to the other <see cref="T:Castle.Components.DictionaryAdapter.PropertyDescriptor"/>
             </summary>
-            <param name="other"></param>
-            <returns></returns>
         </member>
         <member name="M:Castle.Components.DictionaryAdapter.PropertyDescriptor.Copy">
             <summary>
             Copies the <see cref="T:Castle.Components.DictionaryAdapter.PropertyDescriptor"/>
             </summary>
-            <returns></returns>
         </member>
         <member name="T:Castle.Components.DictionaryAdapter.BindingList`1">
             <summary>
@@ -1106,11 +1083,6 @@
             </param>
             <returns>The Value converted into the specified type.</returns>
         </member>
-        <member name="T:Castle.Core.Configuration.MutableConfiguration">
-            <summary>
-            Summary description for MutableConfiguration.
-            </summary>
-        </member>
         <member name="M:Castle.Core.Configuration.MutableConfiguration.#ctor(System.String)">
             <summary>
             Initializes a new instance of the <see cref="T:Castle.Core.Configuration.MutableConfiguration"/> class.
@@ -1130,7 +1102,6 @@
               Deserializes the specified node into an abstract representation of configuration.
             </summary>
             <param name = "node">The node.</param>
-            <returns></returns>
         </member>
         <member name="M:Castle.Core.Configuration.Xml.XmlConfigurationDeserializer.GetConfigValue(System.String)">
             <summary>
@@ -1190,14 +1161,11 @@
             Gets the type converter.
             </summary>
             <param name="member">The member.</param>
-            <returns></returns>
         </member>
         <member name="M:Castle.Core.Internal.CollectionExtensions.IsNullOrEmpty(System.Collections.IEnumerable)">
             <summary>
               Checks whether or not collection is null or empty. Assumes collection can be safely enumerated multiple times.
             </summary>
-            <param name = "this"></param>
-            <returns></returns>
         </member>
         <member name="M:Castle.Core.Internal.CollectionExtensions.GetContentsHashCode``1(System.Collections.Generic.IList{``0})">
             <summary>
@@ -1232,7 +1200,6 @@
             <summary>
             Creates a new lock.
             </summary>
-            <returns></returns>
         </member>
         <member name="M:Castle.Core.Internal.TypeExtensions.GetBestName(System.Type)">
             <summary>
@@ -1321,14 +1288,12 @@
               Gets the configuration file.
             </summary>
             <param name = "fileName">i.e. log4net.config</param>
-            <returns></returns>
         </member>
         <member name="M:Castle.Core.Logging.AbstractLoggerFactory.GetConfigFile(System.String)">
             <summary>
               Gets the configuration file.
             </summary>
             <param name = "fileName">i.e. log4net.config</param>
-            <returns></returns>
         </member>
         <member name="T:Castle.Core.Logging.ConsoleLogger">
             <summary>
@@ -1492,6 +1457,12 @@
               and a simplified priority/level/severity abstraction.
             </remarks>
         </member>
+        <member name="P:Castle.Core.Logging.ILogger.IsTraceEnabled">
+            <summary>
+              Determines if messages of priority "trace" will be logged.
+            </summary>
+            <value>True if "trace" messages will be logged.</value>
+        </member>
         <member name="P:Castle.Core.Logging.ILogger.IsDebugEnabled">
             <summary>
               Determines if messages of priority "debug" will be logged.
@@ -1531,6 +1502,56 @@
             <returns>The New ILogger instance.</returns>
             <exception cref = "T:System.ArgumentException">If the name has an empty element name.</exception>
         </member>
+        <member name="M:Castle.Core.Logging.ILogger.Trace(System.String)">
+            <summary>
+              Logs a trace message.
+            </summary>
+            <param name = "message">The message to log</param>
+        </member>
+        <member name="M:Castle.Core.Logging.ILogger.Trace(System.Func{System.String})">
+            <summary>
+              Logs a trace message with lazily constructed message. The message will be constructed only if the <see cref = "P:Castle.Core.Logging.ILogger.IsTraceEnabled" /> is true.
+            </summary>
+        </member>
+        <member name="M:Castle.Core.Logging.ILogger.Trace(System.String,System.Exception)">
+            <summary>
+              Logs a trace message.
+            </summary>
+            <param name = "exception">The exception to log</param>
+            <param name = "message">The message to log</param>
+        </member>
+        <member name="M:Castle.Core.Logging.ILogger.TraceFormat(System.String,System.Object[])">
+            <summary>
+              Logs a trace message.
+            </summary>
+            <param name = "format">Format string for the message to log</param>
+            <param name = "args">Format arguments for the message to log</param>
+        </member>
+        <member name="M:Castle.Core.Logging.ILogger.TraceFormat(System.Exception,System.String,System.Object[])">
+            <summary>
+              Logs a trace message.
+            </summary>
+            <param name = "exception">The exception to log</param>
+            <param name = "format">Format string for the message to log</param>
+            <param name = "args">Format arguments for the message to log</param>
+        </member>
+        <member name="M:Castle.Core.Logging.ILogger.TraceFormat(System.IFormatProvider,System.String,System.Object[])">
+            <summary>
+              Logs a trace message.
+            </summary>
+            <param name = "formatProvider">The format provider to use</param>
+            <param name = "format">Format string for the message to log</param>
+            <param name = "args">Format arguments for the message to log</param>
+        </member>
+        <member name="M:Castle.Core.Logging.ILogger.TraceFormat(System.Exception,System.IFormatProvider,System.String,System.Object[])">
+            <summary>
+              Logs a trace message.
+            </summary>
+            <param name = "exception">The exception to log</param>
+            <param name = "formatProvider">The format provider to use</param>
+            <param name = "format">Format string for the message to log</param>
+            <param name = "args">Format arguments for the message to log</param>
+        </member>
         <member name="M:Castle.Core.Logging.ILogger.Debug(System.String)">
             <summary>
               Logs a debug message.
@@ -1541,7 +1562,6 @@
             <summary>
               Logs a debug message with lazily constructed message. The message will be constructed only if the <see cref = "P:Castle.Core.Logging.ILogger.IsDebugEnabled" /> is true.
             </summary>
-            <param name = "messageFactory"></param>
         </member>
         <member name="M:Castle.Core.Logging.ILogger.Debug(System.String,System.Exception)">
             <summary>
@@ -1592,7 +1612,6 @@
             <summary>
               Logs an error message with lazily constructed message. The message will be constructed only if the <see cref = "P:Castle.Core.Logging.ILogger.IsErrorEnabled" /> is true.
             </summary>
-            <param name = "messageFactory"></param>
         </member>
         <member name="M:Castle.Core.Logging.ILogger.Error(System.String,System.Exception)">
             <summary>
@@ -1643,7 +1662,6 @@
             <summary>
               Logs a fatal message with lazily constructed message. The message will be constructed only if the <see cref = "P:Castle.Core.Logging.ILogger.IsFatalEnabled" /> is true.
             </summary>
-            <param name = "messageFactory"></param>
         </member>
         <member name="M:Castle.Core.Logging.ILogger.Fatal(System.String,System.Exception)">
             <summary>
@@ -1694,7 +1712,6 @@
             <summary>
               Logs a info message with lazily constructed message. The message will be constructed only if the <see cref = "P:Castle.Core.Logging.ILogger.IsInfoEnabled" /> is true.
             </summary>
-            <param name = "messageFactory"></param>
         </member>
         <member name="M:Castle.Core.Logging.ILogger.Info(System.String,System.Exception)">
             <summary>
@@ -1745,7 +1762,6 @@
             <summary>
               Logs a warn message with lazily constructed message. The message will be constructed only if the <see cref = "P:Castle.Core.Logging.ILogger.IsWarnEnabled" /> is true.
             </summary>
-            <param name = "messageFactory"></param>
         </member>
         <member name="M:Castle.Core.Logging.ILogger.Warn(System.String,System.Exception)">
             <summary>
@@ -1827,7 +1843,6 @@
             <summary>
             Keep the instance alive in a remoting scenario
             </summary>
-            <returns></returns>
         </member>
         <member name="P:Castle.Core.Logging.LevelFilteredLogger.Level">
             <value>
@@ -1840,6 +1855,57 @@
               The name that this logger will be using. 
               Defaults to <c>String.Empty</c>
             </value>
+        </member>
+        <member name="M:Castle.Core.Logging.LevelFilteredLogger.Trace(System.String)">
+            <summary>
+              Logs a trace message.
+            </summary>
+            <param name = "message">The message to log</param>
+        </member>
+        <member name="M:Castle.Core.Logging.LevelFilteredLogger.Trace(System.Func{System.String})">
+            <summary>
+              Logs a trace message.
+            </summary>
+            <param name="messageFactory">A functor to create the message</param>
+        </member>
+        <member name="M:Castle.Core.Logging.LevelFilteredLogger.Trace(System.String,System.Exception)">
+            <summary>
+              Logs a trace message.
+            </summary>
+            <param name = "exception">The exception to log</param>
+            <param name = "message">The message to log</param>
+        </member>
+        <member name="M:Castle.Core.Logging.LevelFilteredLogger.TraceFormat(System.String,System.Object[])">
+            <summary>
+              Logs a trace message.
+            </summary>
+            <param name = "format">Format string for the message to log</param>
+            <param name = "args">Format arguments for the message to log</param>
+        </member>
+        <member name="M:Castle.Core.Logging.LevelFilteredLogger.TraceFormat(System.Exception,System.String,System.Object[])">
+            <summary>
+              Logs a trace message.
+            </summary>
+            <param name = "exception">The exception to log</param>
+            <param name = "format">Format string for the message to log</param>
+            <param name = "args">Format arguments for the message to log</param>
+        </member>
+        <member name="M:Castle.Core.Logging.LevelFilteredLogger.TraceFormat(System.IFormatProvider,System.String,System.Object[])">
+            <summary>
+              Logs a trace message.
+            </summary>
+            <param name = "formatProvider">The format provider to use</param>
+            <param name = "format">Format string for the message to log</param>
+            <param name = "args">Format arguments for the message to log</param>
+        </member>
+        <member name="M:Castle.Core.Logging.LevelFilteredLogger.TraceFormat(System.Exception,System.IFormatProvider,System.String,System.Object[])">
+            <summary>
+              Logs a trace message.
+            </summary>
+            <param name = "exception">The exception to log</param>
+            <param name = "formatProvider">The format provider to use</param>
+            <param name = "format">Format string for the message to log</param>
+            <param name = "args">Format arguments for the message to log</param>
         </member>
         <member name="M:Castle.Core.Logging.LevelFilteredLogger.Debug(System.String)">
             <summary>
@@ -2066,6 +2132,12 @@
             <param name = "format">Format string for the message to log</param>
             <param name = "args">Format arguments for the message to log</param>
         </member>
+        <member name="P:Castle.Core.Logging.LevelFilteredLogger.IsTraceEnabled">
+            <summary>
+              Determines if messages of priority "trace" will be logged.
+            </summary>
+            <value><c>true</c> if log level flags include the <see cref = "F:Castle.Core.Logging.LoggerLevel.Trace" /> bit</value>
+        </member>
         <member name="P:Castle.Core.Logging.LevelFilteredLogger.IsDebugEnabled">
             <summary>
               Determines if messages of priority "debug" will be logged.
@@ -2101,10 +2173,6 @@
               Implementors output the log content by implementing this method only.
               Note that exception can be null
             </summary>
-            <param name = "loggerLevel"></param>
-            <param name = "loggerName"></param>
-            <param name = "message"></param>
-            <param name = "exception"></param>
         </member>
         <member name="T:Castle.Core.Logging.LoggerLevel">
             <summary>
@@ -2141,6 +2209,11 @@
               Debug logging level
             </summary>
         </member>
+        <member name="F:Castle.Core.Logging.LoggerLevel.Trace">
+            <summary>
+              Trace logging level
+            </summary>
+        </member>
         <member name="T:Castle.Core.Logging.NullLogFactory">
             <summary>
             NullLogFactory used when logging is turned off.
@@ -2151,7 +2224,6 @@
               Creates an instance of ILogger with the specified name.
             </summary>
             <param name = "name">Name.</param>
-            <returns></returns>
         </member>
         <member name="M:Castle.Core.Logging.NullLogFactory.Create(System.String,Castle.Core.Logging.LoggerLevel)">
             <summary>
@@ -2159,7 +2231,6 @@
             </summary>
             <param name = "name">Name.</param>
             <param name = "level">Level.</param>
-            <returns></returns>
         </member>
         <member name="T:Castle.Core.Logging.NullLogger">
             <summary>
@@ -2182,6 +2253,12 @@
             <summary>
               Returns empty context stacks.
             </summary>
+        </member>
+        <member name="P:Castle.Core.Logging.NullLogger.IsTraceEnabled">
+            <summary>
+              No-op.
+            </summary>
+            <value>false</value>
         </member>
         <member name="P:Castle.Core.Logging.NullLogger.IsDebugEnabled">
             <summary>
@@ -2219,6 +2296,51 @@
             </summary>
             <param name = "loggerName">Ignored</param>
             <returns>This ILogger instance.</returns>
+        </member>
+        <member name="M:Castle.Core.Logging.NullLogger.Trace(System.String)">
+            <summary>
+              No-op.
+            </summary>
+            <param name = "message">Ignored</param>
+        </member>
+        <member name="M:Castle.Core.Logging.NullLogger.Trace(System.String,System.Exception)">
+            <summary>
+              No-op.
+            </summary>
+            <param name = "exception">Ignored</param>
+            <param name = "message">Ignored</param>
+        </member>
+        <member name="M:Castle.Core.Logging.NullLogger.TraceFormat(System.String,System.Object[])">
+            <summary>
+              No-op.
+            </summary>
+            <param name = "format">Ignored</param>
+            <param name = "args">Ignored</param>
+        </member>
+        <member name="M:Castle.Core.Logging.NullLogger.TraceFormat(System.Exception,System.String,System.Object[])">
+            <summary>
+              No-op.
+            </summary>
+            <param name = "exception">Ignored</param>
+            <param name = "format">Ignored</param>
+            <param name = "args">Ignored</param>
+        </member>
+        <member name="M:Castle.Core.Logging.NullLogger.TraceFormat(System.IFormatProvider,System.String,System.Object[])">
+            <summary>
+              No-op.
+            </summary>
+            <param name = "formatProvider">Ignored</param>
+            <param name = "format">Ignored</param>
+            <param name = "args">Ignored</param>
+        </member>
+        <member name="M:Castle.Core.Logging.NullLogger.TraceFormat(System.Exception,System.IFormatProvider,System.String,System.Object[])">
+            <summary>
+              No-op.
+            </summary>
+            <param name = "exception">Ignored</param>
+            <param name = "formatProvider">Ignored</param>
+            <param name = "format">Ignored</param>
+            <param name = "args">Ignored</param>
         </member>
         <member name="M:Castle.Core.Logging.NullLogger.Debug(System.String)">
             <summary>
@@ -2577,8 +2699,6 @@
             <summary>
             Constructs a pair with its values
             </summary>
-            <param name="first"></param>
-            <param name="second"></param>
         </member>
         <member name="T:Castle.Core.ProxyServices">
             <summary>
@@ -2610,42 +2730,36 @@
             <summary>
               Gets the number of elements contained in the <see cref = "T:System.Collections.ICollection" />.
             </summary>
-            <value></value>
             <returns>The number of elements contained in the <see cref = "T:System.Collections.ICollection" />.</returns>
         </member>
         <member name="P:Castle.Core.ReflectionBasedDictionaryAdapter.IsSynchronized">
             <summary>
               Gets a value indicating whether access to the <see cref = "T:System.Collections.ICollection" /> is synchronized (thread safe).
             </summary>
-            <value></value>
             <returns>true if access to the <see cref = "T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, false.</returns>
         </member>
         <member name="P:Castle.Core.ReflectionBasedDictionaryAdapter.SyncRoot">
             <summary>
               Gets an object that can be used to synchronize access to the <see cref = "T:System.Collections.ICollection" />.
             </summary>
-            <value></value>
             <returns>An object that can be used to synchronize access to the <see cref = "T:System.Collections.ICollection" />.</returns>
         </member>
         <member name="P:Castle.Core.ReflectionBasedDictionaryAdapter.IsReadOnly">
             <summary>
               Gets a value indicating whether the <see cref = "T:System.Collections.IDictionary" /> object is read-only.
             </summary>
-            <value></value>
             <returns>true if the <see cref = "T:System.Collections.IDictionary" /> object is read-only; otherwise, false.</returns>
         </member>
         <member name="P:Castle.Core.ReflectionBasedDictionaryAdapter.Item(System.Object)">
             <summary>
               Gets or sets the <see cref = "T:System.Object" /> with the specified key.
             </summary>
-            <value></value>
         </member>
         <member name="P:Castle.Core.ReflectionBasedDictionaryAdapter.Keys">
             <summary>
               Gets an <see cref = "T:System.Collections.ICollection" /> object containing the keys of the <see
                cref = "T:System.Collections.IDictionary" /> object.
             </summary>
-            <value></value>
             <returns>An <see cref = "T:System.Collections.ICollection" /> object containing the keys of the <see
                cref = "T:System.Collections.IDictionary" /> object.</returns>
         </member>
@@ -2654,7 +2768,6 @@
               Gets an <see cref = "T:System.Collections.ICollection" /> object containing the values in the <see
                cref = "T:System.Collections.IDictionary" /> object.
             </summary>
-            <value></value>
             <returns>An <see cref = "T:System.Collections.ICollection" /> object containing the values in the <see
                cref = "T:System.Collections.IDictionary" /> object.</returns>
         </member>
@@ -2662,7 +2775,6 @@
             <summary>
               Gets a value indicating whether the <see cref = "T:System.Collections.IDictionary" /> object has a fixed size.
             </summary>
-            <value></value>
             <returns>true if the <see cref = "T:System.Collections.IDictionary" /> object has a fixed size; otherwise, false.</returns>
         </member>
         <member name="M:Castle.Core.ReflectionBasedDictionaryAdapter.Add(System.Object,System.Object)">
@@ -2747,8 +2859,6 @@
               Reads values of properties from <paramref name = "valuesAsAnonymousObject" /> and inserts them into <paramref
                name = "targetDictionary" /> using property names as keys.
             </summary>
-            <param name = "targetDictionary"></param>
-            <param name = "valuesAsAnonymousObject"></param>
         </member>
         <member name="T:Castle.Core.Resource.AbstractStreamResource">
             <summary>
@@ -2778,9 +2888,6 @@
             </summary>
         </member>
         <member name="P:Castle.Core.Resource.IResource.FileBasePath">
-            <summary>
-            
-            </summary>
             <remarks>
             Only valid for resources that
             can be obtained through relative paths
@@ -2793,7 +2900,6 @@
             <remarks>
             It's up to the caller to dispose the reader.
             </remarks>
-            <returns></returns>
         </member>
         <member name="M:Castle.Core.Resource.IResource.GetStreamReader(System.Text.Encoding)">
             <summary>
@@ -2802,8 +2908,6 @@
             <remarks>
             It's up to the caller to dispose the reader.
             </remarks>
-            <param name="encoding"></param>
-            <returns></returns>
         </member>
         <member name="M:Castle.Core.Resource.IResource.CreateRelative(System.String)">
             <summary>
@@ -2811,8 +2915,6 @@
             created according to the <c>relativePath</c>
             using itself as the root.
             </summary>
-            <param name="relativePath"></param>
-            <returns></returns>
         </member>
         <member name="T:Castle.Core.Resource.IResourceFactory">
             <summary>
@@ -2830,25 +2932,18 @@
             only if the given identifier is supported
             by the resource factory
             </remarks>
-            <param name="uri"></param>
-            <returns></returns>
         </member>
         <member name="M:Castle.Core.Resource.IResourceFactory.Create(Castle.Core.Resource.CustomUri)">
             <summary>
             Creates an <see cref="T:Castle.Core.Resource.IResource"/> instance
             for the given resource identifier
             </summary>
-            <param name="uri"></param>
-            <returns></returns>
         </member>
         <member name="M:Castle.Core.Resource.IResourceFactory.Create(Castle.Core.Resource.CustomUri,System.String)">
             <summary>
             Creates an <see cref="T:Castle.Core.Resource.IResource"/> instance
             for the given resource identifier
             </summary>
-            <param name="uri"></param>
-            <param name="basePath"></param>
-            <returns></returns>
         </member>
         <member name="T:Castle.Core.Resource.StaticContentResource">
             <summary>
@@ -2998,10 +3093,6 @@
               Performs some basic screening and invokes the <see cref = "T:Castle.DynamicProxy.IProxyGenerationHook" />
               to select methods.
             </summary>
-            <param name = "method"></param>
-            <param name = "onlyVirtuals"></param>
-            <param name = "hook"></param>
-            <returns></returns>
         </member>
         <member name="T:Castle.DynamicProxy.CustomAttributeInfo">
             <summary>
@@ -3053,9 +3144,6 @@
             <summary>
               It is safe to add mapping (no mapping for the interface exists)
             </summary>
-            <param name = "implementer"></param>
-            <param name = "interface"></param>
-            <param name = "mapping"></param>
         </member>
         <member name="M:Castle.DynamicProxy.Generators.BaseProxyGenerator.GenerateParameterlessConstructor(Castle.DynamicProxy.Generators.Emitters.ClassEmitter,System.Type,Castle.DynamicProxy.Generators.Emitters.SimpleAST.FieldReference)">
             <summary>
@@ -3085,7 +3173,6 @@
         </member>
         <member name="T:Castle.DynamicProxy.Generators.Emitters.LdcOpCodesDictionary">
             <summary>
-              s
               Provides appropriate Ldc.X opcode for the type of primitive value to be loaded.
             </summary>
         </member>
@@ -3101,16 +3188,12 @@
               Pops a pointer off the evaluation stack, dereferences it and loads
               a value of the specified type.
             </summary>
-            <param name = "gen"></param>
-            <param name = "type"></param>
         </member>
         <member name="M:Castle.DynamicProxy.Generators.Emitters.OpCodeUtil.EmitLoadOpCodeForConstantValue(System.Reflection.Emit.ILGenerator,System.Object)">
             <summary>
               Emits a load opcode of the appropriate kind for a constant string or
               primitive value.
             </summary>
-            <param name = "gen"></param>
-            <param name = "value"></param>
         </member>
         <member name="M:Castle.DynamicProxy.Generators.Emitters.OpCodeUtil.EmitLoadOpCodeForDefaultValueOfType(System.Reflection.Emit.ILGenerator,System.Type)">
             <summary>
@@ -3124,27 +3207,11 @@
               Pops a value of the specified type and a pointer off the evaluation stack, and
               stores the value.
             </summary>
-            <param name = "gen"></param>
-            <param name = "type"></param>
-        </member>
-        <member name="T:Castle.DynamicProxy.Generators.Emitters.PropertiesCollection">
-            <summary>
-              Summary description for PropertiesCollection.
-            </summary>
         </member>
         <member name="T:Castle.DynamicProxy.Generators.Emitters.SimpleAST.IndirectReference">
             <summary>
               Wraps a reference that is passed 
               ByRef and provides indirect load/store support.
-            </summary>
-        </member>
-        <member name="T:Castle.DynamicProxy.Generators.Emitters.SimpleAST.NewArrayExpression">
-            <summary>
-              Summary description for NewArrayExpression.
-            </summary>
-        </member>
-        <member name="T:Castle.DynamicProxy.Generators.Emitters.SimpleAST.ReferencesToObjectArrayExpression">
-            <summary>
             </summary>
         </member>
         <member name="T:Castle.DynamicProxy.Generators.Emitters.StindOpCodesDictionary">
@@ -3184,9 +3251,6 @@
               Generates the constructor for the class that extends
               <see cref = "T:Castle.DynamicProxy.AbstractInvocation" />
             </summary>
-            <param name = "targetFieldType"></param>
-            <param name = "proxyGenerationOptions"></param>
-            <param name = "baseConstructor"></param>
         </member>
         <member name="M:Castle.DynamicProxy.Generators.MetaEvent.#ctor(System.String,System.Type,System.Type,Castle.DynamicProxy.Generators.MetaMethod,Castle.DynamicProxy.Generators.MetaMethod,System.Reflection.EventAttributes)">
             <summary>
@@ -3194,7 +3258,7 @@
             </summary>
             <param name = "name">The name.</param>
             <param name = "declaringType">Type declaring the original event being overridden, or null.</param>
-            <param name = "eventDelegateType"></param>
+            <param name = "eventDelegateType">The event delegate type.</param>
             <param name = "adder">The add method.</param>
             <param name = "remover">The remove method.</param>
             <param name = "attributes">The attributes.</param>
@@ -3368,6 +3432,12 @@
               <see cref = "T:System.NotImplementedException" /> will be thrown.
             </remarks>
         </member>
+        <member name="M:Castle.DynamicProxy.IInvocation.CaptureProceedInfo">
+            <summary>
+              Returns an object describing the <see cref="M:Castle.DynamicProxy.IInvocation.Proceed"/> operation for this <see cref="T:Castle.DynamicProxy.IInvocation"/>
+              at this specific point during interception.
+            </summary>
+        </member>
         <member name="M:Castle.DynamicProxy.IInvocation.SetArgumentValue(System.Int32,System.Object)">
             <summary>
               Overrides the value of an argument at the given <paramref name = "index" /> with the
@@ -3379,6 +3449,18 @@
             </remarks>
             <param name = "index">The index of the argument to override.</param>
             <param name = "value">The new value for the argument.</param>
+        </member>
+        <member name="T:Castle.DynamicProxy.IInvocationProceedInfo">
+            <summary>
+              Describes the <see cref="M:Castle.DynamicProxy.IInvocation.Proceed"/> operation for an <see cref="T:Castle.DynamicProxy.IInvocation"/>
+              at a specific point during interception.
+            </summary>
+        </member>
+        <member name="M:Castle.DynamicProxy.IInvocationProceedInfo.Invoke">
+            <summary>
+              Executes the <see cref="M:Castle.DynamicProxy.IInvocation.Proceed"/> operation described by this instance.
+            </summary>
+            <exception cref="T:System.NotImplementedException">There is no interceptor, nor a proxy target object, to proceed to.</exception>
         </member>
         <member name="M:Castle.DynamicProxy.Internal.AttributeUtil.ShouldSkipAttributeReplication(System.Type,System.Boolean)">
             <summary>
@@ -3406,15 +3488,16 @@
             <summary>
               Checks if the method is public or protected.
             </summary>
-            <param name = "method"></param>
-            <returns></returns>
         </member>
         <member name="M:Castle.DynamicProxy.Internal.TypeUtil.GetAllInterfaces(System.Type[])">
             <summary>
               Returns list of all unique interfaces implemented given types, including their base interfaces.
             </summary>
-            <param name="types"> </param>
-            <returns> </returns>
+        </member>
+        <member name="M:Castle.DynamicProxy.Internal.TypeUtil.IsDelegateType(System.Type)">
+            <summary>
+              Checks whether the specified <paramref name="type"/> is a delegate type (i.e. a direct subclass of <see cref="T:System.MulticastDelegate"/>).
+            </summary>
         </member>
         <member name="T:Castle.DynamicProxy.IProxyBuilder">
             <summary>
@@ -4531,7 +4614,6 @@
             <summary>
               Get the proxy target (note that null is a valid target!)
             </summary>
-            <returns></returns>
         </member>
         <member name="M:Castle.DynamicProxy.IProxyTargetAccessor.DynProxySetTarget(System.Object)">
             <summary>
@@ -4543,7 +4625,6 @@
             <summary>
               Gets the interceptors for the proxy
             </summary>
-            <returns></returns>
         </member>
         <member name="M:Castle.DynamicProxy.MixinData.#ctor(System.Collections.Generic.IEnumerable{System.Object})">
             <summary>
@@ -4554,11 +4635,6 @@
             
             The idea is to have reproducible behavior for the case that mixins are registered in different orders.
             This method is here because it is required 
-            </summary>
-        </member>
-        <member name="T:Castle.DynamicProxy.ModuleScope">
-            <summary>
-              Summary description for ModuleScope.
             </summary>
         </member>
         <member name="F:Castle.DynamicProxy.ModuleScope.DEFAULT_FILE_NAME">
@@ -4645,7 +4721,6 @@
             <summary>
               Gets the key pair used to sign the strong-named assembly generated by this <see cref = "T:Castle.DynamicProxy.ModuleScope" />.
             </summary>
-            <returns></returns>
         </member>
         <member name="P:Castle.DynamicProxy.ModuleScope.StrongNamedModule">
             <summary>
@@ -4785,6 +4860,16 @@
               respective methods of the <see cref = "T:Castle.DynamicProxy.ModuleScope" />.
             </remarks>
         </member>
+        <member name="T:Castle.DynamicProxy.ProxyGenerationOptions">
+            <summary>
+              <see cref="T:Castle.DynamicProxy.ProxyGenerationOptions"/> allows customization of the behavior of proxies created by
+              an <see cref="T:Castle.DynamicProxy.IProxyGenerator"/> (or proxy types generated by an <see cref="T:Castle.DynamicProxy.IProxyBuilder"/>).
+              <para>
+                You should not modify an instance of <see cref="T:Castle.DynamicProxy.ProxyGenerationOptions"/> once it has been
+                used to create a proxy (or proxy type).
+              </para>
+            </summary>
+        </member>
         <member name="M:Castle.DynamicProxy.ProxyGenerationOptions.#ctor(Castle.DynamicProxy.IProxyGenerationHook)">
             <summary>
               Initializes a new instance of the <see cref = "T:Castle.DynamicProxy.ProxyGenerationOptions" /> class.
@@ -4795,6 +4880,87 @@
             <summary>
               Initializes a new instance of the <see cref = "T:Castle.DynamicProxy.ProxyGenerationOptions" /> class.
             </summary>
+        </member>
+        <member name="P:Castle.DynamicProxy.ProxyGenerationOptions.Hook">
+            <summary>
+              Gets or sets the <see cref="T:Castle.DynamicProxy.IProxyGenerationHook"/> that should be used during proxy type
+              generation. Defaults to an instance of <see cref="T:Castle.DynamicProxy.AllMethodsHook"/>.
+              <para>
+                You should not modify this property once this <see cref="T:Castle.DynamicProxy.ProxyGenerationOptions"/> instance
+                has been used to create a proxy.
+              </para>
+            </summary>
+        </member>
+        <member name="P:Castle.DynamicProxy.ProxyGenerationOptions.Selector">
+            <summary>
+              Gets or sets the <see cref="T:Castle.DynamicProxy.IInterceptorSelector"/> that should be used by created proxies
+              to determine which interceptors to use for an interception. If set to <see langword="null"/>
+              (which is the default), created proxies will not use any selector.
+              <para>
+                You should not modify this property once this <see cref="T:Castle.DynamicProxy.ProxyGenerationOptions"/> instance
+                has been used to create a proxy.
+              </para>
+            </summary>
+        </member>
+        <member name="P:Castle.DynamicProxy.ProxyGenerationOptions.BaseTypeForInterfaceProxy">
+            <summary>
+              Gets or sets the class type from which generated interface proxy types will be derived.
+              Defaults to <c><see langword="typeof"/>(<see langword="object"/>)</c>.
+              <para>
+                You should not modify this property once this <see cref="T:Castle.DynamicProxy.ProxyGenerationOptions"/> instance
+                has been used to create a proxy.
+              </para>
+            </summary>
+        </member>
+        <member name="P:Castle.DynamicProxy.ProxyGenerationOptions.AdditionalAttributes">
+            <summary>
+              Gets the collection of additional custom attributes that will be put on generated proxy types.
+              This collection is initially empty.
+              <para>
+                You should not modify this collection once this <see cref="T:Castle.DynamicProxy.ProxyGenerationOptions"/> instance
+                has been used to create a proxy.
+              </para>
+            </summary>
+        </member>
+        <member name="M:Castle.DynamicProxy.ProxyGenerationOptions.AddDelegateTypeMixin(System.Type)">
+            <summary>
+              Adds a delegate type to the list of mixins that will be added to generated proxies.
+              That is, generated proxies will have a `Invoke` method with a signature matching that
+              of the specified <paramref name="delegateType"/>.
+              <para>
+                You should not call this method once this <see cref="T:Castle.DynamicProxy.ProxyGenerationOptions"/> instance
+                has been used to create a proxy.
+              </para>
+            </summary>
+            <param name="delegateType">The delegate type whose `Invoke` method should be reproduced in generated proxies.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="delegateType"/> is <see langword="null"/>.</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="delegateType"/> is not a delegate type.</exception>
+        </member>
+        <member name="M:Castle.DynamicProxy.ProxyGenerationOptions.AddDelegateMixin(System.Delegate)">
+            <summary>
+              Adds a delegate to be mixed into generated proxies. The <paramref name="delegate"/>
+              will act as the target for calls to a `Invoke` method with a signature matching that
+              of the delegate.
+              <para>
+                You should not call this method once this <see cref="T:Castle.DynamicProxy.ProxyGenerationOptions"/> instance
+                has been used to create a proxy.
+              </para>
+            </summary>
+            <param name="delegate">The delegate that should act as the target for calls to `Invoke` methods with a matching signature.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="delegate"/> is <see langword="null"/>.</exception>
+        </member>
+        <member name="M:Castle.DynamicProxy.ProxyGenerationOptions.AddMixinInstance(System.Object)">
+            <summary>
+              Mixes the interfaces implemented by the specified <paramref name="instance"/> object into
+              created proxies, and uses <paramref name="instance"/> as the target for these mixed-in interfaces.
+              <para>
+                You should not call this method once this <see cref="T:Castle.DynamicProxy.ProxyGenerationOptions"/> instance
+                has been used to create a proxy.
+              </para>
+            </summary>
+            <param name="instance">The object that should act as the target for all of its implemented interfaces' methods.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is <see langword="null"/>.</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="instance"/> is an instance of <see cref="T:System.Type"/>.</exception>
         </member>
         <member name="T:Castle.DynamicProxy.ProxyGenerator">
             <summary>
@@ -5822,6 +5988,30 @@
             <param name = "additionalInterfacesToProxy">The additional interfaces proxy type should implement.</param>
             <param name = "options">The options for proxy generation process.</param>
             <returns><see cref = "T:System.Type" /> of proxy.</returns>
+        </member>
+        <member name="M:Castle.DynamicProxy.ProxyUtil.CreateDelegateToMixin``1(System.Object)">
+            <summary>
+              Creates a delegate of the specified type to a suitable `Invoke` method
+              on the given <paramref name="proxy"/> instance.
+            </summary>
+            <param name="proxy">The proxy instance to which the delegate should be bound.</param>
+            <typeparam name="TDelegate">The type of delegate that should be created.</typeparam>
+            <exception cref="T:System.MissingMethodException">
+              The <paramref name="proxy"/> does not have an `Invoke` method that is compatible with
+              the requested <typeparamref name="TDelegate"/> type.
+            </exception>
+        </member>
+        <member name="M:Castle.DynamicProxy.ProxyUtil.CreateDelegateToMixin(System.Object,System.Type)">
+            <summary>
+              Creates a delegate of the specified type to a suitable `Invoke` method
+              on the given <paramref name="proxy"/> instance.
+            </summary>
+            <param name="proxy">The proxy instance to which the delegate should be bound.</param>
+            <param name="delegateType">The type of delegate that should be created.</param>
+            <exception cref="T:System.MissingMethodException">
+              The <paramref name="proxy"/> does not have an `Invoke` method that is compatible with
+              the requested <paramref name="delegateType"/>.
+            </exception>
         </member>
         <member name="M:Castle.DynamicProxy.ProxyUtil.IsAccessible(System.Reflection.MethodBase)">
             <summary>

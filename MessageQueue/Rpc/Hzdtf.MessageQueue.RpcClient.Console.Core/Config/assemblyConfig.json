@@ -7,7 +7,9 @@
         "Hzdtf.Platform.Impl.Core",
         "Hzdtf.Logger.Contract.Standard",
         "Hzdtf.Logger.Text.Impl.Standard",
-        "Hzdtf.MessageQueue.Contract.Standard"
+        "Hzdtf.MessageQueue.Contract.Standard",
+        "Hzdtf.Rabbit.Contract.Standard",
+        "Hzdtf.Rabbit.Impl.Standard"
       ],
       "Lifecycle": "SIGNLETON"
     }

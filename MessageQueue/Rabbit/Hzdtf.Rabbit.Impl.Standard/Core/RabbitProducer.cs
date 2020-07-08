@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Text;
 using Hzdtf.Utility.Standard.Utils;
 using Hzdtf.Rabbit.Model.Standard.Utils;
+using Hzdtf.Rabbit.Model.Standard.Connection;
 
 namespace Hzdtf.Rabbit.Impl.Standard.Core
 {
@@ -36,9 +37,9 @@ namespace Hzdtf.Rabbit.Impl.Standard.Core
         /// 构造方法
         /// </summary>
         /// <param name="channel">渠道</param>
-        /// <param name="messageQueueInfoFactory">消息队列信息工厂</param>
-        public RabbitProducer(IModel channel, IMessageQueueInfoFactory messageQueueInfoFactory)
-            : base(channel, messageQueueInfoFactory)
+        /// <param name="rabbitMessageQueueInfo">Rabbit消息队列信息</param>
+        public RabbitProducer(IModel channel, RabbitMessageQueueInfo rabbitMessageQueueInfo)
+            : base(channel, rabbitMessageQueueInfo)
         {
         }
 
@@ -46,9 +47,11 @@ namespace Hzdtf.Rabbit.Impl.Standard.Core
         /// 构造方法
         /// </summary>
         /// <param name="channel">渠道</param>
-        /// <param name="rabbitMessageQueueInfo">Rabbit消息队列信息</param>
-        public RabbitProducer(IModel channel, RabbitMessageQueueInfo rabbitMessageQueueInfo)
-            : base(channel, rabbitMessageQueueInfo)
+        /// <param name="queueOrOtherIdentify">队列或其他标识</param>
+        /// <param name="messageQueueInfoFactory">消息队列信息工厂</param>
+        /// <param name="virtualPath">虚拟路径</param>
+        public RabbitProducer(IModel channel, string queueOrOtherIdentify, IMessageQueueInfoFactory messageQueueInfoFactory, string virtualPath = RabbitConnectionInfo.DEFAULT_VIRTUAL_PATH)
+            : base(channel, queueOrOtherIdentify, messageQueueInfoFactory, virtualPath)
         {
         }
 

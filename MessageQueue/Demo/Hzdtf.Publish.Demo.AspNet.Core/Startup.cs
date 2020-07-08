@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Hzdtf.Rabbit.AspNet.Core;
+using Hzdtf.Rabbit.Impl.Standard.Connection;
 
 namespace Hzdtf.Publish.Demo.AspNet.Core
 {
@@ -32,7 +33,8 @@ namespace Hzdtf.Publish.Demo.AspNet.Core
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddRabbit();
+            //services.AddRabbit();
+            services.AddRabbitConfigure();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

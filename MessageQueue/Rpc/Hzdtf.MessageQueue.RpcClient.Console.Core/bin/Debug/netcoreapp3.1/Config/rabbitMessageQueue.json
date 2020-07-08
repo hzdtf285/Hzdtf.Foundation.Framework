@@ -1,14 +1,26 @@
-﻿[
-  {
-    "name": "RpcExchange",
-    "persistent": true,
-    "type": "direct",
-    "queues": [
-      {
-        "name": "RpcServiceQueue",
-        "routingKeys": [ "RpcServiceQueueKey" ],
-        "qos": 4
-      }
-    ]
-  }
-]
+﻿{
+  "rabbit": [
+    {
+      "virtualPath": "/",
+      "exchanges": [
+        {
+          "name": "RpcExchange",
+          "persistent": true,
+          "type": "direct",
+          "queues": [
+            {
+              "name": "RpcServiceQueue",
+              "qos": 4,
+              "rpcClientAssemblys": [
+                {
+                  "name": "Hzdtf.MessageQueue.Rpc.Business.Contract.Standard",
+                  "dataType": "MessagePack"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

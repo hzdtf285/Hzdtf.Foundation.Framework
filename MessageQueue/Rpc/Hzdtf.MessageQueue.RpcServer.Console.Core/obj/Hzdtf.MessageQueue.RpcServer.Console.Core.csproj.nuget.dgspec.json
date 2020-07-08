@@ -44,19 +44,19 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[10.0.0, )"
             },
             "MessagePack": {
               "target": "Package",
-              "version": "[1.7.3.7, )"
+              "version": "[2.1.152, )"
             },
             "Microsoft.Extensions.Caching.Abstractions": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[3.1.5, )"
             },
             "Microsoft.Extensions.Caching.Memory": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[3.1.5, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -66,11 +66,11 @@
             },
             "NPOI": {
               "target": "Package",
-              "version": "[2.4.1, )"
+              "version": "[2.5.1, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[12.0.1, )"
+              "version": "[12.0.3, )"
             },
             "SharpZipLib": {
               "target": "Package",
@@ -78,15 +78,15 @@
             },
             "System.ComponentModel.Annotations": {
               "target": "Package",
-              "version": "[4.5.0, )"
+              "version": "[4.7.0, )"
             },
             "System.Drawing.Common": {
               "target": "Package",
-              "version": "[4.5.1, )"
+              "version": "[4.7.0, )"
             },
             "System.Reflection.DispatchProxy": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[4.7.1, )"
             },
             "androidxml": {
               "target": "Package",
@@ -157,19 +157,19 @@
           "dependencies": {
             "Autofac": {
               "target": "Package",
-              "version": "[4.8.1, )"
+              "version": "[5.2.0, )"
             },
             "Autofac.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[4.3.1, )"
+              "version": "[6.0.0, )"
             },
             "Autofac.Extras.DynamicProxy": {
               "target": "Package",
-              "version": "[4.5.0, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[3.1.5, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -515,7 +515,7 @@
             },
             "RabbitMQ.Client": {
               "target": "Package",
-              "version": "[5.1.0, )"
+              "version": "[6.1.0, )"
             }
           },
           "imports": [
@@ -744,7 +744,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.2"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -752,7 +752,7 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.2": {
+          "netcoreapp3.1": {
             "projectReferences": {
               "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj": {
                 "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj"
@@ -788,21 +788,15 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.2": {
+        "netcoreapp3.1": {
           "dependencies": {
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.1.5, )"
             },
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
-              "version": "[3.1.0, )"
-            },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
+              "version": "[3.1.5, )"
             }
           },
           "imports": [
@@ -815,6 +809,11 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
@@ -883,7 +882,7 @@
       }
     },
     "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj": {
-      "version": "2.0.0",
+      "version": "3.1.5",
       "restore": {
         "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj",
         "projectName": "Hzdtf.Platform.Impl.Core",
@@ -899,7 +898,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.2"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -907,7 +906,7 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.2": {
+          "netcoreapp3.1": {
             "projectReferences": {
               "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
                 "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
@@ -925,17 +924,11 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.2": {
+        "netcoreapp3.1": {
           "dependencies": {
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
+              "version": "[3.1.5, )"
             }
           },
           "imports": [
@@ -948,6 +941,11 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }

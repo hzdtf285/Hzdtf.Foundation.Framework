@@ -93,7 +93,10 @@ namespace Hzdtf.Autofac.Extend.Standard
             }
             else
             {
-                containerBuilder.RegisterBuildCallback(container => AutofacTool.Container = container);
+                containerBuilder.RegisterBuildCallback(scope =>
+                {
+                    AutofacTool.LifetimeScope = scope;
+                });
             }
 
             if (param.IsLoadAutoMapperConfig)

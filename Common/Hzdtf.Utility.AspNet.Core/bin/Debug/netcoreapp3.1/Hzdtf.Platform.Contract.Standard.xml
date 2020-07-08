@@ -253,6 +253,34 @@
             <param name="node">节点</param>
             <returns>程序集扩展信息</returns>
         </member>
+        <member name="T:Hzdtf.Platform.Contract.Standard.Config.Connection.ConnectionAppConfigFactoryBase`3">
+            <summary>
+            连接带有应用配置的工厂基类
+            @ 黄振东
+            </summary>
+            <typeparam name="ConnectionT">连接类型</typeparam>
+            <typeparam name="ConnectionInfoT">连接信息类型</typeparam>
+            <typeparam name="ConnectionWrapInfoT">连接包装信息类型</typeparam>
+        </member>
+        <member name="F:Hzdtf.Platform.Contract.Standard.Config.Connection.ConnectionAppConfigFactoryBase`3.appConfig">
+            <summary>
+            应用配置
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.Connection.ConnectionAppConfigFactoryBase`3.#ctor(Hzdtf.Utility.Standard.Safety.ISymmetricalEncryption,Hzdtf.Platform.Config.Contract.Standard.Config.App.IAppConfiguration)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="symmetricalEncryption">加密</param>
+            <param name="appConfig">应用配置</param>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.Connection.ConnectionAppConfigFactoryBase`3.GetConnectionStringByAppConfigName(System.String)">
+            <summary>
+            根据应用配置名称获取连接字符串
+            </summary>
+            <param name="appConfigName">应用配置名称</param>
+            <returns>连接字符串</returns>
+        </member>
         <member name="T:Hzdtf.Platform.Contract.Standard.Config.Language.LanguageLibraryConfigJson">
             <summary>
             语系库配置JSON

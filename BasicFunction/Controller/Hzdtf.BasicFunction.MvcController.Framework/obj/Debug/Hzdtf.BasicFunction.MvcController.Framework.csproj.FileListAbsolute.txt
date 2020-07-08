@@ -1145,3 +1145,7 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Controller\Hzdtf.B
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Framework\zh-Hans\System.Web.WebPages.resources.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Framework\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Framework\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Framework\System.Memory.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Framework\System.Numerics.Vectors.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Framework\System.Runtime.CompilerServices.Unsafe.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Framework\System.Buffers.dll

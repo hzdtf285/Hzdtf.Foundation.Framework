@@ -15,7 +15,8 @@ namespace Hzdtf.MessageQueue.Contract.Standard.MessageQueue
         /// 创建消息队列信息
         /// </summary>
         /// <param name="queueOrOtherIdentify">队列或其他标识</param>
+        /// <param name="extend">扩展</param>
         /// <returns>消息队列信息</returns>
-        MessageQueueInfo Create(string queueOrOtherIdentify = null);
+        MessageQueueInfo Create(string queueOrOtherIdentify = null, IDictionary<string, string> extend = null);
     }
 }

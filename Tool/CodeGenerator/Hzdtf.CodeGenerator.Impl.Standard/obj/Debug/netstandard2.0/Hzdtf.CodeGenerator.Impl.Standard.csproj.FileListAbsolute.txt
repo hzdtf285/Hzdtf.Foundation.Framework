@@ -140,9 +140,9 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGen
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.Utility.Standard.pdb
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.Utility.Standard.xml
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.CodeGenerator.Impl.Standard.csprojAssemblyReference.cache
-C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.CodeGenerator.Impl.Standard.csproj.CoreCompileInputs.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.CodeGenerator.Impl.Standard.AssemblyInfoInputs.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.CodeGenerator.Impl.Standard.AssemblyInfo.cs
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.CodeGenerator.Impl.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.CodeGenerator.Impl.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.CodeGenerator.Impl.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.CodeGenerator.Impl.Standard.csproj.CoreCompileInputs.cache

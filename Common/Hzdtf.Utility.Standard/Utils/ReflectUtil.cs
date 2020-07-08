@@ -607,5 +607,36 @@ namespace Hzdtf.Utility.Standard.Utils
 
             return assemblies.SelectMany(a => a.GetTypes().Where(t => t.GetInterfaces().Contains(interfaceType))).ToArray();
         }
+
+        /// <summary>
+        /// 获取方法的返回值类型，如果是Task，则获取Task.Result的类型
+        /// </summary>
+        /// <param name="method">方法</param>
+        /// <returns>方法的返回值类型</returns>
+        public static Type GetReturnValueType(this MethodInfo method)
+        {
+            if (method == null)
+            {
+                return null;
+            }
+
+            Type targetType = null;
+
+            // 判断返回类型是否Task
+            if (method.ReturnType.IsTypeNotGenericityTask())
+            {
+                return null;
+            }
+            else if (method.ReturnType.IsTypeGenericityTask())
+            {
+                targetType = method.ReturnType.GetProperty("Result").PropertyType;
+            }
+            else
+            {
+                targetType = method.ReturnType;
+            }
+
+            return targetType;
+        }
     }
 }

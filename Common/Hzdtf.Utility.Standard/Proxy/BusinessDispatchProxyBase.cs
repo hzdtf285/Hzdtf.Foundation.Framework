@@ -10,6 +10,7 @@ namespace Hzdtf.Utility.Standard.Proxy
     /// <summary>
     /// 业务动态代理基类
     /// 注意：此类会自动判断代理的是否异步方法（返回类型为Task），如果是则自动开启异步，Task返回值必须是object类型，否则会报错
+    /// 如果使用默认的异步方法，性能较差，不推荐使用。如果非要使用异步，请在调用方手动开启异步线程里执行同步方法
     /// @ 黄振东
     /// </summary>
     /// <typeparam name="SubClassT">子类类型</typeparam>

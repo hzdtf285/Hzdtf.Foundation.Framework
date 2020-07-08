@@ -548,7 +548,14 @@
             <param name="ids">ID集合</param>
             <param name="connectionId">连接ID</param>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:Hzdtf.Service.Impl.Standard.ServiceBase`2.AfterFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Collections.Generic.IList{`0}},System.Int32[],System.String@)" -->
+        <member name="M:Hzdtf.Service.Impl.Standard.ServiceBase`2.AfterFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Collections.Generic.IList{`0}},System.Int32[],System.String@)">
+            <summary>
+            根据ID集合查找模型列表后
+            </summary>
+            <param name="returnInfo">返回信息</param>
+            <param name="ids">ID集合</param>
+            <param name="connectionId">连接ID</param>
+        </member>
         <member name="M:Hzdtf.Service.Impl.Standard.ServiceBase`2.BeforeExists(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},System.Int32,System.String@)">
             <summary>
             根据ID判断模型是否存在前

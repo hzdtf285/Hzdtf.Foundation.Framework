@@ -23,14 +23,14 @@ namespace Hzdtf.Utility.AspNet.Core.Config
         /// <summary>
         /// 配置生成前回调
         /// </summary>
-        private readonly Action<IConfigurationBuilder> beforeConfigurationBuilder;
+        private readonly Action<IConfigurationBuilder, string, object> beforeConfigurationBuilder;
 
         /// <summary>
         /// 构造方法
         /// </summary>
         /// <param name="jsonFile">json文件</param>
         /// <param name="beforeConfigurationBuilder">配置生成前回调</param>
-        public JsonFileMicrosoftConfigurationBase(string jsonFile, Action<IConfigurationBuilder> beforeConfigurationBuilder = null) 
+        public JsonFileMicrosoftConfigurationBase(string jsonFile, Action<IConfigurationBuilder, string, object> beforeConfigurationBuilder = null) 
             : base(jsonFile, false)
         {
             this.beforeConfigurationBuilder = beforeConfigurationBuilder;
@@ -42,7 +42,7 @@ namespace Hzdtf.Utility.AspNet.Core.Config
         /// </summary>
         /// <param name="data">数据</param>
         /// <param name="beforeConfigurationBuilder">配置生成前回调</param>
-        public JsonFileMicrosoftConfigurationBase(T data, Action<IConfigurationBuilder> beforeConfigurationBuilder = null)
+        public JsonFileMicrosoftConfigurationBase(T data, Action<IConfigurationBuilder, string, object> beforeConfigurationBuilder = null)
             : base(data, false)
         {
             this.beforeConfigurationBuilder = beforeConfigurationBuilder;
@@ -75,7 +75,7 @@ namespace Hzdtf.Utility.AspNet.Core.Config
                 var builder = new ConfigurationBuilder().AddJsonStream(stream);
                 if (beforeConfigurationBuilder != null)
                 {
-                    beforeConfigurationBuilder(builder);
+                    beforeConfigurationBuilder(builder, this.file, data);
                 }
                 configuration = builder.Build();
             }

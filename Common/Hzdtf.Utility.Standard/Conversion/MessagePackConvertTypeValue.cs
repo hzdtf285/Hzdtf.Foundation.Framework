@@ -1,7 +1,9 @@
 ﻿using Hzdtf.Utility.Standard.Attr;
+using Hzdtf.Utility.Standard.Utils;
 using MessagePack;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace Hzdtf.Utility.Standard.Conversion
@@ -19,6 +21,18 @@ namespace Hzdtf.Utility.Standard.Conversion
         /// <param name="value">值</param>
         /// <param name="targetType">目标类型</param>
         /// <returns>新值</returns>
-        protected override object ToNew(object value, Type targetType) => MessagePackSerializer.NonGeneric.Deserialize(targetType, MessagePackSerializer.Serialize(value));
+        protected override object ToNew(object value, Type targetType)
+        {
+            var bytes = MessagePackSerializer.Serialize(value);
+            if (bytes.IsNullOrLength0())
+            {
+                return null;
+            }
+
+            using (var stream = new MemoryStream(bytes))
+            {
+                return MessagePackSerializer.Deserialize(targetType, stream);
+            }
+        }
     }
 }

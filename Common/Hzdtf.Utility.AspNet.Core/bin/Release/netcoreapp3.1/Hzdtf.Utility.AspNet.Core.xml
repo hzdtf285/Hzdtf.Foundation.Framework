@@ -4,6 +4,22 @@
         <name>Hzdtf.Utility.AspNet.Core</name>
     </assembly>
     <members>
+        <member name="T:Hzdtf.Utility.AspNet.Core.Config.ConfigSourceType">
+            <summary>
+            配置来源类型
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.AspNet.Core.Config.ConfigSourceType.JSON_FILE">
+            <summary>
+            JSON文件
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.AspNet.Core.Config.ConfigSourceType.MICROSOFT_CONFIGURATION">
+            <summary>
+            微软配置
+            </summary>
+        </member>
         <member name="T:Hzdtf.Utility.AspNet.Core.Config.JsonFileMicrosoftConfigurationBase`1">
             <summary>
             Json文件微软配置基类
@@ -21,14 +37,14 @@
             配置生成前回调
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.AspNet.Core.Config.JsonFileMicrosoftConfigurationBase`1.#ctor(System.String,System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder})">
+        <member name="M:Hzdtf.Utility.AspNet.Core.Config.JsonFileMicrosoftConfigurationBase`1.#ctor(System.String,System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.Object})">
             <summary>
             构造方法
             </summary>
             <param name="jsonFile">json文件</param>
             <param name="beforeConfigurationBuilder">配置生成前回调</param>
         </member>
-        <member name="M:Hzdtf.Utility.AspNet.Core.Config.JsonFileMicrosoftConfigurationBase`1.#ctor(`0,System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder})">
+        <member name="M:Hzdtf.Utility.AspNet.Core.Config.JsonFileMicrosoftConfigurationBase`1.#ctor(`0,System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.Object})">
             <summary>
             构造方法
             </summary>
@@ -188,7 +204,7 @@
             <param name="options">配置回调</param>
             <returns>服务</returns>
         </member>
-        <member name="M:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesBuilderExtensions.AddUnityServicesBuilderConfigure(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hzdtf.Utility.Standard.RemoteService.UnitServiceBuilderOptions},System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder})">
+        <member name="M:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesBuilderExtensions.AddUnityServicesBuilderConfigure(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hzdtf.Utility.Standard.RemoteService.UnitServiceBuilderOptions},System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.Object})">
             <summary>
             添加统一服务生成器微软配置
             </summary>
@@ -222,14 +238,14 @@
             同步服务配置列表
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesOptionsConfiguration.#ctor(System.String,System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder})">
+        <member name="M:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesOptionsConfiguration.#ctor(System.String,System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.Object})">
             <summary>
             构造方法
             </summary>
             <param name="jsonFile">json文件</param>
             <param name="beforeConfigurationBuilder">配置生成前回调</param>
         </member>
-        <member name="M:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesOptionsConfiguration.#ctor(Hzdtf.Utility.Standard.RemoteService.Options.UnityServicesOptions,System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder})">
+        <member name="M:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesOptionsConfiguration.#ctor(Hzdtf.Utility.Standard.RemoteService.Options.UnityServicesOptions,System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.Object})">
             <summary>
             构造方法
             </summary>

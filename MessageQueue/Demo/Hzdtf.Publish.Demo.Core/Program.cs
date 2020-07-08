@@ -40,7 +40,9 @@ namespace Hzdtf.Publish.Demo.Core
         /// </summary>
         static void PublishString()
         {
-            IProducer producer = SingleConnectionTool.Connection.CreateProducer("TestExchange");//此处是交换机名称
+            //IProducer producer = SingleConnectionTool.Connection.CreateProducer("TestExchange");//此处是交换机名称
+            var conn = SingleConnectionTool.CreateConnectionFromConfigName("MessageQueue:RabbitConnectionString_vtest");
+            IProducer producer = conn.CreateProducer("TestExchange2");//此处是交换机名称
             while (true)
             {
                 string msg = Console.ReadLine();

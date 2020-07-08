@@ -551,3 +551,7 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorizatio
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Framework\Hzdtf.Utility.Standard.xml
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Framework\Hzdtf.Authorization.Contract.Standard.pdb
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Framework\Hzdtf.Authorization.Contract.Standard.xml
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Framework\System.Memory.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Framework\System.Numerics.Vectors.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Framework\System.Runtime.CompilerServices.Unsafe.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Framework\System.Buffers.dll
