@@ -1,7 +1,7 @@
 # Hzdtf.FoundationFramework
 基础框架系统，支持.NET和.NET Core平台，语言：C#，DB支持MySql和SqlServer，主要功能有抽象持久化、服务层，将业务基本的增删改查抽离复用；提供代码生成器从DB生成实体、持久化、服务以及MVC控制器，每层依赖接口，并需要在客户端将对应实现层用Autofac程序集依赖注入，用AOP提供日志跟踪、事务、模型验证等。对Autofac、Redis、RabbitMQ封装扩展；DB访问提供自动主从访问，Redis客户端分区。特别适合管理系统。
 
-本框架必须运行在.NET Standard 2.0、.NET Framework 4.6.1和.NET Core 2.2（包含3.0）以上。下载源码用Visual Studio 2017/2019打开。
+本框架必须运行在.NET Standard 2.0、.NET Framework 4.6.1和.NET Core 3.1.5以上。下载源码用Visual Studio 2019打开。
 工程以Standard或Std结尾是标准库，以Framework或Frm结尾为Framework库，以Core结尾为Core库。
 初始编译时会耗些时间，因为要从nuget下载包。
 框架使用依赖接口注入，使用对象要优先依赖接口，用Autofac属性注入方式。
