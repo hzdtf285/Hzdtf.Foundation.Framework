@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cUdDCZJcDqbgEoWIc4YzY+QC0qflzqbYA9ieKoMLbydaYMOXuymH2/gmnnKuBttVg6dSWHTr40uACxhNo4bcow==",
+  "dgSpecHash": "+tRxLzyjjMbzo+dJU+f8X2sH5p49FMNRngPlckseSRDRUPz6W+GhUNvV5RaNB6Fz4yhSeMUk1LSGZJX3Bdp/vg==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WebDemoCore\\Hzdtf.WebTest3.1.Core\\Hzdtf.WebTest3.1.Core.csproj",
   "expectedPackageFiles": [
@@ -84,6 +84,8 @@
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\3.1.5\\microsoft.extensions.fileproviders.physical.3.1.5.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\3.1.5\\microsoft.extensions.filesystemglobbing.3.1.5.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\3.1.5\\microsoft.extensions.hosting.abstractions.3.1.5.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.http\\3.1.5\\microsoft.extensions.http.3.1.5.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.http.polly\\3.1.5\\microsoft.extensions.http.polly.3.1.5.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.localization\\2.2.0\\microsoft.extensions.localization.2.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\2.2.0\\microsoft.extensions.localization.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.logging\\3.1.5\\microsoft.extensions.logging.3.1.5.nupkg.sha512",
@@ -116,6 +118,8 @@
     "C:\\Users\\admin\\.nuget\\packages\\nlog\\4.7.2\\nlog.4.7.2.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\npoi\\2.5.1\\npoi.2.5.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\polly\\7.2.1\\polly.7.2.1.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\polly.extensions.http\\3.0.0\\polly.extensions.http.3.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\portable.bouncycastle\\1.8.6\\portable.bouncycastle.1.8.6.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

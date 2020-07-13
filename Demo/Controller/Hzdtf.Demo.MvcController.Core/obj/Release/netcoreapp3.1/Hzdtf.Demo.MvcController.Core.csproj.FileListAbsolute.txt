@@ -42,7 +42,7 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Controller\Hzdtf.Demo.MvcCo
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Controller\Hzdtf.Demo.MvcController.Core\obj\Release\netcoreapp3.1\Hzdtf.Demo.MvcController.Core.csprojAssemblyReference.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Controller\Hzdtf.Demo.MvcController.Core\obj\Release\netcoreapp3.1\Hzdtf.Demo.MvcController.Core.AssemblyInfoInputs.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Controller\Hzdtf.Demo.MvcController.Core\obj\Release\netcoreapp3.1\Hzdtf.Demo.MvcController.Core.AssemblyInfo.cs
-C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Controller\Hzdtf.Demo.MvcController.Core\obj\Release\netcoreapp3.1\Hzdtf.Demo.MvcController.Core.csproj.CoreCompileInputs.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Controller\Hzdtf.Demo.MvcController.Core\obj\Release\netcoreapp3.1\Hzdtf.Demo.MvcController.Core.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Controller\Hzdtf.Demo.MvcController.Core\obj\Release\netcoreapp3.1\Hzdtf.Demo.MvcController.Core.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Controller\Hzdtf.Demo.MvcController.Core\obj\Release\netcoreapp3.1\Hzdtf.Demo.MvcController.Core.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Controller\Hzdtf.Demo.MvcController.Core\obj\Release\netcoreapp3.1\Hzdtf.Demo.MvcController.Core.csproj.CoreCompileInputs.cache

@@ -17,5 +17,15 @@ namespace Hzdtf.Logger.Contract.Standard
             get;
             set;
         } = new ConsoleLog();
+
+        /// <summary>
+        /// 获取可用的日志，如果输入为空，则返回DefaultLog
+        /// </summary>
+        /// <param name="log">日志</param>
+        /// <returns>日志</returns>
+        public static ILogable AvailableLog(this ILogable log)
+        {
+            return log == null ? DefaultLog : log;
+        }
     }
 }

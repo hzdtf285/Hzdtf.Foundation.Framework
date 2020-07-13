@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>黄振东</Authors>
+    <Company>Hzdtf</Company>
+    <Description>策略扩展类库，运行在.NET Standard 2.0以上</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>Hzdtf.Polly.Extensions.Standard.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>Hzdtf.Polly.Extensions.Standard.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Polly" Version="7.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Hzdtf.Utility.Standard\Hzdtf.Utility.Standard.csproj" />
+    <ProjectReference Include="..\..\Logger\Hzdtf.Logger.Contract.Standard\Hzdtf.Logger.Contract.Standard.csproj" />
+  </ItemGroup>
+
+</Project>

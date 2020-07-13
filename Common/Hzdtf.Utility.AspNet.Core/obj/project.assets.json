@@ -1798,7 +1798,6 @@
       "Hzdtf.Logger.Contract.Standard >= 2.0.0",
       "Hzdtf.Utility.Standard >= 2.0.0",
       "Microsoft.AspNetCore.Hosting.Abstractions >= 2.2.0",
-      "Microsoft.AspNetCore.Http.Abstractions >= 2.2.0",
       "Microsoft.Extensions.Configuration >= 3.1.5",
       "Microsoft.Extensions.Configuration.Json >= 3.1.5",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 3.1.5",
@@ -1856,10 +1855,6 @@
       "netcoreapp3.1": {
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": {
-            "target": "Package",
-            "version": "[2.2.0, )"
-          },
-          "Microsoft.AspNetCore.Http.Abstractions": {
             "target": "Package",
             "version": "[2.2.0, )"
           },

@@ -25,7 +25,7 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Home
         {
             get;
             set;
-        }        
+        }
 
         /// <summary>
         /// 主页

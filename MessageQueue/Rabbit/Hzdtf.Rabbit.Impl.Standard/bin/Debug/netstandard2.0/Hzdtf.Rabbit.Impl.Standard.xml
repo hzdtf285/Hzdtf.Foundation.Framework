@@ -59,6 +59,11 @@
             状态
             </summary>
         </member>
+        <member name="P:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.ConnectionInfo">
+            <summary>
+            连接信息
+            </summary>
+        </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitAutoRecoveryConnection.#ctor">
             <summary>
             构造方法
@@ -350,10 +355,11 @@
             </summary>
             <param name="topCount">前几个要关闭的，如果为-1则表示全部</param>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection.Close">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection.ExecClose">
             <summary>
-            关闭
+            执行关闭
             </summary>
+            <returns>事件数据</returns>
         </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection.GetDefaultConnectionString">
             <summary>
@@ -373,7 +379,7 @@
             </summary>
             <returns>默认的连接字符串解析器</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection.ValidateOpenParams(Hzdtf.Utility.Standard.Connection.ConnectionInfo)">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnection.ValidateOpenParams2(Hzdtf.Utility.Standard.Connection.ConnectionInfo)">
             <summary>
             验证打开参数
             </summary>
@@ -429,10 +435,11 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnectionFactory.#ctor(Hzdtf.Platform.Config.Contract.Standard.Config.App.IAppConfiguration)">
+        <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnectionFactory.#ctor(Hzdtf.Utility.Standard.Safety.ISymmetricalEncryption,Hzdtf.Platform.Config.Contract.Standard.Config.App.IAppConfiguration)">
             <summary>
             构造方法
             </summary>
+            <param name="symmetricalEncryption">加密</param>
             <param name="appConfig">应用配置</param>
         </member>
         <member name="M:Hzdtf.Rabbit.Impl.Standard.Connection.RabbitConnectionFactory.Create">

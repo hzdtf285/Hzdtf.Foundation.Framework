@@ -180,10 +180,11 @@
             </summary>
             <typeparam name="ConnectionWrapInfoT">连接包装信息类型</typeparam>
         </member>
-        <member name="M:Hzdtf.MessageQueue.Contract.Standard.Connection.MessageQueueConnectionFactoryBase`1.#ctor(Hzdtf.Platform.Config.Contract.Standard.Config.App.IAppConfiguration)">
+        <member name="M:Hzdtf.MessageQueue.Contract.Standard.Connection.MessageQueueConnectionFactoryBase`1.#ctor(Hzdtf.Utility.Standard.Safety.ISymmetricalEncryption,Hzdtf.Platform.Config.Contract.Standard.Config.App.IAppConfiguration)">
             <summary>
             构造方法
             </summary>
+            <param name="symmetricalEncryption">加密</param>
             <param name="appConfig">应用配置</param>
         </member>
         <member name="M:Hzdtf.MessageQueue.Contract.Standard.Connection.MessageQueueConnectionFactoryBase`1.AppConfigConnectionEncryption">

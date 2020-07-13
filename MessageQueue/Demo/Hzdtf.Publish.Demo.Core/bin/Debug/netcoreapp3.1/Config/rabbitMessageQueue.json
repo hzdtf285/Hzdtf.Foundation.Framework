@@ -1,58 +1,8 @@
 ﻿{
   "rabbit": [
     {
-      "virtualPath": "/",
-      "exchanges": [
-        {
-          "name": "TestExchange",
-          "persistent": true,
-          "type": "direct",
-          "queues": [
-            {
-              "name": "TestQueue1",
-              "routingKeys": [ "TestKey1" ],
-              "qos": 4
-            },
-            {
-              "name": "TestQueue2",
-              "routingKeys": [ "TestKey2" ],
-              "qos": 4
-            },
-            {
-              "name": "TestQueue3",
-              "routingKeys": [ "TestKey1" ],
-              "qos": 4
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "virtualPath": "V ",
-      "exchanges": [
-        {
-          "name": "TestExchange2",
-          "persistent": true,
-          "type": "direct",
-          "queues": [
-            {
-              "name": "TestQueue1_a",
-              "routingKeys": [ "TestKey1" ],
-              "qos": 4
-            },
-            {
-              "name": "TestQueue2_a",
-              "routingKeys": [ "TestKey2" ],
-              "qos": 4
-            },
-            {
-              "name": "TestQueue3_a",
-              "routingKeys": [ "TestKey1" ],
-              "qos": 4
-            }
-          ]
-        }
-      ]
+      "ConnectionString": "host=localhost;user=guest;password=123",
+      "RabbitConnectionString_vtest": "host=localhost;user=guest;password=123;virtualPath=vtest"
     }
   ]
 }

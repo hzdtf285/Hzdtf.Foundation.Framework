@@ -28,6 +28,8 @@
     <ProjectReference Include="..\..\Logger\Hzdtf.Logger.Integration.MicrosoftLog.Standard\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj" />
     <ProjectReference Include="..\..\Persistence\Hzdtf.Persistence.Autofac.Standard\Hzdtf.Persistence.Autofac.Standard.csproj" />
     <ProjectReference Include="..\..\Platform\Hzdtf.Platform.impl.Core\Hzdtf.Platform.Impl.Core.csproj" />
+    <ProjectReference Include="..\..\Polly\Hzdtf.Polly.AspNet.Extensions.Core\Hzdtf.Polly.AspNet.Extensions.Core.csproj" />
+    <ProjectReference Include="..\..\Polly\Hzdtf.Polly.Extensions.Standard\Hzdtf.Polly.Extensions.Standard.csproj" />
     <ProjectReference Include="..\..\Service\Hzdtf.BasicFunction.Service.Autofac.Standard\Hzdtf.BasicFunction.Service.Autofac.Standard.csproj" />
     <ProjectReference Include="..\..\WorkFlow\Controller\Hzdtf.WorkFlow.MvcController.Core\Hzdtf.WorkFlow.MvcController.Core.csproj" />
     <ProjectReference Include="..\..\WorkFlow\Persistence\Hzdtf.WorkFlow.MySql.Standard\Hzdtf.WorkFlow.MySql.Standard.csproj" />

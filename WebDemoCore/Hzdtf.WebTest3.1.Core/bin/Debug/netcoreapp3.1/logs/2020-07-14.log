@@ -1,0 +1,386 @@
+2020-07-14 00:00:50.1410 INFO eventId:0,Now listening on: http://localhost:5000
+2020-07-14 00:00:50.1410 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-07-14 00:00:50.1410 INFO eventId:0,Hosting environment: Development
+2020-07-14 00:00:50.1410 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-07-14 00:00:51.4055 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-07-14 00:01:01.7022 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:5032/test
+2020-07-14 00:01:01.7224 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:5032/test
+2020-07-14 00:01:05.8316 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:5032/test
+2020-07-14 00:01:09.8511 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:5032/test
+2020-07-14 00:01:13.8694 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:5032/test
+2020-07-14 00:01:22.4705 ERROR eventId:UnhandledException,An unhandled exception has occurred while executing the request.
+2020-07-14 00:01:38.2096 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:5032/test
+2020-07-14 00:01:38.2096 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:5032/test
+2020-07-14 00:01:42.2223 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:5032/test
+2020-07-14 00:01:46.2339 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:5032/test
+2020-07-14 00:01:50.2453 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:5032/test
+2020-07-14 00:07:46.1294 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-07-14 00:07:46.1294 INFO eventId:0,Now listening on: http://localhost:5000
+2020-07-14 00:07:46.1294 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-07-14 00:07:46.1294 INFO eventId:0,Hosting environment: Development
+2020-07-14 00:07:47.1912 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-07-14 00:07:57.8557 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:5032/test
+2020-07-14 00:07:57.8719 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:5032/test
+2020-07-14 00:08:01.9658 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:5032/test
+2020-07-14 00:08:05.9770 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:5032/test
+2020-07-14 00:08:09.9903 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:5032/test
+2020-07-14 00:08:23.8178 INFO eventId:RequestPipelineEnd,End processing HTTP request after 25966.3065ms - OK
+2020-07-14 00:08:45.0637 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:5032/test
+2020-07-14 00:08:45.0637 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:5032/test
+2020-07-14 00:08:49.0795 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:5032/test
+2020-07-14 00:08:53.0902 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:5032/test
+2020-07-14 00:10:12.5999 INFO eventId:0,Hosting environment: Development
+2020-07-14 00:10:12.5999 INFO eventId:0,Now listening on: http://localhost:5000
+2020-07-14 00:10:12.5999 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-07-14 00:10:12.5999 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-07-14 00:10:13.7990 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-07-14 00:10:18.6528 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:10:18.6696 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:10:22.7733 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:10:26.7953 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:10:33.4886 INFO eventId:RequestEnd,Received HTTP response after 6690.8826ms - InternalServerError
+2020-07-14 00:10:33.4886 INFO eventId:RequestPipelineEnd,End processing HTTP request after 14844.5677ms - InternalServerError
+2020-07-14 00:10:35.1469 ERROR eventId:UnhandledException,An unhandled exception has occurred while executing the request.
+2020-07-14 00:10:44.5017 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:10:44.5017 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:10:55.1571 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:11:00.1502 INFO eventId:RequestEnd,Received HTTP response after 5013.7342ms - OK
+2020-07-14 00:11:00.1502 INFO eventId:RequestPipelineEnd,End processing HTTP request after 15650.375ms - OK
+2020-07-14 00:11:15.5058 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:11:15.5058 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:11:16.3354 INFO eventId:RequestEnd,Received HTTP response after 827.8199ms - OK
+2020-07-14 00:11:16.3376 INFO eventId:RequestPipelineEnd,End processing HTTP request after 833.5743ms - OK
+2020-07-14 00:11:23.2697 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:11:23.2697 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:11:27.2870 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:11:31.2985 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:11:35.3076 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:11:39.3310 INFO eventId:RequestPipelineEnd,End processing HTTP request after 16061.4485ms - OK
+2020-07-14 00:11:43.2632 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:11:43.2632 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:11:47.2761 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:11:51.2888 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:11:55.3188 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:11:59.3403 INFO eventId:RequestPipelineEnd,End processing HTTP request after 16078.2987ms - OK
+2020-07-14 00:12:04.8071 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:12:04.8071 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:12:08.8192 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:12:12.8302 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:12:16.8406 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:12:20.8541 INFO eventId:RequestPipelineEnd,End processing HTTP request after 16046.7899ms - OK
+2020-07-14 00:12:23.2697 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:12:23.2697 INFO eventId:RequestPipelineEnd,End processing HTTP request after 4.0558ms - OK
+2020-07-14 00:12:29.8544 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:12:29.8544 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.6687ms - OK
+2020-07-14 00:12:37.4931 INFO eventId:0,Application is shutting down...
+2020-07-14 00:15:01.2397 INFO eventId:0,Hosting environment: Development
+2020-07-14 00:15:01.2397 INFO eventId:0,Now listening on: http://localhost:5000
+2020-07-14 00:15:01.2397 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-07-14 00:15:01.2397 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-07-14 00:15:02.4231 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-07-14 00:15:07.3684 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:15:07.3684 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:15:09.4314 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2063.8859ms - OK
+2020-07-14 00:15:11.3676 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:15:11.3689 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:15:13.3818 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2014.319ms - OK
+2020-07-14 00:15:15.1040 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:15:15.1040 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:15:17.1104 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2007.3677ms - OK
+2020-07-14 00:15:18.8069 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:15:18.8069 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.5299ms - OK
+2020-07-14 00:15:21.3528 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:15:21.3528 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.2797ms - OK
+2020-07-14 00:15:33.8794 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:15:33.8794 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:15:35.1189 INFO eventId:RequestEnd,Received HTTP response after 1237.2801ms - OK
+2020-07-14 00:15:35.1189 INFO eventId:RequestPipelineEnd,End processing HTTP request after 1242.0522ms - OK
+2020-07-14 00:15:44.3992 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:15:44.3992 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:15:45.2801 INFO eventId:RequestEnd,Received HTTP response after 879.4734ms - OK
+2020-07-14 00:15:45.2801 INFO eventId:RequestPipelineEnd,End processing HTTP request after 882.5231ms - OK
+2020-07-14 00:15:51.3998 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:15:51.3998 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:15:53.4188 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2019.7031ms - OK
+2020-07-14 00:15:55.7857 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:15:55.7857 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:15:57.7967 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2011.6362ms - OK
+2020-07-14 00:15:59.6482 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:15:59.6500 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:16:01.6543 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2007.1859ms - OK
+2020-07-14 00:16:03.5768 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:16:03.5768 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.3468ms - OK
+2020-07-14 00:16:06.1512 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:16:06.1512 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.6091ms - OK
+2020-07-14 00:16:13.8144 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:16:13.8144 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:16:15.8302 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2014.7763ms - OK
+2020-07-14 00:23:52.4138 INFO eventId:0,Hosting environment: Development
+2020-07-14 00:23:52.4138 INFO eventId:0,Now listening on: http://localhost:5000
+2020-07-14 00:23:52.4138 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-07-14 00:23:52.4138 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-07-14 00:23:54.0486 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-07-14 00:24:01.8621 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:01.8743 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:03.9283 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2066.9898ms - OK
+2020-07-14 00:24:07.3285 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:07.3285 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:09.3466 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2017.718ms - OK
+2020-07-14 00:24:10.9907 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:10.9907 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:13.0103 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2019.4919ms - OK
+2020-07-14 00:24:14.9257 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:14.9304 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.5454ms - OK
+2020-07-14 00:24:22.0429 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:22.0429 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.4585ms - OK
+2020-07-14 00:24:22.4798 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:22.4798 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.4468ms - OK
+2020-07-14 00:24:22.7434 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:22.7434 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.6351ms - OK
+2020-07-14 00:24:23.0144 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:23.0144 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:23.2658 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:23.2658 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.1963ms - OK
+2020-07-14 00:24:23.9393 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:23.9393 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.5739ms - OK
+2020-07-14 00:24:24.4111 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:24.4111 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.0435ms - OK
+2020-07-14 00:24:24.7849 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:24.7849 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.1137ms - OK
+2020-07-14 00:24:25.0188 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2004.5681ms - OK
+2020-07-14 00:24:25.3612 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:25.3612 INFO eventId:RequestPipelineEnd,End processing HTTP request after 5.0425ms - OK
+2020-07-14 00:24:25.9521 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:25.9521 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.7121ms - OK
+2020-07-14 00:24:26.4098 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:26.4098 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.7507ms - OK
+2020-07-14 00:24:26.8645 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:26.8682 INFO eventId:RequestPipelineEnd,End processing HTTP request after 4.3013ms - OK
+2020-07-14 00:24:27.2315 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:27.2315 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.0231ms - OK
+2020-07-14 00:24:27.6476 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:27.6502 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.9689ms - OK
+2020-07-14 00:24:27.9899 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:27.9946 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.3246ms - OK
+2020-07-14 00:24:28.3598 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:28.3598 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.2143ms - OK
+2020-07-14 00:24:28.7921 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:28.7921 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.5378ms - OK
+2020-07-14 00:24:29.2393 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:29.2393 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.7684ms - OK
+2020-07-14 00:24:29.6084 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:29.6084 INFO eventId:RequestPipelineEnd,End processing HTTP request after 4.0351ms - OK
+2020-07-14 00:24:30.0667 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:30.0667 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.4267ms - OK
+2020-07-14 00:24:30.5277 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:30.5277 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.452ms - OK
+2020-07-14 00:24:31.0313 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:31.0313 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.9049ms - OK
+2020-07-14 00:24:31.4246 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:31.4246 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.4882ms - OK
+2020-07-14 00:24:31.8954 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:31.8954 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.961ms - OK
+2020-07-14 00:24:32.2955 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:32.2955 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.0336ms - OK
+2020-07-14 00:24:32.7352 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:32.7352 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.8797ms - OK
+2020-07-14 00:24:33.1188 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:33.1188 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.1414ms - OK
+2020-07-14 00:24:33.5198 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:33.5198 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.9807ms - OK
+2020-07-14 00:24:33.8471 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:33.8471 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.1149ms - OK
+2020-07-14 00:24:34.0470 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:34.0470 INFO eventId:RequestPipelineEnd,End processing HTTP request after 1.9542ms - OK
+2020-07-14 00:24:34.4327 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:34.4327 INFO eventId:RequestPipelineEnd,End processing HTTP request after 4.5919ms - OK
+2020-07-14 00:24:34.6294 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:34.6294 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.3929ms - OK
+2020-07-14 00:24:34.8444 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:34.8444 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.8148ms - OK
+2020-07-14 00:24:35.0951 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:35.0951 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:35.3185 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:24:35.3215 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.4988ms - OK
+2020-07-14 00:24:37.1072 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2012.6704ms - OK
+2020-07-14 00:31:27.1372 INFO eventId:0,Hosting environment: Development
+2020-07-14 00:31:27.1372 INFO eventId:0,Now listening on: http://localhost:5000
+2020-07-14 00:31:27.1372 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-07-14 00:31:27.1372 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-07-14 00:31:28.6525 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-07-14 00:31:36.3624 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:31:36.3747 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:31:38.4253 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2064.6295ms - OK
+2020-07-14 00:31:39.6347 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:31:39.6347 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:31:41.6421 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2007.0339ms - OK
+2020-07-14 00:31:42.6009 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:31:42.6026 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:31:44.6132 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2013.0596ms - OK
+2020-07-14 00:31:44.6132 WARN (onBreak)进入断路器,状态:Closed,timespan:00:00:10 标签:[
+  "496252a65f0f40c6a019b5745c9ba443"
+]
+2020-07-14 00:31:45.0825 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:31:45.0825 INFO eventId:RequestPipelineEnd,End processing HTTP request after 4.3165ms - OK
+2020-07-14 00:31:45.6163 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:31:45.6202 INFO eventId:RequestPipelineEnd,End processing HTTP request after 4.3688ms - OK
+2020-07-14 00:31:45.8795 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:31:45.8795 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.1228ms - OK
+2020-07-14 00:31:46.1583 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:31:46.1583 INFO eventId:RequestPipelineEnd,End processing HTTP request after 4.2274ms - OK
+2020-07-14 00:31:46.3579 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:31:46.3579 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.1215ms - OK
+2020-07-14 00:31:46.6158 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:31:46.6202 INFO eventId:RequestPipelineEnd,End processing HTTP request after 4.4997ms - OK
+2020-07-14 00:31:46.8470 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:31:46.8470 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.635ms - OK
+2020-07-14 00:31:47.0666 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:31:47.0666 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.2941ms - OK
+2020-07-14 00:31:47.2627 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:31:47.2627 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.3304ms - OK
+2020-07-14 00:32:05.7730 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:05.7730 INFO (onHalfOpen)半打开断路器 标签:[
+  "496252a65f0f40c6a019b5745c9ba443"
+]
+2020-07-14 00:32:05.7751 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:07.7774 WARN (onBreak)进入断路器,状态:HalfOpen,timespan:00:00:10 标签:[
+  "496252a65f0f40c6a019b5745c9ba443"
+]
+2020-07-14 00:32:07.7774 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2006.5805ms - OK
+2020-07-14 00:32:10.2562 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:10.2597 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.2486ms - OK
+2020-07-14 00:32:10.8700 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:10.8700 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.7454ms - OK
+2020-07-14 00:32:11.8785 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:11.8785 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.6562ms - OK
+2020-07-14 00:32:12.2641 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:12.2641 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.2331ms - OK
+2020-07-14 00:32:18.3032 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:18.3056 INFO (onHalfOpen)半打开断路器 标签:[
+  "496252a65f0f40c6a019b5745c9ba443"
+]
+2020-07-14 00:32:18.3056 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:20.3240 WARN (onBreak)进入断路器,状态:HalfOpen,timespan:00:00:10 标签:[
+  "496252a65f0f40c6a019b5745c9ba443"
+]
+2020-07-14 00:32:20.3240 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2023.4507ms - OK
+2020-07-14 00:32:22.5674 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:22.5674 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.96ms - OK
+2020-07-14 00:32:23.1443 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:23.1443 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.2586ms - OK
+2020-07-14 00:32:23.5188 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:23.5188 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.8624ms - OK
+2020-07-14 00:32:23.9039 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:23.9039 INFO eventId:RequestPipelineEnd,End processing HTTP request after 4.0472ms - OK
+2020-07-14 00:32:24.2228 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:24.2228 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.6666ms - OK
+2020-07-14 00:32:24.5818 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:24.5818 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.5403ms - OK
+2020-07-14 00:32:24.9736 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:24.9736 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.8492ms - OK
+2020-07-14 00:32:26.0084 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:26.0110 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.7809ms - OK
+2020-07-14 00:32:26.4387 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:26.4387 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.9509ms - OK
+2020-07-14 00:32:26.8558 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:26.8558 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.6029ms - OK
+2020-07-14 00:32:27.2860 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:27.2860 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.5072ms - OK
+2020-07-14 00:32:27.7368 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:27.7368 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.2419ms - OK
+2020-07-14 00:32:28.1824 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:28.1824 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.304ms - OK
+2020-07-14 00:32:28.5900 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:28.5900 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.9708ms - OK
+2020-07-14 00:32:28.8854 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:28.8854 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.071ms - OK
+2020-07-14 00:32:29.2551 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:29.2551 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.0694ms - OK
+2020-07-14 00:32:29.6956 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:29.6981 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.6417ms - OK
+2020-07-14 00:32:30.0939 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:30.0939 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.59ms - OK
+2020-07-14 00:32:30.4777 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:30.4777 INFO (onHalfOpen)半打开断路器 标签:[
+  "496252a65f0f40c6a019b5745c9ba443"
+]
+2020-07-14 00:32:30.4777 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:30.8709 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:30.8709 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.557ms - OK
+2020-07-14 00:32:31.4558 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:31.4558 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.9942ms - OK
+2020-07-14 00:32:31.9342 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:31.9342 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.0497ms - OK
+2020-07-14 00:32:32.4800 WARN (onBreak)进入断路器,状态:HalfOpen,timespan:00:00:10 标签:[
+  "496252a65f0f40c6a019b5745c9ba443"
+]
+2020-07-14 00:32:32.4800 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2004.6775ms - OK
+2020-07-14 00:32:36.9261 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:36.9261 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.698ms - OK
+2020-07-14 00:32:37.6137 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:37.6137 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.3232ms - OK
+2020-07-14 00:32:38.2007 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:38.2007 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.9173ms - OK
+2020-07-14 00:32:38.6775 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:38.6809 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.6034ms - OK
+2020-07-14 00:32:39.1594 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:39.1594 INFO eventId:RequestPipelineEnd,End processing HTTP request after 4.337ms - OK
+2020-07-14 00:32:39.5089 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:39.5089 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.8816ms - OK
+2020-07-14 00:32:40.1188 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:40.1188 INFO eventId:RequestPipelineEnd,End processing HTTP request after 4.7055ms - OK
+2020-07-14 00:32:40.5906 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:40.5906 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.394ms - OK
+2020-07-14 00:32:41.2576 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:41.2605 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.0284ms - OK
+2020-07-14 00:32:41.7199 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:41.7199 INFO eventId:RequestPipelineEnd,End processing HTTP request after 4.0429ms - OK
+2020-07-14 00:32:42.1186 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:42.1186 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.375ms - OK
+2020-07-14 00:32:42.5336 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:42.5336 INFO (onHalfOpen)半打开断路器 标签:[
+  "496252a65f0f40c6a019b5745c9ba443"
+]
+2020-07-14 00:32:42.5336 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:44.5459 WARN (onBreak)进入断路器,状态:HalfOpen,timespan:00:00:10 标签:[
+  "496252a65f0f40c6a019b5745c9ba443"
+]
+2020-07-14 00:32:44.5459 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2015.0091ms - OK
+2020-07-14 00:32:45.7997 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:45.7997 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.403ms - OK
+2020-07-14 00:32:48.2633 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:48.2633 INFO eventId:RequestPipelineEnd,End processing HTTP request after 4.8051ms - OK
+2020-07-14 00:32:48.9509 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:48.9509 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.8342ms - OK
+2020-07-14 00:32:49.4137 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:49.4164 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.6818ms - OK
+2020-07-14 00:32:49.7347 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:49.7347 INFO eventId:RequestPipelineEnd,End processing HTTP request after 2.1356ms - OK
+2020-07-14 00:32:50.4565 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:50.4565 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.0806ms - OK
+2020-07-14 00:32:51.2139 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:51.2139 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.1393ms - OK
+2020-07-14 00:32:52.3685 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:52.3685 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.286ms - OK
+2020-07-14 00:32:52.8325 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:52.8325 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.1644ms - OK
+2020-07-14 00:32:53.2697 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:53.2697 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.5972ms - OK
+2020-07-14 00:32:53.6938 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:53.6938 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.3145ms - OK
+2020-07-14 00:32:54.1339 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:54.1339 INFO eventId:RequestPipelineEnd,End processing HTTP request after 3.4203ms - OK
+2020-07-14 00:32:54.6556 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:54.6556 INFO (onHalfOpen)半打开断路器 标签:[
+  "496252a65f0f40c6a019b5745c9ba443"
+]
+2020-07-14 00:32:54.6556 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:55.8334 INFO eventId:RequestEnd,Received HTTP response after 1176.4307ms - OK
+2020-07-14 00:32:55.8334 INFO eventId:RequestPipelineEnd,End processing HTTP request after 1180.0351ms - OK
+2020-07-14 00:32:55.8334 INFO (onReset)关闭断路器 标签:[
+  "496252a65f0f40c6a019b5745c9ba443"
+]
+2020-07-14 00:32:56.9188 INFO eventId:RequestPipelineStart,Start processing HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:56.9188 INFO eventId:RequestStart,Sending HTTP request GET http://localhost:4001/WeatherForecast/abc
+2020-07-14 00:32:57.8779 INFO eventId:RequestEnd,Received HTTP response after 957.4379ms - OK
+2020-07-14 00:32:57.8779 INFO eventId:RequestPipelineEnd,End processing HTTP request after 960.9803ms - OK

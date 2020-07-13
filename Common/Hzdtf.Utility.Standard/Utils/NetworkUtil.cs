@@ -169,5 +169,10 @@ namespace Hzdtf.Utility.Standard.Utils
             var result = new Ping().SendPingAsync(hostNameOrAddress).Result;
             return result.Status == IPStatus.Success;
         }
+
+        /// <summary>
+        /// 默认HTTP客户端名称
+        /// </summary>
+        public const string DEFAULT_HTTP_CLIENT_NAME = "default";
     }
 }

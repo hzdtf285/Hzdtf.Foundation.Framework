@@ -491,5 +491,12 @@
             默认日志
             </summary>
         </member>
+        <member name="M:Hzdtf.Logger.Contract.Standard.LogTool.AvailableLog(Hzdtf.Logger.Contract.Standard.ILogable)">
+            <summary>
+            获取可用的日志，如果输入为空，则返回DefaultLog
+            </summary>
+            <param name="log">日志</param>
+            <returns>日志</returns>
+        </member>
     </members>
 </doc>

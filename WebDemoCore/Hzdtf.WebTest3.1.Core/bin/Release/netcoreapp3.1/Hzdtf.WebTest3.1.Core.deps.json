@@ -40,6 +40,8 @@
           "Hzdtf.Logger.Integration.MicrosoftLog.Standard": "1.0.0",
           "Hzdtf.Persistence.Autofac.Standard": "2.0.0",
           "Hzdtf.Platform.Impl.Core": "3.1.5",
+          "Hzdtf.Polly.AspNet.Extensions.Core": "1.0.0",
+          "Hzdtf.Polly.Extensions.Standard": "1.0.0",
           "Hzdtf.Utility.AspNet.Core": "3.1.5",
           "Hzdtf.WorkFlow.MvcController.Core": "3.1.5",
           "Hzdtf.WorkFlow.MySql.Standard": "2.0.0",
@@ -136,7 +138,6 @@
           "Microsoft.Extensions.FileProviders.Composite.Reference": "3.1.0.0",
           "Microsoft.Extensions.FileProviders.Embedded": "3.1.0.0",
           "Microsoft.Extensions.Hosting": "3.1.0.0",
-          "Microsoft.Extensions.Http": "3.1.0.0",
           "Microsoft.Extensions.Identity.Core": "3.1.0.0",
           "Microsoft.Extensions.Identity.Stores": "3.1.0.0",
           "Microsoft.Extensions.Localization.Abstractions.Reference": "3.1.0.0",
@@ -1313,6 +1314,38 @@
           "lib/netcoreapp3.1/Microsoft.Extensions.Hosting.Abstractions.dll": {}
         }
       },
+      "Microsoft.Extensions.Http/3.1.5": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.5",
+          "Microsoft.Extensions.Logging": "3.1.5",
+          "Microsoft.Extensions.Options": "3.1.5"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Http.dll": {
+            "assemblyVersion": "3.1.5.0",
+            "fileVersion": "3.100.520.27009"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Http.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Http.Polly/3.1.5": {
+        "dependencies": {
+          "Microsoft.Extensions.Http": "3.1.5",
+          "Polly": "7.2.1",
+          "Polly.Extensions.Http": "3.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll": {
+            "assemblyVersion": "3.1.5.0",
+            "fileVersion": "3.100.520.27009"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll": {}
+        }
+      },
       "Microsoft.Extensions.Localization/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.5",
@@ -1728,6 +1761,31 @@
         },
         "compile": {
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
+        }
+      },
+      "Polly/7.2.1": {
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.2.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Polly.dll": {}
+        }
+      },
+      "Polly.Extensions.Http/3.0.0": {
+        "dependencies": {
+          "Polly": "7.2.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {}
         }
       },
       "Portable.BouncyCastle/1.8.6": {
@@ -2972,7 +3030,8 @@
           "Hzdtf.Demo.Service.Contract.Standard": "1.0.0",
           "Hzdtf.WorkFlow.MvcController.Core": "3.1.5",
           "Hzdtf.WorkFlow.Service.Contract.Standard": "2.0.0",
-          "Microsoft.AspNetCore.Mvc": "2.2.0"
+          "Microsoft.AspNetCore.Mvc": "2.2.0",
+          "Microsoft.Extensions.Http": "3.1.5"
         },
         "runtime": {
           "Hzdtf.Demo.MvcController.Core.dll": {}
@@ -3152,6 +3211,32 @@
           "Hzdtf.Platform.Impl.Core.dll": {}
         }
       },
+      "Hzdtf.Polly.AspNet.Extensions.Core/1.0.0": {
+        "dependencies": {
+          "Hzdtf.Polly.Extensions.Standard": "1.0.0",
+          "Microsoft.Extensions.Http": "3.1.5",
+          "Microsoft.Extensions.Http.Polly": "3.1.5"
+        },
+        "runtime": {
+          "Hzdtf.Polly.AspNet.Extensions.Core.dll": {}
+        },
+        "compile": {
+          "Hzdtf.Polly.AspNet.Extensions.Core.dll": {}
+        }
+      },
+      "Hzdtf.Polly.Extensions.Standard/1.0.0": {
+        "dependencies": {
+          "Hzdtf.Logger.Contract.Standard": "2.0.0",
+          "Hzdtf.Utility.Standard": "2.0.0",
+          "Polly": "7.2.1"
+        },
+        "runtime": {
+          "Hzdtf.Polly.Extensions.Standard.dll": {}
+        },
+        "compile": {
+          "Hzdtf.Polly.Extensions.Standard.dll": {}
+        }
+      },
       "Hzdtf.Service.Contract.Standard/2.0.0": {
         "dependencies": {
           "Hzdtf.Utility.Standard": "2.0.0"
@@ -3187,6 +3272,7 @@
           "Microsoft.Extensions.Configuration.Json": "3.1.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.5",
           "Microsoft.Extensions.Hosting.Abstractions": "3.1.5",
+          "Microsoft.Extensions.Http": "3.1.5",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "3.1.5"
         },
         "runtime": {
@@ -3821,12 +3907,6 @@
       "Microsoft.Extensions.Hosting/3.1.0.0": {
         "compile": {
           "Microsoft.Extensions.Hosting.dll": {}
-        },
-        "compileOnly": true
-      },
-      "Microsoft.Extensions.Http/3.1.0.0": {
-        "compile": {
-          "Microsoft.Extensions.Http.dll": {}
         },
         "compileOnly": true
       },
@@ -5436,6 +5516,20 @@
       "path": "microsoft.extensions.hosting.abstractions/3.1.5",
       "hashPath": "microsoft.extensions.hosting.abstractions.3.1.5.nupkg.sha512"
     },
+    "Microsoft.Extensions.Http/3.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P8yu3UDd0X129FmxJN0/nObuuH4v7YoxK00kEs8EU4R7POa+3yp/buux74fNYTLORuEqjBTMGtV7TBszuvCj7g==",
+      "path": "microsoft.extensions.http/3.1.5",
+      "hashPath": "microsoft.extensions.http.3.1.5.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Http.Polly/3.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wW+kLLqoQPIg3+NQhBkqmxBAtoGJhVsQ03RAjw/Jx0oTSmaZsJY3rIlBmsrHdeKOxq19P4qRlST2wk/k5tdXhg==",
+      "path": "microsoft.extensions.http.polly/3.1.5",
+      "hashPath": "microsoft.extensions.http.polly.3.1.5.nupkg.sha512"
+    },
     "Microsoft.Extensions.Localization/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -5659,6 +5753,20 @@
       "sha512": "sha512-qbXaB76XYUVLocLBs8Z9TS/ERGK2wm797feO+0JEPFvT7o7MRadOR77mqaSD4J1k8G+DlZQyq+MlkCuxrkr3ag==",
       "path": "nuget.frameworks/4.7.0",
       "hashPath": "nuget.frameworks.4.7.0.nupkg.sha512"
+    },
+    "Polly/7.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Od8SnPlpQr+PuAS0YzY3jgtzaDNknlIuAaldN2VEIyTvm/wCg22C5nUkUV1BEG8rIsub5RFMoV/NEQ0tM/+7Uw==",
+      "path": "polly/7.2.1",
+      "hashPath": "polly.7.2.1.nupkg.sha512"
+    },
+    "Polly.Extensions.Http/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-drrG+hB3pYFY7w1c3BD+lSGYvH2oIclH8GRSehgfyP5kjnFnHKQuuBhuHLv+PWyFuaTDyk/vfRpnxOzd11+J8g==",
+      "path": "polly.extensions.http/3.0.0",
+      "hashPath": "polly.extensions.http.3.0.0.nupkg.sha512"
     },
     "Portable.BouncyCastle/1.8.6": {
       "type": "package",
@@ -6591,6 +6699,16 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Hzdtf.Polly.AspNet.Extensions.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hzdtf.Polly.Extensions.Standard/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Hzdtf.Service.Contract.Standard/2.0.0": {
       "type": "project",
       "serviceable": false,
@@ -7082,11 +7200,6 @@
       "sha512": ""
     },
     "Microsoft.Extensions.Hosting/3.1.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.Extensions.Http/3.1.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

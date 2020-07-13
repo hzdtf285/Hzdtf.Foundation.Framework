@@ -53,10 +53,6 @@
               "target": "Package",
               "version": "[2.2.0, )"
             },
-            "Microsoft.AspNetCore.Http.Abstractions": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[3.1.5, )"

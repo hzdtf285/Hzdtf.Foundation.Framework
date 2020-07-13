@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.Polly.Extensions.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.Polly.Extensions.Standard.BreakerWrapPolicyOptions`1">
+            <summary>
+            断路器包装策略选项配置
+            @ 黄振东
+            </summary>
+            <typeparam name="TResult">结果类型</typeparam>
+        </member>
+        <member name="P:Hzdtf.Polly.Extensions.Standard.BreakerWrapPolicyOptions`1.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Polly.Extensions.Standard.BreakerWrapPolicyOptions`1.RetryNumber">
+            <summary>
+            重试次数，默认为3次，如果不需要重设，请设为0
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Polly.Extensions.Standard.BreakerWrapPolicyOptions`1.Timeout">
+            <summary>
+            超时，默认为20秒，如果不需要超时，请设为0
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Polly.Extensions.Standard.BreakerWrapPolicyOptions`1.Breaker">
+            <summary>
+            断路器，默认是开启，如果不需要断路器，请设为null
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Polly.Extensions.Standard.BreakerWrapPolicyOptions`1.Result">
+            <summary>
+            结果
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Polly.Extensions.Standard.BreakerWrapPolicyOptions`1.GetResult">
+            <summary>
+            获取结果回调
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Polly.Extensions.Standard.BreakerOptions">
+            <summary>
+            断路器选项配置
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Polly.Extensions.Standard.BreakerOptions.HandledEventsAllowedBeforeBreaking">
+            <summary>
+            连续出现故障的次数，默认为3次
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Polly.Extensions.Standard.BreakerOptions.DurationOfBreak">
+            <summary>
+            进入断路状态的秒数，默认为10秒
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Polly.Extensions.Standard.IPolicyReturnData">
+            <summary>
+            带有返回数据的策略接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Polly.Extensions.Standard.IPolicyReturnData.SetIgnoreExistskey(System.String,System.Action{Hzdtf.Polly.Extensions.Standard.BreakerWrapPolicyOptions{Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Object}}})">
+            <summary>
+            设置，如果存在则忽略，不存在则添加
+            </summary>
+            <param name="key">键</param>
+            <param name="options">选项配置</param>
+            <returns>异步策略</returns>
+        </member>
+        <member name="M:Hzdtf.Polly.Extensions.Standard.IPolicyReturnData.ExecuteAsync(System.String,System.Func{System.Threading.Tasks.Task{Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Object}}},System.Action{Hzdtf.Polly.Extensions.Standard.BreakerWrapPolicyOptions{Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Object}}})">
+            <summary>
+            异步执行
+            </summary>
+            <param name="key">键</param>
+            <param name="execFunc">执行回调</param>
+            <param name="options">选项配置</param>
+            <returns>返回信息任务</returns>
+        </member>
+        <member name="T:Hzdtf.Polly.Extensions.Standard.PolicyReturnDataCache">
+            <summary>
+            策略返回数据缓缓存
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Polly.Extensions.Standard.PolicyReturnDataCache.dicCaches">
+            <summary>
+            缓存键
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Polly.Extensions.Standard.PolicyReturnDataCache.syncDicCaches">
+            <summary>
+            同步缓存键
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Polly.Extensions.Standard.PolicyReturnDataCache.Log">
+            <summary>
+            日志
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Polly.Extensions.Standard.PolicyReturnDataCache.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Polly.Extensions.Standard.PolicyReturnDataCache.#ctor(Hzdtf.Logger.Contract.Standard.ILogable)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="log">日志</param>
+        </member>
+        <member name="M:Hzdtf.Polly.Extensions.Standard.PolicyReturnDataCache.GetCache">
+            <summary>
+            获取缓存对象
+            </summary>
+            <returns>缓存对象</returns>
+        </member>
+        <member name="M:Hzdtf.Polly.Extensions.Standard.PolicyReturnDataCache.GetSyncCache">
+            <summary>
+            获取同步缓存对象
+            </summary>
+            <returns>同步缓存对象</returns>
+        </member>
+        <member name="M:Hzdtf.Polly.Extensions.Standard.PolicyReturnDataCache.SetIgnoreExistskey(System.String,System.Action{Hzdtf.Polly.Extensions.Standard.BreakerWrapPolicyOptions{Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Object}}})">
+            <summary>
+            设置，如果存在则忽略，不存在则添加
+            </summary>
+            <param name="key">键</param>
+            <param name="options">选项配置</param>
+            <returns>异步策略</returns>
+        </member>
+        <member name="M:Hzdtf.Polly.Extensions.Standard.PolicyReturnDataCache.ExecuteAsync(System.String,System.Func{System.Threading.Tasks.Task{Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Object}}},System.Action{Hzdtf.Polly.Extensions.Standard.BreakerWrapPolicyOptions{Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Object}}})">
+            <summary>
+            异步执行
+            </summary>
+            <param name="key">键</param>
+            <param name="execFunc">执行回调</param>
+            <param name="options">选项配置</param>
+            <returns>返回信息任务</returns>
+        </member>
+        <member name="T:Hzdtf.Polly.Extensions.Standard.PolicyUtil">
+            <summary>
+            策略辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Polly.Extensions.Standard.PolicyUtil.thisName">
+            <summary>
+            本类名称
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Polly.Extensions.Standard.PolicyUtil.DEFAULT_FALLBACK_CODE">
+            <summary>
+            默认降级编码
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Polly.Extensions.Standard.PolicyUtil.DEFAULT_FALLBACK_MSG">
+            <summary>
+            默认降级文本
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Polly.Extensions.Standard.PolicyUtil.DEFAULT_FALLBACK_RETURN_STRING">
+            <summary>
+            默认降级返回字符串
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Polly.Extensions.Standard.PolicyUtil.BuilderBreakerWrapPollicyAsync``2(System.Action{Hzdtf.Polly.Extensions.Standard.BreakerWrapPolicyOptions{``0}},Hzdtf.Logger.Contract.Standard.ILogable)">
+            <summary>
+            异步生成断路器包装策略
+            </summary>
+            <typeparam name="TResult">结果类型</typeparam>
+            <typeparam name="TException">异常类型</typeparam>
+            <param name="options">断路器包装策略选项配置</param>
+            <param name="log">日志</param>
+            <returns>策略任务</returns>
+        </member>
+        <member name="M:Hzdtf.Polly.Extensions.Standard.PolicyUtil.ExecuteBreakerWrapPollicyAsync``2(System.Func{System.Threading.Tasks.Task{``0}},System.Action{Hzdtf.Polly.Extensions.Standard.BreakerWrapPolicyOptions{``0}},Hzdtf.Logger.Contract.Standard.ILogable)">
+            <summary>
+            异步执行断路器包装策略
+            </summary>
+            <typeparam name="TResult">结果类型</typeparam>
+            <typeparam name="TException">异常类型</typeparam>
+            <param name="execFunc">执行回调</param>
+            <param name="options">断路器包装策略选项配置</param>
+            <param name="log">日志</param>
+            <returns>结果任务</returns>
+        </member>
+        <member name="M:Hzdtf.Polly.Extensions.Standard.PolicyUtil.BuilderBreakerWrapPollicyReturnInfoAsync``2(System.Action{Hzdtf.Polly.Extensions.Standard.BreakerWrapPolicyOptions{Hzdtf.Utility.Standard.Model.Return.ReturnInfo{``1}}},Hzdtf.Logger.Contract.Standard.ILogable)">
+            <summary>
+            异步生成断路器包装策略（带有返回信息）
+            </summary>
+            <typeparam name="TException">异常类型</typeparam>
+            <typeparam name="ReturnDataT">返回数据类型</typeparam>
+            <param name="options">断路器包装策略选项配置</param>
+            <param name="log">日志</param>
+            <returns>策略任务</returns>
+        </member>
+        <member name="M:Hzdtf.Polly.Extensions.Standard.PolicyUtil.ExecuteBreakerWrapPollicyReturnInfoAsync``2(System.Func{System.Threading.Tasks.Task{Hzdtf.Utility.Standard.Model.Return.ReturnInfo{``1}}},System.Action{Hzdtf.Polly.Extensions.Standard.BreakerWrapPolicyOptions{Hzdtf.Utility.Standard.Model.Return.ReturnInfo{``1}}},Hzdtf.Logger.Contract.Standard.ILogable)">
+            <summary>
+            异步执行断路器包装策略（带有返回信息）
+            </summary>
+            <typeparam name="TException">异常类型</typeparam>
+            <typeparam name="ReturnDataT">返回数据类型</typeparam>
+            <param name="execFunc">执行回调</param>
+            <param name="options">断路器包装策略选项配置</param>
+            <param name="log">日志</param>
+            <returns>结果任务</returns>
+        </member>
+        <member name="M:Hzdtf.Polly.Extensions.Standard.PolicyUtil.CreateDefaultFallbackReturnInfo``1">
+            <summary>
+            创建默认的降级返回信息
+            </summary>
+            <typeparam name="DataT">数据类型</typeparam>
+            <returns>降级返回信息</returns>
+        </member>
+    </members>
+</doc>

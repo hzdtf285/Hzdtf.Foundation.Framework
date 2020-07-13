@@ -73,7 +73,7 @@
         "runtime": {
           "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "4.700.19.46214"
+            "fileVersion": "4.700.20.21406"
           }
         }
       },
@@ -200,7 +200,7 @@
         "runtime": {
           "lib/netstandard2.0/Pipelines.Sockets.Unofficial.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.7.56431"
+            "fileVersion": "2.1.16.58714"
           }
         }
       },
@@ -230,15 +230,15 @@
         "runtime": {
           "lib/netstandard2.0/StackExchange.Redis.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.519.65453"
+            "fileVersion": "2.1.58.34321"
           }
         }
       },
       "System.Buffers/4.5.1": {
         "runtime": {
           "lib/netstandard2.0/System.Buffers.dll": {
-            "assemblyVersion": "4.0.2.0",
-            "fileVersion": "4.6.25519.3"
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.6.28619.1"
           }
         }
       },
@@ -265,8 +265,8 @@
       "System.Diagnostics.PerformanceCounter/4.7.0": {
         "runtime": {
           "lib/netstandard2.0/System.Diagnostics.PerformanceCounter.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.26515.6"
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.700.19.56404"
           }
         }
       },
@@ -286,8 +286,8 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.IO.Pipelines.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.26814.2"
+            "assemblyVersion": "4.0.2.1",
+            "fileVersion": "4.700.20.12001"
           }
         }
       },
@@ -405,8 +405,8 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Threading.Channels.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.26515.6"
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.700.20.21406"
           }
         }
       },
@@ -417,7 +417,7 @@
         "runtime": {
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {
             "assemblyVersion": "4.2.0.1",
-            "fileVersion": "4.6.27818.1"
+            "fileVersion": "4.6.28619.1"
           }
         }
       },

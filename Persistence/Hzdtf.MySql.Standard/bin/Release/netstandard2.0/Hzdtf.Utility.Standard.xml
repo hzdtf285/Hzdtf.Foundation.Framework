@@ -5683,6 +5683,11 @@
             <param name="hostNameOrAddress">主机名或地址</param>
             <returns>是否能ping通</returns>
         </member>
+        <member name="F:Hzdtf.Utility.Standard.Utils.NetworkUtil.DEFAULT_HTTP_CLIENT_NAME">
+            <summary>
+            默认HTTP客户端名称
+            </summary>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Utils.NumberUtil">
             <summary>
             数字辅助类

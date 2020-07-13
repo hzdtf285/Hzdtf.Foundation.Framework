@@ -272,3 +272,12 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Cor
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\obj\Release\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\obj\Release\netcoreapp3.1\Hzdtf.WebTest3.1.Core.RazorTargetAssemblyInfo.cs
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\obj\Release\netcoreapp3.1\Hzdtf.WebTest3.1.Core.Views.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\Microsoft.Extensions.Http.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\Polly.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\Hzdtf.Polly.Extensions.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\Hzdtf.Polly.Extensions.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\Microsoft.Extensions.Http.Polly.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\Polly.Extensions.Http.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\Hzdtf.Polly.AspNet.Extensions.Core.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\Hzdtf.Polly.AspNet.Extensions.Core.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\Hzdtf.Polly.Extensions.Standard.xml

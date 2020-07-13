@@ -10,7 +10,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitConnectionConfigureDefaultFactory.CreateConnectionConfigureAndOpen(System.Func{System.String,Hzdtf.Rabbit.Contract.Standard.MessageQueue.IRabbitMessageQueueReader},System.Action{Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionWrapInfo},System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder})">
+        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitConnectionConfigureDefaultFactory.CreateConnectionConfigureAndOpen(System.Func{System.String,Hzdtf.Rabbit.Contract.Standard.MessageQueue.IRabbitMessageQueueReader},System.Action{Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionWrapInfo},System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.Object})">
             <summary>
             创建消息队列连接来自微软配置并打开
             </summary>
@@ -19,7 +19,7 @@
             <param name="beforeConfigBuilder">生成配置前回调</param>
             <returns>消息队列连接</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitConnectionConfigureDefaultFactory.CreateConnectionConfigureAndOpen(Hzdtf.MessageQueue.Contract.Standard.Connection.IMessageQueueConnectionFactory@,System.Func{System.String,Hzdtf.Rabbit.Contract.Standard.MessageQueue.IRabbitMessageQueueReader},System.Action{Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionWrapInfo},System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder})">
+        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitConnectionConfigureDefaultFactory.CreateConnectionConfigureAndOpen(Hzdtf.MessageQueue.Contract.Standard.Connection.IMessageQueueConnectionFactory@,System.Func{System.String,Hzdtf.Rabbit.Contract.Standard.MessageQueue.IRabbitMessageQueueReader},System.Action{Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionWrapInfo},System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.Object})">
             <summary>
             创建消息队列连接来自微软配置并打开
             </summary>
@@ -29,7 +29,7 @@
             <param name="beforeConfigBuilder">生成配置前回调</param>
             <returns>消息队列连接</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitConnectionConfigureDefaultFactory.CreateConnectionConfigureAndOpen(Hzdtf.MessageQueue.Contract.Standard.Connection.IMessageQueueConnectionFactory,System.Func{System.String,Hzdtf.Rabbit.Contract.Standard.MessageQueue.IRabbitMessageQueueReader},System.Action{Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionWrapInfo},System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder})">
+        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitConnectionConfigureDefaultFactory.CreateConnectionConfigureAndOpen(Hzdtf.MessageQueue.Contract.Standard.Connection.IMessageQueueConnectionFactory,System.Func{System.String,Hzdtf.Rabbit.Contract.Standard.MessageQueue.IRabbitMessageQueueReader},System.Action{Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionWrapInfo},System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.Object})">
             <summary>
             创建消息队列连接来自微软配置并打开
             </summary>
@@ -45,14 +45,14 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitMessageQueueConfiguration.#ctor(System.String,System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder})">
+        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitMessageQueueConfiguration.#ctor(System.String,System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.Object})">
             <summary>
             构造方法
             </summary>
             <param name="jsonFile">json文件</param>
             <param name="beforeConfigurationBuilder">配置生成前回调</param>
         </member>
-        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitMessageQueueConfiguration.#ctor(Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitConfigInfo,System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder})">
+        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitMessageQueueConfiguration.#ctor(Hzdtf.Rabbit.Model.Standard.MessageQueue.RabbitConfigInfo,System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.Object})">
             <summary>
             构造方法
             </summary>
@@ -104,7 +104,7 @@
             <param name="options">配置回调</param>
             <returns>服务</returns>
         </member>
-        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitMessageQueueExtensions.AddRabbitConfigure(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionWrapInfo},System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder})">
+        <member name="M:Hzdtf.Rabbit.AspNet.Core.RabbitMessageQueueExtensions.AddRabbitConfigure(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hzdtf.Rabbit.Model.Standard.Connection.RabbitConnectionWrapInfo},System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.Object})">
             <summary>
             添加Rabbit微软配置
             </summary>

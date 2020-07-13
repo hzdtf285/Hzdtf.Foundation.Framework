@@ -24,8 +24,7 @@ using Hzdtf.Platform.Impl.Core;
 using Microsoft.OpenApi.Models;
 using System.IO;
 using Newtonsoft.Json;
-using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
-using Microsoft.AspNetCore.Mvc.Filters;
+using Hzdtf.Polly.AspNet.Extensions.Core;
 
 namespace Hzdtf.WebTest3._1.Core
 {
@@ -62,7 +61,6 @@ namespace Hzdtf.WebTest3._1.Core
                 options.ValidateComplexTypesIfChildValidationFails = false;
             });
             services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.All));
-            services.AddSingleton<IObjectModelValidator, NullObjectModelValidator>();
 
             services.AddLogging(builder =>
             {
@@ -95,6 +93,8 @@ namespace Hzdtf.WebTest3._1.Core
                     c.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Hzdtf.WorkFlow.Model.Standard.xml"));
                 });
             }
+
+            //services.AddHttpClientForBreakerWrapPolicy<Exception>(); // 使用断路器时才需要
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -115,6 +115,7 @@ namespace Hzdtf.WebTest3._1.Core
             app.UseAuthorization();
 
             app.UseApiExceptionHandle();
+            //app.UseHttpClientForBreakerWrapPolicy(); // 使用断路器时才需要
 
             app.UseEndpoints(endpoints =>
             {
