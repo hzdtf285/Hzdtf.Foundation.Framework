@@ -12,7 +12,7 @@ namespace Hzdtf.Utility.Standard.Safety
     public static class HashUtil
     {
         /// <summary>
-        /// 一致性哈希取余数
+        /// 一致性哈希值
         /// </summary>
         /// <param name="digest">字节数组</param>
         /// <returns>哈希值</returns>
@@ -26,7 +26,7 @@ namespace Hzdtf.Utility.Standard.Safety
         }
 
         /// <summary>
-        /// 一致性哈希取余数(MD5)
+        /// 一致性哈希值(MD5)
         /// </summary>
         /// <param name="text">文本</param>
         /// <returns>哈希值</returns>
