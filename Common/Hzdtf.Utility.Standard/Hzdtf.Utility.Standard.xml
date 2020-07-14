@@ -5507,18 +5507,130 @@
             获取token回调
             </summary>
         </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.Get(System.String)">
+            <summary>
+            Get请求
+            </summary>
+            <param name="url">URL</param>
+            <returns>返回字符串</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.Get(System.Net.Http.HttpClient,System.String)">
+            <summary>
+            Get请求JSON
+            </summary>
+            <param name="httpClient">http客户端</param>
+            <param name="url">URL</param>
+            <returns>返回字符串</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.GetAsync(System.String)">
+            <summary>
+            Get请求
+            </summary>
+            <param name="url">URL</param>
+            <returns>任务</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.GetAsync(System.Net.Http.HttpClient,System.String)">
+            <summary>
+            Get请求
+            </summary>
+            <param name="httpClient">http客户端</param>
+            <param name="url">URL</param>
+            <returns>任务</returns>
+        </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.PostJson(System.String,System.Object)">
             <summary>
-            POST请求JSON
+            Post请求JSON
             </summary>
+            <param name="url">URL</param>
+            <param name="data">数据</param>
+            <returns>返回字符串</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.PostJson(System.Net.Http.HttpClient,System.String,System.Object)">
+            <summary>
+            Post请求JSON
+            </summary>
+            <param name="httpClient">http客户端</param>
             <param name="url">URL</param>
             <param name="data">数据</param>
             <returns>返回字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.PostJsonAsync(System.String,System.Object)">
             <summary>
-            POST请求JSON
+            Post请求JSON
             </summary>
+            <param name="url">URL</param>
+            <param name="data">数据</param>
+            <returns>任务</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.PostJsonAsync(System.Net.Http.HttpClient,System.String,System.Object)">
+            <summary>
+            Post请求JSON
+            </summary>
+            <param name="httpClient">http客户端</param>
+            <param name="url">URL</param>
+            <param name="data">数据</param>
+            <returns>任务</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.Delete(System.String)">
+            <summary>
+            Delete请求
+            </summary>
+            <param name="url">URL</param>
+            <returns>返回字符串</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.Delete(System.Net.Http.HttpClient,System.String)">
+            <summary>
+            Get请求JSON
+            </summary>
+            <param name="httpClient">http客户端</param>
+            <param name="url">URL</param>
+            <returns>返回字符串</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.DeleteAsync(System.String)">
+            <summary>
+            Delete请求
+            </summary>
+            <param name="url">URL</param>
+            <returns>任务</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.DeleteAsync(System.Net.Http.HttpClient,System.String)">
+            <summary>
+            Delete请求
+            </summary>
+            <param name="httpClient">http客户端</param>
+            <param name="url">URL</param>
+            <returns>任务</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.PutJson(System.String,System.Object)">
+            <summary>
+            Put请求JSON
+            </summary>
+            <param name="url">URL</param>
+            <param name="data">数据</param>
+            <returns>返回字符串</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.PutJson(System.Net.Http.HttpClient,System.String,System.Object)">
+            <summary>
+            Put请求JSON
+            </summary>
+            <param name="httpClient">http客户端</param>
+            <param name="url">URL</param>
+            <param name="data">数据</param>
+            <returns>返回字符串</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.PutJsonAsync(System.String,System.Object)">
+            <summary>
+            Put请求JSON
+            </summary>
+            <param name="url">URL</param>
+            <param name="data">数据</param>
+            <returns>任务</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.PutJsonAsync(System.Net.Http.HttpClient,System.String,System.Object)">
+            <summary>
+            Put请求JSON
+            </summary>
+            <param name="httpClient">http客户端</param>
             <param name="url">URL</param>
             <param name="data">数据</param>
             <returns>任务</returns>
@@ -5535,6 +5647,16 @@
             创建http客户端
             </summary>
             <returns>http客户端</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.RequestJson(System.Net.Http.HttpClient,System.String,System.Func{System.Net.Http.HttpContent,System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}},System.Object)">
+            <summary>
+            请求请求JSON
+            </summary>
+            <param name="httpClient">http客户端</param>
+            <param name="method">方法</param>
+            <param name="callbackRequest">回调请求</param>
+            <param name="data">数据</param>        
+            <returns>返回字符串</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Utils.ImageUtil">
             <summary>
@@ -6262,6 +6384,20 @@
             <param name="errMsg">错误消息</param>
             <param name="name">名称</param>
             <returns>反序列化后的对象</returns>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Utils.StringUtil.dicHtmlRegexFlags">
+            <summary>
+            HTML正则标记字典
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.StringUtil.FilterHtml(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            过滤HTML格式
+            </summary>
+            <param name="htmlString">HTML字符串</param>
+            <param name="isFilterParagraph">是否过滤段落</param>
+            <param name="isFilterSpace">是否过滤空格</param>
+            <returns>过虑后的字符串</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Utils.ValidateUtil">
             <summary>

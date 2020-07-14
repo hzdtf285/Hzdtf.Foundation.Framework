@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Web;
 
 namespace Hzdtf.Utility.Standard.Utils
@@ -207,6 +208,57 @@ namespace Hzdtf.Utility.Standard.Utils
 
                 return default(T);
             }
+        }
+
+        /// <summary>
+        /// HTML正则标记字典
+        /// </summary>
+        private static readonly IDictionary<string, string> dicHtmlRegexFlags = new Dictionary<string, string>()
+        {
+            { @"<script[^>]*?>.*?</script>", @"" },
+            { @"<(.[^>]*)>", @"" },
+            { @"([/r])[/s]+", @"" },
+            { @"-->", @"" },
+            { @"<!--.*", @"" },
+            { @"&(quot|#34);", @"/" },
+            { @"&(amp|#38);", @"&" },
+            { @"&(lt|#60);", @"<" },
+            { @"&(gt|#62);", @">" },
+            { @"&(nbsp|#160);", @" " },
+            { @"&(iexcl|#161);", @"/xa1" },
+            { @"&(cent|#162);", @"/xa2" },
+            { @"&(pound|#163);", @"/xa3" },
+            { @"&(copy|#169);", @"/xa9" },
+            { @"&#(/d+);", @"" },
+        };
+
+        /// <summary>
+        /// 过滤HTML格式
+        /// </summary>
+        /// <param name="htmlString">HTML字符串</param>
+        /// <param name="isFilterParagraph">是否过滤段落</param>
+        /// <param name="isFilterSpace">是否过滤空格</param>
+        /// <returns>过虑后的字符串</returns>
+        public static string FilterHtml(this string htmlString, bool isFilterParagraph = true, bool isFilterSpace = true)
+        {
+            foreach (var item in dicHtmlRegexFlags)
+            {
+                htmlString = Regex.Replace(htmlString, item.Key, item.Value, RegexOptions.IgnoreCase);
+            }
+
+            htmlString = htmlString.Replace("<", "");
+            htmlString = htmlString.Replace(">", "");
+            htmlString = htmlString.Replace("/r", "");
+            if (isFilterParagraph)
+            {
+                htmlString = htmlString.Replace("\n", "");
+            }
+            if (isFilterSpace)
+            {
+                htmlString = htmlString.Replace("\t", "");
+            }
+
+            return htmlString;
         }
     }
 }
