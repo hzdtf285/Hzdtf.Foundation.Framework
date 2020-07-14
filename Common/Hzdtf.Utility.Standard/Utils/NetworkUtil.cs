@@ -45,41 +45,39 @@ namespace Hzdtf.Utility.Standard.Utils
             {
                 if (localIP == null)
                 {
-                    IPHostEntry ipEntry = Dns.GetHostEntry(Dns.GetHostName());
-                    if (ipEntry == null)
+                    string ip = null;
+                    if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
                     {
-                        SetLocalIP("127.0.0.1");
-
-                        return localIP;
-                    }
-
-                    var adds = ipEntry.AddressList.Where(q => q.AddressFamily == AddressFamily.InterNetwork).ToArray();
-                    if (adds.IsNullOrLength0())
-                    {
-                        SetLocalIP("127.0.0.1");
-
-                        return localIP;
-                    }
-
-                    if (adds.Length == 1)
-                    {
-                        SetLocalIP(adds[0].ToString());
-
-                        return localIP;
-                    }
-
-                    var ping = new Ping();
-                    // 如果有多个地址，则使用ping命令，是否能ping通，如果能则返回能ping通的
-                    foreach (var add in adds)
-                    {
-                        var pingReply = ping.SendPingAsync(add).Result;
-                        if (pingReply.Status == IPStatus.Success)
+                        var ipList = NetworkInterface.GetAllNetworkInterfaces()
+                            .Select(p => p.GetIPProperties())
+                            .SelectMany(p => p.UnicastAddresses)
+                            .Where(p => p.Address.AddressFamily == AddressFamily.InterNetwork && p.Address.ToString() != "127.0.0.1").ToList();
+                        if (!ipList.IsNullOrCount0())
                         {
-                            SetLocalIP(add.ToString());
+                            var states = new DuplicateAddressDetectionState[] { DuplicateAddressDetectionState.Preferred, DuplicateAddressDetectionState.Duplicate };
+                            foreach (var state in states)
+                            {
+                                var temp = ipList.Where(p => p.DuplicateAddressDetectionState == state).OrderByDescending(p => p.DhcpLeaseLifetime).Select(p => p.Address).FirstOrDefault();
+                                if (temp == null)
+                                {
+                                    continue;
+                                }
 
-                            return localIP;
+                                ip = temp.ToString();
+
+                                break;
+                            }
                         }
                     }
+                    else
+                    {
+                        ip = NetworkInterface.GetAllNetworkInterfaces()
+                                .Select(p => p.GetIPProperties())
+                                .SelectMany(p => p.UnicastAddresses)
+                                .FirstOrDefault(p => p.Address.AddressFamily == AddressFamily.InterNetwork && !IPAddress.IsLoopback(p.Address))?.Address.ToString();
+                    }
+
+                    SetLocalIP(string.IsNullOrWhiteSpace(ip) ? "127.0.0.1" : ip);
                 }
 
                 return localIP;
