@@ -405,6 +405,10 @@ namespace Hzdtf.Utility.Standard.Utils
         public static DateTime ToMonday(this DateTime dateTime)
         {
             var weekNum = (int)dateTime.DayOfWeek;
+            if (weekNum == 0)
+            {
+                weekNum = 7;
+            }
             var newDateTime = weekNum == 1 ? dateTime : dateTime.AddDays(1 - weekNum);
 
             return new DateTime(newDateTime.Year, newDateTime.Month, newDateTime.Day);
