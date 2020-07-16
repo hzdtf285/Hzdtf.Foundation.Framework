@@ -1,4 +1,5 @@
-﻿using MessagePack;
+﻿using Hzdtf.Utility.Standard.Attr;
+using MessagePack;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;

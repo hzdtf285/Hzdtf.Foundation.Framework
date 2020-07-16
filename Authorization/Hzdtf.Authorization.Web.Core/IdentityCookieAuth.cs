@@ -9,8 +9,9 @@ using Microsoft.AspNetCore.Authentication;
 using Hzdtf.Utility.Standard.Model;
 using System.Reflection;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using Hzdtf.Utility.Standard.Utils;
+using System;
+using System.Linq;
 
 namespace Hzdtf.Authorization.Web.Core
 {
@@ -64,8 +65,7 @@ namespace Hzdtf.Authorization.Web.Core
         public ReturnInfo<bool> Exit()
         {
             ReturnInfo<bool> returnInfo = new ReturnInfo<bool>();
-            Task task = HttpContextAccessor.HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            task.Wait();
+            HttpContextAccessor.HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 
             returnInfo.SetSuccessMsg("退出成功");
 
@@ -87,6 +87,13 @@ namespace Hzdtf.Authorization.Web.Core
             if (isAuthReturnInfo.Success() && isAuthReturnInfo.Data)
             {
                 BasicUserInfo user = new BasicUserInfo();
+
+                var claims = HttpContextAccessor.HttpContext.User.Claims;
+                user.Id = Convert.ToInt32(claims.Where(p => p.Type == ClaimTypes.NameIdentifier).First().Value);
+                user.Name = claims.Where(p => p.Type == ClaimTypes.Name).First().Value;
+                user.Code = claims.Where(p => p.Type == "code").First().Value;
+                user.LoginId = claims.Where(p => p.Type == "loginId").First().Value;
+
                 foreach (Claim c in HttpContextAccessor.HttpContext.User.Claims)
                 {
                     PropertyInfo p = user.GetType().GetProperty(c.Type);
@@ -115,27 +122,14 @@ namespace Hzdtf.Authorization.Web.Core
         protected override void SaveUserInfo(BasicUserInfo basicUser)
         {
             PropertyInfo[] properties = typeof(BasicUserInfo).GetProperties();
-            IList<Claim> claims = new List<Claim>(properties.Length);
-            foreach (PropertyInfo p in properties)
-            {
-                if (p.CanRead)
-                {
-                    object value = p.GetValue(basicUser);
-                    if (value == null)
-                    {
-                        continue;
-                    }
+            IList<Claim> claims = new List<Claim>();
+            claims.Add(new Claim(ClaimTypes.NameIdentifier, basicUser.Id.ToString()));
+            claims.Add(new Claim(ClaimTypes.Name, basicUser.Name));
+            claims.Add(new Claim("code", basicUser.Code));
+            claims.Add(new Claim("loginId", basicUser.LoginId));
 
-                    claims.Add(new Claim(p.Name, value.ToString()));
-                }
-            }
-
-            var user = new UserIdentity(true, authenticationType: CookieAuthenticationDefaults.AuthenticationScheme);
-            var identity = new ClaimsIdentity(user);
-            identity.AddClaims(claims);
-
-            Task task = HttpContextAccessor.HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity));
-            task.Wait();            
+            var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+            HttpContextAccessor.HttpContext.SignInAsync(new ClaimsPrincipal(identity));
         }
 
         #endregion

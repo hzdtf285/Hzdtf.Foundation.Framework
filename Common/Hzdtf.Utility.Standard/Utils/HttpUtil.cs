@@ -241,7 +241,17 @@ namespace Hzdtf.Utility.Standard.Utils
         /// <param name="token">token</param>
         public static void AddBearerTokenToHeader(this HttpClient httpClient, string token)
         {
-            httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
+            httpClient.DefaultRequestHeaders.Add(AuthUtil.AUTH_KEY, token.AddBearerToken());
+        }
+
+        /// <summary>
+        /// 添加包含了token到头里
+        /// </summary>
+        /// <param name="httpClient">http客户端</param>
+        /// <param name="containerBearerToken">包含了bearer token</param>
+        public static void AddContainerBearerTokenToHeader(this HttpClient httpClient, string containerBearerToken)
+        {
+            httpClient.DefaultRequestHeaders.Add(AuthUtil.AUTH_KEY, containerBearerToken);
         }
 
         /// <summary>
