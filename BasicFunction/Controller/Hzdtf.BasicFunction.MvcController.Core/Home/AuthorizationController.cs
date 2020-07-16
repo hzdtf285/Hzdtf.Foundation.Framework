@@ -1,5 +1,4 @@
-﻿using Hzdtf.Authorization.Web.Core;
-using Hzdtf.BasicFunction.Model.Standard.Expand.User;
+﻿using Hzdtf.BasicFunction.Model.Standard.Expand.User;
 using Hzdtf.Utility.Standard.Attr;
 using Hzdtf.Utility.Standard.Model;
 using Hzdtf.Utility.Standard.Model.Return;
@@ -9,6 +8,9 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Authorization;
+using Hzdtf.BasicFunction.Model.Standard;
+using Hzdtf.Authorization.Contract.Standard.IdentityAuth;
+using Hzdtf.Authorization.Contract.Standard.IdentityAuth.Token;
 
 namespace Hzdtf.BasicFunction.MvcController.Core.Home
 {
@@ -25,7 +27,25 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Home
         /// <summary>
         /// 身份授权
         /// </summary>
-        public IdentityCookieAuth IdentityAuth
+        public IIdentityAuth<UserInfo> IdentityAuth
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 身份退出
+        /// </summary>
+        public IIdentityExit IdentityExit
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 身份令牌授权
+        /// </summary>
+        public IIdentityTokenAuth IdentityTokenAuth
         {
             get;
             set;
@@ -39,6 +59,73 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Home
         [HttpPost("Login")]
         [AllowAnonymous]
         public ReturnInfo<LoginReturnInfo> Login(LoginInfo loginInfo)
+        {
+            return ExecLogin(loginInfo, (user, pwd, reInfo) =>
+            {
+                var busRe = IdentityAuth.Accredit(loginInfo.LoginId, loginInfo.Password);
+                reInfo.FromBasic(busRe);
+
+                reInfo.Data = reInfo.Data;
+            });
+        }
+
+        /// <summary>
+        /// 登录并返回令牌
+        /// </summary>
+        /// <param name="loginInfo">登录信息</param>
+        /// <returns>返回信息</returns>
+        [HttpPost("LoginToToken")]
+        [AllowAnonymous]
+        public ReturnInfo<LoginReturnInfo> LoginToToken(LoginInfo loginInfo)
+        {
+            return ExecLogin(loginInfo, (user, pwd, reInfo) =>
+            {
+                var busRe = IdentityTokenAuth.AccreditToToken(loginInfo.LoginId, loginInfo.Password);
+                reInfo.FromBasic(busRe);
+                if (reInfo.Success())
+                {
+                   reInfo.Data.Token = busRe.Data;
+                }
+            });
+        }
+
+        /// <summary>
+        /// 登出
+        /// </summary>
+        /// <returns>返回信息</returns>
+        [HttpDelete("Logout")]
+        public ReturnInfo<bool> Logout()
+        {
+            ReturnInfo<bool> returnInfo = IdentityExit.Exit();
+            if (returnInfo.Success())
+            {
+                HttpContext.Session.Clear();
+            }
+
+            return returnInfo;
+        }
+
+        /// <summary>
+        /// 获取是否需要验证码
+        /// </summary>
+        /// <returns>返回信息</returns>
+        [HttpGet("GetIsVerificationCode")]
+        [AllowAnonymous]
+        public ReturnInfo<bool> GetIsVerificationCode()
+        {
+            ReturnInfo<bool> returnInfo = new ReturnInfo<bool>();
+            returnInfo.Data = IsNeedIsVerificationCode();
+
+            return returnInfo;
+        }
+
+        /// <summary>
+        /// 执行登录
+        /// </summary>
+        /// <param name="loginInfo">登录信息</param>
+        /// <param name="callbackLogin">回调登录</param>
+        /// <returns>返回信息</returns>
+        private ReturnInfo<LoginReturnInfo> ExecLogin(LoginInfo loginInfo, Action<string, string, ReturnInfo<LoginReturnInfo>> callbackLogin)
         {
             ReturnInfo<LoginReturnInfo> returnInfo = new ReturnInfo<LoginReturnInfo>()
             {
@@ -67,9 +154,8 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Home
                 }
             }
 
-            ReturnInfo<BasicUserInfo> userReturnInfo = IdentityAuth.Accredit(loginInfo.LoginId, loginInfo.Password);
-            returnInfo.FromBasic(userReturnInfo);
-            if (returnInfo.Failure() || userReturnInfo.Data == null)
+            callbackLogin(loginInfo.LoginId, loginInfo.Password, returnInfo);
+            if (returnInfo.Failure() || returnInfo.Data == null)
             {
                 HttpContext.Session.SetInt32("ErrLoginNum", num);
                 returnInfo.Data.IsVerificationCode = IsNeedIsVerificationCode();
@@ -79,36 +165,6 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Home
                 HttpContext.Session.Remove("VerificationCode");
                 HttpContext.Session.Remove("ErrLoginNum");
             }
-
-            return returnInfo;
-        }
-
-        /// <summary>
-        /// 登出
-        /// </summary>
-        /// <returns>返回信息</returns>
-        [HttpDelete("Logout")]
-        public ReturnInfo<bool> Logout()
-        {
-            ReturnInfo<bool> returnInfo = IdentityAuth.Exit();
-            if (returnInfo.Success())
-            {
-                HttpContext.Session.Clear();
-            }
-
-            return returnInfo;
-        }
-
-        /// <summary>
-        /// 获取是否需要验证码
-        /// </summary>
-        /// <returns>返回信息</returns>
-        [HttpGet("GetIsVerificationCode")]
-        [AllowAnonymous]
-        public ReturnInfo<bool> GetIsVerificationCode()
-        {
-            ReturnInfo<bool> returnInfo = new ReturnInfo<bool>();
-            returnInfo.Data = IsNeedIsVerificationCode();
 
             return returnInfo;
         }

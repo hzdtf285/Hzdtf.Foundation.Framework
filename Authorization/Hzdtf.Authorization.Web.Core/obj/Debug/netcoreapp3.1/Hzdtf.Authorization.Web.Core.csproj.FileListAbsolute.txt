@@ -1,5 +1,4 @@
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Core\obj\Debug\netcoreapp3.1\Hzdtf.Authorization.Web.Core.csprojAssemblyReference.cache
-C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Core\obj\Debug\netcoreapp3.1\Hzdtf.Authorization.Web.Core.csproj.CoreCompileInputs.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Core\obj\Debug\netcoreapp3.1\Hzdtf.Authorization.Web.Core.AssemblyInfoInputs.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Core\obj\Debug\netcoreapp3.1\Hzdtf.Authorization.Web.Core.AssemblyInfo.cs
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Core\bin\Debug\netcoreapp3.1\Config\LanguageLibrary\Hzdtf.Utility.Standard.LanguageLibrary.json
@@ -18,3 +17,7 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorizatio
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Core\obj\Debug\netcoreapp3.1\Hzdtf.Authorization.Web.Core.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Core\obj\Debug\netcoreapp3.1\Hzdtf.Authorization.Web.Core.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Core\obj\Debug\netcoreapp3.1\Hzdtf.Authorization.Web.Core.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Core\obj\Debug\netcoreapp3.1\Hzdtf.Authorization.Web.Core.csproj.CoreCompileInputs.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Core\bin\Debug\netcoreapp3.1\Hzdtf.Platform.Contract.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Core\bin\Debug\netcoreapp3.1\Hzdtf.Platform.Contract.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Core\bin\Debug\netcoreapp3.1\Hzdtf.Platform.Contract.Standard.xml

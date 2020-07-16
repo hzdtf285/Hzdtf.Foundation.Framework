@@ -157,6 +157,32 @@
             <param name="increment">增量</param>
             <returns>序列号</returns>
         </member>
+        <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.AuthUserData">
+            <summary>
+            身份认证用户数据
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.AuthUserData.CreateUser">
+            <summary>
+            创建用户
+            </summary>
+            <returns>用户</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.AuthUserData.SetExtraToUserData(Hzdtf.BasicFunction.Model.Standard.UserInfo,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim})">
+            <summary>
+            设置额外的用户数据
+            </summary>
+            <param name="user">用户</param>
+            <param name="claims">证件单元集合</param>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.AuthUserData.SetExtraToClaimsData(System.Collections.Generic.IList{System.Security.Claims.Claim},Hzdtf.BasicFunction.Model.Standard.UserInfo)">
+            <summary>
+            设置额外的证件单元集合
+            </summary>
+            <param name="claims">用户</param>
+            <param name="user">证件单元集合</param>
+        </member>
         <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.AttachmentService">
             <summary>
             附件服务
@@ -667,9 +693,9 @@
             <param name="connectionId">连接ID</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.Accredit(System.String,System.String)">
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.UserService.Vali(System.String,System.String)">
             <summary>
-            授权
+            验证
             </summary>
             <param name="user">用户</param>
             <param name="password">密码</param>

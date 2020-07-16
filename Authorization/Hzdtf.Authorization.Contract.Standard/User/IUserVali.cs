@@ -2,20 +2,21 @@
 using Hzdtf.Utility.Standard.Model.Return;
 using System;
 
-namespace Hzdtf.Authorization.Contract.Standard
+namespace Hzdtf.Authorization.Contract.Standard.User
 {
     /// <summary>
-    /// 身份授权接口
+    /// 用户验证接口
     /// @ 黄振东
     /// </summary>
-    public interface IIdentityAuth
+    /// <typeparam name="UserT">用户类型</typeparam>
+    public interface IUserVali<UserT> where UserT : BasicUserInfo
     {
         /// <summary>
-        /// 授权
+        /// 验证
         /// </summary>
         /// <param name="user">用户</param>
         /// <param name="password">密码</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<BasicUserInfo> Accredit(string user, string password);
+        ReturnInfo<UserT> Vali(string user, string password);
     }
 }

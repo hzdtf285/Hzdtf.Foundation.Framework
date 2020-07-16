@@ -228,9 +228,26 @@
             身份授权
             </summary>
         </member>
+        <member name="P:Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.IdentityExit">
+            <summary>
+            身份退出
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.IdentityTokenAuth">
+            <summary>
+            身份令牌授权
+            </summary>
+        </member>
         <member name="M:Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.Login(Hzdtf.Utility.Standard.Model.LoginInfo)">
             <summary>
             登录
+            </summary>
+            <param name="loginInfo">登录信息</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.LoginToToken(Hzdtf.Utility.Standard.Model.LoginInfo)">
+            <summary>
+            登录并返回令牌
             </summary>
             <param name="loginInfo">登录信息</param>
             <returns>返回信息</returns>
@@ -245,6 +262,14 @@
             <summary>
             获取是否需要验证码
             </summary>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.ExecLogin(Hzdtf.Utility.Standard.Model.LoginInfo,System.Action{System.String,System.String,Hzdtf.Utility.Standard.Model.Return.ReturnInfo{Hzdtf.BasicFunction.Model.Standard.Expand.User.LoginReturnInfo}})">
+            <summary>
+            执行登录
+            </summary>
+            <param name="loginInfo">登录信息</param>
+            <param name="callbackLogin">回调登录</param>
             <returns>返回信息</returns>
         </member>
         <member name="M:Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.IsNeedIsVerificationCode">

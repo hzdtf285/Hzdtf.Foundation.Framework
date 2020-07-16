@@ -4,40 +4,105 @@
         <name>Hzdtf.Authorization.Web.Core</name>
     </assembly>
     <members>
-        <member name="T:Hzdtf.Authorization.Web.Core.IdentityCookieAuth">
+        <member name="T:Hzdtf.Authorization.Web.Core.IdentityCookieAuth`1">
             <summary>
             身份Cookie授权
             @ 黄振东
             </summary>
+            <typeparam name="UserT">用户类型</typeparam>
         </member>
-        <member name="P:Hzdtf.Authorization.Web.Core.IdentityCookieAuth.HttpContextAccessor">
+        <member name="P:Hzdtf.Authorization.Web.Core.IdentityCookieAuth`1.HttpContextAccessor">
             <summary>
             Http上下文访问
             </summary>
         </member>
-        <member name="M:Hzdtf.Authorization.Web.Core.IdentityCookieAuth.IsAuthed">
+        <member name="M:Hzdtf.Authorization.Web.Core.IdentityCookieAuth`1.IsAuthed">
             <summary>
             判断是否已授权
             </summary>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.Authorization.Web.Core.IdentityCookieAuth.Exit">
+        <member name="M:Hzdtf.Authorization.Web.Core.IdentityCookieAuth`1.Exit">
             <summary>
             退出
             </summary>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.Authorization.Web.Core.IdentityCookieAuth.Reader">
+        <member name="M:Hzdtf.Authorization.Web.Core.IdentityCookieAuth`1.GetClaims">
+            <summary>
+            获取证件单元集合
+            </summary>
+            <returns>证件单元集合</returns>
+        </member>
+        <member name="M:Hzdtf.Authorization.Web.Core.IdentityCookieAuth`1.GetAuthenticationScheme">
+            <summary>
+            获取身份认证方案
+            </summary>
+            <returns>身份认证方案</returns>
+        </member>
+        <member name="M:Hzdtf.Authorization.Web.Core.IdentityCookieAuth`1.SignIn(System.Security.Claims.ClaimsPrincipal)">
+            <summary>
+            登录
+            </summary>
+            <param name="principal">当事人</param>
+        </member>
+        <member name="T:Hzdtf.Authorization.Web.Core.IdentityJwtAuth`1">
+            <summary>
+            身份Jwt授权
+            相差配置请在appsetting.json里设置，以Jwt为根
+            Jwt:Domain:域名，不可为空
+            Jwt:SecurityKey:密钥，不可为空
+            Jwt:Expires:过期时间，单位为分钟，如未设置，默认为60分钟
+            @ 黄振东
+            </summary>
+            <typeparam name="UserT">用户类型</typeparam>
+        </member>
+        <member name="P:Hzdtf.Authorization.Web.Core.IdentityJwtAuth`1.HttpContextAccessor">
+            <summary>
+            Http上下文访问
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Authorization.Web.Core.IdentityJwtAuth`1.UserVali">
+            <summary>
+            用户验证
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Authorization.Web.Core.IdentityJwtAuth`1.AuthUserData">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Authorization.Web.Core.IdentityJwtAuth`1.AppConfig">
+            <summary>
+            应用配置
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Authorization.Web.Core.IdentityJwtAuth`1.Reader">
             <summary>
             读取
             </summary>
             <returns>数据</returns>
         </member>
-        <member name="M:Hzdtf.Authorization.Web.Core.IdentityCookieAuth.SaveUserInfo(Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.Authorization.Web.Core.IdentityJwtAuth`1.AccreditToToken(System.String,System.String)">
             <summary>
-            保存用户信息
+            授权并生成令牌
             </summary>
-            <param name="basicUser">基本用户</param>
+            <param name="user">用户</param>
+            <param name="password">密码</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.Authorization.Web.Core.IdentityJwtAuth`1.IsAuthed">
+            <summary>
+            判断是否已授权
+            </summary>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.Authorization.Web.Core.IdentityJwtAuth`1.BuilderToken(System.Collections.Generic.IList{System.Security.Claims.Claim})">
+            <summary>
+            生成令牌
+            </summary>
+            <param name="claims">证件单元集合</param>
+            <returns>令牌</returns>
         </member>
     </members>
 </doc>

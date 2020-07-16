@@ -99,6 +99,9 @@
               },
               "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
                 "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              },
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj"
               }
             }
           }
@@ -119,6 +122,14 @@
             "Microsoft.AspNetCore.Http.Abstractions": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.7.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.7.1, )"
             }
           },
           "imports": [

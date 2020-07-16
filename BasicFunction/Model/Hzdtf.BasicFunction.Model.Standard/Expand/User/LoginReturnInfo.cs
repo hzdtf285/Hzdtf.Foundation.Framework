@@ -23,5 +23,16 @@ namespace Hzdtf.BasicFunction.Model.Standard.Expand.User
             get;
             set;
         }
+
+        /// <summary>
+        /// 令牌
+        /// </summary>
+        [JsonProperty("token")]
+        [MessagePack.Key("token")]
+        public string Token
+        {
+            get;
+            set;
+        }
     }
 }

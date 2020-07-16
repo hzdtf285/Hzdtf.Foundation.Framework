@@ -20,10 +20,13 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.7.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.7.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Common\Hzdtf.Utility.Standard\Hzdtf.Utility.Standard.csproj" />
+    <ProjectReference Include="..\..\Platform\Hzdtf.Platform.Contract.Standard\Hzdtf.Platform.Contract.Standard.csproj" />
     <ProjectReference Include="..\Hzdtf.Authorization.Contract.Standard\Hzdtf.Authorization.Contract.Standard.csproj" />
   </ItemGroup>
 

@@ -1,4 +1,4 @@
-﻿using Hzdtf.Authorization.Contract.Standard;
+﻿using Hzdtf.Authorization.Contract.Standard.User;
 using Hzdtf.Utility.Standard.Utils;
 using System;
 using System.Collections.Generic;

@@ -1,6 +1,6 @@
 ﻿using System.Security.Principal;
 
-namespace Hzdtf.Authorization.Contract.Standard
+namespace Hzdtf.Authorization.Contract.Standard.User
 {
     /// <summary>
     /// 用户标识

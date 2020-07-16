@@ -3,18 +3,18 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Hzdtf.Authorization.Contract.Standard
+namespace Hzdtf.Authorization.Contract.Standard.IdentityAuth
 {
     /// <summary>
-    /// 身份授权验证接口
+    /// 身份退出接口
     /// @ 黄振东
     /// </summary>
-    public interface IIdentityAuthVali
+    public interface IIdentityExit
     {
         /// <summary>
-        /// 判断是否已授权
+        /// 退出
         /// </summary>
         /// <returns>返回信息</returns>
-        ReturnInfo<bool> IsAuthed();
+        ReturnInfo<bool> Exit();
     }
 }

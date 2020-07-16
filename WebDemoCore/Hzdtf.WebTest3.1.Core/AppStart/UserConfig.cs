@@ -1,5 +1,6 @@
 ﻿using Hzdtf.Authorization.Web.Core;
 using Hzdtf.Autofac.Extend.Standard;
+using Hzdtf.BasicFunction.Model.Standard;
 using Hzdtf.BasicFunction.WorkFlow.Standard;
 using Hzdtf.Platform.Contract.Standard;
 using Hzdtf.Platform.Impl.Core;
@@ -24,7 +25,10 @@ namespace Hzdtf.WebTest3_1.Core.AppStart
         {
             UserTool.GetCurrUserFunc = () =>
             {
-                ReturnInfo<BasicUserInfo> returnInfo = AutofacTool.Resolve<IdentityCookieAuth>().Reader();
+                var returnInfo = AutofacTool.Resolve<IdentityCookieAuth<UserInfo>>().Reader();
+
+                //var returnInfo = AutofacTool.Resolve<IdentityJwtAuth<UserInfo>>().Reader(); // Jwt获取
+
                 if (returnInfo.Success() && returnInfo.Data != null)
                 {
                     return returnInfo.Data;

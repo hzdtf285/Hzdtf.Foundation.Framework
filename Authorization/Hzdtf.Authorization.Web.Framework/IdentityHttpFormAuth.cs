@@ -1,4 +1,4 @@
-﻿using Hzdtf.Authorization.Contract.Standard;
+﻿using Hzdtf.Authorization.Contract.Standard.IdentityAuth;
 using Hzdtf.Utility.Standard.Attr;
 using Hzdtf.Utility.Standard.Data;
 using Hzdtf.Utility.Standard.Model;
@@ -17,7 +17,7 @@ namespace Hzdtf.Authorization.Web.Framework
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public class IdentityHttpFormAuth : IdentityAuthBase, IIdentityAuthVali, IIdentityExit, IReader<ReturnInfo<BasicUserInfo>>
+    public class IdentityHttpFormAuth : IdentityAuthBase<BasicUserInfo>, IIdentityAuthVali, IIdentityExit, IReader<ReturnInfo<BasicUserInfo>>
     {
         #region IIdentityAuthVali 接口
 

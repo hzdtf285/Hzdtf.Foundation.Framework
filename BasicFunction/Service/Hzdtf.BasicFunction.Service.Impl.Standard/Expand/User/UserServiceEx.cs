@@ -1,6 +1,4 @@
-﻿using AutoMapper;
-using Hzdtf.Authorization.Contract.Standard;
-using Hzdtf.BasicFunction.Model.Standard;
+﻿using Hzdtf.BasicFunction.Model.Standard;
 using Hzdtf.BasicFunction.Model.Standard.Expand.User;
 using Hzdtf.Utility.Standard.Attr;
 using Hzdtf.Utility.Standard.Enums;
@@ -18,6 +16,7 @@ using Hzdtf.BasicFunction.Service.Contract.Standard;
 using Hzdtf.Utility.Standard.Attr.ParamAttr;
 using System.ComponentModel.DataAnnotations;
 using Hzdtf.Utility.Standard.AutoMapperExtensions;
+using Hzdtf.Authorization.Contract.Standard.User;
 
 namespace Hzdtf.BasicFunction.Service.Impl.Standard
 {
@@ -25,7 +24,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
     /// 用户服务
     /// @ 黄振东
     /// </summary>
-    public partial class UserService : IIdentityAuth, IUserMenuService
+    public partial class UserService : IUserVali<UserInfo>, IUserMenuService
     {
         #region 属性与字段
 
@@ -326,20 +325,20 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
 
         #endregion
 
-        #region IIdentityAuth 接口
+        #region IUserVali 接口
 
         /// <summary>
-        /// 授权
+        /// 验证
         /// </summary>
         /// <param name="user">用户</param>
         /// <param name="password">密码</param>
         /// <returns>返回信息</returns>
         [ProcTrackLog(IgnoreParamValues = true)]
-        public virtual ReturnInfo<BasicUserInfo> Accredit([DisplayName2("用户"), Required] string user, [DisplayName2("密码"), Required] string password)
+        public virtual ReturnInfo<UserInfo> Vali([DisplayName2("用户"), Required] string user, [DisplayName2("密码"), Required] string password)
         {
-            ReturnInfo<BasicUserInfo> returnInfo = new ReturnInfo<BasicUserInfo>();
+            ReturnInfo<UserInfo> returnInfo = new ReturnInfo<UserInfo>();
 
-            return ExecReturnFuncAndConnectionId<BasicUserInfo>((reInfo, connId) =>
+            return ExecReturnFuncAndConnectionId<UserInfo>((reInfo, connId) =>
             {
                 UserInfo result = Persistence.SelectByLoginIdAndPassword(user, MD5Util.Encryption16(password), connId);
                 if (result == null)

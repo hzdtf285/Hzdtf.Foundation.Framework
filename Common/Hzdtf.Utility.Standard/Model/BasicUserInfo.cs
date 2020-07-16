@@ -92,5 +92,23 @@ namespace Hzdtf.Utility.Standard.Model
             get;
             set;
         }
+
+        /// <summary>
+        /// 登录时间_名称
+        /// </summary>
+        public const string LoginTime_Name = "LoginTime";
+
+        /// <summary>
+        /// 登录时间
+        /// </summary>
+        [JsonProperty("loginTime")]
+        [DisplayConvert(typeof(BoolTextConvert))]
+        [Display(Name = "登录时间", Order = 5, AutoGenerateField = false)]
+        [MessagePack.Key("loginTime")]
+        public DateTime? LoginTime
+        {
+            get;
+            set;
+        }
     }
 }

@@ -2749,6 +2749,16 @@
             系统内置
             </summary>
         </member>
+        <member name="F:Hzdtf.Utility.Standard.Model.BasicUserInfo.LoginTime_Name">
+            <summary>
+            登录时间_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Model.BasicUserInfo.LoginTime">
+            <summary>
+            登录时间
+            </summary>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Model.CodeNameFilterInfo">
             <summary>
             编码名称筛选信息
@@ -4886,6 +4896,28 @@
             </summary>
             <param name="token">票据</param>
             <returns>票据是否包含了Bearer</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Utils.ClaimUtil">
+            <summary>
+            证件单元辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.ClaimUtil.Add(System.Collections.Generic.IList{System.Security.Claims.Claim},System.String,System.String)">
+            <summary>
+            添加证件单元到列表里，忽略空值
+            </summary>
+            <param name="claims">证件单元列表</param>
+            <param name="type">类型</param>
+            <param name="value">值</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.ClaimUtil.Get(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.String)">
+            <summary>
+            根据键获取证件单元值，忽略空值
+            </summary>
+            <param name="claims">证件单元列表</param>
+            <param name="type">类型</param>
+            <returns>证件单元值</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Utils.CollectionUtil">
             <summary>
