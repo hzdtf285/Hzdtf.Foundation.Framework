@@ -183,6 +183,25 @@
             <param name="claims">用户</param>
             <param name="user">证件单元集合</param>
         </member>
+        <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.UserValiService">
+            <summary>
+            用户验证服务
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.UserValiService.ProtoUserVali">
+            <summary>
+            原生用户验证
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.UserValiService.Vali(System.String,System.String)">
+            <summary>
+            验证
+            </summary>
+            <param name="user">用户</param>
+            <param name="password">密码</param>
+            <returns>返回信息</returns>
+        </member>
         <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.AttachmentService">
             <summary>
             附件服务

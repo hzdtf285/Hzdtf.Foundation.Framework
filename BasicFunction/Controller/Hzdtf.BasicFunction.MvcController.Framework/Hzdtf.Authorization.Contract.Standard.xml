@@ -46,10 +46,16 @@
             </summary>
             <typeparam name="UserT">用户顾炎武</typeparam>
         </member>
-        <member name="P:Hzdtf.Authorization.Contract.Standard.IdentityAuth.IdentityAuthBase`1.UserVali">
+        <member name="F:Hzdtf.Authorization.Contract.Standard.IdentityAuth.IdentityAuthBase`1.userVali">
             <summary>
             用户验证
             </summary>
+        </member>
+        <member name="M:Hzdtf.Authorization.Contract.Standard.IdentityAuth.IdentityAuthBase`1.#ctor(Hzdtf.Authorization.Contract.Standard.User.IUserVali{`0})">
+            <summary>
+            构造方法
+            </summary>
+            <param name="userVali">用户验证</param>
         </member>
         <member name="M:Hzdtf.Authorization.Contract.Standard.IdentityAuth.IdentityAuthBase`1.Accredit(System.String,System.String)">
             <summary>
@@ -72,22 +78,17 @@
             </summary>
             <typeparam name="UserT">用户类型</typeparam>
         </member>
-        <member name="P:Hzdtf.Authorization.Contract.Standard.IdentityAuth.IdentityClaimAuthBase`1.AuthUserData">
+        <member name="F:Hzdtf.Authorization.Contract.Standard.IdentityAuth.IdentityClaimAuthBase`1.authUserData">
             <summary>
-            用户
+            授权用户数据
             </summary>
         </member>
-        <member name="M:Hzdtf.Authorization.Contract.Standard.IdentityAuth.IdentityClaimAuthBase`1.IsAuthed">
+        <member name="M:Hzdtf.Authorization.Contract.Standard.IdentityAuth.IdentityClaimAuthBase`1.#ctor(Hzdtf.Authorization.Contract.Standard.User.IUserVali{`0},Hzdtf.Authorization.Contract.Standard.User.IAuthUserData{`0})">
             <summary>
-            判断是否已授权
+            构造方法
             </summary>
-            <returns>返回信息</returns>
-        </member>
-        <member name="M:Hzdtf.Authorization.Contract.Standard.IdentityAuth.IdentityClaimAuthBase`1.Reader">
-            <summary>
-            读取
-            </summary>
-            <returns>数据</returns>
+            <param name="userVali">用户验证</param>
+            <param name="authUserData">授权用户数据</param>
         </member>
         <member name="M:Hzdtf.Authorization.Contract.Standard.IdentityAuth.IdentityClaimAuthBase`1.SaveUserInfo(`0)">
             <summary>
@@ -128,13 +129,14 @@
             <param name="password">密码</param>
             <returns>返回信息</returns>
         </member>
-        <member name="T:Hzdtf.Authorization.Contract.Standard.IdentityAuth.IIdentityAuthVali">
+        <member name="T:Hzdtf.Authorization.Contract.Standard.IdentityAuth.IIdentityAuthReader`1">
             <summary>
-            身份授权验证接口
+            身份认证读取接口
             @ 黄振东
             </summary>
+            <typeparam name="UserT">用户类型</typeparam>
         </member>
-        <member name="M:Hzdtf.Authorization.Contract.Standard.IdentityAuth.IIdentityAuthVali.IsAuthed">
+        <member name="M:Hzdtf.Authorization.Contract.Standard.IdentityAuth.IIdentityAuthReader`1.IsAuthed">
             <summary>
             判断是否已授权
             </summary>

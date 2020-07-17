@@ -325,7 +325,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
 
         #endregion
 
-        #region IUserVali 接口
+        #region IUserVali<UserInfo> 接口
 
         /// <summary>
         /// 验证

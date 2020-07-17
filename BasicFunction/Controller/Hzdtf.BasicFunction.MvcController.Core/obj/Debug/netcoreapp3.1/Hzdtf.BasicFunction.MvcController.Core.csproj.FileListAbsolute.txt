@@ -40,3 +40,6 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Controller\Hzdtf.B
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\obj\Debug\netcoreapp3.1\Hzdtf.BasicFunction.MvcController.Core.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\obj\Debug\netcoreapp3.1\Hzdtf.BasicFunction.MvcController.Core.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\obj\Debug\netcoreapp3.1\Hzdtf.BasicFunction.MvcController.Core.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\bin\Debug\netcoreapp3.1\Hzdtf.Platform.Impl.Core.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\bin\Debug\netcoreapp3.1\Hzdtf.Platform.Impl.Core.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\bin\Debug\netcoreapp3.1\Hzdtf.Platform.Impl.Core.xml

@@ -1,6 +1,6 @@
 ﻿using Hzdtf.Authorization.Contract.Standard.IdentityAuth;
+using Hzdtf.Authorization.Contract.Standard.User;
 using Hzdtf.Utility.Standard.Attr;
-using Hzdtf.Utility.Standard.Data;
 using Hzdtf.Utility.Standard.Model;
 using Hzdtf.Utility.Standard.Model.Return;
 using System;
@@ -8,7 +8,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web;
 
 namespace Hzdtf.Authorization.Web.Framework
 {
@@ -17,20 +16,17 @@ namespace Hzdtf.Authorization.Web.Framework
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public class IdentityHttpFormAuth : IdentityAuthBase<BasicUserInfo>, IIdentityAuthVali, IIdentityExit, IReader<ReturnInfo<BasicUserInfo>>
+    public class IdentityHttpFormAuth : IdentityAuthBase<BasicUserInfo>, IIdentityExit
     {
-        #region IIdentityAuthVali 接口
+        #region 初始化
 
         /// <summary>
-        /// 判断是否已授权
+        /// 构造方法
         /// </summary>
-        /// <returns>返回信息</returns>
-        public ReturnInfo<bool> IsAuthed()
+        /// <param name="userVali">用户验证</param>
+        public IdentityHttpFormAuth(IUserVali<BasicUserInfo> userVali)
+            : base(userVali)
         {
-            ReturnInfo<bool> returnInfo = new ReturnInfo<bool>();
-            returnInfo.Data = HttpFormsAuthorizationUtil.IsAuthenticated<BasicUserInfo>();
-
-            return returnInfo;
         }
 
         #endregion
@@ -53,22 +49,6 @@ namespace Hzdtf.Authorization.Web.Framework
             {
                 returnInfo.SetFailureMsg("退出失败");
             }
-
-            return returnInfo;
-        }
-
-        #endregion
-
-        #region IReader<IdentityInfoT> 接口
-
-        /// <summary>
-        /// 读取
-        /// </summary>
-        /// <returns>数据</returns>
-        public ReturnInfo<BasicUserInfo> Reader()
-        {
-            ReturnInfo<BasicUserInfo> returnInfo = new ReturnInfo<BasicUserInfo>();
-            returnInfo.Data = HttpFormsAuthorizationUtil.ParseUserData<BasicUserInfo>();
 
             return returnInfo;
         }

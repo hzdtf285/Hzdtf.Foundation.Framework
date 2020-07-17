@@ -102,6 +102,9 @@
               },
               "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
                 "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj"
+              },
+              "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj": {
+                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj"
               }
             }
           }
@@ -115,9 +118,21 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.Abstractions": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
             },
             "Microsoft.AspNetCore.Http.Abstractions": {
               "target": "Package",
@@ -143,6 +158,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -218,6 +236,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -2537,10 +2558,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[3.1.6, )"
-            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[3.1.0, )"

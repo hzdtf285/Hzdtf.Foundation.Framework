@@ -19,13 +19,18 @@ namespace Hzdtf.Authorization.Contract.Standard.IdentityAuth
         /// <summary>
         /// 用户验证
         /// </summary>
-        public IUserVali<UserT> UserVali
-        {
-            get;
-            set;
-        }
+        protected readonly IUserVali<UserT> userVali;
 
         #endregion
+
+        /// <summary>
+        /// 构造方法
+        /// </summary>
+        /// <param name="userVali">用户验证</param>
+        public IdentityAuthBase(IUserVali<UserT> userVali)
+        {
+            this.userVali = userVali;
+        }
 
         #region IIdentityAuth 接口
 
@@ -37,12 +42,12 @@ namespace Hzdtf.Authorization.Contract.Standard.IdentityAuth
         /// <returns>返回信息</returns>
         public ReturnInfo<UserT> Accredit(string user, string password)
         {
-            if (UserVali == null)
+            if (userVali == null)
             {
                 throw new NullReferenceException("用户验证不能为null");
             }
 
-            ReturnInfo<UserT> returnInfo = UserVali.Vali(user, password);
+            ReturnInfo<UserT> returnInfo = userVali.Vali(user, password);
             if (returnInfo.Failure())
             {
                 return returnInfo;

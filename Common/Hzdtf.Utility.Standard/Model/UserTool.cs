@@ -32,5 +32,13 @@ namespace Hzdtf.Utility.Standard.Model
             Code = "000000",
             Name = "测试用户"
         };
+
+        /// <summary>
+        /// 获取当前用户
+        /// </summary>
+        /// <typeparam name="UserT">用户类型</typeparam>
+        /// <returns>当前用户</returns>
+        public static UserT GetCurrUser<UserT>() where UserT : BasicUserInfo
+            => CurrUser as UserT;
     }
 }

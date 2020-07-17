@@ -1917,6 +1917,22 @@
             生产
             </summary>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.Enums.IdentityAuthType">
+            <summary>
+            身份认证类型
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Enums.IdentityAuthType.COOKIES">
+            <summary>
+            Cookies
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Enums.IdentityAuthType.JWT">
+            <summary>
+            Jwt
+            </summary>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Enums.LifecycleType">
             <summary>
             生命周期类型
@@ -3547,6 +3563,13 @@
             <summary>
             测试用户
             </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.UserTool.GetCurrUser``1">
+            <summary>
+            获取当前用户
+            </summary>
+            <typeparam name="UserT">用户类型</typeparam>
+            <returns>当前用户</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.ProcessCall.IBytesReceive">
             <summary>

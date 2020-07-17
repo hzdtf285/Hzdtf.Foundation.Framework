@@ -47,29 +47,41 @@
             </summary>
             <returns>是否移除成功</returns>
         </member>
+        <member name="T:Hzdtf.Authorization.Web.Framework.IdentityAuthClaimReader">
+            <summary>
+            身份认证证件单元读取
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Authorization.Web.Framework.IdentityAuthClaimReader.IsAuthed">
+            <summary>
+            判断是否已授权
+            </summary>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.Authorization.Web.Framework.IdentityAuthClaimReader.Reader">
+            <summary>
+            读取
+            </summary>
+            <returns>数据</returns>
+        </member>
         <member name="T:Hzdtf.Authorization.Web.Framework.IdentityHttpFormAuth">
             <summary>
             身份Http表单授权
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Authorization.Web.Framework.IdentityHttpFormAuth.IsAuthed">
+        <member name="M:Hzdtf.Authorization.Web.Framework.IdentityHttpFormAuth.#ctor(Hzdtf.Authorization.Contract.Standard.User.IUserVali{Hzdtf.Utility.Standard.Model.BasicUserInfo})">
             <summary>
-            判断是否已授权
+            构造方法
             </summary>
-            <returns>返回信息</returns>
+            <param name="userVali">用户验证</param>
         </member>
         <member name="M:Hzdtf.Authorization.Web.Framework.IdentityHttpFormAuth.Exit">
             <summary>
             退出
             </summary>
             <returns>返回信息</returns>
-        </member>
-        <member name="M:Hzdtf.Authorization.Web.Framework.IdentityHttpFormAuth.Reader">
-            <summary>
-            读取
-            </summary>
-            <returns>数据</returns>
         </member>
         <member name="M:Hzdtf.Authorization.Web.Framework.IdentityHttpFormAuth.SaveUserInfo(Hzdtf.Utility.Standard.Model.BasicUserInfo)">
             <summary>

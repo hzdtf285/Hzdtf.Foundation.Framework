@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Autofac;
 using Hzdtf.WebTest3_1.Core.AppStart;
 using Microsoft.AspNetCore.Builder;
@@ -15,19 +12,14 @@ using Microsoft.Extensions.Logging;
 using Hzdtf.Utility.AspNet.Core.ExceptionHandle;
 using Hzdtf.Logger.Integration.MicrosoftLog.Core;
 using Hzdtf.Logger.Integration.ENLog.Standard;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Http;
-using Hzdtf.Utility.Standard.AutoMapperExtensions;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
 using Hzdtf.Platform.Impl.Core;
 using Microsoft.OpenApi.Models;
 using System.IO;
-using Newtonsoft.Json;
-using Hzdtf.Polly.AspNet.Extensions.Core;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Hzdtf.Authorization.Web.Core;
+using Hzdtf.Utility.AspNet.Core;
 
 namespace Hzdtf.WebTest3._1.Core
 {
@@ -54,28 +46,11 @@ namespace Hzdtf.WebTest3._1.Core
 
             services.AddSession();
 
-            // 添加Cookies验证：
-            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-                .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, o =>
-                {
-                    o.LoginPath = new PathString("/login.html");
-                });
-
-            //添加jwt验证：
-            //services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            //    .AddJwtBearer(options => {
-            //        options.TokenValidationParameters = new TokenValidationParameters
-            //        {
-            //            ValidateIssuer = true,//是否验证Issuer
-            //            ValidateAudience = true,//是否验证Audience
-            //            ValidateLifetime = true,//是否验证失效时间
-            //            ClockSkew = TimeSpan.FromSeconds(30),
-            //            ValidateIssuerSigningKey = true,//是否验证SecurityKey
-            //            ValidAudience = Configuration["Jwt:Domain"],//Audience
-            //            ValidIssuer = Configuration["Jwt:Domain"],//Issuer，这两项和前面签发jwt的设置一致
-            //            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:SecurityKey"]))//拿到SecurityKey
-            //        };
-            //    });
+            services.AddIdentityAuth(options =>
+            {
+                options.AuthType = Utility.Standard.Enums.IdentityAuthType.JWT;
+                options.LoginPath = "/login.html";
+            });         
 
 
             services.AddMvc(options =>
@@ -122,7 +97,8 @@ namespace Hzdtf.WebTest3._1.Core
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {         
+        {
+            ServiceProviderTool.Instance = app.ApplicationServices;
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -136,6 +112,8 @@ namespace Hzdtf.WebTest3._1.Core
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            app.UseIdentityAuth();
 
             app.UseApiExceptionHandle();
             //app.UseHttpClientForBreakerWrapPolicy(); // 使用断路器时才需要
@@ -156,10 +134,7 @@ namespace Hzdtf.WebTest3._1.Core
                 });
             }
 
-            UserConfig.Init();
             OtherConfig.Init();
-
-            AutoMapperUtil.Builder();
         }
         public void ConfigureContainer(ContainerBuilder builder)
         {

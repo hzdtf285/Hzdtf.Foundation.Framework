@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.Platform.Impl.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.Configuration.Impl.Config.Core.App.AppConfiguration">
+            <summary>
+            应用配置
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Configuration.Impl.Config.Core.App.AppConfiguration.config">
+            <summary>
+            配置
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Configuration.Impl.Config.Core.App.AppConfiguration.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Configuration.Impl.Config.Core.App.AppConfiguration.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="config">配置</param>
+        </member>
+        <member name="P:Hzdtf.Configuration.Impl.Config.Core.App.AppConfiguration.Item(System.String)">
+            <summary>
+            根据键获取值
+            </summary>
+            <param name="key">键</param>
+            <returns>值</returns>
+        </member>
+        <member name="M:Hzdtf.Configuration.Impl.Config.Core.App.AppConfiguration.GetDirectConnectionString(System.String)">
+            <summary>
+            根据名称获取直通连接字符串
+            </summary>
+            <param name="name">名称</param>
+            <returns>连接字符串</returns>
+        </member>
+        <member name="T:Hzdtf.Platform.Impl.Core.PlatformCodeTool">
+            <summary>
+            平台Code工具
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Impl.Core.PlatformCodeTool.Config">
+            <summary>
+            配置
+            </summary>
+        </member>
+    </members>
+</doc>

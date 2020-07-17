@@ -1917,6 +1917,22 @@
             生产
             </summary>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.Enums.IdentityAuthType">
+            <summary>
+            身份认证类型
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Enums.IdentityAuthType.COOKIES">
+            <summary>
+            Cookies
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Enums.IdentityAuthType.JWT">
+            <summary>
+            Jwt
+            </summary>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Enums.LifecycleType">
             <summary>
             生命周期类型

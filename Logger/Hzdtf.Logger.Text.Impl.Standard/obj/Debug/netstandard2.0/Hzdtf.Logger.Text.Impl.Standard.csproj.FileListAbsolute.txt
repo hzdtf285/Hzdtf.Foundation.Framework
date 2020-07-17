@@ -93,7 +93,6 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Text.Impl.St
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Text.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.Logger.Contract.Standard.xml
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Text.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.Utility.Standard.pdb
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Text.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.Utility.Standard.xml
-C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Text.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Text.Impl.Standard.csprojAssemblyReference.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Text.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Text.Impl.Standard.csproj.CoreCompileInputs.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Text.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Text.Impl.Standard.AssemblyInfoInputs.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Text.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Text.Impl.Standard.AssemblyInfo.cs

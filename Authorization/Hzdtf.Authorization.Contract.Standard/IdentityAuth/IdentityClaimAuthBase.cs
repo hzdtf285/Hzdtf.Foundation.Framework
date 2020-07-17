@@ -1,6 +1,4 @@
-﻿using Hzdtf.Utility.Standard.Data;
-using Hzdtf.Utility.Standard.Model.Return;
-using System.Security.Claims;
+﻿using System.Security.Claims;
 using Hzdtf.Utility.Standard.Model;
 using System.Collections.Generic;
 using System;
@@ -13,57 +11,28 @@ namespace Hzdtf.Authorization.Contract.Standard.IdentityAuth
     /// @ 黄振东
     /// </summary>
     /// <typeparam name="UserT">用户类型</typeparam>
-    public abstract class IdentityClaimAuthBase<UserT> : IdentityAuthBase<UserT>, IIdentityAuthVali, IReader<ReturnInfo<UserT>>
+    public abstract class IdentityClaimAuthBase<UserT> : IdentityAuthBase<UserT>
         where UserT : BasicUserInfo
     {
         #region 属性与字段
 
         /// <summary>
-        /// 用户
+        /// 授权用户数据
         /// </summary>
-        public IAuthUserData<UserT> AuthUserData
-        {
-            get;
-            set;
-        }
+        private readonly IAuthUserData<UserT> authUserData;
 
         #endregion
-
-        #region IIdentityAuthVali 接口
 
         /// <summary>
-        /// 判断是否已授权
+        /// 构造方法
         /// </summary>
-        /// <returns>返回信息</returns>
-        public abstract ReturnInfo<bool> IsAuthed();
-
-        #endregion
-
-        #region IReader<IdentityInfoT> 接口
-
-        /// <summary>
-        /// 读取
-        /// </summary>
-        /// <returns>数据</returns>
-        public ReturnInfo<UserT> Reader()
+        /// <param name="userVali">用户验证</param>
+        /// <param name="authUserData">授权用户数据</param>
+        public IdentityClaimAuthBase(IUserVali<UserT> userVali, IAuthUserData<UserT> authUserData)
+            : base(userVali)
         {
-            ReturnInfo<UserT> returnInfo = new ReturnInfo<UserT>();
-            ReturnInfo<bool> isAuthReturnInfo = IsAuthed();
-            if (isAuthReturnInfo.Success() && isAuthReturnInfo.Data)
-            {
-                var claims = GetClaims();
-                if (claims == null)
-                {
-                    return returnInfo;
-                }
-
-                returnInfo.Data = IdentityAuthUtil.GetUserDataFromClaims<UserT>(claims, AuthUserData);
-            }
-
-            return returnInfo;
+            this.authUserData = authUserData;
         }
-
-        #endregion
 
         #region 重写父类的方法
 
@@ -73,7 +42,7 @@ namespace Hzdtf.Authorization.Contract.Standard.IdentityAuth
         /// <param name="user">用户</param>
         protected override void SaveUserInfo(UserT user)
         {
-            var claims = IdentityAuthUtil.SaveUserInfoGetClaims(user, AuthUserData);
+            var claims = IdentityAuthUtil.SaveUserInfoGetClaims(user, authUserData);
             var identity = new ClaimsIdentity(claims, GetAuthenticationScheme());
 
             SignIn(new ClaimsPrincipal(identity));

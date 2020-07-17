@@ -1,5 +1,4 @@
-﻿using Hzdtf.Utility.Standard.Attr;
-using Hzdtf.Utility.Standard.Model.Return;
+﻿using Hzdtf.Utility.Standard.Model.Return;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Http;
 using System.Collections.Generic;
@@ -10,9 +9,7 @@ using System.IdentityModel.Tokens.Jwt;
 using Hzdtf.Authorization.Contract.Standard.IdentityAuth.Token;
 using Hzdtf.Authorization.Contract.Standard.User;
 using Hzdtf.Utility.Standard.Model;
-using Hzdtf.Authorization.Contract.Standard.IdentityAuth;
 using Hzdtf.Authorization.Contract.Standard;
-using Hzdtf.Utility.Standard.Data;
 using Hzdtf.Platform.Config.Contract.Standard.Config.App;
 using Hzdtf.Platform.Contract.Standard;
 using Hzdtf.Utility.Standard.Utils;
@@ -24,12 +21,11 @@ namespace Hzdtf.Authorization.Web.Core
     /// 相差配置请在appsetting.json里设置，以Jwt为根
     /// Jwt:Domain:域名，不可为空
     /// Jwt:SecurityKey:密钥，不可为空
-    /// Jwt:Expires:过期时间，单位为分钟，如未设置，默认为60分钟
+    /// Jwt:Expires:过期时间，单位为分钟，如未设置，默认为2小时
     /// @ 黄振东
     /// </summary>
     /// <typeparam name="UserT">用户类型</typeparam>
-    [Inject]
-    public class IdentityJwtAuth<UserT> : IIdentityTokenAuth, IIdentityAuthVali, IReader<ReturnInfo<UserT>>
+    public class IdentityJwtAuth<UserT> : IIdentityTokenAuth
         where UserT : BasicUserInfo
     {
         #region 属性与字段
@@ -37,63 +33,47 @@ namespace Hzdtf.Authorization.Web.Core
         /// <summary>
         /// Http上下文访问
         /// </summary>
-        public IHttpContextAccessor HttpContextAccessor
-        {
-            get;
-            set;
-        }
+        private readonly IHttpContextAccessor httpContext;
 
         /// <summary>
         /// 用户验证
         /// </summary>
-        public IUserVali<UserT> UserVali
-        {
-            get;
-            set;
-        }
+        private readonly IUserVali<UserT> userVali;
 
         /// <summary>
-        /// 用户
+        /// 授权用户数据
         /// </summary>
-        public IAuthUserData<UserT> AuthUserData
-        {
-            get;
-            set;
-        }
+        public readonly IAuthUserData<UserT> authUserData;
 
         /// <summary>
         /// 应用配置
         /// </summary>
-        public IAppConfiguration AppConfig
-        {
-            get;
-            set;
-        } = PlatformTool.AppConfig;
+        public readonly IAppConfiguration appConfig;
 
         #endregion
 
-        #region IReader<IdentityInfoT> 接口
+        #region 初始化
 
         /// <summary>
-        /// 读取
+        /// 构造方法
         /// </summary>
-        /// <returns>数据</returns>
-        public ReturnInfo<UserT> Reader()
+        /// <param name="userVali">用户验证</param>
+        /// <param name="authUserData">授权用户数据</param>
+        /// <param name="httpContext">Http上下文访问</param>
+        /// <param name="appConfig">应用配置</param>
+        public IdentityJwtAuth(IUserVali<UserT> userVali, IAuthUserData<UserT> authUserData, IHttpContextAccessor httpContext, IAppConfiguration appConfig)
         {
-            ReturnInfo<UserT> returnInfo = new ReturnInfo<UserT>();
-            ReturnInfo<bool> isAuthReturnInfo = IsAuthed();
-            if (isAuthReturnInfo.Success() && isAuthReturnInfo.Data)
+            this.userVali = userVali;
+            this.httpContext = httpContext;
+            this.authUserData = authUserData;
+            if (appConfig == null)
             {
-                var claims = HttpContextAccessor.HttpContext.User.Claims;
-                if (claims == null)
-                {
-                    return returnInfo;
-                }
-
-                returnInfo.Data = IdentityAuthUtil.GetUserDataFromClaims<UserT>(claims, AuthUserData);
+                this.appConfig = PlatformTool.AppConfig;
             }
-
-            return returnInfo;
+            else
+            {
+                this.appConfig = appConfig;
+            }
         }
 
         #endregion
@@ -108,44 +88,23 @@ namespace Hzdtf.Authorization.Web.Core
         /// <returns>返回信息</returns>
         public ReturnInfo<string> AccreditToToken(string user, string password)
         {
-            if (UserVali == null)
+            if (userVali == null)
             {
                 throw new NullReferenceException("用户验证不能为null");
             }
 
             var re = new ReturnInfo<string>();
-            ReturnInfo<UserT> returnInfo = UserVali.Vali(user, password);
+            ReturnInfo<UserT> returnInfo = userVali.Vali(user, password);
             re.FromBasic(returnInfo);
             if (re.Failure())
             {
                 return re;
             }
 
-            var claims = IdentityAuthUtil.SaveUserInfoGetClaims(returnInfo.Data, AuthUserData);
+            var claims = IdentityAuthUtil.SaveUserInfoGetClaims(returnInfo.Data, authUserData);
             re.Data = BuilderToken(claims);
 
             return re;
-        }
-
-        #endregion
-
-        #region IIdentityAuthVali 接口
-
-        /// <summary>
-        /// 判断是否已授权
-        /// </summary>
-        /// <returns>返回信息</returns>
-        public ReturnInfo<bool> IsAuthed()
-        {
-            ReturnInfo<bool> returnInfo = new ReturnInfo<bool>();
-            if (HttpContextAccessor != null && HttpContextAccessor.HttpContext != null
-                && HttpContextAccessor.HttpContext.User != null && HttpContextAccessor.HttpContext.User.Identity != null
-                && HttpContextAccessor.HttpContext.User.Identity.IsAuthenticated)
-            {
-                returnInfo.Data = true;
-            }
-
-            return returnInfo;
         }
 
         #endregion
@@ -159,19 +118,19 @@ namespace Hzdtf.Authorization.Web.Core
         /// <returns>令牌</returns>
         private string BuilderToken(IList<Claim> claims)
         {
-            var domain = AppConfig["Jwt:Domain"];
+            var domain = appConfig["Jwt:Domain"];
             if (string.IsNullOrWhiteSpace(domain))
             {
                 throw new ArgumentNullException("Jwt域名不能为空");
             }
-            var securityKey = AppConfig["Jwt:SecurityKey"];
+            var securityKey = appConfig["Jwt:SecurityKey"];
             if (string.IsNullOrWhiteSpace(securityKey))
             {
                 throw new ArgumentNullException("Jwt密钥不能为空");
             }
 
-            var expiresStr = AppConfig["Jwt:Expires"];
-            var expires = string.IsNullOrWhiteSpace(expiresStr) ? 60 : Convert.ToInt32(expiresStr);
+            var expiresStr = appConfig["Jwt:Expires"];
+            var expires = string.IsNullOrWhiteSpace(expiresStr) ? 120 : Convert.ToInt32(expiresStr);
 
             claims.Add(JwtRegisteredClaimNames.Nbf, $"{new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds()}");
             claims.Add(JwtRegisteredClaimNames.Exp, $"{new DateTimeOffset(DateTime.Now.AddMinutes(expires)).ToUnixTimeSeconds()}");

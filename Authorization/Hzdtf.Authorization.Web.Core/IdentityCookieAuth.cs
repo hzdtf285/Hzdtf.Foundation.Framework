@@ -1,5 +1,4 @@
-﻿using Hzdtf.Utility.Standard.Attr;
-using Hzdtf.Utility.Standard.Model.Return;
+﻿using Hzdtf.Utility.Standard.Model.Return;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Http;
@@ -8,6 +7,7 @@ using Hzdtf.Utility.Standard.Model;
 using System.Collections.Generic;
 using System;
 using Hzdtf.Authorization.Contract.Standard.IdentityAuth;
+using Hzdtf.Authorization.Contract.Standard.User;
 
 namespace Hzdtf.Authorization.Web.Core
 {
@@ -16,7 +16,6 @@ namespace Hzdtf.Authorization.Web.Core
     /// @ 黄振东
     /// </summary>
     /// <typeparam name="UserT">用户类型</typeparam>
-    [Inject]
     public class IdentityCookieAuth<UserT> : IdentityClaimAuthBase<UserT>, IIdentityExit
         where UserT : BasicUserInfo
     {
@@ -25,31 +24,22 @@ namespace Hzdtf.Authorization.Web.Core
         /// <summary>
         /// Http上下文访问
         /// </summary>
-        public IHttpContextAccessor HttpContextAccessor
-        {
-            get;
-            set;
-        }
+        private readonly IHttpContextAccessor httpContext;
 
         #endregion
 
-        #region IIdentityAuthVali 接口
+        #region 初始化
 
         /// <summary>
-        /// 判断是否已授权
+        /// 构造方法
         /// </summary>
-        /// <returns>返回信息</returns>
-        public override ReturnInfo<bool> IsAuthed()
+        /// <param name="userVali">用户验证</param>
+        /// <param name="authUserData">授权用户数据</param>
+        /// <param name="httpContext">Http上下文访问</param>
+        public IdentityCookieAuth(IUserVali<UserT> userVali, IAuthUserData<UserT> authUserData, IHttpContextAccessor httpContext)
+            : base(userVali, authUserData)
         {
-            ReturnInfo<bool> returnInfo = new ReturnInfo<bool>();
-            if (HttpContextAccessor != null && HttpContextAccessor.HttpContext != null 
-                && HttpContextAccessor.HttpContext.User != null && HttpContextAccessor.HttpContext.User.Identity != null
-                && HttpContextAccessor.HttpContext.User.Identity.IsAuthenticated)
-            {
-                returnInfo.Data = true;
-            }
-
-            return returnInfo;
+            this.httpContext = httpContext;
         }
 
         #endregion
@@ -63,7 +53,7 @@ namespace Hzdtf.Authorization.Web.Core
         public ReturnInfo<bool> Exit()
         {
             ReturnInfo<bool> returnInfo = new ReturnInfo<bool>();
-            HttpContextAccessor.HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            httpContext.HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 
             returnInfo.SetSuccessMsg("退出成功");
 
@@ -78,7 +68,7 @@ namespace Hzdtf.Authorization.Web.Core
         /// 获取证件单元集合
         /// </summary>
         /// <returns>证件单元集合</returns>
-        protected override IEnumerable<Claim> GetClaims() => HttpContextAccessor.HttpContext.User.Claims;
+        protected override IEnumerable<Claim> GetClaims() => httpContext.HttpContext.User.Claims;
 
         /// <summary>
         /// 获取身份认证方案
@@ -92,7 +82,7 @@ namespace Hzdtf.Authorization.Web.Core
         /// <param name="principal">当事人</param>
         protected override void SignIn(ClaimsPrincipal principal)
         {
-            HttpContextAccessor.HttpContext.SignInAsync(principal);
+            httpContext.HttpContext.SignInAsync(principal);
         }
 
         #endregion

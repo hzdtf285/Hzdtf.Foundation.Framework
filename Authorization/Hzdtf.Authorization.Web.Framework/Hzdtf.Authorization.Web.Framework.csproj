@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HttpFormsAuthorizationUtil.cs" />
+    <Compile Include="IdentityAuthClaimReader.cs" />
     <Compile Include="IdentityHttpFormAuth.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

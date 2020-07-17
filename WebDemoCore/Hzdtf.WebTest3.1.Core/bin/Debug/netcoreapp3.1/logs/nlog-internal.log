@@ -1,0 +1,40 @@
+2020-07-17 10:10:09.8967 Info Message Template Auto Format enabled
+2020-07-17 10:10:09.9215 Info Adding target FileTarget(Name=f)
+2020-07-17 10:10:09.9215 Info Adding target FileTarget(Name=fe)
+2020-07-17 10:10:09.9396 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-07-17 10:10:09.9502 Info Configuration initialized.
+2020-07-17 10:10:09.9502 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-07-17 10:10:43.3414 Info AppDomain Shutting down. Logger closing...
+2020-07-17 10:10:43.3414 Info Logger has been shut down.
+2020-07-17 10:10:59.9848 Info Message Template Auto Format enabled
+2020-07-17 10:11:00.0118 Info Adding target FileTarget(Name=f)
+2020-07-17 10:11:00.0118 Info Adding target FileTarget(Name=fe)
+2020-07-17 10:11:00.0314 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-07-17 10:11:00.0423 Info Configuration initialized.
+2020-07-17 10:11:00.0423 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-07-17 10:11:47.5445 Info AppDomain Shutting down. Logger closing...
+2020-07-17 10:11:47.5445 Info Logger has been shut down.
+2020-07-17 10:11:49.6931 Info Message Template Auto Format enabled
+2020-07-17 10:11:49.7180 Info Adding target FileTarget(Name=f)
+2020-07-17 10:11:49.7180 Info Adding target FileTarget(Name=fe)
+2020-07-17 10:11:49.7379 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-07-17 10:11:49.7493 Info Configuration initialized.
+2020-07-17 10:11:49.7493 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-07-17 10:12:17.0232 Info AppDomain Shutting down. Logger closing...
+2020-07-17 10:12:17.0350 Info Logger has been shut down.
+2020-07-17 10:12:25.6087 Info Message Template Auto Format enabled
+2020-07-17 10:12:25.6329 Info Adding target FileTarget(Name=f)
+2020-07-17 10:12:25.6329 Info Adding target FileTarget(Name=fe)
+2020-07-17 10:12:25.6516 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-07-17 10:12:25.6516 Info Configuration initialized.
+2020-07-17 10:12:25.6516 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-07-17 10:12:45.2929 Info AppDomain Shutting down. Logger closing...
+2020-07-17 10:12:45.2929 Info Logger has been shut down.
+2020-07-17 10:13:03.6500 Info Message Template Auto Format enabled
+2020-07-17 10:13:03.6845 Info Adding target FileTarget(Name=f)
+2020-07-17 10:13:03.6845 Info Adding target FileTarget(Name=fe)
+2020-07-17 10:13:03.7128 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-07-17 10:13:03.7269 Info Configuration initialized.
+2020-07-17 10:13:03.7309 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-07-17 10:13:33.8741 Info AppDomain Shutting down. Logger closing...
+2020-07-17 10:13:33.8936 Info Logger has been shut down.

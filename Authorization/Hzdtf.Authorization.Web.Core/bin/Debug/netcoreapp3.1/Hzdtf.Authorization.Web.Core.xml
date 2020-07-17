@@ -4,6 +4,106 @@
         <name>Hzdtf.Authorization.Web.Core</name>
     </assembly>
     <members>
+        <member name="T:Hzdtf.Authorization.Web.Core.IdentityAuthClaimReader`1">
+            <summary>
+            身份认证证件单元读取
+            @ 黄振东
+            </summary>
+            <typeparam name="UserT">用户类型</typeparam>
+        </member>
+        <member name="F:Hzdtf.Authorization.Web.Core.IdentityAuthClaimReader`1.httpContext">
+            <summary>
+            Http上下文访问
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Authorization.Web.Core.IdentityAuthClaimReader`1.authUserData">
+            <summary>
+            授权用户数据
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Authorization.Web.Core.IdentityAuthClaimReader`1.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Hzdtf.Authorization.Contract.Standard.User.IAuthUserData{`0})">
+            <summary>
+            构造方法
+            </summary>
+            <param name="httpContext">Http上下文访问</param>
+            <param name="authUserData">授权用户数据</param>
+        </member>
+        <member name="M:Hzdtf.Authorization.Web.Core.IdentityAuthClaimReader`1.IsAuthed">
+            <summary>
+            判断是否已授权
+            </summary>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.Authorization.Web.Core.IdentityAuthClaimReader`1.Reader">
+            <summary>
+            读取
+            </summary>
+            <returns>数据</returns>
+        </member>
+        <member name="T:Hzdtf.Authorization.Web.Core.IdentityAuthExtensionscs">
+            <summary>
+            身份认证扩展类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Authorization.Web.Core.IdentityAuthExtensionscs.AddIdentityAuth(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hzdtf.Authorization.Web.Core.IdentityAuthOptions})">
+            <summary>
+            添加身份认证
+            </summary>
+            <param name="services">服务收藏</param>
+            <param name="options">选项配置</param>
+            <returns>服务收藏</returns>
+        </member>
+        <member name="M:Hzdtf.Authorization.Web.Core.IdentityAuthExtensionscs.AddIdentityAuth``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hzdtf.Authorization.Web.Core.IdentityAuthOptions})">
+            <summary>
+            添加身份认证
+            </summary>
+            <typeparam name="UserT">用户类型</typeparam>
+            <param name="services">服务收藏</param>
+            <param name="options">选项配置</param>
+            <returns>服务收藏</returns>
+        </member>
+        <member name="M:Hzdtf.Authorization.Web.Core.IdentityAuthExtensionscs.UseIdentityAuth(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            使用身份认证
+            </summary>
+            <param name="app">应用生成器</param>
+            <returns>应用生成器</returns>
+        </member>
+        <member name="M:Hzdtf.Authorization.Web.Core.IdentityAuthExtensionscs.UseIdentityAuth``1(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            使用身份认证
+            </summary>
+            <typeparam name="UserT">用户类型</typeparam>
+            <param name="app">应用生成器</param>
+            <returns>应用生成器</returns>
+        </member>
+        <member name="T:Hzdtf.Authorization.Web.Core.IdentityAuthOptions">
+            <summary>
+            身份认证选项配置
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Authorization.Web.Core.IdentityAuthOptions.AuthType">
+            <summary>
+            身份认证类型，默认为Cookies
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Authorization.Web.Core.IdentityAuthOptions.LoginPath">
+            <summary>
+            登录路径
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Authorization.Web.Core.IdentityAuthOptions.IsRedirectToLogin">
+            <summary>
+            是否重定向
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Authorization.Web.Core.IdentityAuthOptions.Config">
+            <summary>
+            配置
+            </summary>
+        </member>
         <member name="T:Hzdtf.Authorization.Web.Core.IdentityCookieAuth`1">
             <summary>
             身份Cookie授权
@@ -11,16 +111,18 @@
             </summary>
             <typeparam name="UserT">用户类型</typeparam>
         </member>
-        <member name="P:Hzdtf.Authorization.Web.Core.IdentityCookieAuth`1.HttpContextAccessor">
+        <member name="F:Hzdtf.Authorization.Web.Core.IdentityCookieAuth`1.httpContext">
             <summary>
             Http上下文访问
             </summary>
         </member>
-        <member name="M:Hzdtf.Authorization.Web.Core.IdentityCookieAuth`1.IsAuthed">
+        <member name="M:Hzdtf.Authorization.Web.Core.IdentityCookieAuth`1.#ctor(Hzdtf.Authorization.Contract.Standard.User.IUserVali{`0},Hzdtf.Authorization.Contract.Standard.User.IAuthUserData{`0},Microsoft.AspNetCore.Http.IHttpContextAccessor)">
             <summary>
-            判断是否已授权
+            构造方法
             </summary>
-            <returns>返回信息</returns>
+            <param name="userVali">用户验证</param>
+            <param name="authUserData">授权用户数据</param>
+            <param name="httpContext">Http上下文访问</param>
         </member>
         <member name="M:Hzdtf.Authorization.Web.Core.IdentityCookieAuth`1.Exit">
             <summary>
@@ -52,36 +154,39 @@
             相差配置请在appsetting.json里设置，以Jwt为根
             Jwt:Domain:域名，不可为空
             Jwt:SecurityKey:密钥，不可为空
-            Jwt:Expires:过期时间，单位为分钟，如未设置，默认为60分钟
+            Jwt:Expires:过期时间，单位为分钟，如未设置，默认为2小时
             @ 黄振东
             </summary>
             <typeparam name="UserT">用户类型</typeparam>
         </member>
-        <member name="P:Hzdtf.Authorization.Web.Core.IdentityJwtAuth`1.HttpContextAccessor">
+        <member name="F:Hzdtf.Authorization.Web.Core.IdentityJwtAuth`1.httpContext">
             <summary>
             Http上下文访问
             </summary>
         </member>
-        <member name="P:Hzdtf.Authorization.Web.Core.IdentityJwtAuth`1.UserVali">
+        <member name="F:Hzdtf.Authorization.Web.Core.IdentityJwtAuth`1.userVali">
             <summary>
             用户验证
             </summary>
         </member>
-        <member name="P:Hzdtf.Authorization.Web.Core.IdentityJwtAuth`1.AuthUserData">
+        <member name="F:Hzdtf.Authorization.Web.Core.IdentityJwtAuth`1.authUserData">
             <summary>
-            用户
+            授权用户数据
             </summary>
         </member>
-        <member name="P:Hzdtf.Authorization.Web.Core.IdentityJwtAuth`1.AppConfig">
+        <member name="F:Hzdtf.Authorization.Web.Core.IdentityJwtAuth`1.appConfig">
             <summary>
             应用配置
             </summary>
         </member>
-        <member name="M:Hzdtf.Authorization.Web.Core.IdentityJwtAuth`1.Reader">
+        <member name="M:Hzdtf.Authorization.Web.Core.IdentityJwtAuth`1.#ctor(Hzdtf.Authorization.Contract.Standard.User.IUserVali{`0},Hzdtf.Authorization.Contract.Standard.User.IAuthUserData{`0},Microsoft.AspNetCore.Http.IHttpContextAccessor,Hzdtf.Platform.Config.Contract.Standard.Config.App.IAppConfiguration)">
             <summary>
-            读取
+            构造方法
             </summary>
-            <returns>数据</returns>
+            <param name="userVali">用户验证</param>
+            <param name="authUserData">授权用户数据</param>
+            <param name="httpContext">Http上下文访问</param>
+            <param name="appConfig">应用配置</param>
         </member>
         <member name="M:Hzdtf.Authorization.Web.Core.IdentityJwtAuth`1.AccreditToToken(System.String,System.String)">
             <summary>
@@ -89,12 +194,6 @@
             </summary>
             <param name="user">用户</param>
             <param name="password">密码</param>
-            <returns>返回信息</returns>
-        </member>
-        <member name="M:Hzdtf.Authorization.Web.Core.IdentityJwtAuth`1.IsAuthed">
-            <summary>
-            判断是否已授权
-            </summary>
             <returns>返回信息</returns>
         </member>
         <member name="M:Hzdtf.Authorization.Web.Core.IdentityJwtAuth`1.BuilderToken(System.Collections.Generic.IList{System.Security.Claims.Claim})">

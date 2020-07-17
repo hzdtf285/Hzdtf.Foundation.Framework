@@ -228,6 +228,11 @@
             身份授权
             </summary>
         </member>
+        <member name="P:Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.IdentityBasicAuth">
+            <summary>
+            身份基本授权
+            </summary>
+        </member>
         <member name="P:Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.IdentityExit">
             <summary>
             身份退出

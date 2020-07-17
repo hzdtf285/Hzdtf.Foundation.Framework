@@ -34,6 +34,15 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Home
         }
 
         /// <summary>
+        /// 身份基本授权
+        /// </summary>
+        public IIdentityAuth<BasicUserInfo> IdentityBasicAuth
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
         /// 身份退出
         /// </summary>
         public IIdentityExit IdentityExit
@@ -60,10 +69,26 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Home
         [AllowAnonymous]
         public ReturnInfo<LoginReturnInfo> Login(LoginInfo loginInfo)
         {
+            if (IdentityAuth == null && IdentityBasicAuth == null)
+            {
+                var re = new ReturnInfo<LoginReturnInfo>();
+                re.SetFailureMsg("不支持登录");
+
+                return re;
+            }
+
             return ExecLogin(loginInfo, (user, pwd, reInfo) =>
             {
-                var busRe = IdentityAuth.Accredit(loginInfo.LoginId, loginInfo.Password);
-                reInfo.FromBasic(busRe);
+                if (IdentityAuth != null)
+                {
+                    var busRe = IdentityAuth.Accredit(loginInfo.LoginId, loginInfo.Password);
+                    reInfo.FromBasic(busRe);
+                }
+                else
+                {
+                    var busRe = IdentityBasicAuth.Accredit(loginInfo.LoginId, loginInfo.Password);
+                    reInfo.FromBasic(busRe);
+                }
 
                 reInfo.Data = reInfo.Data;
             });
@@ -78,6 +103,13 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Home
         [AllowAnonymous]
         public ReturnInfo<LoginReturnInfo> LoginToToken(LoginInfo loginInfo)
         {
+            if (IdentityTokenAuth == null)
+            {
+                var re = new ReturnInfo<LoginReturnInfo>();
+                re.SetFailureMsg("不支持令牌登录");
+
+                return re;
+            }
             return ExecLogin(loginInfo, (user, pwd, reInfo) =>
             {
                 var busRe = IdentityTokenAuth.AccreditToToken(loginInfo.LoginId, loginInfo.Password);
@@ -96,7 +128,15 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Home
         [HttpDelete("Logout")]
         public ReturnInfo<bool> Logout()
         {
-            ReturnInfo<bool> returnInfo = IdentityExit.Exit();
+            if (IdentityExit == null)
+            {
+                var re = new ReturnInfo<bool>();
+                re.SetFailureMsg("不支持登出");
+
+                return re;
+            }
+
+            var returnInfo = IdentityExit.Exit();
             if (returnInfo.Success())
             {
                 HttpContext.Session.Clear();

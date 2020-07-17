@@ -276,6 +276,11 @@
             @ 黄振东
             </summary>
         </member>
+        <member name="P:Hzdtf.Utility.AspNet.Core.Utils.WebUtil.CurrServiceProvider">
+            <summary>
+            当前服务提供者
+            </summary>
+        </member>
         <member name="M:Hzdtf.Utility.AspNet.Core.Utils.WebUtil.GetBearerOriginTokenFromHeader(Microsoft.AspNetCore.Http.HttpRequest)">
             <summary>
             从请求头里获取原始的票据
