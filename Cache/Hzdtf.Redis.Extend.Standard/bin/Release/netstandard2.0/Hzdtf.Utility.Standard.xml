@@ -1917,6 +1917,22 @@
             生产
             </summary>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.Enums.IdentityAuthType">
+            <summary>
+            身份认证类型
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Enums.IdentityAuthType.COOKIES">
+            <summary>
+            Cookies
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Enums.IdentityAuthType.JWT">
+            <summary>
+            Jwt
+            </summary>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Enums.LifecycleType">
             <summary>
             生命周期类型
@@ -2749,6 +2765,16 @@
             系统内置
             </summary>
         </member>
+        <member name="F:Hzdtf.Utility.Standard.Model.BasicUserInfo.LoginTime_Name">
+            <summary>
+            登录时间_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Model.BasicUserInfo.LoginTime">
+            <summary>
+            登录时间
+            </summary>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Model.CodeNameFilterInfo">
             <summary>
             编码名称筛选信息
@@ -3537,6 +3563,13 @@
             <summary>
             测试用户
             </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.UserTool.GetCurrUser``1">
+            <summary>
+            获取当前用户
+            </summary>
+            <typeparam name="UserT">用户类型</typeparam>
+            <returns>当前用户</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.ProcessCall.IBytesReceive">
             <summary>
@@ -4691,14 +4724,14 @@
         </member>
         <member name="M:Hzdtf.Utility.Standard.Safety.HashUtil.ConsistentHash(System.Byte[])">
             <summary>
-            一致性哈希取余数
+            一致性哈希值
             </summary>
             <param name="digest">字节数组</param>
             <returns>哈希值</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Safety.HashUtil.ConsistentHashMD5(System.String)">
             <summary>
-            一致性哈希取余数(MD5)
+            一致性哈希值(MD5)
             </summary>
             <param name="text">文本</param>
             <returns>哈希值</returns>
@@ -4854,6 +4887,60 @@
             </summary>
             <param name="typeName">类型名，如果有程序集则用,分隔</param>
             <returns>类型</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Utils.AuthUtil">
+            <summary>
+            身份认证辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Utils.AuthUtil.AUTH_KEY">
+            <summary>
+            授权key，值是：Authorization
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.AuthUtil.AddBearerToken(System.String)">
+            <summary>
+            添加Bearer票据
+            </summary>
+            <param name="originalToken">原始票据</param>
+            <returns>添加Bearer票据后的票据</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.AuthUtil.GetBearerOriginalToken(System.String)">
+            <summary>
+            获取Beaer原始票据
+            </summary>
+            <param name="bearerToken">带有Bearer的票据</param>
+            <returns>Beaer原始票据</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.AuthUtil.IsContainerBearer(System.String)">
+            <summary>
+            判断票据是否包含了Bearer
+            </summary>
+            <param name="token">票据</param>
+            <returns>票据是否包含了Bearer</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Utils.ClaimUtil">
+            <summary>
+            证件单元辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.ClaimUtil.Add(System.Collections.Generic.IList{System.Security.Claims.Claim},System.String,System.String)">
+            <summary>
+            添加证件单元到列表里，忽略空值
+            </summary>
+            <param name="claims">证件单元列表</param>
+            <param name="type">类型</param>
+            <param name="value">值</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.ClaimUtil.Get(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.String)">
+            <summary>
+            根据键获取证件单元值，忽略空值
+            </summary>
+            <param name="claims">证件单元列表</param>
+            <param name="type">类型</param>
+            <returns>证件单元值</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Utils.CollectionUtil">
             <summary>
@@ -5507,18 +5594,130 @@
             获取token回调
             </summary>
         </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.Get(System.String)">
+            <summary>
+            Get请求
+            </summary>
+            <param name="url">URL</param>
+            <returns>返回字符串</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.Get(System.Net.Http.HttpClient,System.String)">
+            <summary>
+            Get请求JSON
+            </summary>
+            <param name="httpClient">http客户端</param>
+            <param name="url">URL</param>
+            <returns>返回字符串</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.GetAsync(System.String)">
+            <summary>
+            Get请求
+            </summary>
+            <param name="url">URL</param>
+            <returns>任务</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.GetAsync(System.Net.Http.HttpClient,System.String)">
+            <summary>
+            Get请求
+            </summary>
+            <param name="httpClient">http客户端</param>
+            <param name="url">URL</param>
+            <returns>任务</returns>
+        </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.PostJson(System.String,System.Object)">
             <summary>
-            POST请求JSON
+            Post请求JSON
             </summary>
+            <param name="url">URL</param>
+            <param name="data">数据</param>
+            <returns>返回字符串</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.PostJson(System.Net.Http.HttpClient,System.String,System.Object)">
+            <summary>
+            Post请求JSON
+            </summary>
+            <param name="httpClient">http客户端</param>
             <param name="url">URL</param>
             <param name="data">数据</param>
             <returns>返回字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.PostJsonAsync(System.String,System.Object)">
             <summary>
-            POST请求JSON
+            Post请求JSON
             </summary>
+            <param name="url">URL</param>
+            <param name="data">数据</param>
+            <returns>任务</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.PostJsonAsync(System.Net.Http.HttpClient,System.String,System.Object)">
+            <summary>
+            Post请求JSON
+            </summary>
+            <param name="httpClient">http客户端</param>
+            <param name="url">URL</param>
+            <param name="data">数据</param>
+            <returns>任务</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.Delete(System.String)">
+            <summary>
+            Delete请求
+            </summary>
+            <param name="url">URL</param>
+            <returns>返回字符串</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.Delete(System.Net.Http.HttpClient,System.String)">
+            <summary>
+            Get请求JSON
+            </summary>
+            <param name="httpClient">http客户端</param>
+            <param name="url">URL</param>
+            <returns>返回字符串</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.DeleteAsync(System.String)">
+            <summary>
+            Delete请求
+            </summary>
+            <param name="url">URL</param>
+            <returns>任务</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.DeleteAsync(System.Net.Http.HttpClient,System.String)">
+            <summary>
+            Delete请求
+            </summary>
+            <param name="httpClient">http客户端</param>
+            <param name="url">URL</param>
+            <returns>任务</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.PutJson(System.String,System.Object)">
+            <summary>
+            Put请求JSON
+            </summary>
+            <param name="url">URL</param>
+            <param name="data">数据</param>
+            <returns>返回字符串</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.PutJson(System.Net.Http.HttpClient,System.String,System.Object)">
+            <summary>
+            Put请求JSON
+            </summary>
+            <param name="httpClient">http客户端</param>
+            <param name="url">URL</param>
+            <param name="data">数据</param>
+            <returns>返回字符串</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.PutJsonAsync(System.String,System.Object)">
+            <summary>
+            Put请求JSON
+            </summary>
+            <param name="url">URL</param>
+            <param name="data">数据</param>
+            <returns>任务</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.PutJsonAsync(System.Net.Http.HttpClient,System.String,System.Object)">
+            <summary>
+            Put请求JSON
+            </summary>
+            <param name="httpClient">http客户端</param>
             <param name="url">URL</param>
             <param name="data">数据</param>
             <returns>任务</returns>
@@ -5530,11 +5729,28 @@
             <param name="httpClient">http客户端</param>
             <param name="token">token</param>
         </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.AddContainerBearerTokenToHeader(System.Net.Http.HttpClient,System.String)">
+            <summary>
+            添加包含了token到头里
+            </summary>
+            <param name="httpClient">http客户端</param>
+            <param name="containerBearerToken">包含了bearer token</param>
+        </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.CreateHttpClient">
             <summary>
             创建http客户端
             </summary>
             <returns>http客户端</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.HttpUtil.RequestJson(System.Net.Http.HttpClient,System.String,System.Func{System.Net.Http.HttpContent,System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}},System.Object)">
+            <summary>
+            请求请求JSON
+            </summary>
+            <param name="httpClient">http客户端</param>
+            <param name="method">方法</param>
+            <param name="callbackRequest">回调请求</param>
+            <param name="data">数据</param>        
+            <returns>返回字符串</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Utils.ImageUtil">
             <summary>
@@ -5682,6 +5898,11 @@
             </summary>
             <param name="hostNameOrAddress">主机名或地址</param>
             <returns>是否能ping通</returns>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Utils.NetworkUtil.DEFAULT_HTTP_CLIENT_NAME">
+            <summary>
+            默认HTTP客户端名称
+            </summary>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Utils.NumberUtil">
             <summary>
@@ -6257,6 +6478,20 @@
             <param name="errMsg">错误消息</param>
             <param name="name">名称</param>
             <returns>反序列化后的对象</returns>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Utils.StringUtil.dicHtmlRegexFlags">
+            <summary>
+            HTML正则标记字典
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.StringUtil.FilterHtml(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            过滤HTML格式
+            </summary>
+            <param name="htmlString">HTML字符串</param>
+            <param name="isFilterParagraph">是否过滤段落</param>
+            <param name="isFilterSpace">是否过滤空格</param>
+            <returns>过虑后的字符串</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Utils.ValidateUtil">
             <summary>

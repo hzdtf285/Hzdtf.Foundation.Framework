@@ -38,3 +38,43 @@
 2020-07-17 10:13:03.7309 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
 2020-07-17 10:13:33.8741 Info AppDomain Shutting down. Logger closing...
 2020-07-17 10:13:33.8936 Info Logger has been shut down.
+2020-07-19 16:58:39.9642 Info Message Template Auto Format enabled
+2020-07-19 16:58:39.9920 Info Adding target FileTarget(Name=f)
+2020-07-19 16:58:39.9957 Info Adding target FileTarget(Name=fe)
+2020-07-19 16:58:40.0301 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-07-19 16:58:40.0462 Info Configuration initialized.
+2020-07-19 16:58:40.0462 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-07-19 16:59:09.6587 Info Message Template Auto Format enabled
+2020-07-19 16:59:09.6856 Info Adding target FileTarget(Name=f)
+2020-07-19 16:59:09.6856 Info Adding target FileTarget(Name=fe)
+2020-07-19 16:59:09.7277 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-07-19 16:59:09.7396 Info Configuration initialized.
+2020-07-19 16:59:09.7396 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-07-19 16:59:44.6520 Info AppDomain Shutting down. Logger closing...
+2020-07-19 16:59:44.6520 Info Logger has been shut down.
+2020-07-19 16:59:46.0549 Info Message Template Auto Format enabled
+2020-07-19 16:59:46.0781 Info Adding target FileTarget(Name=f)
+2020-07-19 16:59:46.0781 Info Adding target FileTarget(Name=fe)
+2020-07-19 16:59:46.0961 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-07-19 16:59:46.1069 Info Configuration initialized.
+2020-07-19 16:59:46.1069 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-07-19 17:03:29.6419 Info AppDomain Shutting down. Logger closing...
+2020-07-19 17:03:29.6646 Info Logger has been shut down.
+2020-07-19 17:03:34.8726 Info Message Template Auto Format enabled
+2020-07-19 17:03:34.8983 Info Adding target FileTarget(Name=f)
+2020-07-19 17:03:34.9022 Info Adding target FileTarget(Name=fe)
+2020-07-19 17:03:34.9289 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-07-19 17:03:34.9475 Info Configuration initialized.
+2020-07-19 17:03:34.9508 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-07-19 17:05:01.6279 Info AppDomain Shutting down. Logger closing...
+2020-07-19 17:05:01.6412 Info Logger has been shut down.
+2020-07-19 17:05:04.3281 Info AppDomain Shutting down. Logger closing...
+2020-07-19 17:05:04.3400 Info Logger has been shut down.
+2020-07-19 17:13:42.7276 Info Message Template Auto Format enabled
+2020-07-19 17:13:42.7568 Info Adding target FileTarget(Name=f)
+2020-07-19 17:13:42.7568 Info Adding target FileTarget(Name=fe)
+2020-07-19 17:13:42.7891 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-07-19 17:13:42.8047 Info Configuration initialized.
+2020-07-19 17:13:42.8077 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-07-19 17:20:12.4961 Info AppDomain Shutting down. Logger closing...
+2020-07-19 17:20:12.5188 Info Logger has been shut down.

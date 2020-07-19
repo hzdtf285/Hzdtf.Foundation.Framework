@@ -270,5 +270,43 @@
             </summary>
             <param name="services">服务配置数组</param>
         </member>
+        <member name="T:Hzdtf.Utility.AspNet.Core.ServiceProviderTool">
+            <summary>
+            服务提供者工具
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.AspNet.Core.ServiceProviderTool.Instance">
+            <summary>
+            当前服务提供者实例
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.ServiceProviderTool.GetServiceFromInstance``1">
+            <summary>
+            从当前服务提供者实例获取服务
+            </summary>
+            <typeparam name="T">服务类型</typeparam>
+            <returns>服务</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.AspNet.Core.Utils.WebUtil">
+            <summary>
+            Web 辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.Utils.WebUtil.GetBearerOriginTokenFromHeader(Microsoft.AspNetCore.Http.HttpRequest)">
+            <summary>
+            从请求头里获取原始的票据
+            </summary>
+            <param name="request">http请求</param>
+            <returns>原始的票据</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.Utils.WebUtil.GetContainerBearerOriginTokenFromHeader(Microsoft.AspNetCore.Http.HttpRequest)">
+            <summary>
+            从请求头里获取带有Bearer的票据
+            </summary>
+            <param name="request">http请求</param>
+            <returns>带有Bearer的票据</returns>
+        </member>
     </members>
 </doc>

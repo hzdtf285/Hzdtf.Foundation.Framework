@@ -1,0 +1,55 @@
+{
+  "Services": [
+    {
+      "Names": [
+        "Hzdtf.BasicController.Core",
+        "Hzdtf.WorkFlow.MvcController.Core",
+        "Hzdtf.BasicFunction.MvcController.Core",
+        "Hzdtf.Demo.MvcController.Core"
+      ],
+      "Intercepteds": [
+        "Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.DisabledInterceptor",
+        "Hzdtf.BasicFunction.Service.Autofac.Standard,Hzdtf.BasicFunction.Service.Autofac.Standard.PermissionValiInterceptor"
+      ]
+    },
+    {
+      "Names": [
+        "Hzdtf.Utility.Standard",
+        "Hzdtf.Platform.Contract.Standard",
+        "Hzdtf.Platform.Impl.Core",
+        "Hzdtf.Logger.Contract.Standard",
+        "Hzdtf.Logger.Integration.ENLog.Standard",
+        "Hzdtf.Persistence.Contract.Standard",
+        "Hzdtf.WorkFlow.Persistence.Contract.Standard",
+        "Hzdtf.WorkFlow.MySql.Standard",
+        "Hzdtf.BasicFunction.Persistence.Contract.Std",
+        "Hzdtf.BasicFunction.MySql.Standard",
+        "Hzdtf.Demo.Persistence.Contract.Standard",
+        "Hzdtf.Demo.MySql.Standard",
+        "Hzdtf.Authorization.Contract.Standard",
+        "Hzdtf.Authorization.Web.Core"
+      ], 
+      "Lifecycle": "SIGNLETON"
+    },
+    {
+      "Names": [
+        "Hzdtf.WorkFlow.Service.Contract.Standard",
+        "Hzdtf.WorkFlow.Service.Impl.Standard",
+        "Hzdtf.BasicFunction.Service.Contract.Standard",
+        "Hzdtf.BasicFunction.Service.Impl.Standard",
+        "Hzdtf.BasicFunction.WorkFlow.Standard",
+        "Hzdtf.Demo.Service.Contract.Standard",
+        "Hzdtf.Demo.Service.Impl.Standard"
+      ],
+      "Lifecycle": "SIGNLETON",
+      "Intercepteds": [
+        "Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.TryExceptionInterceptor",
+        "Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.AuthInterceptor",
+        "Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor",
+        "Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.ParamValiInterceptor",
+        "Hzdtf.Persistence.Autofac.Standard,Hzdtf.Persistence.Autofac.Standard.TransactionInterceptor"
+      ]
+    }
+  ],
+  "IsLoadAutoMapperConfig": true
+}

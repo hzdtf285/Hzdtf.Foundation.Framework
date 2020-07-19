@@ -3564,6 +3564,13 @@
             测试用户
             </summary>
         </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.UserTool.GetCurrUser``1">
+            <summary>
+            获取当前用户
+            </summary>
+            <typeparam name="UserT">用户类型</typeparam>
+            <returns>当前用户</returns>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.ProcessCall.IBytesReceive">
             <summary>
             字节数组接收接口

@@ -11,12 +11,10 @@
           "Hzdtf.Logger.Contract.Standard": "2.0.0",
           "Hzdtf.Utility.Standard": "2.0.0",
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
-          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.Extensions.Configuration": "3.1.5",
           "Microsoft.Extensions.Configuration.Json": "3.1.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.5",
           "Microsoft.Extensions.Hosting.Abstractions": "3.1.5",
-          "Microsoft.Extensions.Http": "3.1.5",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "3.1.5"
         },
         "runtime": {
@@ -210,17 +208,6 @@
           }
         }
       },
-      "Microsoft.Extensions.DependencyInjection/3.1.5": {
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.5"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll": {
-            "assemblyVersion": "3.1.5.0",
-            "fileVersion": "3.100.520.27009"
-          }
-        }
-      },
       "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.5": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
@@ -269,33 +256,6 @@
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Extensions.Hosting.Abstractions.dll": {
-            "assemblyVersion": "3.1.5.0",
-            "fileVersion": "3.100.520.27009"
-          }
-        }
-      },
-      "Microsoft.Extensions.Http/3.1.5": {
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.5",
-          "Microsoft.Extensions.Logging": "3.1.5",
-          "Microsoft.Extensions.Options": "3.1.5"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Microsoft.Extensions.Http.dll": {
-            "assemblyVersion": "3.1.5.0",
-            "fileVersion": "3.100.520.27009"
-          }
-        }
-      },
-      "Microsoft.Extensions.Logging/3.1.5": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Binder": "3.1.5",
-          "Microsoft.Extensions.DependencyInjection": "3.1.5",
-          "Microsoft.Extensions.Logging.Abstractions": "3.1.5",
-          "Microsoft.Extensions.Options": "3.1.5"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Microsoft.Extensions.Logging.dll": {
             "assemblyVersion": "3.1.5.0",
             "fileVersion": "3.100.520.27009"
           }
@@ -666,13 +626,6 @@
       "path": "microsoft.extensions.configuration.json/3.1.5",
       "hashPath": "microsoft.extensions.configuration.json.3.1.5.nupkg.sha512"
     },
-    "Microsoft.Extensions.DependencyInjection/3.1.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-I+RTJQi7TtenIHZqL2zr6523PYXfL88Ruu4UIVmspIxdw14GHd8zZ+2dGLSdwX7fn41Hth4d42S1e1iHWVOJyQ==",
-      "path": "microsoft.extensions.dependencyinjection/3.1.5",
-      "hashPath": "microsoft.extensions.dependencyinjection.3.1.5.nupkg.sha512"
-    },
     "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.5": {
       "type": "package",
       "serviceable": true,
@@ -707,20 +660,6 @@
       "sha512": "sha512-e57iK9spITqHE7qNgC3IowzK+PK5NC2rmVY4Sz+ZoDNO24nIsgllIRbanSbt2wQz7Iy/N8Jm3C1sXqKc8zEOMQ==",
       "path": "microsoft.extensions.hosting.abstractions/3.1.5",
       "hashPath": "microsoft.extensions.hosting.abstractions.3.1.5.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Http/3.1.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-P8yu3UDd0X129FmxJN0/nObuuH4v7YoxK00kEs8EU4R7POa+3yp/buux74fNYTLORuEqjBTMGtV7TBszuvCj7g==",
-      "path": "microsoft.extensions.http/3.1.5",
-      "hashPath": "microsoft.extensions.http.3.1.5.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Logging/3.1.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-C85NYDym6xy03o70vxX+VQ4ZEjj5Eg5t5QoGW0t100vG5MmPL6+G3XXcQjIIn1WRQrjzGWzQwuKf38fxXEWIWA==",
-      "path": "microsoft.extensions.logging/3.1.5",
-      "hashPath": "microsoft.extensions.logging.3.1.5.nupkg.sha512"
     },
     "Microsoft.Extensions.Logging.Abstractions/3.1.5": {
       "type": "package",

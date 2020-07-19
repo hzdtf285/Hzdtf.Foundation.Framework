@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户</title>
+    <!-- jqgrid-->
+    <link href="/css/plugins/jqgrid/ui.jqgridffe4.css?0820" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+
+    <link href="/css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+    <link href="/css/style.min.css?v=4.1.0" rel="stylesheet">
+    <link href="/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="/css/plugins/toastr/toastr.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="/js/common/icon_common.js"></script>
+</head>
+
+<body class="gray-bg">
+    <input id="currOper" type="hidden" />
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox ">
+                    <div class="ibox-content">
+                        <form id="searchForm" role="form" class="form-inline">
+                            <div class="form-group">
+                                <label>所属角色：</label>
+                                <select class="form-control m-b" name="roleId">
+                                    <option value="">--请选择--</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>关键字：</label>
+                                <input type="text" placeholder="按编码/姓名/登录ID模糊查询" name="keyword" class="form-control" maxlength="20" />
+                            </div>
+                            <div class="form-group">
+                                <label>启用：</label>
+                                <select class="form-control m-b" id="isEnabled">
+                                    <option value="">--请选择--</option>
+                                    <option value="true">是</option>
+                                    <option value="false">否</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary" id="btnQuery" functionCode="Query" style="display:none;">查询</button>
+                                <button type="reset" class="btn btn-primary" name="reset" functionCode="Query" id="btnReset" style="display:none;">重置</button>
+                                <button type="button" class="btn btn-primary" id="btnAdd" functionCode="Add" style="display:none;">添加</button>
+                                <button type="button" class="btn btn-primary" id="btnBatchRemove" functionCode="Remove" style="display:none;">批量移除</button>
+                                <a href="#" id="downExcel" class="btn btn-primary" functionCode="ExportExcel" style="display:none;">导出Excel</a>
+                                <button type="button" style="display:none" id="btnOpenEditDialog" data-toggle="modal" data-target="#formDialog"></button>
+                                <button type="button" style="display:none" id="btnOpenResetPasswordDialog" data-toggle="modal" data-target="#resetPasswordDialog"></button>
+                            </div>
+                        </form>
+                        <div class="jqGrid_wrapper">
+                            <table id="table_list"></table>
+                            <div id="pager_list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal inmodal" id="formDialog" tabindex="-1" User="dialog" aria-hidden="true"></div>
+    <div class="modal inmodal" id="resetPasswordDialog" tabindex="-1" User="dialog" aria-hidden="true"></div>
+
+    <script src="/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="/js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="/js/plugins/jqgrid/i18n/grid.locale-cnffe4.js?0820"></script>
+    <script src="/js/plugins/jqgrid/jquery.jqGrid.minffe4.js?0820"></script>
+    <script src="/js/plugins/toastr/toastr.min.js"></script>
+
+    <script type="text/javascript" src="/js/plugins/sweetalert/sweetalert.min.js"></script>
+    <script type="text/javascript" src="/js/plugins/validate/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/js/plugins/validate/messages_zh.min.js"></script>
+    <script type="text/javascript" src="/js/plugins/iCheck/icheck.min.js"></script>
+
+    <script type="text/javascript" src="/js/common/common.js?v=1.7"></script>
+    <script type="text/javascript" src="/js/common/form.js?v=1.0"></script>
+    <script type="text/javascript" src="/js/common/hplus_dialog.js"></script>
+    <script type="text/javascript" src="/js/common/aJqGrid.js?v=1.1"></script>
+    <script type="text/javascript" src="/js/common/basicManage.js"></script>
+
+    <script type="text/javascript" src="/html/BasicFunction/User/page.js"></script>
+</body>
+</html>

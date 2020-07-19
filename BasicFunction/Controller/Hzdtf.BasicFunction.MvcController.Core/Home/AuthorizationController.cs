@@ -67,7 +67,7 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Home
         /// <returns>返回信息</returns>
         [HttpPost("Login")]
         [AllowAnonymous]
-        public ReturnInfo<LoginReturnInfo> Login(LoginInfo loginInfo)
+        public virtual ReturnInfo<LoginReturnInfo> Login(LoginInfo loginInfo)
         {
             if (IdentityAuth == null && IdentityBasicAuth == null)
             {
@@ -101,7 +101,7 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Home
         /// <returns>返回信息</returns>
         [HttpPost("LoginToToken")]
         [AllowAnonymous]
-        public ReturnInfo<LoginReturnInfo> LoginToToken(LoginInfo loginInfo)
+        public virtual ReturnInfo<LoginReturnInfo> LoginToToken(LoginInfo loginInfo)
         {
             if (IdentityTokenAuth == null)
             {
@@ -126,7 +126,7 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Home
         /// </summary>
         /// <returns>返回信息</returns>
         [HttpDelete("Logout")]
-        public ReturnInfo<bool> Logout()
+        public virtual ReturnInfo<bool> Logout()
         {
             if (IdentityExit == null)
             {

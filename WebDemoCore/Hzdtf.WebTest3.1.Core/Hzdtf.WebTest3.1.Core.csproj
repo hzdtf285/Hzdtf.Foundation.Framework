@@ -12,11 +12,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Authorization\Hzdtf.Authorization.Web.Core\Hzdtf.Authorization.Web.Core.csproj" />
     <ProjectReference Include="..\..\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\Hzdtf.BasicFunction.MvcController.Core.csproj" />
     <ProjectReference Include="..\..\BasicFunction\Persistence\Hzdtf.BasicFunction.MySql.Standard\Hzdtf.BasicFunction.MySql.Standard.csproj" />
     <ProjectReference Include="..\..\BasicFunction\Service\Hzdtf.BasicFunction.Service.Impl.Standard\Hzdtf.BasicFunction.Service.Impl.Standard.csproj" />
     <ProjectReference Include="..\..\BasicFunction\WorkFlow\Hzdtf.BasicFunction.WorkFlow.Standard\Hzdtf.BasicFunction.WorkFlow.Standard.csproj" />
+    <ProjectReference Include="..\..\Cache\Hzdtf.Redis.Extend.Core\Hzdtf.Redis.Extend.Core.csproj" />
     <ProjectReference Include="..\..\Common\Hzdtf.Utility.AspNet.Core\Hzdtf.Utility.AspNet.Core.csproj" />
     <ProjectReference Include="..\..\Controller\Hzdtf.BasicController.Core\Hzdtf.BasicController.Core.csproj" />
     <ProjectReference Include="..\..\Demo\Controller\Hzdtf.Demo.MvcController.Core\Hzdtf.Demo.MvcController.Core.csproj" />

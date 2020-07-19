@@ -11,11 +11,6 @@
             </summary>
             <typeparam name="TResult">结果类型</typeparam>
         </member>
-        <member name="F:Hzdtf.Polly.Extensions.Standard.BreakerWrapPolicyOptions`1.id">
-            <summary>
-            ID
-            </summary>
-        </member>
         <member name="P:Hzdtf.Polly.Extensions.Standard.BreakerWrapPolicyOptions`1.Id">
             <summary>
             ID
@@ -39,6 +34,11 @@
         <member name="P:Hzdtf.Polly.Extensions.Standard.BreakerWrapPolicyOptions`1.Result">
             <summary>
             结果
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Polly.Extensions.Standard.BreakerWrapPolicyOptions`1.GetResult">
+            <summary>
+            获取结果回调
             </summary>
         </member>
         <member name="T:Hzdtf.Polly.Extensions.Standard.BreakerOptions">

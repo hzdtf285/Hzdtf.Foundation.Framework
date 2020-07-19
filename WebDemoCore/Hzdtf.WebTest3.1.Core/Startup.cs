@@ -20,6 +20,7 @@ using System.IO;
 using System.Text;
 using Hzdtf.Authorization.Web.Core;
 using Hzdtf.Utility.AspNet.Core;
+using Hzdtf.Redis.Extend.Core;
 
 namespace Hzdtf.WebTest3._1.Core
 {
@@ -45,13 +46,13 @@ namespace Hzdtf.WebTest3._1.Core
                 });
 
             services.AddSession();
+            
+            services.AddDistributedRedisCache();// 添加分布式缓存为Redis，如将session存储到redis，则执行此句
 
             services.AddIdentityAuth(options =>
             {
-                options.AuthType = Utility.Standard.Enums.IdentityAuthType.JWT;
-                options.LoginPath = "/login.html";
-            });         
-
+                options.LocalAuth.LoginPath = "/login.html";
+            });
 
             services.AddMvc(options =>
             {
@@ -124,6 +125,8 @@ namespace Hzdtf.WebTest3._1.Core
                        name: "default",
                        pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+
 
             if (Configuration.GetValue<bool>("Swagger:Enabled"))
             {

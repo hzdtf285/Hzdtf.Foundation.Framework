@@ -89,19 +89,30 @@
             身份认证类型，默认为Cookies
             </summary>
         </member>
-        <member name="P:Hzdtf.Authorization.Web.Core.IdentityAuthOptions.LoginPath">
+        <member name="P:Hzdtf.Authorization.Web.Core.IdentityAuthOptions.LocalAuth">
             <summary>
-            登录路径
-            </summary>
-        </member>
-        <member name="P:Hzdtf.Authorization.Web.Core.IdentityAuthOptions.IsRedirectToLogin">
-            <summary>
-            是否重定向
+            本地认证配置
             </summary>
         </member>
         <member name="P:Hzdtf.Authorization.Web.Core.IdentityAuthOptions.Config">
             <summary>
             配置
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Authorization.Web.Core.LocalAuthOptions">
+            <summary>
+            本地认证选项配置
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Authorization.Web.Core.LocalAuthOptions.LoginPath">
+            <summary>
+            登录路径
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Authorization.Web.Core.LocalAuthOptions.IsRedirectToLogin">
+            <summary>
+            是否重定向
             </summary>
         </member>
         <member name="T:Hzdtf.Authorization.Web.Core.IdentityCookieAuth`1">

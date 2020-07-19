@@ -54,30 +54,31 @@ namespace Hzdtf.Authorization.Web.Core
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton<IIdentityAuthReader<UserT>, IdentityAuthClaimReader<UserT>>();
 
+            var localOption = config.LocalAuth;
             switch (config.AuthType)
             {
                 case IdentityAuthType.COOKIES:
                     services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                     .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, o =>
                     {
-                        if (string.IsNullOrWhiteSpace(config.LoginPath))
+                        if (string.IsNullOrWhiteSpace(localOption.LoginPath))
                         {
                             return;
                         }
 
-                        if (config.IsRedirectToLogin)
+                        if (localOption.IsRedirectToLogin)
                         {
                             o.Events.OnRedirectToLogin = (context) =>
                             {
                                 return Task.Run(() =>
                                 {
-                                    context.Response.Redirect(config.LoginPath);
+                                    context.Response.Redirect(localOption.LoginPath);
                                 });
                             };
                         }
                         else
                         {
-                            o.LoginPath = new PathString(config.LoginPath);
+                            o.LoginPath = new PathString(localOption.LoginPath);
                         }
                     });
 
@@ -109,7 +110,6 @@ namespace Hzdtf.Authorization.Web.Core
                         });
 
                     services.AddSingleton<IIdentityTokenAuth, IdentityJwtAuth<UserT>>();
-
 
                     break;
             }
@@ -173,6 +173,31 @@ namespace Hzdtf.Authorization.Web.Core
         } = IdentityAuthType.COOKIES;
 
         /// <summary>
+        /// 本地认证配置
+        /// </summary>
+        public LocalAuthOptions LocalAuth
+        {
+            get;
+            set;
+        } = new LocalAuthOptions();
+
+        /// <summary>
+        /// 配置
+        /// </summary>
+        public IConfiguration Config
+        {
+            get;
+            set;
+        } = PlatformCodeTool.Config;
+    }
+
+    /// <summary>
+    /// 本地认证选项配置
+    /// @ 黄振东
+    /// </summary>
+    public class LocalAuthOptions
+    {
+        /// <summary>
         /// 登录路径
         /// </summary>
         public string LoginPath
@@ -189,14 +214,5 @@ namespace Hzdtf.Authorization.Web.Core
             get;
             set;
         }
-
-        /// <summary>
-        /// 配置
-        /// </summary>
-        public IConfiguration Config
-        {
-            get;
-            set;
-        } = PlatformCodeTool.Config;
     }
 }

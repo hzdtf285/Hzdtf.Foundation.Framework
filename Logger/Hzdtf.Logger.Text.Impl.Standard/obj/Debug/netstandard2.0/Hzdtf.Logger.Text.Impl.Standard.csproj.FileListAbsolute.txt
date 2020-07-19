@@ -99,3 +99,4 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Text.Impl.St
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Text.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Text.Impl.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Text.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Text.Impl.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Text.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Text.Impl.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Text.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Text.Impl.Standard.csprojAssemblyReference.cache

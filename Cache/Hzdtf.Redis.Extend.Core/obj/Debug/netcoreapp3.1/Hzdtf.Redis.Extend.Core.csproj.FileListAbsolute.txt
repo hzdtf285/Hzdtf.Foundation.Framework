@@ -1,5 +1,4 @@
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Cache\Hzdtf.Redis.Extend.Core\obj\Debug\netcoreapp3.1\Hzdtf.Redis.Extend.Core.csprojAssemblyReference.cache
-C:\AndyData\MyProject\Hzdtf.FoundationFramework\Cache\Hzdtf.Redis.Extend.Core\obj\Debug\netcoreapp3.1\Hzdtf.Redis.Extend.Core.csproj.CoreCompileInputs.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Cache\Hzdtf.Redis.Extend.Core\obj\Debug\netcoreapp3.1\Hzdtf.Redis.Extend.Core.AssemblyInfoInputs.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Cache\Hzdtf.Redis.Extend.Core\obj\Debug\netcoreapp3.1\Hzdtf.Redis.Extend.Core.AssemblyInfo.cs
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Cache\Hzdtf.Redis.Extend.Core\bin\Debug\netcoreapp3.1\Config\LanguageLibrary\Hzdtf.Utility.Standard.LanguageLibrary.json
@@ -22,3 +21,4 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Cache\Hzdtf.Redis.Extend.Core\bi
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Cache\Hzdtf.Redis.Extend.Core\bin\Debug\netcoreapp3.1\Hzdtf.Redis.Extend.Core.xml
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Cache\Hzdtf.Redis.Extend.Core\obj\Debug\netcoreapp3.1\Hzdtf.Redis.Extend.Core.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Cache\Hzdtf.Redis.Extend.Core\obj\Debug\netcoreapp3.1\Hzdtf.Redis.Extend.Core.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Cache\Hzdtf.Redis.Extend.Core\obj\Debug\netcoreapp3.1\Hzdtf.Redis.Extend.Core.csproj.CoreCompileInputs.cache
