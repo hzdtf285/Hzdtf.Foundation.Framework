@@ -37,7 +37,7 @@ namespace Hzdtf.BasicFunction.MvcController.Framework.Home
         /// <returns>返回信息</returns>
         [HttpPost]
         [AllowAnonymous]
-        public ReturnInfo<LoginReturnInfo> Login(LoginInfo user)
+        public virtual ReturnInfo<LoginReturnInfo> Login(LoginInfo user)
         {
             ReturnInfo<LoginReturnInfo> returnInfo = new ReturnInfo<LoginReturnInfo>()
             {
@@ -91,7 +91,7 @@ namespace Hzdtf.BasicFunction.MvcController.Framework.Home
         /// </summary>
         /// <returns>返回信息</returns>
         [HttpDelete]
-        public ReturnInfo<bool> Logout()
+        public virtual ReturnInfo<bool> Logout()
         {
             ReturnInfo<bool> returnInfo = IdentityAuth.Exit();
             if (returnInfo.Success())
