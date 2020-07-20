@@ -4,7 +4,9 @@
 
 <Workspace>
 	<Local Expanded="Yes">
-		<Model Expanded="Yes" ID="{6B009F6F-0EF3-4701-ADCF-7DF105FC0A03}" Name="IM概念模型" Selected="Yes" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="/svn/00_FEG_IM/Document/IM概念模型.cdm"/>
+		<Model Expanded="Yes" ID="{5D21C927-87FB-4181-8036-8CDBA6ECBCB4}" Name="BasicFunction" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="BasicFunction.cdm"/>
+		<Model Expanded="Yes" ID="{84579D15-4292-496D-99FD-8C542674A273}" Name="BasicFunction_mysql" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="BasicFunction_mysql.pdm"/>
+		<Model Expanded="Yes" ID="{2FE961B5-B97C-4165-988C-7A59C7ADC60A}" Name="BasicFunction_sqlserver" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="BasicFunction_sqlserver.pdm"/>
 	</Local>
 	<BrowserModule Name="Repository"/>
 </Workspace>

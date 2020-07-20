@@ -158,6 +158,7 @@ CREATE TABLE `form` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Id',
   `name` varchar(20) NOT NULL COMMENT '名称',
   `form_url` varchar(200) NOT NULL COMMENT '表单URL',
+  `form_get_detail_url` varchar(200) NOT NULL COMMENT '表单获取明细URL',
   `creater_id` int(11) NOT NULL COMMENT '创建人ID',
   `creater` varchar(20) NOT NULL COMMENT '创建人',
   `create_time` datetime NOT NULL COMMENT '创建时间',
@@ -169,7 +170,7 @@ CREATE TABLE `form` (
 
 /*Data for the table `form` */
 
-insert  into `form`(`id`,`name`,`form_url`,`creater_id`,`creater`,`create_time`,`modifier_id`,`modifier`,`modify_time`) values (3,'测试表单','/html/Demo/Form/flowForm.html',0,'系统管理员','2019-08-06 23:06:35',1,'1','2019-08-06 23:06:40');
+insert  into `form`(`id`,`name`,`form_url`,`creater_id`,`creater`,`create_time`,`modifier_id`,`modifier`,`modify_time`, `form_get_detail_url`) values (3,'测试表单','/html/Demo/Form/flowForm.html',0,'系统管理员','2019-08-06 23:06:35',1,'1','2019-08-06 23:06:40','/api/TestFormWorkflow/GetFormDetail');
 
 /*Table structure for table `function` */
 
