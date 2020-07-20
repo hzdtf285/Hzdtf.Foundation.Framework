@@ -10,7 +10,7 @@ $(function () {
                         var str = obj.ownRoles.split(",");
                         var roles = [];
                         for (var i = 0; i < str.length; i++) {
-                            roles.push({ id: str[i], name: "fff" });
+                            roles.push({ id: parseInt(str[i]), name: "guest_role" });
                         }
 
                         obj.ownRoles = roles;

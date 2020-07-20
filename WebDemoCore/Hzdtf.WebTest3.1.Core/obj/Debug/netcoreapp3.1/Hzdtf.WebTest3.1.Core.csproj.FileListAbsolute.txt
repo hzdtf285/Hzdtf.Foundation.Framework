@@ -303,3 +303,4 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Cor
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\obj\Debug\netcoreapp3.1\Hzdtf.WebTest3.1.Core.csproj.CoreCompileInputs.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\obj\Debug\netcoreapp3.1\Hzdtf.WebTest3.1.Core.MvcApplicationPartsAssemblyInfo.cs
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\obj\Debug\netcoreapp3.1\Hzdtf.WebTest3.1.Core.MvcApplicationPartsAssemblyInfo.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\Config\attachmentOwnerConfig.json

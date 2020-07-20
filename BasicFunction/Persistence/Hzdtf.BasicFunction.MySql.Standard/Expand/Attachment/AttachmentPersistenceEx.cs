@@ -102,9 +102,11 @@ namespace Hzdtf.BasicFunction.MySql.Standard
                 whereSql.AppendFormat(" AND `{0}`=@OwnerType", GetFieldByProp("OwnerType"));
                 parameters.Add("@OwnerType", attachFilter.OwnerType);
 
-                whereSql.AppendFormat(" AND `{0}`=@OwnerId", GetFieldByProp("OwnerId"));
-                parameters.Add("@OwnerId", attachFilter.OwnerId);
-
+                if (attachFilter.OwnerId != null)
+                {
+                    whereSql.AppendFormat(" AND `{0}`=@OwnerId", GetFieldByProp("OwnerId"));
+                    parameters.Add("@OwnerId", attachFilter.OwnerId);
+                }
                 if (!string.IsNullOrWhiteSpace(attachFilter.BlurTitle))
                 {
                     whereSql.AppendFormat(" AND `{0}` LIKE '%{1}%'", GetFieldByProp("Title"), attachFilter.BlurTitle.FillSqlValue());

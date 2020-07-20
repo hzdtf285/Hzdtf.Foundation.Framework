@@ -305,7 +305,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Management
                 {
                     foreach (DbConnectionEx dbConnection in dbConnections)
                     {
-                        if (dbConnection != null)
+                        if (dbConnection != null && dbConnection.DbConnection != null)
                         {
                             try
                             {

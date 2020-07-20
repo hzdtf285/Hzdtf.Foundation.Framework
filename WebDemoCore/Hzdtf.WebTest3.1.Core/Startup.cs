@@ -20,7 +20,7 @@ using System.IO;
 using System.Text;
 using Hzdtf.Authorization.Web.Core;
 using Hzdtf.Utility.AspNet.Core;
-using Hzdtf.Redis.Extend.Core;
+using Hzdtf.Utility.AspNet.Core.ModelValidate;
 
 namespace Hzdtf.WebTest3._1.Core
 {
@@ -43,11 +43,15 @@ namespace Hzdtf.WebTest3._1.Core
                 .AddJsonOptions(options =>
                 {
                     options.JsonSerializerOptions.IgnoreNullValues = true;
+                })
+                .ConfigureApiBehaviorOptions(options =>
+                {
+                    options.SuppressModelStateInvalidFilter = true; // 忽略api接口的错误模型状态
                 });
 
             services.AddSession();
             
-            services.AddDistributedRedisCache();// 添加分布式缓存为Redis，如将session存储到redis，则执行此句
+            //services.AddDistributedRedisCache();// 添加分布式缓存为Redis，如将session存储到redis，则执行此句
 
             services.AddIdentityAuth(options =>
             {
@@ -56,8 +60,7 @@ namespace Hzdtf.WebTest3._1.Core
 
             services.AddMvc(options =>
             {
-                options.MaxModelValidationErrors = 0;
-                options.ValidateComplexTypesIfChildValidationFails = false;
+                options.Filters.Add<ModelValidateActionFilter>();
             });
             services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.All));
 
@@ -71,6 +74,7 @@ namespace Hzdtf.WebTest3._1.Core
                     //options.LogRecordLevel.SetRecordLevel(LogLevel.Warning.ToString());
                 });
             });
+
 
             services.AddApiExceptionHandle();
 
@@ -125,8 +129,6 @@ namespace Hzdtf.WebTest3._1.Core
                        name: "default",
                        pattern: "{controller=Home}/{action=Index}/{id?}");
             });
-
-
 
             if (Configuration.GetValue<bool>("Swagger:Enabled"))
             {

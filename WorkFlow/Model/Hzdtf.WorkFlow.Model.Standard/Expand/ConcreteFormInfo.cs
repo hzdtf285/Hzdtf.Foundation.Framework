@@ -37,6 +37,27 @@ namespace Hzdtf.WorkFlow.Model.Standard.Expand
         }
 
         /// <summary>
+        /// 标题_名称
+        /// </summary>
+		public const string Title_Name = "Title";
+
+        /// <summary>
+        /// 标题
+        /// </summary>
+        [JsonProperty("title")]
+        [Required]
+        [MaxLength(50)]
+
+        [DisplayName("标题")]
+        [Display(Name = "标题", Order = 22, AutoGenerateField = true)]
+        [MessagePack.Key("title")]
+        public string Title
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
         /// 流程状态_名称
         /// </summary>
         public const string FlowStatus_Name = "FlowStatus";

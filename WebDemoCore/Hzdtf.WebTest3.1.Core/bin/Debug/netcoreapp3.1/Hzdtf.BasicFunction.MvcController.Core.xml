@@ -87,11 +87,11 @@
             附件服务
             </summary>
         </member>
-        <member name="M:Hzdtf.BasicFunction.MvcController.Core.Expand.Attachment.AttachmentExController.Upload(Hzdtf.BasicFunction.Model.Standard.AttachmentInfo)">
+        <member name="M:Hzdtf.BasicFunction.MvcController.Core.Expand.Attachment.AttachmentExController.Upload(Hzdtf.BasicFunction.Model.Standard.Expand.Attachment.SimpleAttachmentInfo)">
             <summary>
             上传附件
             </summary>
-            <param name="attachment">附件</param>
+            <param name="simpleAttachment">简单附件</param>
         </member>
         <member name="M:Hzdtf.BasicFunction.MvcController.Core.Expand.Attachment.AttachmentExController.BeforeUpload(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},Hzdtf.BasicFunction.Model.Standard.AttachmentInfo)">
             <summary>

@@ -43,6 +43,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="streams">文件流列表</param>
         /// <returns>返回信息</returns>
         [Auth]
+        [ProcTrackLog(IgnoreParamValues = true)]
         public virtual ReturnInfo<bool> Upload(IList<AttachmentInfo> attachments, IList<Stream> streams)
         {
             ReturnInfo<bool> re = new ReturnInfo<bool>();
@@ -87,6 +88,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="stream">文件流列表</param>
         /// <returns>返回信息</returns>
         [Auth]
+        [ProcTrackLog(IgnoreParamValues = true)]
         public virtual ReturnInfo<bool> Upload([DisplayName2("附件"), Model] AttachmentInfo attachment, Stream stream)
         {
             AttachmentStreamInfo attachmentStream = new AttachmentStreamInfo()

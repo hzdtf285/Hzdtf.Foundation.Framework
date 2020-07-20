@@ -5,6 +5,7 @@ using System.Text;
 using Dapper;
 using Hzdtf.Persistence.Contract.Standard.Management;
 using Hzdtf.Utility.Standard.Enums;
+using Hzdtf.Utility.Standard.Model;
 
 namespace Hzdtf.Demo.MySql.Standard
 {
@@ -66,6 +67,25 @@ namespace Hzdtf.Demo.MySql.Standard
             });
 
             return result;
+        }
+
+        /// <summary>
+        /// 获取查询分页连接SQL
+        /// </summary>
+        /// <param name="parameters">参数</param>
+        /// <param name="filter">筛选</param>
+        /// <returns>连接SQL语句</returns>
+        protected override string GetSelectPageJoinSql(DynamicParameters parameters, FilterInfo filter = null)
+        {
+            return $"LEFT JOIN `workflow` w ON w.apply_no=`{Table}`.apply_no";
+        }
+
+        /// <summary>
+        /// 追加查询分页字段SQL
+        /// </summary>
+        protected override string AppendSelectPageFieldsSql()
+        {
+            return ",w.`title` Title";
         }
     }
 }

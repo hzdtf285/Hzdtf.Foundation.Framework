@@ -260,7 +260,14 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.IFormDataReader.ReaderByWorkflowId(System.Int32,System.String)">
+        <member name="T:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.IFormDataReader`1">
+            <summary>
+            表单数据读取接口
+            @ 黄振东
+            </summary>
+            <typeparam name="FormT">表单类型</typeparam>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.IFormDataReader`1.ReaderByWorkflowId(System.Int32,System.String)">
             <summary>
             根据工作流ID读取表单数据
             </summary>

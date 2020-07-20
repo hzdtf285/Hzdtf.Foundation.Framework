@@ -31,6 +31,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             "modifier_id",
             "modify_time",
             "name",
+            "form_get_detail_url"
         };
 
         /// <summary>
@@ -43,6 +44,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             "modifier_id",
             "modify_time",
             "name",
+            "form_get_detail_url"
         };
 
         /// <summary>
@@ -59,6 +61,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             "modifier_id ModifierId",
             "modify_time ModifyTime",
             "name Name",
+            "form_get_detail_url FormGetDetailUrl",
         };
 
         /// <summary>
@@ -97,6 +100,9 @@ namespace Hzdtf.WorkFlow.MySql.Standard
 
 ﻿                case "name":
                     return model.Name;
+
+                case "form_get_detail_url":
+                    return model.FormGetDetailUrl;
 
                 default:
                     return null;

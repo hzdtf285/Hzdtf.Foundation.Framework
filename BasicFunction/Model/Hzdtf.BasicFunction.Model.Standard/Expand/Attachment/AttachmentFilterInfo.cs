@@ -30,7 +30,7 @@ namespace Hzdtf.BasicFunction.Model.Standard.Expand.Attachment
         /// </summary>
         [JsonProperty("ownerId")]
         [MessagePack.Key("ownerId")]
-        public int OwnerId
+        public int? OwnerId
         {
             get;
             set;

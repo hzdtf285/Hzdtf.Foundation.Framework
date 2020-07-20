@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Hzdtf.BasicFunction.Model.Standard;
+using Hzdtf.BasicFunction.Model.Standard.Expand.Attachment;
 using Hzdtf.BasicFunction.Model.Standard.Expand.User;
 using Hzdtf.Utility.Standard.AutoMapperExtensions;
 using System;
@@ -22,6 +23,8 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         {
             config.CreateMap<UserInfo, UserMenuInfo>();
             config.CreateMap<UserMenuInfo, UserInfo>();
+            config.CreateMap<AttachmentInfo, SimpleAttachmentInfo>();
+            config.CreateMap<SimpleAttachmentInfo, AttachmentInfo>();
         }
     }
 }

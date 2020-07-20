@@ -37,7 +37,6 @@ namespace Hzdtf.WorkFlow.Model.Standard.Expand
         [JsonProperty("workflowCode")]
         [DisplayName("工作流编码")]
         [Display(Name = "工作流编码")]
-        [Required]
         [MaxLength(2)]
         [MessagePack.Key("workflowCode")]
         public string WorkflowCode
@@ -52,7 +51,6 @@ namespace Hzdtf.WorkFlow.Model.Standard.Expand
         [JsonProperty("applyNo")]
         [DisplayName("申请单号")]
         [Display(Name = "申请单号")]
-        [Required]
         [MaxLength(20)]
         [MessagePack.Key("applyNo")]
         public string ApplyNo
@@ -67,7 +65,6 @@ namespace Hzdtf.WorkFlow.Model.Standard.Expand
         [JsonProperty("title")]
         [DisplayName("标题")]
         [Display(Name = "标题")]
-        [Required]
         [MaxLength(50)]
         [MessagePack.Key("title")]
         public string Title

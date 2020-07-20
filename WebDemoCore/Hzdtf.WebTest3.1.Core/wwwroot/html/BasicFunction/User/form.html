@@ -7,7 +7,7 @@
             <h4 class="modal-title"><span id="preFormTitle"></span>用户</h4>
         </div>
         <form class="form-horizontal m-t" id="editForm">
-            <input type="text" id="id" name="id" style="display:none" />
+            <input type="text" id="id" name="id" style="display:none" value="0" format="int" />
             <div class="modal-body">
                 <div class="form-group">
                     <label class="col-sm-2 control-label">登录ID<font color="red">*</font>：</label>
@@ -37,8 +37,8 @@
                     <label class="col-sm-2 control-label">性别<font color="red">*</font>：</label>
                     <div class="col-sm-4">
                         <div class="radio i-checks">
-                            <input type="radio" id="sex_true" value="true" name="sex" checked />男
-                            <input type="radio" id="sex_false" value="false" name="sex" />女
+                            <input type="radio" id="sex_true" value="true" name="sex" checked format="boolean" />男
+                            <input type="radio" id="sex_false" value="false" name="sex" format="boolean" />女
                         </div>
                     </div>
                 </div>
@@ -70,8 +70,8 @@
                     <label class="col-sm-2 control-label">启用<font color="red">*</font>：</label>
                     <div class="col-sm-4">
                         <div class="radio i-checks">
-                            <input type="radio" value="true" id="enabled_true" name="enabled" checked />是
-                            <input type="radio" value="false" id="enabled_false" name="enabled" />否
+                            <input type="radio" value="true" id="enabled_true" name="enabled" format="boolean" checked />是
+                            <input type="radio" value="false" id="enabled_false" name="enabled" format="boolean" />否
                         </div>
                     </div>
                 </div>

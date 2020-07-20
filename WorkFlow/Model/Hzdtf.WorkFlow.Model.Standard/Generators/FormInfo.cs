@@ -57,5 +57,26 @@ namespace Hzdtf.WorkFlow.Model.Standard
             get;
             set;
         }
-    }
+
+        /// <summary>
+        /// 表单获取明细URL_名称
+        /// </summary>
+        public const string FormGetDetailUrl_Name = "FormGetDetailUrl";
+
+        /// <summary>
+        /// 表单获取明细URL
+        /// </summary>
+        [JsonProperty("formGetDetailUrl")]
+        [Required]
+        [MaxLength(20)]
+
+        [DisplayName("表单获取明细URL")]
+        [Display(Name = "表单获取明细URL", Order = 10, AutoGenerateField = true)]
+        [MessagePack.Key("formGetDetailUrl")]
+        public string FormGetDetailUrl
+        {
+            get;
+            set;
+        }
+    }    
 }

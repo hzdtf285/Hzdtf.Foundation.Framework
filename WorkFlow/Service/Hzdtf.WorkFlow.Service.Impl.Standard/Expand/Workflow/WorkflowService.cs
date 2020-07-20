@@ -166,15 +166,6 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
                     return null;
                 }
 
-                ReturnInfo<ConcreteFormInfo> reFormData = FormDataReaderFactory.Create(reDefine.Data.Code).ReaderByWorkflowId(id, connId);
-                if (reFormData.Failure())
-                {
-                    reInfo.FromBasic(reDefine);
-
-                    return null;
-                }
-                workflow.FormData = reFormData.Data;
-
                 workflow.WorkflowDefine = reDefine.Data;
 
                 return workflow;

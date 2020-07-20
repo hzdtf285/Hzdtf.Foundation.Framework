@@ -85,3 +85,7 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\bin\Debug\netcoreapp3.1\System.Reflection.DispatchProxy.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\bin\Debug\netcoreapp3.1\Hzdtf.Rabbit.AspNet.Core.xml
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\obj\Debug\netcoreapp3.1\Hzdtf.Publish.Demo.AspNet.Core.MvcApplicationPartsAssemblyInfo.cs

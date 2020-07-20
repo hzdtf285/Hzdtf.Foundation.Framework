@@ -1,6 +1,8 @@
 ﻿using Hzdtf.BasicFunction.Model.Standard;
+using Hzdtf.BasicFunction.Model.Standard.Expand.Attachment;
 using Hzdtf.BasicFunction.Service.Contract.Standard;
 using Hzdtf.Utility.Standard.Attr;
+using Hzdtf.Utility.Standard.AutoMapperExtensions;
 using Hzdtf.Utility.Standard.Model.Return;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -32,10 +34,10 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Expand.Attachment
         /// <summary>
         /// 上传附件
         /// </summary>
-        /// <param name="attachment">附件</param>
+        /// <param name="simpleAttachment">简单附件</param>
         [HttpPost]
         [Function("Upload")]
-        public virtual ReturnInfo<bool> Upload(AttachmentInfo attachment)
+        public virtual ReturnInfo<bool> Upload(SimpleAttachmentInfo simpleAttachment)
         {
             ReturnInfo<bool> returnInfo = new ReturnInfo<bool>();
             if (Request.Form.Files == null || Request.Form.Files.Count == 0)
@@ -45,6 +47,7 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Expand.Attachment
                 return returnInfo;
             }
 
+            var attachment = AutoMapperUtil.Mapper.Map<SimpleAttachmentInfo, AttachmentInfo>(simpleAttachment);
             BeforeUpload(returnInfo, attachment);
             if (returnInfo.Failure())
             {

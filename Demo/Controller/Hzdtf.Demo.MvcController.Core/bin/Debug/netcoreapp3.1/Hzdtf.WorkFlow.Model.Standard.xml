@@ -60,6 +60,16 @@
             申请单号
             </summary>
         </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.Expand.ConcreteFormInfo.Title_Name">
+            <summary>
+            标题_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.Expand.ConcreteFormInfo.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
         <member name="F:Hzdtf.WorkFlow.Model.Standard.Expand.ConcreteFormInfo.FlowStatus_Name">
             <summary>
             流程状态_名称
@@ -693,11 +703,6 @@
             工作流定义
             </summary>
         </member>
-        <member name="P:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo.FormData">
-            <summary>
-            表单数据
-            </summary>
-        </member>
         <member name="F:Hzdtf.WorkFlow.Model.Standard.WorkflowInfo.ApplyNo_Name">
             <summary>
             申请单号_名称
@@ -911,6 +916,16 @@
         <member name="P:Hzdtf.WorkFlow.Model.Standard.FormInfo.Name">
             <summary>
             名称
+            </summary>
+        </member>
+        <member name="F:Hzdtf.WorkFlow.Model.Standard.FormInfo.FormGetDetailUrl_Name">
+            <summary>
+            表单获取明细URL_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.Model.Standard.FormInfo.FormGetDetailUrl">
+            <summary>
+            表单获取明细URL
             </summary>
         </member>
         <member name="T:Hzdtf.WorkFlow.Model.Standard.ReturnFlowRouteInfo">

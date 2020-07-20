@@ -190,6 +190,39 @@
             <param name="port">端口</param>
             <returns>应用生成器</returns>
         </member>
+        <member name="T:Hzdtf.Utility.AspNet.Core.ModelValidate.ModelValidateActionFilter">
+            <summary>
+            模型验证动作过滤器
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.ModelValidate.ModelValidateActionFilter.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            动作执行中
+            </summary>
+            <param name="context">上下文</param>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.ModelValidate.ModelValidateActionFilter.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+            <summary>
+            动作执行完
+            </summary>
+            <param name="context">上下文</param>
+        </member>
+        <member name="T:Hzdtf.Utility.AspNet.Core.ModelValidate.NullObjectModelValidator">
+            <summary>
+            对象可为null的模型验证
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.ModelValidate.NullObjectModelValidator.Validate(Microsoft.AspNetCore.Mvc.ActionContext,Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary,System.String,System.Object)">
+            <summary>
+            验证
+            </summary>
+            <param name="actionContext">动作上下文</param>
+            <param name="validationState">验证状态</param>
+            <param name="prefix">前辍</param>
+            <param name="model">模型</param>
+        </member>
         <member name="T:Hzdtf.Utility.AspNet.Core.RemoteService.UnityServicesBuilderExtensions">
             <summary>
             统一服务生成器扩展类

@@ -55,6 +55,15 @@ namespace Hzdtf.WorkFlow.MvcController.Core
         }
 
         /// <summary>
+        /// 表单数据读取
+        /// </summary>
+        public IFormDataReader<FormT> FormDataReader
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
         /// 保存
         /// </summary>
         /// <param name="flowInit">流程初始</param>
@@ -110,6 +119,17 @@ namespace Hzdtf.WorkFlow.MvcController.Core
         [HttpDelete("UndoByWorkflowId")]
         [Function(FunCodeDefine.UNDO)]
         public virtual ReturnInfo<bool> UndoByWorkflowId(int workflowId) => WorkflowUndo.Execute(workflowId);
+
+        /// <summary>
+        /// 根据工作流ID获取表单明细
+        /// </summary>
+        /// <param name="workflowId">工作流ID</param>
+        /// <returns>返回信息</returns>
+        [HttpGet("GetFormDetail")]
+        public virtual ReturnInfo<FormT> GetFormDetail(int workflowId)
+        {
+            return FormDataReader.ReaderByWorkflowId(workflowId);
+        }
 
         /// <summary>
         /// 执行

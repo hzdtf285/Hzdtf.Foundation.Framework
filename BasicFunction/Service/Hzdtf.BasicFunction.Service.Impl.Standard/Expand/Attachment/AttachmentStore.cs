@@ -72,6 +72,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment
         /// </summary>
         /// <param name="attachmentStream">附件流</param>
         /// <returns>返回信息</returns>
+        [ProcTrackLog(IgnoreParamValues = true)]
         public virtual ReturnInfo<IList<string>> Upload(params AttachmentStreamInfo[] attachmentStream)
         {
             // 以当前年月为目录

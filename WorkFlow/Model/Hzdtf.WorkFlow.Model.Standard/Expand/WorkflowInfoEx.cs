@@ -1,6 +1,4 @@
-﻿using Hzdtf.Utility.Standard.Model;
-using MessagePack;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -33,18 +31,6 @@ namespace Hzdtf.WorkFlow.Model.Standard
         [Display(Name = "工作流定义", AutoGenerateField = false)]
         [MessagePack.Key("workflowDefine")]
         public WorkflowDefineInfo WorkflowDefine
-        {
-            get;
-            set;
-        }
-
-        /// <summary>
-        /// 表单数据
-        /// </summary>
-        [JsonProperty("formData")]
-        [Display(Name = "表单数据", AutoGenerateField = false)]
-        [MessagePack.Key("formData")]
-        public PersonTimeInfo FormData
         {
             get;
             set;
