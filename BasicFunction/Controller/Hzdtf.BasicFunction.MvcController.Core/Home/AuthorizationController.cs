@@ -213,6 +213,6 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Home
         /// 判断是否需要验证码
         /// </summary>
         /// <returns>是否需要验证码</returns>
-        private bool IsNeedIsVerificationCode() =>true;//HttpContext.Session.GetInt32("ErrLoginNum").GetValueOrDefault() > 2
+        private bool IsNeedIsVerificationCode() => HttpContext.Session.GetInt32("ErrLoginNum").GetValueOrDefault() > 2;
     }
 }

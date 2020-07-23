@@ -11,6 +11,21 @@ namespace Hzdtf.Utility.Standard.Utils
     public static class NumberUtil
     {
         /// <summary>
+        /// 随机对象
+        /// </summary>
+        private static readonly Random ran = new Random();
+
+        /// <summary>
+        /// ASC码值数组
+        /// </summary>
+        private static readonly int[,] ascVals = new int[,]
+        {
+            { 48, 58 },
+            { 65, 91 },
+            { 97, 123 },
+        };
+
+        /// <summary>
         /// 分转换为元
         /// </summary>
         /// <param name="fen">分</param>
@@ -62,10 +77,29 @@ namespace Hzdtf.Utility.Standard.Utils
         public static string Random(int length = 4)
         {
             StringBuilder str = new StringBuilder();
-            Random ra = new Random();
             for (int i = 0; i < length; i++)
             {
-                str.Append(ra.Next(0, 9));
+                str.Append(ran.Next(0, 9));
+            }
+
+            return str.ToString();
+        }
+
+        /// <summary>
+        /// 随机生成英文数字字符串
+        /// </summary>
+        /// <param name="length">长度</param>
+        /// <returns>英文数字字符串</returns>
+        public static string EnNumRandom(int length = 4)
+        {
+            StringBuilder str = new StringBuilder();
+            for (int i = 0; i < length; i++)
+            {
+                var rowIndex = ran.Next(0, 3);
+                var min = ascVals[rowIndex, 0];
+                var max = ascVals[rowIndex, 1];
+
+                str.Append((char)ran.Next(min, max));
             }
 
             return str.ToString();

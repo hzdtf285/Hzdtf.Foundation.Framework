@@ -306,6 +306,11 @@
             @ 黄振东
             </summary>
         </member>
+        <member name="P:Hzdtf.BasicFunction.MvcController.Core.Other.ImageController.AppConfig">
+            <summary>
+            应用配置
+            </summary>
+        </member>
         <member name="M:Hzdtf.BasicFunction.MvcController.Core.Other.ImageController.BuilderCheckCode">
             <summary>
             生成验证码
