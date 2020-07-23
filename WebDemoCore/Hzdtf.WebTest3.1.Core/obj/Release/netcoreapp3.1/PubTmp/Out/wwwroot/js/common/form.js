@@ -62,11 +62,31 @@ function Form(formId) {
             val = $.trim(con.val());
         }
 
-        if (con.attr("format") == "fenToYuan" && val && val != "") {
-            val = yuanToFen(val);
-        }
-        else if (con.attr("format") == "boolean") {
-            val = toBoolValue(val);
+        if (val != "") {
+            var format = con.attr("format");
+            switch (format) {
+                case "int":
+                val = parseInt(val);
+
+                    break;
+
+                case "float":
+                    val = parseFloat(val);
+                    
+                    break;
+
+                case "num":
+                case "number":
+                    val = Number(val);
+
+                    break;
+            }
+            if (con.attr("format") == "fenToYuan" && val && val != "") {
+                val = yuanToFen(val);
+            }
+            else if (con.attr("format") == "boolean") {
+                val = toBoolValue(val);
+            }
         }
 
         return val;
@@ -79,7 +99,7 @@ function Form(formId) {
         var obj = {};
         this.eachControlls(function (con, val) {
             var val = getValueByCon(con);
-            if (val && val != "") {
+            if (val != undefined) {
                 obj[con.attr("name")] = val;
             }
         });
@@ -94,7 +114,7 @@ function Form(formId) {
         var obj = "";
         this.eachControlls(function (con) {
             var val = getValueByCon(con);
-            if (val && val != "") {
+            if (val != undefined) {
                 obj += con.attr("name") + "=" + val + "&";
             }
         });
@@ -155,14 +175,12 @@ function Form(formId) {
                 }
                 catch (e) { }
             }
-            else if (con.attr("format") == "boolean") {
-                v = toBoolText(v);
-            }
             else if (con.attr("format") == "fenToYuan") {
                 v = fenToYuan(v);
             }
-            else if (con.attr("type") == "radio") {
-                $("#" + name + "_" + v).prop("checked", true);
+
+            if (con.attr("type") == "radio") {
+                $("#" + name + "_" + (v + "").toLowerCase()).prop("checked", true);
                 return;
             }
 

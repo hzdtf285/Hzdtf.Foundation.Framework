@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hei.Captcha;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -12,8 +13,13 @@ namespace Hzdtf.Utility.Standard.Utils
     /// </summary>
     public static class ImageUtil
     {
+        /// <summary>
+        /// 安全验证码帮助对象
+        /// </summary>
+        private readonly static SecurityCodeHelper helper = new SecurityCodeHelper();
+
         ///<summary>
-        /// 获取验证码图片流
+        /// 创建验证码图片流（仅限于Windows平台）
         /// </summary>
         /// <param name="checkCode">验证码字符串</param>
         /// <returns>返回验证码图片流</returns>
@@ -73,5 +79,13 @@ namespace Hzdtf.Utility.Standard.Utils
                 image.Dispose();
             }
         }
+
+        ///<summary>
+        /// 创建跨平台的验证码图片字节数组
+        /// 验证图片使用的是Hei.Captcha组件，必须要把Fonts字体文件夹拷贝到站点根目录下（注意：非wwwroot下）
+        /// </summary>
+        /// <param name="checkCode">验证码字符串</param>
+        /// <returns>返回验证码图片字节数组</returns>
+        public static byte[] CreateCrossPlatformCodeImg(string checkCode) => helper.GetEnDigitalCodeByte(checkCode);
     }
 }

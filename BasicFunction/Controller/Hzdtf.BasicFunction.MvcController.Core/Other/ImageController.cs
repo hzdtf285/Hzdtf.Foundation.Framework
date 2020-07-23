@@ -3,7 +3,6 @@ using Hzdtf.Utility.Standard.Utils;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Text;
 using Microsoft.AspNetCore.Http;
 
@@ -25,10 +24,10 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Other
         public FileContentResult BuilderCheckCode()
         {
             string checkCode = NumberUtil.Random();
-            MemoryStream memoryStream = ImageUtil.CreateCodeImg(checkCode);
+            var imageBytes = ImageUtil.CreateCrossPlatformCodeImg(checkCode);
             HttpContext.Session.SetString("VerificationCode", checkCode);
 
-            return File(memoryStream.ToArray(), "image/jpeg");
+            return File(imageBytes, "image/png");
         }
     }
 }

@@ -22,12 +22,13 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Redis.Extend.Core.RedisExtensions.AddDistributedRedisCache(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)">
+        <member name="M:Hzdtf.Redis.Extend.Core.RedisExtensions.AddDistributedRedisCache(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.String)">
             <summary>
             添加分布式Redis缓存
             </summary>
             <param name="services">服务收藏</param>
             <param name="key">键，默认是Master</param>
+            <param name="instanceName">实例名，默认是Master</param>
             <returns>服务收藏</returns>
         </member>
     </members>

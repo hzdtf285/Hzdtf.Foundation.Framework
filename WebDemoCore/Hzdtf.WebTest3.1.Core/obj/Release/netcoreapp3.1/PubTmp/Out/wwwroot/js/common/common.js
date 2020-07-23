@@ -297,7 +297,6 @@ function fenToYuan(amount) {
             }
 
             return parseFloat(parseFloat(pre + "." + fix).toFixed(2));
-
         }
     }
 

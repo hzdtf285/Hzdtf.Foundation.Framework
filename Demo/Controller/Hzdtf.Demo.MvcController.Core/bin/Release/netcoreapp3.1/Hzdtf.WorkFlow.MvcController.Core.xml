@@ -149,6 +149,11 @@
             工作流撤消
             </summary>
         </member>
+        <member name="P:Hzdtf.WorkFlow.MvcController.Core.WorkflowFormControllerBase`1.FormDataReader">
+            <summary>
+            表单数据读取
+            </summary>
+        </member>
         <member name="M:Hzdtf.WorkFlow.MvcController.Core.WorkflowFormControllerBase`1.Save(Hzdtf.WorkFlow.Model.Standard.Expand.FlowInitInfo{`0})">
             <summary>
             保存
@@ -180,6 +185,13 @@
         <member name="M:Hzdtf.WorkFlow.MvcController.Core.WorkflowFormControllerBase`1.UndoByWorkflowId(System.Int32)">
             <summary>
             根据工作流ID撤消
+            </summary>
+            <param name="workflowId">工作流ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.WorkflowFormControllerBase`1.GetFormDetail(System.Int32)">
+            <summary>
+            根据工作流ID获取表单明细
             </summary>
             <param name="workflowId">工作流ID</param>
             <returns>返回信息</returns>

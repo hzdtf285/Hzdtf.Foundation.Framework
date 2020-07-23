@@ -251,6 +251,10 @@
               "target": "Package",
               "version": "[10.0.0, )"
             },
+            "Hei.Captcha": {
+              "target": "Package",
+              "version": "[0.2.0, )"
+            },
             "MessagePack": {
               "target": "Package",
               "version": "[2.1.152, )"

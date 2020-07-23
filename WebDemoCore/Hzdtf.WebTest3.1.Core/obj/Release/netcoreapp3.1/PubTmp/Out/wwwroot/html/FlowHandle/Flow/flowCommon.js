@@ -102,17 +102,17 @@ var flowForm;
 /**
  * 根据ID获取流程明细
  * 
- * @param handlerId 处理ID
+ * @param handleId 处理ID
  * @param {any} url URL
  * @param funCode 功能编码
  * @param changeReaded 改变为已读
  */
-function getFlowDetail(handlerId, url, funCode, changeReaded) {
+function getFlowDetail(handleId, url, funCode, changeReaded) {
     $("#auditForm")[0].reset();
-    $("#handlerId").val(handlerId);
+    $("#handleId").val(handleId);
 
-    if (handlerId != 0 && callReaded) {
-        callReaded(handlerId, "mail_" + handlerId, function () {
+    if (handleId != 0 && callReaded) {
+        callReaded(handleId, "mail_" + handleId, function () {
             getFlowDetailToRemote(url, funCode);
         });
     }
@@ -169,28 +169,35 @@ function getFlowDetailToRemote(url, funCode) {
 
         // 加载表单数据
         if (data.workflowDefine.form.formUrl && data.workflowDefine.form.formUrl != "") {
-            if (data.formData && data.formData != null) {
-                $("#btnFlowDetailDialog").trigger("click");
 
-                $("#spanFormInfo").load(data.workflowDefine.form.formUrl, function () {
-                    if (typeof (initControlStyle) == "function") {
-                        initControlStyle();
-                    }
+            $("#btnFlowDetailDialog").trigger("click");
 
-                    var form = new Form("formData");
-                    form.fill(data.formData, null, true);
+            $("#spanFormInfo").load(data.workflowDefine.form.formUrl, function () {
+                if (typeof (initControlStyle) == "function") {
+                    initControlStyle();
+                }
 
-                    if (typeof (fillFormData) == "function") {
-                        fillFormData(form, data.formData);
-                    }
-                });
-            }
-            else {
-                showToastr({
-                    text: "找不到表单数据，可能已删除！",
-                    type: "warning"
-                });
-            }
+                var detailDataUrl = data.workflowDefine.form.formGetDetailUrl;
+                if (detailDataUrl != "") {
+                    detailDataUrl += "?workflowId=" + data.id;
+                    ajaxJsonAsync(detailDataUrl, QUERY_REQUEST_TYPE, null, function (returnInfo, data) {
+                        if (data) {
+                            var form = new Form("formData");
+                            form.fill(data, null, true);
+
+                            if (typeof (fillFormData) == "function") {
+                                fillFormData(form, data);
+                            }
+                        }
+                        else {
+                            showToastr({
+                                text: "找不到表单数据，可能已删除！",
+                                type: "warning"
+                            });
+                        }    
+                    });
+                }
+            });
         }
     });
 }

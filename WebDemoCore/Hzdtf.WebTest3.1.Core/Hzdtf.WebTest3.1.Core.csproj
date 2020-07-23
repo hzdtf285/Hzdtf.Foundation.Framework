@@ -36,6 +36,21 @@
     <ProjectReference Include="..\..\WorkFlow\Service\Hzdtf.WorkFlow.Service.Impl.Standard\Hzdtf.WorkFlow.Service.Impl.Standard.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="fonts\Candara.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="fonts\impact.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="fonts\monbaiti.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="fonts\STCAIYUN.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
   <ProjectExtensions><VisualStudio><UserProperties config_4assemblyconfig_1json__JsonSchema="https://json.schemastore.org/appsscript" /></VisualStudio></ProjectExtensions>
 
 
