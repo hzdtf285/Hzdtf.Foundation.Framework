@@ -98,7 +98,7 @@ namespace Hzdtf.Utility.Standard.Utils
             return httpClient.RequestJson("Post", httpContent =>
             {
                 return httpClient.PostAsync(url, httpContent);
-            });
+            }, data);
         }
 
         /// <summary>
@@ -206,7 +206,7 @@ namespace Hzdtf.Utility.Standard.Utils
             return httpClient.RequestJson("Put", httpContent =>
             {
                 return httpClient.PutAsync(url, httpContent);
-            });
+            }, data);
         }
 
         /// <summary>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IuvhxCDl5HX+6D+HfLjqlpUTup6xiZYUIazTYU4rQbTMJALTuHqhLDd1jBXPJCE+Q+GoNmBOOZHhFP93zlcjmg==",
+  "dgSpecHash": "xJfdZTnLA6dFk3JWRok9UxQYUeReE2g1Xmmw8Qu8yK7yljKSWXQIWyGU92xaWonErPvS++HxXVjUXGJ8O6chTA==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\MessageQueue\\Demo\\Hzdtf.Consumer.Demo.AspNet.Core\\Hzdtf.Consumer.Demo.AspNet.Core.csproj",
   "expectedPackageFiles": [
