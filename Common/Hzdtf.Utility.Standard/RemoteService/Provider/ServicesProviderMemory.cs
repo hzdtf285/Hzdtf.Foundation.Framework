@@ -111,7 +111,7 @@ namespace Hzdtf.Utility.Standard.RemoteService.Provider
         /// <param name="tag">标签</param>
         /// <returns>缓存键</returns>
         protected virtual string GetCacheKey(string serviceName, string tag = null)
-            => $"ServicesProvider_{serviceName}_{tag}";
+            => $"ServicesProvider_{serviceName}_{tag}".ToLower();
 
         /// <summary>
         /// 析构方法

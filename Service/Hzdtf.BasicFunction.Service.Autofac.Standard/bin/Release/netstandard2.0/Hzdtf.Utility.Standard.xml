@@ -688,6 +688,53 @@
             </summary>
             <param name="keyValues">键值对</param>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.Cache.TimerRefresh.TimerRefreshCacheBase`1">
+            <summary>
+            定时刷新缓存基类
+            @ 黄振东
+            </summary>
+            <typeparam name="ValueT">值类型</typeparam>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Cache.TimerRefresh.TimerRefreshCacheBase`1.timer">
+            <summary>
+            定时器
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Cache.TimerRefresh.TimerRefreshCacheBase`1.caches">
+            <summary>
+            缓存
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Cache.TimerRefresh.TimerRefreshCacheBase`1.#ctor(System.Int32,System.Object)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="intervalMillseconds">间隔时间，单位：毫秒</param>
+            <param name="state">状态</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Cache.TimerRefresh.TimerRefreshCacheBase`1.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Cache.TimerRefresh.TimerRefreshCacheBase`1.Reader">
+            <summary>
+            读取
+            </summary>
+            <returns>数据</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Cache.TimerRefresh.TimerRefreshCacheBase`1.Refresh(System.Object)">
+            <summary>
+            刷新
+            </summary>
+            <param name="state">状态</param>
+            <returns>值</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Cache.TimerRefresh.TimerRefreshCacheBase`1.Finalize">
+            <summary>
+            析构方法
+            </summary>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Connection.ConnectionBase`1">
             <summary>
             连接基类
@@ -4292,6 +4339,46 @@
             <param name="tag">标签</param>
             <returns>地址数组任务</returns>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.RemoteService.Provider.ServiceProviderAggReaderBase">
+            <summary>
+            服务提供者聚合读取基类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.RemoteService.Provider.ServiceProviderAggReaderBase.dicProtoServicesReader">
+            <summary>
+            原生服务读取字典
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.Provider.ServiceProviderAggReaderBase.GetAddresses(System.String,System.String)">
+            <summary>
+            异步根据服务名获取地址数组
+            </summary>
+            <param name="serviceName">服务名</param>
+            <param name="tag">标签</param>
+            <returns>地址数组任务</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.Provider.ServiceProviderAggReaderBase.GetCacheKey(System.String,System.String)">
+            <summary>
+            获取缓存键
+            </summary>
+            <param name="serviceName">服务名</param>
+            <param name="tag">标签</param>
+            <returns>缓存键</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.Provider.ServiceProviderAggReaderBase.CreateReader(System.String,System.String)">
+            <summary>
+            创建读取
+            </summary>
+            <param name="serviceName">服务名</param>
+            <param name="tag">标签</param>
+            <returns>读取</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.RemoteService.Provider.ServiceProviderAggReaderBase.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.RemoteService.Provider.ServicesProviderExtensions">
             <summary>
             服务提供者扩展类
@@ -5923,6 +6010,16 @@
             @ 黄振东
             </summary>
         </member>
+        <member name="F:Hzdtf.Utility.Standard.Utils.NumberUtil.ran">
+            <summary>
+            随机对象
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Utils.NumberUtil.ascVals">
+            <summary>
+            ASC码值数组
+            </summary>
+        </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.NumberUtil.FenToYuan(System.Nullable{System.Int64})">
             <summary>
             分转换为元
@@ -5943,6 +6040,13 @@
             </summary>
             <param name="length">长度</param>
             <returns>随机数字字符串</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.NumberUtil.EnNumRandom(System.Int32)">
+            <summary>
+            随机生成英文数字字符串
+            </summary>
+            <param name="length">长度</param>
+            <returns>英文数字字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.NumberUtil.FixedLengthString(System.Int32,System.Byte)">
             <summary>

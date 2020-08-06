@@ -1334,3 +1334,19 @@
 2020-07-24 00:50:08.7099 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
 2020-07-24 00:50:08.7270 Info Configuration initialized.
 2020-07-24 00:50:08.7509 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-08-06 15:50:35.4373 Info Message Template Auto Format enabled
+2020-08-06 15:50:35.4817 Info Adding target FileTarget(Name=f)
+2020-08-06 15:50:35.4817 Info Adding target FileTarget(Name=fe)
+2020-08-06 15:50:35.5124 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-08-06 15:50:35.5323 Info Configuration initialized.
+2020-08-06 15:50:35.5473 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-08-06 15:50:40.8002 Info AppDomain Shutting down. Logger closing...
+2020-08-06 15:50:40.8531 Info Logger has been shut down.
+2020-08-06 15:51:34.3971 Info Message Template Auto Format enabled
+2020-08-06 15:51:34.4447 Info Adding target FileTarget(Name=f)
+2020-08-06 15:51:34.4531 Info Adding target FileTarget(Name=fe)
+2020-08-06 15:51:34.4773 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-08-06 15:51:34.4952 Info Configuration initialized.
+2020-08-06 15:51:34.5099 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-08-06 15:51:48.9623 Info AppDomain Shutting down. Logger closing...
+2020-08-06 15:51:48.9921 Info Logger has been shut down.

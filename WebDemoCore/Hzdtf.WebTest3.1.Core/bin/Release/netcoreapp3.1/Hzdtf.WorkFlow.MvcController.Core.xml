@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.WorkFlow.MvcController.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.WorkFlow.MvcController.Core.MyApplyFlowController">
+            <summary>
+            我申请的流程控制器
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.MyApplyFlowController.MenuCode">
+            <summary>
+            菜单编码
+            </summary>
+            <returns>菜单编码</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.MyApplyFlowController.QueryPageFromService(System.Int32,System.Int32,Hzdtf.WorkFlow.Model.Standard.Expand.Filter.ApplyFlowFilterInfo)">
+            <summary>
+            从服务里查询分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">每页记录数</param>
+            <param name="filter">筛选</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.MyApplyFlowController.GetFlowDetail(System.Int32)">
+            <summary>
+            获取流程明细信息
+            </summary>
+            <param name="workflowId">工作流ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.MvcController.Core.MyAuditedFlowController">
+            <summary>
+            我的已审核流程控制器
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.MyAuditedFlowController.MenuCode">
+            <summary>
+            菜单编码
+            </summary>
+            <returns>菜单编码</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.MyAuditedFlowController.QueryPageFromService(System.Int32,System.Int32,Hzdtf.WorkFlow.Model.Standard.Expand.Filter.AuditFlowFilterInfo)">
+            <summary>
+            从服务里查询分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">每页记录数</param>
+            <param name="filter">筛选</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.MyAuditedFlowController.GetFlowDetail(System.Int32,System.Int32)">
+            <summary>
+            获取流程明细信息
+            </summary>
+            <param name="workflowId">工作流ID</param>
+            <param name="handleId">处理ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.MvcController.Core.MyWaitFlowController">
+            <summary>
+            我的待办流程控制器
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.MvcController.Core.MyWaitFlowController.WorkflowHandleService">
+            <summary>
+            工作流处理服务
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.MvcController.Core.MyWaitFlowController.WorkFlowAudit">
+            <summary>
+            工作流审核
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.MyWaitFlowController.MenuCode">
+            <summary>
+            菜单编码
+            </summary>
+            <returns>菜单编码</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.MyWaitFlowController.QueryPageFromService(System.Int32,System.Int32,Hzdtf.WorkFlow.Model.Standard.Expand.Filter.WaitHandleFilterInfo)">
+            <summary>
+            从服务里查询分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">每页记录数</param>
+            <param name="filter">筛选</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.MyWaitFlowController.ModifyReadedByHandleId(System.Int32)">
+            <summary>
+            根据处理ID修改为已读
+            </summary>
+            <param name="handleId">处理ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.MyWaitFlowController.GetAuditDetail(System.Int32,System.Int32)">
+            <summary>
+            获取审核明细信息
+            </summary>
+            <param name="workflowId">工作流ID</param>
+            <param name="handleId">处理ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.MyWaitFlowController.ExecAudit(Hzdtf.WorkFlow.Model.Standard.Expand.FlowAuditInfo)">
+            <summary>
+            执行审核
+            </summary>
+            <param name="flowAudit">流程审核信息</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.MyWaitFlowController.GetFlowDetail(System.Int32,System.Int32)">
+            <summary>
+            获取流程明细信息
+            </summary>
+            <param name="workflowId">工作流ID</param>
+            <param name="handleId">处理ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="T:Hzdtf.WorkFlow.MvcController.Core.WorkflowFormControllerBase`1">
+            <summary>
+            工作流表单控制器基类
+            @ 黄振东
+            </summary>
+            <typeparam name="FormT">表单类型</typeparam>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.MvcController.Core.WorkflowFormControllerBase`1.WorkflowInitService">
+            <summary>
+            工作流初始服务
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.MvcController.Core.WorkflowFormControllerBase`1.WorkflowRemove">
+            <summary>
+            工作流移除
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.MvcController.Core.WorkflowFormControllerBase`1.WorkflowForceRemove">
+            <summary>
+            工作流强制移除
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.MvcController.Core.WorkflowFormControllerBase`1.WorkflowUndo">
+            <summary>
+            工作流撤消
+            </summary>
+        </member>
+        <member name="P:Hzdtf.WorkFlow.MvcController.Core.WorkflowFormControllerBase`1.FormDataReader">
+            <summary>
+            表单数据读取
+            </summary>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.WorkflowFormControllerBase`1.Save(Hzdtf.WorkFlow.Model.Standard.Expand.FlowInitInfo{`0})">
+            <summary>
+            保存
+            </summary>
+            <param name="flowInit">流程初始</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.WorkflowFormControllerBase`1.Apply(Hzdtf.WorkFlow.Model.Standard.Expand.FlowInitInfo{`0})">
+            <summary>
+            申请
+            </summary>
+            <param name="flowInit">流程初始</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.WorkflowFormControllerBase`1.RemoveByWorkflowId(System.Int32)">
+            <summary>
+            根据工作流ID移除
+            </summary>
+            <param name="workflowId">工作流ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.WorkflowFormControllerBase`1.ForceRemoveByWorkflowId(System.Int32)">
+            <summary>
+            根据工作流ID强制移除
+            </summary>
+            <param name="workflowId">工作流ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.WorkflowFormControllerBase`1.UndoByWorkflowId(System.Int32)">
+            <summary>
+            根据工作流ID撤消
+            </summary>
+            <param name="workflowId">工作流ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.WorkflowFormControllerBase`1.GetFormDetail(System.Int32)">
+            <summary>
+            根据工作流ID获取表单明细
+            </summary>
+            <param name="workflowId">工作流ID</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.WorkflowFormControllerBase`1.Execute(Hzdtf.WorkFlow.Model.Standard.Expand.FlowInitInfo{`0},System.Func{Hzdtf.Utility.Standard.Model.Return.ReturnInfo{Hzdtf.WorkFlow.Model.Standard.Expand.WorkflowBasicInfo}})">
+            <summary>
+            执行
+            </summary>
+            <param name="flowInit">流程初始</param>
+            <param name="func">回调执行</param>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.WorkflowFormControllerBase`1.GetWorkflowCode">
+            <summary>
+            获取工作流编码
+            </summary>
+            <returns>工作流编码</returns>
+        </member>
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.WorkflowFormControllerBase`1.SetFlowInitPropertys(Hzdtf.WorkFlow.Model.Standard.Expand.FlowInitInfo{`0})">
+            <summary>
+            设置流程初始化属性
+            </summary>
+            <param name="flowInit">流程初始</param>
+        </member>
+    </members>
+</doc>
