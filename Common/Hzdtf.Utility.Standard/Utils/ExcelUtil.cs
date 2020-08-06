@@ -127,7 +127,7 @@ namespace Hzdtf.Utility.Standard.Utils
                     cellTitleStyle.VerticalAlignment = VerticalAlignment.Center;
 
                     IFont f = workbook.CreateFont();
-                    f.Boldweight = (short)FontBoldWeight.Bold;
+                    //f.Boldweight = (short)FontBoldWeight.Bold;
                     cellTitleStyle.SetFont(f);
 
                     //创建格式

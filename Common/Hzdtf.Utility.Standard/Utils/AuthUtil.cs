@@ -22,7 +22,7 @@ namespace Hzdtf.Utility.Standard.Utils
         /// <returns>添加Bearer票据后的票据</returns>
         public static string AddBearerToken(this string originalToken)
         {
-            return IsContainerBearer(originalToken) ? originalToken : $"bearer {originalToken}";
+            return IsContainerBearer(originalToken) ? originalToken : $"Bearer {originalToken}";
         }
 
         /// <summary>
