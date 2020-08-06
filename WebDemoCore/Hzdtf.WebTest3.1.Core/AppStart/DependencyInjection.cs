@@ -4,6 +4,8 @@ using Hzdtf.Autofac.Extend.Standard;
 using Hzdtf.BasicFunction.Service.Impl.Standard;
 using Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment;
 using Hzdtf.BasicFunction.WorkFlow.Standard;
+using Hzdtf.Logger.Contract.Standard;
+using Hzdtf.Logger.Exceptionless.Standard;
 using Hzdtf.Platform.Config.Contract.Standard.Config.App;
 using Hzdtf.Platform.Contract.Standard;
 using Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig;
@@ -38,6 +40,8 @@ namespace Hzdtf.WebTest3_1.Core.AppStart
                     builder.RegisterType<WorkflowInitSequenceService>().As<IWorkflowFormService>().AsSelf().PropertiesAutowired();
 
                     builder.RegisterType<AutofacInstance>().As<IInstance>().AsSelf().PropertiesAutowired().SingleInstance();
+
+                    builder.RegisterType<ExceptionlessLog>().As<ILogable>().AsSelf().PropertiesAutowired().SingleInstance();
                 }
             });
             builder.RegisterBuildCallback(container =>

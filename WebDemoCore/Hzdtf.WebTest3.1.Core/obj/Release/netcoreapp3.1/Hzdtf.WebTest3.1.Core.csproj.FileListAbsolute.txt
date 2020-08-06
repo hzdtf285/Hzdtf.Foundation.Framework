@@ -314,3 +314,7 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Cor
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\SixLabors.ImageSharp.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\SixLabors.ImageSharp.Drawing.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\SixLabors.Shapes.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\Exceptionless.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\Hzdtf.Logger.Exceptionless.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\Hzdtf.Logger.Exceptionless.Standard.pdb

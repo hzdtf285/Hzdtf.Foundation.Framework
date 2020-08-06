@@ -23,6 +23,7 @@
     <ProjectReference Include="..\..\Demo\Persistence\Hzdtf.Demo.MySql.Standard\Hzdtf.Demo.MySql.Standard.csproj" />
     <ProjectReference Include="..\..\Demo\Service\Hzdtf.Demo.Service.Impl.Standard\Hzdtf.Demo.Service.Impl.Standard.csproj" />
     <ProjectReference Include="..\..\IOC\Hzdtf.Autofac.Extend.Standard\Hzdtf.Autofac.Extend.Standard.csproj" />
+    <ProjectReference Include="..\..\Logger\Hzdtf.Logger.Exceptionless.Standard\Hzdtf.Logger.Exceptionless.Standard.csproj" />
     <ProjectReference Include="..\..\Logger\Hzdtf.Logger.Integration.ENLog.Standard\Hzdtf.Logger.Integration.ENLog.Standard.csproj" />
     <ProjectReference Include="..\..\Logger\Hzdtf.Logger.Integration.MicrosoftLog.Core\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj" />
     <ProjectReference Include="..\..\Logger\Hzdtf.Logger.Integration.MicrosoftLog.Standard\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj" />

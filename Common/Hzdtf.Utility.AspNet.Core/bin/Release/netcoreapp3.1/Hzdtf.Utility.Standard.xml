@@ -705,11 +705,27 @@
             缓存
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Cache.TimerRefresh.TimerRefreshCacheBase`1.#ctor(System.Int32,System.Object)">
+        <member name="F:Hzdtf.Utility.Standard.Cache.TimerRefresh.TimerRefreshCacheBase`1.isRefreshed">
+            <summary>
+            是否已刷新
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Cache.TimerRefresh.TimerRefreshCacheBase`1.state">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Cache.TimerRefresh.TimerRefreshCacheBase`1.intervalMillseconds">
+            <summary>
+            间隔时间，单位：毫秒
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Cache.TimerRefresh.TimerRefreshCacheBase`1.#ctor(System.Int32,System.Object,System.Boolean)">
             <summary>
             构造方法
             </summary>
             <param name="intervalMillseconds">间隔时间，单位：毫秒</param>
+            <param name="isInitTimer">是否初始化定时器，默认为是</param>
             <param name="state">状态</param>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Cache.TimerRefresh.TimerRefreshCacheBase`1.Dispose">
@@ -733,6 +749,11 @@
         <member name="M:Hzdtf.Utility.Standard.Cache.TimerRefresh.TimerRefreshCacheBase`1.Finalize">
             <summary>
             析构方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Cache.TimerRefresh.TimerRefreshCacheBase`1.InitTimer">
+            <summary>
+            初始化定时器
             </summary>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Connection.ConnectionBase`1">
@@ -4377,6 +4398,27 @@
         <member name="M:Hzdtf.Utility.Standard.RemoteService.Provider.ServiceProviderAggReaderBase.Dispose">
             <summary>
             释放资源
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.RemoteService.Provider.ServiceProviderCacheType">
+            <summary>
+            服务提供者缓存类型
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.RemoteService.Provider.ServiceProviderCacheType.NONE">
+            <summary>
+            不使用缓存
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.RemoteService.Provider.ServiceProviderCacheType.TIMER_REFRESH">
+            <summary>
+            主动刷新
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.RemoteService.Provider.ServiceProviderCacheType.DALAY_REFRESH">
+            <summary>
+            延迟刷新
             </summary>
         </member>
         <member name="T:Hzdtf.Utility.Standard.RemoteService.Provider.ServicesProviderExtensions">

@@ -109,6 +109,19 @@
           "lib/netstandard2.0/Dapper.dll": {}
         }
       },
+      "Exceptionless/4.4.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.PlatformAbstractions": "1.1.0",
+          "System.Reflection.Emit.Lightweight": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Exceptionless.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Exceptionless.dll": {}
+        }
+      },
       "Google.Protobuf/3.6.1": {
         "type": "package",
         "dependencies": {
@@ -1412,6 +1425,19 @@
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.PlatformAbstractions/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "System.Reflection.TypeExtensions": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.Extensions.PlatformAbstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.Extensions.PlatformAbstractions.dll": {}
         }
       },
       "Microsoft.Extensions.Primitives/3.1.5": {
@@ -4218,6 +4244,20 @@
           "bin/placeholder/Hzdtf.Logger.Contract.Standard.dll": {}
         }
       },
+      "Hzdtf.Logger.Exceptionless.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Exceptionless": "4.4.1",
+          "Hzdtf.Logger.Contract.Standard": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Hzdtf.Logger.Exceptionless.Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hzdtf.Logger.Exceptionless.Standard.dll": {}
+        }
+      },
       "Hzdtf.Logger.Integration.ENLog.Standard/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -4722,6 +4762,30 @@
         "lib/net461/Dapper.xml",
         "lib/netstandard2.0/Dapper.dll",
         "lib/netstandard2.0/Dapper.xml"
+      ]
+    },
+    "Exceptionless/4.4.1": {
+      "sha512": "W3f4+oH3W+20Fpmn1qbyh8Af1KXeX/M0p8ccyVpKshDXt6+ipOFkBNPrIz2VWqOZSbFpvLTdDf9O9wowzkKWCg==",
+      "type": "package",
+      "path": "exceptionless/4.4.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "exceptionless-icon.png",
+        "exceptionless.4.4.1.nupkg.sha512",
+        "exceptionless.nuspec",
+        "lib/net45/Exceptionless.dll",
+        "lib/net45/Exceptionless.pdb",
+        "lib/net45/Exceptionless.xml",
+        "lib/netstandard2.0/Exceptionless.dll",
+        "lib/netstandard2.0/Exceptionless.pdb",
+        "lib/netstandard2.0/Exceptionless.xml",
+        "readme.txt",
+        "tools/exceptionless.psm1",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
       ]
     },
     "Google.Protobuf/3.6.1": {
@@ -6144,6 +6208,20 @@
         "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.xml",
         "microsoft.extensions.options.configurationextensions.3.1.5.nupkg.sha512",
         "microsoft.extensions.options.configurationextensions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.PlatformAbstractions/1.1.0": {
+      "sha512": "H6ZsQzxYw/6k2DfEQRXdC+vQ6obd6Uba3uGJrnJ2vG4PRXjQZ7seB13JdCfE72abp8E6Fk3gGgDzfJiLZi5ZpQ==",
+      "type": "package",
+      "path": "microsoft.extensions.platformabstractions/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net451/Microsoft.Extensions.PlatformAbstractions.dll",
+        "lib/net451/Microsoft.Extensions.PlatformAbstractions.xml",
+        "lib/netstandard1.3/Microsoft.Extensions.PlatformAbstractions.dll",
+        "lib/netstandard1.3/Microsoft.Extensions.PlatformAbstractions.xml",
+        "microsoft.extensions.platformabstractions.1.1.0.nupkg.sha512",
+        "microsoft.extensions.platformabstractions.nuspec"
       ]
     },
     "Microsoft.Extensions.Primitives/3.1.5": {
@@ -12268,6 +12346,11 @@
       "path": "../../Logger/Hzdtf.Logger.Contract.Standard/Hzdtf.Logger.Contract.Standard.csproj",
       "msbuildProject": "../../Logger/Hzdtf.Logger.Contract.Standard/Hzdtf.Logger.Contract.Standard.csproj"
     },
+    "Hzdtf.Logger.Exceptionless.Standard/1.0.0": {
+      "type": "project",
+      "path": "../../Logger/Hzdtf.Logger.Exceptionless.Standard/Hzdtf.Logger.Exceptionless.Standard.csproj",
+      "msbuildProject": "../../Logger/Hzdtf.Logger.Exceptionless.Standard/Hzdtf.Logger.Exceptionless.Standard.csproj"
+    },
     "Hzdtf.Logger.Integration.ENLog.Standard/1.0.0": {
       "type": "project",
       "path": "../../Logger/Hzdtf.Logger.Integration.ENLog.Standard/Hzdtf.Logger.Integration.ENLog.Standard.csproj",
@@ -12396,6 +12479,7 @@
       "Hzdtf.Demo.MvcController.Core >= 1.0.0",
       "Hzdtf.Demo.MySql.Standard >= 1.0.0",
       "Hzdtf.Demo.Service.Impl.Standard >= 1.0.0",
+      "Hzdtf.Logger.Exceptionless.Standard >= 1.0.0",
       "Hzdtf.Logger.Integration.ENLog.Standard >= 1.0.0",
       "Hzdtf.Logger.Integration.MicrosoftLog.Core >= 3.1.5",
       "Hzdtf.Logger.Integration.MicrosoftLog.Standard >= 1.0.0",
@@ -12477,6 +12561,9 @@
             },
             "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj": {
               "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj"
+            },
+            "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Exceptionless.Standard\\Hzdtf.Logger.Exceptionless.Standard.csproj": {
+              "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Exceptionless.Standard\\Hzdtf.Logger.Exceptionless.Standard.csproj"
             },
             "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.ENLog.Standard\\Hzdtf.Logger.Integration.ENLog.Standard.csproj": {
               "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.ENLog.Standard\\Hzdtf.Logger.Integration.ENLog.Standard.csproj"

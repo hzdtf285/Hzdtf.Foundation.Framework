@@ -19,6 +19,7 @@
         "Hzdtf.Platform.Impl.Core",
         "Hzdtf.Logger.Contract.Standard",
         "Hzdtf.Logger.Integration.ENLog.Standard",
+        "Hzdtf.Logger.Exceptionless.Standard",
         "Hzdtf.Persistence.Contract.Standard",
         "Hzdtf.WorkFlow.Persistence.Contract.Standard",
         "Hzdtf.WorkFlow.MySql.Standard",

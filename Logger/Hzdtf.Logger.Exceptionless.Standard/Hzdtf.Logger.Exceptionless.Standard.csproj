@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>黄振东</Authors>
+    <Company>Hzdtf</Company>
+    <Description>Exceptionless分布式日志类训，运行在.net standard 2.0以上</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>Hzdtf.Logger.Exceptionless.Standard.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>Hzdtf.Logger.Exceptionless.Standard.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Exceptionless" Version="4.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hzdtf.Logger.Contract.Standard\Hzdtf.Logger.Contract.Standard.csproj" />
+  </ItemGroup>
+
+</Project>

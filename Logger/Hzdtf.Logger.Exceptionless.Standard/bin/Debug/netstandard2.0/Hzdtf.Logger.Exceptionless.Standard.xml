@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.Logger.Exceptionless.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.Logger.Exceptionless.Standard.ExceptionlessLog">
+            <summary>
+            Exceptionless分布式日志
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Logger.Exceptionless.Standard.ExceptionlessLog.#cctor">
+            <summary>
+            静态构造方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Logger.Exceptionless.Standard.ExceptionlessLog.WriteStorage(System.String,System.String,System.Exception,System.String,System.String[])">
+            <summary>
+            将消息与异常写入到存储设备里
+            </summary>
+            <param name="level">级别</param>
+            <param name="msg">消息</param>
+            <param name="ex">异常</param>
+            <param name="source">来源</param>
+            <param name="tags">标签</param>
+        </member>
+        <member name="T:Hzdtf.Logger.Exceptionless.Standard.ExceptionlessTool">
+            <summary>
+            Exceptionless分布式日志工具
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Logger.Exceptionless.Standard.ExceptionlessTool.AppConfig">
+            <summary>
+            应用配置，默认取PlatformTool.AppConfig
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Logger.Exceptionless.Standard.ExceptionlessTool.syncApiKey">
+            <summary>
+            同步API键
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Logger.Exceptionless.Standard.ExceptionlessTool.apiKey">
+            <summary>
+            API键
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Logger.Exceptionless.Standard.ExceptionlessTool.ApiKey">
+            <summary>
+            API键，默认取配置文件Exceptionless:ApiKey
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Logger.Exceptionless.Standard.ExceptionlessTool.syncServerUrl">
+            <summary>
+            同步服务URL地址
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Logger.Exceptionless.Standard.ExceptionlessTool.serverUrl">
+            <summary>
+            服务URL地址
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Logger.Exceptionless.Standard.ExceptionlessTool.ServerUrl">
+            <summary>
+            服务URL地址，默认取配置文件Exceptionless:ServerUrl
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Logger.Exceptionless.Standard.ExceptionlessTool.isExecDefaultInit">
+            <summary>
+            是否执行默认初始化
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Logger.Exceptionless.Standard.ExceptionlessTool.syncIsExecDefaultInit">
+            <summary>
+            同步是否执行默认初始化
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Logger.Exceptionless.Standard.ExceptionlessTool.#cctor">
+            <summary>
+            静态构造方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Logger.Exceptionless.Standard.ExceptionlessTool.SetInit(System.String,System.String,System.Boolean)">
+            <summary>
+            设置初始化
+            </summary>
+            <param name="apiKey">API键</param>
+            <param name="serverUrl">服务URL地址</param>
+            <param name="isFilterUnrelatedLog">是否过滤掉无关日志</param>
+        </member>
+        <member name="M:Hzdtf.Logger.Exceptionless.Standard.ExceptionlessTool.DefaultInit">
+            <summary>
+            默认初始化
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Logger.Exceptionless.Standard.ExceptionlessTool.SetIsFilterUnrelatedLog(System.Boolean)">
+            <summary>
+            设置是否过滤掉无关日志
+            </summary>
+            <param name="isFilterUnrelatedLog">是否过滤掉无关日志</param>
+        </member>
+        <member name="M:Hzdtf.Logger.Exceptionless.Standard.ExceptionlessTool.FilterUnrelatedSubmittingEvent(System.Object,Exceptionless.EventSubmittingEventArgs)">
+            <summary>
+            过滤无关提交事件
+            </summary>
+            <param name="sender">引发对象</param>
+            <param name="e">事件提交参数</param>
+        </member>
+    </members>
+</doc>

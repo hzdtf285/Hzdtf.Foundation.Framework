@@ -1,0 +1,20 @@
+2020-08-06 21:29:37.3245 INFO eventId:0,Now listening on: http://localhost:5000
+2020-08-06 21:29:37.3245 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-08-06 21:29:37.3245 INFO eventId:0,Hosting environment: Development
+2020-08-06 21:29:37.3245 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-08-06 21:29:38.5906 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-08-06 21:58:13.3880 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-08-06 21:58:13.3880 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-08-06 21:58:13.3880 INFO eventId:0,Now listening on: http://localhost:5000
+2020-08-06 21:58:13.3880 INFO eventId:0,Hosting environment: Development
+2020-08-06 21:58:14.8181 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-08-06 22:07:45.3010 INFO eventId:0,Now listening on: http://localhost:5000
+2020-08-06 22:07:45.3010 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-08-06 22:07:45.3010 INFO eventId:0,Hosting environment: Development
+2020-08-06 22:07:45.3010 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-08-06 22:07:46.4985 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-08-06 22:11:59.4861 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-08-06 22:11:59.4861 INFO eventId:0,Now listening on: http://localhost:5000
+2020-08-06 22:11:59.4861 INFO eventId:0,Hosting environment: Development
+2020-08-06 22:11:59.4861 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-08-06 22:12:00.8600 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.

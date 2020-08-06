@@ -1,0 +1,5 @@
+2020-08-06 21:28:37.7524 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-08-06 21:28:37.7524 INFO eventId:0,Now listening on: http://localhost:5000
+2020-08-06 21:28:37.7524 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-08-06 21:28:37.7524 INFO eventId:0,Hosting environment: Development
+2020-08-06 21:28:39.2625 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.

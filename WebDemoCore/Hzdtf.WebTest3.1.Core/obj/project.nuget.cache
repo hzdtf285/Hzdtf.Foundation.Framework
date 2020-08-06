@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uQ/cL21XfHe5jZx3+Wg3VE8aZ8RuvvBkBwK4JuuV16WnRGeTZUDLzqbW2XB1mozWFSrjTw2fBpV8Oj02tgg+JQ==",
+  "dgSpecHash": "q21fbj1FlTqWWpm2XM4dmnLljGx/DPcwenQaOyKE8gnar56eTRiwUarjTA73rfLgrpU+1KMfQi0TXcg+5z3LDw==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WebDemoCore\\Hzdtf.WebTest3.1.Core\\Hzdtf.WebTest3.1.Core.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\admin\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\exceptionless\\4.4.1\\exceptionless.4.4.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\google.protobuf\\3.6.1\\google.protobuf.3.6.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\hei.captcha\\0.2.0\\hei.captcha.0.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\k4os.compression.lz4\\1.1.11\\k4os.compression.lz4.1.1.11.nupkg.sha512",
@@ -98,6 +99,7 @@
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.objectpool\\2.2.0\\microsoft.extensions.objectpool.2.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.options\\3.1.5\\microsoft.extensions.options.3.1.5.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\3.1.5\\microsoft.extensions.options.configurationextensions.3.1.5.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.platformabstractions\\1.1.0\\microsoft.extensions.platformabstractions.1.1.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.5\\microsoft.extensions.primitives.3.1.5.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.webencoders\\2.2.0\\microsoft.extensions.webencoders.2.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.7.1\\microsoft.identitymodel.jsonwebtokens.6.7.1.nupkg.sha512",
