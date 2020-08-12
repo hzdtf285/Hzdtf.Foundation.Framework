@@ -22,3 +22,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Persistence\Hzdtf.WorkF
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Persistence\Hzdtf.WorkFlow.Persistence.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Persistence\Hzdtf.WorkFlow.Persistence.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.WorkFlow.Persistence.Contract.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Persistence\Hzdtf.WorkFlow.Persistence.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.WorkFlow.Persistence.Contract.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Persistence\Hzdtf.WorkFlow.Persistence.Contract.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Persistence\Hzdtf.WorkFlow.Persistence.Contract.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.pdb

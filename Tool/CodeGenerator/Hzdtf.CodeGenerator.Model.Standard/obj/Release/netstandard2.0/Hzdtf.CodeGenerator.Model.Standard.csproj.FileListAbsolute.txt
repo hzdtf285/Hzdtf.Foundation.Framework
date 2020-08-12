@@ -13,3 +13,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGen
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Model.Standard\obj\Release\netstandard2.0\Hzdtf.CodeGenerator.Model.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Model.Standard\obj\Release\netstandard2.0\Hzdtf.CodeGenerator.Model.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Model.Standard\obj\Release\netstandard2.0\Hzdtf.CodeGenerator.Model.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Model.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Model.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.pdb

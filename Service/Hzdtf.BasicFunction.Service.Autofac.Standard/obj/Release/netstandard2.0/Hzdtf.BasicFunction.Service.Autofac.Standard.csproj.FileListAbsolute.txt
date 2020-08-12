@@ -31,3 +31,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Service\Hzdtf.BasicFunction.Serv
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Service\Hzdtf.BasicFunction.Service.Autofac.Standard\obj\Release\netstandard2.0\Hzdtf.BasicFunction.Service.Autofac.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Service\Hzdtf.BasicFunction.Service.Autofac.Standard\obj\Release\netstandard2.0\Hzdtf.BasicFunction.Service.Autofac.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Service\Hzdtf.BasicFunction.Service.Autofac.Standard\obj\Release\netstandard2.0\Hzdtf.BasicFunction.Service.Autofac.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Service\Hzdtf.BasicFunction.Service.Autofac.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Service\Hzdtf.BasicFunction.Service.Autofac.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.pdb

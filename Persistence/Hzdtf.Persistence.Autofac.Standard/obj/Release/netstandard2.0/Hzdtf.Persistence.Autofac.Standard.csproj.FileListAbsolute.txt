@@ -25,3 +25,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.Persistence.Au
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.Persistence.Autofac.Standard\obj\Release\netstandard2.0\Hzdtf.Persistence.Autofac.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.Persistence.Autofac.Standard\obj\Release\netstandard2.0\Hzdtf.Persistence.Autofac.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.Persistence.Autofac.Standard\obj\Release\netstandard2.0\Hzdtf.Persistence.Autofac.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.Persistence.Autofac.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.Persistence.Autofac.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.pdb

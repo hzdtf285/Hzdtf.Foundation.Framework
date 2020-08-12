@@ -19,3 +19,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Extend.Standar
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Extend.Standard\obj\Release\netstandard2.0\Hzdtf.Autofac.Extend.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Extend.Standard\obj\Release\netstandard2.0\Hzdtf.Autofac.Extend.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Extend.Standard\obj\Release\netstandard2.0\Hzdtf.Autofac.Extend.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Extend.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Extend.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.pdb

@@ -37,3 +37,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Service\Hzdtf.WorkFlow.
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Service\Hzdtf.WorkFlow.Service.Impl.Standard\obj\Release\netstandard2.0\Hzdtf.WorkFlow.Service.Impl.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Service\Hzdtf.WorkFlow.Service.Impl.Standard\obj\Release\netstandard2.0\Hzdtf.WorkFlow.Service.Impl.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Service\Hzdtf.WorkFlow.Service.Impl.Standard\obj\Release\netstandard2.0\Hzdtf.WorkFlow.Service.Impl.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Service\Hzdtf.WorkFlow.Service.Impl.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Service\Hzdtf.WorkFlow.Service.Impl.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.pdb

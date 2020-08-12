@@ -13,3 +13,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Model\Hzdtf.BasicF
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Model\Hzdtf.BasicFunction.Model.Standard\obj\Release\netstandard2.0\Hzdtf.BasicFunction.Model.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Model\Hzdtf.BasicFunction.Model.Standard\obj\Release\netstandard2.0\Hzdtf.BasicFunction.Model.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Model\Hzdtf.BasicFunction.Model.Standard\obj\Release\netstandard2.0\Hzdtf.BasicFunction.Model.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Model\Hzdtf.BasicFunction.Model.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Model\Hzdtf.BasicFunction.Model.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.pdb

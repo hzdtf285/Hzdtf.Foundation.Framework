@@ -1,0 +1,6 @@
+2020-08-12 23:14:40.5215 Info Message Template Auto Format enabled
+2020-08-12 23:14:40.6886 Info Adding target FileTarget(Name=f)
+2020-08-12 23:14:40.7186 Info Adding target FileTarget(Name=fe)
+2020-08-12 23:14:40.7683 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\NLog.config
+2020-08-12 23:14:40.8022 Info Configuration initialized.
+2020-08-12 23:14:40.8346 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False

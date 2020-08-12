@@ -492,6 +492,11 @@
           "Hzdtf.MessageQueue.Contract.Standard.dll": {}
         }
       },
+      "Hzdtf.Mini.Standard/1.0.0": {
+        "runtime": {
+          "Hzdtf.Mini.Standard.dll": {}
+        }
+      },
       "Hzdtf.Platform.Contract.Standard/2.0.0": {
         "dependencies": {
           "Hzdtf.Utility.Standard": "2.0.0"
@@ -543,6 +548,7 @@
         "dependencies": {
           "AutoMapper": "10.0.0",
           "Hei.Captcha": "0.2.0",
+          "Hzdtf.Mini.Standard": "1.0.0",
           "MessagePack": "2.1.152",
           "Microsoft.Extensions.Caching.Abstractions": "3.1.5",
           "Microsoft.Extensions.Caching.Memory": "3.1.5",
@@ -899,6 +905,11 @@
       "sha512": ""
     },
     "Hzdtf.MessageQueue.Contract.Standard/2.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hzdtf.Mini.Standard/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

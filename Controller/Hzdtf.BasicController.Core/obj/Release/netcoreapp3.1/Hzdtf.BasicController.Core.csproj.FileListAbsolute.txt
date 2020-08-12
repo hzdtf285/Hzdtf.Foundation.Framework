@@ -31,3 +31,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Controller\Hzdtf.BasicController
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Controller\Hzdtf.BasicController.Core\obj\Release\netcoreapp3.1\Hzdtf.BasicController.Core.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Controller\Hzdtf.BasicController.Core\obj\Release\netcoreapp3.1\Hzdtf.BasicController.Core.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Controller\Hzdtf.BasicController.Core\obj\Release\netcoreapp3.1\Hzdtf.BasicController.Core.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Controller\Hzdtf.BasicController.Core\bin\Release\netcoreapp3.1\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Controller\Hzdtf.BasicController.Core\bin\Release\netcoreapp3.1\Hzdtf.Mini.Standard.pdb

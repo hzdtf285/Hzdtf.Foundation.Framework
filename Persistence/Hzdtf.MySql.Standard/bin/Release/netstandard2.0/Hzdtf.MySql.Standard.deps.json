@@ -1046,6 +1046,11 @@
           }
         }
       },
+      "Hzdtf.Mini.Standard/1.0.0": {
+        "runtime": {
+          "Hzdtf.Mini.Standard.dll": {}
+        }
+      },
       "Hzdtf.Persistence.Contract.Standard/2.0.0": {
         "dependencies": {
           "Hzdtf.Platform.Contract.Standard": "2.0.0",
@@ -1077,6 +1082,7 @@
         "dependencies": {
           "AutoMapper": "10.0.0",
           "Hei.Captcha": "0.2.0",
+          "Hzdtf.Mini.Standard": "1.0.0",
           "MessagePack": "2.1.152",
           "Microsoft.Extensions.Caching.Abstractions": "3.1.5",
           "Microsoft.Extensions.Caching.Memory": "3.1.5",
@@ -1743,6 +1749,11 @@
       "sha512": "sha512-Zm2BdeanuncYs3NhCj4c9e1x3EXFzFBVv2wPEc/Dj4ZbI9R8ecLSR5frAsx4zJCPBtKQreQ7Q/KxJEohJZbfzA==",
       "path": "system.xml.xpath.xmldocument/4.0.1",
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
+    },
+    "Hzdtf.Mini.Standard/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Hzdtf.Persistence.Contract.Standard/2.0.0": {
       "type": "project",

@@ -3680,6 +3680,14 @@
             测试用户
             </summary>
         </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.UserTool.GetCurrUser(Hzdtf.Utility.Standard.Model.BasicUserInfo,System.Boolean)">
+            <summary>
+            获取当前用户，如果传入的用户不为null，则取传入的用户。否则调GetCurrUserFunc委托
+            </summary>
+            <param name="currUser">当前用户</param>
+            <param name="notExistsIsOutTestUser">如果不存在是否输出测试用户</param>
+            <returns>当前用户</returns>
+        </member>
         <member name="M:Hzdtf.Utility.Standard.Model.UserTool.GetCurrUser``1(Hzdtf.Utility.Standard.Model.BasicUserInfo,System.Boolean)">
             <summary>
             获取当前用户，如果传入的用户不为null，则取传入的用户。否则调GetCurrUserFunc委托
@@ -4840,6 +4848,11 @@
             向量
             </summary>
         </member>
+        <member name="M:Hzdtf.Utility.Standard.Safety.DES.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
         <member name="M:Hzdtf.Utility.Standard.Safety.DES.#ctor(System.String,System.String)">
             <summary>
             构造方法
@@ -4865,16 +4878,6 @@
             <summary>
             DES辅助类
             @ 黄振东
-            </summary>
-        </member>
-        <member name="F:Hzdtf.Utility.Standard.Safety.DESUtil.DEFAULT_KEY">
-            <summary>
-            默认KEY
-            </summary>
-        </member>
-        <member name="F:Hzdtf.Utility.Standard.Safety.DESUtil.DEFAULT_IV">
-            <summary>
-            默认向量
             </summary>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Safety.DESUtil.Encrypt(System.String,System.String,System.String)">

@@ -13,3 +13,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorizatio
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.Authorization.Contract.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.Authorization.Contract.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.Authorization.Contract.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Contract.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Contract.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.pdb

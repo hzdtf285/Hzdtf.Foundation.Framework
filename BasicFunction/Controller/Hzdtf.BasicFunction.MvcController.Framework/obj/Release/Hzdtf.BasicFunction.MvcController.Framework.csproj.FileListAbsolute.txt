@@ -225,3 +225,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Controller\Hzdtf.B
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Framework\System.Numerics.Vectors.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Framework\System.Runtime.CompilerServices.Unsafe.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Framework\System.Buffers.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Framework\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Framework\Hzdtf.Mini.Standard.pdb

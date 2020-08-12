@@ -31,3 +31,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Persistence\Hzdtf.
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Persistence\Hzdtf.BasicFunction.SqlServer.Standard\obj\Release\netstandard2.0\Hzdtf.BasicFunction.SqlServer.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Persistence\Hzdtf.BasicFunction.SqlServer.Standard\obj\Release\netstandard2.0\Hzdtf.BasicFunction.SqlServer.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Persistence\Hzdtf.BasicFunction.SqlServer.Standard\obj\Release\netstandard2.0\Hzdtf.BasicFunction.SqlServer.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Persistence\Hzdtf.BasicFunction.SqlServer.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Persistence\Hzdtf.BasicFunction.SqlServer.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.pdb

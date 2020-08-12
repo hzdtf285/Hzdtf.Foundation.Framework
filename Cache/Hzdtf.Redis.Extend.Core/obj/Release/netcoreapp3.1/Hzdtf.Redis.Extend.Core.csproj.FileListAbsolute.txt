@@ -22,3 +22,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Cache\Hzdtf.Redis.Extend.Core\ob
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Cache\Hzdtf.Redis.Extend.Core\obj\Release\netcoreapp3.1\Hzdtf.Redis.Extend.Core.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Cache\Hzdtf.Redis.Extend.Core\obj\Release\netcoreapp3.1\Hzdtf.Redis.Extend.Core.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Cache\Hzdtf.Redis.Extend.Core\obj\Release\netcoreapp3.1\Hzdtf.Redis.Extend.Core.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Cache\Hzdtf.Redis.Extend.Core\bin\Release\netcoreapp3.1\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Cache\Hzdtf.Redis.Extend.Core\bin\Release\netcoreapp3.1\Hzdtf.Mini.Standard.pdb

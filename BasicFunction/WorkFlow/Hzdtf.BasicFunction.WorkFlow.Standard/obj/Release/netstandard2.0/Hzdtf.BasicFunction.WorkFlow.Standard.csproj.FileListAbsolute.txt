@@ -49,3 +49,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\WorkFlow\Hzdtf.Bas
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\WorkFlow\Hzdtf.BasicFunction.WorkFlow.Standard\obj\Release\netstandard2.0\Hzdtf.BasicFunction.WorkFlow.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\WorkFlow\Hzdtf.BasicFunction.WorkFlow.Standard\obj\Release\netstandard2.0\Hzdtf.BasicFunction.WorkFlow.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\WorkFlow\Hzdtf.BasicFunction.WorkFlow.Standard\obj\Release\netstandard2.0\Hzdtf.BasicFunction.WorkFlow.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\WorkFlow\Hzdtf.BasicFunction.WorkFlow.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\WorkFlow\Hzdtf.BasicFunction.WorkFlow.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.pdb

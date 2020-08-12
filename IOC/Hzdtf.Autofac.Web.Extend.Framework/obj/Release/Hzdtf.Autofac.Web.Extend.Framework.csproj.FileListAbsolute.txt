@@ -159,3 +159,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Fra
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\System.Threading.Tasks.Extensions.xml
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\zh-Hans\System.Web.Http.resources.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\zh-Hans\System.Web.Razor.resources.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Hzdtf.Mini.Standard.pdb

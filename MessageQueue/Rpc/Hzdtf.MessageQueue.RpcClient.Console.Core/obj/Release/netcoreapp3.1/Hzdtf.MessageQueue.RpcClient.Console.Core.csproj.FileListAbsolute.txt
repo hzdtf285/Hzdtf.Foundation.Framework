@@ -175,3 +175,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQu
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcClient.Console.Core\bin\Release\netcoreapp3.1\SixLabors.ImageSharp.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcClient.Console.Core\bin\Release\netcoreapp3.1\SixLabors.ImageSharp.Drawing.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcClient.Console.Core\bin\Release\netcoreapp3.1\SixLabors.Shapes.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcClient.Console.Core\bin\Release\netcoreapp3.1\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcClient.Console.Core\bin\Release\netcoreapp3.1\Hzdtf.Mini.Standard.pdb

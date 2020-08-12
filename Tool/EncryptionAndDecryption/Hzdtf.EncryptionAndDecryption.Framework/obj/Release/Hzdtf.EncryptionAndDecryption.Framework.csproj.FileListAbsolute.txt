@@ -115,3 +115,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\EncryptionAndDecryption\Hzd
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\EncryptionAndDecryption\Hzdtf.EncryptionAndDecryption.Framework\bin\Release\System.Numerics.Vectors.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\EncryptionAndDecryption\Hzdtf.EncryptionAndDecryption.Framework\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\EncryptionAndDecryption\Hzdtf.EncryptionAndDecryption.Framework\bin\Release\System.Buffers.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\EncryptionAndDecryption\Hzdtf.EncryptionAndDecryption.Framework\bin\Release\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\EncryptionAndDecryption\Hzdtf.EncryptionAndDecryption.Framework\bin\Release\Hzdtf.Mini.Standard.pdb

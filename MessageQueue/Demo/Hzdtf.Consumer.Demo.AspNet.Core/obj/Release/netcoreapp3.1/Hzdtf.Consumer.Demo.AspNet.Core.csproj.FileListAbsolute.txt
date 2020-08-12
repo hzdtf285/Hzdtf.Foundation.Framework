@@ -95,3 +95,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Consumer
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Consumer.Demo.AspNet.Core\bin\Release\netcoreapp3.1\SixLabors.ImageSharp.Drawing.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Consumer.Demo.AspNet.Core\bin\Release\netcoreapp3.1\SixLabors.Shapes.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Consumer.Demo.AspNet.Core\obj\Release\netcoreapp3.1\Hzdtf.Consumer.Demo.AspNet.Core.MvcApplicationPartsAssemblyInfo.cs
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Consumer.Demo.AspNet.Core\bin\Release\netcoreapp3.1\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Consumer.Demo.AspNet.Core\bin\Release\netcoreapp3.1\Hzdtf.Mini.Standard.pdb

@@ -110,9 +110,19 @@
             登录路径
             </summary>
         </member>
+        <member name="P:Hzdtf.Authorization.Web.Core.LocalAuthOptions.LogoutPath">
+            <summary>
+            登出路径
+            </summary>
+        </member>
         <member name="P:Hzdtf.Authorization.Web.Core.LocalAuthOptions.IsRedirectToLogin">
             <summary>
-            是否重定向
+            是否重定向登录
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Authorization.Web.Core.LocalAuthOptions.IsRedirectToLogout">
+            <summary>
+            是否重定向登出
             </summary>
         </member>
         <member name="T:Hzdtf.Authorization.Web.Core.IdentityCookieAuth`1">

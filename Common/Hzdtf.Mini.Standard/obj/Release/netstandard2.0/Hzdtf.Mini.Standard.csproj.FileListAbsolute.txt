@@ -6,3 +6,4 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Mini.Standard\obj\R
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Mini.Standard\obj\Release\netstandard2.0\Hzdtf.Mini.Standard.csproj.CoreCompileInputs.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Mini.Standard\obj\Release\netstandard2.0\Hzdtf.Mini.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Mini.Standard\obj\Release\netstandard2.0\Hzdtf.Mini.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Mini.Standard\obj\Release\netstandard2.0\Hzdtf.Mini.Standard.csprojAssemblyReference.cache

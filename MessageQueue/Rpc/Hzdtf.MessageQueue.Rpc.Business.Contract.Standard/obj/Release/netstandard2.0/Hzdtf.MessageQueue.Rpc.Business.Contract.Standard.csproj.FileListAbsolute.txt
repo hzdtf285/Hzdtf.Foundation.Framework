@@ -38,3 +38,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQu
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.pdb

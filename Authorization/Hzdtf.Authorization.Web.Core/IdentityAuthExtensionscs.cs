@@ -61,24 +61,39 @@ namespace Hzdtf.Authorization.Web.Core
                     services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                     .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, o =>
                     {
-                        if (string.IsNullOrWhiteSpace(localOption.LoginPath))
+                        if (!string.IsNullOrWhiteSpace(localOption.LoginPath))
                         {
-                            return;
-                        }
-
-                        if (localOption.IsRedirectToLogin)
-                        {
-                            o.Events.OnRedirectToLogin = (context) =>
+                            if (localOption.IsRedirectToLogin)
                             {
-                                return Task.Run(() =>
+                                o.Events.OnRedirectToLogin = (context) =>
                                 {
-                                    context.Response.Redirect(localOption.LoginPath);
-                                });
-                            };
+                                    return Task.Run(() =>
+                                    {
+                                        context.Response.Redirect(localOption.LoginPath);
+                                    });
+                                };
+                            }
+                            else
+                            {
+                                o.LoginPath = new PathString(localOption.LoginPath);
+                            }
                         }
-                        else
+                        if (!string.IsNullOrWhiteSpace(localOption.LogoutPath))
                         {
-                            o.LoginPath = new PathString(localOption.LoginPath);
+                            if (localOption.IsRedirectToLogout)
+                            {
+                                o.Events.OnRedirectToLogout = (context) =>
+                                {
+                                    return Task.Run(() =>
+                                    {
+                                        context.Response.Redirect(localOption.LogoutPath);
+                                    });
+                                };
+                            }
+                            else
+                            {
+                                o.LogoutPath = new PathString(localOption.LogoutPath);
+                            }
                         }
                     });
 
@@ -207,9 +222,27 @@ namespace Hzdtf.Authorization.Web.Core
         }
 
         /// <summary>
-        /// 是否重定向
+        /// 登出路径
+        /// </summary>
+        public string LogoutPath
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 是否重定向登录
         /// </summary>
         public bool IsRedirectToLogin
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 是否重定向登出
+        /// </summary>
+        public bool IsRedirectToLogout
         {
             get;
             set;

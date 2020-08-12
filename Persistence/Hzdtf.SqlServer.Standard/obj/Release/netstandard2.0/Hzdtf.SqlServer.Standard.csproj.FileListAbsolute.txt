@@ -22,3 +22,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.SqlServer.Stan
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.SqlServer.Standard\obj\Release\netstandard2.0\Hzdtf.SqlServer.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.SqlServer.Standard\obj\Release\netstandard2.0\Hzdtf.SqlServer.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.SqlServer.Standard\obj\Release\netstandard2.0\Hzdtf.SqlServer.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.SqlServer.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.SqlServer.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.pdb

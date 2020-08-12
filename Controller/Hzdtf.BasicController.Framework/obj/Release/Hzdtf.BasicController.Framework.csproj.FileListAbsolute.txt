@@ -169,3 +169,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Controller\Hzdtf.BasicController
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Controller\Hzdtf.BasicController.Framework\Bin\Release\System.Numerics.Vectors.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Controller\Hzdtf.BasicController.Framework\Bin\Release\System.Runtime.CompilerServices.Unsafe.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Controller\Hzdtf.BasicController.Framework\Bin\Release\System.Buffers.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Controller\Hzdtf.BasicController.Framework\Bin\Release\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Controller\Hzdtf.BasicController.Framework\Bin\Release\Hzdtf.Mini.Standard.pdb

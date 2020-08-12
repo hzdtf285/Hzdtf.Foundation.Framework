@@ -34,3 +34,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rabbit\Hzdtf.Rabbit
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rabbit\Hzdtf.Rabbit.AspNet.Core\obj\Release\netcoreapp3.1\Hzdtf.Rabbit.AspNet.Core.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rabbit\Hzdtf.Rabbit.AspNet.Core\obj\Release\netcoreapp3.1\Hzdtf.Rabbit.AspNet.Core.pdb
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rabbit\Hzdtf.Rabbit.AspNet.Core\bin\Release\netcoreapp3.1\Hzdtf.Rabbit.AspNet.Core.xml
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rabbit\Hzdtf.Rabbit.AspNet.Core\bin\Release\netcoreapp3.1\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rabbit\Hzdtf.Rabbit.AspNet.Core\bin\Release\netcoreapp3.1\Hzdtf.Mini.Standard.pdb

@@ -25,3 +25,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rabbit\Hzdtf.Rabbit
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rabbit\Hzdtf.Rabbit.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.Rabbit.Contract.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rabbit\Hzdtf.Rabbit.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.Rabbit.Contract.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rabbit\Hzdtf.Rabbit.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.Rabbit.Contract.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rabbit\Hzdtf.Rabbit.Contract.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rabbit\Hzdtf.Rabbit.Contract.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.pdb

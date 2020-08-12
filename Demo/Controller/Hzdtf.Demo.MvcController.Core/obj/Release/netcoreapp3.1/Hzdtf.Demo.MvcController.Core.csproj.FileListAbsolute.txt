@@ -46,3 +46,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Controller\Hzdtf.Demo.MvcCo
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Controller\Hzdtf.Demo.MvcController.Core\obj\Release\netcoreapp3.1\Hzdtf.Demo.MvcController.Core.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Controller\Hzdtf.Demo.MvcController.Core\obj\Release\netcoreapp3.1\Hzdtf.Demo.MvcController.Core.pdb
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Controller\Hzdtf.Demo.MvcController.Core\obj\Release\netcoreapp3.1\Hzdtf.Demo.MvcController.Core.csproj.CoreCompileInputs.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Controller\Hzdtf.Demo.MvcController.Core\bin\Release\netcoreapp3.1\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Controller\Hzdtf.Demo.MvcController.Core\bin\Release\netcoreapp3.1\Hzdtf.Mini.Standard.pdb
