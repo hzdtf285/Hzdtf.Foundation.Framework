@@ -81,3 +81,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Model\Hzdtf.Demo.Model.Stan
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Model\Hzdtf.Demo.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.Demo.Model.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Model\Hzdtf.Demo.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.Demo.Model.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Model\Hzdtf.Demo.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.Demo.Model.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Model\Hzdtf.Demo.Model.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Demo\Model\Hzdtf.Demo.Model.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

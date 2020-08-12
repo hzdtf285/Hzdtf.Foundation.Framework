@@ -24,12 +24,13 @@ namespace Hzdtf.Service.Impl.Standard
         /// </summary>
         /// <param name="id">ID</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<ModelT>> FindAsync(int id, string connectionId = null)
+        public virtual async Task<ReturnInfo<ModelT>> FindAsync(int id, string connectionId = null, BasicUserInfo currUser = null)
         {
             return await Task.Run<ReturnInfo<ModelT>>(() =>
             {
-                return Find(id, connectionId);
+                return Find(id, connectionId, currUser);
             });
         }
 
@@ -38,12 +39,13 @@ namespace Hzdtf.Service.Impl.Standard
         /// </summary>
         /// <param name="ids">ID集合</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<IList<ModelT>>> FindAsync(int[] ids, string connectionId = null)
+        public virtual async Task<ReturnInfo<IList<ModelT>>> FindAsync(int[] ids, string connectionId = null, BasicUserInfo currUser = null)
         {
             return await Task.Run<ReturnInfo<IList<ModelT>>>(() =>
             {
-                return Find(ids, connectionId);
+                return Find(ids, connectionId, currUser);
             });
         }
 
@@ -52,12 +54,13 @@ namespace Hzdtf.Service.Impl.Standard
         /// </summary>
         /// <param name="id">ID</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<bool>> ExistsAsync(int id, string connectionId = null)
+        public virtual async Task<ReturnInfo<bool>> ExistsAsync(int id, string connectionId = null, BasicUserInfo currUser = null)
         {
             return await Task.Run<ReturnInfo<bool>>(() =>
             {
-                return Exists(id, connectionId);
+                return Exists(id, connectionId, currUser);
             });
         }
 
@@ -65,12 +68,13 @@ namespace Hzdtf.Service.Impl.Standard
         /// 异步统计模型数
         /// </summary>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<int>> CountAsync(string connectionId = null)
+        public virtual async Task<ReturnInfo<int>> CountAsync(string connectionId = null, BasicUserInfo currUser = null)
         {
             return await Task.Run<ReturnInfo<int>>(() =>
             {
-                return Count(connectionId);
+                return Count(connectionId, currUser);
             });
         }
 
@@ -78,12 +82,13 @@ namespace Hzdtf.Service.Impl.Standard
         /// 异步查询模型列表
         /// </summary>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<IList<ModelT>>> QueryAsync(string connectionId = null)
+        public virtual async Task<ReturnInfo<IList<ModelT>>> QueryAsync(string connectionId = null, BasicUserInfo currUser = null)
         {
             return await Task.Run<ReturnInfo<IList<ModelT>>>(() =>
             {
-                return Query(connectionId);
+                return Query(connectionId, currUser);
             });
         }
 
@@ -94,12 +99,13 @@ namespace Hzdtf.Service.Impl.Standard
         /// <param name="pageSize">每页记录数</param>
         /// <param name="filter">筛选</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<PagingInfo<ModelT>>> QueryPageAsync(int pageIndex, int pageSize, FilterInfo filter = null, string connectionId = null)
+        public virtual async Task<ReturnInfo<PagingInfo<ModelT>>> QueryPageAsync(int pageIndex, int pageSize, FilterInfo filter = null, string connectionId = null, BasicUserInfo currUser = null)
         {
             return await Task.Run<ReturnInfo<PagingInfo<ModelT>>>(() =>
             {
-                return QueryPage(pageIndex, pageSize, filter, connectionId);
+                return QueryPage(pageIndex, pageSize, filter, connectionId, currUser);
             });
         }
 
@@ -112,12 +118,13 @@ namespace Hzdtf.Service.Impl.Standard
         /// </summary>
         /// <param name="model">模型</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<bool>> AddAsync(ModelT model, string connectionId = null)
+        public virtual async Task<ReturnInfo<bool>> AddAsync(ModelT model, string connectionId = null, BasicUserInfo currUser = null)
         {
             return await Task.Run<ReturnInfo<bool>>(() =>
             {
-                return Add(model, connectionId);
+                return Add(model, connectionId, currUser);
             });
         }
 
@@ -126,12 +133,13 @@ namespace Hzdtf.Service.Impl.Standard
         /// </summary>
         /// <param name="models">模型列表</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<bool>> AddAsync(IList<ModelT> models, string connectionId = null)
+        public virtual async Task<ReturnInfo<bool>> AddAsync(IList<ModelT> models, string connectionId = null, BasicUserInfo currUser = null)
         {
             return await Task.Run<ReturnInfo<bool>>(() =>
             {
-                return Add(models, connectionId);
+                return Add(models, connectionId, currUser);
             });
         }
 
@@ -141,12 +149,13 @@ namespace Hzdtf.Service.Impl.Standard
         /// </summary>
         /// <param name="model">模型</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<bool>> SetAsync(ModelT model, string connectionId = null)
+        public virtual async Task<ReturnInfo<bool>> SetAsync(ModelT model, string connectionId = null, BasicUserInfo currUser = null)
         {
             return await Task.Run<ReturnInfo<bool>>(() =>
             {
-                return Set(model, connectionId);
+                return Set(model, connectionId, currUser);
             });
         }
 
@@ -155,12 +164,13 @@ namespace Hzdtf.Service.Impl.Standard
         /// </summary>
         /// <param name="model">模型</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<bool>> ModifyByIdAsync(ModelT model, string connectionId = null)
+        public virtual async Task<ReturnInfo<bool>> ModifyByIdAsync(ModelT model, string connectionId = null, BasicUserInfo currUser = null)
         {
             return await Task.Run<ReturnInfo<bool>>(() =>
             {
-                return ModifyById(model, connectionId);
+                return ModifyById(model, connectionId, currUser);
             });
         }
 
@@ -169,12 +179,13 @@ namespace Hzdtf.Service.Impl.Standard
         /// </summary>
         /// <param name="id">ID</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<bool>> RemoveByIdAsync(int id, string connectionId = null)
+        public virtual async Task<ReturnInfo<bool>> RemoveByIdAsync(int id, string connectionId = null, BasicUserInfo currUser = null)
         {
             return await Task.Run<ReturnInfo<bool>>(() =>
             {
-                return RemoveById(id, connectionId);
+                return RemoveById(id, connectionId, currUser);
             });
         }
 
@@ -183,12 +194,13 @@ namespace Hzdtf.Service.Impl.Standard
         /// </summary>
         /// <param name="ids">ID集合</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<bool>> RemoveByIdsAsync(int[] ids, string connectionId = null)
+        public virtual async Task<ReturnInfo<bool>> RemoveByIdsAsync(int[] ids, string connectionId = null, BasicUserInfo currUser = null)
         {
             return await Task.Run<ReturnInfo<bool>>(() =>
             {
-                return RemoveByIds(ids, connectionId);
+                return RemoveByIds(ids, connectionId, currUser);
             });
         }
 
@@ -196,12 +208,13 @@ namespace Hzdtf.Service.Impl.Standard
         /// 异步清空所有模型
         /// </summary>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<bool>> ClearAsync(string connectionId = null)
+        public virtual async Task<ReturnInfo<bool>> ClearAsync(string connectionId = null, BasicUserInfo currUser = null)
         {
             return await Task.Run<ReturnInfo<bool>>(() =>
             {
-                return Clear(connectionId);
+                return Clear(connectionId, currUser);
             });
         }
 

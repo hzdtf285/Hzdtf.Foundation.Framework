@@ -28,7 +28,8 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard.Engine
         /// </summary>
         /// <param name="workflowId">工作流ID</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<FormT> ReaderByWorkflowId(int workflowId, string connectionId = null);
+        ReturnInfo<FormT> ReaderByWorkflowId(int workflowId, string connectionId = null, BasicUserInfo currUser = null);
     }
 }

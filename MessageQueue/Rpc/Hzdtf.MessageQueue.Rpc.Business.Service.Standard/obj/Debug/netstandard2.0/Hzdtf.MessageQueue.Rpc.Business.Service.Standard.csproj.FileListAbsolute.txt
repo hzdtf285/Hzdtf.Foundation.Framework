@@ -121,3 +121,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQu
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Service.Standard\obj\Debug\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Service.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Service.Standard\obj\Debug\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Service.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Service.Standard\obj\Debug\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Service.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Service.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Service.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

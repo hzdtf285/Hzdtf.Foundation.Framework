@@ -1,5 +1,6 @@
 ﻿using Hzdtf.BasicFunction.Service.Contract.Standard;
 using Hzdtf.Utility.Standard.Attr;
+using Hzdtf.Utility.Standard.Model;
 using Hzdtf.Utility.Standard.Model.Return;
 using Hzdtf.WorkFlow.Model.Standard.Expand;
 using Hzdtf.WorkFlow.Service.Impl.Standard.Engine;
@@ -31,10 +32,11 @@ namespace Hzdtf.BasicFunction.WorkFlow.Standard
         /// <typeparam name="FormT">表单类型</typeparam>
         /// <param name="flowInit">流程初始化</param>
         /// <param name="returnInfo">返回信息</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>申请单号</returns>
-        protected override string BuilderApplyNo<FormT>(FlowInitInfo<FormT> flowInit, ReturnInfo<WorkflowBasicInfo> returnInfo)
+        protected override string BuilderApplyNo<FormT>(FlowInitInfo<FormT> flowInit, ReturnInfo<WorkflowBasicInfo> returnInfo, BasicUserInfo currUser = null)
         {
-            var buildNoReturnInfo = SequenceService.BuildNo(flowInit.WorkflowCode);
+            var buildNoReturnInfo = SequenceService.BuildNo(flowInit.WorkflowCode, currUser: currUser);
             if (buildNoReturnInfo.Failure())
             {
                 returnInfo.FromBasic(buildNoReturnInfo);

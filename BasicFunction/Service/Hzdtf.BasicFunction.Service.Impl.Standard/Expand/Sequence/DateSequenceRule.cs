@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Hzdtf.Utility.Standard.Utils;
+using Hzdtf.Utility.Standard.Model;
 
 namespace Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Sequence
 {
@@ -20,8 +21,9 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Sequence
         /// <param name="seqType">序列类型</param>
         /// <param name="noLength">序列号长度</param>
         /// <param name="increment">增量</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>序列号</returns>
-        public string BuilderNo(string seqType, byte noLength, int increment)
+        public string BuilderNo(string seqType, byte noLength, int increment, BasicUserInfo currUser = null)
         {
             string dateStr = DateTime.Now.ToCompactFixedShortDate();
             StringBuilder result = new StringBuilder($"{seqType}{dateStr}");

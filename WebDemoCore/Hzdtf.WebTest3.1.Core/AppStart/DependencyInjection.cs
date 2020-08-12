@@ -6,6 +6,7 @@ using Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment;
 using Hzdtf.BasicFunction.WorkFlow.Standard;
 using Hzdtf.Logger.Contract.Standard;
 using Hzdtf.Logger.Exceptionless.Standard;
+using Hzdtf.Logger.Integration.ENLog.Standard;
 using Hzdtf.Platform.Config.Contract.Standard.Config.App;
 using Hzdtf.Platform.Contract.Standard;
 using Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig;
@@ -41,7 +42,7 @@ namespace Hzdtf.WebTest3_1.Core.AppStart
 
                     builder.RegisterType<AutofacInstance>().As<IInstance>().AsSelf().PropertiesAutowired().SingleInstance();
 
-                    builder.RegisterType<ExceptionlessLog>().As<ILogable>().AsSelf().PropertiesAutowired().SingleInstance();
+                    builder.RegisterType<IntegrationNLog>().As<ILogable>().AsSelf().PropertiesAutowired().SingleInstance();
                 }
             });
             builder.RegisterBuildCallback(container =>

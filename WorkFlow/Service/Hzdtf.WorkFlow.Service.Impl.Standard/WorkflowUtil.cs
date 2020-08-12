@@ -17,12 +17,13 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
         /// 判断当前用户能否审核
         /// </summary>
         /// <param name="workflowHandle">工作流处理</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>当前用户能否审核</returns>
-        public static BasicReturnInfo CanCurrUserAudit(WorkflowHandleInfo workflowHandle)
+        public static BasicReturnInfo CanCurrUserAudit(WorkflowHandleInfo workflowHandle, BasicUserInfo currUser = null)
         {
             BasicReturnInfo returnInfo = new BasicReturnInfo();
-
-            if (UserTool.CurrUser == null)
+            var user = UserTool.GetCurrUser(currUser);
+            if (user == null)
             {
                 returnInfo.SetFailureMsg("您还未登录，请先登录系统");
 
@@ -36,7 +37,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
                 return returnInfo;
             }
 
-            if (workflowHandle.HandlerId != UserTool.CurrUser.Id)
+            if (workflowHandle.HandlerId != user.Id)
             {
                 returnInfo.SetFailureMsg("Sorry,您不是此流程的处理者,无权限审核");
 

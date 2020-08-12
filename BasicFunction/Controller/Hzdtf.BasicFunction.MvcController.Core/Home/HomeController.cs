@@ -32,7 +32,8 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Home
         /// <returns>动作结果</returns>
         public ActionResult Index()
         {
-            return View(UserMenuService.CanAccessMenus(UserTool.CurrUser.Id));
+            var user = UserTool.GetCurrUser();
+            return View(UserMenuService.CanAccessMenus(user.Id));
         }
     }
 }

@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Hzdtf.Utility.Standard.Utils;
+using Hzdtf.Utility.Standard.Model;
 
 namespace Hzdtf.BasicFunction.WorkFlow.Standard
 {
@@ -32,10 +33,11 @@ namespace Hzdtf.BasicFunction.WorkFlow.Standard
         /// <param name="arg1">返回信息</param>
         /// <param name="arg2">用户ID</param>
         /// <param name="arg3">连接ID</param>
-        private static void UserService_RemoveByIdsing(ReturnInfo<bool> arg1, int[] arg2, string arg3)
+        /// <param name="arg4">当前用户</param>
+        private static void UserService_RemoveByIdsing(ReturnInfo<bool> arg1, int[] arg2, string arg3, BasicUserInfo arg4)
         {
             IWorkflowHandleService workflowHandleService = AutofacTool.Resolve<IWorkflowHandleService>();
-            ReturnInfo<bool[]> handleReturnInfo = workflowHandleService.ExistsAuditAndUnhandleByHandleIds(arg2, arg3);
+            ReturnInfo<bool[]> handleReturnInfo = workflowHandleService.ExistsAuditAndUnhandleByHandleIds(arg2, arg3, arg4);
             if (handleReturnInfo.Failure())
             {
                 arg1.FromBasic(handleReturnInfo);
@@ -63,10 +65,11 @@ namespace Hzdtf.BasicFunction.WorkFlow.Standard
         /// <param name="arg1">返回信息</param>
         /// <param name="arg2">用户ID</param>
         /// <param name="arg3">连接ID</param>
-        private static void UserService_RemoveByIding(ReturnInfo<bool> arg1, int arg2, string arg3)
+        /// <param name="arg4">当前用户</param>
+        private static void UserService_RemoveByIding(ReturnInfo<bool> arg1, int arg2, string arg3, BasicUserInfo arg4)
         {
             IWorkflowHandleService workflowHandleService = AutofacTool.Resolve<IWorkflowHandleService>();
-            ReturnInfo<bool> handleReturnInfo = workflowHandleService.ExistsAuditAndUnhandleByHandleId(arg2, arg3);
+            ReturnInfo<bool> handleReturnInfo = workflowHandleService.ExistsAuditAndUnhandleByHandleId(arg2, arg3, arg4);
             if (handleReturnInfo.Failure())
             {
                 arg1.FromBasic(handleReturnInfo);

@@ -92,11 +92,15 @@ namespace Hzdtf.Autofac.Extend.Standard.Intercepteds
             invocation.Proceed();
 
             string returnValLog = null;
-            if (attr == null || !attr.IgnoreParamReturn)
+            if ((attr == null || !attr.IgnoreParamReturn) && invocation.ReturnValue != null)
             {
-                returnValLog = $"ReturnValue:{JsonUtil.SerializeIgnoreNull(invocation.ReturnValue)},";
+                var returnType = invocation.ReturnValue.GetType();
+                if (!returnType.IsTypeTask())
+                {
+                    returnValLog = $"ReturnValue:{JsonUtil.SerializeIgnoreNull(invocation.ReturnValue)},";
+                }
             }
-
+            
             watch.Stop();
             logMsg.AppendFormat(",{0}timed:{1}ms", returnValLog, watch.ElapsedMilliseconds);
 

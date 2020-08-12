@@ -3,9 +3,9 @@ using Hzdtf.Utility.Standard.Attr;
 using Hzdtf.Utility.Standard.Attr.ParamAttr;
 using Hzdtf.Utility.Standard.Data;
 using Hzdtf.Utility.Standard.Enums;
+using Hzdtf.Utility.Standard.Model;
 using Hzdtf.Utility.Standard.Model.Return;
 using Hzdtf.WorkFlow.Model.Standard;
-using Hzdtf.WorkFlow.Model.Standard.Expand;
 using Hzdtf.WorkFlow.Model.Standard.Expand.Diversion;
 using Hzdtf.WorkFlow.Persistence.Contract.Standard;
 using Hzdtf.WorkFlow.Service.Contract.Standard;
@@ -136,14 +136,15 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// </summary>
         /// <param name="flowIn">流程输入</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<bool> Execute(FlowInT flowIn, string connectionId = null)
+        [Auth(CurrUserParamIndex = 2)]
+        public virtual ReturnInfo<bool> Execute(FlowInT flowIn, string connectionId = null, BasicUserInfo currUser = null)
         {
             return ExecReturnFuncAndConnectionId<bool>((reInfo, connId) =>
             {
                 WorkflowInfo workflow;
-                WorkflowDefineInfo workflowDefine = ValiFlowIn(reInfo, flowIn, out workflow, connId);
+                WorkflowDefineInfo workflowDefine = ValiFlowIn(reInfo, flowIn, out workflow, connId, currUser);
                 if (reInfo.Failure())
                 {
                     return false;
@@ -156,14 +157,14 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
                 };
                 AppendSetFindFlowCensorshipIn(flowIn, findFlowCensorshipIn);
 
-                ReturnInfo<FlowCensorshipOutInfo> reOut = FindFlowCensorship.NextHandler(findFlowCensorshipIn, connId);
+                ReturnInfo<FlowCensorshipOutInfo> reOut = FindFlowCensorship.NextHandler(findFlowCensorshipIn, connId, currUser);
                 if (reOut.Failure())
                 {
                     reInfo.FromBasic(reOut);
                     return false;
                 }
 
-                ReturnInfo<bool> reTrans = ExecTransaction(reInfo, workflowDefine, flowIn, reOut.Data, connId);
+                ReturnInfo<bool> reTrans = ExecTransaction(reInfo, workflowDefine, flowIn, reOut.Data, connId, currUser);
                 reInfo.FromBasic(reTrans);
 
                 if (reTrans.Failure())
@@ -187,10 +188,11 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// <param name="flowIn">流程输入</param>
         /// <param name="findFlowCensorshipOut">查找流程关卡输出</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
         [Transaction(ConnectionIdIndex = 4)]
         protected virtual ReturnInfo<bool> ExecTransaction(ReturnInfo<bool> returnInfo, WorkflowDefineInfo workflowDefine,
-            FlowInT flowIn, FlowCensorshipOutInfo findFlowCensorshipOut, string connectionId = null)
+            FlowInT flowIn, FlowCensorshipOutInfo findFlowCensorshipOut, string connectionId = null, BasicUserInfo currUser = null)
         {          
             IFormEngine formEngine = FormEngineFactory.Create(workflowDefine.Code);
             if (formEngine == null)
@@ -200,7 +202,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
                 return returnInfo;
             }
 
-            ReturnInfo<bool> basicReturn = formEngine.BeforeExecFlow(findFlowCensorshipOut, flowIn);
+            ReturnInfo<bool> basicReturn = formEngine.BeforeExecFlow(findFlowCensorshipOut, flowIn, connectionId, currUser);
             if (basicReturn.Failure())
             {
                 returnInfo.FromBasic(basicReturn);
@@ -208,9 +210,9 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
                 return returnInfo;
             }
 
-            ExecCore(returnInfo, flowIn, findFlowCensorshipOut, connectionId);
+            ExecCore(returnInfo, flowIn, findFlowCensorshipOut, connectionId, currUser);
 
-            basicReturn = formEngine.AfterExecFlow(findFlowCensorshipOut, flowIn, returnInfo.Success(), connectionId);
+            basicReturn = formEngine.AfterExecFlow(findFlowCensorshipOut, flowIn, returnInfo.Success(), connectionId, currUser);
             if (basicReturn.Failure())
             {
                 returnInfo.FromBasic(basicReturn);
@@ -230,15 +232,17 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// <param name="flowIn">流程输入</param>
         /// <param name="workflow">工作流</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>工作流定义</returns>
-        protected abstract WorkflowDefineInfo ValiFlowIn(ReturnInfo<bool> returnInfo, FlowInT flowIn, out WorkflowInfo workflow, string connectionId = null);
+        protected abstract WorkflowDefineInfo ValiFlowIn(ReturnInfo<bool> returnInfo, FlowInT flowIn, out WorkflowInfo workflow, string connectionId = null, BasicUserInfo currUser = null);
 
         /// <summary>
         /// 追加设置查找流程关卡输入信息
         /// </summary>
         /// <param name="flowIn">流程输入</param>
         /// <param name="findFlowCensorshipIn">查找流程关卡输入信息</param>
-        protected abstract void AppendSetFindFlowCensorshipIn(FlowInT flowIn, FlowCensorshipInInfo findFlowCensorshipIn);
+        /// <param name="currUser">当前用户</param>
+        protected abstract void AppendSetFindFlowCensorshipIn(FlowInT flowIn, FlowCensorshipInInfo findFlowCensorshipIn, BasicUserInfo currUser = null);
 
         /// <summary>
         /// 执行核心
@@ -247,7 +251,8 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// <param name="flowIn">流程输入</param>
         /// <param name="findFlowCensorshipOut">查找流程关卡输出</param>
         /// <param name="connectionId">连接ID</param>
-        protected abstract void ExecCore(ReturnInfo<bool> returnInfo, FlowInT flowIn, FlowCensorshipOutInfo findFlowCensorshipOut, string connectionId = null);
+        /// <param name="currUser">当前用户</param>
+        protected abstract void ExecCore(ReturnInfo<bool> returnInfo, FlowInT flowIn, FlowCensorshipOutInfo findFlowCensorshipOut, string connectionId = null, BasicUserInfo currUser = null);
 
         #endregion
 

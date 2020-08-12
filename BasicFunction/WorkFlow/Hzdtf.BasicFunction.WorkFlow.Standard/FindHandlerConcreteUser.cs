@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Hzdtf.Utility.Standard.Attr.ParamAttr;
+using Hzdtf.Utility.Standard.Model;
 
 namespace Hzdtf.BasicFunction.WorkFlow.Standard
 {
@@ -33,13 +34,13 @@ namespace Hzdtf.BasicFunction.WorkFlow.Standard
         /// <param name="id">ID</param>
         /// <param name="userId">用户ID</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<FindHandlerUserOutInfo> FindById([DisplayName2("ID"), Id] int id, int userId, string connectionId = null)
+        public virtual ReturnInfo<FindHandlerUserOutInfo> FindById([DisplayName2("ID"), Id] int id, int userId, string connectionId = null, BasicUserInfo currUser = null)
         {
             ReturnInfo<FindHandlerUserOutInfo> returnInfo = new ReturnInfo<FindHandlerUserOutInfo>();
 
-            ReturnInfo<UserInfo> reUser = UserService.Find(id, connectionId);
+            ReturnInfo<UserInfo> reUser = UserService.Find(id, connectionId, currUser);
             if (reUser.Failure())
             {
                 returnInfo.FromBasic(reUser);

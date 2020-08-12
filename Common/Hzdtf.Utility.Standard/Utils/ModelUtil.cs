@@ -15,28 +15,36 @@ namespace Hzdtf.Utility.Standard.Utils
         /// 设置创建信息
         /// </summary>
         /// <param name="model">模型</param>
-        public static void SetCreateInfo(this PersonTimeInfo model)
+        /// <param name="currUser">当前用户</param>
+        public static void SetCreateInfo(this PersonTimeInfo model, BasicUserInfo currUser = null)
         {
-            if (UserTool.CurrUser != null)
+            var user = UserTool.GetCurrUser(currUser);
+            if (user == null)
             {
-                model.CreaterId = model.ModifierId = UserTool.CurrUser.Id;
-                model.Creater = model.Modifier = UserTool.CurrUser.Name;
-                model.CreateTime = model.ModifyTime = DateTime.Now;
+                return;
             }
+
+            model.CreaterId = model.ModifierId = user.Id;
+            model.Creater = model.Modifier = user.Name;
+            model.CreateTime = model.ModifyTime = DateTime.Now;
         }
 
         /// <summary>
         /// 设置修改信息
         /// </summary>
         /// <param name="model">模型</param>
-        public static void SetModifyInfo(this PersonTimeInfo model)
+        /// <param name="currUser">当前用户</param>
+        public static void SetModifyInfo(this PersonTimeInfo model, BasicUserInfo currUser = null)
         {
-            if (UserTool.CurrUser != null)
+            var user = UserTool.GetCurrUser(currUser);
+            if (user == null)
             {
-                model.ModifierId = UserTool.CurrUser.Id;
-                model.Modifier = UserTool.CurrUser.Name;
-                model.ModifyTime = DateTime.Now;
+                return;    
             }
+
+            model.ModifierId = user.Id;
+            model.Modifier = user.Name;
+            model.ModifyTime = DateTime.Now;
         }
     }
 }

@@ -5,6 +5,7 @@ using Hzdtf.Utility.Standard.Model.Return;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Hzdtf.BasicController.Core
 {
@@ -29,7 +30,7 @@ namespace Hzdtf.BasicController.Core
         /// <returns>返回信息</returns>
         [HttpGet("{id}")]
         [Function(FunCodeDefine.QUERY_CODE)]
-        public virtual ReturnInfo<ModelT> Get(int id) => Service.Find(id);
+        public virtual async Task<ReturnInfo<ModelT>> Get(int id) => await Service.FindAsync(id);
 
         /// <summary>
         /// 添加模型
@@ -38,7 +39,7 @@ namespace Hzdtf.BasicController.Core
         /// <returns>返回信息</returns>
         [HttpPost]
         [Function(FunCodeDefine.ADD_CODE)]
-        public virtual ReturnInfo<bool> Post(ModelT model) => Service.Add(model);
+        public virtual async Task<ReturnInfo<bool>> Post(ModelT model) => await Service.AddAsync(model);
 
         /// <summary>
         /// 修改模型
@@ -48,14 +49,14 @@ namespace Hzdtf.BasicController.Core
         /// <returns>返回信息</returns>
         [HttpPut]
         [Function(FunCodeDefine.EDIT_CODE)]
-        public virtual ReturnInfo<bool> Put(int id, ModelT model)
+        public virtual async Task<ReturnInfo<bool>> Put(int id, ModelT model)
         {
             if (id != 0)
             {
                 model.Id = id;
             }
 
-            return Service.ModifyById(model);
+            return await Service.ModifyByIdAsync(model);
         }
 
         /// <summary>
@@ -65,7 +66,7 @@ namespace Hzdtf.BasicController.Core
         /// <returns>返回信息</returns>
         [HttpDelete]
         [Function(FunCodeDefine.REMOVE_CODE)]
-        public virtual ReturnInfo<bool> Delete(int id) => Service.RemoveById(id);
+        public virtual async Task<ReturnInfo<bool>> Delete(int id) => await Service.RemoveByIdAsync(id);
 
         /// <summary>
         /// 批量添加模型列表
@@ -74,7 +75,7 @@ namespace Hzdtf.BasicController.Core
         /// <returns>返回信息</returns>
         [HttpPost("BatchAdd")]
         [Function(FunCodeDefine.ADD_CODE)]
-        public virtual ReturnInfo<bool> BatchAdd(IList<ModelT> models) => Service.Add(models);
+        public virtual async Task<ReturnInfo<bool>> BatchAdd(IList<ModelT> models) => await Service.AddAsync(models);
 
         /// <summary>
         /// 根据ID集合批量移除模型
@@ -83,6 +84,6 @@ namespace Hzdtf.BasicController.Core
         /// <returns>返回信息</returns>
         [HttpDelete("BatchRemove")]
         [Function(FunCodeDefine.REMOVE_CODE)]
-        public virtual ReturnInfo<bool> BatchRemove(int[] ids) => Service.RemoveByIds(ids);
+        public virtual async Task<ReturnInfo<bool>> BatchRemove(int[] ids) => await Service.RemoveByIdsAsync(ids);
     }
 }

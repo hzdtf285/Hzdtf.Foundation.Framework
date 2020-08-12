@@ -110,7 +110,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
         /// 获取分页按关键字查询的字段集合
         /// </summary>
         /// <returns>分页按关键字查询的字段集合</returns>
-        protected override string[] GetPageKeywordFields() => new string[] { GetFieldByProp("Code"), "f." + GetFieldByProp("Name") };
+        protected override string[] GetPageKeywordFields() => new string[] { GetFieldByProp("Code"), GetFieldByProp("Name") };
 
         /// <summary>
         /// 从表集合

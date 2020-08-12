@@ -1,4 +1,5 @@
 ﻿using Hzdtf.Demo.Model.Standard;
+using Hzdtf.Utility.Standard.Model;
 using Hzdtf.Utility.Standard.Model.Return;
 using System;
 using System.Collections.Generic;
@@ -17,7 +18,8 @@ namespace Hzdtf.Demo.Service.Contract.Standard
         /// </summary>
         /// <param name="testForm">测试表单</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<bool> ModifyFlowStatusByWorkflowId(TestFormInfo testForm, string connectionId = null);
+        ReturnInfo<bool> ModifyFlowStatusByWorkflowId(TestFormInfo testForm, string connectionId = null, BasicUserInfo currUser = null);
     }
 }

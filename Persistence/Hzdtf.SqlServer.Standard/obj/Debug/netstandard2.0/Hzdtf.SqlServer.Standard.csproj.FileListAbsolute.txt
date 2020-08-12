@@ -116,3 +116,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.SqlServer.Stan
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.SqlServer.Standard\obj\Debug\netstandard2.0\Hzdtf.SqlServer.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.SqlServer.Standard\obj\Debug\netstandard2.0\Hzdtf.SqlServer.Standard.pdb
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.SqlServer.Standard\obj\Debug\netstandard2.0\Hzdtf.SqlServer.Standard.csproj.CoreCompileInputs.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.SqlServer.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.SqlServer.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

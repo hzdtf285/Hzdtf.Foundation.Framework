@@ -21,9 +21,9 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// 查询角色列表并去掉系统隐藏
         /// </summary>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<IList<RoleInfo>> QueryAndNotSystemHide(string connectionId = null)
+        public virtual ReturnInfo<IList<RoleInfo>> QueryAndNotSystemHide(string connectionId = null, BasicUserInfo currUser = null)
         {
             return ExecReturnFunc<IList<RoleInfo>>((reInfo) =>
             {
@@ -36,9 +36,9 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// </summary>
         /// <param name="filter">筛选</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<IList<RoleInfo>> QueryByFilter(KeywordFilterInfo filter, string connectionId = null)
+        public virtual ReturnInfo<IList<RoleInfo>> QueryByFilter(KeywordFilterInfo filter, string connectionId = null, BasicUserInfo currUser = null)
         {
             return ExecReturnFunc<IList<RoleInfo>>((reInfo) =>
             {
@@ -56,7 +56,8 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="returnInfo">返回信息</param>
         /// <param name="model">模型</param>
         /// <param name="connectionId">连接ID</param>
-        protected override void BeforeAdd(ReturnInfo<bool> returnInfo, RoleInfo model, ref string connectionId)
+        /// <param name="currUser">当前用户</param>
+        protected override void BeforeAdd(ReturnInfo<bool> returnInfo, RoleInfo model, ref string connectionId, BasicUserInfo currUser = null)
         {
             bool idClose = false;
             if (string.IsNullOrWhiteSpace(connectionId))
@@ -87,7 +88,8 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="returnInfo">返回信息</param>
         /// <param name="model">模型</param>
         /// <param name="connectionId">连接ID</param>
-        protected override void BeforeModifyById(ReturnInfo<bool> returnInfo, RoleInfo model, ref string connectionId)
+        /// <param name="currUser">当前用户</param>
+        protected override void BeforeModifyById(ReturnInfo<bool> returnInfo, RoleInfo model, ref string connectionId, BasicUserInfo currUser = null)
         {
             bool idClose = false;
             if (string.IsNullOrWhiteSpace(connectionId))
@@ -118,7 +120,8 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="returnInfo">返回信息</param>
         /// <param name="models">模型列表</param>        
         /// <param name="connectionId">连接ID</param>
-        protected override void BeforeAdd(ReturnInfo<bool> returnInfo, IList<RoleInfo> models, ref string connectionId)
+        /// <param name="currUser">当前用户</param>
+        protected override void BeforeAdd(ReturnInfo<bool> returnInfo, IList<RoleInfo> models, ref string connectionId, BasicUserInfo currUser = null)
         {
             for (var i = 0; i < models.Count; i++)
             {
@@ -137,8 +140,9 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="returnInfo">返回信息</param>
         /// <param name="id">ID</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        protected override void BeforeRemoveById(ReturnInfo<bool> returnInfo, int id, ref string connectionId)
+        protected override void BeforeRemoveById(ReturnInfo<bool> returnInfo, int id, ref string connectionId, BasicUserInfo currUser = null)
         {
             ValiCanRemove(returnInfo, Persistence.Select(id, connectionId));
         }
@@ -149,8 +153,9 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="returnInfo">返回信息</param>
         /// <param name="ids">ID集合</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        protected override void BeforeRemoveByIds(ReturnInfo<bool> returnInfo, int[] ids, ref string connectionId)
+        protected override void BeforeRemoveByIds(ReturnInfo<bool> returnInfo, int[] ids, ref string connectionId, BasicUserInfo currUser = null)
         {
             IList<RoleInfo> roles = Persistence.Select(ids, connectionId);
             if (roles.IsNullOrCount0())

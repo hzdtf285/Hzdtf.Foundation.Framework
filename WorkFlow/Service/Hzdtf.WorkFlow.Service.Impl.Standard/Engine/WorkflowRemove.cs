@@ -21,9 +21,11 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// </summary>
         /// <param name="returnInfo">返回信息</param>
         /// <param name="workflow">工作流</param>
-        protected override void Vali(ReturnInfo<bool> returnInfo, WorkflowInfo workflow)
+        /// <param name="currUser">当前用户</param>
+        protected override void Vali(ReturnInfo<bool> returnInfo, WorkflowInfo workflow, BasicUserInfo currUser = null)
         {
-            if (workflow.CreaterId != UserTool.CurrUser.Id)
+            var user = UserTool.GetCurrUser(currUser);
+            if (workflow.CreaterId != user.Id)
             {
                 returnInfo.SetFailureMsg("Sorry，您不是此流程的发起者，故不能移除");
 

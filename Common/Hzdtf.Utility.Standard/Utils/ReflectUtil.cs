@@ -16,6 +16,11 @@ namespace Hzdtf.Utility.Standard.Utils
         /// 任务全名称前辍
         /// </summary>
         private const string PFX_TASK_FULL_NAME = "System.Threading.Tasks.Task";
+        
+        /// <summary>
+        /// 异步全名称前辍
+        /// </summary>
+        private const string PFX_ASYNC_FULL_NAME = "System.Runtime.CompilerServices.AsyncTaskMethodBuilder";
 
         /// <summary>
         /// 创建类型实例
@@ -508,7 +513,7 @@ namespace Hzdtf.Utility.Standard.Utils
         }
 
         /// <summary>
-        /// 判断方法类型返回值是否为void
+        /// 判断类型返回值是否为void
         /// </summary>
         /// <param name="type">方法类型</param>
         /// <returns>方法返回值是否为void</returns>
@@ -534,7 +539,14 @@ namespace Hzdtf.Utility.Standard.Utils
         /// <returns>类型是否为任务</returns>
         public static bool IsTypeTask(this Type type)
         {
-            return type != null ? type.FullName.StartsWith(PFX_TASK_FULL_NAME) : false;
+            if (type == null)
+            {
+                return false;
+            }
+
+            var fullName = type.FullName;
+
+            return fullName.StartsWith(PFX_TASK_FULL_NAME) || fullName.StartsWith(PFX_ASYNC_FULL_NAME);
         }
 
         /// <summary>

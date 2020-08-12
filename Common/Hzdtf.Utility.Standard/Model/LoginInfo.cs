@@ -52,5 +52,16 @@ namespace Hzdtf.Utility.Standard.Model
             get;
             set;
         }
+
+        /// <summary>
+        /// 返回路径
+        /// </summary>
+        [JsonProperty("returnUrl")]
+        [MessagePack.Key("returnUrl")]
+        public string ReturnUrl
+        {
+            get;
+            set;
+        }
     }
 }

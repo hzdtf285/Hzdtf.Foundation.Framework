@@ -1,6 +1,7 @@
 ﻿using Hzdtf.BasicFunction.Model.Standard.Expand.Attachment;
 using Hzdtf.BasicFunction.Service.Contract.Standard.Expand.Attachment;
 using Hzdtf.Utility.Standard.Attr;
+using Hzdtf.Utility.Standard.Model;
 using Hzdtf.Utility.Standard.Utils;
 using System;
 using System.Collections.Generic;
@@ -48,8 +49,9 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment
         /// 根据归属类型读取附件归属信息
         /// </summary>
         /// <param name="type">归属类型</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>附件归属信息</returns>
-        public AttachmentOwnerInfo ReaderByOwnerType(short type)
+        public AttachmentOwnerInfo ReaderByOwnerType(short type, BasicUserInfo currUser = null)
         {
             AttachmentOwnerInfo[] attachmentOwners = JsonUtil.Deserialize<AttachmentOwnerInfo[]>(jsonFileName.ReaderFileContent());
             if (attachmentOwners.IsNullOrLength0())

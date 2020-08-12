@@ -22,6 +22,11 @@ function AJqGrid(param) {
     var thisObj = this;
 
     /**
+     * key是否是数字，默认为是
+     * */
+    this.isKeyNum = true;
+
+    /**
      * 获取复选框HTML
      * 
      * @param {any} value 值
@@ -229,7 +234,16 @@ function AJqGrid(param) {
             var keys = [];
             for (var i = 0; i < checkArrays.length; i++) {
                 if ($(checkArrays[i]).prop("checked")) {
-                    keys.push($(checkArrays[i]).val());
+                    var key = $(checkArrays[i]).val();
+                    var val = undefined;
+                    if (this.isKeyNum) {
+                        val = parseInt(key);
+                    }
+                    else {
+                        val = key;
+                    }
+
+                    keys.push(val);
                 }
             }
 

@@ -183,7 +183,7 @@ $(function () {
     basicManage.openResetPassword = function (id) {
         var obj = basicManage.getRowData(id);
         $("#resetPasswordForm")[0].reset();
-        $("#txtUserId").val(id);
+        $("#txtId").val(id);
         $("#name").val(obj.name); 
         $("#btnOpenResetPasswordDialog").trigger("click");
     }

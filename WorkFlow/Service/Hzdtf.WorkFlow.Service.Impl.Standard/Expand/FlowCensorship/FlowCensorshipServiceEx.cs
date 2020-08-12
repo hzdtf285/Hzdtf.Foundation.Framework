@@ -1,6 +1,6 @@
-﻿using Hzdtf.Utility.Standard.Attr;
-using Hzdtf.Utility.Standard.Attr.ParamAttr;
+﻿using Hzdtf.Utility.Standard.Attr.ParamAttr;
 using Hzdtf.Utility.Standard.Enums;
+using Hzdtf.Utility.Standard.Model;
 using Hzdtf.Utility.Standard.Model.Return;
 using Hzdtf.WorkFlow.Model.Standard;
 using System;
@@ -20,9 +20,9 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
         /// </summary>
         /// <param name="flowId">流程ID</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<IList<FlowCensorshipInfo>> QueryByFlowId([DisplayName2("流程ID"), Id] int flowId, string connectionId = null)
+        public virtual ReturnInfo<IList<FlowCensorshipInfo>> QueryByFlowId([DisplayName2("流程ID"), Id] int flowId, string connectionId = null, BasicUserInfo currUser = null)
         {
             return ExecReturnFuncAndConnectionId<IList<FlowCensorshipInfo>>((reInfo, connId) =>
             {

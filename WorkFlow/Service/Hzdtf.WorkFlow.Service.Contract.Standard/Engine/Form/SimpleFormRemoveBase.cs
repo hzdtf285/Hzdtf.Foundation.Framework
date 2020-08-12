@@ -1,11 +1,11 @@
-﻿using Hzdtf.Utility.Standard.Attr;
-using Hzdtf.Utility.Standard.Model.Return;
+﻿using Hzdtf.Utility.Standard.Model.Return;
 using Hzdtf.WorkFlow.Model.Standard;
 using Hzdtf.WorkFlow.Model.Standard.Expand;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using Hzdtf.Utility.Standard.Utils;
+using Hzdtf.Utility.Standard.Model;
 
 namespace Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form
 {
@@ -33,9 +33,9 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form
         /// <param name="removeType">移除类型</param>
         /// <param name="isSuccess">是否成功</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public override ReturnInfo<bool> AfterExecFlow(WorkflowInfo workflow, RemoveType removeType, bool isSuccess, string connectionId = null)
+        public override ReturnInfo<bool> AfterExecFlow(WorkflowInfo workflow, RemoveType removeType, bool isSuccess, string connectionId = null, BasicUserInfo currUser = null)
         {
             if (isSuccess)
             {
@@ -44,15 +44,15 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form
                     case RemoveType.REMOVE:
                     case RemoveType.FORCE_REMOVE:
 
-                        return FormService.RemoveByWorkflowId(workflow.Id, connectionId);
+                        return FormService.RemoveByWorkflowId(workflow.Id, connectionId, currUser);
 
                     case RemoveType.UNDO:
                         ConcreteFormInfoT form = typeof(ConcreteFormInfoT).CreateInstance<ConcreteFormInfoT>();
                         form.WorkflowId = workflow.Id;
                         form.FlowStatus = FlowStatusEnum.REVERSED;
-                        form.SetModifyInfo();
+                        form.SetModifyInfo(currUser);
 
-                        return FormService.ModifyFlowStatusByWorkflowId(form, connectionId);
+                        return FormService.ModifyFlowStatusByWorkflowId(form, connectionId, currUser);
                 }
             }
 

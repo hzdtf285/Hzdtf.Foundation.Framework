@@ -86,3 +86,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGen
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.CodeGenerator.Contract.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.CodeGenerator.Contract.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.CodeGenerator.Contract.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Contract.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Contract.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

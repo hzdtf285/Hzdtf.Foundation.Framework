@@ -36,7 +36,8 @@ namespace Hzdtf.BasicFunction.MvcController.Core
         [HttpPut("ModifyCurrUserPassword")]
         public virtual ReturnInfo<bool> ModifyCurrUserPassword(CurrUserModifyPasswordInfo currUserModifyPassword)
         {
-            currUserModifyPassword.LoginId = UserTool.CurrUser.LoginId;
+            var user = UserTool.GetCurrUser();
+            currUserModifyPassword.LoginId = user.LoginId;
             return Service.ModifyPasswordByLoginId(currUserModifyPassword);
         }
 

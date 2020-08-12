@@ -1,5 +1,4 @@
-﻿using Hzdtf.Utility.Standard.Attr;
-using Hzdtf.Utility.Standard.Model;
+﻿using Hzdtf.Utility.Standard.Model;
 using Hzdtf.Utility.Standard.Model.Return;
 using Hzdtf.WorkFlow.Model.Standard.Expand;
 using Hzdtf.WorkFlow.Model.Standard.Expand.Diversion;
@@ -44,9 +43,9 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form
         /// <param name="flowIn">流程输入</param>
         /// <param name="isSuccess">是否成功</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public override ReturnInfo<bool> AfterExecFlow(FlowCensorshipOutInfo flowCensorshipOut, object flowIn, bool isSuccess, string connectionId = null)
+        public override ReturnInfo<bool> AfterExecFlow(FlowCensorshipOutInfo flowCensorshipOut, object flowIn, bool isSuccess, string connectionId = null, BasicUserInfo currUser = null)
         {
             ReturnInfo<bool> returnInfo = new ReturnInfo<bool>();
             if (isSuccess)
@@ -62,7 +61,7 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form
                         return returnInfo;
                     }
                     
-                    ReturnInfo<ConcreteFormInfo> reFormInfo = FormDataReaderFactory.Create(conFlowIn.Flow.WorkflowCode).ReaderByWorkflowId(flowCensorshipOut.Workflow.Id, connectionId);
+                    ReturnInfo<ConcreteFormInfo> reFormInfo = FormDataReaderFactory.Create(conFlowIn.Flow.WorkflowCode).ReaderByWorkflowId(flowCensorshipOut.Workflow.Id, connectionId, currUser);
                     if (reFormInfo.Failure())
                     {
                         returnInfo.FromBasic(reFormInfo);
@@ -89,18 +88,18 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form
                                 return returnInfo;
                         }
 
-                        form.SetModifyInfo();
+                        form.SetModifyInfo(currUser);
                     }
                     else
                     {
-                        form.SetCreateInfo();
+                        form.SetCreateInfo(currUser);
                     }
 
                     form.ApplyNo = flowCensorshipOut.Workflow.ApplyNo;
                     form.WorkflowId = flowCensorshipOut.Workflow.Id;
                     form.FlowStatus = flowCensorshipOut.Workflow.FlowStatus;
 
-                    returnInfo = FormService.Set(form, connectionId);
+                    returnInfo = FormService.Set(form, connectionId, currUser);
                 } // 下一关卡如果是结束关卡（送件）或是申请关卡（退件）
                 else if ((flowCensorshipOut.IsNextEndCensorship() && flowCensorshipOut.ActionType == ActionType.SEND)
                     || (flowCensorshipOut.IsNextApplicantCensorship() && flowCensorshipOut.ActionType == ActionType.RETURN))
@@ -108,9 +107,9 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form
                     ConcreteFormInfoT form = typeof(ConcreteFormInfoT).CreateInstance<ConcreteFormInfoT>();
                     form.WorkflowId = flowCensorshipOut.Workflow.Id;
                     form.FlowStatus = flowCensorshipOut.Workflow.FlowStatus;
-                    form.SetModifyInfo();
+                    form.SetModifyInfo(currUser);
 
-                    returnInfo = FormService.ModifyFlowStatusByWorkflowId(form, connectionId);
+                    returnInfo = FormService.ModifyFlowStatusByWorkflowId(form, connectionId, currUser);
                 }
             }
 

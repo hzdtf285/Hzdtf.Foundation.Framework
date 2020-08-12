@@ -1,4 +1,5 @@
-﻿using Hzdtf.Utility.Standard.Model.Return;
+﻿using Hzdtf.Utility.Standard.Model;
+using Hzdtf.Utility.Standard.Model.Return;
 using Hzdtf.WorkFlow.Model.Standard;
 using Hzdtf.WorkFlow.Service.Contract.Standard;
 using System;
@@ -19,12 +20,13 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
         /// </summary>
         /// <param name="flowCensorshipId">流程关卡ID</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>任务</returns>
-        public virtual async Task<ReturnInfo<IList<ReturnFlowRouteInfo>>> QueryByFlowCensorshipIdAsync(int flowCensorshipId, string connectionId = null)
+        public virtual async Task<ReturnInfo<IList<ReturnFlowRouteInfo>>> QueryByFlowCensorshipIdAsync(int flowCensorshipId, string connectionId = null, BasicUserInfo currUser = null)
         {
             return await Task.Run<ReturnInfo<IList<ReturnFlowRouteInfo>>>(() =>
             {
-                return QueryByFlowCensorshipId(flowCensorshipId, connectionId);
+                return QueryByFlowCensorshipId(flowCensorshipId, connectionId, currUser);
             });
         }
 
@@ -32,13 +34,14 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
         /// 异步根据流程关卡ID数组查询退件流程路线列表
         /// </summary>
         /// <param name="flowCensorshipIds">流程关卡ID</param>
-        /// <param name="connectionId">连接ID</param>
+        /// <param name="connectionId">连接ID</param>>
+        /// <param name="currUser">当前用户</param>
         /// <returns>任务</returns>
-        public virtual async Task<ReturnInfo<IList<ReturnFlowRouteInfo>>> QueryByFlowCensorshipIdsAsync(int[] flowCensorshipIds, string connectionId = null)
+        public virtual async Task<ReturnInfo<IList<ReturnFlowRouteInfo>>> QueryByFlowCensorshipIdsAsync(int[] flowCensorshipIds, string connectionId = null, BasicUserInfo currUser = null)
         {
             return await Task.Run<ReturnInfo<IList<ReturnFlowRouteInfo>>>(() =>
             {
-                return QueryByFlowCensorshipIds(flowCensorshipIds, connectionId);
+                return QueryByFlowCensorshipIds(flowCensorshipIds, connectionId, currUser);
             });
         }
     }

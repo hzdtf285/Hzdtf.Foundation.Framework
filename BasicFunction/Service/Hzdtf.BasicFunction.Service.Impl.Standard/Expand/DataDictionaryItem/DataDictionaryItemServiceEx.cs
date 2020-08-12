@@ -1,13 +1,13 @@
 ﻿using Hzdtf.BasicFunction.Model.Standard;
 using Hzdtf.BasicFunction.Persistence.Contract.Standard;
 using Hzdtf.Utility.Standard.Attr.ParamAttr;
-using Hzdtf.Utility.Standard.Attr;
 using Hzdtf.Utility.Standard.Model.Return;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Hzdtf.Utility.Standard.Utils;
 using System.Text;
+using Hzdtf.Utility.Standard.Model;
 
 namespace Hzdtf.BasicFunction.Service.Impl.Standard
 {
@@ -37,9 +37,9 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// </summary>
         /// <param name="dataDictionaryId">数据字典ID</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<IList<DataDictionaryItemInfo>> QueryByDataDictionaryId([DisplayName2("数据字典ID"), Id] int dataDictionaryId, string connectionId = null)
+        public virtual ReturnInfo<IList<DataDictionaryItemInfo>> QueryByDataDictionaryId([DisplayName2("数据字典ID"), Id] int dataDictionaryId, string connectionId = null, BasicUserInfo currUser = null)
         {
             return ExecReturnFunc<IList<DataDictionaryItemInfo>>((reInfo) =>
             {
@@ -52,9 +52,9 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// </summary>
         /// <param name="dataDictionaryCode">数据字典编码</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<IList<DataDictionaryItemInfo>> QueryByDataDictionaryCode([DisplayName2("数据字典编码"), Required] string dataDictionaryCode, string connectionId = null)
+        public virtual ReturnInfo<IList<DataDictionaryItemInfo>> QueryByDataDictionaryCode([DisplayName2("数据字典编码"), Required] string dataDictionaryCode, string connectionId = null, BasicUserInfo currUser = null)
         {
             return ExecReturnFunc<IList<DataDictionaryItemInfo>>((reInfo) =>
             {
@@ -72,7 +72,8 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="returnInfo">返回信息</param>
         /// <param name="model">模型</param>
         /// <param name="connectionId">连接ID</param>
-        protected override void BeforeAdd(ReturnInfo<bool> returnInfo, DataDictionaryItemInfo model, ref string connectionId)
+        /// <param name="currUser">当前用户</param>
+        protected override void BeforeAdd(ReturnInfo<bool> returnInfo, DataDictionaryItemInfo model, ref string connectionId, BasicUserInfo currUser = null)
         {
             bool idClose = false;
             if (string.IsNullOrWhiteSpace(connectionId))
@@ -103,7 +104,8 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="returnInfo">返回信息</param>
         /// <param name="model">模型</param>
         /// <param name="connectionId">连接ID</param>
-        protected override void BeforeModifyById(ReturnInfo<bool> returnInfo, DataDictionaryItemInfo model, ref string connectionId)
+        /// <param name="currUser">当前用户</param>
+        protected override void BeforeModifyById(ReturnInfo<bool> returnInfo, DataDictionaryItemInfo model, ref string connectionId, BasicUserInfo currUser = null)
         {
             bool idClose = false;
             if (string.IsNullOrWhiteSpace(connectionId))
@@ -134,7 +136,8 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="returnInfo">返回信息</param>
         /// <param name="models">模型列表</param>        
         /// <param name="connectionId">连接ID</param>
-        protected override void BeforeAdd(ReturnInfo<bool> returnInfo, IList<DataDictionaryItemInfo> models, ref string connectionId)
+        /// <param name="currUser">当前用户</param>
+        protected override void BeforeAdd(ReturnInfo<bool> returnInfo, IList<DataDictionaryItemInfo> models, ref string connectionId, BasicUserInfo currUser = null)
         {
             for (var i = 0; i < models.Count; i++)
             {
@@ -153,7 +156,8 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="returnInfo">返回信息</param>
         /// <param name="id">ID</param>
         /// <param name="connectionId">连接ID</param>
-        protected override void AfterFind(ReturnInfo<DataDictionaryItemInfo> returnInfo, int id, ref string connectionId)
+        /// <param name="currUser">当前用户</param>
+        protected override void AfterFind(ReturnInfo<DataDictionaryItemInfo> returnInfo, int id, ref string connectionId, BasicUserInfo currUser = null)
         {
             if (returnInfo.Success() && returnInfo.Data != null && !string.IsNullOrWhiteSpace(returnInfo.Data.ExpandTable))
             {
@@ -170,8 +174,9 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="returnInfo">返回信息</param>
         /// <param name="id">ID</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        protected override void BeforeRemoveById(ReturnInfo<bool> returnInfo, int id, ref string connectionId)
+        protected override void BeforeRemoveById(ReturnInfo<bool> returnInfo, int id, ref string connectionId, BasicUserInfo currUser = null)
         {
             ValiCanRemove(returnInfo, Persistence.Select(id, connectionId));
         }
@@ -182,8 +187,9 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="returnInfo">返回信息</param>
         /// <param name="ids">ID集合</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        protected override void BeforeRemoveByIds(ReturnInfo<bool> returnInfo, int[] ids, ref string connectionId)
+        protected override void BeforeRemoveByIds(ReturnInfo<bool> returnInfo, int[] ids, ref string connectionId, BasicUserInfo currUser = null)
         {
             IList<DataDictionaryItemInfo> users = Persistence.Select(ids, connectionId);
             if (users.IsNullOrCount0())

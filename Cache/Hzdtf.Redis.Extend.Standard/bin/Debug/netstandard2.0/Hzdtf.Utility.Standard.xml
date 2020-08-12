@@ -95,6 +95,12 @@
             @ 黄振东
             </summary>
         </member>
+        <member name="P:Hzdtf.Utility.Standard.Attr.AuthAttribute.CurrUserParamIndex">
+            <summary>
+            当前用户位置索引
+            默认为-1，为-1时，表示方法没有传当前用户参数
+            </summary>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Attr.CodeAttributeBase">
             <summary>
             编码特性基类
@@ -3034,6 +3040,23 @@
             强制删除
             </summary>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.Model.IncludeUserInfo`1">
+            <summary>
+            包含用户信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Model.IncludeUserInfo`1.CurrUser">
+            <summary>
+            当前用户
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Model.IncludeUserInfo">
+            <summary>
+            包含用户信息
+            @ 黄振东
+            </summary>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Model.InstanceMapMethodsInfo">
             <summary>
             实例映射方法信息
@@ -3104,6 +3127,32 @@
         <member name="P:Hzdtf.Utility.Standard.Model.LoginInfo.VerificationCode">
             <summary>
             验证码
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Model.LoginInfo.ReturnUrl">
+            <summary>
+            返回路径
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Model.LoginReturnInfo">
+            <summary>
+            登录返回信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Model.LoginReturnInfo.IsVerificationCode">
+            <summary>
+            是否需要验证码
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Model.LoginReturnInfo.Token">
+            <summary>
+            令牌
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Model.LoginReturnInfo.ReturnUrl">
+            <summary>
+            返回路径
             </summary>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Model.PageInfo">
@@ -3267,7 +3316,7 @@
             描述
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.Ex">
+        <member name="F:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo.Ex">
             <summary>
             异常
             </summary>
@@ -3619,7 +3668,6 @@
         <member name="P:Hzdtf.Utility.Standard.Model.UserTool.CurrUser">
             <summary>
             当前用户
-            @ 黄振东
             </summary>
         </member>
         <member name="F:Hzdtf.Utility.Standard.Model.UserTool.GetCurrUserFunc">
@@ -3632,11 +3680,21 @@
             测试用户
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Model.UserTool.GetCurrUser``1">
+        <member name="M:Hzdtf.Utility.Standard.Model.UserTool.GetCurrUser(Hzdtf.Utility.Standard.Model.BasicUserInfo,System.Boolean)">
             <summary>
-            获取当前用户
+            获取当前用户，如果传入的用户不为null，则取传入的用户。否则调GetCurrUserFunc委托
+            </summary>
+            <param name="currUser">当前用户</param>
+            <param name="notExistsIsOutTestUser">如果不存在是否输出测试用户</param>
+            <returns>当前用户</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.UserTool.GetCurrUser``1(Hzdtf.Utility.Standard.Model.BasicUserInfo,System.Boolean)">
+            <summary>
+            获取当前用户，如果传入的用户不为null，则取传入的用户。否则调GetCurrUserFunc委托
             </summary>
             <typeparam name="UserT">用户类型</typeparam>
+            <param name="currUser">当前用户</param>
+            <param name="notExistsIsOutTestUser">如果不存在是否输出测试用户</param>
             <returns>当前用户</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.ProcessCall.IBytesReceive">
@@ -4790,6 +4848,11 @@
             向量
             </summary>
         </member>
+        <member name="M:Hzdtf.Utility.Standard.Safety.DES.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
         <member name="M:Hzdtf.Utility.Standard.Safety.DES.#ctor(System.String,System.String)">
             <summary>
             构造方法
@@ -4815,16 +4878,6 @@
             <summary>
             DES辅助类
             @ 黄振东
-            </summary>
-        </member>
-        <member name="F:Hzdtf.Utility.Standard.Safety.DESUtil.DEFAULT_KEY">
-            <summary>
-            默认KEY
-            </summary>
-        </member>
-        <member name="F:Hzdtf.Utility.Standard.Safety.DESUtil.DEFAULT_IV">
-            <summary>
-            默认向量
             </summary>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Safety.DESUtil.Encrypt(System.String,System.String,System.String)">
@@ -5967,17 +6020,19 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Utils.ModelUtil.SetCreateInfo(Hzdtf.Utility.Standard.Model.PersonTimeInfo)">
+        <member name="M:Hzdtf.Utility.Standard.Utils.ModelUtil.SetCreateInfo(Hzdtf.Utility.Standard.Model.PersonTimeInfo,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
             <summary>
             设置创建信息
             </summary>
             <param name="model">模型</param>
+            <param name="currUser">当前用户</param>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Utils.ModelUtil.SetModifyInfo(Hzdtf.Utility.Standard.Model.PersonTimeInfo)">
+        <member name="M:Hzdtf.Utility.Standard.Utils.ModelUtil.SetModifyInfo(Hzdtf.Utility.Standard.Model.PersonTimeInfo,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
             <summary>
             设置修改信息
             </summary>
             <param name="model">模型</param>
+            <param name="currUser">当前用户</param>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Utils.NetworkUtil">
             <summary>
@@ -6143,6 +6198,11 @@
             任务全名称前辍
             </summary>
         </member>
+        <member name="F:Hzdtf.Utility.Standard.Utils.ReflectUtil.PFX_ASYNC_FULL_NAME">
+            <summary>
+            异步全名称前辍
+            </summary>
+        </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.ReflectUtil.CreateInstance``1(System.String)">
             <summary>
             创建类型实例
@@ -6294,7 +6354,7 @@
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.ReflectUtil.IsTypeVoid(System.Type)">
             <summary>
-            判断方法类型返回值是否为void
+            判断类型返回值是否为void
             </summary>
             <param name="type">方法类型</param>
             <returns>方法返回值是否为void</returns>

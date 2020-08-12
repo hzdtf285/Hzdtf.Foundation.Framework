@@ -115,3 +115,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Persistence\Hzdtf.
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Persistence\Hzdtf.BasicFunction.Persistence.Contract.Std\obj\Debug\netstandard2.0\Hzdtf.BasicFunction.Persistence.Contract.Std.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Persistence\Hzdtf.BasicFunction.Persistence.Contract.Std\obj\Debug\netstandard2.0\Hzdtf.BasicFunction.Persistence.Contract.Std.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Persistence\Hzdtf.BasicFunction.Persistence.Contract.Std\obj\Debug\netstandard2.0\Hzdtf.BasicFunction.Persistence.Contract.Std.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Persistence\Hzdtf.BasicFunction.Persistence.Contract.Std\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\BasicFunction\Persistence\Hzdtf.BasicFunction.Persistence.Contract.Std\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

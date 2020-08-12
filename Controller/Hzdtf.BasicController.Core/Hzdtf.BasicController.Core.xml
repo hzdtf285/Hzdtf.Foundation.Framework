@@ -173,20 +173,20 @@
             </summary>
             <returns>分页返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicController.Core.PagingControllerBase`4.DoPage">
+        <member name="M:Hzdtf.BasicController.Core.PagingControllerBase`4.DoPageAsync">
             <summary>
-            去分页
+            异步去分页
             </summary>
-            <returns>返回信息</returns>
+            <returns>返回信息任务</returns>
         </member>
-        <member name="M:Hzdtf.BasicController.Core.PagingControllerBase`4.QueryPageFromService(System.Int32,System.Int32,`3)">
+        <member name="M:Hzdtf.BasicController.Core.PagingControllerBase`4.QueryPageFromServiceAsync(System.Int32,System.Int32,`3)">
             <summary>
-            从服务里查询分页
+            异步从服务里查询分页
             </summary>
             <param name="pageIndex">页码</param>
             <param name="pageSize">每页记录数</param>
             <param name="filter">筛选</param>
-            <returns>返回信息</returns>
+            <returns>返回信息任务</returns>
         </member>
         <member name="M:Hzdtf.BasicController.Core.PagingControllerBase`4.AfterPage(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{Hzdtf.Utility.Standard.Model.Page.PagingInfo{`1}},System.Int32,System.Int32,`3)">
             <summary>

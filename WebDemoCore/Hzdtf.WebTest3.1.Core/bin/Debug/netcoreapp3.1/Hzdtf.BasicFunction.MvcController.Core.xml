@@ -243,6 +243,16 @@
             身份令牌授权
             </summary>
         </member>
+        <member name="P:Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.AppConfig">
+            <summary>
+            应用配置
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.IsDisabledLogin">
+            <summary>
+            是否禁用登录
+            </summary>
+        </member>
         <member name="M:Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.Login(Hzdtf.Utility.Standard.Model.LoginInfo)">
             <summary>
             登录
@@ -269,7 +279,7 @@
             </summary>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.ExecLogin(Hzdtf.Utility.Standard.Model.LoginInfo,System.Action{System.String,System.String,Hzdtf.Utility.Standard.Model.Return.ReturnInfo{Hzdtf.BasicFunction.Model.Standard.Expand.User.LoginReturnInfo}})">
+        <member name="M:Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.ExecLogin(Hzdtf.Utility.Standard.Model.LoginInfo,System.Action{System.String,System.String,Hzdtf.Utility.Standard.Model.Return.ReturnInfo{Hzdtf.Utility.Standard.Model.LoginReturnInfo}})">
             <summary>
             执行登录
             </summary>

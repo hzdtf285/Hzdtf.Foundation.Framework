@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hzdtf.Mini.Standard;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -14,16 +15,6 @@ namespace Hzdtf.Utility.Standard.Safety
     public static class DESUtil
     {
         /// <summary>
-        /// 默认KEY
-        /// </summary>
-        private const string DEFAULT_KEY = "jyP[^%$4";
-
-        /// <summary>
-        /// 默认向量
-        /// </summary>
-        private const string DEFAULT_IV = ";8@fSse?";
-
-        /// <summary>
         /// 加密
         /// </summary>
         /// <param name="plaintext">明文</param>
@@ -34,11 +25,11 @@ namespace Hzdtf.Utility.Standard.Safety
         {
             if (key == null)
             {
-                key = DEFAULT_KEY;
+                key = Eternity.STD_K;
             }
             if (iv == null)
             {
-                iv = DEFAULT_IV;
+                iv = Eternity.STD_V;
             }
             MemoryStream ms = new MemoryStream();
             CryptoStream cs = null;
@@ -83,11 +74,11 @@ namespace Hzdtf.Utility.Standard.Safety
         {
             if (key == null)
             {
-                key = DEFAULT_KEY;
+                key = Eternity.STD_K;
             }
             if (iv == null)
             {
-                iv = DEFAULT_IV;
+                iv = Eternity.STD_V;
             }
 
             byte[] btKey = Encoding.UTF8.GetBytes(key);

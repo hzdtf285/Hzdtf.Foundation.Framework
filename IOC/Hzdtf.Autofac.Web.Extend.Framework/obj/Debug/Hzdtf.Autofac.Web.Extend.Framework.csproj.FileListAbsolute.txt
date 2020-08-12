@@ -757,3 +757,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Fra
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\System.Memory.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\System.Numerics.Vectors.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\System.Buffers.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Hzdtf.Mini.Standard.pdb

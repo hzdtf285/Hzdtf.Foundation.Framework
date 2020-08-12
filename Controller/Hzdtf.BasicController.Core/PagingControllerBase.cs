@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Text;
 using Hzdtf.Utility.Standard.Model.Return;
 using Hzdtf.Utility.Standard.Model.Page;
+using System.Threading.Tasks;
 
 namespace Hzdtf.BasicController.Core
 {
@@ -39,36 +40,36 @@ namespace Hzdtf.BasicController.Core
         /// <returns>分页返回信息</returns>
         [HttpGet]
         [Function(FunCodeDefine.QUERY_CODE)]
-        public virtual object Page()
+        public virtual async Task<object> Page()
         {
-            ReturnInfo<PagingInfo<ModelT>> returnInfo = DoPage();
+            ReturnInfo<PagingInfo<ModelT>> returnInfo = await DoPageAsync();
             return PagingReturnConvert.Convert<ModelT>(returnInfo);
         }
 
         /// <summary>
-        /// 去分页
+        /// 异步去分页
         /// </summary>
-        /// <returns>返回信息</returns>
-        protected virtual ReturnInfo<PagingInfo<ModelT>> DoPage()
+        /// <returns>返回信息任务</returns>
+        protected virtual async Task<ReturnInfo<PagingInfo<ModelT>>> DoPageAsync()
         {
             int pageIndex, pageSize;
             PageFilterT filter = PagingParseFilter.ToFilterObjectFromHttp<PageFilterT>(Request, out pageIndex, out pageSize);
             AppendFilterParams(filter);
 
-            ReturnInfo<PagingInfo<ModelT>> returnInfo = QueryPageFromService(pageIndex, pageSize, filter);
+            ReturnInfo<PagingInfo<ModelT>> returnInfo = await QueryPageFromServiceAsync(pageIndex, pageSize, filter);
             AfterPage(returnInfo, pageIndex, pageSize, filter);
 
             return returnInfo;
         }
 
         /// <summary>
-        /// 从服务里查询分页
+        /// 异步从服务里查询分页
         /// </summary>
         /// <param name="pageIndex">页码</param>
         /// <param name="pageSize">每页记录数</param>
         /// <param name="filter">筛选</param>
-        /// <returns>返回信息</returns>
-        protected virtual ReturnInfo<PagingInfo<ModelT>> QueryPageFromService(int pageIndex, int pageSize, PageFilterT filter) => Service.QueryPage(pageIndex, pageSize, filter);
+        /// <returns>返回信息任务</returns>
+        protected virtual async Task<ReturnInfo<PagingInfo<ModelT>>> QueryPageFromServiceAsync(int pageIndex, int pageSize, PageFilterT filter) => await Service.QueryPageAsync(pageIndex, pageSize, filter);
 
         /// <summary>
         /// 分页后

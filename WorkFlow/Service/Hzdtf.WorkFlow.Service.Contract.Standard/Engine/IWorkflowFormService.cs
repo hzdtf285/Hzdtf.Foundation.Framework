@@ -18,15 +18,17 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard.Engine
         /// </summary>
         /// <typeparam name="FormT">表单类型</typeparam>
         /// <param name="flowInit">流程初始</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<WorkflowBasicInfo> Save<FormT>(FlowInitInfo<FormT> flowInit) where FormT : PersonTimeInfo;
+        ReturnInfo<WorkflowBasicInfo> Save<FormT>(FlowInitInfo<FormT> flowInit, BasicUserInfo currUser = null) where FormT : PersonTimeInfo;
 
         /// <summary>
         /// 申请
         /// </summary>
         /// <typeparam name="FormT">表单类型</typeparam>
         /// <param name="flowInit">流程初始</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<WorkflowBasicInfo> Apply<FormT>(FlowInitInfo<FormT> flowInit) where FormT : PersonTimeInfo;
+        ReturnInfo<WorkflowBasicInfo> Apply<FormT>(FlowInitInfo<FormT> flowInit, BasicUserInfo currUser = null) where FormT : PersonTimeInfo;
     }
 }

@@ -135,6 +135,10 @@ function BasicManage(param) {
             }
         }
 
+        if (param.isKeyNum == undefined) {
+            param.isKeyNum = true;
+        }
+
         aJqGrid = new AJqGrid({
             tableId: param.tableId,
             pagerId: param.pagerId,
@@ -144,6 +148,7 @@ function BasicManage(param) {
             caption: param.caption,
             columnModels: param.columnModels,
             mergeColumns: param.mergeColumns,
+            isKeyNum: param.isKeyNum,
             onSelectRow: function (id) {
                 if (typeof (param.onSelectRow) == "function") {
                     param.onSelectRow(id);

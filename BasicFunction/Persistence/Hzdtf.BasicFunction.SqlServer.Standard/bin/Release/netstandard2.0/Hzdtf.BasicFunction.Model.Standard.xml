@@ -65,6 +65,32 @@
             流
             </summary>
         </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.Expand.Attachment.SimpleAttachmentInfo">
+            <summary>
+            简单附件信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.Attachment.SimpleAttachmentInfo.OwnerId">
+            <summary>
+            归属ID
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.Attachment.SimpleAttachmentInfo.OwnerType">
+            <summary>
+            归属类型
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.Attachment.SimpleAttachmentInfo.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.Attachment.SimpleAttachmentInfo.Memo">
+            <summary>
+            备注
+            </summary>
+        </member>
         <member name="T:Hzdtf.BasicFunction.Model.Standard.Expand.DataDictionaryItem.DataDictionaryItemExpandFilterInfo">
             <summary>
             数据子项扩展筛选信息
@@ -197,17 +223,6 @@
         <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.User.CurrUserModifyPasswordInfo.OldPassword">
             <summary>
             旧密码
-            </summary>
-        </member>
-        <member name="T:Hzdtf.BasicFunction.Model.Standard.Expand.User.LoginReturnInfo">
-            <summary>
-            登录返回信息
-            @ 黄振东
-            </summary>
-        </member>
-        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.User.LoginReturnInfo.IsVerificationCode">
-            <summary>
-            是否需要验证码
             </summary>
         </member>
         <member name="T:Hzdtf.BasicFunction.Model.Standard.Expand.User.ModifyPasswordInfo">

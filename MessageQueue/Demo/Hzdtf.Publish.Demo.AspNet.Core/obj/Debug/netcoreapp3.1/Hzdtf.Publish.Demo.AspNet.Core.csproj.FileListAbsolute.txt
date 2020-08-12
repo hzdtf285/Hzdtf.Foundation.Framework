@@ -89,3 +89,11 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\obj\Debug\netcoreapp3.1\Hzdtf.Publish.Demo.AspNet.Core.MvcApplicationPartsAssemblyInfo.cs
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\bin\Debug\netcoreapp3.1\Hei.Captcha.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\bin\Debug\netcoreapp3.1\SixLabors.Core.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\bin\Debug\netcoreapp3.1\SixLabors.Fonts.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.Drawing.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\bin\Debug\netcoreapp3.1\SixLabors.Shapes.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\bin\Debug\netcoreapp3.1\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\bin\Debug\netcoreapp3.1\Hzdtf.Mini.Standard.pdb

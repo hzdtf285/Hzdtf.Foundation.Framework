@@ -19,3 +19,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Polly\Hzdtf.Polly.Extensions.Sta
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Polly\Hzdtf.Polly.Extensions.Standard\obj\Debug\netstandard2.0\Hzdtf.Polly.Extensions.Standard.pdb
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Polly\Hzdtf.Polly.Extensions.Standard\obj\Debug\netstandard2.0\Hzdtf.Polly.Extensions.Standard.csprojAssemblyReference.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Polly\Hzdtf.Polly.Extensions.Standard\bin\Debug\netstandard2.0\Hzdtf.Polly.Extensions.Standard.xml
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Polly\Hzdtf.Polly.Extensions.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Polly\Hzdtf.Polly.Extensions.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

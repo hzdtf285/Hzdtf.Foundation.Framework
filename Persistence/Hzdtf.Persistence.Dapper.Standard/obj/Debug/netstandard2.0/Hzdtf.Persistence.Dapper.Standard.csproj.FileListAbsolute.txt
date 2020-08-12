@@ -101,3 +101,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.Persistence.Da
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.Persistence.Dapper.Standard\obj\Debug\netstandard2.0\Hzdtf.Persistence.Dapper.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.Persistence.Dapper.Standard\obj\Debug\netstandard2.0\Hzdtf.Persistence.Dapper.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.Persistence.Dapper.Standard\obj\Debug\netstandard2.0\Hzdtf.Persistence.Dapper.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.Persistence.Dapper.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.Persistence.Dapper.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

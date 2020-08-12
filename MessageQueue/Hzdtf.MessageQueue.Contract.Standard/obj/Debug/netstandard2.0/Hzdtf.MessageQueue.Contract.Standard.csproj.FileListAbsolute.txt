@@ -101,3 +101,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Hzdtf.MessageQueue.
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Hzdtf.MessageQueue.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.MessageQueue.Contract.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Hzdtf.MessageQueue.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.MessageQueue.Contract.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Hzdtf.MessageQueue.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.MessageQueue.Contract.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Hzdtf.MessageQueue.Contract.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Hzdtf.MessageQueue.Contract.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

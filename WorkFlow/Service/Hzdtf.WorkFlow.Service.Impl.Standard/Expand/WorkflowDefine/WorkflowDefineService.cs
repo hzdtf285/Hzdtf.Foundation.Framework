@@ -1,6 +1,6 @@
-﻿using Hzdtf.Utility.Standard.Attr;
-using Hzdtf.Utility.Standard.Attr.ParamAttr;
+﻿using Hzdtf.Utility.Standard.Attr.ParamAttr;
 using Hzdtf.Utility.Standard.Enums;
+using Hzdtf.Utility.Standard.Model;
 using Hzdtf.Utility.Standard.Model.Return;
 using Hzdtf.Utility.Standard.Utils;
 using Hzdtf.WorkFlow.Model.Standard;
@@ -83,9 +83,9 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
         /// </summary>
         /// <param name="code">编码</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<WorkflowDefineInfo> FindByCode([DisplayName2("编码"), Required] string code, string connectionId = null)
+        public virtual ReturnInfo<WorkflowDefineInfo> FindByCode([DisplayName2("编码"), Required] string code, string connectionId = null, BasicUserInfo currUser = null)
         {
             return ExecReturnFuncAndConnectionId<WorkflowDefineInfo>((reInfo, connId) =>
             {
@@ -100,14 +100,14 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
         /// </summary>
         /// <param name="workflowDefineId">工作流定义ID</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<WorkflowDefineInfo> ReaderAllConfig([DisplayName2("工作流定义ID"), Id] int workflowDefineId, string connectionId = null)
+        public virtual ReturnInfo<WorkflowDefineInfo> ReaderAllConfig([DisplayName2("工作流定义ID"), Id] int workflowDefineId, string connectionId = null, BasicUserInfo currUser = null)
         {
             return ExecReturnFuncAndConnectionId<WorkflowDefineInfo>((reInfo, connId) =>
             {
                 WorkflowDefineInfo workflowDefine = Persistence.Select(workflowDefineId, connId);
-                BasicReturnInfo basicReturn = ReaderOtherConfig(workflowDefine, connId);
+                BasicReturnInfo basicReturn = ReaderOtherConfig(workflowDefine, connId, currUser);
                 if (basicReturn.Failure())
                 {
                     reInfo.FromBasic(basicReturn);
@@ -124,14 +124,14 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
         /// </summary>
         /// <param name="workflowCode">工作流编码</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<WorkflowDefineInfo> ReaderAllConfig([DisplayName2("工作流编码"), Required] string workflowCode, string connectionId = null)
+        public virtual ReturnInfo<WorkflowDefineInfo> ReaderAllConfig([DisplayName2("工作流编码"), Required] string workflowCode, string connectionId = null, BasicUserInfo currUser = null)
         {
             return ExecReturnFuncAndConnectionId<WorkflowDefineInfo>((reInfo, connId) =>
             {
                 WorkflowDefineInfo workflowDefine = Persistence.SelectByCode(workflowCode, connId);
-                BasicReturnInfo basicReturn = ReaderOtherConfig(workflowDefine, connId);
+                BasicReturnInfo basicReturn = ReaderOtherConfig(workflowDefine, connId, currUser);
                 if (basicReturn.Failure())
                 {
                     reInfo.FromBasic(basicReturn);
@@ -152,7 +152,8 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
         /// </summary>
         /// <param name="workflowDefine">工作流定义</param>
         /// <param name="connectionId">连接ID</param>
-        private BasicReturnInfo ReaderOtherConfig(WorkflowDefineInfo workflowDefine, string connectionId)
+        /// <param name="currUser">当前用户</param>
+        private BasicReturnInfo ReaderOtherConfig(WorkflowDefineInfo workflowDefine, string connectionId, BasicUserInfo currUser = null)
         {
             BasicReturnInfo basicReturn = new BasicReturnInfo();
             if (workflowDefine == null)
@@ -163,7 +164,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
 
             #region 查找流程/表单/流程关卡
 
-            ReturnInfo<FlowInfo> reFlow = FlowService.Find(workflowDefine.FlowId, connectionId);
+            ReturnInfo<FlowInfo> reFlow = FlowService.Find(workflowDefine.FlowId, connectionId, currUser);
             if (reFlow.Failure())
             {
                 basicReturn.FromBasic(reFlow);
@@ -175,7 +176,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
                 return basicReturn;
             }
 
-            ReturnInfo<FormInfo> reForm = FormService.Find(workflowDefine.FormId, connectionId);
+            ReturnInfo<FormInfo> reForm = FormService.Find(workflowDefine.FormId, connectionId, currUser);
 
             workflowDefine.Flow = reFlow.Data;
 
@@ -191,7 +192,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
             }
             workflowDefine.Form = reForm.Data;
 
-            ReturnInfo<IList<FlowCensorshipInfo>> reFlowCensorships = FlowCensorshipService.QueryByFlowId(workflowDefine.FlowId, connectionId);
+            ReturnInfo<IList<FlowCensorshipInfo>> reFlowCensorships = FlowCensorshipService.QueryByFlowId(workflowDefine.FlowId, connectionId, currUser);
             if (reFlowCensorships.Failure())
             {
                 basicReturn.FromBasic(reFlowCensorships);
@@ -225,7 +226,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
             // 标准关卡
             if (!stFlowCensorshipIds.IsNullOrCount0())
             {
-                ReturnInfo<IList<StandardCensorshipInfo>> reStand = StandardCensorshipService.Find(stFlowCensorshipIds.ToArray(), connectionId);                
+                ReturnInfo<IList<StandardCensorshipInfo>> reStand = StandardCensorshipService.Find(stFlowCensorshipIds.ToArray(), connectionId, currUser);                
                 if (reStand.Failure())
                 {
                     basicReturn.FromBasic(reStand);
@@ -240,7 +241,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
                 standardCensorships = reStand.Data;
             }
 
-            ReturnInfo<IList<SendFlowRouteInfo>> reSend = SendFlowRouteService.QueryByFlowCensorshipIds(flowCensorshipIds, connectionId);
+            ReturnInfo<IList<SendFlowRouteInfo>> reSend = SendFlowRouteService.QueryByFlowCensorshipIds(flowCensorshipIds, connectionId, currUser);
             if (reSend.Failure())
             {
                 basicReturn.FromBasic(reSend);
@@ -251,7 +252,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
                 basicReturn.SetFailureMsg("找不到工作流的送件路线信息");
             }
 
-            ReturnInfo<IList<ReturnFlowRouteInfo>> reReturn = ReturnFlowRouteService.QueryByFlowCensorshipIds(flowCensorshipIds, connectionId);
+            ReturnInfo<IList<ReturnFlowRouteInfo>> reReturn = ReturnFlowRouteService.QueryByFlowCensorshipIds(flowCensorshipIds, connectionId, currUser);
             if (reReturn.Failure())
             {
                 basicReturn.FromBasic(reReturn);

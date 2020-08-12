@@ -131,3 +131,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Service\Hzdtf.Service.Impl.Stand
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Service\Hzdtf.Service.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.Service.Impl.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Service\Hzdtf.Service.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.Service.Impl.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Service\Hzdtf.Service.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.Service.Impl.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Service\Hzdtf.Service.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Service\Hzdtf.Service.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

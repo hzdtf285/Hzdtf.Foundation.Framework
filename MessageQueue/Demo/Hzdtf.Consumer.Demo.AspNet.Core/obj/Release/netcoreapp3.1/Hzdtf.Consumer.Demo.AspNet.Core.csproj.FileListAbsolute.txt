@@ -85,3 +85,13 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Consumer
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Consumer.Demo.AspNet.Core\obj\Release\netcoreapp3.1\staticwebassets\Hzdtf.Consumer.Demo.AspNet.Core.StaticWebAssets.Manifest.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Consumer.Demo.AspNet.Core\obj\Release\netcoreapp3.1\staticwebassets\Hzdtf.Consumer.Demo.AspNet.Core.StaticWebAssets.xml
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Consumer.Demo.AspNet.Core\obj\Release\netcoreapp3.1\Hzdtf.Consumer.Demo.AspNet.Core.genruntimeconfig.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Consumer.Demo.AspNet.Core\bin\Release\netcoreapp3.1\Hei.Captcha.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Consumer.Demo.AspNet.Core\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Consumer.Demo.AspNet.Core\bin\Release\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Consumer.Demo.AspNet.Core\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Consumer.Demo.AspNet.Core\bin\Release\netcoreapp3.1\SixLabors.Core.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Consumer.Demo.AspNet.Core\bin\Release\netcoreapp3.1\SixLabors.Fonts.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Consumer.Demo.AspNet.Core\bin\Release\netcoreapp3.1\SixLabors.ImageSharp.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Consumer.Demo.AspNet.Core\bin\Release\netcoreapp3.1\SixLabors.ImageSharp.Drawing.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Consumer.Demo.AspNet.Core\bin\Release\netcoreapp3.1\SixLabors.Shapes.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Consumer.Demo.AspNet.Core\obj\Release\netcoreapp3.1\Hzdtf.Consumer.Demo.AspNet.Core.MvcApplicationPartsAssemblyInfo.cs

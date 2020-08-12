@@ -269,7 +269,7 @@
             </summary>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.ExecLogin(Hzdtf.Utility.Standard.Model.LoginInfo,System.Action{System.String,System.String,Hzdtf.Utility.Standard.Model.Return.ReturnInfo{Hzdtf.BasicFunction.Model.Standard.Expand.User.LoginReturnInfo}})">
+        <member name="M:Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.ExecLogin(Hzdtf.Utility.Standard.Model.LoginInfo,System.Action{System.String,System.String,Hzdtf.Utility.Standard.Model.Return.ReturnInfo{Hzdtf.Utility.Standard.Model.LoginReturnInfo}})">
             <summary>
             执行登录
             </summary>

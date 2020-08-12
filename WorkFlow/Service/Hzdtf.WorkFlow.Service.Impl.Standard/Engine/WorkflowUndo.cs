@@ -21,9 +21,11 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// </summary>
         /// <param name="returnInfo">返回信息</param>
         /// <param name="workflow">工作流</param>
-        protected override void Vali(ReturnInfo<bool> returnInfo, WorkflowInfo workflow)
+        /// <param name="currUser">当前用户</param>
+        protected override void Vali(ReturnInfo<bool> returnInfo, WorkflowInfo workflow, BasicUserInfo currUser = null)
         {
-            if (workflow.CreaterId != UserTool.CurrUser.Id)
+            var user = UserTool.GetCurrUser(currUser);
+            if (workflow.CreaterId != user.Id)
             {
                 returnInfo.SetFailureMsg("Sorry，您不是此流程的发起者，故不能撤消");
 
@@ -56,7 +58,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
                     foreach (var h in workflow.Handles)
                     {
                         // 本人处理忽略
-                        if (h.HandlerId == UserTool.CurrUser.Id)
+                        if (h.HandlerId == user.Id)
                         {
                             continue;
                         }
@@ -90,12 +92,14 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// <param name="returnInfo">返回信息</param>
         /// <param name="workflow">工作流</param>
         /// <param name="connectionId">连接ID</param>
-        protected override void ExecCore(ReturnInfo<bool> returnInfo, WorkflowInfo workflow, string connectionId = null)
+        /// <param name="currUser">当前用户</param>
+        protected override void ExecCore(ReturnInfo<bool> returnInfo, WorkflowInfo workflow, string connectionId = null, BasicUserInfo currUser = null)
         {
+            var user = UserTool.GetCurrUser(currUser);
             // 除本人外，所有处理者都删除
             foreach (var h in workflow.Handles)
             {
-                if (h.HandlerId == UserTool.CurrUser.Id)
+                if (h.HandlerId == user.Id)
                 {
                     workflow.CurrHandlerIds = h.HandlerId.ToString();
                     workflow.CurrHandlers = h.Handler;

@@ -12,9 +12,8 @@ namespace Hzdtf.Utility.Standard.Model
     {
         /// <summary>
         /// 当前用户
-        /// @ 黄振东
         /// </summary>
-        public static BasicUserInfo CurrUser
+        private static BasicUserInfo CurrUser
         {
             get => GetCurrUserFunc != null ? GetCurrUserFunc() : null;
         }
@@ -34,11 +33,38 @@ namespace Hzdtf.Utility.Standard.Model
         };
 
         /// <summary>
-        /// 获取当前用户
+        /// 获取当前用户，如果传入的用户不为null，则取传入的用户。否则调GetCurrUserFunc委托
+        /// </summary>
+        /// <param name="currUser">当前用户</param>
+        /// <param name="notExistsIsOutTestUser">如果不存在是否输出测试用户</param>
+        /// <returns>当前用户</returns>
+        public static BasicUserInfo GetCurrUser(BasicUserInfo currUser = null, bool notExistsIsOutTestUser = false)
+        {
+            var result = currUser == null ? CurrUser : currUser;
+            if (result == null && notExistsIsOutTestUser)
+            {
+                result = TestUser;
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// 获取当前用户，如果传入的用户不为null，则取传入的用户。否则调GetCurrUserFunc委托
         /// </summary>
         /// <typeparam name="UserT">用户类型</typeparam>
+        /// <param name="currUser">当前用户</param>
+        /// <param name="notExistsIsOutTestUser">如果不存在是否输出测试用户</param>
         /// <returns>当前用户</returns>
-        public static UserT GetCurrUser<UserT>() where UserT : BasicUserInfo
-            => CurrUser as UserT;
+        public static UserT GetCurrUser<UserT>(BasicUserInfo currUser = null, bool notExistsIsOutTestUser = false) where UserT : BasicUserInfo
+        {
+            var result = currUser == null ? CurrUser : currUser;
+            if (result == null && notExistsIsOutTestUser)
+            {
+                result = TestUser;
+            }
+
+            return result as UserT;
+        }
     }
 }

@@ -18,3 +18,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Integration.
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Integration.ENLog.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Integration.ENLog.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Integration.ENLog.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Integration.ENLog.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Integration.ENLog.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Integration.ENLog.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Integration.ENLog.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Integration.ENLog.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

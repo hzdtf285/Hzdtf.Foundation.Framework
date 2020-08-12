@@ -86,3 +86,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Cache\Hzdtf.Redis.Extend.Standar
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Cache\Hzdtf.Redis.Extend.Standard\obj\Debug\netstandard2.0\Hzdtf.Redis.Extend.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Cache\Hzdtf.Redis.Extend.Standard\obj\Debug\netstandard2.0\Hzdtf.Redis.Extend.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Cache\Hzdtf.Redis.Extend.Standard\obj\Debug\netstandard2.0\Hzdtf.Redis.Extend.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Cache\Hzdtf.Redis.Extend.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Cache\Hzdtf.Redis.Extend.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

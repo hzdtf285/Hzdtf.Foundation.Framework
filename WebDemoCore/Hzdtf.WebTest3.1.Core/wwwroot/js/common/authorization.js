@@ -8,10 +8,25 @@ function Authorization() {
      * 
      * @param {any} loginInfo 登录信息
      * @param {any} callback 回调
+     * @param {any} loginUrl 登录URL
      */
-    this.login = function (loginInfo, callback) {
-        ajaxJsonAsync("/api/Authorization/Login", ADD_REQUEST_TYPE, loginInfo, function (returnInfo) {
-            document.location.href = "/";
+    this.login = function (loginInfo, callback, loginUrl) {
+        if (loginUrl == undefined || loginUrl == null || loginUrl == "") {
+            loginUrl = "/api/Authorization/Login";
+        }
+        var returnUrl = getUrlParamValue("returnUrl");
+        if (returnUrl != "") {
+            loginInfo.returnUrl = decodeURIComponent(returnUrl);
+        }
+        ajaxJsonAsync(loginUrl, ADD_REQUEST_TYPE, loginInfo, function (returnInfo, data) {
+            var reUrl = "/";
+            if (data && data.returnUrl && data.returnUrl != "") {
+                reUrl = data.returnUrl;
+            }
+            else if (loginInfo.returnUrl && loginInfo.returnUrl != "") {
+                reUrl = loginInfo.returnUrl;
+            }
+            document.location.href = reUrl;
 
             if (typeof (callback) == "function") {
                 callback(true);
@@ -33,12 +48,16 @@ function Authorization() {
 
     /**
      * 登出
+     * @ param logoutUrl 登出URL
      * */
-    this.logout = function () {
+    this.logout = function (logoutUrl) {
+        if (logoutUrl == undefined || logoutUrl == null || logoutUrl == "") {
+            logoutUrl = "/api/Authorization/Logout";
+        }
         confirm({
             text: "确定要退出吗?",
             confirmCallback: function () {
-                ajaxJsonAsync("/api/Authorization/Logout", REMOVE_REQUEST_TYPE, null, function (returnInfo) {
+                ajaxJsonAsync(logoutUrl, REMOVE_REQUEST_TYPE, null, function (returnInfo) {
                     document.location.href = "/login.html";
                 }, function (returnInfo) {
                     showToastr({
@@ -54,8 +73,10 @@ function Authorization() {
     /**
      * 检查是否需要验证码
      * */
-    this.checkIsVerificationCode = function() {
-        var url = "/api/Authorization/GetIsVerificationCode?ts=" + Math.random();
+    this.checkIsVerificationCode = function (url) {
+        if (url == undefined || url == null || url == "") {
+            url = "/api/Authorization/GetIsVerificationCode?ts=" + Math.random();
+        }
         ajaxJsonAsync(url, QUERY_REQUEST_TYPE, null, function (returnInfo, data) {
             controlVerificationCode(data);
         });
@@ -82,6 +103,9 @@ function Authorization() {
 /**
  * 刷新验证码
  * */
-function refreshVerificationCode() {
-    $("#imgCheckCode").attr("src", "/api/image/BuilderCheckCode?ts=" + Math.random());
+function refreshVerificationCode(url) {
+    if (url == undefined || url == null || url == "") {
+        url = "/api/image/BuilderCheckCode?ts=" + Math.random();
+    }
+    $("#imgCheckCode").attr("src", url);
 }

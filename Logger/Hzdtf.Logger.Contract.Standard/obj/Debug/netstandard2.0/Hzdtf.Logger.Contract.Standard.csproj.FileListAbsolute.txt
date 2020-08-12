@@ -86,3 +86,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Contract.Sta
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Contract.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Contract.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Contract.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Contract.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Logger\Hzdtf.Logger.Contract.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

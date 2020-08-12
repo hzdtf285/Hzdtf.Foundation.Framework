@@ -79,3 +79,11 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\obj\Debug\netcoreapp3.1\Hzdtf.Publish.Demo.Core.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\obj\Debug\netcoreapp3.1\Hzdtf.Publish.Demo.Core.pdb
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\obj\Debug\netcoreapp3.1\Hzdtf.Publish.Demo.Core.genruntimeconfig.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\bin\Debug\netcoreapp3.1\Hei.Captcha.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\bin\Debug\netcoreapp3.1\SixLabors.Core.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\bin\Debug\netcoreapp3.1\SixLabors.Fonts.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.Drawing.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\bin\Debug\netcoreapp3.1\SixLabors.Shapes.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\bin\Debug\netcoreapp3.1\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\bin\Debug\netcoreapp3.1\Hzdtf.Mini.Standard.pdb

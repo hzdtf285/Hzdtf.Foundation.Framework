@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Text;
 using Hzdtf.Utility.Standard.Utils;
 using Hzdtf.Utility.Standard.Attr.ParamAttr;
+using Hzdtf.Utility.Standard.Model;
 
 namespace Hzdtf.BasicFunction.Service.Impl.Standard
 {
@@ -30,9 +31,9 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// </summary>
         /// <param name="roleId">角色ID</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<IList<MenuFunctionInfo>> QueryMenuFunctionsByRoleId([DisplayName2("角色ID"), Id] int roleId, string connectionId = null)
+        public virtual ReturnInfo<IList<MenuFunctionInfo>> QueryMenuFunctionsByRoleId([DisplayName2("角色ID"), Id] int roleId, string connectionId = null, BasicUserInfo currUser = null)
         {
             return ExecReturnFunc<IList<MenuFunctionInfo>>((reInfo) =>
             {
@@ -46,9 +47,9 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="roleId">角色ID</param>
         /// <param name="menuFunctionIds">菜单功能ID列表</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<bool> SaveRoleMenuFunctions([DisplayName2("角色ID"), Id] int roleId, IList<int> menuFunctionIds, string connectionId = null)
+        public virtual ReturnInfo<bool> SaveRoleMenuFunctions([DisplayName2("角色ID"), Id] int roleId, IList<int> menuFunctionIds, string connectionId = null, BasicUserInfo currUser = null)
         {
             IList<RoleMenuFunctionInfo> rmfs = new List<RoleMenuFunctionInfo>(menuFunctionIds.Count);
             foreach (var id in menuFunctionIds)
@@ -58,13 +59,13 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
                     RoleId = roleId,
                     MenuFunctionId = id
                 };
-                rmf.SetCreateInfo();
+                rmf.SetCreateInfo(currUser);
 
                 rmfs.Add(rmf);
             }
 
             ReturnInfo<bool> returnInfo = new ReturnInfo<bool>();
-            ExecSaveRoleMenuFunctions(returnInfo, roleId, rmfs, connectionId);
+            ExecSaveRoleMenuFunctions(returnInfo, roleId, rmfs, connectionId, currUser);
 
             return returnInfo;
         }
@@ -76,8 +77,9 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="roleId">角色ID</param>
         /// <param name="rmfs">角色菜单功能列表</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         [Transaction(ConnectionIdIndex = 3)]
-        protected virtual void ExecSaveRoleMenuFunctions(ReturnInfo<bool> returnInfo, int roleId, IList<RoleMenuFunctionInfo> rmfs, string connectionId = null)
+        protected virtual void ExecSaveRoleMenuFunctions(ReturnInfo<bool> returnInfo, int roleId, IList<RoleMenuFunctionInfo> rmfs, string connectionId = null, BasicUserInfo currUser = null)
         {
             Persistence.DeleteByRoleId(roleId, connectionId);
             if (rmfs.IsNullOrCount0())

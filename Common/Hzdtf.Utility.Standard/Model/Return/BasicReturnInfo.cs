@@ -81,15 +81,7 @@ namespace Hzdtf.Utility.Standard.Model.Return
         /// <summary>
         /// 异常
         /// </summary>
-        [JsonIgnore]
-        [IgnoreMember]
-        [JsonProperty("ex")]
-        [Key("ex")]
-        public Exception Ex
-        {
-            get;
-            set;
-        }       
+        public Exception Ex;
 
         /// <summary>
         /// 是否成功
@@ -145,7 +137,10 @@ namespace Hzdtf.Utility.Standard.Model.Return
         {
             Code = code;
             SetMsg(msg, desc);
-            Ex = ex;
+            if (ex != null)
+            {
+                Ex = ex;
+            }
         }
 
         /// <summary>

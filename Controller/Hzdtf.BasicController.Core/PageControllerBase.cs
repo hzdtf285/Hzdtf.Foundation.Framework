@@ -9,6 +9,7 @@ using System.Text;
 using Hzdtf.Utility.Standard.Utils;
 using Hzdtf.Logger.Contract.Standard;
 using Hzdtf.Utility.Standard.Model.Page;
+using System.Threading.Tasks;
 
 namespace Hzdtf.BasicController.Core
 {
@@ -61,42 +62,45 @@ namespace Hzdtf.BasicController.Core
         /// </summary>
         /// <returns>返回信息</returns>
         [HttpGet("PageData")]
-        public virtual ReturnInfo<PageInfoT> PageData()
+        public virtual async Task<ReturnInfo<PageInfoT>> PageData()
         {
-            ReturnInfo<PageInfoT> returnInfo = new ReturnInfo<PageInfoT>();
-            returnInfo.Data = CreatePageInfo();
-            if (string.IsNullOrWhiteSpace(MenuCode()))
+            return await Task<ReturnInfo<PageInfoT>>.Run(() =>
             {
-                AppendPageData(returnInfo);
-                return returnInfo;
-            }
-            
-            ReturnInfo<IList<FunctionInfo>> reFunInfo = UserService.QueryCurrUserOwnFunctionsByMenuCode(MenuCode());
-            if (reFunInfo.Success())
-            {
-                if (reFunInfo.Data.IsNullOrCount0())
+                ReturnInfo<PageInfoT> returnInfo = new ReturnInfo<PageInfoT>();
+                returnInfo.Data = CreatePageInfo();
+                if (string.IsNullOrWhiteSpace(MenuCode()))
                 {
+                    AppendPageData(returnInfo);
                     return returnInfo;
                 }
 
-                returnInfo.Data.Functions = new List<CodeNameInfo>(reFunInfo.Data.Count);
-                foreach (var f in reFunInfo.Data)
+                ReturnInfo<IList<FunctionInfo>> reFunInfo = UserService.QueryCurrUserOwnFunctionsByMenuCode(MenuCode());
+                if (reFunInfo.Success())
                 {
-                    returnInfo.Data.Functions.Add(new CodeNameInfo()
+                    if (reFunInfo.Data.IsNullOrCount0())
                     {
-                        Code = f.Code,
-                        Name = f.Name
-                    });
+                        return returnInfo;
+                    }
+
+                    returnInfo.Data.Functions = new List<CodeNameInfo>(reFunInfo.Data.Count);
+                    foreach (var f in reFunInfo.Data)
+                    {
+                        returnInfo.Data.Functions.Add(new CodeNameInfo()
+                        {
+                            Code = f.Code,
+                            Name = f.Name
+                        });
+                    }
+
+                    AppendPageData(returnInfo);
+                }
+                else
+                {
+                    returnInfo.FromBasic(reFunInfo);
                 }
 
-                AppendPageData(returnInfo);
-            }
-            else
-            {
-                returnInfo.FromBasic(reFunInfo);
-            }
-
-            return returnInfo;
+                return returnInfo;
+            });
         }
 
         /// <summary>

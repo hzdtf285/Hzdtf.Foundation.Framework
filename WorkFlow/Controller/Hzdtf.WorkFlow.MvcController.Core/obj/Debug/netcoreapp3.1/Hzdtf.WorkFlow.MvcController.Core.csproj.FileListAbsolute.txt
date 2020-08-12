@@ -40,3 +40,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Controller\Hzdtf.WorkFl
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Controller\Hzdtf.WorkFlow.MvcController.Core\obj\Debug\netcoreapp3.1\Hzdtf.WorkFlow.MvcController.Core.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Controller\Hzdtf.WorkFlow.MvcController.Core\obj\Debug\netcoreapp3.1\Hzdtf.WorkFlow.MvcController.Core.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Controller\Hzdtf.WorkFlow.MvcController.Core\obj\Debug\netcoreapp3.1\Hzdtf.WorkFlow.MvcController.Core.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Controller\Hzdtf.WorkFlow.MvcController.Core\bin\Debug\netcoreapp3.1\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Controller\Hzdtf.WorkFlow.MvcController.Core\bin\Debug\netcoreapp3.1\Hzdtf.Mini.Standard.pdb

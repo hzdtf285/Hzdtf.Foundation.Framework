@@ -86,3 +86,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.Persistence.Co
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.Persistence.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.Persistence.Contract.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.Persistence.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.Persistence.Contract.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.Persistence.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.Persistence.Contract.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.Persistence.Contract.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.Persistence.Contract.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

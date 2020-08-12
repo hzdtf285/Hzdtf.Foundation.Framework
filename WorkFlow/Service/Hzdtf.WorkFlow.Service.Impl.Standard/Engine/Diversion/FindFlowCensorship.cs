@@ -77,9 +77,10 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
         /// </summary>
         /// <param name="findFlowCensorshipIn">查找流程关卡输入</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<FlowCensorshipOutInfo> NextHandler(FlowCensorshipInInfo findFlowCensorshipIn, string connectionId = null)
+        [Auth(CurrUserParamIndex = 2)]
+        public virtual ReturnInfo<FlowCensorshipOutInfo> NextHandler(FlowCensorshipInInfo findFlowCensorshipIn, string connectionId = null, BasicUserInfo currUser = null)
         {
             ReturnInfo<FlowCensorshipOutInfo> returnInfo = new ReturnInfo<FlowCensorshipOutInfo>();
 
@@ -99,11 +100,11 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
 
             if (findFlowCensorshipIn.CurrWorkflowHandle == null || findFlowCensorshipIn.Workflow == null || findFlowCensorshipIn.Workflow.FlowStatus == FlowStatusEnum.DRAFT)
             {
-                ApplyHandle(returnInfo, findFlowCensorshipIn, connectionId);
+                ApplyHandle(returnInfo, findFlowCensorshipIn, connectionId, currUser);
             }
             else
             {
-                AuditHandle(returnInfo, findFlowCensorshipIn, connectionId);
+                AuditHandle(returnInfo, findFlowCensorshipIn, connectionId, currUser);
             }
 
             return returnInfo;
@@ -198,7 +199,8 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
         /// <param name="returnInfo">返回信息</param>
         /// <param name="findFlowCensorshipIn">查找流程关卡输入</param>
         /// <param name="connectionId">连接ID</param>
-        private void ApplyHandle(ReturnInfo<FlowCensorshipOutInfo> returnInfo, FlowCensorshipInInfo findFlowCensorshipIn, string connectionId = null)
+        /// <param name="currUser">当前用户</param>
+        private void ApplyHandle(ReturnInfo<FlowCensorshipOutInfo> returnInfo, FlowCensorshipInInfo findFlowCensorshipIn, string connectionId = null, BasicUserInfo currUser = null)
         {
             if (findFlowCensorshipIn.ActionType == ActionType.RETURN)
             {
@@ -214,6 +216,8 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
                 return;
             }
 
+            var user = UserTool.GetCurrUser(currUser);
+
             if (returnInfo.Data.Workflow == null)
             {
                 if (findFlowCensorshipIn.Workflow == null)
@@ -224,17 +228,17 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
                         Title = findFlowCensorshipIn.Title,
                         WorkflowDefineId = findFlowCensorshipIn.WorkflowDefine.Id
                     };
-                    returnInfo.Data.Workflow.SetCreateInfo();
+                    returnInfo.Data.Workflow.SetCreateInfo(currUser);
                 }
                 else
                 {
                     returnInfo.Data.Workflow = findFlowCensorshipIn.Workflow;
-                    returnInfo.Data.Workflow.SetModifyInfo();
+                    returnInfo.Data.Workflow.SetModifyInfo(currUser);
                 }
             }
             else
             {
-                returnInfo.Data.Workflow.SetModifyInfo();
+                returnInfo.Data.Workflow.SetModifyInfo(currUser);
             }
             returnInfo.Data.Workflow.FlowStatus = findFlowCensorshipIn.ActionType == ActionType.SEND ? FlowStatusEnum.AUDITING : FlowStatusEnum.DRAFT;
             string idea = findFlowCensorshipIn.Idea;
@@ -253,7 +257,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
                     return;
                 }
 
-                ConcreteCensorshipInfo[] concreteCensorships = FindMappingConcreteCensorships(returnInfo, findFlowCensorshipIn, nextSendFlowCensorships, connectionId);
+                ConcreteCensorshipInfo[] concreteCensorships = FindMappingConcreteCensorships(returnInfo, findFlowCensorshipIn, nextSendFlowCensorships, connectionId, currUser);
                 if (returnInfo.Failure())
                 {
                     return;
@@ -273,8 +277,8 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
                 returnInfo.Data.Workflow.CurrConcreteCensorshipIds = applyStand.Id.ToString();
                 returnInfo.Data.Workflow.CurrConcreteCensorships = applyStand.Name;
                 returnInfo.Data.Workflow.CurrFlowCensorshipIds = applyFlowCensors.Id.ToString();
-                returnInfo.Data.Workflow.CurrHandlerIds = UserTool.CurrUser.Id.ToString();
-                returnInfo.Data.Workflow.CurrHandlers = UserTool.CurrUser.Name;
+                returnInfo.Data.Workflow.CurrHandlerIds = user.Id.ToString();
+                returnInfo.Data.Workflow.CurrHandlers = user.Name;
 
                 if (string.IsNullOrWhiteSpace(idea))
                 {
@@ -295,8 +299,8 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
                         ConcreteConcrete = applyStandCensors.Name,
                         ConcreteConcreteId = applyStandCensors.Id,
                         FlowCensorshipId = applyFlowCensors.Id,
-                        Handler = UserTool.CurrUser.Name,
-                        HandlerId = UserTool.CurrUser.Id,
+                        Handler = user.Name,
+                        HandlerId = user.Id,
                         HandleStatus = findFlowCensorshipIn.ActionType == ActionType.SEND ? HandleStatusEnum.SENDED : HandleStatusEnum.UN_HANDLE,
                         Idea = idea,
                         IsReaded = true,
@@ -311,7 +315,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
                 applyConsors.WorkflowHandles[0].HandleTime = DateTime.Now;
             }
 
-            applyConsors.WorkflowHandles[0].SetCreateInfo();
+            applyConsors.WorkflowHandles[0].SetCreateInfo(currUser);
             returnInfo.Data.CurrConcreteCensorship = applyConsors;
         }
 
@@ -321,7 +325,8 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
         /// <param name="returnInfo">返回信息</param>
         /// <param name="findFlowCensorshipIn">查找流程关卡输入</param>
         /// <param name="connectionId">连接ID</param>
-        private void AuditHandle(ReturnInfo<FlowCensorshipOutInfo> returnInfo, FlowCensorshipInInfo findFlowCensorshipIn, string connectionId = null)
+        /// <param name="currUser">当前用户</param>
+        private void AuditHandle(ReturnInfo<FlowCensorshipOutInfo> returnInfo, FlowCensorshipInInfo findFlowCensorshipIn, string connectionId = null, BasicUserInfo currUser = null)
         {
             if (findFlowCensorshipIn.CurrWorkflowHandle == null)
             {
@@ -418,10 +423,10 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
                             FlowCensorship = applyFlowCensors
                         };
 
-                        applyConsors.WorkflowHandles[0].SetCreateInfo();
+                        applyConsors.WorkflowHandles[0].SetCreateInfo(currUser);
 
                         returnInfo.Data.Workflow.FlowStatus = FlowStatusEnum.AUDIT_PASS;
-                        returnInfo.Data.Workflow.SetModifyInfo();
+                        returnInfo.Data.Workflow.SetModifyInfo(currUser);
 
                         ConcreteCensorshipInfo[] nextConcreteCens = new ConcreteCensorshipInfo[] { applyConsors };
                         UpdateCurrWorkflowHandleInfo(nextConcreteCens, returnInfo.Data.Workflow);
@@ -433,7 +438,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
                 }
 
                 // 查找具体的送件流程关卡
-                ConcreteCensorshipInfo[] concreteCensorships = FindMappingConcreteCensorships(returnInfo, findFlowCensorshipIn, nextSendFlowCensorships, connectionId);
+                ConcreteCensorshipInfo[] concreteCensorships = FindMappingConcreteCensorships(returnInfo, findFlowCensorshipIn, nextSendFlowCensorships, connectionId, currUser);
                 if (returnInfo.Failure())
                 {
                     return;
@@ -498,10 +503,10 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
                             FlowCensorship = applyFlowCensors
                         };
 
-                        applyConsors.WorkflowHandles[0].SetCreateInfo();
+                        applyConsors.WorkflowHandles[0].SetCreateInfo(currUser);
 
                         returnInfo.Data.Workflow.FlowStatus = FlowStatusEnum.AUDIT_NOPASS;
-                        returnInfo.Data.Workflow.SetModifyInfo();
+                        returnInfo.Data.Workflow.SetModifyInfo(currUser);
 
                         var nextConcreteCens = new ConcreteCensorshipInfo[] { applyConsors };
                         UpdateCurrWorkflowHandleInfo(nextConcreteCens, returnInfo.Data.Workflow);
@@ -785,11 +790,13 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
         /// <param name="findFlowCensorshipIn">查找流程关卡输入</param>
         /// <param name="flowCensorships">流程关卡数组</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>具体关卡数组</returns>
-        private ConcreteCensorshipInfo[] FindMappingConcreteCensorships(ReturnInfo<FlowCensorshipOutInfo> returnInfo, FlowCensorshipInInfo findFlowCensorshipIn, FlowCensorshipInfo[] flowCensorships, string connectionId = null)
+        private ConcreteCensorshipInfo[] FindMappingConcreteCensorships(ReturnInfo<FlowCensorshipOutInfo> returnInfo, FlowCensorshipInInfo findFlowCensorshipIn, FlowCensorshipInfo[] flowCensorships, string connectionId = null, BasicUserInfo currUser = null)
         {
             IList<ConcreteCensorshipInfo> concreteCensorships = new List<ConcreteCensorshipInfo>();
 
+            var user = UserTool.GetCurrUser(currUser);
             ExecProcConnectionId(connId =>
             {
                 foreach (var f in flowCensorships)
@@ -800,8 +807,8 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
                             ExecGetToUsers(returnInfo, findFlowCensorshipIn, f, concreteCensorships,
                             () =>
                             {
-                                return FindHandlerRoleUser.FindById(f.OwnerCensorshipId, UserTool.CurrUser.Id, connId);
-                            });
+                                return FindHandlerRoleUser.FindById(f.OwnerCensorshipId, user.Id, connId, currUser);
+                            }, currUser);
                             if (returnInfo.Failure())
                             {
                                 return;
@@ -812,8 +819,8 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
                             ExecGetToUsers(returnInfo, findFlowCensorshipIn, f, concreteCensorships,
                             () =>
                             {
-                                return FindHandlerConcreteUser.FindById(f.OwnerCensorshipId, UserTool.CurrUser.Id, connId);
-                            });
+                                return FindHandlerConcreteUser.FindById(f.OwnerCensorshipId, user.Id, connId, currUser);
+                            }, currUser);
                             if (returnInfo.Failure())
                             {
                                 return;
@@ -830,8 +837,8 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
                                     ExecGetToUsers(returnInfo, findFlowCensorshipIn, f, concreteCensorships,
                                         () =>
                                         {
-                                            return FindHandlerSupervisorUser.FindById(f.OwnerCensorshipId, UserTool.CurrUser.Id, connId);
-                                        });
+                                            return FindHandlerSupervisorUser.FindById(f.OwnerCensorshipId, user.Id, connId, currUser);
+                                        }, currUser);
                                     if (returnInfo.Failure())
                                     {
                                         return;
@@ -866,11 +873,13 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
         /// <param name="flowCensorship">流程关卡</param>
         /// <param name="concreteCensorships">具体关卡列表</param>
         /// <param name="funcToUsers">回调获取到用户数组</param>
+        /// <param name="currUser">当前用户</param>
         private void ExecGetToUsers(ReturnInfo<FlowCensorshipOutInfo> returnInfo,
             FlowCensorshipInInfo findFlowCensorshipIn,
             FlowCensorshipInfo flowCensorship,
             IList<ConcreteCensorshipInfo> concreteCensorships,
-            Func<ReturnInfo<FindHandlerUserOutInfo>> funcToUsers)
+            Func<ReturnInfo<FindHandlerUserOutInfo>> funcToUsers, 
+            BasicUserInfo currUser = null)
         {
             ReturnInfo<FindHandlerUserOutInfo> reUsers = funcToUsers();
             if (reUsers.Failure())
@@ -929,7 +938,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
                 {
                     wh.WorkflowId = findFlowCensorshipIn.Workflow.Id;
                 }
-                wh.SetCreateInfo();
+                wh.SetCreateInfo(currUser);
 
                 workflowHandles.Add(wh);
             }

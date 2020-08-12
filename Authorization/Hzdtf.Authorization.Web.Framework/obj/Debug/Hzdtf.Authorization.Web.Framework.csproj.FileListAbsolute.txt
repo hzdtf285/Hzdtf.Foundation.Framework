@@ -555,3 +555,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorizatio
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Framework\System.Numerics.Vectors.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Framework\System.Runtime.CompilerServices.Unsafe.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Framework\System.Buffers.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Framework\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Framework\Hzdtf.Mini.Standard.pdb

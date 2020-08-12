@@ -101,3 +101,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Service\Hzdtf.WorkFlow.
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Service\Hzdtf.WorkFlow.Service.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.WorkFlow.Service.Contract.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Service\Hzdtf.WorkFlow.Service.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.WorkFlow.Service.Contract.Standard.pdb
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Service\Hzdtf.WorkFlow.Service.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.WorkFlow.Service.Contract.Standard.csprojAssemblyReference.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Service\Hzdtf.WorkFlow.Service.Contract.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WorkFlow\Service\Hzdtf.WorkFlow.Service.Contract.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

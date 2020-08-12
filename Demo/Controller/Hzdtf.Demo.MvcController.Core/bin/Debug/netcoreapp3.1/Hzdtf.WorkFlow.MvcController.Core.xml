@@ -16,7 +16,7 @@
             </summary>
             <returns>菜单编码</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.MvcController.Core.MyApplyFlowController.QueryPageFromService(System.Int32,System.Int32,Hzdtf.WorkFlow.Model.Standard.Expand.Filter.ApplyFlowFilterInfo)">
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.MyApplyFlowController.QueryPageFromServiceAsync(System.Int32,System.Int32,Hzdtf.WorkFlow.Model.Standard.Expand.Filter.ApplyFlowFilterInfo)">
             <summary>
             从服务里查询分页
             </summary>
@@ -44,14 +44,14 @@
             </summary>
             <returns>菜单编码</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.MvcController.Core.MyAuditedFlowController.QueryPageFromService(System.Int32,System.Int32,Hzdtf.WorkFlow.Model.Standard.Expand.Filter.AuditFlowFilterInfo)">
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.MyAuditedFlowController.QueryPageFromServiceAsync(System.Int32,System.Int32,Hzdtf.WorkFlow.Model.Standard.Expand.Filter.AuditFlowFilterInfo)">
             <summary>
             从服务里查询分页
             </summary>
             <param name="pageIndex">页码</param>
             <param name="pageSize">每页记录数</param>
             <param name="filter">筛选</param>
-            <returns>返回信息</returns>
+            <returns>返回信息任务</returns>
         </member>
         <member name="M:Hzdtf.WorkFlow.MvcController.Core.MyAuditedFlowController.GetFlowDetail(System.Int32,System.Int32)">
             <summary>
@@ -83,14 +83,14 @@
             </summary>
             <returns>菜单编码</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.MvcController.Core.MyWaitFlowController.QueryPageFromService(System.Int32,System.Int32,Hzdtf.WorkFlow.Model.Standard.Expand.Filter.WaitHandleFilterInfo)">
+        <member name="M:Hzdtf.WorkFlow.MvcController.Core.MyWaitFlowController.QueryPageFromServiceAsync(System.Int32,System.Int32,Hzdtf.WorkFlow.Model.Standard.Expand.Filter.WaitHandleFilterInfo)">
             <summary>
             从服务里查询分页
             </summary>
             <param name="pageIndex">页码</param>
             <param name="pageSize">每页记录数</param>
             <param name="filter">筛选</param>
-            <returns>返回信息</returns>
+            <returns>返回信息任务</returns>
         </member>
         <member name="M:Hzdtf.WorkFlow.MvcController.Core.MyWaitFlowController.ModifyReadedByHandleId(System.Int32)">
             <summary>

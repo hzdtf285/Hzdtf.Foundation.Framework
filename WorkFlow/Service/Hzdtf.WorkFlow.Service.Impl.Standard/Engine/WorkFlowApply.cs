@@ -22,9 +22,10 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// </summary>
         /// <param name="flowIn">流程输入</param>
         /// <param name="findFlowCensorshipIn">查找流程关卡输入信息</param>
-        protected override void AppendSetFindFlowCensorshipIn(FlowInInfo<FlowInitInfo<PersonTimeInfo>> flowIn, FlowCensorshipInInfo findFlowCensorshipIn)
+        /// <param name="currUser">当前用户</param>
+        protected override void AppendSetFindFlowCensorshipIn(FlowInInfo<FlowInitInfo<PersonTimeInfo>> flowIn, FlowCensorshipInInfo findFlowCensorshipIn, BasicUserInfo currUser = null)
         {
-            base.AppendSetFindFlowCensorshipIn(flowIn, findFlowCensorshipIn);
+            base.AppendSetFindFlowCensorshipIn(flowIn, findFlowCensorshipIn, currUser);
             findFlowCensorshipIn.ActionType = ActionType.SEND;
         }
     }

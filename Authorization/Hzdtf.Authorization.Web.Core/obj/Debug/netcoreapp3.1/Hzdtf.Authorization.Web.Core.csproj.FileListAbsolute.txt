@@ -45,3 +45,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorizatio
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Core - 副本\obj\Debug\netcoreapp3.1\Hzdtf.Authorization.Web.Core.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Core - 副本\obj\Debug\netcoreapp3.1\Hzdtf.Authorization.Web.Core.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Core - 副本\obj\Debug\netcoreapp3.1\Hzdtf.Authorization.Web.Core.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Core\bin\Debug\netcoreapp3.1\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Authorization\Hzdtf.Authorization.Web.Core\bin\Debug\netcoreapp3.1\Hzdtf.Mini.Standard.pdb

@@ -1145,6 +1145,16 @@
           "bin/placeholder/Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.dll": {}
         }
       },
+      "Hzdtf.Mini.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Hzdtf.Mini.Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hzdtf.Mini.Standard.dll": {}
+        }
+      },
       "Hzdtf.Platform.Contract.Standard/2.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1164,6 +1174,7 @@
         "dependencies": {
           "AutoMapper": "10.0.0",
           "Hei.Captcha": "0.2.0",
+          "Hzdtf.Mini.Standard": "1.0.0",
           "MessagePack": "2.1.152",
           "Microsoft.Extensions.Caching.Abstractions": "3.1.5",
           "Microsoft.Extensions.Caching.Memory": "3.1.5",
@@ -4608,6 +4619,11 @@
       "path": "../Hzdtf.MessageQueue.Rpc.Business.Contract.Standard/Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.csproj",
       "msbuildProject": "../Hzdtf.MessageQueue.Rpc.Business.Contract.Standard/Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.csproj"
     },
+    "Hzdtf.Mini.Standard/1.0.0": {
+      "type": "project",
+      "path": "../../../Common/Hzdtf.Mini.Standard/Hzdtf.Mini.Standard.csproj",
+      "msbuildProject": "../../../Common/Hzdtf.Mini.Standard/Hzdtf.Mini.Standard.csproj"
+    },
     "Hzdtf.Platform.Contract.Standard/2.0.0": {
       "type": "project",
       "path": "../../../Platform/Hzdtf.Platform.Contract.Standard/Hzdtf.Platform.Contract.Standard.csproj",
@@ -4693,7 +4709,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

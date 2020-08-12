@@ -11,6 +11,8 @@ using Microsoft.AspNetCore.Authorization;
 using Hzdtf.BasicFunction.Model.Standard;
 using Hzdtf.Authorization.Contract.Standard.IdentityAuth;
 using Hzdtf.Authorization.Contract.Standard.IdentityAuth.Token;
+using Hzdtf.Platform.Config.Contract.Standard.Config.App;
+using Hzdtf.Platform.Contract.Standard;
 
 namespace Hzdtf.BasicFunction.MvcController.Core.Home
 {
@@ -58,6 +60,38 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Home
         {
             get;
             set;
+        }
+
+        /// <summary>
+        /// 应用配置
+        /// </summary>
+        public IAppConfiguration AppConfig
+        {
+            get;
+            set;
+        } = PlatformTool.AppConfig;
+
+        /// <summary>
+        /// 是否禁用登录
+        /// </summary>
+        protected bool IsDisabledLogin
+        {
+            get
+            {
+                var str = AppConfig["IsDisabledLogin"];
+                if (string.IsNullOrWhiteSpace(str))
+                {
+                    return false;
+                }
+
+                bool temp;
+                if (bool.TryParse(str, out temp))
+                {
+                    return temp;
+                }
+
+                return false;
+            }
         }
 
         /// <summary>
@@ -116,7 +150,7 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Home
                 reInfo.FromBasic(busRe);
                 if (reInfo.Success())
                 {
-                   reInfo.Data.Token = busRe.Data;
+                    reInfo.Data.Token = busRe.Data;
                 }
             });
         }
@@ -128,6 +162,11 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Home
         [HttpDelete("Logout")]
         public virtual ReturnInfo<bool> Logout()
         {
+            if (IsDisabledLogin)
+            {
+                var re = new ReturnInfo<bool>();
+                re.SetFailureMsg("登录已禁用");
+            }
             if (IdentityExit == null)
             {
                 var re = new ReturnInfo<bool>();
@@ -170,7 +209,16 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Home
             ReturnInfo<LoginReturnInfo> returnInfo = new ReturnInfo<LoginReturnInfo>()
             {
                 Data = new LoginReturnInfo()
+                {
+                    ReturnUrl = loginInfo.ReturnUrl
+                }
             };
+            if (IsDisabledLogin)
+            {
+                returnInfo.SetFailureMsg("登录已禁用");
+
+                return returnInfo;
+            }
 
             int num = HttpContext.Session.GetInt32("ErrLoginNum").GetValueOrDefault();
             num++;
@@ -204,6 +252,8 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Home
             {
                 HttpContext.Session.Remove("VerificationCode");
                 HttpContext.Session.Remove("ErrLoginNum");
+
+                returnInfo.Data.ReturnUrl = loginInfo.ReturnUrl;
             }
 
             return returnInfo;

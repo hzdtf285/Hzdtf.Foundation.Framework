@@ -226,7 +226,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Polly.AspNet.Extensio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Authorization.Web.Core", "Authorization\Hzdtf.Authorization.Web.Core\Hzdtf.Authorization.Web.Core.csproj", "{1CAC5139-7E4A-493E-AF4B-D547F89C7048}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hzdtf.Logger.Exceptionless.Standard", "Logger\Hzdtf.Logger.Exceptionless.Standard\Hzdtf.Logger.Exceptionless.Standard.csproj", "{90176806-7875-4F8F-9AD1-1FBF1B5D5258}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Logger.Exceptionless.Standard", "Logger\Hzdtf.Logger.Exceptionless.Standard\Hzdtf.Logger.Exceptionless.Standard.csproj", "{90176806-7875-4F8F-9AD1-1FBF1B5D5258}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hzdtf.Mini.Standard", "Common\Hzdtf.Mini.Standard\Hzdtf.Mini.Standard.csproj", "{EEF341A3-DD91-455A-8710-2052B03CFC86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -534,6 +536,10 @@ Global
 		{90176806-7875-4F8F-9AD1-1FBF1B5D5258}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90176806-7875-4F8F-9AD1-1FBF1B5D5258}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90176806-7875-4F8F-9AD1-1FBF1B5D5258}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEF341A3-DD91-455A-8710-2052B03CFC86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEF341A3-DD91-455A-8710-2052B03CFC86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEF341A3-DD91-455A-8710-2052B03CFC86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEF341A3-DD91-455A-8710-2052B03CFC86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -633,6 +639,7 @@ Global
 		{81689FFD-F01E-48D0-B3CC-BF67D9A90F0F} = {3ED316E9-019A-4865-8B57-7640C7A244EC}
 		{1CAC5139-7E4A-493E-AF4B-D547F89C7048} = {E9DF525B-2D71-4518-B2F4-8521761B54E5}
 		{90176806-7875-4F8F-9AD1-1FBF1B5D5258} = {6D14ACBF-4A8E-463C-982C-7E54E0E82E90}
+		{EEF341A3-DD91-455A-8710-2052B03CFC86} = {E47A5D02-9409-4AA7-AB74-9329DD789BC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0297FB00-2BBF-4140-9158-6FD32EBD51A9}

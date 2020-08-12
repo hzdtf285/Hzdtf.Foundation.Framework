@@ -116,3 +116,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.MySql.Standard
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.MySql.Standard\obj\Debug\netstandard2.0\Hzdtf.MySql.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.MySql.Standard\obj\Debug\netstandard2.0\Hzdtf.MySql.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.MySql.Standard\obj\Debug\netstandard2.0\Hzdtf.MySql.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.MySql.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Persistence\Hzdtf.MySql.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

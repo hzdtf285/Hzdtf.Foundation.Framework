@@ -1,4 +1,5 @@
-﻿using Hzdtf.Utility.Standard.Model.Return;
+﻿using Hzdtf.Utility.Standard.Model;
+using Hzdtf.Utility.Standard.Model.Return;
 using Hzdtf.WorkFlow.Model.Standard;
 using Hzdtf.WorkFlow.Model.Standard.Expand;
 using Hzdtf.WorkFlow.Model.Standard.Expand.Diversion;
@@ -20,8 +21,9 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form
         /// <param name="workflow">工作流</param>
         /// <param name="removeType">移除类型</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<bool> BeforeExecFlow(WorkflowInfo workflow, RemoveType removeType, string connectionId = null);
+        ReturnInfo<bool> BeforeExecFlow(WorkflowInfo workflow, RemoveType removeType, string connectionId = null, BasicUserInfo currUser = null);
 
         /// <summary>
         /// 执行流程后
@@ -30,7 +32,8 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form
         /// <param name="removeType">移除类型</param>
         /// <param name="isSuccess">是否成功</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<bool> AfterExecFlow(WorkflowInfo workflow, RemoveType removeType, bool isSuccess, string connectionId = null);
+        ReturnInfo<bool> AfterExecFlow(WorkflowInfo workflow, RemoveType removeType, bool isSuccess, string connectionId = null, BasicUserInfo currUser = null);
     }
 }

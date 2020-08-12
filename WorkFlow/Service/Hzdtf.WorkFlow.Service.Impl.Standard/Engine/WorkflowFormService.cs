@@ -40,18 +40,22 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// </summary>
         /// <typeparam name="FormT">表单类型</typeparam>
         /// <param name="flowInit">流程初始</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<WorkflowBasicInfo> Save<FormT>(FlowInitInfo<FormT> flowInit)
-            where FormT : PersonTimeInfo => Execute(flowInit, WorkflowSave);
+        [Auth(CurrUserParamIndex = 1)]
+        public virtual ReturnInfo<WorkflowBasicInfo> Save<FormT>(FlowInitInfo<FormT> flowInit, BasicUserInfo currUser = null)
+            where FormT : PersonTimeInfo => Execute(flowInit, WorkflowSave, currUser);
 
         /// <summary>
         /// 申请
         /// </summary>
         /// <typeparam name="FormT">表单类型</typeparam>
         /// <param name="flowInit">流程初始</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<WorkflowBasicInfo> Apply<FormT>(FlowInitInfo<FormT> flowInit)
-            where FormT : PersonTimeInfo => Execute(flowInit, WorkflowApply);
+        [Auth(CurrUserParamIndex = 1)]
+        public virtual ReturnInfo<WorkflowBasicInfo> Apply<FormT>(FlowInitInfo<FormT> flowInit, BasicUserInfo currUser = null)
+            where FormT : PersonTimeInfo => Execute(flowInit, WorkflowApply, currUser);
 
         /// <summary>
         /// 执行
@@ -59,14 +63,15 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// <typeparam name="FormT">表单类型</typeparam>
         /// <param name="flowInit">流程初始</param>
         /// <param name="workflowInit">工作流初始</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        private ReturnInfo<WorkflowBasicInfo> Execute<FormT>(FlowInitInfo<FormT> flowInit, IWorkflowForm workflowInit)
+        private ReturnInfo<WorkflowBasicInfo> Execute<FormT>(FlowInitInfo<FormT> flowInit, IWorkflowForm workflowInit, BasicUserInfo currUser = null)
             where FormT : PersonTimeInfo
         {
             var returnInfo = new ReturnInfo<WorkflowBasicInfo>();
             if (string.IsNullOrWhiteSpace(flowInit.ApplyNo))
             {
-                flowInit.ApplyNo = BuilderApplyNo(flowInit, returnInfo);
+                flowInit.ApplyNo = BuilderApplyNo(flowInit, returnInfo, currUser);
                 if (returnInfo.Failure())
                 {
                     return returnInfo;
@@ -74,7 +79,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
             }
 
             var flowInfo = flowInit.ToFlowIn();
-            ReturnInfo<bool> reWorkflow = workflowInit.Execute(flowInfo);
+            ReturnInfo<bool> reWorkflow = workflowInit.Execute(flowInfo, currUser: currUser);
             returnInfo.FromBasic(reWorkflow);
             if (reWorkflow.Failure())
             {
@@ -96,8 +101,9 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// <typeparam name="FormT">表单类型</typeparam>
         /// <param name="flowInit">流程初始化</param>
         /// <param name="returnInfo">返回信息</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>申请单号</returns>
-        protected virtual string BuilderApplyNo<FormT>(FlowInitInfo<FormT> flowInit, ReturnInfo<WorkflowBasicInfo> returnInfo)
+        protected virtual string BuilderApplyNo<FormT>(FlowInitInfo<FormT> flowInit, ReturnInfo<WorkflowBasicInfo> returnInfo, BasicUserInfo currUser = null)
             where FormT : PersonTimeInfo => DateTime.Now.ToLongDateTimeNumString();
     }
 }

@@ -146,3 +146,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rabbit\Hzdtf.Rabbit
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rabbit\Hzdtf.Rabbit.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.Rabbit.Impl.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rabbit\Hzdtf.Rabbit.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.Rabbit.Impl.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rabbit\Hzdtf.Rabbit.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.Rabbit.Impl.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rabbit\Hzdtf.Rabbit.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rabbit\Hzdtf.Rabbit.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

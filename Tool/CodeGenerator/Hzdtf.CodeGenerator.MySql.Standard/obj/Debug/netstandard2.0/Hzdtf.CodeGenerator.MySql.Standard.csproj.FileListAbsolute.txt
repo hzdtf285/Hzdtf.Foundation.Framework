@@ -101,3 +101,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGen
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.MySql.Standard\obj\Debug\netstandard2.0\Hzdtf.CodeGenerator.MySql.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.MySql.Standard\obj\Debug\netstandard2.0\Hzdtf.CodeGenerator.MySql.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.MySql.Standard\obj\Debug\netstandard2.0\Hzdtf.CodeGenerator.MySql.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.MySql.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.MySql.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

@@ -146,3 +146,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGen
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.CodeGenerator.Impl.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.CodeGenerator.Impl.Standard.pdb
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.CodeGenerator.Impl.Standard.csproj.CoreCompileInputs.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

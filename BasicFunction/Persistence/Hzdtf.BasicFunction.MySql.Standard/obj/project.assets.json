@@ -1320,6 +1320,16 @@
           "bin/placeholder/Hzdtf.BasicFunction.Persistence.Contract.Std.dll": {}
         }
       },
+      "Hzdtf.Mini.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Hzdtf.Mini.Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hzdtf.Mini.Standard.dll": {}
+        }
+      },
       "Hzdtf.MySql.Standard/2.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1382,6 +1392,7 @@
         "dependencies": {
           "AutoMapper": "10.0.0",
           "Hei.Captcha": "0.2.0",
+          "Hzdtf.Mini.Standard": "1.0.0",
           "MessagePack": "2.1.152",
           "Microsoft.Extensions.Caching.Abstractions": "3.1.5",
           "Microsoft.Extensions.Caching.Memory": "3.1.5",
@@ -5271,6 +5282,11 @@
       "path": "../Hzdtf.BasicFunction.Persistence.Contract.Std/Hzdtf.BasicFunction.Persistence.Contract.Std.csproj",
       "msbuildProject": "../Hzdtf.BasicFunction.Persistence.Contract.Std/Hzdtf.BasicFunction.Persistence.Contract.Std.csproj"
     },
+    "Hzdtf.Mini.Standard/1.0.0": {
+      "type": "project",
+      "path": "../../../Common/Hzdtf.Mini.Standard/Hzdtf.Mini.Standard.csproj",
+      "msbuildProject": "../../../Common/Hzdtf.Mini.Standard/Hzdtf.Mini.Standard.csproj"
+    },
     "Hzdtf.MySql.Standard/2.0.0": {
       "type": "project",
       "path": "../../../Persistence/Hzdtf.MySql.Standard/Hzdtf.MySql.Standard.csproj",
@@ -5384,7 +5400,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

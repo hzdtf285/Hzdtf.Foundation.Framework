@@ -21,7 +21,7 @@ namespace Hzdtf.Demo.MvcController.Core
     [ApiController]
     [Route("api/[controller]")]
     [Authorize]
-    public partial class TestFormController : ManageControllerBase<PageInfo, TestFormInfo, ITestFormService, FilterInfo>
+    public partial class TestFormController : ManageControllerBase<PageInfo, TestFormInfo, ITestFormService, KeywordFilterInfo>
     {
         /// <summary>
         /// 菜单编码

@@ -229,12 +229,13 @@ function toBoolSex(boolValue) {
  * @param {any} boolText 布尔文本
  */
 function toBoolValue(boolText) {
-    if (boolText == "是" || boolText == "男" || boolText.toLowerCase() == "yes") {
-        return true;
-    }
-    else {
+    if (boolText == undefined || boolText == null || boolText == "") {
         return false;
     }
+
+    var v = boolText.toLowerCase();
+
+    return v == "true" || v == "是" || v == "男" || v == "yes";
 }
 
 String.prototype.replaceAll = function (f, e) {
@@ -531,4 +532,19 @@ function isPermission(pageData, functionCode) {
     }
 
     return false;
+}
+
+/**
+ * 获取URL参数值
+ * 
+ * @param {any} paraName 参数名
+ */
+function getUrlParamValue(paraName) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (pair[0].toLowerCase() == paraName.toLowerCase()) { return pair[1]; }
+    }
+    return "";
 }

@@ -93,3 +93,11 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQu
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcServer.Console.Core\obj\Debug\netcoreapp3.1\Hzdtf.MessageQueue.RpcServer.Console.Core.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcServer.Console.Core\obj\Debug\netcoreapp3.1\Hzdtf.MessageQueue.RpcServer.Console.Core.pdb
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcServer.Console.Core\obj\Debug\netcoreapp3.1\Hzdtf.MessageQueue.RpcServer.Console.Core.genruntimeconfig.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcServer.Console.Core\bin\Debug\netcoreapp3.1\Hei.Captcha.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcServer.Console.Core\bin\Debug\netcoreapp3.1\SixLabors.Core.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcServer.Console.Core\bin\Debug\netcoreapp3.1\SixLabors.Fonts.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcServer.Console.Core\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcServer.Console.Core\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.Drawing.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcServer.Console.Core\bin\Debug\netcoreapp3.1\SixLabors.Shapes.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcServer.Console.Core\bin\Debug\netcoreapp3.1\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcServer.Console.Core\bin\Debug\netcoreapp3.1\Hzdtf.Mini.Standard.pdb

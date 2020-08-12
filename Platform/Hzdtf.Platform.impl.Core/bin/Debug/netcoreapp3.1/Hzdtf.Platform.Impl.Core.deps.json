@@ -387,6 +387,11 @@
         }
       },
       "System.Threading.Tasks.Extensions/4.5.3": {},
+      "Hzdtf.Mini.Standard/1.0.0": {
+        "runtime": {
+          "Hzdtf.Mini.Standard.dll": {}
+        }
+      },
       "Hzdtf.Platform.Contract.Standard/2.0.0": {
         "dependencies": {
           "Hzdtf.Utility.Standard": "2.0.0"
@@ -399,6 +404,7 @@
         "dependencies": {
           "AutoMapper": "10.0.0",
           "Hei.Captcha": "0.2.0",
+          "Hzdtf.Mini.Standard": "1.0.0",
           "MessagePack": "2.1.152",
           "Microsoft.Extensions.Caching.Abstractions": "3.1.5",
           "Microsoft.Extensions.Caching.Memory": "3.1.5",
@@ -694,6 +700,11 @@
       "sha512": "sha512-+MvhNtcvIbqmhANyKu91jQnvIRVSTiaOiFNfKWwXGHG48YAb4I/TyH8spsySiPYla7gKal5ZnF3teJqZAximyQ==",
       "path": "system.threading.tasks.extensions/4.5.3",
       "hashPath": "system.threading.tasks.extensions.4.5.3.nupkg.sha512"
+    },
+    "Hzdtf.Mini.Standard/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Hzdtf.Platform.Contract.Standard/2.0.0": {
       "type": "project",

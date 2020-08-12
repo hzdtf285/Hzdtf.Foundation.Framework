@@ -71,3 +71,5 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\Platform\Hzdtf.Platform.Contract
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Platform\Hzdtf.Platform.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.Platform.Contract.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Platform\Hzdtf.Platform.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.Platform.Contract.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\Platform\Hzdtf.Platform.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.Platform.Contract.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Platform\Hzdtf.Platform.Contract.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Platform\Hzdtf.Platform.Contract.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

@@ -1,6 +1,7 @@
 ﻿using Hzdtf.Logger.Contract.Standard;
 using Hzdtf.Platform.Config.Contract.Standard.Config.App;
 using Hzdtf.Platform.Contract.Standard;
+using Hzdtf.Utility.Standard.Model;
 using System;
 using System.Collections.Generic;
 using System.Text;

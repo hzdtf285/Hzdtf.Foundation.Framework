@@ -225,22 +225,6 @@
             旧密码
             </summary>
         </member>
-        <member name="T:Hzdtf.BasicFunction.Model.Standard.Expand.User.LoginReturnInfo">
-            <summary>
-            登录返回信息
-            @ 黄振东
-            </summary>
-        </member>
-        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.User.LoginReturnInfo.IsVerificationCode">
-            <summary>
-            是否需要验证码
-            </summary>
-        </member>
-        <member name="P:Hzdtf.BasicFunction.Model.Standard.Expand.User.LoginReturnInfo.Token">
-            <summary>
-            令牌
-            </summary>
-        </member>
         <member name="T:Hzdtf.BasicFunction.Model.Standard.Expand.User.ModifyPasswordInfo">
             <summary>
             修改密码信息

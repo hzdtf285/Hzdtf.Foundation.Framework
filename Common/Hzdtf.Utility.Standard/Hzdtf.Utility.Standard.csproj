@@ -47,4 +47,8 @@
     <PackageReference Include="System.Reflection.DispatchProxy" Version="4.7.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Hzdtf.Mini.Standard\Hzdtf.Mini.Standard.csproj" />
+  </ItemGroup>
+
 </Project>

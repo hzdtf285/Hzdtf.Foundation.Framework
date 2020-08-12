@@ -488,12 +488,23 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
+      "Hzdtf.Mini.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Hzdtf.Mini.Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hzdtf.Mini.Standard.dll": {}
+        }
+      },
       "Hzdtf.Utility.Standard/2.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "AutoMapper": "10.0.0",
           "Hei.Captcha": "0.2.0",
+          "Hzdtf.Mini.Standard": "1.0.0",
           "MessagePack": "2.1.152",
           "Microsoft.Extensions.Caching.Abstractions": "3.1.5",
           "Microsoft.Extensions.Caching.Memory": "3.1.5",
@@ -1769,6 +1780,11 @@
         "version.txt"
       ]
     },
+    "Hzdtf.Mini.Standard/1.0.0": {
+      "type": "project",
+      "path": "../../../Common/Hzdtf.Mini.Standard/Hzdtf.Mini.Standard.csproj",
+      "msbuildProject": "../../../Common/Hzdtf.Mini.Standard/Hzdtf.Mini.Standard.csproj"
+    },
     "Hzdtf.Utility.Standard/2.0.0": {
       "type": "project",
       "path": "../../../Common/Hzdtf.Utility.Standard/Hzdtf.Utility.Standard.csproj",
@@ -1845,7 +1861,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,4 +1,5 @@
-﻿using Hzdtf.Utility.Standard.Model.Return;
+﻿using Hzdtf.Utility.Standard.Model;
+using Hzdtf.Utility.Standard.Model.Return;
 using Hzdtf.WorkFlow.Model.Standard;
 using System;
 using System.Collections.Generic;
@@ -17,7 +18,8 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard
         /// </summary>
         /// <param name="flowId">流程ID</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<IList<FlowCensorshipInfo>> QueryByFlowId(int flowId, string connectionId = null);
+        ReturnInfo<IList<FlowCensorshipInfo>> QueryByFlowId(int flowId, string connectionId = null, BasicUserInfo currUser = null);
     }
 }

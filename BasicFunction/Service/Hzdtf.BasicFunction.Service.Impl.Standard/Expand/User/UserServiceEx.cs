@@ -73,9 +73,9 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// </summary>
         /// <param name="currUserModifyPassword">当前用户修改密码</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<bool> ModifyPasswordByLoginId([Model] CurrUserModifyPasswordInfo currUserModifyPassword, string connectionId = null)
+        public virtual ReturnInfo<bool> ModifyPasswordByLoginId([Model] CurrUserModifyPasswordInfo currUserModifyPassword, string connectionId = null, BasicUserInfo currUser = null)
         {
             return ExecReturnFuncAndConnectionId<bool>((reInfo, connId) =>
             {
@@ -87,7 +87,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
                 }
 
                 user.Password = MD5Util.Encryption16(currUserModifyPassword.NewPassword);
-                user.SetModifyInfo();
+                user.SetModifyInfo(currUser);
 
                 bool result = Persistence.UpdatePasswordById(user, connId) > 0;
                 if (result)
@@ -104,9 +104,9 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// </summary>
         /// <param name="modifyPassword">修改密码</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<bool> ResetUserPassword([Model] ModifyPasswordInfo modifyPassword, string connectionId = null)
+        public virtual ReturnInfo<bool> ResetUserPassword([Model] ModifyPasswordInfo modifyPassword, string connectionId = null, BasicUserInfo currUser = null)
         {
             return ExecReturnFuncAndConnectionId<bool>((reInfo, connId) =>
             {
@@ -115,7 +115,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
                     Id = modifyPassword.Id,
                     Password = MD5Util.Encryption16(modifyPassword.NewPassword)
                 };
-                user.SetModifyInfo();
+                user.SetModifyInfo(currUser);
 
                 bool result = Persistence.UpdatePasswordById(user, connId) > 0;
                 if (result)
@@ -133,9 +133,9 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="menuCode">菜单编码</param>
         /// <param name="functionCode">功能编码</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<bool> IsCurrUserPermission(string menuCode, string functionCode, string connectionId = null)
+        public virtual ReturnInfo<bool> IsCurrUserPermission(string menuCode, string functionCode, string connectionId = null, BasicUserInfo currUser = null)
         {
             return IsCurrUserPermission(menuCode, new string[] { functionCode }, connectionId);
         }
@@ -146,11 +146,12 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="menuCode">菜单编码</param>
         /// <param name="functionCodes">功能编码集合</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<bool> IsCurrUserPermission(string menuCode, string[] functionCodes, string connectionId = null)
+        public virtual ReturnInfo<bool> IsCurrUserPermission(string menuCode, string[] functionCodes, string connectionId = null, BasicUserInfo currUser = null)
         {
-            return IsPermission(UserTool.CurrUser.Id, menuCode, functionCodes, connectionId);
+            var user = UserTool.GetCurrUser(currUser);
+            return IsPermission(user.Id, menuCode, functionCodes, connectionId);
         }
 
         /// <summary>
@@ -160,16 +161,17 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="menuCode">菜单编码</param>
         /// <param name="functionCodes">功能编码集合</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
         public virtual ReturnInfo<bool> IsPermission([DisplayName2("用户ID"), Id] int userId, [DisplayName2("菜单编码"), Required] string menuCode,
-            [DisplayName2("功能编码集合"), ArrayNotEmpty] string[] functionCodes, string connectionId = null)
+            [DisplayName2("功能编码集合"), ArrayNotEmpty] string[] functionCodes, string connectionId = null, BasicUserInfo currUser = null)
         {
             if ("Role".Equals(AppConfig["User:PermissionBenchmark"]))
             {
                 return ExecReturnFuncAndConnectionId<bool>((reInfo, connId) =>
                 {
                     // 查找该用户所属角色
-                    ReturnInfo<IList<RoleInfo>> reRoleInfo = UserRoleService.OwnRolesByUserId(userId, connId);
+                    ReturnInfo<IList<RoleInfo>> reRoleInfo = UserRoleService.OwnRolesByUserId(userId, connId, currUser);
                     if (reRoleInfo.Failure())
                     {
                         reInfo.FromBasic(reRoleInfo);
@@ -218,11 +220,12 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// </summary>
         /// <param name="menuCode">菜单编码</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<IList<FunctionInfo>> QueryCurrUserOwnFunctionsByMenuCode([DisplayName2("菜单编码"), Required] string menuCode, string connectionId = null)
+        public virtual ReturnInfo<IList<FunctionInfo>> QueryCurrUserOwnFunctionsByMenuCode([DisplayName2("菜单编码"), Required] string menuCode, string connectionId = null, BasicUserInfo currUser = null)
         {
-            return QueryUserOwnFunctionsByMenuCode(UserTool.CurrUser.Id, menuCode, connectionId);
+            var user = UserTool.GetCurrUser(currUser);
+            return QueryUserOwnFunctionsByMenuCode(user.Id, menuCode, connectionId, currUser);
         }
 
         /// <summary>
@@ -231,16 +234,16 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="userId">用户ID</param>
         /// <param name="menuCode">菜单编码</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<IList<FunctionInfo>> QueryUserOwnFunctionsByMenuCode([DisplayName2("用户ID"), Id] int userId, [DisplayName2("菜单编码"), Required] string menuCode, string connectionId = null)
+        public virtual ReturnInfo<IList<FunctionInfo>> QueryUserOwnFunctionsByMenuCode([DisplayName2("用户ID"), Id] int userId, [DisplayName2("菜单编码"), Required] string menuCode, string connectionId = null, BasicUserInfo currUser = null)
         {
             if ("Role".Equals(AppConfig["User:PermissionBenchmark"]))
             {
                 return ExecReturnFuncAndConnectionId<IList<FunctionInfo>>((reInfo, connId) =>
                 {
                     // 查找该用户所属角色
-                    ReturnInfo<IList<RoleInfo>> reRoleInfo = UserRoleService.OwnRolesByUserId(userId, connId);
+                    ReturnInfo<IList<RoleInfo>> reRoleInfo = UserRoleService.OwnRolesByUserId(userId, connId, currUser);
                     if (reRoleInfo.Failure())
                     {
                         reInfo.FromBasic(reRoleInfo);
@@ -272,11 +275,12 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// 判断当前用户是否是系统管理组
         /// </summary>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<bool> IsCurrUserAdministrators(string connectionId = null)
+        public virtual ReturnInfo<bool> IsCurrUserAdministrators(string connectionId = null, BasicUserInfo currUser = null)
         {
-            return IsUserAdministrators(UserTool.CurrUser.Id, connectionId);
+            var user = UserTool.GetCurrUser(currUser);
+            return IsUserAdministrators(user.Id, connectionId);
         }
 
         /// <summary>
@@ -284,9 +288,9 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// </summary>
         /// <param name="userId">用户ID</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<bool> IsUserAdministrators([DisplayName2("用户ID"), Id] int userId, string connectionId = null)
+        public virtual ReturnInfo<bool> IsUserAdministrators([DisplayName2("用户ID"), Id] int userId, string connectionId = null, BasicUserInfo currUser = null)
         {
             ReturnInfo<bool> returnInfo = new ReturnInfo<bool>();
             IList<RoleInfo> roles = UserRolePersistence.SelectRolesByUserId(userId, connectionId);
@@ -313,9 +317,9 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// </summary>
         /// <param name="filter">筛选</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<IList<UserInfo>> QueryByFilter(UserFilterInfo filter, string connectionId = null)
+        public virtual ReturnInfo<IList<UserInfo>> QueryByFilter(UserFilterInfo filter, string connectionId = null, BasicUserInfo currUser = null)
         {
             return ExecReturnFunc<IList<UserInfo>>((reInfo) =>
             {
@@ -375,13 +379,13 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// </summary>
         /// <param name="userId">用户ID</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<UserMenuInfo> CanAccessMenus([DisplayName2("用户ID"), Id] int userId, string connectionId = null)
+        public virtual ReturnInfo<UserMenuInfo> CanAccessMenus([DisplayName2("用户ID"), Id] int userId, string connectionId = null, BasicUserInfo currUser = null)
         {
             return ExecReturnFuncAndConnectionId<UserMenuInfo>((reInfo, connId) =>
             {
-                ReturnInfo<UserInfo> protoReturnInfo = Find(userId, connId);
+                ReturnInfo<UserInfo> protoReturnInfo = Find(userId, connId, currUser);
                 if (protoReturnInfo.Failure())
                 {
                     reInfo.FromBasic(protoReturnInfo);
@@ -395,7 +399,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
                 protoReturnInfo.Data.Password = null;
 
                 // 查找该用户所属角色
-                ReturnInfo<IList<RoleInfo>> reRoleInfo = UserRoleService.OwnRolesByUserId(userId, connId);
+                ReturnInfo<IList<RoleInfo>> reRoleInfo = UserRoleService.OwnRolesByUserId(userId, connId, currUser);
                 if (reRoleInfo.Failure())
                 {
                     reInfo.FromBasic(reRoleInfo);
@@ -464,7 +468,8 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="returnInfo">返回信息</param>
         /// <param name="model">模型</param>
         /// <param name="connectionId">连接ID</param>
-        protected override void BeforeAdd(ReturnInfo<bool> returnInfo, UserInfo model, ref string connectionId)
+        /// <param name="currUser">当前用户</param>
+        protected override void BeforeAdd(ReturnInfo<bool> returnInfo, UserInfo model, ref string connectionId, BasicUserInfo currUser = null)
         {
             bool idClose = false;
             if (string.IsNullOrWhiteSpace(connectionId))
@@ -501,7 +506,8 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="returnInfo">返回信息</param>
         /// <param name="id">ID</param>
         /// <param name="connectionId">连接ID</param>
-        protected override void AfterFind(ReturnInfo<UserInfo> returnInfo, int id, ref string connectionId)
+        /// <param name="currUser">当前用户</param>
+        protected override void AfterFind(ReturnInfo<UserInfo> returnInfo, int id, ref string connectionId, BasicUserInfo currUser = null)
         {
             if (returnInfo.Success() && returnInfo.Data != null)
             {
@@ -515,7 +521,8 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="returnInfo">返回信息</param>
         /// <param name="model">模型</param>
         /// <param name="connectionId">连接ID</param>
-        protected override void BeforeModifyById(ReturnInfo<bool> returnInfo, UserInfo model, ref string connectionId)
+        /// <param name="currUser">当前用户</param>
+        protected override void BeforeModifyById(ReturnInfo<bool> returnInfo, UserInfo model, ref string connectionId, BasicUserInfo currUser = null)
         {
             bool idClose = false;
             if (string.IsNullOrWhiteSpace(connectionId))
@@ -547,7 +554,8 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="returnInfo">返回信息</param>
         /// <param name="models">模型列表</param>        
         /// <param name="connectionId">连接ID</param>
-        protected override void BeforeAdd(ReturnInfo<bool> returnInfo, IList<UserInfo> models, ref string connectionId)
+        /// <param name="currUser">当前用户</param>
+        protected override void BeforeAdd(ReturnInfo<bool> returnInfo, IList<UserInfo> models, ref string connectionId, BasicUserInfo currUser = null)
         {
             for (var i = 0; i < models.Count; i++)
             {
@@ -566,8 +574,9 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="returnInfo">返回信息</param>
         /// <param name="id">ID</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        protected override void BeforeRemoveById(ReturnInfo<bool> returnInfo, int id, ref string connectionId)
+        protected override void BeforeRemoveById(ReturnInfo<bool> returnInfo, int id, ref string connectionId, BasicUserInfo currUser = null)
         {
             ValiCanRemove(returnInfo, Persistence.Select(id, connectionId));
         }
@@ -578,8 +587,9 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="returnInfo">返回信息</param>
         /// <param name="ids">ID集合</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        protected override void BeforeRemoveByIds(ReturnInfo<bool> returnInfo, int[] ids, ref string connectionId)
+        protected override void BeforeRemoveByIds(ReturnInfo<bool> returnInfo, int[] ids, ref string connectionId, BasicUserInfo currUser = null)
         {
             IList<UserInfo> users = Persistence.Select(ids, connectionId);
             if (users.IsNullOrCount0())

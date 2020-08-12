@@ -10,6 +10,7 @@ using System.Text;
 using Hzdtf.Utility.Standard.Utils;
 using Hzdtf.Utility.Standard.Attr.ParamAttr;
 using Hzdtf.Utility.Standard.Model.Page;
+using Hzdtf.BasicFunction.Model.Standard.Expand.User;
 
 namespace Hzdtf.BasicFunction.Service.Impl.Standard
 {
@@ -39,13 +40,13 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// </summary>
         /// <param name="model">模型</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public override ReturnInfo<bool> Add([Model] UserInfo model, string connectionId = null)
+        public override ReturnInfo<bool> Add([Model] UserInfo model, string connectionId = null, BasicUserInfo currUser = null)
         {
             if (model is PersonTimeInfo)
             {
-                SetCreateInfo(model);
+                SetCreateInfo(model, currUser);
             }
 
             bool isClose = false;
@@ -61,7 +62,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
                 return returnInfo;
             }
 
-            ExecAdd(returnInfo, model, connectionId);
+            ExecAdd(returnInfo, model, connectionId, currUser);
 
             AfterAdd(returnInfo, model, ref connectionId);
 
@@ -78,11 +79,11 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// </summary>
         /// <param name="model">模型</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public override ReturnInfo<bool> ModifyById([Model] UserInfo model, string connectionId = null)
+        public override ReturnInfo<bool> ModifyById([Model] UserInfo model, string connectionId = null, BasicUserInfo currUser = null)
         {
-            SetModifyInfo(model);
+            SetModifyInfo(model, currUser);
 
             bool isClose = false;
             if (string.IsNullOrWhiteSpace(connectionId))
@@ -97,7 +98,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
                 return returnInfo;
             }
 
-            ExecModifyById(returnInfo, model, connectionId);
+            ExecModifyById(returnInfo, model, connectionId, currUser);
 
             AfterModifyById(returnInfo, model, ref connectionId);
 
@@ -117,7 +118,8 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
          /// <param name="pageSize">每页记录数</param>
          /// <param name="connectionId">连接ID</param>
          /// <param name="filter">筛选</param>
-        protected override void AfterQueryPage(ReturnInfo<PagingInfo<UserInfo>> returnInfo, int pageIndex, int pageSize, ref string connectionId, FilterInfo filter = null)
+         /// <param name="currUser">当前用户</param>
+        protected override void AfterQueryPage(ReturnInfo<PagingInfo<UserInfo>> returnInfo, int pageIndex, int pageSize, ref string connectionId, FilterInfo filter = null, BasicUserInfo currUser = null)
         {
             // 查找每个用户所属的角色
             if (returnInfo.Data.Rows.IsNullOrCount0())
@@ -162,13 +164,14 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="returnInfo">返回信息</param>
         /// <param name="model">模型</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         [Transaction(ConnectionIdIndex = 2)]
-        protected virtual void ExecAdd(ReturnInfo<bool> returnInfo, UserInfo model, string connectionId = null)
+        protected virtual void ExecAdd(ReturnInfo<bool> returnInfo, UserInfo model, string connectionId = null, BasicUserInfo currUser = null)
         {
             returnInfo.Data = Persistence.Insert(model, connectionId) > 0;
             if (returnInfo.Data)
             {
-                AddUserRoles(model, connectionId);
+                AddUserRoles(model, connectionId, currUser);
             }
         }
 
@@ -178,14 +181,15 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="returnInfo">返回信息</param>
         /// <param name="model">模型</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         [Transaction(ConnectionIdIndex = 2)]
-        protected virtual void ExecModifyById(ReturnInfo<bool> returnInfo, UserInfo model, string connectionId = null)
+        protected virtual void ExecModifyById(ReturnInfo<bool> returnInfo, UserInfo model, string connectionId = null, BasicUserInfo currUser = null)
         {
             returnInfo.Data = Persistence.UpdateById(model, connectionId) > 0;
             if (returnInfo.Data)
             {
                 UserRolePersistence.DeleteByUserId(model.Id, connectionId);
-                AddUserRoles(model, connectionId);
+                AddUserRoles(model, connectionId, currUser);
             }
         }
 
@@ -198,7 +202,8 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// </summary>
         /// <param name="model">模型</param>
         /// <param name="connectionId">连接ID</param>
-        private void AddUserRoles(UserInfo model, string connectionId = null)
+        /// <param name="currUser">当前用户</param>
+        private void AddUserRoles(UserInfo model, string connectionId = null, BasicUserInfo currUser = null)
         {
             if (model.OwnRoles.IsNullOrCount0())
             {
@@ -213,7 +218,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
                     UserId = model.Id,
                     RoleId = r.Id
                 };
-                ur.SetCreateInfo();
+                ur.SetCreateInfo(currUser);
 
                 userRoles.Add(ur);
             }

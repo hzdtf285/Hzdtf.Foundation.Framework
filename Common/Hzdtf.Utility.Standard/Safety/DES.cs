@@ -1,4 +1,5 @@
-﻿using Hzdtf.Utility.Standard.Attr;
+﻿using Hzdtf.Mini.Standard;
+using Hzdtf.Utility.Standard.Attr;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -15,19 +16,26 @@ namespace Hzdtf.Utility.Standard.Safety
         /// <summary>
         /// KEY
         /// </summary>
-        private readonly string key = "0ef69^%$";
+        private readonly string key = Eternity.STD_K;
 
         /// <summary>
         /// 向量
         /// </summary>
-        private readonly string iv = ";57`QDe?";
+        private readonly string iv = Eternity.STD_V;
+
+        /// <summary>
+        /// 构造方法
+        /// </summary>
+        public DES()
+        {
+        }
 
         /// <summary>
         /// 构造方法
         /// </summary>
         /// <param name="key">KEY</param>
         /// <param name="iv">向量</param>
-        public DES(string key = null, string iv = null)
+        public DES(string key, string iv)
         {
             this.key = key;
             this.iv = iv;

@@ -1,0 +1,9 @@
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Mini.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.deps.json
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Mini.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Mini.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Mini.Standard\obj\Debug\netstandard2.0\Hzdtf.Mini.Standard.csprojAssemblyReference.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Mini.Standard\obj\Debug\netstandard2.0\Hzdtf.Mini.Standard.AssemblyInfoInputs.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Mini.Standard\obj\Debug\netstandard2.0\Hzdtf.Mini.Standard.AssemblyInfo.cs
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Mini.Standard\obj\Debug\netstandard2.0\Hzdtf.Mini.Standard.csproj.CoreCompileInputs.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Mini.Standard\obj\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\Common\Hzdtf.Mini.Standard\obj\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

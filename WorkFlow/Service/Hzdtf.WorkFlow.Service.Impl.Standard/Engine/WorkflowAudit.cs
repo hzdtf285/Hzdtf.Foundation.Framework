@@ -27,8 +27,9 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// <param name="flowIn">流程输入</param>
         /// <param name="workflow">工作流</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>工作流定义</returns>
-        protected override WorkflowDefineInfo ValiFlowIn(ReturnInfo<bool> returnInfo, FlowInInfo<FlowAuditInfo> flowIn, out WorkflowInfo workflow, string connectionId = null)
+        protected override WorkflowDefineInfo ValiFlowIn(ReturnInfo<bool> returnInfo, FlowInInfo<FlowAuditInfo> flowIn, out WorkflowInfo workflow, string connectionId = null, BasicUserInfo currUser = null)
         {
             workflow = null;
             if (flowIn == null)
@@ -42,7 +43,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
                 return null;
             }            
 
-            ReturnInfo<WorkflowHandleInfo> reHandle = WorkflowHandle.Find(flowIn.Flow.HandleId, connectionId);
+            ReturnInfo<WorkflowHandleInfo> reHandle = WorkflowHandle.Find(flowIn.Flow.HandleId, connectionId, currUser);
             if (reHandle.Failure())
             {
                 returnInfo.FromBasic(reHandle);
@@ -53,7 +54,8 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
                 returnInfo.SetFailureMsg("找不到工作流处理信息");
                 return null;
             }
-            if (reHandle.Data.HandlerId != UserTool.CurrUser.Id)
+            var user = UserTool.GetCurrUser(currUser);
+            if (reHandle.Data.HandlerId != user.Id)
             {
                 returnInfo.SetFailureMsg("此处理流程不属于您审核");
                 return null;
@@ -74,7 +76,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
                 return null;
             }
 
-            ReturnInfo<WorkflowInfo> reWorkflow = WorkflowService.Find(reHandle.Data.WorkflowId);
+            ReturnInfo<WorkflowInfo> reWorkflow = WorkflowService.Find(reHandle.Data.WorkflowId, connectionId, currUser);
             if (reWorkflow.Failure())
             {
                 returnInfo.FromBasic(reWorkflow);
@@ -99,7 +101,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
             reHandle.Data.Workflow = reWorkflow.Data;
             flowIn.Flow.WorkflowHandle = reHandle.Data;
 
-            ReturnInfo<WorkflowDefineInfo> reWorkFlowConfig = WorkflowConfigReader.ReaderAllConfig(reWorkflow.Data.WorkflowDefineId, connectionId);
+            ReturnInfo<WorkflowDefineInfo> reWorkFlowConfig = WorkflowConfigReader.ReaderAllConfig(reWorkflow.Data.WorkflowDefineId, connectionId, currUser);
             if (reWorkFlowConfig.Failure())
             {
                 returnInfo.FromBasic(reWorkFlowConfig);
@@ -114,7 +116,8 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// </summary>
         /// <param name="flowIn">流程输入</param>
         /// <param name="findFlowCensorshipIn">查找流程关卡输入信息</param>
-        protected override void AppendSetFindFlowCensorshipIn(FlowInInfo<FlowAuditInfo> flowIn, FlowCensorshipInInfo findFlowCensorshipIn)
+        /// <param name="currUser">当前用户</param>
+        protected override void AppendSetFindFlowCensorshipIn(FlowInInfo<FlowAuditInfo> flowIn, FlowCensorshipInInfo findFlowCensorshipIn, BasicUserInfo currUser = null)
         {
             findFlowCensorshipIn.ActionType = flowIn.Flow.ActionType;
             findFlowCensorshipIn.Idea = flowIn.Flow.Idea;
@@ -129,8 +132,9 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// <param name="flowIn">流程输入</param>
         /// <param name="findFlowCensorshipOut">查找流程关卡输出</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         protected override void ExecCore(ReturnInfo<bool> returnInfo, FlowInInfo<FlowAuditInfo> flowIn,
-            FlowCensorshipOutInfo findFlowCensorshipOut, string connectionId = null)
+            FlowCensorshipOutInfo findFlowCensorshipOut, string connectionId = null, BasicUserInfo currUser = null)
         {
             // 更新工作流状态
             WorkflowPersistence.UpdateFlowStatusAndCensorshipAndHandlerById(findFlowCensorshipOut.Workflow, connectionId);
@@ -153,7 +157,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
                     ConcreteConcreteId = flowIn.Flow.WorkflowHandle.ConcreteConcreteId,
                     WorkflowId = flowIn.Flow.WorkflowHandle.WorkflowId
                 };
-                updateEf.SetModifyInfo();
+                updateEf.SetModifyInfo(currUser);
 
                 if (flowIn.Flow.ActionType == ActionType.SEND)
                 {
@@ -175,7 +179,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
                     }
                 }
 
-                ReturnInfo<bool> reHandle = WorkflowHandle.Add(handlers, connectionId);
+                ReturnInfo<bool> reHandle = WorkflowHandle.Add(handlers, connectionId, currUser);
                 if (reHandle.Failure())
                 {
                     returnInfo.FromBasic(reHandle);

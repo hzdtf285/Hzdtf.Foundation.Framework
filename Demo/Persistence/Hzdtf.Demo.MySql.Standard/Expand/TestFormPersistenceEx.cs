@@ -87,5 +87,28 @@ namespace Hzdtf.Demo.MySql.Standard
         {
             return ",w.`title` Title";
         }
+
+        /// <summary>
+        /// 追加查询分页SQL
+        /// </summary>
+        /// <param name="whereSql">where语句</param>
+        /// <param name="parameters">参数</param>
+        /// <param name="filter">筛选</param>
+        protected override void AppendSelectPageWhereSql(StringBuilder whereSql, DynamicParameters parameters, FilterInfo filter = null)
+        {
+            if (filter is KeywordFilterInfo)
+            {
+                var keyFilter = filter as KeywordFilterInfo;
+                if (string.IsNullOrWhiteSpace(keyFilter.Keyword))
+                {
+                    return;
+                }
+
+                whereSql.AppendFormat(" AND (`{0}` LIKE '%{1}%' OR `{2}` LIKE '%{1}%' OR w.`title` LIKE '%{1}%' OR w.`apply_no` LIKE '%{1}%')",
+                       GetFieldByProp("Code"),
+                       keyFilter.Keyword,
+                       GetFieldByProp("Name"));
+            }
+        }
     }
 }

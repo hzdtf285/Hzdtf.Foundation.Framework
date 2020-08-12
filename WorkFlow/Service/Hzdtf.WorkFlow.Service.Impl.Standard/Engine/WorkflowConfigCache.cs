@@ -1,6 +1,7 @@
 ﻿using Hzdtf.Utility.Standard.Attr;
 using Hzdtf.Utility.Standard.Attr.ParamAttr;
 using Hzdtf.Utility.Standard.Cache;
+using Hzdtf.Utility.Standard.Model;
 using Hzdtf.Utility.Standard.Model.Return;
 using Hzdtf.WorkFlow.Model.Standard;
 using Hzdtf.WorkFlow.Service.Contract.Standard.Engine;
@@ -58,9 +59,9 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// </summary>
         /// <param name="workflowDefineId">工作流定义ID</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<WorkflowDefineInfo> ReaderAllConfig([DisplayName2("工作流定义ID"), Id] int workflowDefineId, string connectionId = null)
+        public virtual ReturnInfo<WorkflowDefineInfo> ReaderAllConfig([DisplayName2("工作流定义ID"), Id] int workflowDefineId, string connectionId = null, BasicUserInfo currUser = null)
         {
             if (dicCache.ContainsKey(workflowDefineId))
             {
@@ -71,7 +72,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
             }
             else
             {
-                ReturnInfo<WorkflowDefineInfo> returnInfo = ProtoWorkflowConfigReader.ReaderAllConfig(workflowDefineId, connectionId);
+                ReturnInfo<WorkflowDefineInfo> returnInfo = ProtoWorkflowConfigReader.ReaderAllConfig(workflowDefineId, connectionId, currUser);
                 if (returnInfo.Failure())
                 {
                     return returnInfo;
@@ -87,9 +88,9 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// </summary>
         /// <param name="workflowCode">工作流编码</param>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        [Auth]
-        public virtual ReturnInfo<WorkflowDefineInfo> ReaderAllConfig([DisplayName2("工作流编码"), Required] string workflowCode, string connectionId = null)
+        public virtual ReturnInfo<WorkflowDefineInfo> ReaderAllConfig([DisplayName2("工作流编码"), Required] string workflowCode, string connectionId = null, BasicUserInfo currUser = null)
         {
             if (dicCodeMapId.ContainsKey(workflowCode))
             {
@@ -97,7 +98,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
             }
             else
             {
-                ReturnInfo<WorkflowDefineInfo> returnInfo = ProtoWorkflowConfigReader.ReaderAllConfig(workflowCode, connectionId);
+                ReturnInfo<WorkflowDefineInfo> returnInfo = ProtoWorkflowConfigReader.ReaderAllConfig(workflowCode, connectionId, currUser);
                 if (returnInfo.Failure())
                 {
                     return returnInfo;

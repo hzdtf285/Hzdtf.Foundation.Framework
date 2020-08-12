@@ -1,5 +1,6 @@
 ﻿using Hzdtf.BasicFunction.Model.Standard;
 using Hzdtf.BasicFunction.Model.Standard.Expand.Menu;
+using Hzdtf.Utility.Standard.Model;
 using Hzdtf.Utility.Standard.Model.Return;
 using System;
 using System.Collections.Generic;
@@ -17,8 +18,9 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// 查询菜单树列表
         /// </summary>
         /// <param name="connectionId">连接ID</param>
+        /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<IList<MenuTreeInfo>> QueryMenuTrees(string connectionId = null)
+        public virtual ReturnInfo<IList<MenuTreeInfo>> QueryMenuTrees(string connectionId = null, BasicUserInfo currUser = null)
         {
             return ExecReturnFunc<IList<MenuTreeInfo>>((reInfo) =>
             {
