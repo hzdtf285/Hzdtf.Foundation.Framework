@@ -5305,112 +5305,112 @@
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToFullDateTime(System.DateTime)">
             <summary>
-            转换为全部日期时间字符串
+            转换为全部日期时间字符串 yyyy-M-d H:m:s.fff
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>全部日期时间字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToFullFixedDateTime(System.DateTime)">
             <summary>
-            转换为固定长度的全部日期时间字符串
+            转换为固定长度的全部日期时间字符串 yyyy-MM-dd HH:mm:ss.fff
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>全部日期时间字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToDateTime(System.DateTime)">
             <summary>
-            转换为日期时间字符串
+            转换为日期时间字符串 yyyy-M-d H:m:s
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>日期时间字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToFixedDateTime(System.DateTime)">
             <summary>
-            转换为固定长度的日期时间字符串
+            转换为固定长度的日期时间字符串 yyyy-MM-dd HH:mm:ss
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>日期时间字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToDate(System.DateTime)">
             <summary>
-            转换为日期字符串
+            转换为日期字符串 yyyy-M-d
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>日期字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToFixedDate(System.DateTime)">
             <summary>
-            转换为固定长度的日期字符串
+            转换为固定长度的日期字符串 yyyy-MM-dd
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>日期字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToYM(System.DateTime)">
             <summary>
-            转换为年月字符串
+            转换为年月字符串 yyyy-M
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>年月字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToFixedYM(System.DateTime)">
             <summary>
-            转换为固定长度的年月字符串
+            转换为固定长度的年月字符串 yyyy-MM
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>年月字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToYM(System.Nullable{System.DateTime})">
             <summary>
-            转换为年月字符串
+            转换为年月字符串 yyyy-M
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>年月字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToFixedYM(System.Nullable{System.DateTime})">
             <summary>
-            转换为固定长度的年月字符串
+            转换为固定长度的年月字符串 yyyy-MM
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>年月字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToCompactShortDate(System.DateTime)">
             <summary>
-            转换为紧凑简短的日期字符串
+            转换为紧凑简短的日期字符串 yyMd
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>日期字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToCompactFixedShortDate(System.DateTime)">
             <summary>
-            转换为紧凑简短固定长度的日期字符串
+            转换为紧凑简短固定长度的日期字符串 yyMMdd
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>日期字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToCompactShortYM(System.DateTime)">
             <summary>
-            转换为紧凑简短的年月字符串
+            转换为紧凑简短的年月字符串 yyM
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>年月字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToCompactFixedShortYM(System.DateTime)">
             <summary>
-            转换为紧凑简短固定长度的年月字符串
+            转换为紧凑简短固定长度的年月字符串 yyMM
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>年月字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToCompactShortYM(System.Nullable{System.DateTime})">
             <summary>
-            转换为紧凑简短的年月字符串
+            转换为紧凑简短的年月字符串 yyM
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>年月字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToCompactFixedShortYM(System.Nullable{System.DateTime})">
             <summary>
-            转换为紧凑简短固定长度的年月字符串
+            转换为紧凑简短固定长度的年月字符串 yyMM
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>年月字符串</returns>

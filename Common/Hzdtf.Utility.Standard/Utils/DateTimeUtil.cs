@@ -12,112 +12,112 @@ namespace Hzdtf.Utility.Standard.Utils
     public static class DateTimeUtil
     {
         /// <summary>
-        /// 转换为全部日期时间字符串
+        /// 转换为全部日期时间字符串 yyyy-M-d H:m:s.fff
         /// </summary>
         /// <param name="dateTime">日期时间</param>
         /// <returns>全部日期时间字符串</returns>
         public static string ToFullDateTime(this DateTime dateTime) => dateTime.ToString("yyyy-M-d H:m:s.fff");
 
         /// <summary>
-        /// 转换为固定长度的全部日期时间字符串
+        /// 转换为固定长度的全部日期时间字符串 yyyy-MM-dd HH:mm:ss.fff
         /// </summary>
         /// <param name="dateTime">日期时间</param>
         /// <returns>全部日期时间字符串</returns>
         public static string ToFullFixedDateTime(this DateTime dateTime) => dateTime.ToString("yyyy-MM-dd HH:mm:ss.fff");
 
         /// <summary>
-        /// 转换为日期时间字符串
+        /// 转换为日期时间字符串 yyyy-M-d H:m:s
         /// </summary>
         /// <param name="dateTime">日期时间</param>
         /// <returns>日期时间字符串</returns>
         public static string ToDateTime(this DateTime dateTime) => dateTime.ToString("yyyy-M-d H:m:s");
 
         /// <summary>
-        /// 转换为固定长度的日期时间字符串
+        /// 转换为固定长度的日期时间字符串 yyyy-MM-dd HH:mm:ss
         /// </summary>
         /// <param name="dateTime">日期时间</param>
         /// <returns>日期时间字符串</returns>
         public static string ToFixedDateTime(this DateTime dateTime) => dateTime.ToString("yyyy-MM-dd HH:mm:ss");
 
         /// <summary>
-        /// 转换为日期字符串
+        /// 转换为日期字符串 yyyy-M-d
         /// </summary>
         /// <param name="dateTime">日期时间</param>
         /// <returns>日期字符串</returns>
         public static string ToDate(this DateTime dateTime) => dateTime.ToString("yyyy-M-d");
 
         /// <summary>
-        /// 转换为固定长度的日期字符串
+        /// 转换为固定长度的日期字符串 yyyy-MM-dd
         /// </summary>
         /// <param name="dateTime">日期时间</param>
         /// <returns>日期字符串</returns>
         public static string ToFixedDate(this DateTime dateTime) => dateTime.ToString("yyyy-MM-dd");
 
         /// <summary>
-        /// 转换为年月字符串
+        /// 转换为年月字符串 yyyy-M
         /// </summary>
         /// <param name="dateTime">日期时间</param>
         /// <returns>年月字符串</returns>
         public static string ToYM(this DateTime dateTime) => dateTime.ToString("yyyy-M");
 
         /// <summary>
-        /// 转换为固定长度的年月字符串
+        /// 转换为固定长度的年月字符串 yyyy-MM
         /// </summary>
         /// <param name="dateTime">日期时间</param>
         /// <returns>年月字符串</returns>
         public static string ToFixedYM(this DateTime dateTime) => dateTime.ToString("yyyy-MM");
 
         /// <summary>
-        /// 转换为年月字符串
+        /// 转换为年月字符串 yyyy-M
         /// </summary>
         /// <param name="dateTime">日期时间</param>
         /// <returns>年月字符串</returns>
         public static string ToYM(this DateTime? dateTime) => dateTime != null ? ToYM((DateTime)dateTime) : null;
 
         /// <summary>
-        /// 转换为固定长度的年月字符串
+        /// 转换为固定长度的年月字符串 yyyy-MM
         /// </summary>
         /// <param name="dateTime">日期时间</param>
         /// <returns>年月字符串</returns>
         public static string ToFixedYM(this DateTime? dateTime) => dateTime != null ? ToFixedYM((DateTime)dateTime) : null;
 
         /// <summary>
-        /// 转换为紧凑简短的日期字符串
+        /// 转换为紧凑简短的日期字符串 yyMd
         /// </summary>
         /// <param name="dateTime">日期时间</param>
         /// <returns>日期字符串</returns>
         public static string ToCompactShortDate(this DateTime dateTime) => dateTime.ToString("yyMd");
 
         /// <summary>
-        /// 转换为紧凑简短固定长度的日期字符串
+        /// 转换为紧凑简短固定长度的日期字符串 yyMMdd
         /// </summary>
         /// <param name="dateTime">日期时间</param>
         /// <returns>日期字符串</returns>
         public static string ToCompactFixedShortDate(this DateTime dateTime) => dateTime.ToString("yyMMdd");
 
         /// <summary>
-        /// 转换为紧凑简短的年月字符串
+        /// 转换为紧凑简短的年月字符串 yyM
         /// </summary>
         /// <param name="dateTime">日期时间</param>
         /// <returns>年月字符串</returns>
         public static string ToCompactShortYM(this DateTime dateTime) => dateTime.ToString("yyM");
 
         /// <summary>
-        /// 转换为紧凑简短固定长度的年月字符串
+        /// 转换为紧凑简短固定长度的年月字符串 yyMM
         /// </summary>
         /// <param name="dateTime">日期时间</param>
         /// <returns>年月字符串</returns>
         public static string ToCompactFixedShortYM(this DateTime dateTime) => dateTime.ToString("yyMM");
 
         /// <summary>
-        /// 转换为紧凑简短的年月字符串
+        /// 转换为紧凑简短的年月字符串 yyM
         /// </summary>
         /// <param name="dateTime">日期时间</param>
         /// <returns>年月字符串</returns>
         public static string ToCompactShortYM(this DateTime? dateTime) => dateTime != null ? ToCompactShortYM((DateTime)dateTime) : null;
 
         /// <summary>
-        /// 转换为紧凑简短固定长度的年月字符串
+        /// 转换为紧凑简短固定长度的年月字符串 yyMM
         /// </summary>
         /// <param name="dateTime">日期时间</param>
         /// <returns>年月字符串</returns>
