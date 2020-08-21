@@ -81,6 +81,7 @@ namespace Hzdtf.Utility.Standard.Model.Return
         /// <summary>
         /// 异常
         /// </summary>
+        [IgnoreMember]
         public Exception Ex;
 
         /// <summary>
