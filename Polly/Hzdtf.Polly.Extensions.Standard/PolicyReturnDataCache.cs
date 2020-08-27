@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace Hzdtf.Polly.Extensions.Standard
 {
     /// <summary>
-    /// 策略返回数据缓缓存
+    /// 策略返回数据缓存
     /// @ 黄振东
     /// </summary>
     [Inject]

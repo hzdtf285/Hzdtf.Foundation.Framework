@@ -6485,6 +6485,14 @@
             <param name="outOfProcessLock">是否跨进程锁</param>
             <returns>文件内容</returns>
         </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ReaderFileStream(System.String,System.Boolean)">
+            <summary>
+            根据文件名读取字节数组
+            </summary>
+            <param name="fileName">文件名</param>
+            <param name="outOfProcessLock">是否跨进程锁</param>
+            <returns>字节数组</returns>
+        </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ReaderStreamToString(System.IO.Stream,System.Boolean)">
             <summary>
             读取流并转换为字符串
@@ -6519,6 +6527,15 @@
             <param name="append">是否追加</param>
             <param name="outOfProcessLock">是否跨进程锁</param>
         </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.WriteFileStream(System.String,System.Byte[],System.Boolean,System.Boolean)">
+            <summary>
+            写入文件流
+            </summary>
+            <param name="fileName">文件名</param>
+            <param name="content">内容字节数组</param>
+            <param name="append">是否追加</param>
+            <param name="outOfProcessLock">是否跨进程锁</param>
+        </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.OperationFile(System.String,System.Action{System.String},System.Boolean)">
             <summary>
             操作文件
@@ -6546,6 +6563,14 @@
             </summary>
             <param name="fileName">文件名</param>
             <param name="content">内容</param>
+            <param name="append">是否追加</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.WriteFileStream(System.String,System.Byte[],System.Boolean)">
+            <summary>
+            写入文件流
+            </summary>
+            <param name="fileName">文件名</param>
+            <param name="content">内容字节数组</param>
             <param name="append">是否追加</param>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ConvertBytes``1(``0)">

@@ -50,6 +50,23 @@ namespace Hzdtf.Utility.Standard.Utils
         }
 
         /// <summary>
+        /// 根据文件名读取字节数组
+        /// </summary>
+        /// <param name="fileName">文件名</param>
+        /// <param name="outOfProcessLock">是否跨进程锁</param>
+        /// <returns>字节数组</returns>
+        public static byte[] ReaderFileStream(this string fileName, bool outOfProcessLock = false)
+        {
+            byte[] result = null;
+            OperationFile(fileName, file =>
+            {
+                result = ReaderStream(new FileStream(file, FileMode.Open));
+            }, outOfProcessLock);
+
+            return result;
+        }
+
+        /// <summary>
         /// 读取流并转换为字符串
         /// </summary>
         /// <param name="stream">流</param>
@@ -112,6 +129,21 @@ namespace Hzdtf.Utility.Standard.Utils
             OperationFile(fileName, file =>
             {
                 WriteFileContent(file, content, append);
+            }, outOfProcessLock);
+        }
+
+        /// <summary>
+        /// 写入文件流
+        /// </summary>
+        /// <param name="fileName">文件名</param>
+        /// <param name="content">内容字节数组</param>
+        /// <param name="append">是否追加</param>
+        /// <param name="outOfProcessLock">是否跨进程锁</param>
+        public static void WriteFileStream(this string fileName, byte[] content, bool append = false, bool outOfProcessLock = false)
+        {
+            OperationFile(fileName, file =>
+            {
+                WriteFileStream(file, content, append);
             }, outOfProcessLock);
         }
 
@@ -226,9 +258,18 @@ namespace Hzdtf.Utility.Standard.Utils
         /// <param name="append">是否追加</param>
         private static void WriteFileContent(string fileName, string content, bool append = false)
         {
-            Stream stream = null;
-            byte[] logBytes = Encoding.UTF8.GetBytes(content);
+            WriteFileStream(fileName, Encoding.UTF8.GetBytes(content), append);
+        }
 
+        /// <summary>
+        /// 写入文件流
+        /// </summary>
+        /// <param name="fileName">文件名</param>
+        /// <param name="content">内容字节数组</param>
+        /// <param name="append">是否追加</param>
+        private static void WriteFileStream(string fileName, byte[] content, bool append = false)
+        {
+            Stream stream = null;
             try
             {
                 if (File.Exists(fileName))
@@ -247,7 +288,7 @@ namespace Hzdtf.Utility.Standard.Utils
                     stream = File.Create(fileName);
                 }
 
-                stream.Write(logBytes, 0, logBytes.Length);
+                stream.Write(content, 0, content.Length);
             }
             catch (Exception ex)
             {
