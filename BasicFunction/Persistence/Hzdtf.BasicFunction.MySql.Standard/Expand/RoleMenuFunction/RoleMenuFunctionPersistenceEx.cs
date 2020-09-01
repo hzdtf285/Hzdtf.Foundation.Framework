@@ -106,7 +106,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
             {
                 string sql = "SELECT F.* FROM `function` F"
                         + " INNER JOIN menu_function MF ON MF.`function_id`= F.`id`"
-                        + " INNER JOIN menu M ON m.`id`= MF.`menu_id` AND M.`code`=@MenuCode"
+                        + " INNER JOIN menu M ON M.`id`= MF.`menu_id` AND M.`code`=@MenuCode"
                         + $" INNER JOIN {Table} RMF ON RMF.`menu_function_id`= MF.`id` AND RMF.`role_id` IN({roleSql.ToString()})";
                 result = dbConn.Query<FunctionInfo>(sql, parameters).AsList();
             }, AccessMode.SLAVE);

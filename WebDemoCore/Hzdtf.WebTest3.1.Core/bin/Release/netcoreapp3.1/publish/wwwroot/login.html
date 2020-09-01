@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>基础框架系统 - 登录</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+    <link href="/css/login.min.css" rel="stylesheet">
+    <link href="/css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <link href="/css/plugins/toastr/toastr.min.css" rel="stylesheet" />
+    <script>
+        if (window.top !== window.self) { window.top.location = window.location };
+    </script>
+</head>
+<body class="signin">
+    <div class="signinpanel">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="signin-info">
+                    <div class="m-b"></div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <form method="post" id="loginForm">
+                    <p class="m-t-md" style="font-size:30px;color:blanchedalmond">基础框架系统</p>
+                    <input type="text" class="form-control uname" maxlength="20" name="loginId" placeholder="登录ID" value="system" required="" />
+                    <input type="password" class="form-control pword m-b" name="password" placeholder="密码" maxlength="20" value="123" required="" />
+                    <span id="spanCheckCode" style="display:none">
+                        <input type="text" maxlength="4" class="form-control checkCode" name="verificationCode" placeholder="验证码" />
+                        <img id="imgCheckCode" />
+                    </span>
+                    <button class="btn btn-success btn-block">登录</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="/js/jquery.min.js?v=2.1.4"></script>
+<script type="text/javascript" src="/js/plugins/sweetalert/sweetalert.min.js"></script>
+<script type="text/javascript" src="/js/plugins/validate/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/js/plugins/validate/messages_zh.min.js"></script>
+
+<script src="/js/plugins/toastr/toastr.min.js"></script>
+<script type="text/javascript" src="/js/common/common.js"></script>
+<script type="text/javascript" src="/js/common/form.js"></script>
+<script type="text/javascript" src="/js/common/authorization.js"></script>
+<script type="text/javascript" src="/js/common/hplus_dialog.js"></script>
+
+<script type="text/javascript" src="/js/login.js"></script>

@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.Persistence.Dapper.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1">
+            <summary>
+            Dapper持久化基类
+            @ 黄振东
+            </summary>
+            <typeparam name="ModelT">模型类型</typeparam>
+        </member>
+        <member name="P:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.Table">
+            <summary>
+            表
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.Select(System.Int32,System.Data.IDbConnection,System.Data.IDbTransaction,System.String[])">
+            <summary>
+            根据ID查询模型
+            </summary>
+            <param name="id">ID</param>
+            <param name="dbConnection">数据库连接</param>
+            <param name="dbTransaction">数据库事务</param>
+            <param name="propertyNames">属性名称集合</param>
+            <returns>模型</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.Select(System.Int32[],System.Data.IDbConnection,System.Data.IDbTransaction,System.String[])">
+            <summary>
+            根据ID集合查询模型
+            </summary>
+            <param name="ids">ID集合</param>
+            <param name="dbConnection">数据库连接</param>
+            <param name="dbTransaction">数据库事务</param>
+            <param name="propertyNames">属性名称集合</param>
+            <returns>模型列表</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.Count(System.Int32,System.Data.IDbConnection,System.Data.IDbTransaction)">
+            <summary>
+            根据ID统计模型数
+            </summary>
+            <param name="id">ID</param>
+            <param name="dbConnection">数据库连接</param>
+            <param name="dbTransaction">数据库事务</param>
+            <returns>模型数</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.Count(System.Data.IDbConnection,System.Data.IDbTransaction)">
+            <summary>
+            统计模型数
+            </summary>
+            <returns>模型数</returns>
+            <param name="dbConnection">数据库连接</param>
+            <param name="dbTransaction">数据库事务</param>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.Select(System.Data.IDbConnection,System.Data.IDbTransaction,System.String[])">
+            <summary>
+            查询模型列表
+            </summary>
+            <returns>模型列表</returns>
+            <param name="dbConnection">数据库连接</param>
+            <param name="dbTransaction">数据库事务</param>
+            <param name="propertyNames">属性名称集合</param>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.SelectPage(System.Int32,System.Int32,System.Data.IDbConnection,Hzdtf.Utility.Standard.Model.FilterInfo,System.Data.IDbTransaction,System.String[])">
+            <summary>
+            查询模型列表并分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">每页记录数</param>
+            <param name="filter">筛选</param>
+            <param name="dbConnection">数据库连接</param>
+            <param name="dbTransaction">数据库事务</param>
+            <param name="propertyNames">属性名称集合</param>
+            <returns>分页信息</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.Insert(`0,System.Data.IDbConnection,System.Data.IDbTransaction)">
+            <summary>
+            插入模型
+            </summary>
+            <param name="model">模型</param>
+            <param name="dbConnection">数据库连接</param>
+            <param name="dbTransaction">数据库事务</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.Insert(System.Collections.Generic.IList{`0},System.Data.IDbConnection,System.Data.IDbTransaction)">
+            <summary>
+            插入模型列表
+            </summary>
+            <param name="models">模型列表</param>
+            <param name="dbConnection">数据库连接</param>
+            <param name="dbTransaction">数据库事务</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.UpdateById(`0,System.Data.IDbConnection,System.Data.IDbTransaction,System.String[])">
+            <summary>
+            根据ID更新模型
+            </summary>
+            <param name="model">模型</param>
+            <param name="dbConnection">数据库连接</param>
+            <param name="dbTransaction">数据库事务</param>
+            <param name="propertyNames">属性名称集合</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.DeleteById(System.Int32,System.Data.IDbConnection,System.Data.IDbTransaction)">
+            <summary>
+            根据ID删除模型
+            </summary>
+            <param name="id">ID</param>
+            <param name="dbConnection">数据库连接</param>
+            <param name="dbTransaction">数据库事务</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.DeleteByIds(System.Int32[],System.Data.IDbConnection,System.Data.IDbTransaction)">
+            <summary>
+            根据ID数组删除模型
+            </summary>
+            <param name="ids">ID数组</param>
+            <param name="dbConnection">数据库连接</param>
+            <param name="dbTransaction">数据库事务</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.Delete(System.Data.IDbConnection,System.Data.IDbTransaction)">
+            <summary>
+            删除所有模型
+            </summary>
+            <returns>影响行数</returns>
+            <param name="dbConnection">数据库连接</param>
+            <param name="dbTransaction">数据库事务</param>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.DeleteSlaveTable(System.String,System.Data.IDbConnection,System.Data.IDbTransaction)">
+            <summary>
+            删除从表
+            </summary>
+            <param name="table">从表</param>
+            <param name="dbConnection">数据库连接</param>
+            <param name="dbTransaction">数据库事务</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.DeleteSlaveTableByForeignKeys(System.String,System.String,System.Int32[],System.Data.IDbConnection,System.Data.IDbTransaction)">
+            <summary>
+            删除从表
+            </summary>
+            <param name="table">从表</param>
+            <param name="foreignKeyName">外键名称</param>
+            <param name="foreignKeyValues">外键值集合</param>
+            <param name="dbConnection">数据库连接</param>
+            <param name="dbTransaction">数据库事务</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.SelectSql(System.Int32,System.String[])">
+            <summary>
+            根据ID查询模型SQL语句
+            </summary>
+            <param name="id">ID</param>
+            <param name="propertyNames">属性名称集合</param>
+            <returns>SQL语句</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.SelectSql(System.Int32[],Dapper.DynamicParameters@,System.String[])">
+            <summary>
+            根据ID集合查询模型列表SQL语句
+            </summary>
+            <param name="ids">ID集合</param>
+            <param name="parameters">参数</param>
+            <param name="propertyNames">属性名称集合</param>
+            <returns>SQL语句</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.CountSql(System.Int32)">
+            <summary>
+            根据ID统计模型数SQL语句
+            </summary>
+            <param name="id">ID</param>
+            <returns>SQL语句</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.CountSql(System.String)">
+            <summary>
+            统计模型数SQL语句
+            </summary>
+            <param name="pfx">前辍</param>
+            <returns>SQL语句</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.CountByFilterSql(Hzdtf.Utility.Standard.Model.FilterInfo,Dapper.DynamicParameters@)">
+            <summary>
+            根据筛选信息统计模型数SQL语句
+            </summary>
+            <param name="filter">筛选信息</param>
+            <param name="parameters">参数</param>
+            <returns>SQL语句</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.SelectSql(System.String,System.String,System.String[])">
+            <summary>
+            查询模型列表
+            </summary>
+            <param name="pfx">前辍</param>
+            <param name="appendFieldSqls">追加字段SQL，包含前面的,</param>
+            <param name="propertyNames">属性名称集合</param>
+            <returns>SQL语句</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.SelectPageSql(System.Int32,System.Int32,Dapper.DynamicParameters@,Hzdtf.Utility.Standard.Model.FilterInfo,System.String[])">
+            <summary>
+            查询模型列表并分页SQL语句
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">每页记录数</param>
+            <param name="parameters">参数</param>
+            <param name="filter">筛选</param>
+            <param name="propertyNames">属性名称集合</param>
+            <returns>SQL语句</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.InsertSql(`0,System.Boolean)">
+            <summary>
+            插入模型SQL语句
+            </summary>
+            <param name="model">模型</param>
+            <param name="isGetInsertId">是否获取自增ID</param>
+            <returns>SQL语句</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.InsertSql(System.Collections.Generic.IList{`0},Dapper.DynamicParameters@)">
+            <summary>
+            插入模型列表SQL语句
+            </summary>
+            <param name="models">模型列表</param>
+            <param name="parameters">动态参数</param>
+            <returns>SQL语句</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.UpdateByIdSql(`0,System.String[])">
+            <summary>
+            根据ID更新模型SQL语句
+            </summary>
+            <param name="model">模型</param>
+            <param name="propertyNames">属性名称集合</param>
+            <returns>SQL语句</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.DeleteByIdSql(System.Int32)">
+            <summary>
+            根据ID删除模型SQL语句
+            </summary>
+            <param name="id">ID</param>
+            <returns>SQL语句</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.DeleteByIdsSql(System.Int32[],Dapper.DynamicParameters@)">
+            <summary>
+            根据ID数组删除模型SQL语句
+            </summary>
+            <param name="ids">ID数组</param>
+            <param name="parameters">参数</param>
+            <returns>SQL语句</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.DeleteSql">
+            <summary>
+            删除所有模型SQL语句
+            </summary>
+            <returns>SQL语句</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.DeleteByTableSql(System.String)">
+            <summary>
+            根据表名删除所有模型SQL语句
+            </summary>
+            <param name="table">表名</param>
+            <returns>SQL语句</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.DeleteByTableAndForignKeySql(System.String,System.String,System.Int32[],Dapper.DynamicParameters@)">
+            <summary>
+            根据表名、外键字段和外键值删除模型SQL语句
+            </summary>
+            <param name="table">表名</param>
+            <param name="foreignKeyName">外键名称</param>
+            <param name="foreignKeyValues">外键值集合</param>
+            <param name="parameters">参数</param>
+            <returns>SQL语句</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.GetSelectSortNamePfx(Hzdtf.Utility.Standard.Model.FilterInfo)">
+            <summary>
+            获取查询的排序名称前辍，如果是主表，可以为null或空
+            </summary>
+            <param name="filter">筛选</param>
+            <returns>查询分页的排序名称前辍</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`1.GetSelectSortNamePfx(System.String)">
+            <summary>
+            获取查询的排序名称前辍，如果是主表，可以为null或空
+            </summary>
+            <param name="sortName">排序名称</param>
+            <returns>查询分页的排序名称前辍</returns>
+        </member>
+    </members>
+</doc>

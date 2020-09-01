@@ -1,0 +1,459 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.Platform.Contract.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.Platform.Contract.Standard.Config.App.AppConfigurationBase">
+            <summary>
+            应用配置基类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.Config.App.AppConfigurationBase.ConnectionEncryption">
+            <summary>
+            连接加密
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.Config.App.AppConfigurationBase.Item(System.String)">
+            <summary>
+            根据键获取值
+            </summary>
+            <param name="key">键</param>
+            <returns>值</returns>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.Config.App.AppConfigurationBase.DefaultConnectionString">
+            <summary>
+            默认连接字符串
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.Config.App.AppConfigurationBase.SlaveConnectionString">
+            <summary>
+            从库连接字符串
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.Config.App.AppConfigurationBase.TestDefaultConnectionString">
+            <summary>
+            测试默认连接字符串
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.Config.App.AppConfigurationBase.TestSlaveConnectionString">
+            <summary>
+            测试从库连接字符串
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.App.AppConfigurationBase.GetConnectionString(System.String)">
+            <summary>
+            根据名称获取直通连接字符串
+            </summary>
+            <param name="name">名称</param>
+            <returns>连接字符串</returns>
+        </member>
+        <member name="F:Hzdtf.Platform.Contract.Standard.Config.App.AppConfigurationBase.defaultUploadImageExpands">
+            <summary>
+            默认上传图片的扩展名集合
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.Config.App.AppConfigurationBase.AllowUploadImageExpands">
+            <summary>
+            默认上传图片的扩展名集合
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.App.AppConfigurationBase.FilterConnectionString(System.String)">
+            <summary>
+            过滤连接字符串
+            </summary>
+            <param name="connectionString">连接字符串</param>
+            <returns>过滤后的连接字符串</returns>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.App.AppConfigurationBase.GetDirectConnectionString(System.String)">
+            <summary>
+            根据名称获取直通连接字符串
+            </summary>
+            <param name="name">名称</param>
+            <returns>连接字符串</returns>
+        </member>
+        <member name="T:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigInfo">
+            <summary>
+            程序集配置信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigInfo.Entrances">
+            <summary>
+            入口集合
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigInfo.Services">
+            <summary>
+            服务集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigInfo.assemblyNames">
+            <summary>
+            程序集名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigInfo.AssemblyNames">
+            <summary>
+            程序集名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigInfo.IsLoadAutoMapperConfig">
+            <summary>
+            是否加载自动映射配置
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.BasicAssemblyInfo">
+            <summary>
+            基本程序集信息
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.BasicAssemblyInfo.Names">
+            <summary>
+            名称集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.BasicAssemblyInfo.interceptedTypes">
+            <summary>
+            拦截器类型集合
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.BasicAssemblyInfo.InterceptedTypes">
+            <summary>
+            拦截器类型集合
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.BasicAssemblyInfo.Intercepteds">
+            <summary>
+            拦截器集合
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyExpandInfo">
+            <summary>
+            程序集扩展参数
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyExpandInfo.Lifecycle">
+            <summary>
+            生命周期，默认为DEPENDENCY
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyExpandInfo.MatchTagNames">
+            <summary>
+            匹配标签名称数组
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigJson">
+            <summary>
+            程序集配置JSON
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigJson.jsonFileName">
+            <summary>
+            xmlFileName
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigJson.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigJson.#ctor(System.String)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="jsonFileName">json文件名</param>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigJson.Reader">
+            <summary>
+            读取
+            </summary>
+            <returns>数据</returns>
+        </member>
+        <member name="T:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigLocalMember">
+            <summary>
+            程序集配置本地内存
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigLocalMember.dicCache">
+            <summary>
+            字典缓存
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigLocalMember.syncDicCache">
+            <summary>
+            同步字典缓存
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigLocalMember.ProtoAssemblyConfigReader">
+            <summary>
+            原生程序集配置读取
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigLocalMember.Reader">
+            <summary>
+            读取
+            </summary>
+            <returns>数据</returns>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigLocalMember.GetCache">
+            <summary>
+            获取缓存
+            </summary>
+            <returns>缓存</returns>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigLocalMember.GetSyncCache">
+            <summary>
+            获取同步的缓存对象，是为了线程安全
+            </summary>
+            <returns>同步的缓存对象</returns>
+        </member>
+        <member name="T:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigXml">
+            <summary>
+            程序集配置XML
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigXml.xmlFileName">
+            <summary>
+            xmlFileName
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigXml.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigXml.#ctor(System.String)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="xmlFileName">XML文件名</param>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigXml.Reader">
+            <summary>
+            读取
+            </summary>
+            <returns>数据</returns>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigXml.ParseBasicAssembly(System.Xml.XmlNode)">
+            <summary>
+            解析程序集基本信息
+            </summary>
+            <param name="node">节点</param>
+            <returns>程序集基本信息</returns>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.AssemblyConfig.AssemblyConfigXml.ParseExpandAssembly(System.Xml.XmlNode)">
+            <summary>
+            解析程序集扩展信息
+            </summary>
+            <param name="node">节点</param>
+            <returns>程序集扩展信息</returns>
+        </member>
+        <member name="T:Hzdtf.Platform.Contract.Standard.Config.Connection.ConnectionAppConfigFactoryBase`3">
+            <summary>
+            连接带有应用配置的工厂基类
+            @ 黄振东
+            </summary>
+            <typeparam name="ConnectionT">连接类型</typeparam>
+            <typeparam name="ConnectionInfoT">连接信息类型</typeparam>
+            <typeparam name="ConnectionWrapInfoT">连接包装信息类型</typeparam>
+        </member>
+        <member name="F:Hzdtf.Platform.Contract.Standard.Config.Connection.ConnectionAppConfigFactoryBase`3.appConfig">
+            <summary>
+            应用配置
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.Connection.ConnectionAppConfigFactoryBase`3.#ctor(Hzdtf.Utility.Standard.Safety.ISymmetricalEncryption,Hzdtf.Platform.Config.Contract.Standard.Config.App.IAppConfiguration)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="symmetricalEncryption">加密</param>
+            <param name="appConfig">应用配置</param>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.Connection.ConnectionAppConfigFactoryBase`3.GetConnectionStringByAppConfigName(System.String)">
+            <summary>
+            根据应用配置名称获取连接字符串
+            </summary>
+            <param name="appConfigName">应用配置名称</param>
+            <returns>连接字符串</returns>
+        </member>
+        <member name="T:Hzdtf.Platform.Contract.Standard.Config.Language.LanguageLibraryConfigJson">
+            <summary>
+            语系库配置JSON
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.Config.Language.LanguageLibraryConfigJson.AppConfig">
+            <summary>
+            应用配置
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.Language.LanguageLibraryConfigJson.ReaderAll">
+            <summary>
+            读取
+            </summary>
+            <returns>数据</returns>
+        </member>
+        <member name="T:Hzdtf.Platform.Contract.Standard.Config.ProgramStart.IProgramStart">
+            <summary>
+            程序启动接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.ProgramStart.IProgramStart.Start(System.String[])">
+            <summary>
+            启动
+            </summary>
+            <param name="args">参数</param>
+        </member>
+        <member name="T:Hzdtf.Platform.Contract.Standard.Config.ProgramStart.PrgramConfigManager">
+            <summary>
+            程序配置管理器
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.Config.ProgramStart.PrgramConfigManager.ProgramConfigReader">
+            <summary>
+            程序配置读取
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.ProgramStart.PrgramConfigManager.Start(Hzdtf.Platform.Contract.Standard.Config.ProgramStart.ProgramStartInfo[])">
+            <summary>
+            开始
+            </summary>
+            <param name="programStartInfos">程序启动信息集合</param>
+        </member>
+        <member name="T:Hzdtf.Platform.Contract.Standard.Config.ProgramStart.ProgramStartInfo">
+            <summary>
+            程序启动信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.Config.ProgramStart.ProgramStartInfo.FullClass">
+            <summary>
+            全类名（如果不是本程序集，则要包含所在程序集，用,分隔）
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.Config.ProgramStart.ProgramStartInfo.Args">
+            <summary>
+            参数集合
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Platform.Contract.Standard.Config.ProgramStart.ProgramStartConfigJson">
+            <summary>
+            程序开始配置Json
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Platform.Contract.Standard.Config.ProgramStart.ProgramStartConfigJson.jsonFile">
+            <summary>
+            JSON文件
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.ProgramStart.ProgramStartConfigJson.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.ProgramStart.ProgramStartConfigJson.#ctor(System.String)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="jsonFile">JSON文件</param>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.ProgramStart.ProgramStartConfigJson.Reader">
+            <summary>
+            读取
+            </summary>
+            <returns>数据</returns>
+        </member>
+        <member name="T:Hzdtf.Platform.Contract.Standard.Config.ProgramStart.ProgramStartConfigXml">
+            <summary>
+            程序开始配置XML
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Platform.Contract.Standard.Config.ProgramStart.ProgramStartConfigXml.xmlFile">
+            <summary>
+            XML文件
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.ProgramStart.ProgramStartConfigXml.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.ProgramStart.ProgramStartConfigXml.#ctor(System.String)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="xmlFile">XML文件</param>
+        </member>
+        <member name="M:Hzdtf.Platform.Contract.Standard.Config.ProgramStart.ProgramStartConfigXml.Reader">
+            <summary>
+            读取
+            </summary>
+            <returns>数据</returns>
+        </member>
+        <member name="T:Hzdtf.Platform.Contract.Standard.PlatformTool">
+            <summary>
+            平台工具
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Contract.Standard.PlatformTool.AppConfig">
+            <summary>
+            应用配置
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Platform.Config.Contract.Standard.Config.App.IAppConfiguration">
+            <summary>
+            应用配置接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Config.Contract.Standard.Config.App.IAppConfiguration.Item(System.String)">
+            <summary>
+            根据键获取值
+            </summary>
+            <param name="key">键</param>
+            <returns>值</returns>
+        </member>
+        <member name="P:Hzdtf.Platform.Config.Contract.Standard.Config.App.IAppConfiguration.DefaultConnectionString">
+            <summary>
+            默认连接字符串
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Config.Contract.Standard.Config.App.IAppConfiguration.SlaveConnectionString">
+            <summary>
+            从库连接字符串
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Config.Contract.Standard.Config.App.IAppConfiguration.TestDefaultConnectionString">
+            <summary>
+            测试默认连接字符串
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Platform.Config.Contract.Standard.Config.App.IAppConfiguration.TestSlaveConnectionString">
+            <summary>
+            测试从库连接字符串
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Platform.Config.Contract.Standard.Config.App.IAppConfiguration.GetConnectionString(System.String)">
+            <summary>
+            根据名称获取连接字符串
+            </summary>
+            <param name="name">名称</param>
+            <returns>连接字符串</returns>
+        </member>
+        <member name="P:Hzdtf.Platform.Config.Contract.Standard.Config.App.IAppConfiguration.AllowUploadImageExpands">
+            <summary>
+            允许上传的图片扩展名集合
+            </summary>
+        </member>
+    </members>
+</doc>

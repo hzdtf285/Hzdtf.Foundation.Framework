@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("2a573f38-acd0-4818-8b05-a5c3f812ab94")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hzdtf.WebTest3.1.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

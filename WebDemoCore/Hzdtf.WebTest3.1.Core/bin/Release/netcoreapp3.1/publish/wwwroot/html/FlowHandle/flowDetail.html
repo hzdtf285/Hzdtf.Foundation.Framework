@@ -1,0 +1,95 @@
+﻿<div class="modal-dialog" style="width:100%">
+    <div class="modal-content animated fadeIn">
+        <div class="modal-header">
+            <button triggerclose type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span><span class="sr-only">关闭</span>
+            </button>
+            <h4 class="modal-title">流程明细</h4>
+        </div>
+        <div class="modal-body">
+            <fieldset>
+                <legend>表单信息</legend>
+                <span id="spanFormInfo"></span>
+            </fieldset>
+            <fieldset id="fieldFlowInfo">
+                <legend>流程信息</legend>
+                <form class="form-horizontal m-t" id="flowInfoForm">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">申请单号：</label>
+                        <div class="col-sm-4">
+                            <input type="text" name="applyNo" readonly class="form-control" />
+                        </div>
+                        <label class="col-sm-2 control-label">申请时间：</label>
+                        <div class="col-sm-4">
+                            <input type="text" name="createTime" format="datetime" readonly class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">标题：</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="title" readonly class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">申请人：</label>
+                        <div class="col-sm-4">
+                            <input type="text" name="creater" readonly class="form-control" />
+                        </div>
+                        <label class="col-sm-2 control-label">流程状态：</label>
+                        <div class="col-sm-4">
+                            <input type="text" name="flowStatus" readonly class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">当前流程关卡：</label>
+                        <div class="col-sm-4">
+                            <input type="text" name="currConcreteCensorships" readonly class="form-control" />
+                        </div>
+                        <label class="col-sm-2 control-label">当前处理人：</label>
+                        <div class="col-sm-4">
+                            <input type="text" name="currHandlers" readonly class="form-control" />
+                        </div>
+                    </div>
+                </form>
+            </fieldset>
+            <fieldset>
+                <legend>处理列表</legend>
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th width="15%">流程关卡</th>
+                            <th width="15%">处理人</th>
+                            <th width="15%">处理结果</th>
+                            <th width="15%">处理时间</th>
+                            <th>意见</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableRowFlowInfo"></tbody>
+                </table>
+            </fieldset>
+            <fieldset id="fieldAudit" style="display:none">
+                <legend>审核</legend>
+                <form class="form-horizontal m-t" id="auditForm">
+                    <input id="handleId" name="handleId" type="hidden" format="int" value="0" />
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">意见：</label>
+                        <div class="col-sm-10">
+                            <textarea name="idea" placeholder="请输入意见" maxlength="200" cols="3" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label"></label>
+                        <div class="col-sm-10">
+                            <button type="button" id="btnSendSubmit" audit actionType="1" class="btn btn-primary">送件</button>
+                            <button type="button" id="btnReturnSubmit" audit actionType="2" class="btn btn-primary">退件</button>&nbsp;&nbsp;
+                            <button type="reset" class="btn btn-primary" id="btnEditReset">重置</button>
+                        </div>
+                    </div>
+                </form>
+            </fieldset>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>

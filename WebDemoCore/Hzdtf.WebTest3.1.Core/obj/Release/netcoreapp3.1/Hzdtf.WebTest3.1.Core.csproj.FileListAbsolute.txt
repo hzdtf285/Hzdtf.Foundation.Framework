@@ -27,8 +27,6 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Cor
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\Hzdtf.Utility.Standard.pdb
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\Hzdtf.Utility.Standard.xml
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\obj\Release\netcoreapp3.1\Hzdtf.WebTest3.1.Core.csprojAssemblyReference.cache
-C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\obj\Release\netcoreapp3.1\Hzdtf.WebTest3.1.Core.csproj.CoreCompileInputs.cache
-C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\obj\Release\netcoreapp3.1\Hzdtf.WebTest3.1.Core.MvcApplicationPartsAssemblyInfo.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\obj\Release\netcoreapp3.1\Hzdtf.WebTest3.1.Core.AssemblyInfoInputs.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\obj\Release\netcoreapp3.1\Hzdtf.WebTest3.1.Core.AssemblyInfo.cs
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\obj\Release\netcoreapp3.1\Hzdtf.WebTest3.1.Core.RazorTargetAssemblyInfo.cache
@@ -263,7 +261,6 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Cor
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\Hzdtf.WorkFlow.Persistence.Contract.Standard.xml
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\Hzdtf.WorkFlow.Service.Contract.Standard.pdb
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\Hzdtf.WorkFlow.Service.Contract.Standard.xml
-C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\obj\Release\netcoreapp3.1\Hzdtf.WebTest3.1.Core.MvcApplicationPartsAssemblyInfo.cs
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\obj\Release\netcoreapp3.1\Hzdtf.WebTest3.1.Core.RazorAssemblyInfo.cache
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\obj\Release\netcoreapp3.1\Hzdtf.WebTest3.1.Core.RazorAssemblyInfo.cs
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\obj\Release\netcoreapp3.1\Hzdtf.WebTest3.1.Core.TagHelpers.input.cache
@@ -321,3 +318,6 @@ C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Cor
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\Hzdtf.Logger.Exceptionless.Standard.xml
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\Hzdtf.Mini.Standard.dll
 C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\Hzdtf.Mini.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\obj\Release\netcoreapp3.1\Hzdtf.WebTest3.1.Core.csproj.CoreCompileInputs.cache
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\obj\Release\netcoreapp3.1\Hzdtf.WebTest3.1.Core.MvcApplicationPartsAssemblyInfo.cs
+C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\obj\Release\netcoreapp3.1\Hzdtf.WebTest3.1.Core.MvcApplicationPartsAssemblyInfo.cache

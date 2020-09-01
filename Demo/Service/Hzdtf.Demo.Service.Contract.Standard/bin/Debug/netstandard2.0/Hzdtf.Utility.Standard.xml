@@ -5305,112 +5305,112 @@
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToFullDateTime(System.DateTime)">
             <summary>
-            转换为全部日期时间字符串
+            转换为全部日期时间字符串 yyyy-M-d H:m:s.fff
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>全部日期时间字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToFullFixedDateTime(System.DateTime)">
             <summary>
-            转换为固定长度的全部日期时间字符串
+            转换为固定长度的全部日期时间字符串 yyyy-MM-dd HH:mm:ss.fff
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>全部日期时间字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToDateTime(System.DateTime)">
             <summary>
-            转换为日期时间字符串
+            转换为日期时间字符串 yyyy-M-d H:m:s
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>日期时间字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToFixedDateTime(System.DateTime)">
             <summary>
-            转换为固定长度的日期时间字符串
+            转换为固定长度的日期时间字符串 yyyy-MM-dd HH:mm:ss
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>日期时间字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToDate(System.DateTime)">
             <summary>
-            转换为日期字符串
+            转换为日期字符串 yyyy-M-d
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>日期字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToFixedDate(System.DateTime)">
             <summary>
-            转换为固定长度的日期字符串
+            转换为固定长度的日期字符串 yyyy-MM-dd
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>日期字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToYM(System.DateTime)">
             <summary>
-            转换为年月字符串
+            转换为年月字符串 yyyy-M
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>年月字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToFixedYM(System.DateTime)">
             <summary>
-            转换为固定长度的年月字符串
+            转换为固定长度的年月字符串 yyyy-MM
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>年月字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToYM(System.Nullable{System.DateTime})">
             <summary>
-            转换为年月字符串
+            转换为年月字符串 yyyy-M
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>年月字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToFixedYM(System.Nullable{System.DateTime})">
             <summary>
-            转换为固定长度的年月字符串
+            转换为固定长度的年月字符串 yyyy-MM
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>年月字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToCompactShortDate(System.DateTime)">
             <summary>
-            转换为紧凑简短的日期字符串
+            转换为紧凑简短的日期字符串 yyMd
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>日期字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToCompactFixedShortDate(System.DateTime)">
             <summary>
-            转换为紧凑简短固定长度的日期字符串
+            转换为紧凑简短固定长度的日期字符串 yyMMdd
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>日期字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToCompactShortYM(System.DateTime)">
             <summary>
-            转换为紧凑简短的年月字符串
+            转换为紧凑简短的年月字符串 yyM
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>年月字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToCompactFixedShortYM(System.DateTime)">
             <summary>
-            转换为紧凑简短固定长度的年月字符串
+            转换为紧凑简短固定长度的年月字符串 yyMM
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>年月字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToCompactShortYM(System.Nullable{System.DateTime})">
             <summary>
-            转换为紧凑简短的年月字符串
+            转换为紧凑简短的年月字符串 yyM
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>年月字符串</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.DateTimeUtil.ToCompactFixedShortYM(System.Nullable{System.DateTime})">
             <summary>
-            转换为紧凑简短固定长度的年月字符串
+            转换为紧凑简短固定长度的年月字符串 yyMM
             </summary>
             <param name="dateTime">日期时间</param>
             <returns>年月字符串</returns>
@@ -6485,6 +6485,14 @@
             <param name="outOfProcessLock">是否跨进程锁</param>
             <returns>文件内容</returns>
         </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ReaderFileStream(System.String,System.Boolean)">
+            <summary>
+            根据文件名读取字节数组
+            </summary>
+            <param name="fileName">文件名</param>
+            <param name="outOfProcessLock">是否跨进程锁</param>
+            <returns>字节数组</returns>
+        </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ReaderStreamToString(System.IO.Stream,System.Boolean)">
             <summary>
             读取流并转换为字符串
@@ -6519,6 +6527,15 @@
             <param name="append">是否追加</param>
             <param name="outOfProcessLock">是否跨进程锁</param>
         </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.WriteFileStream(System.String,System.Byte[],System.Boolean,System.Boolean)">
+            <summary>
+            写入文件流
+            </summary>
+            <param name="fileName">文件名</param>
+            <param name="content">内容字节数组</param>
+            <param name="append">是否追加</param>
+            <param name="outOfProcessLock">是否跨进程锁</param>
+        </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.OperationFile(System.String,System.Action{System.String},System.Boolean)">
             <summary>
             操作文件
@@ -6546,6 +6563,14 @@
             </summary>
             <param name="fileName">文件名</param>
             <param name="content">内容</param>
+            <param name="append">是否追加</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.WriteFileStream(System.String,System.Byte[],System.Boolean)">
+            <summary>
+            写入文件流
+            </summary>
+            <param name="fileName">文件名</param>
+            <param name="content">内容字节数组</param>
             <param name="append">是否追加</param>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.StreamUtil.ConvertBytes``1(``0)">

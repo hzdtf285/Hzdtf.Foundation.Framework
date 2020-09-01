@@ -1,0 +1,59 @@
+﻿<div class="modal-dialog" style="width:70%">
+    <div class="modal-content animated fadeIn">
+        <div class="modal-header">
+            <button triggerclose type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&nbsp;</span><span class="sr-only">关闭</span>
+            </button>
+            <h4 class="modal-title"><span id="preFormTitle"></span>数据字典子项</h4>
+        </div>
+        <div class="tabs-container">
+            <ul class="nav nav-tabs" id="tabPanel">
+                <li class="active">
+                    <a data-toggle="tab" href="#tab-1" tabOptionTitle aria-expanded="true">基本属性</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#tab-2" tabOptionTitle aria-expanded="false">扩展属性</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="tab-1" class="tab-pane active">
+                    <div class="panel-body">
+                        <form class="form-horizontal m-t" id="editForm">
+                            <input type="text" id="id" name="id" style="display:none" value="0" format="int" />
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">文本<font color="red">*</font>：</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" name="text" maxlength="20" placeholder="请输入文本" class="form-control" required="">
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <span id="spanSave">
+                                        <button type="button" id="btnSaveAndAdd" class="btn btn-primary" style="display:none;">保存并添加</button>
+                                        <button type="submit" class="btn btn-primary">保存</button>
+                                        <button type="reset" class="btn btn-primary">重置</button>
+                                    </span>
+                                    <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="tab-2" class="tab-pane">
+                    <div class="panel-body">
+                        <div class="jqGrid_wrapper">
+                            <table id="table_list_expand"></table>
+                            <div id="pager_list_expand"></div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

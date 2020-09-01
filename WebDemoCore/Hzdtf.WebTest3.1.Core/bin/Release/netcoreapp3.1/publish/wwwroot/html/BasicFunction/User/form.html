@@ -1,0 +1,96 @@
+﻿<div class="modal-dialog" style="width:100%">
+    <div class="modal-content animated fadeIn">
+        <div class="modal-header">
+            <button triggerclose type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&nbsp;</span><span class="sr-only">关闭</span>
+            </button>
+            <h4 class="modal-title"><span id="preFormTitle"></span>用户</h4>
+        </div>
+        <form class="form-horizontal m-t" id="editForm">
+            <input type="text" id="id" name="id" style="display:none" value="0" format="int" />
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">登录ID<font color="red">*</font>：</label>
+                    <div class="col-sm-4">
+                        <input type="text" name="loginId" maxlength="20" placeholder="请输入登录ID" class="form-control" required="">
+                    </div>
+                    <label class="col-sm-2 control-label">编码<font color="red">*</font>：</label>
+                    <div class="col-sm-4">
+                        <input type="text" name="code" maxlength="20" placeholder="请输入编码" class="form-control" required="">
+                    </div>
+                </div>
+                <div class="form-group" id="divPassword">
+                    <label class="col-sm-2 control-label">密码<font color="red">*</font>：</label>
+                    <div class="col-sm-4">
+                        <input type="password" id="txtPassword" name="password" maxlength="20" placeholder="请输入密码" class="form-control" required="">
+                    </div>
+                    <label class="col-sm-2 control-label">确认密码<font color="red">*</font>：</label>
+                    <div class="col-sm-4">
+                        <input type="password" name="confirmPassword" equalTo="#txtPassword" maxlength="20" placeholder="请输入确认密码" class="form-control" required="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">名称<font color="red">*</font>：</label>
+                    <div class="col-sm-4">
+                        <input type="text" name="name" maxlength="20" placeholder="请输入名称" class="form-control" required="" />
+                    </div>
+                    <label class="col-sm-2 control-label">性别<font color="red">*</font>：</label>
+                    <div class="col-sm-4">
+                        <div class="radio i-checks">
+                            <input type="radio" id="sex_true" value="true" name="sex" checked format="boolean" />男
+                            <input type="radio" id="sex_false" value="false" name="sex" format="boolean" />女
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">手机：</label>
+                    <div class="col-sm-4">
+                        <input type="text" name="mobile" maxlength="11" placeholder="请输入手机" class="form-control" />
+                    </div>
+                    <label class="col-sm-2 control-label">邮箱：</label>
+                    <div class="col-sm-4">
+                        <input type="email" name="mail" maxlength="50" placeholder="请输入邮箱" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">微信：</label>
+                    <div class="col-sm-4">
+                        <input type="text" name="wechat" maxlength="20" placeholder="请输入微信" class="form-control" />
+                    </div>
+                    <label class="col-sm-2 control-label">QQ：</label>
+                    <div class="col-sm-4">
+                        <input type="text" name="qq" maxlength="20" placeholder="请输入QQ" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">所属角色：</label>
+                    <div class="col-sm-4">
+                        <select class="form-control m-b" name="ownRoles" multiple></select>
+                    </div>
+                    <label class="col-sm-2 control-label">启用<font color="red">*</font>：</label>
+                    <div class="col-sm-4">
+                        <div class="radio i-checks">
+                            <input type="radio" value="true" id="enabled_true" name="enabled" format="boolean" checked />是
+                            <input type="radio" value="false" id="enabled_false" name="enabled" format="boolean" />否
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">备注：</label>
+                    <div class="col-sm-10">
+                        <textarea name="memo" placeholder="请输入备注" maxlength="500" cols="3" class="form-control"></textarea>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <span id="spanSave">
+                        <button type="button" id="btnSaveAndAdd" class="btn btn-primary" style="display:none;">保存并添加</button>
+                        <button type="submit" class="btn btn-primary">保存</button>
+                        <button type="reset" class="btn btn-primary">重置</button>
+                    </span>
+                    <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

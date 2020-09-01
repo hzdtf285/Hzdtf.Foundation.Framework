@@ -1,0 +1,2322 @@
+2020-09-01 13:35:56.2118 WARN eventId:60,Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2020-09-01 13:35:56.2687 WARN eventId:35,No XML encryptor configured. Key {e16d26e6-0597-4e7e-859c-50ef26468029} may be persisted to storage in unencrypted form.
+2020-09-01 13:35:56.5937 INFO eventId:0,Now listening on: http://[::]:80
+2020-09-01 13:35:56.5937 INFO eventId:0,Hosting environment: Production
+2020-09-01 13:35:56.5937 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-09-01 13:35:56.5948 INFO eventId:0,Content root path: /app
+2020-09-01 13:36:10.4564 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-09-01 13:36:10.5277 WARN eventId:ErrorUnprotectingCookie,Error unprotecting the session cookie.
+2020-09-01 14:32:30.9422 WARN eventId:60,Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2020-09-01 14:32:31.0583 WARN eventId:35,No XML encryptor configured. Key {47dd1fc5-2da7-48f5-bba9-5ba9f43d2614} may be persisted to storage in unencrypted form.
+2020-09-01 14:32:31.5770 INFO eventId:0,Hosting environment: Production
+2020-09-01 14:32:31.5770 INFO eventId:0,Content root path: /app
+2020-09-01 14:32:31.5777 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-09-01 14:32:31.5770 INFO eventId:0,Now listening on: http://[::]:80
+2020-09-01 14:32:42.4368 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-09-01 14:32:46.0342 INFO 登录ID:system,用户编号:1000,名称:系统管理员 成功授权
+2020-09-01 14:32:46.0987 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:1308ms
+2020-09-01 14:32:46.1017 INFO Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.UserValiService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.BasicUserInfo] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:1316ms
+2020-09-01 14:32:46.2261 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Void BeforeFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo], Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  {
+    "code": 0
+  },
+  1,
+  "47033ee6615e4b6184c014eef66039e6",
+  null
+],timed:0ms
+2020-09-01 14:32:46.2573 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Void AfterFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo], Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  {
+    "data": {
+      "sex": true,
+      "systemHide": false,
+      "loginId": "system",
+      "password": "AC59075B964B0715",
+      "enabled": true,
+      "systemInlay": true,
+      "code": "1000",
+      "name": "系统管理员",
+      "createrId": 0,
+      "creater": "测试用户",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-17T15:28:12",
+      "modifyTime": "2019-02-08T08:15:28",
+      "id": 1
+    },
+    "code": 0
+  },
+  1,
+  "47033ee6615e4b6184c014eef66039e6",
+  null
+],timed:0ms
+2020-09-01 14:32:46.2573 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo] Find(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "47033ee6615e4b6184c014eef66039e6",
+  null
+],ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "creater": "测试用户",
+    "modifierId": 1,
+    "modifier": "系统管理员",
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0
+},timed:32ms
+2020-09-01 14:32:46.2759 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "47033ee6615e4b6184c014eef66039e6",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:18ms
+2020-09-01 14:32:46.3748 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.Expand.User.UserMenuInfo] CanAccessMenus(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  null,
+  null
+],ReturnValue:{
+  "data": {
+    "menus": [
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-01T14:32:46.3303956+00:00",
+            "modifyTime": "2020-09-01T14:32:46.3303969+00:00",
+            "id": 1
+          }
+        ],
+        "children": [
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:32:46.3309545+00:00",
+                "modifyTime": "2020-09-01T14:32:46.3309547+00:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Audit",
+                "name": "审核",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:32:46.3310222+00:00",
+                "modifyTime": "2020-09-01T14:32:46.3310223+00:00",
+                "id": 13
+              }
+            ],
+            "children": [],
+            "code": "MyWaitFlow",
+            "link": "/html/FlowHandle/MyWaitFlow/page.html",
+            "name": "我的待办",
+            "parentId": 8,
+            "sort": 1,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:03:18",
+            "modifyTime": "2019-03-25T00:03:23",
+            "id": 9
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:32:46.3310825+00:00",
+                "modifyTime": "2020-09-01T14:32:46.3310827+00:00",
+                "id": 1
+              }
+            ],
+            "children": [],
+            "code": "MyAuditedFlow",
+            "link": "/html/FlowHandle/MyAuditedFlow/page.html",
+            "name": "我已审核",
+            "parentId": 8,
+            "sort": 2,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:04:48",
+            "modifyTime": "2019-03-25T00:04:53",
+            "id": 10
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:32:46.3310924+00:00",
+                "modifyTime": "2020-09-01T14:32:46.3310925+00:00",
+                "id": 1
+              }
+            ],
+            "children": [],
+            "code": "MyApplyFlow",
+            "link": "/html/FlowHandle/MyApplyFlow/page.html",
+            "name": "我的申请",
+            "parentId": 8,
+            "sort": 3,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:05:46",
+            "modifyTime": "2019-03-25T00:05:50",
+            "id": 11
+          }
+        ],
+        "code": "FlowHandle",
+        "icon": "fa fa-envelope",
+        "name": "流程处理",
+        "parentId": 0,
+        "sort": 0,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-03-25T00:02:43",
+        "modifyTime": "2019-03-25T00:02:48",
+        "id": 8
+      },
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Save",
+            "name": "保存",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-01T14:32:46.3311017+00:00",
+            "modifyTime": "2020-09-01T14:32:46.3311018+00:00",
+            "id": 6
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Apply",
+            "name": "申请",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-01T14:32:46.3311165+00:00",
+            "modifyTime": "2020-09-01T14:32:46.3311166+00:00",
+            "id": 11
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-01T14:32:46.3311253+00:00",
+            "modifyTime": "2020-09-01T14:32:46.3311254+00:00",
+            "id": 1
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Edit",
+            "name": "编辑",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-01T14:32:46.3311336+00:00",
+            "modifyTime": "2020-09-01T14:32:46.3311337+00:00",
+            "id": 3
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Remove",
+            "name": "移除",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-01T14:32:46.3311455+00:00",
+            "modifyTime": "2020-09-01T14:32:46.3311457+00:00",
+            "id": 4
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Undo",
+            "name": "撤消",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-01T14:32:46.3311543+00:00",
+            "modifyTime": "2020-09-01T14:32:46.3311544+00:00",
+            "id": 14
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "ForceRemove",
+            "name": "强制删除",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-01T14:32:46.3311627+00:00",
+            "modifyTime": "2020-09-01T14:32:46.3311628+00:00",
+            "id": 16
+          }
+        ],
+        "children": [],
+        "code": "TestForm",
+        "icon": "fa fa-cutlery",
+        "link": "/html/Demo/Form/page.html",
+        "name": "测试表单",
+        "parentId": 0,
+        "sort": 1,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-08-06T06:38:31",
+        "modifyTime": "2019-08-06T06:38:40",
+        "id": 7
+      },
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-01T14:32:46.3311857+00:00",
+            "modifyTime": "2020-09-01T14:32:46.3311858+00:00",
+            "id": 1
+          }
+        ],
+        "children": [
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:32:46.3311944+00:00",
+                "modifyTime": "2020-09-01T14:32:46.3311945+00:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:32:46.331208+00:00",
+                "modifyTime": "2020-09-01T14:32:46.3312082+00:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:32:46.331217+00:00",
+                "modifyTime": "2020-09-01T14:32:46.3312171+00:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:32:46.3312254+00:00",
+                "modifyTime": "2020-09-01T14:32:46.3312255+00:00",
+                "id": 4
+              }
+            ],
+            "children": [],
+            "code": "Role",
+            "link": "/html/BasicFunction/Role/page.html",
+            "name": "角色管理",
+            "parentId": 1,
+            "sort": 1,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-17T15:39:39",
+            "modifyTime": "2019-01-17T15:39:45",
+            "id": 2
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:32:46.3312373+00:00",
+                "modifyTime": "2020-09-01T14:32:46.3312374+00:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:32:46.331246+00:00",
+                "modifyTime": "2020-09-01T14:32:46.3312461+00:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:32:46.3312545+00:00",
+                "modifyTime": "2020-09-01T14:32:46.3312546+00:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:32:46.331267+00:00",
+                "modifyTime": "2020-09-01T14:32:46.3312672+00:00",
+                "id": 4
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "ResetPassword",
+                "name": "重置密码",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:32:46.3312759+00:00",
+                "modifyTime": "2020-09-01T14:32:46.331276+00:00",
+                "id": 5
+              }
+            ],
+            "children": [],
+            "code": "User",
+            "link": "/html/BasicFunction/User/page.html",
+            "name": "用户管理",
+            "parentId": 1,
+            "sort": 2,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-17T15:40:19",
+            "modifyTime": "2019-01-17T15:40:28",
+            "id": 3
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:32:46.3312845+00:00",
+                "modifyTime": "2020-09-01T14:32:46.3312847+00:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Save",
+                "name": "保存",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:32:46.3312963+00:00",
+                "modifyTime": "2020-09-01T14:32:46.3312965+00:00",
+                "id": 6
+              }
+            ],
+            "children": [],
+            "code": "RolePermission",
+            "link": "/html/BasicFunction/PermissionSet/role.html",
+            "name": "角色权限",
+            "parentId": 1,
+            "sort": 3,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-28T11:35:04",
+            "modifyTime": "2019-01-28T11:35:10",
+            "id": 4
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:32:46.3313051+00:00",
+                "modifyTime": "2020-09-01T14:32:46.3313052+00:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:32:46.3313136+00:00",
+                "modifyTime": "2020-09-01T14:32:46.3313137+00:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:32:46.3313253+00:00",
+                "modifyTime": "2020-09-01T14:32:46.3313255+00:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:32:46.3313342+00:00",
+                "modifyTime": "2020-09-01T14:32:46.3313343+00:00",
+                "id": 4
+              }
+            ],
+            "children": [],
+            "code": "DataDictionary",
+            "link": "/html/BasicFunction/DataDictionary/page.html",
+            "name": "数据字典",
+            "parentId": 1,
+            "sort": 4,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-28T17:33:14",
+            "modifyTime": "2019-01-28T17:33:19",
+            "id": 5
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:32:46.3313427+00:00",
+                "modifyTime": "2020-09-01T14:32:46.3313428+00:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:32:46.3313544+00:00",
+                "modifyTime": "2020-09-01T14:32:46.3313545+00:00",
+                "id": 4
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Upload",
+                "name": "上传",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:32:46.3313629+00:00",
+                "modifyTime": "2020-09-01T14:32:46.331363+00:00",
+                "id": 7
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "DownLoad",
+                "name": "下载",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:32:46.3313755+00:00",
+                "modifyTime": "2020-09-01T14:32:46.3313757+00:00",
+                "id": 8
+              }
+            ],
+            "children": [],
+            "code": "Attachment",
+            "link": "/html/BasicFunction/Attachment/page.html",
+            "name": "附件",
+            "parentId": 1,
+            "sort": 5,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-02T18:41:11",
+            "modifyTime": "2019-03-02T18:41:19",
+            "id": 6
+          }
+        ],
+        "code": "BasicFunction",
+        "icon": "fa fa-cutlery",
+        "name": "基础功能",
+        "parentId": 0,
+        "sort": 1,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-17T15:35:43",
+        "modifyTime": "2019-01-17T15:35:46",
+        "id": 1
+      }
+    ],
+    "ownRoles": [
+      {
+        "memo": "系统最高角色",
+        "systemHide": false,
+        "systemInlay": true,
+        "code": "100",
+        "name": "系统管理组",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-25T20:56:27",
+        "modifyTime": "2019-01-27T23:31:54",
+        "id": 1
+      }
+    ],
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "creater": "测试用户",
+    "modifierId": 1,
+    "modifier": "系统管理员",
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0
+},timed:156ms
+2020-09-01 14:32:54.7275 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "9ea8ffb8c93141b1afd5caf376a0b2a8",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:63ms
+2020-09-01 14:32:54.7895 ERROR Unknown column 'm.id' in 'on clause'
+2020-09-01 14:32:54.9145 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.FunctionInfo]] QueryCurrUserOwnFunctionsByMenuCode(System.String, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  "MyWaitFlow",
+  null,
+  null
+],ReturnValue:{
+  "Ex": {
+    "ClassName": "System.Exception",
+    "Message": "Unknown column 'm.id' in 'on clause'",
+    "Data": null,
+    "InnerException": {
+      "ClassName": "System.Exception",
+      "Message": "Unknown column 'm.id' in 'on clause'",
+      "Data": null,
+      "InnerException": {
+        "ClassName": "MySql.Data.MySqlClient.MySqlException",
+        "Message": "Unknown column 'm.id' in 'on clause'",
+        "Data": {
+          "Server Error Code": 1054
+        },
+        "InnerException": null,
+        "HelpURL": null,
+        "StackTraceString": "   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()\n   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)\n   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)\n   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)\n   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()\n   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)\n   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)\n   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)\n   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1051\n   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1079\n   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)\n   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)\n   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 721\n   at Hzdtf.BasicFunction.MySql.Standard.RoleMenuFunctionPersistence.<>c__DisplayClass9_0.<SelectFunctionsByMenuCodeAndRoleIds>b__0(String connId, IDbConnection dbConn) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Expand\\RoleMenuFunction\\RoleMenuFunctionPersistenceEx.cs:line 111\n   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.BrainpowerExecute(String connectionId, IPersistenceConnection persistenceConnection, Action`2 action, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Management\\DbConnectionManager.cs:line 94",
+        "RemoteStackTraceString": null,
+        "RemoteStackIndex": 0,
+        "ExceptionMethod": null,
+        "HResult": -2147467259,
+        "Source": "MySql.Data",
+        "WatsonBuckets": null
+      },
+      "HelpURL": null,
+      "StackTraceString": "   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.BrainpowerExecute(String connectionId, IPersistenceConnection persistenceConnection, Action`2 action, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Management\\DbConnectionManager.cs:line 98\n   at Hzdtf.BasicFunction.MySql.Standard.RoleMenuFunctionPersistence.SelectFunctionsByMenuCodeAndRoleIds(String menuCode, Int32[] roleIds, String connectionId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Expand\\RoleMenuFunction\\RoleMenuFunctionPersistenceEx.cs:line 114\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_1`1.<ExecReturnFuncAndConnectionId>b__1(String connId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1404\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1445",
+      "RemoteStackTraceString": null,
+      "RemoteStackIndex": 0,
+      "ExceptionMethod": null,
+      "HResult": -2146233088,
+      "Source": "Hzdtf.Persistence.Contract.Standard",
+      "WatsonBuckets": null
+    },
+    "HelpURL": null,
+    "StackTraceString": "   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1449\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_0`1.<ExecReturnFuncAndConnectionId>b__0(ReturnInfo`1 reInfo) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1407\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFunc[OutT](Func`2 func, ReturnInfo`1 returnInfo) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1425\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFuncAndConnectionId[OutT](Func`3 func, ReturnInfo`1 returnInfo, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1399\n   at Hzdtf.BasicFunction.Service.Impl.Standard.UserService.QueryUserOwnFunctionsByMenuCode(Int32 userId, String menuCode, String connectionId, BasicUserInfo currUser) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Expand\\User\\UserServiceEx.cs:line 267\n   at Castle.Proxies.UserServiceProxy.QueryUserOwnFunctionsByMenuCode_callback(Int32 userId, String menuCode, String connectionId, BasicUserInfo currUser)\n   at Castle.Proxies.Invocations.UserService_QueryUserOwnFunctionsByMenuCode.InvokeMethodOnTarget()\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\ProcTrackLogInterceptor.cs:line 94\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.TryExceptionInterceptor.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\TryExceptionInterceptor.cs:line 76",
+    "RemoteStackTraceString": null,
+    "RemoteStackIndex": 0,
+    "ExceptionMethod": null,
+    "HResult": -2146233088,
+    "Source": "Hzdtf.Service.Impl.Standard",
+    "WatsonBuckets": null
+  },
+  "code": -1,
+  "msg": "操作异常，请联系管理员",
+  "desc": "Unknown column 'm.id' in 'on clause'"
+},timed:257ms
+2020-09-01 14:32:56.7536 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "8a1aa57016cf48b989384c9082b7d388",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:19ms
+2020-09-01 14:32:56.7565 ERROR Unknown column 'm.id' in 'on clause'
+2020-09-01 14:32:56.7582 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.FunctionInfo]] QueryCurrUserOwnFunctionsByMenuCode(System.String, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  "MyAuditedFlow",
+  null,
+  null
+],ReturnValue:{
+  "Ex": {
+    "ClassName": "System.Exception",
+    "Message": "Unknown column 'm.id' in 'on clause'",
+    "Data": null,
+    "InnerException": {
+      "ClassName": "System.Exception",
+      "Message": "Unknown column 'm.id' in 'on clause'",
+      "Data": null,
+      "InnerException": {
+        "ClassName": "MySql.Data.MySqlClient.MySqlException",
+        "Message": "Unknown column 'm.id' in 'on clause'",
+        "Data": {
+          "Server Error Code": 1054
+        },
+        "InnerException": null,
+        "HelpURL": null,
+        "StackTraceString": "   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()\n   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)\n   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)\n   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)\n   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()\n   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)\n   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)\n   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)\n   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1051\n   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1079\n   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)\n   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)\n   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 721\n   at Hzdtf.BasicFunction.MySql.Standard.RoleMenuFunctionPersistence.<>c__DisplayClass9_0.<SelectFunctionsByMenuCodeAndRoleIds>b__0(String connId, IDbConnection dbConn) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Expand\\RoleMenuFunction\\RoleMenuFunctionPersistenceEx.cs:line 111\n   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.BrainpowerExecute(String connectionId, IPersistenceConnection persistenceConnection, Action`2 action, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Management\\DbConnectionManager.cs:line 94",
+        "RemoteStackTraceString": null,
+        "RemoteStackIndex": 0,
+        "ExceptionMethod": null,
+        "HResult": -2147467259,
+        "Source": "MySql.Data",
+        "WatsonBuckets": null
+      },
+      "HelpURL": null,
+      "StackTraceString": "   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.BrainpowerExecute(String connectionId, IPersistenceConnection persistenceConnection, Action`2 action, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Management\\DbConnectionManager.cs:line 98\n   at Hzdtf.BasicFunction.MySql.Standard.RoleMenuFunctionPersistence.SelectFunctionsByMenuCodeAndRoleIds(String menuCode, Int32[] roleIds, String connectionId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Expand\\RoleMenuFunction\\RoleMenuFunctionPersistenceEx.cs:line 114\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_1`1.<ExecReturnFuncAndConnectionId>b__1(String connId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1404\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1445",
+      "RemoteStackTraceString": null,
+      "RemoteStackIndex": 0,
+      "ExceptionMethod": null,
+      "HResult": -2146233088,
+      "Source": "Hzdtf.Persistence.Contract.Standard",
+      "WatsonBuckets": null
+    },
+    "HelpURL": null,
+    "StackTraceString": "   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1449\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_0`1.<ExecReturnFuncAndConnectionId>b__0(ReturnInfo`1 reInfo) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1407\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFunc[OutT](Func`2 func, ReturnInfo`1 returnInfo) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1425\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFuncAndConnectionId[OutT](Func`3 func, ReturnInfo`1 returnInfo, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1399\n   at Hzdtf.BasicFunction.Service.Impl.Standard.UserService.QueryUserOwnFunctionsByMenuCode(Int32 userId, String menuCode, String connectionId, BasicUserInfo currUser) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Expand\\User\\UserServiceEx.cs:line 267\n   at Castle.Proxies.UserServiceProxy.QueryUserOwnFunctionsByMenuCode_callback(Int32 userId, String menuCode, String connectionId, BasicUserInfo currUser)\n   at Castle.Proxies.Invocations.UserService_QueryUserOwnFunctionsByMenuCode.InvokeMethodOnTarget()\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\ProcTrackLogInterceptor.cs:line 94\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.TryExceptionInterceptor.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\TryExceptionInterceptor.cs:line 76",
+    "RemoteStackTraceString": null,
+    "RemoteStackIndex": 0,
+    "ExceptionMethod": null,
+    "HResult": -2146233088,
+    "Source": "Hzdtf.Service.Impl.Standard",
+    "WatsonBuckets": null
+  },
+  "code": -1,
+  "msg": "操作异常，请联系管理员",
+  "desc": "Unknown column 'm.id' in 'on clause'"
+},timed:30ms
+2020-09-01 14:32:57.7744 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "f0717cdb83c447e0a0482d73aeccdfe2",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:2ms
+2020-09-01 14:32:57.7756 ERROR Unknown column 'm.id' in 'on clause'
+2020-09-01 14:32:57.7778 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.FunctionInfo]] QueryCurrUserOwnFunctionsByMenuCode(System.String, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  "TestForm",
+  null,
+  null
+],ReturnValue:{
+  "Ex": {
+    "ClassName": "System.Exception",
+    "Message": "Unknown column 'm.id' in 'on clause'",
+    "Data": null,
+    "InnerException": {
+      "ClassName": "System.Exception",
+      "Message": "Unknown column 'm.id' in 'on clause'",
+      "Data": null,
+      "InnerException": {
+        "ClassName": "MySql.Data.MySqlClient.MySqlException",
+        "Message": "Unknown column 'm.id' in 'on clause'",
+        "Data": {
+          "Server Error Code": 1054
+        },
+        "InnerException": null,
+        "HelpURL": null,
+        "StackTraceString": "   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()\n   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)\n   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)\n   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)\n   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()\n   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)\n   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)\n   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)\n   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1051\n   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1079\n   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)\n   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)\n   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 721\n   at Hzdtf.BasicFunction.MySql.Standard.RoleMenuFunctionPersistence.<>c__DisplayClass9_0.<SelectFunctionsByMenuCodeAndRoleIds>b__0(String connId, IDbConnection dbConn) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Expand\\RoleMenuFunction\\RoleMenuFunctionPersistenceEx.cs:line 111\n   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.BrainpowerExecute(String connectionId, IPersistenceConnection persistenceConnection, Action`2 action, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Management\\DbConnectionManager.cs:line 94",
+        "RemoteStackTraceString": null,
+        "RemoteStackIndex": 0,
+        "ExceptionMethod": null,
+        "HResult": -2147467259,
+        "Source": "MySql.Data",
+        "WatsonBuckets": null
+      },
+      "HelpURL": null,
+      "StackTraceString": "   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.BrainpowerExecute(String connectionId, IPersistenceConnection persistenceConnection, Action`2 action, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Management\\DbConnectionManager.cs:line 98\n   at Hzdtf.BasicFunction.MySql.Standard.RoleMenuFunctionPersistence.SelectFunctionsByMenuCodeAndRoleIds(String menuCode, Int32[] roleIds, String connectionId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Expand\\RoleMenuFunction\\RoleMenuFunctionPersistenceEx.cs:line 114\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_1`1.<ExecReturnFuncAndConnectionId>b__1(String connId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1404\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1445",
+      "RemoteStackTraceString": null,
+      "RemoteStackIndex": 0,
+      "ExceptionMethod": null,
+      "HResult": -2146233088,
+      "Source": "Hzdtf.Persistence.Contract.Standard",
+      "WatsonBuckets": null
+    },
+    "HelpURL": null,
+    "StackTraceString": "   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1449\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_0`1.<ExecReturnFuncAndConnectionId>b__0(ReturnInfo`1 reInfo) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1407\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFunc[OutT](Func`2 func, ReturnInfo`1 returnInfo) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1425\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFuncAndConnectionId[OutT](Func`3 func, ReturnInfo`1 returnInfo, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1399\n   at Hzdtf.BasicFunction.Service.Impl.Standard.UserService.QueryUserOwnFunctionsByMenuCode(Int32 userId, String menuCode, String connectionId, BasicUserInfo currUser) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Expand\\User\\UserServiceEx.cs:line 267\n   at Castle.Proxies.UserServiceProxy.QueryUserOwnFunctionsByMenuCode_callback(Int32 userId, String menuCode, String connectionId, BasicUserInfo currUser)\n   at Castle.Proxies.Invocations.UserService_QueryUserOwnFunctionsByMenuCode.InvokeMethodOnTarget()\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\ProcTrackLogInterceptor.cs:line 94\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.TryExceptionInterceptor.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\TryExceptionInterceptor.cs:line 76",
+    "RemoteStackTraceString": null,
+    "RemoteStackIndex": 0,
+    "ExceptionMethod": null,
+    "HResult": -2146233088,
+    "Source": "Hzdtf.Service.Impl.Standard",
+    "WatsonBuckets": null
+  },
+  "code": -1,
+  "msg": "操作异常，请联系管理员",
+  "desc": "Unknown column 'm.id' in 'on clause'"
+},timed:5ms
+2020-09-01 14:32:59.7048 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "ca4cef4e6a01489aa11d1d9824453027",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:2ms
+2020-09-01 14:32:59.7058 ERROR Unknown column 'm.id' in 'on clause'
+2020-09-01 14:32:59.7067 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.FunctionInfo]] QueryCurrUserOwnFunctionsByMenuCode(System.String, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  "Role",
+  null,
+  null
+],ReturnValue:{
+  "Ex": {
+    "ClassName": "System.Exception",
+    "Message": "Unknown column 'm.id' in 'on clause'",
+    "Data": null,
+    "InnerException": {
+      "ClassName": "System.Exception",
+      "Message": "Unknown column 'm.id' in 'on clause'",
+      "Data": null,
+      "InnerException": {
+        "ClassName": "MySql.Data.MySqlClient.MySqlException",
+        "Message": "Unknown column 'm.id' in 'on clause'",
+        "Data": {
+          "Server Error Code": 1054
+        },
+        "InnerException": null,
+        "HelpURL": null,
+        "StackTraceString": "   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()\n   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)\n   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)\n   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)\n   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()\n   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)\n   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)\n   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)\n   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1051\n   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1079\n   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)\n   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)\n   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 721\n   at Hzdtf.BasicFunction.MySql.Standard.RoleMenuFunctionPersistence.<>c__DisplayClass9_0.<SelectFunctionsByMenuCodeAndRoleIds>b__0(String connId, IDbConnection dbConn) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Expand\\RoleMenuFunction\\RoleMenuFunctionPersistenceEx.cs:line 111\n   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.BrainpowerExecute(String connectionId, IPersistenceConnection persistenceConnection, Action`2 action, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Management\\DbConnectionManager.cs:line 94",
+        "RemoteStackTraceString": null,
+        "RemoteStackIndex": 0,
+        "ExceptionMethod": null,
+        "HResult": -2147467259,
+        "Source": "MySql.Data",
+        "WatsonBuckets": null
+      },
+      "HelpURL": null,
+      "StackTraceString": "   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.BrainpowerExecute(String connectionId, IPersistenceConnection persistenceConnection, Action`2 action, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Management\\DbConnectionManager.cs:line 98\n   at Hzdtf.BasicFunction.MySql.Standard.RoleMenuFunctionPersistence.SelectFunctionsByMenuCodeAndRoleIds(String menuCode, Int32[] roleIds, String connectionId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Expand\\RoleMenuFunction\\RoleMenuFunctionPersistenceEx.cs:line 114\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_1`1.<ExecReturnFuncAndConnectionId>b__1(String connId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1404\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1445",
+      "RemoteStackTraceString": null,
+      "RemoteStackIndex": 0,
+      "ExceptionMethod": null,
+      "HResult": -2146233088,
+      "Source": "Hzdtf.Persistence.Contract.Standard",
+      "WatsonBuckets": null
+    },
+    "HelpURL": null,
+    "StackTraceString": "   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1449\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_0`1.<ExecReturnFuncAndConnectionId>b__0(ReturnInfo`1 reInfo) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1407\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFunc[OutT](Func`2 func, ReturnInfo`1 returnInfo) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1425\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFuncAndConnectionId[OutT](Func`3 func, ReturnInfo`1 returnInfo, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1399\n   at Hzdtf.BasicFunction.Service.Impl.Standard.UserService.QueryUserOwnFunctionsByMenuCode(Int32 userId, String menuCode, String connectionId, BasicUserInfo currUser) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Expand\\User\\UserServiceEx.cs:line 267\n   at Castle.Proxies.UserServiceProxy.QueryUserOwnFunctionsByMenuCode_callback(Int32 userId, String menuCode, String connectionId, BasicUserInfo currUser)\n   at Castle.Proxies.Invocations.UserService_QueryUserOwnFunctionsByMenuCode.InvokeMethodOnTarget()\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\ProcTrackLogInterceptor.cs:line 94\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.TryExceptionInterceptor.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\TryExceptionInterceptor.cs:line 76",
+    "RemoteStackTraceString": null,
+    "RemoteStackIndex": 0,
+    "ExceptionMethod": null,
+    "HResult": -2146233088,
+    "Source": "Hzdtf.Service.Impl.Standard",
+    "WatsonBuckets": null
+  },
+  "code": -1,
+  "msg": "操作异常，请联系管理员",
+  "desc": "Unknown column 'm.id' in 'on clause'"
+},timed:4ms
+2020-09-01 14:33:01.6126 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "a2ccf38b7a43481b99e441c1d68fa30e",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:21ms
+2020-09-01 14:33:01.6256 ERROR Unknown column 'm.id' in 'on clause'
+2020-09-01 14:33:01.6433 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.FunctionInfo]] QueryCurrUserOwnFunctionsByMenuCode(System.String, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  "User",
+  null,
+  null
+],ReturnValue:{
+  "Ex": {
+    "ClassName": "System.Exception",
+    "Message": "Unknown column 'm.id' in 'on clause'",
+    "Data": null,
+    "InnerException": {
+      "ClassName": "System.Exception",
+      "Message": "Unknown column 'm.id' in 'on clause'",
+      "Data": null,
+      "InnerException": {
+        "ClassName": "MySql.Data.MySqlClient.MySqlException",
+        "Message": "Unknown column 'm.id' in 'on clause'",
+        "Data": {
+          "Server Error Code": 1054
+        },
+        "InnerException": null,
+        "HelpURL": null,
+        "StackTraceString": "   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()\n   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)\n   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)\n   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)\n   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()\n   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)\n   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)\n   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)\n   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1051\n   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1079\n   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)\n   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)\n   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 721\n   at Hzdtf.BasicFunction.MySql.Standard.RoleMenuFunctionPersistence.<>c__DisplayClass9_0.<SelectFunctionsByMenuCodeAndRoleIds>b__0(String connId, IDbConnection dbConn) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Expand\\RoleMenuFunction\\RoleMenuFunctionPersistenceEx.cs:line 111\n   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.BrainpowerExecute(String connectionId, IPersistenceConnection persistenceConnection, Action`2 action, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Management\\DbConnectionManager.cs:line 94",
+        "RemoteStackTraceString": null,
+        "RemoteStackIndex": 0,
+        "ExceptionMethod": null,
+        "HResult": -2147467259,
+        "Source": "MySql.Data",
+        "WatsonBuckets": null
+      },
+      "HelpURL": null,
+      "StackTraceString": "   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.BrainpowerExecute(String connectionId, IPersistenceConnection persistenceConnection, Action`2 action, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Management\\DbConnectionManager.cs:line 98\n   at Hzdtf.BasicFunction.MySql.Standard.RoleMenuFunctionPersistence.SelectFunctionsByMenuCodeAndRoleIds(String menuCode, Int32[] roleIds, String connectionId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Expand\\RoleMenuFunction\\RoleMenuFunctionPersistenceEx.cs:line 114\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_1`1.<ExecReturnFuncAndConnectionId>b__1(String connId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1404\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1445",
+      "RemoteStackTraceString": null,
+      "RemoteStackIndex": 0,
+      "ExceptionMethod": null,
+      "HResult": -2146233088,
+      "Source": "Hzdtf.Persistence.Contract.Standard",
+      "WatsonBuckets": null
+    },
+    "HelpURL": null,
+    "StackTraceString": "   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1449\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_0`1.<ExecReturnFuncAndConnectionId>b__0(ReturnInfo`1 reInfo) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1407\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFunc[OutT](Func`2 func, ReturnInfo`1 returnInfo) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1425\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFuncAndConnectionId[OutT](Func`3 func, ReturnInfo`1 returnInfo, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1399\n   at Hzdtf.BasicFunction.Service.Impl.Standard.UserService.QueryUserOwnFunctionsByMenuCode(Int32 userId, String menuCode, String connectionId, BasicUserInfo currUser) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Expand\\User\\UserServiceEx.cs:line 267\n   at Castle.Proxies.UserServiceProxy.QueryUserOwnFunctionsByMenuCode_callback(Int32 userId, String menuCode, String connectionId, BasicUserInfo currUser)\n   at Castle.Proxies.Invocations.UserService_QueryUserOwnFunctionsByMenuCode.InvokeMethodOnTarget()\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\ProcTrackLogInterceptor.cs:line 94\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.TryExceptionInterceptor.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\TryExceptionInterceptor.cs:line 76",
+    "RemoteStackTraceString": null,
+    "RemoteStackIndex": 0,
+    "ExceptionMethod": null,
+    "HResult": -2146233088,
+    "Source": "Hzdtf.Service.Impl.Standard",
+    "WatsonBuckets": null
+  },
+  "code": -1,
+  "msg": "操作异常，请联系管理员",
+  "desc": "Unknown column 'm.id' in 'on clause'"
+},timed:56ms
+2020-09-01 14:33:02.6980 ERROR Unknown column 'm.id' in 'on clause'
+2020-09-01 14:33:02.6980 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "7d7a1d8c53ff4a20afd1e8eb382d4687",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:9ms
+2020-09-01 14:33:02.7083 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.FunctionInfo]] QueryCurrUserOwnFunctionsByMenuCode(System.String, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  "RolePermission",
+  null,
+  null
+],ReturnValue:{
+  "Ex": {
+    "ClassName": "System.Exception",
+    "Message": "Unknown column 'm.id' in 'on clause'",
+    "Data": null,
+    "InnerException": {
+      "ClassName": "System.Exception",
+      "Message": "Unknown column 'm.id' in 'on clause'",
+      "Data": null,
+      "InnerException": {
+        "ClassName": "MySql.Data.MySqlClient.MySqlException",
+        "Message": "Unknown column 'm.id' in 'on clause'",
+        "Data": {
+          "Server Error Code": 1054
+        },
+        "InnerException": null,
+        "HelpURL": null,
+        "StackTraceString": "   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()\n   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)\n   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)\n   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)\n   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()\n   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)\n   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)\n   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)\n   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1051\n   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1079\n   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)\n   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)\n   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 721\n   at Hzdtf.BasicFunction.MySql.Standard.RoleMenuFunctionPersistence.<>c__DisplayClass9_0.<SelectFunctionsByMenuCodeAndRoleIds>b__0(String connId, IDbConnection dbConn) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Expand\\RoleMenuFunction\\RoleMenuFunctionPersistenceEx.cs:line 111\n   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.BrainpowerExecute(String connectionId, IPersistenceConnection persistenceConnection, Action`2 action, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Management\\DbConnectionManager.cs:line 94",
+        "RemoteStackTraceString": null,
+        "RemoteStackIndex": 0,
+        "ExceptionMethod": null,
+        "HResult": -2147467259,
+        "Source": "MySql.Data",
+        "WatsonBuckets": null
+      },
+      "HelpURL": null,
+      "StackTraceString": "   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.BrainpowerExecute(String connectionId, IPersistenceConnection persistenceConnection, Action`2 action, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Management\\DbConnectionManager.cs:line 98\n   at Hzdtf.BasicFunction.MySql.Standard.RoleMenuFunctionPersistence.SelectFunctionsByMenuCodeAndRoleIds(String menuCode, Int32[] roleIds, String connectionId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Expand\\RoleMenuFunction\\RoleMenuFunctionPersistenceEx.cs:line 114\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_1`1.<ExecReturnFuncAndConnectionId>b__1(String connId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1404\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1445",
+      "RemoteStackTraceString": null,
+      "RemoteStackIndex": 0,
+      "ExceptionMethod": null,
+      "HResult": -2146233088,
+      "Source": "Hzdtf.Persistence.Contract.Standard",
+      "WatsonBuckets": null
+    },
+    "HelpURL": null,
+    "StackTraceString": "   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1449\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_0`1.<ExecReturnFuncAndConnectionId>b__0(ReturnInfo`1 reInfo) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1407\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFunc[OutT](Func`2 func, ReturnInfo`1 returnInfo) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1425\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFuncAndConnectionId[OutT](Func`3 func, ReturnInfo`1 returnInfo, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1399\n   at Hzdtf.BasicFunction.Service.Impl.Standard.UserService.QueryUserOwnFunctionsByMenuCode(Int32 userId, String menuCode, String connectionId, BasicUserInfo currUser) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Expand\\User\\UserServiceEx.cs:line 267\n   at Castle.Proxies.UserServiceProxy.QueryUserOwnFunctionsByMenuCode_callback(Int32 userId, String menuCode, String connectionId, BasicUserInfo currUser)\n   at Castle.Proxies.Invocations.UserService_QueryUserOwnFunctionsByMenuCode.InvokeMethodOnTarget()\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\ProcTrackLogInterceptor.cs:line 94\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.TryExceptionInterceptor.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\TryExceptionInterceptor.cs:line 76",
+    "RemoteStackTraceString": null,
+    "RemoteStackIndex": 0,
+    "ExceptionMethod": null,
+    "HResult": -2146233088,
+    "Source": "Hzdtf.Service.Impl.Standard",
+    "WatsonBuckets": null
+  },
+  "code": -1,
+  "msg": "操作异常，请联系管理员",
+  "desc": "Unknown column 'm.id' in 'on clause'"
+},timed:24ms
+2020-09-01 14:33:02.8818 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "1daff5442e984a269a03d13c3ebebca9",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:191ms
+2020-09-01 14:33:02.9307 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Boolean] IsPermission(Int32, System.String, System.String[], System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "RolePermission",
+  [
+    "Query"
+  ],
+  null,
+  null
+],ReturnValue:{
+  "data": true,
+  "code": 0
+},timed:245ms
+2020-09-01 14:33:02.9307 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Boolean] IsCurrUserPermission(System.String, System.String[], System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  "RolePermission",
+  [
+    "Query"
+  ],
+  null,
+  null
+],ReturnValue:{
+  "data": true,
+  "code": 0,
+  "msg": "操作成功"
+},timed:246ms
+2020-09-01 14:33:02.9631 INFO Hzdtf.BasicFunction.Service.Impl.Standard.MenuService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.Expand.Menu.MenuTreeInfo]] QueryMenuTrees(System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  null,
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "menuFunctionId": 0,
+      "code": "FlowHandle",
+      "text": "流程处理",
+      "type": 1,
+      "children": [
+        {
+          "menuFunctionId": 26,
+          "code": "Query",
+          "text": "查询",
+          "type": 2,
+          "children": [],
+          "id": 1
+        },
+        {
+          "menuFunctionId": 0,
+          "code": "MyWaitFlow",
+          "text": "我的待办",
+          "type": 1,
+          "children": [
+            {
+              "menuFunctionId": 27,
+              "code": "Query",
+              "text": "查询",
+              "type": 2,
+              "children": [],
+              "id": 1
+            },
+            {
+              "menuFunctionId": 28,
+              "code": "Audit",
+              "text": "审核",
+              "type": 2,
+              "children": [],
+              "id": 13
+            }
+          ],
+          "id": 9
+        },
+        {
+          "menuFunctionId": 0,
+          "code": "MyAuditedFlow",
+          "text": "我已审核",
+          "type": 1,
+          "children": [
+            {
+              "menuFunctionId": 29,
+              "code": "Query",
+              "text": "查询",
+              "type": 2,
+              "children": [],
+              "id": 1
+            }
+          ],
+          "id": 10
+        },
+        {
+          "menuFunctionId": 0,
+          "code": "MyApplyFlow",
+          "text": "我的申请",
+          "type": 1,
+          "children": [
+            {
+              "menuFunctionId": 30,
+              "code": "Query",
+              "text": "查询",
+              "type": 2,
+              "children": [],
+              "id": 1
+            }
+          ],
+          "id": 11
+        }
+      ],
+      "id": 8
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "TestForm",
+      "text": "测试表单",
+      "type": 1,
+      "children": [
+        {
+          "menuFunctionId": 22,
+          "code": "Save",
+          "text": "保存",
+          "type": 2,
+          "children": [],
+          "id": 6
+        },
+        {
+          "menuFunctionId": 23,
+          "code": "Apply",
+          "text": "申请",
+          "type": 2,
+          "children": [],
+          "id": 11
+        },
+        {
+          "menuFunctionId": 24,
+          "code": "Query",
+          "text": "查询",
+          "type": 2,
+          "children": [],
+          "id": 1
+        },
+        {
+          "menuFunctionId": 31,
+          "code": "Edit",
+          "text": "编辑",
+          "type": 2,
+          "children": [],
+          "id": 3
+        },
+        {
+          "menuFunctionId": 32,
+          "code": "Remove",
+          "text": "移除",
+          "type": 2,
+          "children": [],
+          "id": 4
+        },
+        {
+          "menuFunctionId": 33,
+          "code": "Undo",
+          "text": "撤消",
+          "type": 2,
+          "children": [],
+          "id": 14
+        },
+        {
+          "menuFunctionId": 34,
+          "code": "ForceRemove",
+          "text": "强制删除",
+          "type": 2,
+          "children": [],
+          "id": 16
+        }
+      ],
+      "id": 7
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "BasicFunction",
+      "text": "基础功能",
+      "type": 1,
+      "children": [
+        {
+          "menuFunctionId": 1,
+          "code": "Query",
+          "text": "查询",
+          "type": 2,
+          "children": [],
+          "id": 1
+        },
+        {
+          "menuFunctionId": 0,
+          "code": "Role",
+          "text": "角色管理",
+          "type": 1,
+          "children": [
+            {
+              "menuFunctionId": 2,
+              "code": "Query",
+              "text": "查询",
+              "type": 2,
+              "children": [],
+              "id": 1
+            },
+            {
+              "menuFunctionId": 3,
+              "code": "Add",
+              "text": "添加",
+              "type": 2,
+              "children": [],
+              "id": 2
+            },
+            {
+              "menuFunctionId": 4,
+              "code": "Edit",
+              "text": "编辑",
+              "type": 2,
+              "children": [],
+              "id": 3
+            },
+            {
+              "menuFunctionId": 5,
+              "code": "Remove",
+              "text": "移除",
+              "type": 2,
+              "children": [],
+              "id": 4
+            }
+          ],
+          "id": 2
+        },
+        {
+          "menuFunctionId": 0,
+          "code": "User",
+          "text": "用户管理",
+          "type": 1,
+          "children": [
+            {
+              "menuFunctionId": 6,
+              "code": "Query",
+              "text": "查询",
+              "type": 2,
+              "children": [],
+              "id": 1
+            },
+            {
+              "menuFunctionId": 7,
+              "code": "Add",
+              "text": "添加",
+              "type": 2,
+              "children": [],
+              "id": 2
+            },
+            {
+              "menuFunctionId": 8,
+              "code": "Edit",
+              "text": "编辑",
+              "type": 2,
+              "children": [],
+              "id": 3
+            },
+            {
+              "menuFunctionId": 9,
+              "code": "Remove",
+              "text": "移除",
+              "type": 2,
+              "children": [],
+              "id": 4
+            },
+            {
+              "menuFunctionId": 15,
+              "code": "ResetPassword",
+              "text": "重置密码",
+              "type": 2,
+              "children": [],
+              "id": 5
+            }
+          ],
+          "id": 3
+        },
+        {
+          "menuFunctionId": 0,
+          "code": "RolePermission",
+          "text": "角色权限",
+          "type": 1,
+          "children": [
+            {
+              "menuFunctionId": 10,
+              "code": "Query",
+              "text": "查询",
+              "type": 2,
+              "children": [],
+              "id": 1
+            },
+            {
+              "menuFunctionId": 17,
+              "code": "Save",
+              "text": "保存",
+              "type": 2,
+              "children": [],
+              "id": 6
+            }
+          ],
+          "id": 4
+        },
+        {
+          "menuFunctionId": 0,
+          "code": "DataDictionary",
+          "text": "数据字典",
+          "type": 1,
+          "children": [
+            {
+              "menuFunctionId": 11,
+              "code": "Query",
+              "text": "查询",
+              "type": 2,
+              "children": [],
+              "id": 1
+            },
+            {
+              "menuFunctionId": 12,
+              "code": "Add",
+              "text": "添加",
+              "type": 2,
+              "children": [],
+              "id": 2
+            },
+            {
+              "menuFunctionId": 13,
+              "code": "Edit",
+              "text": "编辑",
+              "type": 2,
+              "children": [],
+              "id": 3
+            },
+            {
+              "menuFunctionId": 14,
+              "code": "Remove",
+              "text": "移除",
+              "type": 2,
+              "children": [],
+              "id": 4
+            }
+          ],
+          "id": 5
+        },
+        {
+          "menuFunctionId": 0,
+          "code": "Attachment",
+          "text": "附件",
+          "type": 1,
+          "children": [
+            {
+              "menuFunctionId": 18,
+              "code": "Query",
+              "text": "查询",
+              "type": 2,
+              "children": [],
+              "id": 1
+            },
+            {
+              "menuFunctionId": 19,
+              "code": "Remove",
+              "text": "移除",
+              "type": 2,
+              "children": [],
+              "id": 4
+            },
+            {
+              "menuFunctionId": 20,
+              "code": "Upload",
+              "text": "上传",
+              "type": 2,
+              "children": [],
+              "id": 7
+            },
+            {
+              "menuFunctionId": 21,
+              "code": "DownLoad",
+              "text": "下载",
+              "type": 2,
+              "children": [],
+              "id": 8
+            }
+          ],
+          "id": 6
+        }
+      ],
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:28ms
+2020-09-01 14:33:15.4374 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "5863306351f34a94a9984203506cfb67",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:10ms
+2020-09-01 14:33:15.4396 ERROR Unknown column 'm.id' in 'on clause'
+2020-09-01 14:33:15.4519 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.FunctionInfo]] QueryCurrUserOwnFunctionsByMenuCode(System.String, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  "TestForm",
+  null,
+  null
+],ReturnValue:{
+  "Ex": {
+    "ClassName": "System.Exception",
+    "Message": "Unknown column 'm.id' in 'on clause'",
+    "Data": null,
+    "InnerException": {
+      "ClassName": "System.Exception",
+      "Message": "Unknown column 'm.id' in 'on clause'",
+      "Data": null,
+      "InnerException": {
+        "ClassName": "MySql.Data.MySqlClient.MySqlException",
+        "Message": "Unknown column 'm.id' in 'on clause'",
+        "Data": {
+          "Server Error Code": 1054
+        },
+        "InnerException": null,
+        "HelpURL": null,
+        "StackTraceString": "   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()\n   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)\n   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)\n   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)\n   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()\n   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)\n   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)\n   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)\n   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1051\n   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1079\n   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)\n   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)\n   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 721\n   at Hzdtf.BasicFunction.MySql.Standard.RoleMenuFunctionPersistence.<>c__DisplayClass9_0.<SelectFunctionsByMenuCodeAndRoleIds>b__0(String connId, IDbConnection dbConn) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Expand\\RoleMenuFunction\\RoleMenuFunctionPersistenceEx.cs:line 111\n   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.BrainpowerExecute(String connectionId, IPersistenceConnection persistenceConnection, Action`2 action, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Management\\DbConnectionManager.cs:line 94",
+        "RemoteStackTraceString": null,
+        "RemoteStackIndex": 0,
+        "ExceptionMethod": null,
+        "HResult": -2147467259,
+        "Source": "MySql.Data",
+        "WatsonBuckets": null
+      },
+      "HelpURL": null,
+      "StackTraceString": "   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.BrainpowerExecute(String connectionId, IPersistenceConnection persistenceConnection, Action`2 action, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Management\\DbConnectionManager.cs:line 98\n   at Hzdtf.BasicFunction.MySql.Standard.RoleMenuFunctionPersistence.SelectFunctionsByMenuCodeAndRoleIds(String menuCode, Int32[] roleIds, String connectionId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Expand\\RoleMenuFunction\\RoleMenuFunctionPersistenceEx.cs:line 114\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_1`1.<ExecReturnFuncAndConnectionId>b__1(String connId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1404\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1445",
+      "RemoteStackTraceString": null,
+      "RemoteStackIndex": 0,
+      "ExceptionMethod": null,
+      "HResult": -2146233088,
+      "Source": "Hzdtf.Persistence.Contract.Standard",
+      "WatsonBuckets": null
+    },
+    "HelpURL": null,
+    "StackTraceString": "   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1449\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_0`1.<ExecReturnFuncAndConnectionId>b__0(ReturnInfo`1 reInfo) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1407\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFunc[OutT](Func`2 func, ReturnInfo`1 returnInfo) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1425\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFuncAndConnectionId[OutT](Func`3 func, ReturnInfo`1 returnInfo, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1399\n   at Hzdtf.BasicFunction.Service.Impl.Standard.UserService.QueryUserOwnFunctionsByMenuCode(Int32 userId, String menuCode, String connectionId, BasicUserInfo currUser) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Expand\\User\\UserServiceEx.cs:line 267\n   at Castle.Proxies.UserServiceProxy.QueryUserOwnFunctionsByMenuCode_callback(Int32 userId, String menuCode, String connectionId, BasicUserInfo currUser)\n   at Castle.Proxies.Invocations.UserService_QueryUserOwnFunctionsByMenuCode.InvokeMethodOnTarget()\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\ProcTrackLogInterceptor.cs:line 94\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.TryExceptionInterceptor.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\TryExceptionInterceptor.cs:line 76",
+    "RemoteStackTraceString": null,
+    "RemoteStackIndex": 0,
+    "ExceptionMethod": null,
+    "HResult": -2146233088,
+    "Source": "Hzdtf.Service.Impl.Standard",
+    "WatsonBuckets": null
+  },
+  "code": -1,
+  "msg": "操作异常，请联系管理员",
+  "desc": "Unknown column 'm.id' in 'on clause'"
+},timed:31ms
+2020-09-01 14:33:31.6619 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Void BeforeFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo], Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  {
+    "code": 0
+  },
+  1,
+  "24c95b08476e48b1b8981f32fb50ccb7",
+  null
+],timed:0ms
+2020-09-01 14:33:31.6812 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Void AfterFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo], Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  {
+    "data": {
+      "sex": true,
+      "systemHide": false,
+      "loginId": "system",
+      "password": "AC59075B964B0715",
+      "enabled": true,
+      "systemInlay": true,
+      "code": "1000",
+      "name": "系统管理员",
+      "createrId": 0,
+      "creater": "测试用户",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-17T15:28:12",
+      "modifyTime": "2019-02-08T08:15:28",
+      "id": 1
+    },
+    "code": 0
+  },
+  1,
+  "24c95b08476e48b1b8981f32fb50ccb7",
+  null
+],timed:0ms
+2020-09-01 14:33:31.6822 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo] Find(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "24c95b08476e48b1b8981f32fb50ccb7",
+  null
+],ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "creater": "测试用户",
+    "modifierId": 1,
+    "modifier": "系统管理员",
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0
+},timed:20ms
+2020-09-01 14:33:31.6844 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "24c95b08476e48b1b8981f32fb50ccb7",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:2ms
+2020-09-01 14:33:31.6888 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.Expand.User.UserMenuInfo] CanAccessMenus(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  null,
+  null
+],ReturnValue:{
+  "data": {
+    "menus": [
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-01T14:33:31.6871713+00:00",
+            "modifyTime": "2020-09-01T14:33:31.6871714+00:00",
+            "id": 1
+          }
+        ],
+        "children": [
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:33:31.6877119+00:00",
+                "modifyTime": "2020-09-01T14:33:31.6877121+00:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Audit",
+                "name": "审核",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:33:31.6877258+00:00",
+                "modifyTime": "2020-09-01T14:33:31.6877259+00:00",
+                "id": 13
+              }
+            ],
+            "children": [],
+            "code": "MyWaitFlow",
+            "link": "/html/FlowHandle/MyWaitFlow/page.html",
+            "name": "我的待办",
+            "parentId": 8,
+            "sort": 1,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:03:18",
+            "modifyTime": "2019-03-25T00:03:23",
+            "id": 9
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:33:31.6877365+00:00",
+                "modifyTime": "2020-09-01T14:33:31.6877366+00:00",
+                "id": 1
+              }
+            ],
+            "children": [],
+            "code": "MyAuditedFlow",
+            "link": "/html/FlowHandle/MyAuditedFlow/page.html",
+            "name": "我已审核",
+            "parentId": 8,
+            "sort": 2,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:04:48",
+            "modifyTime": "2019-03-25T00:04:53",
+            "id": 10
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:33:31.6877438+00:00",
+                "modifyTime": "2020-09-01T14:33:31.6877439+00:00",
+                "id": 1
+              }
+            ],
+            "children": [],
+            "code": "MyApplyFlow",
+            "link": "/html/FlowHandle/MyApplyFlow/page.html",
+            "name": "我的申请",
+            "parentId": 8,
+            "sort": 3,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:05:46",
+            "modifyTime": "2019-03-25T00:05:50",
+            "id": 11
+          }
+        ],
+        "code": "FlowHandle",
+        "icon": "fa fa-envelope",
+        "name": "流程处理",
+        "parentId": 0,
+        "sort": 0,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-03-25T00:02:43",
+        "modifyTime": "2019-03-25T00:02:48",
+        "id": 8
+      },
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Save",
+            "name": "保存",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-01T14:33:31.6877523+00:00",
+            "modifyTime": "2020-09-01T14:33:31.6877524+00:00",
+            "id": 6
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Apply",
+            "name": "申请",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-01T14:33:31.6877598+00:00",
+            "modifyTime": "2020-09-01T14:33:31.6877599+00:00",
+            "id": 11
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-01T14:33:31.6877872+00:00",
+            "modifyTime": "2020-09-01T14:33:31.6877875+00:00",
+            "id": 1
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Edit",
+            "name": "编辑",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-01T14:33:31.6877977+00:00",
+            "modifyTime": "2020-09-01T14:33:31.6878257+00:00",
+            "id": 3
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Remove",
+            "name": "移除",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-01T14:33:31.6878337+00:00",
+            "modifyTime": "2020-09-01T14:33:31.6878338+00:00",
+            "id": 4
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Undo",
+            "name": "撤消",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-01T14:33:31.6878411+00:00",
+            "modifyTime": "2020-09-01T14:33:31.6878412+00:00",
+            "id": 14
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "ForceRemove",
+            "name": "强制删除",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-01T14:33:31.687849+00:00",
+            "modifyTime": "2020-09-01T14:33:31.6878491+00:00",
+            "id": 16
+          }
+        ],
+        "children": [],
+        "code": "TestForm",
+        "icon": "fa fa-cutlery",
+        "link": "/html/Demo/Form/page.html",
+        "name": "测试表单",
+        "parentId": 0,
+        "sort": 1,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-08-06T06:38:31",
+        "modifyTime": "2019-08-06T06:38:40",
+        "id": 7
+      },
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-01T14:33:31.6878731+00:00",
+            "modifyTime": "2020-09-01T14:33:31.6878732+00:00",
+            "id": 1
+          }
+        ],
+        "children": [
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:33:31.687881+00:00",
+                "modifyTime": "2020-09-01T14:33:31.6878811+00:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:33:31.6878887+00:00",
+                "modifyTime": "2020-09-01T14:33:31.6878888+00:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:33:31.687896+00:00",
+                "modifyTime": "2020-09-01T14:33:31.6878961+00:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:33:31.6879031+00:00",
+                "modifyTime": "2020-09-01T14:33:31.6879032+00:00",
+                "id": 4
+              }
+            ],
+            "children": [],
+            "code": "Role",
+            "link": "/html/BasicFunction/Role/page.html",
+            "name": "角色管理",
+            "parentId": 1,
+            "sort": 1,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-17T15:39:39",
+            "modifyTime": "2019-01-17T15:39:45",
+            "id": 2
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:33:31.6879111+00:00",
+                "modifyTime": "2020-09-01T14:33:31.6879112+00:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:33:31.6879186+00:00",
+                "modifyTime": "2020-09-01T14:33:31.6879187+00:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:33:31.6879257+00:00",
+                "modifyTime": "2020-09-01T14:33:31.6879258+00:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:33:31.6879336+00:00",
+                "modifyTime": "2020-09-01T14:33:31.6879337+00:00",
+                "id": 4
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "ResetPassword",
+                "name": "重置密码",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:33:31.6879408+00:00",
+                "modifyTime": "2020-09-01T14:33:31.6879409+00:00",
+                "id": 5
+              }
+            ],
+            "children": [],
+            "code": "User",
+            "link": "/html/BasicFunction/User/page.html",
+            "name": "用户管理",
+            "parentId": 1,
+            "sort": 2,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-17T15:40:19",
+            "modifyTime": "2019-01-17T15:40:28",
+            "id": 3
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:33:31.6879483+00:00",
+                "modifyTime": "2020-09-01T14:33:31.6879484+00:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Save",
+                "name": "保存",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:33:31.6879563+00:00",
+                "modifyTime": "2020-09-01T14:33:31.6879564+00:00",
+                "id": 6
+              }
+            ],
+            "children": [],
+            "code": "RolePermission",
+            "link": "/html/BasicFunction/PermissionSet/role.html",
+            "name": "角色权限",
+            "parentId": 1,
+            "sort": 3,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-28T11:35:04",
+            "modifyTime": "2019-01-28T11:35:10",
+            "id": 4
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:33:31.6879635+00:00",
+                "modifyTime": "2020-09-01T14:33:31.6879636+00:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:33:31.6879708+00:00",
+                "modifyTime": "2020-09-01T14:33:31.6879709+00:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:33:31.6879785+00:00",
+                "modifyTime": "2020-09-01T14:33:31.6879786+00:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:33:31.6879857+00:00",
+                "modifyTime": "2020-09-01T14:33:31.6879858+00:00",
+                "id": 4
+              }
+            ],
+            "children": [],
+            "code": "DataDictionary",
+            "link": "/html/BasicFunction/DataDictionary/page.html",
+            "name": "数据字典",
+            "parentId": 1,
+            "sort": 4,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-28T17:33:14",
+            "modifyTime": "2019-01-28T17:33:19",
+            "id": 5
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:33:31.6879929+00:00",
+                "modifyTime": "2020-09-01T14:33:31.687993+00:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:33:31.6880061+00:00",
+                "modifyTime": "2020-09-01T14:33:31.6880063+00:00",
+                "id": 4
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Upload",
+                "name": "上传",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:33:31.6880135+00:00",
+                "modifyTime": "2020-09-01T14:33:31.6880136+00:00",
+                "id": 7
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "DownLoad",
+                "name": "下载",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-01T14:33:31.6880207+00:00",
+                "modifyTime": "2020-09-01T14:33:31.6880208+00:00",
+                "id": 8
+              }
+            ],
+            "children": [],
+            "code": "Attachment",
+            "link": "/html/BasicFunction/Attachment/page.html",
+            "name": "附件",
+            "parentId": 1,
+            "sort": 5,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-02T18:41:11",
+            "modifyTime": "2019-03-02T18:41:19",
+            "id": 6
+          }
+        ],
+        "code": "BasicFunction",
+        "icon": "fa fa-cutlery",
+        "name": "基础功能",
+        "parentId": 0,
+        "sort": 1,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-17T15:35:43",
+        "modifyTime": "2019-01-17T15:35:46",
+        "id": 1
+      }
+    ],
+    "ownRoles": [
+      {
+        "memo": "系统最高角色",
+        "systemHide": false,
+        "systemInlay": true,
+        "code": "100",
+        "name": "系统管理组",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-25T20:56:27",
+        "modifyTime": "2019-01-27T23:31:54",
+        "id": 1
+      }
+    ],
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "creater": "测试用户",
+    "modifierId": 1,
+    "modifier": "系统管理员",
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0
+},timed:27ms
+2020-09-01 14:33:41.0671 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "61080fbc79a243dd9023d2a581a98c4f",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:3ms
+2020-09-01 14:33:41.0736 ERROR Unknown column 'm.id' in 'on clause'
+2020-09-01 14:33:41.0749 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.FunctionInfo]] QueryCurrUserOwnFunctionsByMenuCode(System.String, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  "Role",
+  null,
+  null
+],ReturnValue:{
+  "Ex": {
+    "ClassName": "System.Exception",
+    "Message": "Unknown column 'm.id' in 'on clause'",
+    "Data": null,
+    "InnerException": {
+      "ClassName": "System.Exception",
+      "Message": "Unknown column 'm.id' in 'on clause'",
+      "Data": null,
+      "InnerException": {
+        "ClassName": "MySql.Data.MySqlClient.MySqlException",
+        "Message": "Unknown column 'm.id' in 'on clause'",
+        "Data": {
+          "Server Error Code": 1054
+        },
+        "InnerException": null,
+        "HelpURL": null,
+        "StackTraceString": "   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()\n   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)\n   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)\n   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)\n   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()\n   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)\n   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)\n   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)\n   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1051\n   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1079\n   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)\n   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)\n   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 721\n   at Hzdtf.BasicFunction.MySql.Standard.RoleMenuFunctionPersistence.<>c__DisplayClass9_0.<SelectFunctionsByMenuCodeAndRoleIds>b__0(String connId, IDbConnection dbConn) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Expand\\RoleMenuFunction\\RoleMenuFunctionPersistenceEx.cs:line 111\n   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.BrainpowerExecute(String connectionId, IPersistenceConnection persistenceConnection, Action`2 action, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Management\\DbConnectionManager.cs:line 94",
+        "RemoteStackTraceString": null,
+        "RemoteStackIndex": 0,
+        "ExceptionMethod": null,
+        "HResult": -2147467259,
+        "Source": "MySql.Data",
+        "WatsonBuckets": null
+      },
+      "HelpURL": null,
+      "StackTraceString": "   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.BrainpowerExecute(String connectionId, IPersistenceConnection persistenceConnection, Action`2 action, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Management\\DbConnectionManager.cs:line 98\n   at Hzdtf.BasicFunction.MySql.Standard.RoleMenuFunctionPersistence.SelectFunctionsByMenuCodeAndRoleIds(String menuCode, Int32[] roleIds, String connectionId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Expand\\RoleMenuFunction\\RoleMenuFunctionPersistenceEx.cs:line 114\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_1`1.<ExecReturnFuncAndConnectionId>b__1(String connId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1404\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1445",
+      "RemoteStackTraceString": null,
+      "RemoteStackIndex": 0,
+      "ExceptionMethod": null,
+      "HResult": -2146233088,
+      "Source": "Hzdtf.Persistence.Contract.Standard",
+      "WatsonBuckets": null
+    },
+    "HelpURL": null,
+    "StackTraceString": "   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1449\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_0`1.<ExecReturnFuncAndConnectionId>b__0(ReturnInfo`1 reInfo) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1407\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFunc[OutT](Func`2 func, ReturnInfo`1 returnInfo) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1425\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFuncAndConnectionId[OutT](Func`3 func, ReturnInfo`1 returnInfo, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1399\n   at Hzdtf.BasicFunction.Service.Impl.Standard.UserService.QueryUserOwnFunctionsByMenuCode(Int32 userId, String menuCode, String connectionId, BasicUserInfo currUser) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Expand\\User\\UserServiceEx.cs:line 267\n   at Castle.Proxies.UserServiceProxy.QueryUserOwnFunctionsByMenuCode_callback(Int32 userId, String menuCode, String connectionId, BasicUserInfo currUser)\n   at Castle.Proxies.Invocations.UserService_QueryUserOwnFunctionsByMenuCode.InvokeMethodOnTarget()\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\ProcTrackLogInterceptor.cs:line 94\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.TryExceptionInterceptor.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\TryExceptionInterceptor.cs:line 76",
+    "RemoteStackTraceString": null,
+    "RemoteStackIndex": 0,
+    "ExceptionMethod": null,
+    "HResult": -2146233088,
+    "Source": "Hzdtf.Service.Impl.Standard",
+    "WatsonBuckets": null
+  },
+  "code": -1,
+  "msg": "操作异常，请联系管理员",
+  "desc": "Unknown column 'm.id' in 'on clause'"
+},timed:12ms
