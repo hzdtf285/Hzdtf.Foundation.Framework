@@ -1,0 +1,3566 @@
+2020-09-11 15:00:47.3538 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-09-11 15:00:47.3538 INFO eventId:0,Now listening on: http://localhost:5000
+2020-09-11 15:00:47.3538 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-09-11 15:00:47.3538 INFO eventId:0,Hosting environment: Development
+2020-09-11 15:00:48.5055 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-09-11 15:01:14.6718 ERROR Unable to connect to any of the specified MySQL hosts.
+2020-09-11 15:01:14.8200 INFO Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.UserValiService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.BasicUserInfo] Vali(System.String, System.String),ReturnValue:{
+  "Ex": {
+    "ClassName": "System.Exception",
+    "Message": "Unable to connect to any of the specified MySQL hosts.",
+    "Data": null,
+    "InnerException": {
+      "ClassName": "MySql.Data.MySqlClient.MySqlException",
+      "Message": "Unable to connect to any of the specified MySQL hosts.",
+      "Data": {
+        "Server Error Code": 1042
+      },
+      "InnerException": {
+        "ClassName": "MySql.Data.MySqlClient.MySqlException",
+        "Message": "Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.",
+        "Data": null,
+        "InnerException": null,
+        "HelpURL": null,
+        "StackTraceString": "   at MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)\r\n   at MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)\r\n   at MySql.Data.MySqlClient.NativeDriver.Open()",
+        "RemoteStackTraceString": null,
+        "RemoteStackIndex": 0,
+        "ExceptionMethod": null,
+        "HResult": -2147467259,
+        "Source": "MySql.Data",
+        "WatsonBuckets": null
+      },
+      "HelpURL": null,
+      "StackTraceString": "   at MySql.Data.MySqlClient.NativeDriver.Open()\r\n   at MySql.Data.MySqlClient.Driver.Open()\r\n   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)\r\n   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()\r\n   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()\r\n   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()\r\n   at MySql.Data.MySqlClient.MySqlPool.GetConnection()\r\n   at MySql.Data.MySqlClient.MySqlConnection.Open()\r\n   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.GetDbConnection(String connectionId, IPersistenceConnection persistenceConnection, Boolean& isExistsConnection, String& connectionString, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Management\\DbConnectionManager.cs:line 511\r\n   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.BrainpowerExecute(String connectionId, IPersistenceConnection persistenceConnection, Action`2 action, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Management\\DbConnectionManager.cs:line 84\r\n   at Hzdtf.BasicFunction.MySql.Standard.UserPersistence.SelectByLoginIdAndPassword(String loginId, String password, String connectionId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Expand\\User\\UserPersistenceEx.cs:line 35\r\n   at Hzdtf.BasicFunction.Service.Impl.Standard.UserService.<>c__DisplayClass26_0.<Vali>b__0(ReturnInfo`1 reInfo, String connId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Expand\\User\\UserServiceEx.cs:line 347\r\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_1`1.<ExecReturnFuncAndConnectionId>b__1(String connId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1404\r\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1445",
+      "RemoteStackTraceString": null,
+      "RemoteStackIndex": 0,
+      "ExceptionMethod": null,
+      "HResult": -2147467259,
+      "Source": "MySql.Data",
+      "WatsonBuckets": null
+    },
+    "HelpURL": null,
+    "StackTraceString": "   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1449\r\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_0`1.<ExecReturnFuncAndConnectionId>b__0(ReturnInfo`1 reInfo) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1407\r\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFunc[OutT](Func`2 func, ReturnInfo`1 returnInfo) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1425\r\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFuncAndConnectionId[OutT](Func`3 func, ReturnInfo`1 returnInfo, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1399\r\n   at Hzdtf.BasicFunction.Service.Impl.Standard.UserService.Vali(String user, String password) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Expand\\User\\UserServiceEx.cs:line 345\r\n   at Castle.Proxies.UserServiceProxy.Vali_callback(String user, String password)\r\n   at Castle.Proxies.Invocations.UserService_Vali.InvokeMethodOnTarget()\r\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\r\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\r\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\r\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\r\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\r\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\ProcTrackLogInterceptor.cs:line 94\r\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\r\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\r\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\r\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.TryExceptionInterceptor.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\TryExceptionInterceptor.cs:line 76",
+    "RemoteStackTraceString": null,
+    "RemoteStackIndex": 0,
+    "ExceptionMethod": null,
+    "HResult": -2146233088,
+    "Source": "Hzdtf.Service.Impl.Standard",
+    "WatsonBuckets": null
+  },
+  "code": -1,
+  "msg": "操作异常，请联系管理员",
+  "desc": "Unable to connect to any of the specified MySQL hosts."
+},timed:15417ms
+2020-09-11 15:01:47.9757 ERROR Unable to connect to any of the specified MySQL hosts.
+2020-09-11 15:01:47.9757 INFO Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.UserValiService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.BasicUserInfo] Vali(System.String, System.String),ReturnValue:{
+  "Ex": {
+    "ClassName": "System.Exception",
+    "Message": "Unable to connect to any of the specified MySQL hosts.",
+    "Data": null,
+    "InnerException": {
+      "ClassName": "MySql.Data.MySqlClient.MySqlException",
+      "Message": "Unable to connect to any of the specified MySQL hosts.",
+      "Data": {
+        "Server Error Code": 1042
+      },
+      "InnerException": {
+        "ClassName": "MySql.Data.MySqlClient.MySqlException",
+        "Message": "Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.",
+        "Data": null,
+        "InnerException": null,
+        "HelpURL": null,
+        "StackTraceString": "   at MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)\r\n   at MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)\r\n   at MySql.Data.MySqlClient.NativeDriver.Open()",
+        "RemoteStackTraceString": null,
+        "RemoteStackIndex": 0,
+        "ExceptionMethod": null,
+        "HResult": -2147467259,
+        "Source": "MySql.Data",
+        "WatsonBuckets": null
+      },
+      "HelpURL": null,
+      "StackTraceString": "   at MySql.Data.MySqlClient.NativeDriver.Open()\r\n   at MySql.Data.MySqlClient.Driver.Open()\r\n   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)\r\n   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()\r\n   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()\r\n   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()\r\n   at MySql.Data.MySqlClient.MySqlPool.GetConnection()\r\n   at MySql.Data.MySqlClient.MySqlConnection.Open()\r\n   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.GetDbConnection(String connectionId, IPersistenceConnection persistenceConnection, Boolean& isExistsConnection, String& connectionString, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Management\\DbConnectionManager.cs:line 511\r\n   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.BrainpowerExecute(String connectionId, IPersistenceConnection persistenceConnection, Action`2 action, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Management\\DbConnectionManager.cs:line 84\r\n   at Hzdtf.BasicFunction.MySql.Standard.UserPersistence.SelectByLoginIdAndPassword(String loginId, String password, String connectionId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Expand\\User\\UserPersistenceEx.cs:line 35\r\n   at Hzdtf.BasicFunction.Service.Impl.Standard.UserService.<>c__DisplayClass26_0.<Vali>b__0(ReturnInfo`1 reInfo, String connId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Expand\\User\\UserServiceEx.cs:line 347\r\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_1`1.<ExecReturnFuncAndConnectionId>b__1(String connId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1404\r\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1445",
+      "RemoteStackTraceString": null,
+      "RemoteStackIndex": 0,
+      "ExceptionMethod": null,
+      "HResult": -2147467259,
+      "Source": "MySql.Data",
+      "WatsonBuckets": null
+    },
+    "HelpURL": null,
+    "StackTraceString": "   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1449\r\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_0`1.<ExecReturnFuncAndConnectionId>b__0(ReturnInfo`1 reInfo) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1407\r\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFunc[OutT](Func`2 func, ReturnInfo`1 returnInfo) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1425\r\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFuncAndConnectionId[OutT](Func`3 func, ReturnInfo`1 returnInfo, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1399\r\n   at Hzdtf.BasicFunction.Service.Impl.Standard.UserService.Vali(String user, String password) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Expand\\User\\UserServiceEx.cs:line 345\r\n   at Castle.Proxies.UserServiceProxy.Vali_callback(String user, String password)\r\n   at Castle.Proxies.Invocations.UserService_Vali.InvokeMethodOnTarget()\r\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\r\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\r\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\r\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\r\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\r\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\ProcTrackLogInterceptor.cs:line 94\r\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\r\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\r\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\r\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.TryExceptionInterceptor.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\TryExceptionInterceptor.cs:line 76",
+    "RemoteStackTraceString": null,
+    "RemoteStackIndex": 0,
+    "ExceptionMethod": null,
+    "HResult": -2146233088,
+    "Source": "Hzdtf.Service.Impl.Standard",
+    "WatsonBuckets": null
+  },
+  "code": -1,
+  "msg": "操作异常，请联系管理员",
+  "desc": "Unable to connect to any of the specified MySQL hosts."
+},timed:15008ms
+2020-09-11 15:02:05.2453 ERROR Unable to connect to any of the specified MySQL hosts.
+2020-09-11 15:02:05.2453 INFO Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.UserValiService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.BasicUserInfo] Vali(System.String, System.String),ReturnValue:{
+  "Ex": {
+    "ClassName": "System.Exception",
+    "Message": "Unable to connect to any of the specified MySQL hosts.",
+    "Data": null,
+    "InnerException": {
+      "ClassName": "MySql.Data.MySqlClient.MySqlException",
+      "Message": "Unable to connect to any of the specified MySQL hosts.",
+      "Data": {
+        "Server Error Code": 1042
+      },
+      "InnerException": {
+        "ClassName": "MySql.Data.MySqlClient.MySqlException",
+        "Message": "Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.",
+        "Data": null,
+        "InnerException": null,
+        "HelpURL": null,
+        "StackTraceString": "   at MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)\r\n   at MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)\r\n   at MySql.Data.MySqlClient.NativeDriver.Open()",
+        "RemoteStackTraceString": null,
+        "RemoteStackIndex": 0,
+        "ExceptionMethod": null,
+        "HResult": -2147467259,
+        "Source": "MySql.Data",
+        "WatsonBuckets": null
+      },
+      "HelpURL": null,
+      "StackTraceString": "   at MySql.Data.MySqlClient.NativeDriver.Open()\r\n   at MySql.Data.MySqlClient.Driver.Open()\r\n   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)\r\n   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()\r\n   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()\r\n   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()\r\n   at MySql.Data.MySqlClient.MySqlPool.GetConnection()\r\n   at MySql.Data.MySqlClient.MySqlConnection.Open()\r\n   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.GetDbConnection(String connectionId, IPersistenceConnection persistenceConnection, Boolean& isExistsConnection, String& connectionString, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Management\\DbConnectionManager.cs:line 511\r\n   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.BrainpowerExecute(String connectionId, IPersistenceConnection persistenceConnection, Action`2 action, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Management\\DbConnectionManager.cs:line 84\r\n   at Hzdtf.BasicFunction.MySql.Standard.UserPersistence.SelectByLoginIdAndPassword(String loginId, String password, String connectionId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Expand\\User\\UserPersistenceEx.cs:line 35\r\n   at Hzdtf.BasicFunction.Service.Impl.Standard.UserService.<>c__DisplayClass26_0.<Vali>b__0(ReturnInfo`1 reInfo, String connId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Expand\\User\\UserServiceEx.cs:line 347\r\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_1`1.<ExecReturnFuncAndConnectionId>b__1(String connId) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1404\r\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1445",
+      "RemoteStackTraceString": null,
+      "RemoteStackIndex": 0,
+      "ExceptionMethod": null,
+      "HResult": -2147467259,
+      "Source": "MySql.Data",
+      "WatsonBuckets": null
+    },
+    "HelpURL": null,
+    "StackTraceString": "   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecProcConnectionId(Action`1 action, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1449\r\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.<>c__DisplayClass122_0`1.<ExecReturnFuncAndConnectionId>b__0(ReturnInfo`1 reInfo) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1407\r\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFunc[OutT](Func`2 func, ReturnInfo`1 returnInfo) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1425\r\n   at Hzdtf.Service.Impl.Standard.ServiceBase`2.ExecReturnFuncAndConnectionId[OutT](Func`3 func, ReturnInfo`1 returnInfo, String connectionId, AccessMode accessMode) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Service\\Hzdtf.Service.Impl.Standard\\ServiceBase.cs:line 1399\r\n   at Hzdtf.BasicFunction.Service.Impl.Standard.UserService.Vali(String user, String password) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Expand\\User\\UserServiceEx.cs:line 345\r\n   at Castle.Proxies.UserServiceProxy.Vali_callback(String user, String password)\r\n   at Castle.Proxies.Invocations.UserService_Vali.InvokeMethodOnTarget()\r\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\r\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\r\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\r\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\r\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\r\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\ProcTrackLogInterceptor.cs:line 94\r\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\r\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\InterceptorBase.cs:line 36\r\n   at Castle.DynamicProxy.AbstractInvocation.Proceed()\r\n   at Hzdtf.Autofac.Extend.Standard.Intercepteds.TryExceptionInterceptor.Intercept(IInvocation invocation) in C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Intercepteds\\TryExceptionInterceptor.cs:line 76",
+    "RemoteStackTraceString": null,
+    "RemoteStackIndex": 0,
+    "ExceptionMethod": null,
+    "HResult": -2146233088,
+    "Source": "Hzdtf.Service.Impl.Standard",
+    "WatsonBuckets": null
+  },
+  "code": -1,
+  "msg": "操作异常，请联系管理员",
+  "desc": "Unable to connect to any of the specified MySQL hosts."
+},timed:15006ms
+2020-09-11 15:02:30.1412 INFO eventId:0,Hosting environment: Development
+2020-09-11 15:02:30.1412 INFO eventId:0,Now listening on: http://localhost:5000
+2020-09-11 15:02:30.1412 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-09-11 15:02:30.1412 INFO eventId:0,Content root path: C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-09-11 15:02:30.8532 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-09-11 15:02:32.4909 INFO 登录ID:system,用户编号:1000,名称:系统管理员 成功授权
+2020-09-11 15:02:32.5389 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2020-08-12T17:03:23",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:406ms
+2020-09-11 15:02:32.5389 INFO Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.UserValiService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.BasicUserInfo] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2020-08-12T17:03:23",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:412ms
+2020-09-11 15:02:32.6140 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Void BeforeFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo], Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  {
+    "code": 0
+  },
+  1,
+  "6d7a30b7f011450fbfa0148234e32306",
+  null
+],timed:0ms
+2020-09-11 15:02:32.6140 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Void AfterFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo], Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  {
+    "data": {
+      "sex": true,
+      "systemHide": false,
+      "loginId": "system",
+      "password": "AC59075B964B0715",
+      "enabled": true,
+      "systemInlay": true,
+      "code": "1000",
+      "name": "系统管理员",
+      "createrId": 0,
+      "creater": "测试用户",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-17T15:28:12",
+      "modifyTime": "2020-08-12T17:03:23",
+      "id": 1
+    },
+    "code": 0
+  },
+  1,
+  "6d7a30b7f011450fbfa0148234e32306",
+  null
+],timed:0ms
+2020-09-11 15:02:32.6140 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo] Find(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "6d7a30b7f011450fbfa0148234e32306",
+  null
+],ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "creater": "测试用户",
+    "modifierId": 1,
+    "modifier": "系统管理员",
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2020-08-12T17:03:23",
+    "id": 1
+  },
+  "code": 0
+},timed:8ms
+2020-09-11 15:02:32.6499 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "6d7a30b7f011450fbfa0148234e32306",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:28ms
+2020-09-11 15:02:32.7278 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.Expand.User.UserMenuInfo] CanAccessMenus(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  null,
+  null
+],ReturnValue:{
+  "data": {
+    "menus": [
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-11T15:02:32.7090115+08:00",
+            "modifyTime": "2020-09-11T15:02:32.709012+08:00",
+            "id": 1
+          }
+        ],
+        "children": [
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-11T15:02:32.7095223+08:00",
+                "modifyTime": "2020-09-11T15:02:32.7095224+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Audit",
+                "name": "审核",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-11T15:02:32.7096103+08:00",
+                "modifyTime": "2020-09-11T15:02:32.7096104+08:00",
+                "id": 13
+              }
+            ],
+            "children": [],
+            "code": "MyWaitFlow",
+            "link": "/html/FlowHandle/MyWaitFlow/page.html",
+            "name": "我的待办",
+            "parentId": 8,
+            "sort": 1,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:03:18",
+            "modifyTime": "2019-03-25T00:03:23",
+            "id": 9
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-11T15:02:32.7097041+08:00",
+                "modifyTime": "2020-09-11T15:02:32.7097042+08:00",
+                "id": 1
+              }
+            ],
+            "children": [],
+            "code": "MyAuditedFlow",
+            "link": "/html/FlowHandle/MyAuditedFlow/page.html",
+            "name": "我已审核",
+            "parentId": 8,
+            "sort": 2,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:04:48",
+            "modifyTime": "2019-03-25T00:04:53",
+            "id": 10
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-11T15:02:32.709713+08:00",
+                "modifyTime": "2020-09-11T15:02:32.7097131+08:00",
+                "id": 1
+              }
+            ],
+            "children": [],
+            "code": "MyApplyFlow",
+            "link": "/html/FlowHandle/MyApplyFlow/page.html",
+            "name": "我的申请",
+            "parentId": 8,
+            "sort": 3,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:05:46",
+            "modifyTime": "2019-03-25T00:05:50",
+            "id": 11
+          }
+        ],
+        "code": "FlowHandle",
+        "icon": "fa fa-envelope",
+        "name": "流程处理",
+        "parentId": 0,
+        "sort": 0,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-03-25T00:02:43",
+        "modifyTime": "2019-03-25T00:02:48",
+        "id": 8
+      },
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Save",
+            "name": "保存",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-11T15:02:32.7097204+08:00",
+            "modifyTime": "2020-09-11T15:02:32.7097205+08:00",
+            "id": 6
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Apply",
+            "name": "申请",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-11T15:02:32.7097276+08:00",
+            "modifyTime": "2020-09-11T15:02:32.7097277+08:00",
+            "id": 11
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-11T15:02:32.7097352+08:00",
+            "modifyTime": "2020-09-11T15:02:32.7097353+08:00",
+            "id": 1
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Edit",
+            "name": "编辑",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-11T15:02:32.7097421+08:00",
+            "modifyTime": "2020-09-11T15:02:32.7097422+08:00",
+            "id": 3
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Remove",
+            "name": "移除",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-11T15:02:32.7097491+08:00",
+            "modifyTime": "2020-09-11T15:02:32.7097492+08:00",
+            "id": 4
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Undo",
+            "name": "撤消",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-11T15:02:32.7097568+08:00",
+            "modifyTime": "2020-09-11T15:02:32.7097569+08:00",
+            "id": 14
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "ForceRemove",
+            "name": "强制删除",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-11T15:02:32.7097638+08:00",
+            "modifyTime": "2020-09-11T15:02:32.7097639+08:00",
+            "id": 16
+          }
+        ],
+        "children": [],
+        "code": "TestForm",
+        "icon": "fa fa-cutlery",
+        "link": "/html/Demo/Form/page.html",
+        "name": "测试表单",
+        "parentId": 0,
+        "sort": 1,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-08-06T06:38:31",
+        "modifyTime": "2019-08-06T06:38:40",
+        "id": 7
+      },
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2020-09-11T15:02:32.7097708+08:00",
+            "modifyTime": "2020-09-11T15:02:32.7097709+08:00",
+            "id": 1
+          }
+        ],
+        "children": [
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-11T15:02:32.7097785+08:00",
+                "modifyTime": "2020-09-11T15:02:32.7097786+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-11T15:02:32.7097855+08:00",
+                "modifyTime": "2020-09-11T15:02:32.7097856+08:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-11T15:02:32.7097936+08:00",
+                "modifyTime": "2020-09-11T15:02:32.7097937+08:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-11T15:02:32.7098065+08:00",
+                "modifyTime": "2020-09-11T15:02:32.7098066+08:00",
+                "id": 4
+              }
+            ],
+            "children": [],
+            "code": "Role",
+            "link": "/html/BasicFunction/Role/page.html",
+            "name": "角色管理",
+            "parentId": 1,
+            "sort": 1,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-17T15:39:39",
+            "modifyTime": "2019-01-17T15:39:45",
+            "id": 2
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-11T15:02:32.7098143+08:00",
+                "modifyTime": "2020-09-11T15:02:32.7098144+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-11T15:02:32.7098215+08:00",
+                "modifyTime": "2020-09-11T15:02:32.7098216+08:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-11T15:02:32.709829+08:00",
+                "modifyTime": "2020-09-11T15:02:32.7098291+08:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-11T15:02:32.709836+08:00",
+                "modifyTime": "2020-09-11T15:02:32.7098361+08:00",
+                "id": 4
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "ResetPassword",
+                "name": "重置密码",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-11T15:02:32.7098444+08:00",
+                "modifyTime": "2020-09-11T15:02:32.7098445+08:00",
+                "id": 5
+              }
+            ],
+            "children": [],
+            "code": "User",
+            "link": "/html/BasicFunction/User/page.html",
+            "name": "用户管理",
+            "parentId": 1,
+            "sort": 2,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-17T15:40:19",
+            "modifyTime": "2019-01-17T15:40:28",
+            "id": 3
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-11T15:02:32.7098522+08:00",
+                "modifyTime": "2020-09-11T15:02:32.7098523+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Save",
+                "name": "保存",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-11T15:02:32.7098594+08:00",
+                "modifyTime": "2020-09-11T15:02:32.7098595+08:00",
+                "id": 6
+              }
+            ],
+            "children": [],
+            "code": "RolePermission",
+            "link": "/html/BasicFunction/PermissionSet/role.html",
+            "name": "角色权限",
+            "parentId": 1,
+            "sort": 3,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-28T11:35:04",
+            "modifyTime": "2019-01-28T11:35:10",
+            "id": 4
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-11T15:02:32.7098663+08:00",
+                "modifyTime": "2020-09-11T15:02:32.7098664+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-11T15:02:32.7098738+08:00",
+                "modifyTime": "2020-09-11T15:02:32.7098739+08:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-11T15:02:32.7098809+08:00",
+                "modifyTime": "2020-09-11T15:02:32.709881+08:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-11T15:02:32.709888+08:00",
+                "modifyTime": "2020-09-11T15:02:32.7098881+08:00",
+                "id": 4
+              }
+            ],
+            "children": [],
+            "code": "DataDictionary",
+            "link": "/html/BasicFunction/DataDictionary/page.html",
+            "name": "数据字典",
+            "parentId": 1,
+            "sort": 4,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-28T17:33:14",
+            "modifyTime": "2019-01-28T17:33:19",
+            "id": 5
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-11T15:02:32.7098954+08:00",
+                "modifyTime": "2020-09-11T15:02:32.7098955+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-11T15:02:32.7099025+08:00",
+                "modifyTime": "2020-09-11T15:02:32.7099026+08:00",
+                "id": 4
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Upload",
+                "name": "上传",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-11T15:02:32.7099096+08:00",
+                "modifyTime": "2020-09-11T15:02:32.7099096+08:00",
+                "id": 7
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "DownLoad",
+                "name": "下载",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2020-09-11T15:02:32.7099171+08:00",
+                "modifyTime": "2020-09-11T15:02:32.7099172+08:00",
+                "id": 8
+              }
+            ],
+            "children": [],
+            "code": "Attachment",
+            "link": "/html/BasicFunction/Attachment/page.html",
+            "name": "附件",
+            "parentId": 1,
+            "sort": 5,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-02T18:41:11",
+            "modifyTime": "2019-03-02T18:41:19",
+            "id": 6
+          }
+        ],
+        "code": "BasicFunction",
+        "icon": "fa fa-cutlery",
+        "name": "基础功能",
+        "parentId": 0,
+        "sort": 1,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-17T15:35:43",
+        "modifyTime": "2019-01-17T15:35:46",
+        "id": 1
+      }
+    ],
+    "ownRoles": [
+      {
+        "memo": "系统最高角色",
+        "systemHide": false,
+        "systemInlay": true,
+        "code": "100",
+        "name": "系统管理组",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-25T20:56:27",
+        "modifyTime": "2019-01-27T23:31:54",
+        "id": 1
+      }
+    ],
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "creater": "测试用户",
+    "modifierId": 1,
+    "modifier": "系统管理员",
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2020-08-12T17:03:23",
+    "id": 1
+  },
+  "code": 0
+},timed:117ms
+2020-09-11 15:02:50.0262 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "f613debcfd0d4a5cb07ab9778143eeb2",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:2ms
+2020-09-11 15:02:50.0326 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.FunctionInfo]] QueryUserOwnFunctionsByMenuCode(Int32, System.String, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "MyWaitFlow",
+  null,
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "menuFunctionId": 0,
+      "code": "Query",
+      "name": "查询",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:02:50.0298288+08:00",
+      "modifyTime": "2020-09-11T15:02:50.0298305+08:00",
+      "id": 1
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Audit",
+      "name": "审核",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:02:50.0300009+08:00",
+      "modifyTime": "2020-09-11T15:02:50.0300014+08:00",
+      "id": 13
+    }
+  ],
+  "code": 0
+},timed:10ms
+2020-09-11 15:02:50.0326 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.FunctionInfo]] QueryCurrUserOwnFunctionsByMenuCode(System.String, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  "MyWaitFlow",
+  null,
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "menuFunctionId": 0,
+      "code": "Query",
+      "name": "查询",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:02:50.0298288+08:00",
+      "modifyTime": "2020-09-11T15:02:50.0298305+08:00",
+      "id": 1
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Audit",
+      "name": "审核",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:02:50.0300009+08:00",
+      "modifyTime": "2020-09-11T15:02:50.0300014+08:00",
+      "id": 13
+    }
+  ],
+  "code": 0,
+  "msg": "操作成功"
+},timed:11ms
+2020-09-11 15:02:50.1324 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "b2c39a31329b48c4a3a6e2754a88863a",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:1ms
+2020-09-11 15:02:50.1389 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Boolean] IsPermission(Int32, System.String, System.String[], System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "MyWaitFlow",
+  [
+    "Query"
+  ],
+  null,
+  null
+],ReturnValue:{
+  "data": true,
+  "code": 0
+},timed:10ms
+2020-09-11 15:02:50.1389 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Boolean] IsCurrUserPermission(System.String, System.String[], System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  "MyWaitFlow",
+  [
+    "Query"
+  ],
+  null,
+  null
+],ReturnValue:{
+  "data": true,
+  "code": 0,
+  "msg": "操作成功"
+},timed:11ms
+2020-09-11 15:02:50.1953 INFO Hzdtf.WorkFlow.Service.Impl.Standard.WorkflowService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.Page.PagingInfo`1[Hzdtf.WorkFlow.Model.Standard.WorkflowInfo]] QueryCurrUserWaitHandlePage(Int32, Int32, Hzdtf.WorkFlow.Model.Standard.Expand.Filter.WaitHandleFilterInfo, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  0,
+  30,
+  {
+    "handlerId": 0,
+    "keyword": "",
+    "startCreateTime": "2020-08-11T00:00:00",
+    "endCreateTime": "2020-09-11T00:00:00",
+    "sort": 0
+  },
+  null,
+  null
+],ReturnValue:{
+  "data": {
+    "pageIndex": 0,
+    "pageSize": 0,
+    "records": 0,
+    "pageCount": 0
+  },
+  "code": 0
+},timed:27ms
+2020-09-11 15:02:57.9931 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "9786d7546d3a4b45b9eddcf4c961b628",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:1ms
+2020-09-11 15:02:57.9931 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.FunctionInfo]] QueryUserOwnFunctionsByMenuCode(Int32, System.String, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "MyAuditedFlow",
+  null,
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "menuFunctionId": 0,
+      "code": "Query",
+      "name": "查询",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:02:57.9939832+08:00",
+      "modifyTime": "2020-09-11T15:02:57.9939842+08:00",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:2ms
+2020-09-11 15:02:57.9931 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.FunctionInfo]] QueryCurrUserOwnFunctionsByMenuCode(System.String, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  "MyAuditedFlow",
+  null,
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "menuFunctionId": 0,
+      "code": "Query",
+      "name": "查询",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:02:57.9939832+08:00",
+      "modifyTime": "2020-09-11T15:02:57.9939842+08:00",
+      "id": 1
+    }
+  ],
+  "code": 0,
+  "msg": "操作成功"
+},timed:3ms
+2020-09-11 15:02:58.0236 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "08f27facd5e54c03aed7c3f4ae392ad4",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:3ms
+2020-09-11 15:02:58.0236 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Boolean] IsPermission(Int32, System.String, System.String[], System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "MyAuditedFlow",
+  [
+    "Query"
+  ],
+  null,
+  null
+],ReturnValue:{
+  "data": true,
+  "code": 0
+},timed:4ms
+2020-09-11 15:02:58.0236 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Boolean] IsCurrUserPermission(System.String, System.String[], System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  "MyAuditedFlow",
+  [
+    "Query"
+  ],
+  null,
+  null
+],ReturnValue:{
+  "data": true,
+  "code": 0,
+  "msg": "操作成功"
+},timed:4ms
+2020-09-11 15:02:58.0340 INFO Hzdtf.WorkFlow.Service.Impl.Standard.WorkflowService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.Page.PagingInfo`1[Hzdtf.WorkFlow.Model.Standard.WorkflowInfo]] QueryCurrUserAuditedFlowPage(Int32, Int32, Hzdtf.WorkFlow.Model.Standard.Expand.Filter.AuditFlowFilterInfo, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  0,
+  30,
+  {
+    "handlerId": 0,
+    "keyword": "",
+    "startCreateTime": "2020-08-11T00:00:00",
+    "endCreateTime": "2020-09-11T00:00:00",
+    "sort": 0
+  },
+  null,
+  null
+],ReturnValue:{
+  "data": {
+    "pageIndex": 0,
+    "pageSize": 0,
+    "records": 0,
+    "pageCount": 0
+  },
+  "code": 0
+},timed:3ms
+2020-09-11 15:04:14.6177 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "3546a14fd67346fab03ce7c94ccba88f",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:1ms
+2020-09-11 15:04:14.6177 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.FunctionInfo]] QueryCurrUserOwnFunctionsByMenuCode(System.String, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  "Role",
+  null,
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "menuFunctionId": 0,
+      "code": "Query",
+      "name": "查询",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:14.6182017+08:00",
+      "modifyTime": "2020-09-11T15:04:14.6182024+08:00",
+      "id": 1
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Add",
+      "name": "添加",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:14.6182131+08:00",
+      "modifyTime": "2020-09-11T15:04:14.6182132+08:00",
+      "id": 2
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Edit",
+      "name": "编辑",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:14.6182163+08:00",
+      "modifyTime": "2020-09-11T15:04:14.6182164+08:00",
+      "id": 3
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Remove",
+      "name": "移除",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:14.6182191+08:00",
+      "modifyTime": "2020-09-11T15:04:14.6182192+08:00",
+      "id": 4
+    }
+  ],
+  "code": 0,
+  "msg": "操作成功"
+},timed:2ms
+2020-09-11 15:04:14.6177 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.FunctionInfo]] QueryUserOwnFunctionsByMenuCode(Int32, System.String, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "Role",
+  null,
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "menuFunctionId": 0,
+      "code": "Query",
+      "name": "查询",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:14.6182017+08:00",
+      "modifyTime": "2020-09-11T15:04:14.6182024+08:00",
+      "id": 1
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Add",
+      "name": "添加",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:14.6182131+08:00",
+      "modifyTime": "2020-09-11T15:04:14.6182132+08:00",
+      "id": 2
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Edit",
+      "name": "编辑",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:14.6182163+08:00",
+      "modifyTime": "2020-09-11T15:04:14.6182164+08:00",
+      "id": 3
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Remove",
+      "name": "移除",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:14.6182191+08:00",
+      "modifyTime": "2020-09-11T15:04:14.6182192+08:00",
+      "id": 4
+    }
+  ],
+  "code": 0
+},timed:2ms
+2020-09-11 15:04:14.6491 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "09a0c7e6d9d347d5b972d7e29e337c3e",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:1ms
+2020-09-11 15:04:14.6491 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Boolean] IsCurrUserPermission(System.String, System.String[], System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  "Role",
+  [
+    "Query"
+  ],
+  null,
+  null
+],ReturnValue:{
+  "data": true,
+  "code": 0,
+  "msg": "操作成功"
+},timed:3ms
+2020-09-11 15:04:14.6491 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Boolean] IsPermission(Int32, System.String, System.String[], System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "Role",
+  [
+    "Query"
+  ],
+  null,
+  null
+],ReturnValue:{
+  "data": true,
+  "code": 0
+},timed:2ms
+2020-09-11 15:04:14.6651 INFO Hzdtf.BasicFunction.Service.Impl.Standard.RoleService System.Threading.Tasks.Task`1[Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.Page.PagingInfo`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]]] QueryPageAsync(Int32, Int32, Hzdtf.Utility.Standard.Model.FilterInfo, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  0,
+  30,
+  {
+    "keyword": "",
+    "sort": 0
+  },
+  null,
+  null
+],timed:4ms
+2020-09-11 15:04:14.6716 INFO Hzdtf.BasicFunction.Service.Impl.Standard.RoleService Void BeforeQueryPage(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.Page.PagingInfo`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]], Int32, Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.FilterInfo, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  {
+    "code": 0
+  },
+  0,
+  30,
+  null,
+  {
+    "keyword": "",
+    "sort": 0
+  },
+  null
+],timed:0ms
+2020-09-11 15:04:14.6899 INFO Hzdtf.BasicFunction.Service.Impl.Standard.RoleService Void AfterQueryPage(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.Page.PagingInfo`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]], Int32, Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.FilterInfo, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  {
+    "data": {
+      "rows": [
+        {
+          "memo": "系统最高角色",
+          "systemHide": false,
+          "systemInlay": true,
+          "code": "100",
+          "name": "系统管理组",
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-01-25T20:56:27",
+          "modifyTime": "2019-01-27T23:31:54",
+          "id": 1
+        },
+        {
+          "memo": "业务部门的角色",
+          "systemHide": false,
+          "systemInlay": true,
+          "code": "101",
+          "name": "业务组",
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-01-27T11:21:26",
+          "modifyTime": "2019-01-27T11:21:26",
+          "id": 2
+        },
+        {
+          "memo": "技术部门的角色",
+          "systemHide": false,
+          "systemInlay": true,
+          "code": "102",
+          "name": "技术组",
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-01-27T11:22:08",
+          "modifyTime": "2019-01-27T11:22:08",
+          "id": 3
+        },
+        {
+          "memo": "",
+          "systemHide": false,
+          "systemInlay": false,
+          "code": "103",
+          "name": "采购组",
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-02-22T22:29:10",
+          "modifyTime": "2019-02-22T22:29:10",
+          "id": 16
+        }
+      ],
+      "pageIndex": 0,
+      "pageSize": 30,
+      "records": 4,
+      "pageCount": 1
+    },
+    "code": 0
+  },
+  0,
+  30,
+  null,
+  {
+    "keyword": "",
+    "sort": 0
+  },
+  null
+],timed:0ms
+2020-09-11 15:04:14.6899 INFO Hzdtf.BasicFunction.Service.Impl.Standard.RoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.Page.PagingInfo`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] QueryPage(Int32, Int32, Hzdtf.Utility.Standard.Model.FilterInfo, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  0,
+  30,
+  {
+    "keyword": "",
+    "sort": 0
+  },
+  null,
+  null
+],ReturnValue:{
+  "data": {
+    "rows": [
+      {
+        "memo": "系统最高角色",
+        "systemHide": false,
+        "systemInlay": true,
+        "code": "100",
+        "name": "系统管理组",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-25T20:56:27",
+        "modifyTime": "2019-01-27T23:31:54",
+        "id": 1
+      },
+      {
+        "memo": "业务部门的角色",
+        "systemHide": false,
+        "systemInlay": true,
+        "code": "101",
+        "name": "业务组",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-27T11:21:26",
+        "modifyTime": "2019-01-27T11:21:26",
+        "id": 2
+      },
+      {
+        "memo": "技术部门的角色",
+        "systemHide": false,
+        "systemInlay": true,
+        "code": "102",
+        "name": "技术组",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-27T11:22:08",
+        "modifyTime": "2019-01-27T11:22:08",
+        "id": 3
+      },
+      {
+        "memo": "",
+        "systemHide": false,
+        "systemInlay": false,
+        "code": "103",
+        "name": "采购组",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-02-22T22:29:10",
+        "modifyTime": "2019-02-22T22:29:10",
+        "id": 16
+      }
+    ],
+    "pageIndex": 0,
+    "pageSize": 30,
+    "records": 4,
+    "pageCount": 1
+  },
+  "code": 0
+},timed:24ms
+2020-09-11 15:04:17.2963 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "95602e2f858a410ba364f840bc654dd8",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:2ms
+2020-09-11 15:04:17.2963 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.FunctionInfo]] QueryUserOwnFunctionsByMenuCode(Int32, System.String, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "User",
+  null,
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "menuFunctionId": 0,
+      "code": "Query",
+      "name": "查询",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:17.2969417+08:00",
+      "modifyTime": "2020-09-11T15:04:17.2969427+08:00",
+      "id": 1
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Add",
+      "name": "添加",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:17.2969618+08:00",
+      "modifyTime": "2020-09-11T15:04:17.296962+08:00",
+      "id": 2
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Edit",
+      "name": "编辑",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:17.2969669+08:00",
+      "modifyTime": "2020-09-11T15:04:17.296967+08:00",
+      "id": 3
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Remove",
+      "name": "移除",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:17.2969714+08:00",
+      "modifyTime": "2020-09-11T15:04:17.2969715+08:00",
+      "id": 4
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "ResetPassword",
+      "name": "重置密码",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:17.2969762+08:00",
+      "modifyTime": "2020-09-11T15:04:17.2969764+08:00",
+      "id": 5
+    }
+  ],
+  "code": 0
+},timed:3ms
+2020-09-11 15:04:17.2963 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.FunctionInfo]] QueryCurrUserOwnFunctionsByMenuCode(System.String, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  "User",
+  null,
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "menuFunctionId": 0,
+      "code": "Query",
+      "name": "查询",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:17.2969417+08:00",
+      "modifyTime": "2020-09-11T15:04:17.2969427+08:00",
+      "id": 1
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Add",
+      "name": "添加",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:17.2969618+08:00",
+      "modifyTime": "2020-09-11T15:04:17.296962+08:00",
+      "id": 2
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Edit",
+      "name": "编辑",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:17.2969669+08:00",
+      "modifyTime": "2020-09-11T15:04:17.296967+08:00",
+      "id": 3
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Remove",
+      "name": "移除",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:17.2969714+08:00",
+      "modifyTime": "2020-09-11T15:04:17.2969715+08:00",
+      "id": 4
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "ResetPassword",
+      "name": "重置密码",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:17.2969762+08:00",
+      "modifyTime": "2020-09-11T15:04:17.2969764+08:00",
+      "id": 5
+    }
+  ],
+  "code": 0,
+  "msg": "操作成功"
+},timed:4ms
+2020-09-11 15:04:17.2963 INFO Hzdtf.BasicFunction.Service.Impl.Standard.RoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] QueryAndNotSystemHide(System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  null,
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    },
+    {
+      "memo": "业务部门的角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "101",
+      "name": "业务组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-27T11:21:26",
+      "modifyTime": "2019-01-27T11:21:26",
+      "id": 2
+    },
+    {
+      "memo": "技术部门的角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "102",
+      "name": "技术组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-27T11:22:08",
+      "modifyTime": "2019-01-27T11:22:08",
+      "id": 3
+    },
+    {
+      "memo": "",
+      "systemHide": false,
+      "systemInlay": false,
+      "code": "103",
+      "name": "采购组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-02-22T22:29:10",
+      "modifyTime": "2019-02-22T22:29:10",
+      "id": 16
+    }
+  ],
+  "code": 0
+},timed:2ms
+2020-09-11 15:04:17.3307 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "26eccb91da84445a9686fc2e7b8a0905",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:2ms
+2020-09-11 15:04:17.3307 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService System.Threading.Tasks.Task`1[Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.Page.PagingInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo]]] QueryPageAsync(Int32, Int32, Hzdtf.Utility.Standard.Model.FilterInfo, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  0,
+  30,
+  {
+    "keyword": "",
+    "sort": 0
+  },
+  null,
+  null
+],timed:0ms
+2020-09-11 15:04:17.3307 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Boolean] IsPermission(Int32, System.String, System.String[], System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "User",
+  [
+    "Query"
+  ],
+  null,
+  null
+],ReturnValue:{
+  "data": true,
+  "code": 0
+},timed:3ms
+2020-09-11 15:04:17.3307 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Boolean] IsCurrUserPermission(System.String, System.String[], System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  "User",
+  [
+    "Query"
+  ],
+  null,
+  null
+],ReturnValue:{
+  "data": true,
+  "code": 0,
+  "msg": "操作成功"
+},timed:3ms
+2020-09-11 15:04:17.3648 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.Page.PagingInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo]] QueryPage(Int32, Int32, Hzdtf.Utility.Standard.Model.FilterInfo, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  0,
+  30,
+  {
+    "keyword": "",
+    "sort": 0
+  },
+  null,
+  null
+],ReturnValue:{
+  "data": {
+    "rows": [
+      {
+        "ownRoles": [
+          {
+            "memo": "系统最高角色",
+            "systemHide": false,
+            "systemInlay": true,
+            "code": "100",
+            "name": "系统管理组",
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-25T20:56:27",
+            "modifyTime": "2019-01-27T23:31:54",
+            "id": 1
+          }
+        ],
+        "sex": true,
+        "systemHide": false,
+        "loginId": "system",
+        "password": "AC59075B964B0715",
+        "enabled": true,
+        "systemInlay": true,
+        "code": "1000",
+        "name": "系统管理员",
+        "createrId": 0,
+        "creater": "测试用户",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-17T15:28:12",
+        "modifyTime": "2020-08-12T17:03:23",
+        "id": 1
+      },
+      {
+        "ownRoles": [
+          {
+            "memo": "业务部门的角色",
+            "systemHide": false,
+            "systemInlay": true,
+            "code": "101",
+            "name": "业务组",
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-27T11:21:26",
+            "modifyTime": "2019-01-27T11:21:26",
+            "id": 2
+          },
+          {
+            "memo": "技术部门的角色",
+            "systemHide": false,
+            "systemInlay": true,
+            "code": "102",
+            "name": "技术组",
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-27T11:22:08",
+            "modifyTime": "2019-01-27T11:22:08",
+            "id": 3
+          }
+        ],
+        "memo": "",
+        "sex": true,
+        "systemHide": false,
+        "loginId": "huangyaoshi",
+        "password": "AC59075B964B0715",
+        "enabled": true,
+        "systemInlay": false,
+        "code": "u0001",
+        "name": "黄药师",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-27T22:44:41",
+        "modifyTime": "2019-02-22T22:32:00",
+        "id": 3
+      },
+      {
+        "ownRoles": [
+          {
+            "memo": "技术部门的角色",
+            "systemHide": false,
+            "systemInlay": true,
+            "code": "102",
+            "name": "技术组",
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-27T11:22:08",
+            "modifyTime": "2019-01-27T11:22:08",
+            "id": 3
+          }
+        ],
+        "mail": "",
+        "memo": "",
+        "mobile": "",
+        "qq": "",
+        "sex": false,
+        "systemHide": false,
+        "wechat": "",
+        "loginId": "tech",
+        "password": "AC59075B964B0715",
+        "enabled": false,
+        "systemInlay": false,
+        "code": "u002",
+        "name": "任我行",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-28T09:25:38",
+        "modifyTime": "2020-08-12T13:58:25",
+        "id": 7
+      },
+      {
+        "ownRoles": [
+          {
+            "memo": "",
+            "systemHide": false,
+            "systemInlay": false,
+            "code": "103",
+            "name": "采购组",
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-02-22T22:29:10",
+            "modifyTime": "2019-02-22T22:29:10",
+            "id": 16
+          }
+        ],
+        "mail": "",
+        "memo": "",
+        "mobile": "",
+        "qq": "",
+        "sex": false,
+        "systemHide": false,
+        "wechat": "",
+        "loginId": "huangrong",
+        "password": "AC59075B964B0715",
+        "enabled": true,
+        "systemInlay": false,
+        "code": "u00005",
+        "name": "黄蓉",
+        "createrId": 7,
+        "creater": "任我行",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-02-22T22:34:06",
+        "modifyTime": "2020-08-12T17:02:34",
+        "id": 10
+      }
+    ],
+    "pageIndex": 0,
+    "pageSize": 30,
+    "records": 4,
+    "pageCount": 1
+  },
+  "code": 0
+},timed:18ms
+2020-09-11 15:04:17.3648 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Void AfterQueryPage(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.Page.PagingInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo]], Int32, Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.FilterInfo, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  {
+    "data": {
+      "rows": [
+        {
+          "sex": true,
+          "systemHide": false,
+          "loginId": "system",
+          "password": "AC59075B964B0715",
+          "enabled": true,
+          "systemInlay": true,
+          "code": "1000",
+          "name": "系统管理员",
+          "createrId": 0,
+          "creater": "测试用户",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-01-17T15:28:12",
+          "modifyTime": "2020-08-12T17:03:23",
+          "id": 1
+        },
+        {
+          "memo": "",
+          "sex": true,
+          "systemHide": false,
+          "loginId": "huangyaoshi",
+          "password": "AC59075B964B0715",
+          "enabled": true,
+          "systemInlay": false,
+          "code": "u0001",
+          "name": "黄药师",
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-01-27T22:44:41",
+          "modifyTime": "2019-02-22T22:32:00",
+          "id": 3
+        },
+        {
+          "mail": "",
+          "memo": "",
+          "mobile": "",
+          "qq": "",
+          "sex": false,
+          "systemHide": false,
+          "wechat": "",
+          "loginId": "tech",
+          "password": "AC59075B964B0715",
+          "enabled": false,
+          "systemInlay": false,
+          "code": "u002",
+          "name": "任我行",
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-01-28T09:25:38",
+          "modifyTime": "2020-08-12T13:58:25",
+          "id": 7
+        },
+        {
+          "mail": "",
+          "memo": "",
+          "mobile": "",
+          "qq": "",
+          "sex": false,
+          "systemHide": false,
+          "wechat": "",
+          "loginId": "huangrong",
+          "password": "AC59075B964B0715",
+          "enabled": true,
+          "systemInlay": false,
+          "code": "u00005",
+          "name": "黄蓉",
+          "createrId": 7,
+          "creater": "任我行",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-02-22T22:34:06",
+          "modifyTime": "2020-08-12T17:02:34",
+          "id": 10
+        }
+      ],
+      "pageIndex": 0,
+      "pageSize": 30,
+      "records": 4,
+      "pageCount": 1
+    },
+    "code": 0
+  },
+  0,
+  30,
+  null,
+  {
+    "keyword": "",
+    "sort": 0
+  },
+  null
+],timed:10ms
+2020-09-11 15:04:17.3413 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Void BeforeQueryPage(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.Page.PagingInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo]], Int32, Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.FilterInfo, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  {
+    "code": 0
+  },
+  0,
+  30,
+  null,
+  {
+    "keyword": "",
+    "sort": 0
+  },
+  null
+],timed:0ms
+2020-09-11 15:04:19.3947 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "9f4ea113f94242f5b090c8b0446638a5",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:3ms
+2020-09-11 15:04:19.3947 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.FunctionInfo]] QueryCurrUserOwnFunctionsByMenuCode(System.String, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  "TestForm",
+  null,
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "menuFunctionId": 0,
+      "code": "Save",
+      "name": "保存",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:19.3956689+08:00",
+      "modifyTime": "2020-09-11T15:04:19.3956696+08:00",
+      "id": 6
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Apply",
+      "name": "申请",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:19.3956852+08:00",
+      "modifyTime": "2020-09-11T15:04:19.3956853+08:00",
+      "id": 11
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Query",
+      "name": "查询",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:19.3956885+08:00",
+      "modifyTime": "2020-09-11T15:04:19.3956886+08:00",
+      "id": 1
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Edit",
+      "name": "编辑",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:19.3956912+08:00",
+      "modifyTime": "2020-09-11T15:04:19.3956913+08:00",
+      "id": 3
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Remove",
+      "name": "移除",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:19.395695+08:00",
+      "modifyTime": "2020-09-11T15:04:19.3956951+08:00",
+      "id": 4
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Undo",
+      "name": "撤消",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:19.3956979+08:00",
+      "modifyTime": "2020-09-11T15:04:19.395698+08:00",
+      "id": 14
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "ForceRemove",
+      "name": "强制删除",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:19.3957007+08:00",
+      "modifyTime": "2020-09-11T15:04:19.3957008+08:00",
+      "id": 16
+    }
+  ],
+  "code": 0,
+  "msg": "操作成功"
+},timed:5ms
+2020-09-11 15:04:19.3947 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.FunctionInfo]] QueryUserOwnFunctionsByMenuCode(Int32, System.String, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "TestForm",
+  null,
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "menuFunctionId": 0,
+      "code": "Save",
+      "name": "保存",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:19.3956689+08:00",
+      "modifyTime": "2020-09-11T15:04:19.3956696+08:00",
+      "id": 6
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Apply",
+      "name": "申请",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:19.3956852+08:00",
+      "modifyTime": "2020-09-11T15:04:19.3956853+08:00",
+      "id": 11
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Query",
+      "name": "查询",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:19.3956885+08:00",
+      "modifyTime": "2020-09-11T15:04:19.3956886+08:00",
+      "id": 1
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Edit",
+      "name": "编辑",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:19.3956912+08:00",
+      "modifyTime": "2020-09-11T15:04:19.3956913+08:00",
+      "id": 3
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Remove",
+      "name": "移除",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:19.395695+08:00",
+      "modifyTime": "2020-09-11T15:04:19.3956951+08:00",
+      "id": 4
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Undo",
+      "name": "撤消",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:19.3956979+08:00",
+      "modifyTime": "2020-09-11T15:04:19.395698+08:00",
+      "id": 14
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "ForceRemove",
+      "name": "强制删除",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:19.3957007+08:00",
+      "modifyTime": "2020-09-11T15:04:19.3957008+08:00",
+      "id": 16
+    }
+  ],
+  "code": 0
+},timed:5ms
+2020-09-11 15:04:19.4192 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "817e396f3ea14a23a182451e36773777",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:1ms
+2020-09-11 15:04:19.4199 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Boolean] IsPermission(Int32, System.String, System.String[], System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "TestForm",
+  [
+    "Query"
+  ],
+  null,
+  null
+],ReturnValue:{
+  "data": true,
+  "code": 0
+},timed:2ms
+2020-09-11 15:04:19.4199 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Boolean] IsCurrUserPermission(System.String, System.String[], System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  "TestForm",
+  [
+    "Query"
+  ],
+  null,
+  null
+],ReturnValue:{
+  "data": true,
+  "code": 0,
+  "msg": "操作成功"
+},timed:2ms
+2020-09-11 15:04:19.4199 INFO Hzdtf.Demo.Service.Impl.Standard.TestFormService System.Threading.Tasks.Task`1[Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.Page.PagingInfo`1[Hzdtf.Demo.Model.Standard.TestFormInfo]]] QueryPageAsync(Int32, Int32, Hzdtf.Utility.Standard.Model.FilterInfo, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  0,
+  30,
+  {
+    "keyword": "",
+    "sort": 0
+  },
+  null,
+  null
+],timed:0ms
+2020-09-11 15:04:19.4199 INFO Hzdtf.Demo.Service.Impl.Standard.TestFormService Void BeforeQueryPage(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.Page.PagingInfo`1[Hzdtf.Demo.Model.Standard.TestFormInfo]], Int32, Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.FilterInfo, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  {
+    "code": 0
+  },
+  0,
+  30,
+  null,
+  {
+    "keyword": "",
+    "sort": 0
+  },
+  null
+],timed:0ms
+2020-09-11 15:04:19.4491 INFO Hzdtf.Demo.Service.Impl.Standard.TestFormService Void AfterQueryPage(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.Page.PagingInfo`1[Hzdtf.Demo.Model.Standard.TestFormInfo]], Int32, Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.FilterInfo, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  {
+    "data": {
+      "rows": [
+        {
+          "code": "432",
+          "name": "432",
+          "applyNo": "AA19081500000",
+          "title": "23422",
+          "flowStatus": 4,
+          "workflowId": 90,
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-08-15T00:10:35",
+          "modifyTime": "2019-08-15T00:11:06",
+          "id": 9
+        },
+        {
+          "code": "45353",
+          "name": "543",
+          "applyNo": "AA19081500001",
+          "title": "53",
+          "flowStatus": 1,
+          "workflowId": 91,
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-08-15T00:11:42",
+          "modifyTime": "2019-08-15T00:11:42",
+          "id": 10
+        },
+        {
+          "code": "322",
+          "name": "234",
+          "applyNo": "AA19081500002",
+          "title": "2121212",
+          "flowStatus": 2,
+          "workflowId": 92,
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 3,
+          "modifier": "黄药师",
+          "createTime": "2019-08-15T00:21:22",
+          "modifyTime": "2019-08-21T08:27:20",
+          "id": 11
+        },
+        {
+          "code": "3232",
+          "name": "322",
+          "applyNo": "AA19082100000",
+          "title": "3422",
+          "flowStatus": 3,
+          "workflowId": 93,
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 3,
+          "modifier": "黄药师",
+          "createTime": "2019-08-21T08:31:18",
+          "modifyTime": "2019-08-21T08:32:35",
+          "id": 12
+        },
+        {
+          "code": "1",
+          "name": "name1",
+          "applyNo": "AA20081200001",
+          "title": "t1",
+          "flowStatus": 4,
+          "workflowId": 95,
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2020-08-12T14:49:46",
+          "modifyTime": "2020-08-12T14:50:05",
+          "id": 14
+        },
+        {
+          "code": "u1",
+          "name": "n1",
+          "applyNo": "AA20081200002",
+          "title": "t1",
+          "flowStatus": 2,
+          "workflowId": 96,
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 3,
+          "modifier": "黄药师",
+          "createTime": "2020-08-12T14:50:57",
+          "modifyTime": "2020-08-12T14:51:26",
+          "id": 15
+        }
+      ],
+      "pageIndex": 0,
+      "pageSize": 30,
+      "records": 6,
+      "pageCount": 1
+    },
+    "code": 0
+  },
+  0,
+  30,
+  null,
+  {
+    "keyword": "",
+    "sort": 0
+  },
+  null
+],timed:0ms
+2020-09-11 15:04:19.4491 INFO Hzdtf.Demo.Service.Impl.Standard.TestFormService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.Page.PagingInfo`1[Hzdtf.Demo.Model.Standard.TestFormInfo]] QueryPage(Int32, Int32, Hzdtf.Utility.Standard.Model.FilterInfo, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  0,
+  30,
+  {
+    "keyword": "",
+    "sort": 0
+  },
+  null,
+  null
+],ReturnValue:{
+  "data": {
+    "rows": [
+      {
+        "code": "432",
+        "name": "432",
+        "applyNo": "AA19081500000",
+        "title": "23422",
+        "flowStatus": 4,
+        "workflowId": 90,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-08-15T00:10:35",
+        "modifyTime": "2019-08-15T00:11:06",
+        "id": 9
+      },
+      {
+        "code": "45353",
+        "name": "543",
+        "applyNo": "AA19081500001",
+        "title": "53",
+        "flowStatus": 1,
+        "workflowId": 91,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-08-15T00:11:42",
+        "modifyTime": "2019-08-15T00:11:42",
+        "id": 10
+      },
+      {
+        "code": "322",
+        "name": "234",
+        "applyNo": "AA19081500002",
+        "title": "2121212",
+        "flowStatus": 2,
+        "workflowId": 92,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 3,
+        "modifier": "黄药师",
+        "createTime": "2019-08-15T00:21:22",
+        "modifyTime": "2019-08-21T08:27:20",
+        "id": 11
+      },
+      {
+        "code": "3232",
+        "name": "322",
+        "applyNo": "AA19082100000",
+        "title": "3422",
+        "flowStatus": 3,
+        "workflowId": 93,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 3,
+        "modifier": "黄药师",
+        "createTime": "2019-08-21T08:31:18",
+        "modifyTime": "2019-08-21T08:32:35",
+        "id": 12
+      },
+      {
+        "code": "1",
+        "name": "name1",
+        "applyNo": "AA20081200001",
+        "title": "t1",
+        "flowStatus": 4,
+        "workflowId": 95,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2020-08-12T14:49:46",
+        "modifyTime": "2020-08-12T14:50:05",
+        "id": 14
+      },
+      {
+        "code": "u1",
+        "name": "n1",
+        "applyNo": "AA20081200002",
+        "title": "t1",
+        "flowStatus": 2,
+        "workflowId": 96,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 3,
+        "modifier": "黄药师",
+        "createTime": "2020-08-12T14:50:57",
+        "modifyTime": "2020-08-12T14:51:26",
+        "id": 15
+      }
+    ],
+    "pageIndex": 0,
+    "pageSize": 30,
+    "records": 6,
+    "pageCount": 1
+  },
+  "code": 0
+},timed:25ms
+2020-09-11 15:04:37.6917 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "a8c19c7ac46941939cf0c06ce29acf24",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:1ms
+2020-09-11 15:04:37.6917 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.FunctionInfo]] QueryUserOwnFunctionsByMenuCode(Int32, System.String, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "MyApplyFlow",
+  null,
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "menuFunctionId": 0,
+      "code": "Query",
+      "name": "查询",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:37.6923454+08:00",
+      "modifyTime": "2020-09-11T15:04:37.6923461+08:00",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:2ms
+2020-09-11 15:04:37.6917 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.FunctionInfo]] QueryCurrUserOwnFunctionsByMenuCode(System.String, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  "MyApplyFlow",
+  null,
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "menuFunctionId": 0,
+      "code": "Query",
+      "name": "查询",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2020-09-11T15:04:37.6923454+08:00",
+      "modifyTime": "2020-09-11T15:04:37.6923461+08:00",
+      "id": 1
+    }
+  ],
+  "code": 0,
+  "msg": "操作成功"
+},timed:3ms
+2020-09-11 15:04:37.7199 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "5c6f73bca2124fe1b8339b933f7784f2",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:2ms
+2020-09-11 15:04:37.7199 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Boolean] IsPermission(Int32, System.String, System.String[], System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "MyApplyFlow",
+  [
+    "Query"
+  ],
+  null,
+  null
+],ReturnValue:{
+  "data": true,
+  "code": 0
+},timed:3ms
+2020-09-11 15:04:37.7199 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Boolean] IsCurrUserPermission(System.String, System.String[], System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  "MyApplyFlow",
+  [
+    "Query"
+  ],
+  null,
+  null
+],ReturnValue:{
+  "data": true,
+  "code": 0,
+  "msg": "操作成功"
+},timed:3ms
+2020-09-11 15:04:37.7398 INFO Hzdtf.WorkFlow.Service.Impl.Standard.WorkflowService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.Page.PagingInfo`1[Hzdtf.WorkFlow.Model.Standard.WorkflowInfo]] QueryCurrUserApplyFlowPage(Int32, Int32, Hzdtf.WorkFlow.Model.Standard.Expand.Filter.ApplyFlowFilterInfo, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  0,
+  30,
+  {
+    "handlerId": 0,
+    "keyword": "",
+    "startCreateTime": "2020-08-11T00:00:00",
+    "endCreateTime": "2020-09-11T00:00:00",
+    "sort": 0
+  },
+  null,
+  null
+],ReturnValue:{
+  "data": {
+    "rows": [
+      {
+        "applyNo": "AA20081200002",
+        "currConcreteCensorshipIds": "9",
+        "currConcreteCensorships": "结束",
+        "currFlowCensorshipIds": "9",
+        "currHandlerIds": "1",
+        "currHandlers": "系统管理员",
+        "flowStatus": 2,
+        "title": "t1",
+        "workflowDefineId": 3,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 3,
+        "modifier": "黄药师",
+        "createTime": "2020-08-12T14:50:57",
+        "modifyTime": "2020-08-12T14:51:26",
+        "id": 96
+      },
+      {
+        "applyNo": "AA20081200001",
+        "currConcreteCensorshipIds": "1",
+        "currConcreteCensorships": "申请者",
+        "currFlowCensorshipIds": "7",
+        "currHandlerIds": "1",
+        "currHandlers": "系统管理员",
+        "flowStatus": 4,
+        "title": "t1",
+        "workflowDefineId": 3,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2020-08-12T14:49:46",
+        "modifyTime": "2020-08-12T14:49:46",
+        "id": 95
+      }
+    ],
+    "pageIndex": 0,
+    "pageSize": 30,
+    "records": 2,
+    "pageCount": 1
+  },
+  "code": 0
+},timed:12ms
+2020-09-11 15:04:45.0196 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "b846b4cdb6164089970edfc562e7e55c",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:1ms
+2020-09-11 15:04:45.0196 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Boolean] IsPermission(Int32, System.String, System.String[], System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  1,
+  "MyApplyFlow",
+  [
+    "Query"
+  ],
+  null,
+  null
+],ReturnValue:{
+  "data": true,
+  "code": 0
+},timed:2ms
+2020-09-11 15:04:45.0196 INFO Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Boolean] IsCurrUserPermission(System.String, System.String[], System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  "MyApplyFlow",
+  [
+    "Query"
+  ],
+  null,
+  null
+],ReturnValue:{
+  "data": true,
+  "code": 0,
+  "msg": "操作成功"
+},timed:3ms
+2020-09-11 15:04:45.0524 INFO Hzdtf.WorkFlow.Service.Impl.Standard.FlowService Void BeforeFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.WorkFlow.Model.Standard.FlowInfo], Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  {
+    "code": 0
+  },
+  2,
+  "a5497e5aa8cd44e4b3474aa2a411656e",
+  null
+],timed:0ms
+2020-09-11 15:04:45.0662 INFO Hzdtf.WorkFlow.Service.Impl.Standard.FlowService Void AfterFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.WorkFlow.Model.Standard.FlowInfo], Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  {
+    "data": {
+      "name": "测试流程审核",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-08-06T23:07:11",
+      "modifyTime": "2019-08-06T23:07:17",
+      "id": 2
+    },
+    "code": 0
+  },
+  2,
+  "a5497e5aa8cd44e4b3474aa2a411656e",
+  null
+],timed:0ms
+2020-09-11 15:04:45.0662 INFO Hzdtf.WorkFlow.Service.Impl.Standard.FlowService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.WorkFlow.Model.Standard.FlowInfo] Find(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  2,
+  "a5497e5aa8cd44e4b3474aa2a411656e",
+  null
+],ReturnValue:{
+  "data": {
+    "name": "测试流程审核",
+    "createrId": 1,
+    "creater": "系统管理员",
+    "modifierId": 1,
+    "modifier": "系统管理员",
+    "createTime": "2019-08-06T23:07:11",
+    "modifyTime": "2019-08-06T23:07:17",
+    "id": 2
+  },
+  "code": 0
+},timed:17ms
+2020-09-11 15:04:45.0899 INFO Hzdtf.WorkFlow.Service.Impl.Standard.FormService Void AfterFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.WorkFlow.Model.Standard.FormInfo], Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  {
+    "data": {
+      "formUrl": "/html/Demo/Form/flowForm.html",
+      "name": "测试表单",
+      "formGetDetailUrl": "/api/TestFormWorkflow/GetFormDetail",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "1",
+      "createTime": "2019-08-06T23:06:35",
+      "modifyTime": "2019-08-06T23:06:40",
+      "id": 3
+    },
+    "code": 0
+  },
+  3,
+  "a5497e5aa8cd44e4b3474aa2a411656e",
+  null
+],timed:0ms
+2020-09-11 15:04:45.0662 INFO Hzdtf.WorkFlow.Service.Impl.Standard.FormService Void BeforeFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.WorkFlow.Model.Standard.FormInfo], Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  {
+    "code": 0
+  },
+  3,
+  "a5497e5aa8cd44e4b3474aa2a411656e",
+  null
+],timed:0ms
+2020-09-11 15:04:45.0924 INFO Hzdtf.WorkFlow.Service.Impl.Standard.FormService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.WorkFlow.Model.Standard.FormInfo] Find(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  3,
+  "a5497e5aa8cd44e4b3474aa2a411656e",
+  null
+],ReturnValue:{
+  "data": {
+    "formUrl": "/html/Demo/Form/flowForm.html",
+    "name": "测试表单",
+    "formGetDetailUrl": "/api/TestFormWorkflow/GetFormDetail",
+    "createrId": 0,
+    "creater": "系统管理员",
+    "modifierId": 1,
+    "modifier": "1",
+    "createTime": "2019-08-06T23:06:35",
+    "modifyTime": "2019-08-06T23:06:40",
+    "id": 3
+  },
+  "code": 0
+},timed:19ms
+2020-09-11 15:04:45.1145 INFO Hzdtf.WorkFlow.Service.Impl.Standard.FlowCensorshipService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.WorkFlow.Model.Standard.FlowCensorshipInfo]] QueryByFlowId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  2,
+  "a5497e5aa8cd44e4b3474aa2a411656e",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "flowId": 2,
+      "ownerCensorshipId": 1,
+      "ownerCensorshipType": 0,
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-08-06T23:10:55",
+      "modifyTime": "2019-08-06T23:11:02",
+      "id": 7
+    },
+    {
+      "flowId": 2,
+      "ownerCensorshipId": 3,
+      "ownerCensorshipType": 2,
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-08-06T23:12:27",
+      "modifyTime": "2019-08-06T23:12:31",
+      "id": 8
+    },
+    {
+      "flowId": 2,
+      "ownerCensorshipId": 3,
+      "ownerCensorshipType": 0,
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-08-06T23:12:47",
+      "modifyTime": "2019-08-06T23:12:50",
+      "id": 9
+    }
+  ],
+  "code": 0
+},timed:28ms
+2020-09-11 15:04:45.1145 INFO Hzdtf.WorkFlow.Service.Impl.Standard.StandardCensorshipService Void BeforeFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.WorkFlow.Model.Standard.StandardCensorshipInfo]], Int32[], System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  {
+    "code": 0
+  },
+  [
+    1,
+    3
+  ],
+  "a5497e5aa8cd44e4b3474aa2a411656e",
+  null
+],timed:0ms
+2020-09-11 15:04:45.1353 INFO Hzdtf.WorkFlow.Service.Impl.Standard.StandardCensorshipService Void AfterFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.WorkFlow.Model.Standard.StandardCensorshipInfo]], Int32[], System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  {
+    "data": [
+      {
+        "code": "Applicant",
+        "name": "申请者",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-03-24T00:06:34",
+        "modifyTime": "2019-03-24T00:06:40",
+        "id": 1
+      },
+      {
+        "code": "End",
+        "name": "结束",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-03-24T00:13:16",
+        "modifyTime": "2019-03-24T00:13:20",
+        "id": 3
+      }
+    ],
+    "code": 0
+  },
+  [
+    1,
+    3
+  ],
+  "a5497e5aa8cd44e4b3474aa2a411656e",
+  null
+],timed:0ms
+2020-09-11 15:04:45.1353 INFO Hzdtf.WorkFlow.Service.Impl.Standard.StandardCensorshipService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.WorkFlow.Model.Standard.StandardCensorshipInfo]] Find(Int32[], System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  [
+    1,
+    3
+  ],
+  "a5497e5aa8cd44e4b3474aa2a411656e",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "code": "Applicant",
+      "name": "申请者",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-03-24T00:06:34",
+      "modifyTime": "2019-03-24T00:06:40",
+      "id": 1
+    },
+    {
+      "code": "End",
+      "name": "结束",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-03-24T00:13:16",
+      "modifyTime": "2019-03-24T00:13:20",
+      "id": 3
+    }
+  ],
+  "code": 0
+},timed:20ms
+2020-09-11 15:04:45.1505 INFO Hzdtf.WorkFlow.Service.Impl.Standard.SendFlowRouteService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.WorkFlow.Model.Standard.SendFlowRouteInfo]] QueryByFlowCensorshipIds(Int32[], System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  [
+    7,
+    8,
+    9
+  ],
+  "a5497e5aa8cd44e4b3474aa2a411656e",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "flowCensorshipId": 7,
+      "toFlowCensorshipId": 8,
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-08-06T23:13:31",
+      "modifyTime": "2019-08-06T23:13:36",
+      "id": 5
+    },
+    {
+      "flowCensorshipId": 8,
+      "toFlowCensorshipId": 9,
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-08-06T23:13:47",
+      "modifyTime": "2019-08-06T23:13:50",
+      "id": 6
+    }
+  ],
+  "code": 0
+},timed:14ms
+2020-09-11 15:04:45.1650 INFO Hzdtf.WorkFlow.Service.Impl.Standard.ReturnFlowRouteService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.WorkFlow.Model.Standard.ReturnFlowRouteInfo]] QueryByFlowCensorshipIds(Int32[], System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  [
+    7,
+    8,
+    9
+  ],
+  "a5497e5aa8cd44e4b3474aa2a411656e",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "flowCensorshipId": 8,
+      "toFlowCensorshipId": 7,
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-08-21T08:30:52",
+      "modifyTime": "2019-08-21T08:31:00",
+      "id": 4
+    }
+  ],
+  "code": 0
+},timed:14ms
+2020-09-11 15:04:45.1650 INFO Hzdtf.WorkFlow.Service.Impl.Standard.WorkflowDefineService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.WorkFlow.Model.Standard.WorkflowDefineInfo] ReaderAllConfig(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  3,
+  "a5497e5aa8cd44e4b3474aa2a411656e",
+  null
+],ReturnValue:{
+  "data": {
+    "flow": {
+      "functions": [
+        {
+          "standardCensorships": [
+            {
+              "code": "Applicant",
+              "name": "申请者",
+              "createrId": 1,
+              "creater": "系统管理员",
+              "modifierId": 1,
+              "modifier": "系统管理员",
+              "createTime": "2019-03-24T00:06:34",
+              "modifyTime": "2019-03-24T00:06:40",
+              "id": 1
+            }
+          ],
+          "sendFlowRoutes": [
+            {
+              "flowCensorshipId": 7,
+              "toFlowCensorshipId": 8,
+              "createrId": 1,
+              "creater": "系统管理员",
+              "modifierId": 1,
+              "modifier": "系统管理员",
+              "createTime": "2019-08-06T23:13:31",
+              "modifyTime": "2019-08-06T23:13:36",
+              "id": 5
+            }
+          ],
+          "flowId": 2,
+          "ownerCensorshipId": 1,
+          "ownerCensorshipType": 0,
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-08-06T23:10:55",
+          "modifyTime": "2019-08-06T23:11:02",
+          "id": 7
+        },
+        {
+          "sendFlowRoutes": [
+            {
+              "flowCensorshipId": 8,
+              "toFlowCensorshipId": 9,
+              "createrId": 1,
+              "creater": "系统管理员",
+              "modifierId": 1,
+              "modifier": "系统管理员",
+              "createTime": "2019-08-06T23:13:47",
+              "modifyTime": "2019-08-06T23:13:50",
+              "id": 6
+            }
+          ],
+          "returnFlowRoutes": [
+            {
+              "flowCensorshipId": 8,
+              "toFlowCensorshipId": 7,
+              "createrId": 1,
+              "creater": "系统管理员",
+              "modifierId": 1,
+              "modifier": "系统管理员",
+              "createTime": "2019-08-21T08:30:52",
+              "modifyTime": "2019-08-21T08:31:00",
+              "id": 4
+            }
+          ],
+          "flowId": 2,
+          "ownerCensorshipId": 3,
+          "ownerCensorshipType": 2,
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-08-06T23:12:27",
+          "modifyTime": "2019-08-06T23:12:31",
+          "id": 8
+        },
+        {
+          "standardCensorships": [
+            {
+              "code": "End",
+              "name": "结束",
+              "createrId": 1,
+              "creater": "系统管理员",
+              "modifierId": 1,
+              "modifier": "系统管理员",
+              "createTime": "2019-03-24T00:13:16",
+              "modifyTime": "2019-03-24T00:13:20",
+              "id": 3
+            }
+          ],
+          "flowId": 2,
+          "ownerCensorshipId": 3,
+          "ownerCensorshipType": 0,
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-08-06T23:12:47",
+          "modifyTime": "2019-08-06T23:12:50",
+          "id": 9
+        }
+      ],
+      "name": "测试流程审核",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-08-06T23:07:11",
+      "modifyTime": "2019-08-06T23:07:17",
+      "id": 2
+    },
+    "form": {
+      "formUrl": "/html/Demo/Form/flowForm.html",
+      "name": "测试表单",
+      "formGetDetailUrl": "/api/TestFormWorkflow/GetFormDetail",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "1",
+      "createTime": "2019-08-06T23:06:35",
+      "modifyTime": "2019-08-06T23:06:40",
+      "id": 3
+    },
+    "code": "AA",
+    "enabled": true,
+    "flowId": 2,
+    "formId": 3,
+    "name": "测试表单流程",
+    "createrId": 1,
+    "creater": "系统管理员",
+    "modifierId": 1,
+    "modifier": "系统管理员",
+    "createTime": "2019-08-06T23:07:28",
+    "modifyTime": "2019-08-06T23:07:34",
+    "id": 3
+  },
+  "code": 0
+},timed:139ms
+2020-09-11 15:04:45.1748 INFO Hzdtf.WorkFlow.Service.Impl.Standard.WorkflowService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.WorkFlow.Model.Standard.WorkflowInfo] FindContainHandlesAndAllConfigs(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  95,
+  null,
+  null
+],ReturnValue:{
+  "data": {
+    "handles": [
+      {
+        "concreteConcrete": "申请者",
+        "concreteConcreteId": 1,
+        "flowCensorshipId": 7,
+        "handleStatus": 1,
+        "handleTime": "2020-08-12T14:49:46",
+        "handleType": 2,
+        "handler": "系统管理员",
+        "handlerId": 1,
+        "idea": "提交申请",
+        "isReaded": true,
+        "workflowId": 95,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2020-08-12T14:49:46",
+        "modifyTime": "2020-08-12T14:49:46",
+        "id": 293
+      }
+    ],
+    "workflowDefine": {
+      "flow": {
+        "functions": [
+          {
+            "standardCensorships": [
+              {
+                "code": "Applicant",
+                "name": "申请者",
+                "createrId": 1,
+                "creater": "系统管理员",
+                "modifierId": 1,
+                "modifier": "系统管理员",
+                "createTime": "2019-03-24T00:06:34",
+                "modifyTime": "2019-03-24T00:06:40",
+                "id": 1
+              }
+            ],
+            "sendFlowRoutes": [
+              {
+                "flowCensorshipId": 7,
+                "toFlowCensorshipId": 8,
+                "createrId": 1,
+                "creater": "系统管理员",
+                "modifierId": 1,
+                "modifier": "系统管理员",
+                "createTime": "2019-08-06T23:13:31",
+                "modifyTime": "2019-08-06T23:13:36",
+                "id": 5
+              }
+            ],
+            "flowId": 2,
+            "ownerCensorshipId": 1,
+            "ownerCensorshipType": 0,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-08-06T23:10:55",
+            "modifyTime": "2019-08-06T23:11:02",
+            "id": 7
+          },
+          {
+            "sendFlowRoutes": [
+              {
+                "flowCensorshipId": 8,
+                "toFlowCensorshipId": 9,
+                "createrId": 1,
+                "creater": "系统管理员",
+                "modifierId": 1,
+                "modifier": "系统管理员",
+                "createTime": "2019-08-06T23:13:47",
+                "modifyTime": "2019-08-06T23:13:50",
+                "id": 6
+              }
+            ],
+            "returnFlowRoutes": [
+              {
+                "flowCensorshipId": 8,
+                "toFlowCensorshipId": 7,
+                "createrId": 1,
+                "creater": "系统管理员",
+                "modifierId": 1,
+                "modifier": "系统管理员",
+                "createTime": "2019-08-21T08:30:52",
+                "modifyTime": "2019-08-21T08:31:00",
+                "id": 4
+              }
+            ],
+            "flowId": 2,
+            "ownerCensorshipId": 3,
+            "ownerCensorshipType": 2,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-08-06T23:12:27",
+            "modifyTime": "2019-08-06T23:12:31",
+            "id": 8
+          },
+          {
+            "standardCensorships": [
+              {
+                "code": "End",
+                "name": "结束",
+                "createrId": 1,
+                "creater": "系统管理员",
+                "modifierId": 1,
+                "modifier": "系统管理员",
+                "createTime": "2019-03-24T00:13:16",
+                "modifyTime": "2019-03-24T00:13:20",
+                "id": 3
+              }
+            ],
+            "flowId": 2,
+            "ownerCensorshipId": 3,
+            "ownerCensorshipType": 0,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-08-06T23:12:47",
+            "modifyTime": "2019-08-06T23:12:50",
+            "id": 9
+          }
+        ],
+        "name": "测试流程审核",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-08-06T23:07:11",
+        "modifyTime": "2019-08-06T23:07:17",
+        "id": 2
+      },
+      "form": {
+        "formUrl": "/html/Demo/Form/flowForm.html",
+        "name": "测试表单",
+        "formGetDetailUrl": "/api/TestFormWorkflow/GetFormDetail",
+        "createrId": 0,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "1",
+        "createTime": "2019-08-06T23:06:35",
+        "modifyTime": "2019-08-06T23:06:40",
+        "id": 3
+      },
+      "code": "AA",
+      "enabled": true,
+      "flowId": 2,
+      "formId": 3,
+      "name": "测试表单流程",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-08-06T23:07:28",
+      "modifyTime": "2019-08-06T23:07:34",
+      "id": 3
+    },
+    "applyNo": "AA20081200001",
+    "currConcreteCensorshipIds": "1",
+    "currConcreteCensorships": "申请者",
+    "currFlowCensorshipIds": "7",
+    "currHandlerIds": "1",
+    "currHandlers": "系统管理员",
+    "flowStatus": 4,
+    "title": "t1",
+    "workflowDefineId": 3,
+    "createrId": 1,
+    "creater": "系统管理员",
+    "modifierId": 1,
+    "modifier": "系统管理员",
+    "createTime": "2020-08-12T14:49:46",
+    "modifyTime": "2020-08-12T14:49:46",
+    "id": 95
+  },
+  "code": 0
+},timed:153ms
+2020-09-11 15:04:45.1748 INFO Hzdtf.WorkFlow.Service.Impl.Standard.WorkflowService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.WorkFlow.Model.Standard.WorkflowInfo] FindCurrUserApplyDetail(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  95,
+  null,
+  null
+],ReturnValue:{
+  "data": {
+    "handles": [
+      {
+        "concreteConcrete": "申请者",
+        "concreteConcreteId": 1,
+        "flowCensorshipId": 7,
+        "handleStatus": 1,
+        "handleTime": "2020-08-12T14:49:46",
+        "handleType": 2,
+        "handler": "系统管理员",
+        "handlerId": 1,
+        "idea": "提交申请",
+        "isReaded": true,
+        "workflowId": 95,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2020-08-12T14:49:46",
+        "modifyTime": "2020-08-12T14:49:46",
+        "id": 293
+      }
+    ],
+    "workflowDefine": {
+      "flow": {
+        "functions": [
+          {
+            "standardCensorships": [
+              {
+                "code": "Applicant",
+                "name": "申请者",
+                "createrId": 1,
+                "creater": "系统管理员",
+                "modifierId": 1,
+                "modifier": "系统管理员",
+                "createTime": "2019-03-24T00:06:34",
+                "modifyTime": "2019-03-24T00:06:40",
+                "id": 1
+              }
+            ],
+            "sendFlowRoutes": [
+              {
+                "flowCensorshipId": 7,
+                "toFlowCensorshipId": 8,
+                "createrId": 1,
+                "creater": "系统管理员",
+                "modifierId": 1,
+                "modifier": "系统管理员",
+                "createTime": "2019-08-06T23:13:31",
+                "modifyTime": "2019-08-06T23:13:36",
+                "id": 5
+              }
+            ],
+            "flowId": 2,
+            "ownerCensorshipId": 1,
+            "ownerCensorshipType": 0,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-08-06T23:10:55",
+            "modifyTime": "2019-08-06T23:11:02",
+            "id": 7
+          },
+          {
+            "sendFlowRoutes": [
+              {
+                "flowCensorshipId": 8,
+                "toFlowCensorshipId": 9,
+                "createrId": 1,
+                "creater": "系统管理员",
+                "modifierId": 1,
+                "modifier": "系统管理员",
+                "createTime": "2019-08-06T23:13:47",
+                "modifyTime": "2019-08-06T23:13:50",
+                "id": 6
+              }
+            ],
+            "returnFlowRoutes": [
+              {
+                "flowCensorshipId": 8,
+                "toFlowCensorshipId": 7,
+                "createrId": 1,
+                "creater": "系统管理员",
+                "modifierId": 1,
+                "modifier": "系统管理员",
+                "createTime": "2019-08-21T08:30:52",
+                "modifyTime": "2019-08-21T08:31:00",
+                "id": 4
+              }
+            ],
+            "flowId": 2,
+            "ownerCensorshipId": 3,
+            "ownerCensorshipType": 2,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-08-06T23:12:27",
+            "modifyTime": "2019-08-06T23:12:31",
+            "id": 8
+          },
+          {
+            "standardCensorships": [
+              {
+                "code": "End",
+                "name": "结束",
+                "createrId": 1,
+                "creater": "系统管理员",
+                "modifierId": 1,
+                "modifier": "系统管理员",
+                "createTime": "2019-03-24T00:13:16",
+                "modifyTime": "2019-03-24T00:13:20",
+                "id": 3
+              }
+            ],
+            "flowId": 2,
+            "ownerCensorshipId": 3,
+            "ownerCensorshipType": 0,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-08-06T23:12:47",
+            "modifyTime": "2019-08-06T23:12:50",
+            "id": 9
+          }
+        ],
+        "name": "测试流程审核",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-08-06T23:07:11",
+        "modifyTime": "2019-08-06T23:07:17",
+        "id": 2
+      },
+      "form": {
+        "formUrl": "/html/Demo/Form/flowForm.html",
+        "name": "测试表单",
+        "formGetDetailUrl": "/api/TestFormWorkflow/GetFormDetail",
+        "createrId": 0,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "1",
+        "createTime": "2019-08-06T23:06:35",
+        "modifyTime": "2019-08-06T23:06:40",
+        "id": 3
+      },
+      "code": "AA",
+      "enabled": true,
+      "flowId": 2,
+      "formId": 3,
+      "name": "测试表单流程",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-08-06T23:07:28",
+      "modifyTime": "2019-08-06T23:07:34",
+      "id": 3
+    },
+    "applyNo": "AA20081200001",
+    "currConcreteCensorshipIds": "1",
+    "currConcreteCensorships": "申请者",
+    "currFlowCensorshipIds": "7",
+    "currHandlerIds": "1",
+    "currHandlers": "系统管理员",
+    "flowStatus": 4,
+    "title": "t1",
+    "workflowDefineId": 3,
+    "createrId": 1,
+    "creater": "系统管理员",
+    "modifierId": 1,
+    "modifier": "系统管理员",
+    "createTime": "2020-08-12T14:49:46",
+    "modifyTime": "2020-08-12T14:49:46",
+    "id": 95
+  },
+  "code": 0,
+  "msg": "操作成功"
+},timed:154ms

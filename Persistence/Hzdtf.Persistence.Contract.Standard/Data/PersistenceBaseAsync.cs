@@ -1,5 +1,4 @@
-﻿using Hzdtf.Persistence.Contract.Standard.Basic;
-using Hzdtf.Persistence.Contract.Standard.Management;
+﻿using Hzdtf.Persistence.Contract.Standard.Management;
 using Hzdtf.Utility.Standard.Model;
 using Hzdtf.Utility.Standard.Model.Page;
 using System;

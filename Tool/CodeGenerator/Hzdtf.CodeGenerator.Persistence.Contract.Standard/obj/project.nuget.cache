@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Kavv1GV+sh/pF+D/UQUY6awwUj3/em2cUyayIEAdvAAxK6cefhBU9YM5JS3D5d7jGc/ydpOHoqB+vIJ9hlsw0A==",
+  "dgSpecHash": "heyxOJADA4ZfW0qpFSLUv//xIIuM2o/6lsyVAvVfwZD6ukKz34+BrPB+RBIoddz1++v7a5pn1wqGdz29DdezuQ==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Tool\\CodeGenerator\\Hzdtf.CodeGenerator.Persistence.Contract.Standard\\Hzdtf.CodeGenerator.Persistence.Contract.Standard.csproj",
   "expectedPackageFiles": [
