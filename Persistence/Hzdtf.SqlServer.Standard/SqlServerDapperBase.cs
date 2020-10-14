@@ -64,7 +64,7 @@ namespace Hzdtf.SqlServer.Standard
         {
             string tbAlias = string.IsNullOrWhiteSpace(pfx) ? null : pfx.Replace(".", null);
 
-            return $"SELECT COUNT(1) FROM [{Table}] {tbAlias}";
+            return $"SELECT COUNT(*) FROM [{Table}] {tbAlias}";
         }
 
         /// <summary>

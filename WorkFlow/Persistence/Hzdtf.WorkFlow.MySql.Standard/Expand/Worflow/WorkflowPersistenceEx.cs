@@ -89,7 +89,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
                                 + $" INNER JOIN workflow_handle wh ON {Table}.`id`=wh.`workflow_id`" 
                                 + whereSql.ToString();
 
-            string countSql = string.Format(formatSql, "COUNT(1)");
+            string countSql = string.Format(formatSql, "COUNT(*)");
             string pageSql = string.Format(formatSql, $"{JoinSelectPropMapFields(pfx: Table + ".")},wh.`id`,wh.`is_readed` IsReaded,wh.`handle_type` HandleType,wh.`handle_status` HandleStatus")
                  + " " + sortSql + " " + GetPartPageSql(pageIndex, pageSize);
             
@@ -155,7 +155,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
                                 + $" INNER JOIN workflow_handle wh ON {Table}.`id`=wh.`workflow_id`"
                                 + whereSql.ToString();
 
-            string countSql = string.Format(formatSql, "COUNT(1)");
+            string countSql = string.Format(formatSql, "COUNT(*)");
             string pageSql = string.Format(formatSql, $"{JoinSelectPropMapFields(pfx: Table + ".")},wh.`id`,wh.`is_readed` IsReaded")
                  + " " + sortSql + " " + GetPartPageSql(pageIndex, pageSize);
 
@@ -217,7 +217,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             string formatSql = $"SELECT {{0}} FROM {Table}"
                                 + whereSql.ToString();
 
-            string countSql = string.Format(formatSql, "COUNT(1)");
+            string countSql = string.Format(formatSql, "COUNT(*)");
             string pageSql = string.Format(formatSql, $"{JoinSelectPropMapFields()}")
                  + " " + sortSql + " " + GetPartPageSql(pageIndex, pageSize);
 

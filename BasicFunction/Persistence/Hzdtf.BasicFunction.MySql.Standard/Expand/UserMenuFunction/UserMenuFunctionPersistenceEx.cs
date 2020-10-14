@@ -41,7 +41,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
 
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                string sql = "SELECT COUNT(1) FROM menu M"
+                string sql = "SELECT COUNT(*) FROM menu M"
                         + " INNER JOIN menu_function MF ON M.`id`= MF.`menu_id`"
                         + $" INNER JOIN `function` F ON F.`id`= MF.`function_id` AND F.`code` IN({functionSql.ToString()})"
                         + $" INNER JOIN {Table} RMF ON RMF.`menu_function_id`=MF.`id` AND RMF.`user_id`=@UserId"
