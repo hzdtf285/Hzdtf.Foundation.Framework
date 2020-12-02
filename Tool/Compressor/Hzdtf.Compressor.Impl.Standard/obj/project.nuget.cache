@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xNP2u9DemS6uKFPHwnP1sTIfIf1CffVPDDneFms2rwf0P74ediAwAUKVzLgPWqnuauuuQkvF43+Gk67UXVTl7g==",
+  "dgSpecHash": "CP5Gdnn7tZUlLA5uc+9iKu35m86PZG15TzJ1MvZywTVLXHQF5XNBsUAaekoa/uquaB0x9Ic+jzkY3FnCzMQSzA==",
   "success": true,
-  "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Tool\\Compressor\\Hzdtf.Compressor.Impl.Standard\\Hzdtf.Compressor.Impl.Standard.csproj",
+  "projectFilePath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Tool\\Compressor\\Hzdtf.Compressor.Impl.Standard\\Hzdtf.Compressor.Impl.Standard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\androidxml\\1.1.14\\androidxml.1.1.14.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",

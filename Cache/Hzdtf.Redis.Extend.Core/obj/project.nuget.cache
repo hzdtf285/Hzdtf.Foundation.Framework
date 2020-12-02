@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/aV3Ui3kv4rTHq4qsoM4NluTg3l90YOCo7XoxYYx2iNepoAaJhZhQ51KpyCmGPXIYR+yx8AqQKket1in+/JDzA==",
+  "dgSpecHash": "GzJLrHFB27UGX6XX1aAaOVv0Er80SoTAKIFarKcLqPLZnj1gTrdCCl+AduIdAzxNKrZcnLriS1CCYYfdjRSaGA==",
   "success": true,
-  "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Cache\\Hzdtf.Redis.Extend.Core\\Hzdtf.Redis.Extend.Core.csproj",
+  "projectFilePath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Core\\Hzdtf.Redis.Extend.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\androidxml\\1.1.14\\androidxml.1.1.14.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
@@ -13,7 +13,7 @@
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.5\\microsoft.extensions.caching.abstractions.3.1.5.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.5\\microsoft.extensions.caching.memory.3.1.5.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.caching.redis\\2.2.0\\microsoft.extensions.caching.redis.2.2.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.caching.redis\\2.2.0\\microsoft.extensions.caching.redis.2.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.5\\microsoft.extensions.configuration.3.1.5.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.5\\microsoft.extensions.configuration.abstractions.3.1.5.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.5\\microsoft.extensions.configuration.binder.3.1.5.nupkg.sha512",
@@ -55,7 +55,7 @@
     "C:\\Users\\admin\\.nuget\\packages\\sixlabors.imagesharp.drawing\\1.0.0-beta0006\\sixlabors.imagesharp.drawing.1.0.0-beta0006.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\sixlabors.shapes\\1.0.0-beta0008\\sixlabors.shapes.1.0.0-beta0008.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\stackexchange.redis\\2.1.58\\stackexchange.redis.2.1.58.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\stackexchange.redis.strongname\\1.2.6\\stackexchange.redis.strongname.1.2.6.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\stackexchange.redis.strongname\\1.2.6\\stackexchange.redis.strongname.1.2.6.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

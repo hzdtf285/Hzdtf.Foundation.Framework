@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "phSYBZnBPsbqqfKsvkqyoQkun9IdVXMDW8DLXRjOyO2PfgVRIx0u8F64/pOWBLVvWc+7pqO1/3WPHi02ZK6YKg==",
+  "dgSpecHash": "fgDGdAg83N/WTz69ykGpeM9JpxcNibbMJEIEiE5fJDDvVc5d+0NeWXNPN6DcJgcJN9FrLS/7O3YB4gF71isxEg==",
   "success": true,
-  "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj",
+  "projectFilePath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\androidxml\\1.1.14\\androidxml.1.1.14.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\autofac\\5.2.0\\autofac.5.2.0.nupkg.sha512",

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Hzdtf.Utility.Standard.Utils;
 
 namespace Hzdtf.Logger.Contract.Standard
 {
@@ -113,7 +114,7 @@ namespace Hzdtf.Logger.Contract.Standard
         {
             if (LogLevelHelper.IsNeedWriteLog(level, LogRecordLevel.GetRecordLevel()))
             {
-                WriteStorage(level, msg, ex, source, tags);
+                WriteStorage(level, msg, ex.GetLastInnerException(), source, tags);
             }
         }
 

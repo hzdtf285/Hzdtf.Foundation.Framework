@@ -66,7 +66,7 @@ namespace Hzdtf.Utility.Standard.Model
         /// 启用
         /// </summary>
         [JsonProperty("enabled")]
-        [DisplayConvert(typeof(BoolTextConvert))]
+        [DisplayValueConvert(typeof(BoolValueToTextConvert), typeof(BoolTextToValueConvert))]
         [Display(Name = "启用", Order = 50, AutoGenerateField = true)]
         [MessagePack.Key("enabled")]
         public bool Enabled
@@ -84,7 +84,7 @@ namespace Hzdtf.Utility.Standard.Model
         /// 系统内置
         /// </summary>
         [JsonProperty("systemInlay")]
-        [DisplayConvert(typeof(BoolTextConvert))]
+        [DisplayValueConvert(typeof(BoolValueToTextConvert), typeof(BoolTextToValueConvert))]
         [Display(Name = "系统内置", Order = 4, AutoGenerateField = false)]
         [MessagePack.Key("systemInlay")]
         public bool SystemInlay
@@ -102,7 +102,7 @@ namespace Hzdtf.Utility.Standard.Model
         /// 登录时间
         /// </summary>
         [JsonProperty("loginTime")]
-        [DisplayConvert(typeof(BoolTextConvert))]
+        [DisplayValueConvert(typeof(DateTimeStringConvert))]
         [Display(Name = "登录时间", Order = 5, AutoGenerateField = false)]
         [MessagePack.Key("loginTime")]
         public DateTime? LoginTime

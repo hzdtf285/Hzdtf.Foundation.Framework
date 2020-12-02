@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cUbJFcObanoKQ10p8lM7Bh85rhfkflrLy/BsciYIUF/632fa01uxCEjCZvm0XqXLFYpY8ZSRxX/J9hTNWZijbQ==",
+  "dgSpecHash": "ehUYdlZp5r7n//h3zIox13Z6rhPHnYP4crCZu/+SKfgk8z9TGEP5jVfjmRJ9iUiydGCYL9daDm0D1u+tpG/VBQ==",
   "success": true,
-  "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Authorization\\Hzdtf.Authorization.Contract.Standard\\Hzdtf.Authorization.Contract.Standard.csproj",
+  "projectFilePath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Contract.Standard\\Hzdtf.Authorization.Contract.Standard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\androidxml\\1.1.14\\androidxml.1.1.14.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",

@@ -12,32 +12,63 @@ namespace Hzdtf.Utility.Standard.Attr
     public class DisplayValueConvertAttribute : Attribute
     {
         /// <summary>
-        /// 转换
+        /// 值到文本转换
         /// </summary>
-        private readonly IConvertable convert;
+        private readonly IConvertable valueToTextConvert;
 
         /// <summary>
-        /// 转换类型
+        /// 值到文本转换
         /// </summary>
-        public IConvertable Convert
+        public IConvertable ValueToTextConvert
         {
-            get => convert;
+            get => valueToTextConvert;
+        }
+
+        /// <summary>
+        /// 文本到值转换
+        /// </summary>
+        private readonly IConvertable textToValueConvert;
+
+        /// <summary>
+        /// 文本到值转换
+        /// </summary>
+        public IConvertable TextToValueConvert
+        {
+            get => textToValueConvert;
         }
 
         /// <summary>
         /// 构造方法
         /// </summary>
-        /// <param name="convertType">转换类型</param>
-        public DisplayValueConvertAttribute(Type convertType)
+        /// <param name="valueToTextConvert">值到文本转换类型</param>
+        /// <param name="textToValueConvert">文本到值转换类型</param>
+        public DisplayValueConvertAttribute(Type valueToTextConvert = null, Type textToValueConvert = null)
         {
-            object instance = convertType.Assembly.CreateInstance(convertType.FullName);
-            if (instance is IConvertable)
+            if (valueToTextConvert != null)
             {
-                convert = instance as IConvertable;
-                return;
+                object t1 = valueToTextConvert.Assembly.CreateInstance(valueToTextConvert.FullName);
+                if (t1 is IConvertable)
+                {
+                    this.valueToTextConvert = t1 as IConvertable;
+                }
+                else
+                {
+                    throw new NotImplementedException("值到文本转换类型未实现IConvertable接口");
+                }
             }
 
-            throw new NotImplementedException("类型未实现IConvertable接口");
+            if (textToValueConvert != null)
+            {
+                object t2 = textToValueConvert.Assembly.CreateInstance(textToValueConvert.FullName);
+                if (t2 is IConvertable)
+                {
+                    this.textToValueConvert = t2 as IConvertable;
+                }
+                else
+                {
+                    throw new NotImplementedException("文本到值转换类型未实现IConvertable接口");
+                }
+            }
         }
     }
 }

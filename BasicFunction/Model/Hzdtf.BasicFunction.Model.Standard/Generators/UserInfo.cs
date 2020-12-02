@@ -108,7 +108,7 @@ namespace Hzdtf.BasicFunction.Model.Standard
         /// </summary>
         [JsonProperty("sex")]
         [Required]
-        [DisplayConvert(typeof(SexTextConvert))]
+        [DisplayValueConvert(typeof(GenderValueToTextConvert), typeof(GenderTextToValueConvert))]
 
         [DisplayName("性别")]
         [Display(Name = "性别", Order = 17, AutoGenerateField = true)]
@@ -129,6 +129,7 @@ namespace Hzdtf.BasicFunction.Model.Standard
         /// </summary>
         [JsonProperty("systemHide")]
         [Required]
+        [DisplayValueConvert(typeof(BoolValueToTextConvert), typeof(BoolTextToValueConvert))]
 
         [DisplayName("系统隐藏")]
         [Display(Name = "系统隐藏", Order = 18, AutoGenerateField = false)]

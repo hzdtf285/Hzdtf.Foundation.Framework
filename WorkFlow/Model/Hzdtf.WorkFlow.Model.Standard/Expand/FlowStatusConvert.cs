@@ -6,10 +6,10 @@ using System.Text;
 namespace Hzdtf.WorkFlow.Model.Standard.Expand
 {
     /// <summary>
-    /// 流程状态转换
+    /// 流程状态到文本转换
     /// @ 黄振东
     /// </summary>
-    public class FlowStatusConvert : ConvertBase
+    public class FlowStatusToTextConvert : ConvertBase
     {
         /// <summary>
         /// 转换新值

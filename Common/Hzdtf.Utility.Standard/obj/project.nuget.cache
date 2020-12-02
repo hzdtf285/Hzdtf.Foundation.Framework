@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+qAzSQc1L7bRkpRFGEkKy3Zas2XJPIQuAUaPHqnnM0QMIzvn8GmhqyJGRBRVEZ0WvuLA6ChqQDWlOBbCCQTneg==",
+  "dgSpecHash": "qmdO8mau9KxQxZktacBRj+AbMt+VAE8R7KFQLalSyT39lfrDJ4t6mFToDLwi+I7GBP7FBP7prxP4bb3exVooeg==",
   "success": true,
-  "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj",
+  "projectFilePath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\androidxml\\1.1.14\\androidxml.1.1.14.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",

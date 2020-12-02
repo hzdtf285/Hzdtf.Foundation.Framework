@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UC/tkZYYdUVOCYN5yoQnMVnPZtDWJ4vqTANYrQylDHZakkZSiEl3YIOiVDqlVU6uiVsxgJ/nU8ViOXjUhF3ZvA==",
+  "dgSpecHash": "JVVeeS71FY+tbW+BtqZrIwr7sfjV+z/kTTY17aKle9MePU5PkmZ18U8Ps2R+Xv6RrVFMDC4/TZAyEW/a9KtEYg==",
   "success": true,
-  "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Logger\\Hzdtf.Logger.Integration.ENLog.Standard\\Hzdtf.Logger.Integration.ENLog.Standard.csproj",
+  "projectFilePath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.ENLog.Standard\\Hzdtf.Logger.Integration.ENLog.Standard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\androidxml\\1.1.14\\androidxml.1.1.14.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",

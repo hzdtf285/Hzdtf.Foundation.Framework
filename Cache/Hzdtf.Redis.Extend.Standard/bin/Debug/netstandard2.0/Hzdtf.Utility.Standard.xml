@@ -129,49 +129,38 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="T:Hzdtf.Utility.Standard.Attr.DisplayConvertAttribute">
-            <summary>
-            显示转换特性
-            @ 黄振东
-            </summary>
-        </member>
-        <member name="F:Hzdtf.Utility.Standard.Attr.DisplayConvertAttribute.convert">
-            <summary>
-            转换
-            </summary>
-        </member>
-        <member name="P:Hzdtf.Utility.Standard.Attr.DisplayConvertAttribute.Convert">
-            <summary>
-            转换类型
-            </summary>
-        </member>
-        <member name="M:Hzdtf.Utility.Standard.Attr.DisplayConvertAttribute.#ctor(System.Type)">
-            <summary>
-            构造方法
-            </summary>
-            <param name="convertType">转换类型</param>
-        </member>
         <member name="T:Hzdtf.Utility.Standard.Attr.DisplayValueConvertAttribute">
             <summary>
             显示值转换特性
             @ 黄振东
             </summary>
         </member>
-        <member name="F:Hzdtf.Utility.Standard.Attr.DisplayValueConvertAttribute.convert">
+        <member name="F:Hzdtf.Utility.Standard.Attr.DisplayValueConvertAttribute.valueToTextConvert">
             <summary>
-            转换
+            值到文本转换
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Standard.Attr.DisplayValueConvertAttribute.Convert">
+        <member name="P:Hzdtf.Utility.Standard.Attr.DisplayValueConvertAttribute.ValueToTextConvert">
             <summary>
-            转换类型
+            值到文本转换
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Attr.DisplayValueConvertAttribute.#ctor(System.Type)">
+        <member name="F:Hzdtf.Utility.Standard.Attr.DisplayValueConvertAttribute.textToValueConvert">
+            <summary>
+            文本到值转换
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Attr.DisplayValueConvertAttribute.TextToValueConvert">
+            <summary>
+            文本到值转换
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Attr.DisplayValueConvertAttribute.#ctor(System.Type,System.Type)">
             <summary>
             构造方法
             </summary>
-            <param name="convertType">转换类型</param>
+            <param name="valueToTextConvert">值到文本转换类型</param>
+            <param name="textToValueConvert">文本到值转换类型</param>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Attr.FunctionAttribute">
             <summary>
@@ -1177,13 +1166,26 @@
             <param name="value">值</param>
             <returns>新值</returns>
         </member>
-        <member name="T:Hzdtf.Utility.Standard.Conversion.BoolTextConvert">
+        <member name="T:Hzdtf.Utility.Standard.Conversion.BoolValueToTextConvert">
             <summary>
-            布尔文本转换
+            布尔值到文本转换
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Conversion.BoolTextConvert.ToNew(System.Object)">
+        <member name="M:Hzdtf.Utility.Standard.Conversion.BoolValueToTextConvert.ToNew(System.Object)">
+            <summary>
+            转换新值
+            </summary>
+            <param name="value">值</param>
+            <returns>新值</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Conversion.BoolTextToValueConvert">
+            <summary>
+            布尔文本到值转换
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Conversion.BoolTextToValueConvert.ToNew(System.Object)">
             <summary>
             转换新值
             </summary>
@@ -1271,6 +1273,32 @@
             <param name="value">值</param>
             <returns>新值</returns>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.Conversion.GenderValueToTextConvert">
+            <summary>
+            性别值到文本转换
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Conversion.GenderValueToTextConvert.ToNew(System.Object)">
+            <summary>
+            转换新值
+            </summary>
+            <param name="value">值</param>
+            <returns>新值</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Conversion.GenderTextToValueConvert">
+            <summary>
+            性别文本到值转换
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Conversion.GenderTextToValueConvert.ToNew(System.Object)">
+            <summary>
+            转换新值
+            </summary>
+            <param name="value">值</param>
+            <returns>新值</returns>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Conversion.IConvertable">
             <summary>
             可转换接口
@@ -1324,19 +1352,6 @@
             </summary>
             <param name="value">值</param>
             <param name="targetType">目标类型</param>
-            <returns>新值</returns>
-        </member>
-        <member name="T:Hzdtf.Utility.Standard.Conversion.SexTextConvert">
-            <summary>
-            性别文本转换
-            @ 黄振东
-            </summary>
-        </member>
-        <member name="M:Hzdtf.Utility.Standard.Conversion.SexTextConvert.ToNew(System.Object)">
-            <summary>
-            转换新值
-            </summary>
-            <param name="value">值</param>
             <returns>新值</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Conversion.YMStringConvert">
@@ -5625,56 +5640,63 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Utils.ExcelUtil.ToExcelFile(System.Collections.Generic.IList{System.IO.TextReader},System.String,System.String)">
+        <member name="M:Hzdtf.Utility.Standard.Utils.ExcelUtil.ToExcelFile(System.Collections.Generic.IList{System.IO.TextReader},System.String,System.String,System.Boolean)">
             <summary>
             输出Excel文件
             </summary>
             <param name="list">列表</param>
             <param name="fileName">文件名</param>
             <param name="sheetName">工作表名</param>
+            <param name="isGeV2007">是否大于或等于2007版本</param>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Utils.ExcelUtil.ToExcelFile(System.Data.DataTable,System.String)">
+        <member name="M:Hzdtf.Utility.Standard.Utils.ExcelUtil.ToExcelFile(System.Data.DataTable,System.String,System.Boolean)">
             <summary>
             输出Excel文件
             </summary>
             <param name="dt">数据表</param>
             <param name="fileName">文件名</param>
+            <param name="isGeV2007">是否大于或等于2007版本</param>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Utils.ExcelUtil.ToExcelBytes``1(System.Collections.Generic.IList{``0},System.String,System.Func{System.Reflection.PropertyInfo,System.Boolean})">
+        <member name="M:Hzdtf.Utility.Standard.Utils.ExcelUtil.ToExcelBytes``1(System.Collections.Generic.IList{``0},System.String,System.Boolean,System.Func{System.Reflection.PropertyInfo,System.Boolean})">
             <summary>
             输出Excel字节数组
             </summary>
             <param name="list">列表</param>
             <param name="sheetName">工作表名称</param>
+            <param name="isGeV2007">是否大于或等于2007版本</param>
             <param name="eachPropertyFunc">循环属性函数</param>
             <returns>字节数组</returns>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Utils.ExcelUtil.ToExcelBytes(System.Data.DataTable)">
+        <member name="M:Hzdtf.Utility.Standard.Utils.ExcelUtil.ToExcelBytes(System.Data.DataTable,System.Boolean)">
             <summary>
             输出Excel字节数组
             </summary>
             <param name="dt">数据表</param>
+            <param name="isGeV2007">是否大于或等于2007版本</param>
             <returns>字节数组</returns>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Utils.ExcelUtil.ToExcelBytes(System.Data.DataTable[])">
+        <member name="M:Hzdtf.Utility.Standard.Utils.ExcelUtil.ToExcelBytes(System.Data.DataTable[],System.Boolean)">
             <summary>
             输出Excel字节数组
             </summary>
             <param name="dts">数据表集合</param>
+            <param name="isGeV2007">是否大于或等于2007版本</param>
             <returns>字节数组</returns>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Utils.ExcelUtil.ToExcelStream(System.Data.DataTable)">
+        <member name="M:Hzdtf.Utility.Standard.Utils.ExcelUtil.ToExcelStream(System.Data.DataTable,System.Boolean)">
             <summary>
             输出Excel内存流
             </summary>
             <param name="dt">数据表</param>
+            <param name="isGeV2007">是否大于或等于2007版本</param>
             <returns>内存流</returns>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Utils.ExcelUtil.ToExcelStream(System.Data.DataTable[])">
+        <member name="M:Hzdtf.Utility.Standard.Utils.ExcelUtil.ToExcelStream(System.Data.DataTable[],System.Boolean)">
             <summary>
             输出Excel内存流
             </summary>
             <param name="dts">数据表集合</param>
+            <param name="isGeV2007">是否大于或等于2007版本</param>
             <returns>内存流</returns>
         </member>
         <member name="M:Hzdtf.Utility.Standard.Utils.ExcelUtil.ToDataTableFromExcelFile(System.String,System.String,System.Boolean)">
@@ -5682,6 +5704,46 @@
             从Excel文件读取并转换到数据表
             </summary>
             <param name="fileName">文件名</param>
+            <param name="sheetName">工作表名</param>
+            <param name="isFirstRowColumn">是否第1行列名</param>
+            <returns>数据表</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.ExcelUtil.ToListFromExcelFile``1(System.String,System.String,System.Boolean,System.Func{``0,System.Data.DataRow,System.Int32,System.Boolean})">
+            <summary>
+            从Excel文件读取并转换到列表
+            </summary>
+            <typeparam name="T">数据类型</typeparam>
+            <param name="fileName">文件名</param>
+            <param name="sheetName">工作表名</param>
+            <param name="isFirstRowColumn">是否第1行列名</param>
+            <param name="eachRowFun">循环每一行的回调</param>
+            <returns>列表</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.ExcelUtil.IsExcelGeV2007(System.String)">
+            <summary>
+            Excel判断是否大于或等于2007版本
+            </summary>
+            <param name="fileName">文件名</param>
+            <returns>是否大于或等于2007版本</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.ExcelUtil.ToListFromExcelStream``1(System.IO.Stream,System.Boolean,System.String,System.Boolean,System.Func{``0,System.Data.DataRow,System.Int32,System.Boolean})">
+            <summary>
+            从Excel流读取并转换到列表
+            </summary>
+            <typeparam name="T">数据类型</typeparam>
+            <param name="stream">流</param>
+            <param name="isGeV2007">是否大于或等于2007版本</param>
+            <param name="sheetName">工作表名</param>
+            <param name="isFirstRowColumn">是否第1行列名</param>
+            <param name="eachRowFun">循环每一行的回调</param>
+            <returns>列表</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.ExcelUtil.ToDataTableFromExcelStream(System.IO.Stream,System.Boolean,System.String,System.Boolean)">
+            <summary>
+            从Excel流读取并转换到数据表
+            </summary>
+            <param name="stream">流</param>
+            <param name="isGeV2007">是否大于或等于2007版本</param>
             <param name="sheetName">工作表名</param>
             <param name="isFirstRowColumn">是否第1行列名</param>
             <returns>数据表</returns>
@@ -5715,6 +5777,19 @@
             <summary>
             实体Excel比较
             </summary>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Utils.ExceptionUtil">
+            <summary>
+            异常辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.ExceptionUtil.GetLastInnerException(System.Exception)">
+            <summary>
+            获取最里面的异常
+            </summary>
+            <param name="ex">异常</param>
+            <returns>最里面的异常</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Utils.FileUtil">
             <summary>

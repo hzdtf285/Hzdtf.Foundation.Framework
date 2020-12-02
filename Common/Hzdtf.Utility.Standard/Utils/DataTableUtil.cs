@@ -28,7 +28,7 @@ namespace Hzdtf.Utility.Standard.Utils
             Type type = typeof(T);
             DataTable dataTable = new DataTable(tableName);
             PropertyInfo[] propertys = type.GetProperties();
-            if (propertys.IsNullOrLength0())
+            if (propertys == null || propertys.Length == 0)
             {
                 return dataTable;
             }
@@ -48,24 +48,18 @@ namespace Hzdtf.Utility.Standard.Utils
                         }
                     }
                     DisplayAttribute displayAttribute = property.GetCustomAttribute<DisplayAttribute>();
-                    IConvertable convert = null;
-                    DisplayConvertAttribute displayConvertAttribute = property.GetCustomAttribute<DisplayConvertAttribute>();
-                    if (displayConvertAttribute != null)
-                    {
-                        convert = displayConvertAttribute.Convert;
-                    }
-
                     if (displayAttribute == null)
                     {
-                        excelInfos.Add(new EntityExcelInfo()
-                        {
-                            Name = property.Name,
-                            Alias = property.Name,
-                            Sort = 0,
-                            Convert = convert
-                        });
                         continue;
                     }
+
+                    IConvertable convert = null;
+                    DisplayValueConvertAttribute displayConvertAttribute = property.GetCustomAttribute<DisplayValueConvertAttribute>();
+                    if (displayConvertAttribute != null)
+                    {
+                        convert = displayConvertAttribute.ValueToTextConvert;
+                    }
+
                     if (displayAttribute.AutoGenerateField)
                     {
                         excelInfos.Add(new EntityExcelInfo()
@@ -79,7 +73,7 @@ namespace Hzdtf.Utility.Standard.Utils
                 }
             }
 
-            if (excelInfos.IsNullOrCount0())
+            if (excelInfos == null || excelInfos.Count == 0)
             {
                 return dataTable;
             }
@@ -93,7 +87,7 @@ namespace Hzdtf.Utility.Standard.Utils
                 dataTable.Columns.Add(item.Alias);
             }
 
-            if (list.IsNullOrCount0())
+            if (list == null || list.Count == 0)
             {
                 return dataTable;
             }
@@ -145,7 +139,7 @@ namespace Hzdtf.Utility.Standard.Utils
 
             Type type = typeof(T);
             PropertyInfo[] propertys = type.GetProperties();
-            if (propertys.IsNullOrLength0())
+            if (propertys == null || propertys.Length == 0)
             {
                 return list;
             }
@@ -165,10 +159,10 @@ namespace Hzdtf.Utility.Standard.Utils
                         DisplayValueConvertAttribute displayValueConvertAttribute = property.GetCustomAttribute<DisplayValueConvertAttribute>();
                         if (displayValueConvertAttribute != null)
                         {
-                            convert = displayValueConvertAttribute.Convert;
+                            convert = displayValueConvertAttribute.TextToValueConvert;
                         }
 
-                        string name = string.IsNullOrWhiteSpace(displayAttribute.Name) ? property.Name : displayAttribute.Name;
+                        string name = displayAttribute == null || string.IsNullOrWhiteSpace(displayAttribute.Name) ? property.Name : displayAttribute.Name;
                         if (dataTable.Columns.Contains(name))
                         {
                             object tableValue = row[name];

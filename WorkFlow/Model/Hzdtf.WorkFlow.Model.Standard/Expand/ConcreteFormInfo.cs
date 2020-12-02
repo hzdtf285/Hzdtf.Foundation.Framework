@@ -68,7 +68,7 @@ namespace Hzdtf.WorkFlow.Model.Standard.Expand
         [JsonProperty("flowStatus")]
         [DisplayName("流程状态")]
         [Display(Name = "流程状态", Order = 21, AutoGenerateField = true)]
-        [DisplayConvert(typeof(FlowStatusConvert))]
+        [DisplayValueConvert(typeof(FlowStatusToTextConvert))]
         [MessagePack.Key("flowStatus")]
         public FlowStatusEnum FlowStatus
         {

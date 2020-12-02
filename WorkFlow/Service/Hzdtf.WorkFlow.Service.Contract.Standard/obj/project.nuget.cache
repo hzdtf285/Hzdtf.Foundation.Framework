@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "41wAIrS9pePlnhx9UnCUhS0hFBTH8euZF3CxXMMH3wUXAMU1EgowA1hZlJwe2YqeH8Caa8p2prJaE3Ugy851LA==",
+  "dgSpecHash": "if3ZebBEW1IuI5+q3u0jGWvSw3yNn6os8D8LBv5we6ThFjKAcUk3sjkz4zaqMkcJ7mGi0D3nOJgjazLpjeMbeQ==",
   "success": true,
-  "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj",
+  "projectFilePath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\androidxml\\1.1.14\\androidxml.1.1.14.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",

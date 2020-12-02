@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lNAr+mDkFajXHBKIdylO0eKzSk/MobOmUlfxiT4g4/0AY04eDrNnEj+9wEclgYuxrj+YDbKgNYuYTgjiux0o3A==",
+  "dgSpecHash": "tx8/1TulPIrJSc2fW1LInKC7Uu+VmWkEfSo3RxyOQupywd404uSySLOpMJ1mJjTdtsH2d+ZmY1uRE5DUjoGIMA==",
   "success": true,
-  "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Polly\\Hzdtf.Polly.Extensions.Standard\\Hzdtf.Polly.Extensions.Standard.csproj",
+  "projectFilePath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.Extensions.Standard\\Hzdtf.Polly.Extensions.Standard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\androidxml\\1.1.14\\androidxml.1.1.14.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",

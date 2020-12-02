@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kkAvHSh7CwJJtWGkAt+In9IJF8dTekdjQOCDf5cE6gMAJyXMDzXEZZ9oQta7gGaPhK3V/J6gkZuhFRrkB2EmZg==",
+  "dgSpecHash": "b4yxOUvyQD++84A8CA4t3PhpgmvmekDa/x9soLR9rM36LRK6JS4cN5Ls7PoUdZtW9em955dj5/rDzhYCHkzOGQ==",
   "success": true,
-  "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\MessageQueue\\Rabbit\\Hzdtf.Rabbit.Contract.Standard\\Hzdtf.Rabbit.Contract.Standard.csproj",
+  "projectFilePath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\MessageQueue\\Rabbit\\Hzdtf.Rabbit.Contract.Standard\\Hzdtf.Rabbit.Contract.Standard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\androidxml\\1.1.14\\androidxml.1.1.14.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",

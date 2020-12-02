@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E84pR8odrX246lkjKpVpxn/1s3Dl4oc4fjrt4H/79mQi5dUqYRr2+NwVzqxC+ZEMqggGpM8ZU/gI+qJN17VR3g==",
+  "dgSpecHash": "CNiC1rnSdvOHtFSajVH5w5CEmfywJ3xSK9l7kB5Qqn495GU/NRH7jMsBvoHDGizdd+K1c16CP3V9zkTlkUPiVg==",
   "success": true,
-  "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\MessageQueue\\Rpc\\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.csproj",
+  "projectFilePath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\MessageQueue\\Rpc\\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\androidxml\\1.1.14\\androidxml.1.1.14.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",

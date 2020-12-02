@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wk5Ng5nwDV0Xcxp7GJmHMGGzX19XgkfswIQuB0/GEO8aAnIRVT9qMqKeP84qxhyOWqikJ7kNLVQE9g1H+XnBLw==",
+  "dgSpecHash": "xSUiXAQ6T8kvHpcRSYGkuobLaArwXFtZDXh6vL6Y6WONkJ0lHyq3Yq0nisEhFWVGqRo2jL4GKlc58+FaFzJgXg==",
   "success": true,
-  "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Dapper.Standard\\Hzdtf.Persistence.Dapper.Standard.csproj",
+  "projectFilePath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Dapper.Standard\\Hzdtf.Persistence.Dapper.Standard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\androidxml\\1.1.14\\androidxml.1.1.14.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",

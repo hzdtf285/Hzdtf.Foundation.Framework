@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4xad/Zy61xoN5Cbcx+WDfJfLqqb/ct3wiTx9n8e+JKHdEKJiGVkdD1ur77oZEzfcef6lDVfAt5ZbQ4HwYsqKCg==",
+  "dgSpecHash": "7o2tdR2QFMFzd27GP/MTVxzUiRyLEyNIiUpYx8Y7MdSaHOqSX57m90UcLBlWgaZmgJX/u/NoaQDhPed45xMZCg==",
   "success": true,
-  "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\Persistence\\Hzdtf.Persistence.Autofac.Standard\\Hzdtf.Persistence.Autofac.Standard.csproj",
+  "projectFilePath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Autofac.Standard\\Hzdtf.Persistence.Autofac.Standard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\androidxml\\1.1.14\\androidxml.1.1.14.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\autofac\\5.2.0\\autofac.5.2.0.nupkg.sha512",

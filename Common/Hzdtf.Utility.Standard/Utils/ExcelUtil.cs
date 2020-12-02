@@ -23,20 +23,22 @@ namespace Hzdtf.Utility.Standard.Utils
         /// <param name="list">列表</param>
         /// <param name="fileName">文件名</param>
         /// <param name="sheetName">工作表名</param>
-        public static void ToExcelFile(this IList<TextReader> list, string fileName, string sheetName = null) => ToExcelFile(list.ToDataTable(sheetName), fileName);
+        /// <param name="isGeV2007">是否大于或等于2007版本</param>
+        public static void ToExcelFile(this IList<TextReader> list, string fileName, string sheetName = null, bool isGeV2007 = true) => ToExcelFile(list.ToDataTable(sheetName), fileName, isGeV2007);
 
         /// <summary>
         /// 输出Excel文件
         /// </summary>
         /// <param name="dt">数据表</param>
         /// <param name="fileName">文件名</param>
-        public static void ToExcelFile(this DataTable dt, string fileName)
+        /// <param name="isGeV2007">是否大于或等于2007版本</param>
+        public static void ToExcelFile(this DataTable dt, string fileName, bool isGeV2007 = true)
         {
             FileStream file = null;
             try
             {
                 file = new FileStream(fileName, FileMode.Create, FileAccess.Write);
-                byte[] data = ToExcelBytes(dt);
+                byte[] data = ToExcelBytes(dt, isGeV2007);
                 file.Write(data, 0, data.Length);
 
                 file.Flush();
@@ -60,42 +62,47 @@ namespace Hzdtf.Utility.Standard.Utils
         /// </summary>
         /// <param name="list">列表</param>
         /// <param name="sheetName">工作表名称</param>
+        /// <param name="isGeV2007">是否大于或等于2007版本</param>
         /// <param name="eachPropertyFunc">循环属性函数</param>
         /// <returns>字节数组</returns>
-        public static byte[] ToExcelBytes<T>(this IList<T> list, string sheetName = null, Func<PropertyInfo, bool> eachPropertyFunc = null) => ToExcelBytes(list.ToDataTable(sheetName, eachPropertyFunc));
+        public static byte[] ToExcelBytes<T>(this IList<T> list, string sheetName = null, bool isGeV2007 = true, Func<PropertyInfo, bool> eachPropertyFunc = null) => ToExcelBytes(list.ToDataTable(sheetName, eachPropertyFunc), isGeV2007);
 
         /// <summary>
         /// 输出Excel字节数组
         /// </summary>
         /// <param name="dt">数据表</param>
+        /// <param name="isGeV2007">是否大于或等于2007版本</param>
         /// <returns>字节数组</returns>
-        public static byte[] ToExcelBytes(this DataTable dt) => ToExcelStream(dt).ToArray();
+        public static byte[] ToExcelBytes(this DataTable dt, bool isGeV2007 = true) => ToExcelStream(dt, isGeV2007).ToArray();
 
         /// <summary>
         /// 输出Excel字节数组
         /// </summary>
         /// <param name="dts">数据表集合</param>
+        /// <param name="isGeV2007">是否大于或等于2007版本</param>
         /// <returns>字节数组</returns>
-        public static byte[] ToExcelBytes(this DataTable[] dts) => ToExcelStream(dts).ToArray();
+        public static byte[] ToExcelBytes(this DataTable[] dts, bool isGeV2007 = true) => ToExcelStream(dts, isGeV2007).ToArray();
 
         /// <summary>
         /// 输出Excel内存流
         /// </summary>
         /// <param name="dt">数据表</param>
+        /// <param name="isGeV2007">是否大于或等于2007版本</param>
         /// <returns>内存流</returns>
-        public static MemoryStream ToExcelStream(this DataTable dt)
+        public static MemoryStream ToExcelStream(this DataTable dt, bool isGeV2007 = true)
         {
-            return ToExcelStream(new DataTable[] { dt });
+            return ToExcelStream(new DataTable[] { dt }, isGeV2007);
         }
 
         /// <summary>
         /// 输出Excel内存流
         /// </summary>
         /// <param name="dts">数据表集合</param>
+        /// <param name="isGeV2007">是否大于或等于2007版本</param>
         /// <returns>内存流</returns>
-        public static MemoryStream ToExcelStream(this DataTable[] dts)
+        public static MemoryStream ToExcelStream(this DataTable[] dts, bool isGeV2007 = true)
         {
-            if (dts.IsNullOrLength0())
+            if (dts == null || dts.Length == 0)
             {
                 return new MemoryStream();
             }
@@ -106,7 +113,14 @@ namespace Hzdtf.Utility.Standard.Utils
             try
             {
                 //创建一个工作簿
-                workbook = new HSSFWorkbook();
+                if (isGeV2007)
+                {
+                    workbook = new XSSFWorkbook();
+                }
+                else
+                {
+                    workbook = new HSSFWorkbook();
+                }
 
                 for (int k = 0; k < dts.Length; k++)
                 {
@@ -195,30 +209,94 @@ namespace Hzdtf.Utility.Standard.Utils
                 return null;
             }
 
+            var isGeV2007 = IsExcelGeV2007(fileName);
+            var fs = new FileStream(fileName, FileMode.Open, FileAccess.Read);
+
+            return ToDataTableFromExcelStream(fs, isGeV2007, sheetName, isFirstRowColumn);
+        }
+
+        /// <summary>
+        /// 从Excel文件读取并转换到列表
+        /// </summary>
+        /// <typeparam name="T">数据类型</typeparam>
+        /// <param name="fileName">文件名</param>
+        /// <param name="sheetName">工作表名</param>
+        /// <param name="isFirstRowColumn">是否第1行列名</param>
+        /// <param name="eachRowFun">循环每一行的回调</param>
+        /// <returns>列表</returns>
+        public static IList<T> ToListFromExcelFile<T>(this string fileName, string sheetName = null, bool isFirstRowColumn = true, Func<T, DataRow, int, bool> eachRowFun = null)
+        {
+            var dt = ToDataTableFromExcelFile(fileName, sheetName, isFirstRowColumn);
+
+            return dt.ToList<T>(eachRowFun);
+        }
+
+        /// <summary>
+        /// Excel判断是否大于或等于2007版本
+        /// </summary>
+        /// <param name="fileName">文件名</param>
+        /// <returns>是否大于或等于2007版本</returns>
+        public static bool IsExcelGeV2007(this string fileName)
+        {
+            if (string.IsNullOrWhiteSpace(fileName))
+            {
+                return false;
+            }
+
+            var expandName = Path.GetExtension(fileName);
+            if (string.IsNullOrWhiteSpace(expandName))
+            {
+                return false;
+            }
+
+            return ".xlsx".Equals(expandName.ToLower());
+        }
+
+        /// <summary>
+        /// 从Excel流读取并转换到列表
+        /// </summary>
+        /// <typeparam name="T">数据类型</typeparam>
+        /// <param name="stream">流</param>
+        /// <param name="isGeV2007">是否大于或等于2007版本</param>
+        /// <param name="sheetName">工作表名</param>
+        /// <param name="isFirstRowColumn">是否第1行列名</param>
+        /// <param name="eachRowFun">循环每一行的回调</param>
+        /// <returns>列表</returns>
+        public static IList<T> ToListFromExcelStream<T>(this Stream stream, bool isGeV2007 = true, string sheetName = null, bool isFirstRowColumn = true, Func<T, DataRow, int, bool> eachRowFun = null)
+        {
+            var dt = ToDataTableFromExcelStream(stream, isGeV2007, sheetName, isFirstRowColumn);
+
+            return dt.ToList<T>(eachRowFun);
+        }
+
+        /// <summary>
+        /// 从Excel流读取并转换到数据表
+        /// </summary>
+        /// <param name="stream">流</param>
+        /// <param name="isGeV2007">是否大于或等于2007版本</param>
+        /// <param name="sheetName">工作表名</param>
+        /// <param name="isFirstRowColumn">是否第1行列名</param>
+        /// <returns>数据表</returns>
+        public static DataTable ToDataTableFromExcelStream(this Stream stream, bool isGeV2007 = true, string sheetName = null, bool isFirstRowColumn = true)
+        {
+            if (stream == null)
+            {
+                return null;
+            }
+
             ISheet sheet = null;
             DataTable data = new DataTable();
             int startRow = 0;
-            FileStream fs = null;
             IWorkbook workbook = null;
             try
             {
-                fs = new FileStream(fileName, FileMode.Open, FileAccess.Read);
-                string expandName = fileName.FileExpandName();
-                switch (expandName)
+                if (isGeV2007)
                 {
-                    case ".xlsx": // 2007版本
-                        workbook = new XSSFWorkbook(fs);
-
-                        break;
-
-                    case ".xls":// 2003版本
-                        workbook = new HSSFWorkbook(fs);
-
-                        break;
-
-                    default:
-                        throw new NotSupportedException($"不支持的{expandName}");
-
+                    workbook = new XSSFWorkbook(stream);
+                }
+                else
+                {
+                    workbook = new HSSFWorkbook(stream);
                 }
 
                 if (sheetName == null)
@@ -290,12 +368,8 @@ namespace Hzdtf.Utility.Standard.Utils
                     workbook.Close();
                     workbook = null;
                 }
-                if (fs != null)
-                {
-                    fs.Close();
-                    fs.Dispose();
-                    fs = null;
-                }
+                stream.Close();
+                stream.Dispose();
             }
         }
     }

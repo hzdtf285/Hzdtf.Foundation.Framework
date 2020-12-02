@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YMGIxiXMQl84ZjrLpZngVaI2AcNDljbMAkF+LrD6JXhPIBZYFaqDWrtwBZFjm1l57MYpI10fH+/B/FW75rBYKQ==",
+  "dgSpecHash": "MDdxaOYPXOPwp4R4sEtihGes5vjEKnwBzAMI/vk/w5l9wqp1VaeUq+BBXmvwVVYZL29xqMhiKAIkuEktai2O3w==",
   "success": true,
-  "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.SqlServer.Standard\\Hzdtf.BasicFunction.SqlServer.Standard.csproj",
+  "projectFilePath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.SqlServer.Standard\\Hzdtf.BasicFunction.SqlServer.Standard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\androidxml\\1.1.14\\androidxml.1.1.14.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5Rb1b8/ff4V9ptQEdYSBiQ6y36/kneX6GSfXw13drYTjWFTMXEbMrOh9MjTAeELLUIgyY+m8VUhdMdM/eq7Yfg==",
+  "dgSpecHash": "SPkLA8cUr/cxsfDud8Hi34ABmcwqhqZ/XTNWLiuGKJesNwdSERhReE3/zgsXovYhucqyWlY9CCq86N6fXlubyA==",
   "success": true,
-  "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.FoundationFramework\\MessageQueue\\Rpc\\Hzdtf.MessageQueue.Rpc.Business.Service.Standard\\Hzdtf.MessageQueue.Rpc.Business.Service.Standard.csproj",
+  "projectFilePath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\MessageQueue\\Rpc\\Hzdtf.MessageQueue.Rpc.Business.Service.Standard\\Hzdtf.MessageQueue.Rpc.Business.Service.Standard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\androidxml\\1.1.14\\androidxml.1.1.14.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\autofac\\5.2.0\\autofac.5.2.0.nupkg.sha512",
