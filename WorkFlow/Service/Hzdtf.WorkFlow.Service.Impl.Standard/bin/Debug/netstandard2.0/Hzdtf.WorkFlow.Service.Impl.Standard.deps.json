@@ -452,6 +452,7 @@
       },
       "Hzdtf.Persistence.Contract.Standard/2.0.0": {
         "dependencies": {
+          "Hzdtf.Logger.Contract.Standard": "2.0.0",
           "Hzdtf.Platform.Contract.Standard": "2.0.0",
           "Hzdtf.Utility.Standard": "2.0.0"
         },

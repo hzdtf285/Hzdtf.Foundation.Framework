@@ -516,6 +516,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Hzdtf.Logger.Contract.Standard": "2.0.0",
           "Hzdtf.Platform.Contract.Standard": "2.0.0",
           "Hzdtf.Utility.Standard": "2.0.0"
         },
@@ -1951,19 +1952,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {}
+    "C:\\Users\\huangzd\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "2.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj",
+      "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj",
       "projectName": "Hzdtf.WorkFlow.Service.Impl.Standard",
-      "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\obj\\",
+      "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj",
+      "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+      "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1976,14 +1981,14 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj"
             }
           }
         }

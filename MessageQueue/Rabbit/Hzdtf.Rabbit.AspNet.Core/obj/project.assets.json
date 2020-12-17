@@ -4764,19 +4764,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {}
+    "C:\\Users\\huangzd\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "3.1.5",
     "restore": {
-      "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\MessageQueue\\Rabbit\\Hzdtf.Rabbit.AspNet.Core\\Hzdtf.Rabbit.AspNet.Core.csproj",
+      "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\MessageQueue\\Rabbit\\Hzdtf.Rabbit.AspNet.Core\\Hzdtf.Rabbit.AspNet.Core.csproj",
       "projectName": "Hzdtf.Rabbit.AspNet.Core",
-      "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\MessageQueue\\Rabbit\\Hzdtf.Rabbit.AspNet.Core\\Hzdtf.Rabbit.AspNet.Core.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\MessageQueue\\Rabbit\\Hzdtf.Rabbit.AspNet.Core\\obj\\",
+      "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\MessageQueue\\Rabbit\\Hzdtf.Rabbit.AspNet.Core\\Hzdtf.Rabbit.AspNet.Core.csproj",
+      "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+      "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\MessageQueue\\Rabbit\\Hzdtf.Rabbit.AspNet.Core\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4789,11 +4793,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.AspNet.Core\\Hzdtf.Utility.AspNet.Core.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.AspNet.Core\\Hzdtf.Utility.AspNet.Core.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.AspNet.Core\\Hzdtf.Utility.AspNet.Core.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.AspNet.Core\\Hzdtf.Utility.AspNet.Core.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\MessageQueue\\Rabbit\\Hzdtf.Rabbit.Impl.Standard\\Hzdtf.Rabbit.Impl.Standard.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\MessageQueue\\Rabbit\\Hzdtf.Rabbit.Impl.Standard\\Hzdtf.Rabbit.Impl.Standard.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\MessageQueue\\Rabbit\\Hzdtf.Rabbit.Impl.Standard\\Hzdtf.Rabbit.Impl.Standard.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\MessageQueue\\Rabbit\\Hzdtf.Rabbit.Impl.Standard\\Hzdtf.Rabbit.Impl.Standard.csproj"
             }
           }
         }

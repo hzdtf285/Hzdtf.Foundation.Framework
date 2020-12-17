@@ -3978,7 +3978,10 @@
         },
         "runtime": {
           "bin/placeholder/Hzdtf.Authorization.Web.Core.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Hzdtf.Autofac.Extend.Standard/2.0.0": {
         "type": "project",
@@ -4046,7 +4049,10 @@
         },
         "runtime": {
           "bin/placeholder/Hzdtf.BasicFunction.MvcController.Core.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Hzdtf.BasicFunction.MySql.Standard/2.0.0": {
         "type": "project",
@@ -4343,6 +4349,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Hzdtf.Logger.Contract.Standard": "2.0.0",
           "Hzdtf.Platform.Contract.Standard": "2.0.0",
           "Hzdtf.Utility.Standard": "2.0.0"
         },
@@ -12580,19 +12587,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {}
+    "C:\\Users\\huangzd\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WebDemoCore\\Hzdtf.WebTest3.1.Core\\Hzdtf.WebTest3.1.Core.csproj",
+      "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WebDemoCore\\Hzdtf.WebTest3.1.Core\\Hzdtf.WebTest3.1.Core.csproj",
       "projectName": "Hzdtf.WebTest3.1.Core",
-      "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WebDemoCore\\Hzdtf.WebTest3.1.Core\\Hzdtf.WebTest3.1.Core.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WebDemoCore\\Hzdtf.WebTest3.1.Core\\obj\\",
+      "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WebDemoCore\\Hzdtf.WebTest3.1.Core\\Hzdtf.WebTest3.1.Core.csproj",
+      "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+      "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WebDemoCore\\Hzdtf.WebTest3.1.Core\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12605,74 +12616,74 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Controller\\Hzdtf.BasicFunction.MvcController.Core\\Hzdtf.BasicFunction.MvcController.Core.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Controller\\Hzdtf.BasicFunction.MvcController.Core\\Hzdtf.BasicFunction.MvcController.Core.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Controller\\Hzdtf.BasicFunction.MvcController.Core\\Hzdtf.BasicFunction.MvcController.Core.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Controller\\Hzdtf.BasicFunction.MvcController.Core\\Hzdtf.BasicFunction.MvcController.Core.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Hzdtf.BasicFunction.MySql.Standard.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Hzdtf.BasicFunction.MySql.Standard.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Hzdtf.BasicFunction.MySql.Standard.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Hzdtf.BasicFunction.MySql.Standard.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Hzdtf.BasicFunction.Service.Impl.Standard.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Hzdtf.BasicFunction.Service.Impl.Standard.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Hzdtf.BasicFunction.Service.Impl.Standard.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Hzdtf.BasicFunction.Service.Impl.Standard.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Core\\Hzdtf.Redis.Extend.Core.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Core\\Hzdtf.Redis.Extend.Core.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Core\\Hzdtf.Redis.Extend.Core.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Core\\Hzdtf.Redis.Extend.Core.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.AspNet.Core\\Hzdtf.Utility.AspNet.Core.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.AspNet.Core\\Hzdtf.Utility.AspNet.Core.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.AspNet.Core\\Hzdtf.Utility.AspNet.Core.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.AspNet.Core\\Hzdtf.Utility.AspNet.Core.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\Hzdtf.Demo.MvcController.Core.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\Hzdtf.Demo.MvcController.Core.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\Hzdtf.Demo.MvcController.Core.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\Hzdtf.Demo.MvcController.Core.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.MySql.Standard\\Hzdtf.Demo.MySql.Standard.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.MySql.Standard\\Hzdtf.Demo.MySql.Standard.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.MySql.Standard\\Hzdtf.Demo.MySql.Standard.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.MySql.Standard\\Hzdtf.Demo.MySql.Standard.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Impl.Standard\\Hzdtf.Demo.Service.Impl.Standard.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Impl.Standard\\Hzdtf.Demo.Service.Impl.Standard.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Impl.Standard\\Hzdtf.Demo.Service.Impl.Standard.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Impl.Standard\\Hzdtf.Demo.Service.Impl.Standard.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Exceptionless.Standard\\Hzdtf.Logger.Exceptionless.Standard.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Exceptionless.Standard\\Hzdtf.Logger.Exceptionless.Standard.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Exceptionless.Standard\\Hzdtf.Logger.Exceptionless.Standard.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Exceptionless.Standard\\Hzdtf.Logger.Exceptionless.Standard.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.ENLog.Standard\\Hzdtf.Logger.Integration.ENLog.Standard.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.ENLog.Standard\\Hzdtf.Logger.Integration.ENLog.Standard.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.ENLog.Standard\\Hzdtf.Logger.Integration.ENLog.Standard.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.ENLog.Standard\\Hzdtf.Logger.Integration.ENLog.Standard.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Autofac.Standard\\Hzdtf.Persistence.Autofac.Standard.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Autofac.Standard\\Hzdtf.Persistence.Autofac.Standard.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Autofac.Standard\\Hzdtf.Persistence.Autofac.Standard.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Autofac.Standard\\Hzdtf.Persistence.Autofac.Standard.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.AspNet.Extensions.Core\\Hzdtf.Polly.AspNet.Extensions.Core.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.AspNet.Extensions.Core\\Hzdtf.Polly.AspNet.Extensions.Core.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.AspNet.Extensions.Core\\Hzdtf.Polly.AspNet.Extensions.Core.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.AspNet.Extensions.Core\\Hzdtf.Polly.AspNet.Extensions.Core.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.Extensions.Standard\\Hzdtf.Polly.Extensions.Standard.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.Extensions.Standard\\Hzdtf.Polly.Extensions.Standard.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.Extensions.Standard\\Hzdtf.Polly.Extensions.Standard.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.Extensions.Standard\\Hzdtf.Polly.Extensions.Standard.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.BasicFunction.Service.Autofac.Standard\\Hzdtf.BasicFunction.Service.Autofac.Standard.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.BasicFunction.Service.Autofac.Standard\\Hzdtf.BasicFunction.Service.Autofac.Standard.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.BasicFunction.Service.Autofac.Standard\\Hzdtf.BasicFunction.Service.Autofac.Standard.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.BasicFunction.Service.Autofac.Standard\\Hzdtf.BasicFunction.Service.Autofac.Standard.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\Hzdtf.WorkFlow.MvcController.Core.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\Hzdtf.WorkFlow.MvcController.Core.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\Hzdtf.WorkFlow.MvcController.Core.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\Hzdtf.WorkFlow.MvcController.Core.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.MySql.Standard\\Hzdtf.WorkFlow.MySql.Standard.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.MySql.Standard\\Hzdtf.WorkFlow.MySql.Standard.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.MySql.Standard\\Hzdtf.WorkFlow.MySql.Standard.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.MySql.Standard\\Hzdtf.WorkFlow.MySql.Standard.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj"
             }
           }
         }

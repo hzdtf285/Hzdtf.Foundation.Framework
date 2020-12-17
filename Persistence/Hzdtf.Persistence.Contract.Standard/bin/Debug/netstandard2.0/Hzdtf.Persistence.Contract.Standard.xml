@@ -123,6 +123,11 @@
             @ 黄振东
             </summary>
         </member>
+        <member name="P:Hzdtf.Persistence.Contract.Standard.Basic.PersistenceConnectionBase.Log">
+            <summary>
+            日志
+            </summary>
+        </member>
         <member name="P:Hzdtf.Persistence.Contract.Standard.Basic.PersistenceConnectionBase.DefaultConnectionString">
             <summary>
             默认连接字符串

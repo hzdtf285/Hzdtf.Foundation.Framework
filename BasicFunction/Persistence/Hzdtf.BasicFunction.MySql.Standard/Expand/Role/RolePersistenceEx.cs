@@ -28,6 +28,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"{SelectSql()} WHERE `{GetFieldByProp("Code")}`=@Code OR `{GetFieldByProp("Name")}`=@Name";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelelctByCodeOrName");
                 result = dbConn.Query<RoleInfo>(sql, new { Code = code, Name = name }).AsList();
             }, AccessMode.SLAVE);
 
@@ -48,6 +49,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"{SelectSql()} WHERE Id!=@Id AND (`{GetFieldByProp("Code")}`=@Code OR `{GetFieldByProp("Name")}`=@Name)";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelelctByCodeOrNameNotId");
                 result = dbConn.Query<RoleInfo>(sql, new { Id = notId, Code = code, Name = name }).AsList();
             }, AccessMode.SLAVE);
 
@@ -65,6 +67,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"{SelectSql()} WHERE {GetFieldByProp("SystemHide")}=@SystemHide";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectAndNotSystemHide");
                 result = dbConn.Query<RoleInfo>(sql, new { SystemHide = false }).AsList();
             }, AccessMode.SLAVE);
 
@@ -86,6 +89,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"{SelectSql()} " + whereSql.ToString();
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectByFilter");
                 result = dbConn.Query<RoleInfo>(sql, parameters).AsList();
             }, AccessMode.SLAVE);
 

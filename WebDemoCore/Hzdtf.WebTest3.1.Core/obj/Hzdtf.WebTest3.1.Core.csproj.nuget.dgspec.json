@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WebDemoCore\\Hzdtf.WebTest3.1.Core\\Hzdtf.WebTest3.1.Core.csproj": {}
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WebDemoCore\\Hzdtf.WebTest3.1.Core\\Hzdtf.WebTest3.1.Core.csproj": {}
   },
   "projects": {
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Contract.Standard\\Hzdtf.Authorization.Contract.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Contract.Standard\\Hzdtf.Authorization.Contract.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Contract.Standard\\Hzdtf.Authorization.Contract.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Contract.Standard\\Hzdtf.Authorization.Contract.Standard.csproj",
         "projectName": "Hzdtf.Authorization.Contract.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Contract.Standard\\Hzdtf.Authorization.Contract.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Contract.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Contract.Standard\\Hzdtf.Authorization.Contract.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Contract.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,8 +30,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               }
             }
           }
@@ -63,17 +66,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Web.Core\\Hzdtf.Authorization.Web.Core.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Web.Core\\Hzdtf.Authorization.Web.Core.csproj": {
       "version": "3.1.5",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Web.Core\\Hzdtf.Authorization.Web.Core.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Web.Core\\Hzdtf.Authorization.Web.Core.csproj",
         "projectName": "Hzdtf.Authorization.Web.Core",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Web.Core\\Hzdtf.Authorization.Web.Core.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Web.Core\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Web.Core\\Hzdtf.Authorization.Web.Core.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Web.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,17 +92,17 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Contract.Standard\\Hzdtf.Authorization.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Contract.Standard\\Hzdtf.Authorization.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Contract.Standard\\Hzdtf.Authorization.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Contract.Standard\\Hzdtf.Authorization.Contract.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj"
               }
             }
           }
@@ -161,17 +167,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Controller\\Hzdtf.BasicFunction.MvcController.Core\\Hzdtf.BasicFunction.MvcController.Core.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Controller\\Hzdtf.BasicFunction.MvcController.Core\\Hzdtf.BasicFunction.MvcController.Core.csproj": {
       "version": "3.1.5",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Controller\\Hzdtf.BasicFunction.MvcController.Core\\Hzdtf.BasicFunction.MvcController.Core.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Controller\\Hzdtf.BasicFunction.MvcController.Core\\Hzdtf.BasicFunction.MvcController.Core.csproj",
         "projectName": "Hzdtf.BasicFunction.MvcController.Core",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Controller\\Hzdtf.BasicFunction.MvcController.Core\\Hzdtf.BasicFunction.MvcController.Core.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Controller\\Hzdtf.BasicFunction.MvcController.Core\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Controller\\Hzdtf.BasicFunction.MvcController.Core\\Hzdtf.BasicFunction.MvcController.Core.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Controller\\Hzdtf.BasicFunction.MvcController.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -184,17 +193,17 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Web.Core\\Hzdtf.Authorization.Web.Core.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Web.Core\\Hzdtf.Authorization.Web.Core.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Web.Core\\Hzdtf.Authorization.Web.Core.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Web.Core\\Hzdtf.Authorization.Web.Core.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj"
               }
             }
           }
@@ -235,17 +244,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj",
         "projectName": "Hzdtf.BasicFunction.Model.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -258,8 +270,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               }
             }
           }
@@ -294,17 +306,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Hzdtf.BasicFunction.MySql.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Hzdtf.BasicFunction.MySql.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Hzdtf.BasicFunction.MySql.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Hzdtf.BasicFunction.MySql.Standard.csproj",
         "projectName": "Hzdtf.BasicFunction.MySql.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Hzdtf.BasicFunction.MySql.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Hzdtf.BasicFunction.MySql.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -317,17 +332,17 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.Persistence.Contract.Std\\Hzdtf.BasicFunction.Persistence.Contract.Std.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.Persistence.Contract.Std\\Hzdtf.BasicFunction.Persistence.Contract.Std.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.Persistence.Contract.Std\\Hzdtf.BasicFunction.Persistence.Contract.Std.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.Persistence.Contract.Std\\Hzdtf.BasicFunction.Persistence.Contract.Std.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.MySql.Standard\\Hzdtf.MySql.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.MySql.Standard\\Hzdtf.MySql.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.MySql.Standard\\Hzdtf.MySql.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.MySql.Standard\\Hzdtf.MySql.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj"
               }
             }
           }
@@ -366,17 +381,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.Persistence.Contract.Std\\Hzdtf.BasicFunction.Persistence.Contract.Std.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.Persistence.Contract.Std\\Hzdtf.BasicFunction.Persistence.Contract.Std.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.Persistence.Contract.Std\\Hzdtf.BasicFunction.Persistence.Contract.Std.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.Persistence.Contract.Std\\Hzdtf.BasicFunction.Persistence.Contract.Std.csproj",
         "projectName": "Hzdtf.BasicFunction.Persistence.Contract.Std",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.Persistence.Contract.Std\\Hzdtf.BasicFunction.Persistence.Contract.Std.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.Persistence.Contract.Std\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.Persistence.Contract.Std\\Hzdtf.BasicFunction.Persistence.Contract.Std.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.Persistence.Contract.Std\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -389,11 +407,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj"
               }
             }
           }
@@ -428,17 +446,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj",
         "projectName": "Hzdtf.BasicFunction.Service.Contract.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -451,11 +472,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj"
               }
             }
           }
@@ -490,17 +511,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Hzdtf.BasicFunction.Service.Impl.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Hzdtf.BasicFunction.Service.Impl.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Hzdtf.BasicFunction.Service.Impl.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Hzdtf.BasicFunction.Service.Impl.Standard.csproj",
         "projectName": "Hzdtf.BasicFunction.Service.Impl.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Hzdtf.BasicFunction.Service.Impl.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Hzdtf.BasicFunction.Service.Impl.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -513,20 +537,20 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Contract.Standard\\Hzdtf.Authorization.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Contract.Standard\\Hzdtf.Authorization.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Contract.Standard\\Hzdtf.Authorization.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Authorization\\Hzdtf.Authorization.Contract.Standard\\Hzdtf.Authorization.Contract.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.Persistence.Contract.Std\\Hzdtf.BasicFunction.Persistence.Contract.Std.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.Persistence.Contract.Std\\Hzdtf.BasicFunction.Persistence.Contract.Std.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.Persistence.Contract.Std\\Hzdtf.BasicFunction.Persistence.Contract.Std.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.Persistence.Contract.Std\\Hzdtf.BasicFunction.Persistence.Contract.Std.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj"
               }
             }
           }
@@ -561,17 +585,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj",
         "projectName": "Hzdtf.BasicFunction.WorkFlow.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -584,17 +611,17 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj"
               }
             }
           }
@@ -629,17 +656,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Core\\Hzdtf.Redis.Extend.Core.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Core\\Hzdtf.Redis.Extend.Core.csproj": {
       "version": "3.1.5",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Core\\Hzdtf.Redis.Extend.Core.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Core\\Hzdtf.Redis.Extend.Core.csproj",
         "projectName": "Hzdtf.Redis.Extend.Core",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Core\\Hzdtf.Redis.Extend.Core.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Core\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Core\\Hzdtf.Redis.Extend.Core.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -652,11 +682,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Standard\\Hzdtf.Redis.Extend.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Standard\\Hzdtf.Redis.Extend.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Standard\\Hzdtf.Redis.Extend.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Standard\\Hzdtf.Redis.Extend.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj"
               }
             }
           }
@@ -698,17 +728,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Standard\\Hzdtf.Redis.Extend.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Standard\\Hzdtf.Redis.Extend.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Standard\\Hzdtf.Redis.Extend.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Standard\\Hzdtf.Redis.Extend.Standard.csproj",
         "projectName": "Hzdtf.Redis.Extend.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Standard\\Hzdtf.Redis.Extend.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Standard\\Hzdtf.Redis.Extend.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -721,11 +754,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj"
               }
             }
           }
@@ -764,17 +797,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\Hzdtf.Mini.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\Hzdtf.Mini.Standard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\Hzdtf.Mini.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\Hzdtf.Mini.Standard.csproj",
         "projectName": "Hzdtf.Mini.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\Hzdtf.Mini.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\Hzdtf.Mini.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -819,17 +855,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.AspNet.Core\\Hzdtf.Utility.AspNet.Core.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.AspNet.Core\\Hzdtf.Utility.AspNet.Core.csproj": {
       "version": "3.1.5",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.AspNet.Core\\Hzdtf.Utility.AspNet.Core.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.AspNet.Core\\Hzdtf.Utility.AspNet.Core.csproj",
         "projectName": "Hzdtf.Utility.AspNet.Core",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.AspNet.Core\\Hzdtf.Utility.AspNet.Core.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.AspNet.Core\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.AspNet.Core\\Hzdtf.Utility.AspNet.Core.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.AspNet.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -842,11 +881,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj"
               }
             }
           }
@@ -912,17 +951,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj",
         "projectName": "Hzdtf.Utility.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -935,8 +977,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\Hzdtf.Mini.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\Hzdtf.Mini.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\Hzdtf.Mini.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\Hzdtf.Mini.Standard.csproj"
               }
             }
           }
@@ -1019,17 +1061,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj": {
       "version": "3.1.5",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj",
         "projectName": "Hzdtf.BasicController.Core",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1042,23 +1087,23 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Model\\Hzdtf.BasicFunction.Model.Standard\\Hzdtf.BasicFunction.Model.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj"
               }
             }
           }
@@ -1096,17 +1141,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\Hzdtf.Demo.MvcController.Core.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\Hzdtf.Demo.MvcController.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\Hzdtf.Demo.MvcController.Core.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\Hzdtf.Demo.MvcController.Core.csproj",
         "projectName": "Hzdtf.Demo.MvcController.Core",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\Hzdtf.Demo.MvcController.Core.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\Hzdtf.Demo.MvcController.Core.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1119,17 +1167,17 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Contract.Standard\\Hzdtf.Demo.Service.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Contract.Standard\\Hzdtf.Demo.Service.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Contract.Standard\\Hzdtf.Demo.Service.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Contract.Standard\\Hzdtf.Demo.Service.Contract.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\Hzdtf.WorkFlow.MvcController.Core.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\Hzdtf.WorkFlow.MvcController.Core.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\Hzdtf.WorkFlow.MvcController.Core.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\Hzdtf.WorkFlow.MvcController.Core.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj"
               }
             }
           }
@@ -1171,17 +1219,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Model\\Hzdtf.Demo.Model.Standard\\Hzdtf.Demo.Model.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Model\\Hzdtf.Demo.Model.Standard\\Hzdtf.Demo.Model.Standard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Model\\Hzdtf.Demo.Model.Standard\\Hzdtf.Demo.Model.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Model\\Hzdtf.Demo.Model.Standard\\Hzdtf.Demo.Model.Standard.csproj",
         "projectName": "Hzdtf.Demo.Model.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Model\\Hzdtf.Demo.Model.Standard\\Hzdtf.Demo.Model.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Model\\Hzdtf.Demo.Model.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Model\\Hzdtf.Demo.Model.Standard\\Hzdtf.Demo.Model.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Model\\Hzdtf.Demo.Model.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1194,11 +1245,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj"
               }
             }
           }
@@ -1233,17 +1284,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.MySql.Standard\\Hzdtf.Demo.MySql.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.MySql.Standard\\Hzdtf.Demo.MySql.Standard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.MySql.Standard\\Hzdtf.Demo.MySql.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.MySql.Standard\\Hzdtf.Demo.MySql.Standard.csproj",
         "projectName": "Hzdtf.Demo.MySql.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.MySql.Standard\\Hzdtf.Demo.MySql.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.MySql.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.MySql.Standard\\Hzdtf.Demo.MySql.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.MySql.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1256,11 +1310,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.Persistence.Contract.Standard\\Hzdtf.Demo.Persistence.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.Persistence.Contract.Standard\\Hzdtf.Demo.Persistence.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.Persistence.Contract.Standard\\Hzdtf.Demo.Persistence.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.Persistence.Contract.Standard\\Hzdtf.Demo.Persistence.Contract.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.MySql.Standard\\Hzdtf.MySql.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.MySql.Standard\\Hzdtf.MySql.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.MySql.Standard\\Hzdtf.MySql.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.MySql.Standard\\Hzdtf.MySql.Standard.csproj"
               }
             }
           }
@@ -1295,17 +1349,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.Persistence.Contract.Standard\\Hzdtf.Demo.Persistence.Contract.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.Persistence.Contract.Standard\\Hzdtf.Demo.Persistence.Contract.Standard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.Persistence.Contract.Standard\\Hzdtf.Demo.Persistence.Contract.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.Persistence.Contract.Standard\\Hzdtf.Demo.Persistence.Contract.Standard.csproj",
         "projectName": "Hzdtf.Demo.Persistence.Contract.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.Persistence.Contract.Standard\\Hzdtf.Demo.Persistence.Contract.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.Persistence.Contract.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.Persistence.Contract.Standard\\Hzdtf.Demo.Persistence.Contract.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.Persistence.Contract.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1318,11 +1375,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Model\\Hzdtf.Demo.Model.Standard\\Hzdtf.Demo.Model.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Model\\Hzdtf.Demo.Model.Standard\\Hzdtf.Demo.Model.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Model\\Hzdtf.Demo.Model.Standard\\Hzdtf.Demo.Model.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Model\\Hzdtf.Demo.Model.Standard\\Hzdtf.Demo.Model.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj"
               }
             }
           }
@@ -1357,17 +1414,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Contract.Standard\\Hzdtf.Demo.Service.Contract.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Contract.Standard\\Hzdtf.Demo.Service.Contract.Standard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Contract.Standard\\Hzdtf.Demo.Service.Contract.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Contract.Standard\\Hzdtf.Demo.Service.Contract.Standard.csproj",
         "projectName": "Hzdtf.Demo.Service.Contract.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Contract.Standard\\Hzdtf.Demo.Service.Contract.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Contract.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Contract.Standard\\Hzdtf.Demo.Service.Contract.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Contract.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1380,11 +1440,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Model\\Hzdtf.Demo.Model.Standard\\Hzdtf.Demo.Model.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Model\\Hzdtf.Demo.Model.Standard\\Hzdtf.Demo.Model.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Model\\Hzdtf.Demo.Model.Standard\\Hzdtf.Demo.Model.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Model\\Hzdtf.Demo.Model.Standard\\Hzdtf.Demo.Model.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj"
               }
             }
           }
@@ -1419,17 +1479,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Impl.Standard\\Hzdtf.Demo.Service.Impl.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Impl.Standard\\Hzdtf.Demo.Service.Impl.Standard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Impl.Standard\\Hzdtf.Demo.Service.Impl.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Impl.Standard\\Hzdtf.Demo.Service.Impl.Standard.csproj",
         "projectName": "Hzdtf.Demo.Service.Impl.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Impl.Standard\\Hzdtf.Demo.Service.Impl.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Impl.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Impl.Standard\\Hzdtf.Demo.Service.Impl.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Impl.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1442,17 +1505,17 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.Persistence.Contract.Standard\\Hzdtf.Demo.Persistence.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.Persistence.Contract.Standard\\Hzdtf.Demo.Persistence.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.Persistence.Contract.Standard\\Hzdtf.Demo.Persistence.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.Persistence.Contract.Standard\\Hzdtf.Demo.Persistence.Contract.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Contract.Standard\\Hzdtf.Demo.Service.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Contract.Standard\\Hzdtf.Demo.Service.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Contract.Standard\\Hzdtf.Demo.Service.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Contract.Standard\\Hzdtf.Demo.Service.Contract.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj"
               }
             }
           }
@@ -1487,17 +1550,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj",
         "projectName": "Hzdtf.Autofac.Extend.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1510,14 +1576,14 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj"
               }
             }
           }
@@ -1568,17 +1634,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj",
         "projectName": "Hzdtf.Logger.Contract.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1591,11 +1660,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj"
               }
             }
           }
@@ -1630,17 +1699,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Exceptionless.Standard\\Hzdtf.Logger.Exceptionless.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Exceptionless.Standard\\Hzdtf.Logger.Exceptionless.Standard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Exceptionless.Standard\\Hzdtf.Logger.Exceptionless.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Exceptionless.Standard\\Hzdtf.Logger.Exceptionless.Standard.csproj",
         "projectName": "Hzdtf.Logger.Exceptionless.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Exceptionless.Standard\\Hzdtf.Logger.Exceptionless.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Exceptionless.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Exceptionless.Standard\\Hzdtf.Logger.Exceptionless.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Exceptionless.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1653,8 +1725,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj"
               }
             }
           }
@@ -1693,17 +1765,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.ENLog.Standard\\Hzdtf.Logger.Integration.ENLog.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.ENLog.Standard\\Hzdtf.Logger.Integration.ENLog.Standard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.ENLog.Standard\\Hzdtf.Logger.Integration.ENLog.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.ENLog.Standard\\Hzdtf.Logger.Integration.ENLog.Standard.csproj",
         "projectName": "Hzdtf.Logger.Integration.ENLog.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.ENLog.Standard\\Hzdtf.Logger.Integration.ENLog.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.ENLog.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.ENLog.Standard\\Hzdtf.Logger.Integration.ENLog.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.ENLog.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1716,8 +1791,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj"
               }
             }
           }
@@ -1756,17 +1831,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj": {
       "version": "3.1.5",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj",
         "projectName": "Hzdtf.Logger.Integration.MicrosoftLog.Core",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1779,8 +1857,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj"
               }
             }
           }
@@ -1818,17 +1896,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj",
         "projectName": "Hzdtf.Logger.Integration.MicrosoftLog.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1841,8 +1922,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj"
               }
             }
           }
@@ -1881,17 +1962,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.MySql.Standard\\Hzdtf.MySql.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.MySql.Standard\\Hzdtf.MySql.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.MySql.Standard\\Hzdtf.MySql.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.MySql.Standard\\Hzdtf.MySql.Standard.csproj",
         "projectName": "Hzdtf.MySql.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.MySql.Standard\\Hzdtf.MySql.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.MySql.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.MySql.Standard\\Hzdtf.MySql.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.MySql.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1904,8 +1988,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Dapper.Standard\\Hzdtf.Persistence.Dapper.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Dapper.Standard\\Hzdtf.Persistence.Dapper.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Dapper.Standard\\Hzdtf.Persistence.Dapper.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Dapper.Standard\\Hzdtf.Persistence.Dapper.Standard.csproj"
               }
             }
           }
@@ -1944,17 +2028,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Autofac.Standard\\Hzdtf.Persistence.Autofac.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Autofac.Standard\\Hzdtf.Persistence.Autofac.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Autofac.Standard\\Hzdtf.Persistence.Autofac.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Autofac.Standard\\Hzdtf.Persistence.Autofac.Standard.csproj",
         "projectName": "Hzdtf.Persistence.Autofac.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Autofac.Standard\\Hzdtf.Persistence.Autofac.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Autofac.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Autofac.Standard\\Hzdtf.Persistence.Autofac.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Autofac.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1967,11 +2054,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj"
               }
             }
           }
@@ -2006,17 +2093,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj",
         "projectName": "Hzdtf.Persistence.Contract.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -2029,11 +2119,14 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj"
+              },
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj"
               }
             }
           }
@@ -2068,17 +2161,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Dapper.Standard\\Hzdtf.Persistence.Dapper.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Dapper.Standard\\Hzdtf.Persistence.Dapper.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Dapper.Standard\\Hzdtf.Persistence.Dapper.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Dapper.Standard\\Hzdtf.Persistence.Dapper.Standard.csproj",
         "projectName": "Hzdtf.Persistence.Dapper.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Dapper.Standard\\Hzdtf.Persistence.Dapper.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Dapper.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Dapper.Standard\\Hzdtf.Persistence.Dapper.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Dapper.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -2091,11 +2187,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj"
               }
             }
           }
@@ -2134,17 +2230,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj",
         "projectName": "Hzdtf.Platform.Contract.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -2157,8 +2256,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               }
             }
           }
@@ -2193,17 +2292,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj": {
       "version": "3.1.5",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj",
         "projectName": "Hzdtf.Platform.Impl.Core",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -2216,11 +2318,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.Contract.Standard\\Hzdtf.Platform.Contract.Standard.csproj"
               }
             }
           }
@@ -2258,17 +2360,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.AspNet.Extensions.Core\\Hzdtf.Polly.AspNet.Extensions.Core.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.AspNet.Extensions.Core\\Hzdtf.Polly.AspNet.Extensions.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.AspNet.Extensions.Core\\Hzdtf.Polly.AspNet.Extensions.Core.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.AspNet.Extensions.Core\\Hzdtf.Polly.AspNet.Extensions.Core.csproj",
         "projectName": "Hzdtf.Polly.AspNet.Extensions.Core",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.AspNet.Extensions.Core\\Hzdtf.Polly.AspNet.Extensions.Core.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.AspNet.Extensions.Core\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.AspNet.Extensions.Core\\Hzdtf.Polly.AspNet.Extensions.Core.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.AspNet.Extensions.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -2281,8 +2386,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.Extensions.Standard\\Hzdtf.Polly.Extensions.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.Extensions.Standard\\Hzdtf.Polly.Extensions.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.Extensions.Standard\\Hzdtf.Polly.Extensions.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.Extensions.Standard\\Hzdtf.Polly.Extensions.Standard.csproj"
               }
             }
           }
@@ -2328,17 +2433,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.Extensions.Standard\\Hzdtf.Polly.Extensions.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.Extensions.Standard\\Hzdtf.Polly.Extensions.Standard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.Extensions.Standard\\Hzdtf.Polly.Extensions.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.Extensions.Standard\\Hzdtf.Polly.Extensions.Standard.csproj",
         "projectName": "Hzdtf.Polly.Extensions.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.Extensions.Standard\\Hzdtf.Polly.Extensions.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.Extensions.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.Extensions.Standard\\Hzdtf.Polly.Extensions.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.Extensions.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -2351,11 +2459,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj"
               }
             }
           }
@@ -2394,17 +2502,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.BasicFunction.Service.Autofac.Standard\\Hzdtf.BasicFunction.Service.Autofac.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.BasicFunction.Service.Autofac.Standard\\Hzdtf.BasicFunction.Service.Autofac.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.BasicFunction.Service.Autofac.Standard\\Hzdtf.BasicFunction.Service.Autofac.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.BasicFunction.Service.Autofac.Standard\\Hzdtf.BasicFunction.Service.Autofac.Standard.csproj",
         "projectName": "Hzdtf.BasicFunction.Service.Autofac.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.BasicFunction.Service.Autofac.Standard\\Hzdtf.BasicFunction.Service.Autofac.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.BasicFunction.Service.Autofac.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.BasicFunction.Service.Autofac.Standard\\Hzdtf.BasicFunction.Service.Autofac.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.BasicFunction.Service.Autofac.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -2417,14 +2528,14 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Contract.Standard\\Hzdtf.BasicFunction.Service.Contract.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj"
               }
             }
           }
@@ -2459,17 +2570,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj",
         "projectName": "Hzdtf.Service.Contract.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -2482,8 +2596,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               }
             }
           }
@@ -2518,17 +2632,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj",
         "projectName": "Hzdtf.Service.Impl.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -2541,17 +2658,17 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Contract.Standard\\Hzdtf.Logger.Contract.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj"
               }
             }
           }
@@ -2586,17 +2703,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WebDemoCore\\Hzdtf.WebTest3.1.Core\\Hzdtf.WebTest3.1.Core.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WebDemoCore\\Hzdtf.WebTest3.1.Core\\Hzdtf.WebTest3.1.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WebDemoCore\\Hzdtf.WebTest3.1.Core\\Hzdtf.WebTest3.1.Core.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WebDemoCore\\Hzdtf.WebTest3.1.Core\\Hzdtf.WebTest3.1.Core.csproj",
         "projectName": "Hzdtf.WebTest3.1.Core",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WebDemoCore\\Hzdtf.WebTest3.1.Core\\Hzdtf.WebTest3.1.Core.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WebDemoCore\\Hzdtf.WebTest3.1.Core\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WebDemoCore\\Hzdtf.WebTest3.1.Core\\Hzdtf.WebTest3.1.Core.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WebDemoCore\\Hzdtf.WebTest3.1.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -2609,74 +2729,74 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Controller\\Hzdtf.BasicFunction.MvcController.Core\\Hzdtf.BasicFunction.MvcController.Core.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Controller\\Hzdtf.BasicFunction.MvcController.Core\\Hzdtf.BasicFunction.MvcController.Core.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Controller\\Hzdtf.BasicFunction.MvcController.Core\\Hzdtf.BasicFunction.MvcController.Core.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Controller\\Hzdtf.BasicFunction.MvcController.Core\\Hzdtf.BasicFunction.MvcController.Core.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Hzdtf.BasicFunction.MySql.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Hzdtf.BasicFunction.MySql.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Hzdtf.BasicFunction.MySql.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Persistence\\Hzdtf.BasicFunction.MySql.Standard\\Hzdtf.BasicFunction.MySql.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Hzdtf.BasicFunction.Service.Impl.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Hzdtf.BasicFunction.Service.Impl.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Hzdtf.BasicFunction.Service.Impl.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\Service\\Hzdtf.BasicFunction.Service.Impl.Standard\\Hzdtf.BasicFunction.Service.Impl.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\BasicFunction\\WorkFlow\\Hzdtf.BasicFunction.WorkFlow.Standard\\Hzdtf.BasicFunction.WorkFlow.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Core\\Hzdtf.Redis.Extend.Core.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Core\\Hzdtf.Redis.Extend.Core.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Core\\Hzdtf.Redis.Extend.Core.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Cache\\Hzdtf.Redis.Extend.Core\\Hzdtf.Redis.Extend.Core.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.AspNet.Core\\Hzdtf.Utility.AspNet.Core.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.AspNet.Core\\Hzdtf.Utility.AspNet.Core.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.AspNet.Core\\Hzdtf.Utility.AspNet.Core.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.AspNet.Core\\Hzdtf.Utility.AspNet.Core.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\Hzdtf.Demo.MvcController.Core.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\Hzdtf.Demo.MvcController.Core.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\Hzdtf.Demo.MvcController.Core.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\Hzdtf.Demo.MvcController.Core.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.MySql.Standard\\Hzdtf.Demo.MySql.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.MySql.Standard\\Hzdtf.Demo.MySql.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.MySql.Standard\\Hzdtf.Demo.MySql.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Persistence\\Hzdtf.Demo.MySql.Standard\\Hzdtf.Demo.MySql.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Impl.Standard\\Hzdtf.Demo.Service.Impl.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Impl.Standard\\Hzdtf.Demo.Service.Impl.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Impl.Standard\\Hzdtf.Demo.Service.Impl.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Impl.Standard\\Hzdtf.Demo.Service.Impl.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\IOC\\Hzdtf.Autofac.Extend.Standard\\Hzdtf.Autofac.Extend.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Exceptionless.Standard\\Hzdtf.Logger.Exceptionless.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Exceptionless.Standard\\Hzdtf.Logger.Exceptionless.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Exceptionless.Standard\\Hzdtf.Logger.Exceptionless.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Exceptionless.Standard\\Hzdtf.Logger.Exceptionless.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.ENLog.Standard\\Hzdtf.Logger.Integration.ENLog.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.ENLog.Standard\\Hzdtf.Logger.Integration.ENLog.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.ENLog.Standard\\Hzdtf.Logger.Integration.ENLog.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.ENLog.Standard\\Hzdtf.Logger.Integration.ENLog.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Standard\\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Autofac.Standard\\Hzdtf.Persistence.Autofac.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Autofac.Standard\\Hzdtf.Persistence.Autofac.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Autofac.Standard\\Hzdtf.Persistence.Autofac.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Autofac.Standard\\Hzdtf.Persistence.Autofac.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Platform\\Hzdtf.Platform.impl.Core\\Hzdtf.Platform.Impl.Core.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.AspNet.Extensions.Core\\Hzdtf.Polly.AspNet.Extensions.Core.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.AspNet.Extensions.Core\\Hzdtf.Polly.AspNet.Extensions.Core.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.AspNet.Extensions.Core\\Hzdtf.Polly.AspNet.Extensions.Core.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.AspNet.Extensions.Core\\Hzdtf.Polly.AspNet.Extensions.Core.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.Extensions.Standard\\Hzdtf.Polly.Extensions.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.Extensions.Standard\\Hzdtf.Polly.Extensions.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.Extensions.Standard\\Hzdtf.Polly.Extensions.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Polly\\Hzdtf.Polly.Extensions.Standard\\Hzdtf.Polly.Extensions.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.BasicFunction.Service.Autofac.Standard\\Hzdtf.BasicFunction.Service.Autofac.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.BasicFunction.Service.Autofac.Standard\\Hzdtf.BasicFunction.Service.Autofac.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.BasicFunction.Service.Autofac.Standard\\Hzdtf.BasicFunction.Service.Autofac.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.BasicFunction.Service.Autofac.Standard\\Hzdtf.BasicFunction.Service.Autofac.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\Hzdtf.WorkFlow.MvcController.Core.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\Hzdtf.WorkFlow.MvcController.Core.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\Hzdtf.WorkFlow.MvcController.Core.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\Hzdtf.WorkFlow.MvcController.Core.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.MySql.Standard\\Hzdtf.WorkFlow.MySql.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.MySql.Standard\\Hzdtf.WorkFlow.MySql.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.MySql.Standard\\Hzdtf.WorkFlow.MySql.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.MySql.Standard\\Hzdtf.WorkFlow.MySql.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj"
               }
             }
           }
@@ -2729,17 +2849,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\Hzdtf.WorkFlow.MvcController.Core.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\Hzdtf.WorkFlow.MvcController.Core.csproj": {
       "version": "3.1.5",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\Hzdtf.WorkFlow.MvcController.Core.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\Hzdtf.WorkFlow.MvcController.Core.csproj",
         "projectName": "Hzdtf.WorkFlow.MvcController.Core",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\Hzdtf.WorkFlow.MvcController.Core.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\Hzdtf.WorkFlow.MvcController.Core.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -2752,11 +2875,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj"
               }
             }
           }
@@ -2794,17 +2917,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj",
         "projectName": "Hzdtf.WorkFlow.Model.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -2817,8 +2943,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               }
             }
           }
@@ -2853,17 +2979,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.MySql.Standard\\Hzdtf.WorkFlow.MySql.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.MySql.Standard\\Hzdtf.WorkFlow.MySql.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.MySql.Standard\\Hzdtf.WorkFlow.MySql.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.MySql.Standard\\Hzdtf.WorkFlow.MySql.Standard.csproj",
         "projectName": "Hzdtf.WorkFlow.MySql.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.MySql.Standard\\Hzdtf.WorkFlow.MySql.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.MySql.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.MySql.Standard\\Hzdtf.WorkFlow.MySql.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.MySql.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -2876,11 +3005,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.MySql.Standard\\Hzdtf.MySql.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.MySql.Standard\\Hzdtf.MySql.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.MySql.Standard\\Hzdtf.MySql.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.MySql.Standard\\Hzdtf.MySql.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj"
               }
             }
           }
@@ -2915,17 +3044,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj",
         "projectName": "Hzdtf.WorkFlow.Persistence.Contract.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -2938,11 +3070,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Persistence\\Hzdtf.Persistence.Contract.Standard\\Hzdtf.Persistence.Contract.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj"
               }
             }
           }
@@ -2977,17 +3109,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj",
         "projectName": "Hzdtf.WorkFlow.Service.Contract.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -3000,11 +3135,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Contract.Standard\\Hzdtf.Service.Contract.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Model\\Hzdtf.WorkFlow.Model.Standard\\Hzdtf.WorkFlow.Model.Standard.csproj"
               }
             }
           }
@@ -3039,17 +3174,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj",
         "projectName": "Hzdtf.WorkFlow.Service.Impl.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\Hzdtf.WorkFlow.Service.Impl.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Impl.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -3062,14 +3200,14 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Service\\Hzdtf.Service.Impl.Standard\\Hzdtf.Service.Impl.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Persistence\\Hzdtf.WorkFlow.Persistence.Contract.Standard\\Hzdtf.WorkFlow.Persistence.Contract.Standard.csproj"
               },
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj"
               }
             }
           }

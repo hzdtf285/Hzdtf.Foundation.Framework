@@ -29,6 +29,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"{SelectSql()} WHERE {GetFieldByProp("LoginId")}=@LoginId AND `{GetFieldByProp("Password")}`=@Password";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectByLoginIdAndPassword");
                 result = dbConn.QueryFirstOrDefault<UserInfo>(sql, new { LoginId = loginId, Password = password });
             }, AccessMode.SLAVE);
 
@@ -47,6 +48,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"UPDATE `{Table}` SET `{GetFieldByProp("Password")}`=@Password{GetModifyInfoSql(user)} WHERE {GetFieldByProp("Id") }=@Id";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "UpdatePasswordById");
                 result = dbConn.Execute(sql, user, GetDbTransaction(connId));
             });
 
@@ -67,6 +69,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"{SelectSql()} WHERE `{GetFieldByProp("LoginId")}`=@LoginId OR `{GetFieldByProp("Code")}`=@Code OR `{GetFieldByProp("Name")}`=@Name";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectByLoginIdOrCodeOrName");
                 result = dbConn.QueryFirstOrDefault<UserInfo>(sql, new { LoginId = loginId, Code = code, Name = name });
             }, AccessMode.SLAVE);
 
@@ -88,6 +91,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"{SelectSql()} WHERE `{GetFieldByProp("Id")}`!=@Id AND (`{GetFieldByProp("LoginId")}`=@LoginId OR `{GetFieldByProp("Code")}`=@Code OR `{GetFieldByProp("Name")}`=@Name)";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectByLoginIdOrCodeOrNameNotId");
                 result = dbConn.QueryFirstOrDefault<UserInfo>(sql, new { Id = notId, LoginId = loginId, Code = code, Name = name });
             }, AccessMode.SLAVE);
 
@@ -109,6 +113,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"{SelectSql()} " + whereSql.ToString();
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectByFilter");
                 result = dbConn.Query<UserInfo>(sql, parameters).AsList();
             }, AccessMode.SLAVE);
 

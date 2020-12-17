@@ -73,6 +73,7 @@ namespace Hzdtf.BasicFunction.SqlServer.Standard
                         + $" INNER JOIN [function] F ON F.[id]= MF.[function_id] AND F.[code] IN({functionSql.ToString()})"
                         + $" INNER JOIN {Table} RMF ON RMF.[menu_function_id]=MF.[id] AND RMF.[role_id] IN({roleSql.ToString()})"
                         + " WHERE M.[code]=@MenuCode";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "CountByMenuCodeAndFunctionCodesAndRoleIds");
                 result = dbConn.ExecuteScalar<int>(sql, parameters);
             }, AccessMode.SLAVE);
 
@@ -108,6 +109,7 @@ namespace Hzdtf.BasicFunction.SqlServer.Standard
                         + " INNER JOIN menu_function MF ON MF.[function_id]= F.[id]"
                         + " INNER JOIN menu M ON m.[id]= MF.[menu_id] AND M.[code]=@MenuCode"
                         + $" INNER JOIN {Table} RMF ON RMF.[menu_function_id]= MF.[id] AND RMF.[role_id] IN({roleSql.ToString()})";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectFunctionsByMenuCodeAndRoleIds");
                 result = dbConn.Query<FunctionInfo>(sql, parameters).AsList();
             }, AccessMode.SLAVE);
 
@@ -130,6 +132,7 @@ namespace Hzdtf.BasicFunction.SqlServer.Standard
             {
                 string sql = $"select {fields} from {MenuFunctionPersistence.Table} MF"
                             + $" inner join {Table} RMF on RMF.menu_function_id = MF.id AND RMF.role_id=@RoleId";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectMenuFunctionsByRoleId");
                 result = dbConn.Query<MenuFunctionInfo>(sql, new { RoleId = roleId }).AsList();
             }, AccessMode.SLAVE);
 
@@ -148,7 +151,9 @@ namespace Hzdtf.BasicFunction.SqlServer.Standard
 
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                result = dbConn.Execute($"{DeleteSql()} WHERE role_id=@RoleId", new { RoleId = roleId }, GetDbTransaction(connId));
+                var sql = DeleteSql();
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "DeleteByRoleId");
+                result = dbConn.Execute($"{sql} WHERE role_id=@RoleId", new { RoleId = roleId }, GetDbTransaction(connId));
             });
 
             return result;

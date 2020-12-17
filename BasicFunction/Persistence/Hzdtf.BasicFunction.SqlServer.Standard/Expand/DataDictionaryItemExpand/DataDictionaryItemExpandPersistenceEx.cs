@@ -28,6 +28,7 @@ namespace Hzdtf.BasicFunction.SqlServer.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"{SelectSql()} WHERE {GetFieldByProp("DataDictionaryItemId")}=@DataDictionaryItemId";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectByDataDictionaryItemId");
                 result = dbConn.Query<DataDictionaryItemExpandInfo>(sql, new { DataDictionaryItemId = dataDictionaryItemId }).AsList();
             }, AccessMode.SLAVE);
 

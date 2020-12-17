@@ -26,6 +26,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"{SelectSql()} WHERE {GetFieldByProp("SeqType")}=@SeqType";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectBySeqType");
                 result = dbConn.QueryFirstOrDefault<SequenceInfo>(sql, new { SeqType = seqType });
             }, AccessMode.SLAVE);
 
@@ -44,6 +45,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"UPDATE `{Table}` SET `{GetFieldByProp("Increment")}`=@Increment,`{GetFieldByProp("UpdateDate")}`=@UpdateDate{GetModifyInfoSql(sequenceInfo)} WHERE {GetFieldByProp("Id") }=@Id";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "UpdateIncrementById");
                 result = dbConn.Execute(sql, sequenceInfo, GetDbTransaction(connId));
             });
 

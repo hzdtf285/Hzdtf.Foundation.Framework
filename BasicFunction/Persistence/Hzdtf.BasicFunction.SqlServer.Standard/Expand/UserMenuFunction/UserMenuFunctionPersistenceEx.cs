@@ -46,6 +46,7 @@ namespace Hzdtf.BasicFunction.SqlServer.Standard
                         + $" INNER JOIN [function] F ON F.[id]= MF.[function_id] AND F.[code] IN({functionSql.ToString()})"
                         + $" INNER JOIN {Table} RMF ON RMF.[menu_function_id]=MF.[id] AND RMF.[user_id]=@UserId"
                         + " WHERE M.[code]=@MenuCode";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "CountByMenuCodeAndFunctionCodesAndUserId");
                 result = dbConn.ExecuteScalar<int>(sql, parameters);
             }, AccessMode.SLAVE);
 
@@ -69,6 +70,7 @@ namespace Hzdtf.BasicFunction.SqlServer.Standard
                         + " INNER JOIN menu_function MF ON MF.[function_id]= F.[id]"
                         + " INNER JOIN menu M ON m.[id]= MF.[menu_id] AND M.[code]=@MenuCode"
                         + $" INNER JOIN {Table} RMF ON RMF.[menu_function_id]=MF.[id] AND RMF.[user_id]=@UserId";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectFunctionsByMenuCodeAndUserId");
                 result = dbConn.Query<FunctionInfo>(sql, new { MenuCode = menuCode, UserId = userId }).AsList();
             }, AccessMode.SLAVE);
 

@@ -1,4 +1,5 @@
-﻿using Hzdtf.Persistence.Contract.Standard.Management;
+﻿using Hzdtf.Logger.Contract.Standard;
+using Hzdtf.Persistence.Contract.Standard.Management;
 using Hzdtf.Utility.Standard.Enums;
 using System;
 using System.Data;
@@ -11,6 +12,15 @@ namespace Hzdtf.Persistence.Contract.Standard.Basic
     /// </summary>
     public abstract class PersistenceConnectionBase : IPersistenceConnection
     {
+        /// <summary>
+        /// 日志
+        /// </summary>
+        public ILogable Log
+        {
+            get;
+            set;
+        } = LogTool.DefaultLog;
+
         /// <summary>
         /// 默认连接字符串
         /// </summary>

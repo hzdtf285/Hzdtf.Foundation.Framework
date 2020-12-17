@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Tool\\CodeGenerator\\Hzdtf.CodeGenerator.Model.Standard\\Hzdtf.CodeGenerator.Model.Standard.csproj": {}
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Tool\\CodeGenerator\\Hzdtf.CodeGenerator.Model.Standard\\Hzdtf.CodeGenerator.Model.Standard.csproj": {}
   },
   "projects": {
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\Hzdtf.Mini.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\Hzdtf.Mini.Standard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\Hzdtf.Mini.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\Hzdtf.Mini.Standard.csproj",
         "projectName": "Hzdtf.Mini.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\Hzdtf.Mini.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\Hzdtf.Mini.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -59,17 +62,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
       "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj",
         "projectName": "Hzdtf.Utility.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,8 +88,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\Hzdtf.Mini.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\Hzdtf.Mini.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\Hzdtf.Mini.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\Hzdtf.Mini.Standard.csproj"
               }
             }
           }
@@ -166,17 +172,20 @@
         }
       }
     },
-    "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Tool\\CodeGenerator\\Hzdtf.CodeGenerator.Model.Standard\\Hzdtf.CodeGenerator.Model.Standard.csproj": {
+    "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Tool\\CodeGenerator\\Hzdtf.CodeGenerator.Model.Standard\\Hzdtf.CodeGenerator.Model.Standard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Tool\\CodeGenerator\\Hzdtf.CodeGenerator.Model.Standard\\Hzdtf.CodeGenerator.Model.Standard.csproj",
+        "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Tool\\CodeGenerator\\Hzdtf.CodeGenerator.Model.Standard\\Hzdtf.CodeGenerator.Model.Standard.csproj",
         "projectName": "Hzdtf.CodeGenerator.Model.Standard",
-        "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Tool\\CodeGenerator\\Hzdtf.CodeGenerator.Model.Standard\\Hzdtf.CodeGenerator.Model.Standard.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Tool\\CodeGenerator\\Hzdtf.CodeGenerator.Model.Standard\\obj\\",
+        "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Tool\\CodeGenerator\\Hzdtf.CodeGenerator.Model.Standard\\Hzdtf.CodeGenerator.Model.Standard.csproj",
+        "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+        "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Tool\\CodeGenerator\\Hzdtf.CodeGenerator.Model.Standard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -189,8 +198,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
-                "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
+              "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj": {
+                "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Utility.Standard\\Hzdtf.Utility.Standard.csproj"
               }
             }
           }

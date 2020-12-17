@@ -5117,6 +5117,42 @@
             <param name="token">票据</param>
             <returns>票据是否包含了Bearer</returns>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.Utils.BashCommandUtil">
+            <summary>
+            Bash命令辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.BashCommandUtil.ExecBashCommand(System.String)">
+            <summary>
+            执行Bash命令
+            </summary>
+            <param name="command">命令</param>
+            <returns>输出返回值</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.BashCommandUtil.ExecBashCommand(System.String[])">
+            <summary>
+            执行Bash命令
+            </summary>
+            <param name="commands">命令数组</param>
+            <returns>输出返回值</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.BashCommandUtil.ExecBashCommand(System.String[],System.String@)">
+            <summary>
+            执行Bash命令
+            </summary>
+            <param name="commands">命令数组</param>
+            <param name="err">错误</param>
+            <returns>输出返回值</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.BashCommandUtil.ExecBashCommand(System.String,System.String@)">
+            <summary>
+            执行Bash命令
+            </summary>
+            <param name="command">命令</param>
+            <param name="err">错误</param>
+            <returns>输出返回值</returns>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Utils.ClaimUtil">
             <summary>
             证件单元辅助类

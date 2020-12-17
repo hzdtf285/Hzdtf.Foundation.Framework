@@ -35,7 +35,12 @@ namespace Hzdtf.Persistence.Dapper.Standard
         /// <param name="dbTransaction">数据库事务</param>
         /// <param name="propertyNames">属性名称集合</param>
         /// <returns>模型</returns>
-        protected override ModelT Select(int id, IDbConnection dbConnection, IDbTransaction dbTransaction = null, string[] propertyNames = null) => dbConnection.QueryFirstOrDefault<ModelT>(SelectSql(id, propertyNames), new SimpleInfo() { Id = id }, dbTransaction);
+        protected override ModelT Select(int id, IDbConnection dbConnection, IDbTransaction dbTransaction = null, string[] propertyNames = null)
+        {
+            var sql = SelectSql(id, propertyNames);
+            Log.TraceAsync(sql, source: this.GetType().Name, tags: "Select");
+            return dbConnection.QueryFirstOrDefault<ModelT>(sql, new SimpleInfo() { Id = id }, dbTransaction);
+        }
 
         /// <summary>
         /// 根据ID集合查询模型
@@ -48,7 +53,9 @@ namespace Hzdtf.Persistence.Dapper.Standard
         protected override IList<ModelT> Select(int[] ids, IDbConnection dbConnection, IDbTransaction dbTransaction = null, string[] propertyNames = null)
         {
             DynamicParameters parameters;
-            return dbConnection.Query<ModelT>(SelectSql(ids, out parameters, propertyNames), parameters, dbTransaction).AsList();
+            var sql = SelectSql(ids, out parameters, propertyNames);
+            Log.TraceAsync(sql, source: this.GetType().Name, tags: "Select");
+            return dbConnection.Query<ModelT>(sql, parameters, dbTransaction).AsList();
         }
 
         /// <summary>
@@ -58,7 +65,12 @@ namespace Hzdtf.Persistence.Dapper.Standard
         /// <param name="dbConnection">数据库连接</param>
         /// <param name="dbTransaction">数据库事务</param>
         /// <returns>模型数</returns>
-        protected override int Count(int id, IDbConnection dbConnection, IDbTransaction dbTransaction = null) => dbConnection.ExecuteScalar<int>(CountSql(id), new SimpleInfo() { Id = id }, dbTransaction);
+        protected override int Count(int id, IDbConnection dbConnection, IDbTransaction dbTransaction = null)
+        {
+            var sql = CountSql(id);
+            Log.TraceAsync(sql, source: this.GetType().Name, tags: "Count");
+            return dbConnection.ExecuteScalar<int>(sql, new SimpleInfo() { Id = id }, dbTransaction);
+        }
 
         /// <summary>
         /// 统计模型数
@@ -66,7 +78,12 @@ namespace Hzdtf.Persistence.Dapper.Standard
         /// <returns>模型数</returns>
         /// <param name="dbConnection">数据库连接</param>
         /// <param name="dbTransaction">数据库事务</param>
-        protected override int Count(IDbConnection dbConnection, IDbTransaction dbTransaction = null) => dbConnection.ExecuteScalar<int>(CountSql(), dbTransaction);
+        protected override int Count(IDbConnection dbConnection, IDbTransaction dbTransaction = null)
+        {
+            var sql = CountSql();
+            Log.TraceAsync(sql, source: this.GetType().Name, tags: "Count");
+            return dbConnection.ExecuteScalar<int>(sql, dbTransaction);
+        }
 
         /// <summary>
         /// 查询模型列表
@@ -75,7 +92,12 @@ namespace Hzdtf.Persistence.Dapper.Standard
         /// <param name="dbConnection">数据库连接</param>
         /// <param name="dbTransaction">数据库事务</param>
         /// <param name="propertyNames">属性名称集合</param>
-        protected override IList<ModelT> Select(IDbConnection dbConnection, IDbTransaction dbTransaction = null, string[] propertyNames = null) => dbConnection.Query<ModelT>(SelectSql(propertyNames: propertyNames), dbTransaction).AsList();
+        protected override IList<ModelT> Select(IDbConnection dbConnection, IDbTransaction dbTransaction = null, string[] propertyNames = null)
+        {
+            var sql = SelectSql(propertyNames: propertyNames);
+            Log.TraceAsync(sql, source: this.GetType().Name, tags: "Select");
+            return dbConnection.Query<ModelT>(sql, dbTransaction).AsList();
+        }
 
         /// <summary>
         /// 查询模型列表并分页
@@ -90,16 +112,18 @@ namespace Hzdtf.Persistence.Dapper.Standard
         protected override PagingInfo<ModelT> SelectPage(int pageIndex, int pageSize, IDbConnection dbConnection, FilterInfo filter = null, IDbTransaction dbTransaction = null, string[] propertyNames = null)
         {
             BeforeFilterInfo(filter);
+            var source = this.GetType().Name;
             return PagingUtil.ExecPage<ModelT>(pageIndex, pageSize, () =>
             {
                 DynamicParameters parameters;
                 var countSql = CountByFilterSql(filter, out parameters);
+                Log.TraceAsync(countSql, source: source, tags: "SelectPage");
                 return dbConnection.ExecuteScalar<int>(countSql, parameters, dbTransaction);
             }, () =>
             {
                 DynamicParameters parameters;
                 var pageSql = SelectPageSql(pageIndex, pageSize, out parameters, filter, propertyNames);
-                Console.WriteLine(pageSql);
+                Log.TraceAsync(pageSql, source: source, tags: "SelectPage");
                 return dbConnection.Query<ModelT>(pageSql, parameters, dbTransaction).AsList();
             });
         }
@@ -117,7 +141,9 @@ namespace Hzdtf.Persistence.Dapper.Standard
         /// <returns>影响行数</returns>
         protected override int Insert(ModelT model, IDbConnection dbConnection, IDbTransaction dbTransaction = null)
         {
-            model.Id = dbConnection.ExecuteScalar<int>(InsertSql(model, true), model, dbTransaction);
+            var sql = InsertSql(model, true);
+            Log.TraceAsync(sql, source: this.GetType().Name, tags: "Insert");
+            model.Id = dbConnection.ExecuteScalar<int>(sql, model, dbTransaction);
 
             return 1;
         }
@@ -132,7 +158,9 @@ namespace Hzdtf.Persistence.Dapper.Standard
         protected override int Insert(IList<ModelT> models, IDbConnection dbConnection, IDbTransaction dbTransaction = null)
         {
             DynamicParameters parameters;
-            return dbConnection.Execute(InsertSql(models, out parameters), parameters, dbTransaction);
+            var sql = InsertSql(models, out parameters);
+            Log.TraceAsync(sql, source: this.GetType().Name, tags: "Insert");
+            return dbConnection.Execute(sql, parameters, dbTransaction);
         }
 
         /// <summary>
@@ -143,8 +171,13 @@ namespace Hzdtf.Persistence.Dapper.Standard
         /// <param name="dbTransaction">数据库事务</param>
         /// <param name="propertyNames">属性名称集合</param>
         /// <returns>影响行数</returns>
-        protected override int UpdateById(ModelT model, IDbConnection dbConnection, IDbTransaction dbTransaction = null, string[] propertyNames = null) => dbConnection.Execute(UpdateByIdSql(model, propertyNames), model, dbTransaction);
-        
+        protected override int UpdateById(ModelT model, IDbConnection dbConnection, IDbTransaction dbTransaction = null, string[] propertyNames = null)
+        {
+            var sql = UpdateByIdSql(model, propertyNames);
+            Log.TraceAsync(sql, source: this.GetType().Name, tags: "UpdateById");
+            return dbConnection.Execute(sql, model, dbTransaction);
+        }
+
         /// <summary>
         /// 根据ID删除模型
         /// </summary>
@@ -152,7 +185,12 @@ namespace Hzdtf.Persistence.Dapper.Standard
         /// <param name="dbConnection">数据库连接</param>
         /// <param name="dbTransaction">数据库事务</param>
         /// <returns>影响行数</returns>
-        protected override int DeleteById(int id, IDbConnection dbConnection, IDbTransaction dbTransaction = null) => dbConnection.Execute(DeleteByIdSql(id), new SimpleInfo() { Id = id }, dbTransaction);
+        protected override int DeleteById(int id, IDbConnection dbConnection, IDbTransaction dbTransaction = null)
+        {
+            var sql = DeleteByIdSql(id);
+            Log.TraceAsync(sql, source: this.GetType().Name, tags: "DeleteById");
+            return dbConnection.Execute(sql, new SimpleInfo() { Id = id }, dbTransaction);
+        }
 
         /// <summary>
         /// 根据ID数组删除模型
@@ -164,7 +202,9 @@ namespace Hzdtf.Persistence.Dapper.Standard
         protected override int DeleteByIds(int[] ids, IDbConnection dbConnection, IDbTransaction dbTransaction = null)
         {
             DynamicParameters parameters;
-            return dbConnection.Execute(DeleteByIdsSql(ids, out parameters), parameters, dbTransaction);
+            var sql = DeleteByIdsSql(ids, out parameters);
+            Log.TraceAsync(sql, source: this.GetType().Name, tags: "DeleteByIds");
+            return dbConnection.Execute(sql, parameters, dbTransaction);
         }
 
         /// <summary>
@@ -173,7 +213,12 @@ namespace Hzdtf.Persistence.Dapper.Standard
         /// <returns>影响行数</returns>
         /// <param name="dbConnection">数据库连接</param>
         /// <param name="dbTransaction">数据库事务</param>
-        protected override int Delete(IDbConnection dbConnection, IDbTransaction dbTransaction = null) => dbConnection.Execute(DeleteSql(), dbTransaction);
+        protected override int Delete(IDbConnection dbConnection, IDbTransaction dbTransaction = null)
+        {
+            var sql = DeleteSql();
+            Log.TraceAsync(sql, source: this.GetType().Name, tags: "Delete");
+            return dbConnection.Execute(sql, dbTransaction);
+        }
 
         #endregion
 
@@ -186,7 +231,12 @@ namespace Hzdtf.Persistence.Dapper.Standard
         /// <param name="dbConnection">数据库连接</param>
         /// <param name="dbTransaction">数据库事务</param>
         /// <returns>影响行数</returns>
-        protected override int DeleteSlaveTable(string table, IDbConnection dbConnection, IDbTransaction dbTransaction = null) => dbConnection.Execute(DeleteByTableSql(table), dbTransaction);
+        protected override int DeleteSlaveTable(string table, IDbConnection dbConnection, IDbTransaction dbTransaction = null)
+        {
+            var sql = DeleteByTableSql(table);
+            Log.TraceAsync(sql, source: this.GetType().Name, tags: "DeleteSlaveTable");
+            return dbConnection.Execute(sql, dbTransaction);
+        }
 
         /// <summary>
         /// 删除从表
@@ -200,7 +250,9 @@ namespace Hzdtf.Persistence.Dapper.Standard
         protected override int DeleteSlaveTableByForeignKeys(string table, string foreignKeyName, int[] foreignKeyValues, IDbConnection dbConnection, IDbTransaction dbTransaction = null)
         {
             DynamicParameters parameters;
-            return dbConnection.Execute(DeleteByTableAndForignKeySql(table, foreignKeyName, foreignKeyValues, out parameters), parameters, dbTransaction);
+            var sql = DeleteByTableAndForignKeySql(table, foreignKeyName, foreignKeyValues, out parameters);
+            Log.TraceAsync(sql, source: this.GetType().Name, tags: "DeleteSlaveTableByForeignKeys");
+            return dbConnection.Execute(sql, parameters, dbTransaction);
         }
 
         #endregion

@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Common\Hzdtf.Utility.Standard\Hzdtf.Utility.Standard.csproj" />
+    <ProjectReference Include="..\..\Logger\Hzdtf.Logger.Contract.Standard\Hzdtf.Logger.Contract.Standard.csproj" />
     <ProjectReference Include="..\..\Platform\Hzdtf.Platform.Contract.Standard\Hzdtf.Platform.Contract.Standard.csproj" />
   </ItemGroup>
 

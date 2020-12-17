@@ -444,6 +444,15 @@
           "Hzdtf.Demo.Model.Standard.dll": {}
         }
       },
+      "Hzdtf.Logger.Contract.Standard/2.0.0": {
+        "dependencies": {
+          "Hzdtf.Platform.Contract.Standard": "2.0.0",
+          "Hzdtf.Utility.Standard": "2.0.0"
+        },
+        "runtime": {
+          "Hzdtf.Logger.Contract.Standard.dll": {}
+        }
+      },
       "Hzdtf.Mini.Standard/1.0.0": {
         "runtime": {
           "Hzdtf.Mini.Standard.dll": {}
@@ -451,6 +460,7 @@
       },
       "Hzdtf.Persistence.Contract.Standard/2.0.0": {
         "dependencies": {
+          "Hzdtf.Logger.Contract.Standard": "2.0.0",
           "Hzdtf.Platform.Contract.Standard": "2.0.0",
           "Hzdtf.Utility.Standard": "2.0.0"
         },
@@ -783,6 +793,11 @@
       "hashPath": "system.threading.tasks.extensions.4.5.3.nupkg.sha512"
     },
     "Hzdtf.Demo.Model.Standard/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hzdtf.Logger.Contract.Standard/2.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

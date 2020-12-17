@@ -1,0 +1,349 @@
+2020-12-17 20:58:48.5422 INFO eventId:0,Now listening on: http://localhost:5000
+2020-12-17 20:58:48.5422 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-12-17 20:58:48.5422 INFO eventId:0,Hosting environment: Development
+2020-12-17 20:58:48.5422 INFO eventId:0,Content root path: F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-12-17 20:58:50.9993 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-12-17 20:58:54.1240 INFO 登录ID:system,用户编号:1000,名称:系统管理员 成功授权
+2020-12-17 22:55:00.3363 INFO eventId:0,Now listening on: http://localhost:5000
+2020-12-17 22:55:00.3760 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-12-17 22:55:00.3760 INFO eventId:0,Hosting environment: Development
+2020-12-17 22:55:00.3913 INFO eventId:0,Content root path: F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-12-17 22:55:16.9066 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-12-17 22:55:21.9562 INFO 登录ID:system,用户编号:1000,名称:系统管理员 成功授权
+2020-12-17 23:00:42.0139 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-12-17 23:00:42.0139 INFO eventId:0,Hosting environment: Development
+2020-12-17 23:00:42.0139 INFO eventId:0,Now listening on: http://localhost:5000
+2020-12-17 23:00:42.0139 INFO eventId:0,Content root path: F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-12-17 23:00:43.7061 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-12-17 23:00:45.7602 INFO 登录ID:system,用户编号:1000,名称:系统管理员 成功授权
+2020-12-17 23:06:49.2818 INFO eventId:0,Hosting environment: Development
+2020-12-17 23:06:49.2818 INFO eventId:0,Now listening on: http://localhost:5000
+2020-12-17 23:06:49.2818 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-12-17 23:06:49.2818 INFO eventId:0,Content root path: F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-12-17 23:06:50.2875 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-12-17 23:06:56.0727 INFO 登录ID:system,用户编号:1000,名称:系统管理员 成功授权
+2020-12-17 23:12:47.6264 INFO eventId:0,Now listening on: http://localhost:5000
+2020-12-17 23:12:47.6264 INFO eventId:0,Hosting environment: Development
+2020-12-17 23:12:47.6264 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-12-17 23:12:47.6264 INFO eventId:0,Content root path: F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-12-17 23:12:48.9683 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-12-17 23:12:50.6688 INFO 登录ID:system,用户编号:1000,名称:系统管理员 成功授权
+2020-12-17 23:14:59.8794 INFO eventId:0,Hosting environment: Development
+2020-12-17 23:14:59.8794 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-12-17 23:14:59.8794 INFO eventId:0,Now listening on: http://localhost:5000
+2020-12-17 23:14:59.8866 INFO eventId:0,Content root path: F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-12-17 23:15:01.0807 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-12-17 23:15:45.4276 INFO 登录ID:system,用户编号:1000,名称:系统管理员 成功授权
+2020-12-17 23:20:36.5542 TRACE SELECT `user`.code Code,`user`.create_time CreateTime,`user`.creater Creater,`user`.creater_id CreaterId,`user`.enabled Enabled,`user`.id Id,`user`.login_id LoginId,`user`.mail Mail,`user`.memo Memo,`user`.mobile Mobile,`user`.modifier Modifier,`user`.modifier_id ModifierId,`user`.modify_time ModifyTime,`user`.name Name,`user`.password Password,`user`.QQ QQ,`user`.sex Sex,`user`.system_hide SystemHide,`user`.system_inlay SystemInlay,`user`.wechat Wechat FROM `user`    WHERE 1=1 AND `system_hide`=@SystemHide  LIMIT 0,30 标签:[
+  "SelectPage"
+]
+2020-12-17 23:20:38.8268 TRACE SELECT UR.user_id UserId,R.id Id,R.system_inlay SystemInlay,R.system_hide SystemHide,R.memo Memo,R.name Name,R.creater_id CreaterId,R.creater Creater,R.create_time CreateTime,R.modifier_id ModifierId,R.modifier Modifier,R.modify_time ModifyTime,R.code Code FROM user_role UR INNER JOIN `role` R ON R.id=UR.role_id AND UR.user_id IN(@UserId0,@UserId1,@UserId2,@UserId3,@UserId4) 标签:[
+  "SelectContainsRoleByUserIds"
+]
+2020-12-17 23:20:38.8268 DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.Page.PagingInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo]] QueryPage(Int32, Int32, Hzdtf.Utility.Standard.Model.FilterInfo, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  0,
+  30,
+  {
+    "keyword": "",
+    "sort": 0
+  },
+  null,
+  null
+],ReturnValue:{
+  "data": {
+    "rows": [
+      {
+        "ownRoles": [
+          {
+            "memo": "系统最高角色",
+            "systemHide": false,
+            "systemInlay": true,
+            "code": "100",
+            "name": "系统管理组",
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-25T20:56:27",
+            "modifyTime": "2019-01-27T23:31:54",
+            "id": 1
+          }
+        ],
+        "sex": true,
+        "systemHide": false,
+        "loginId": "system",
+        "password": "AC59075B964B0715",
+        "enabled": true,
+        "systemInlay": true,
+        "code": "1000",
+        "name": "系统管理员",
+        "createrId": 0,
+        "creater": "测试用户",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-17T15:28:12",
+        "modifyTime": "2019-02-08T08:15:28",
+        "id": 1
+      },
+      {
+        "ownRoles": [
+          {
+            "memo": "业务部门的角色",
+            "systemHide": false,
+            "systemInlay": true,
+            "code": "101",
+            "name": "业务组",
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-27T11:21:26",
+            "modifyTime": "2019-01-27T11:21:26",
+            "id": 2
+          },
+          {
+            "memo": "技术部门的角色",
+            "systemHide": false,
+            "systemInlay": true,
+            "code": "102",
+            "name": "技术组",
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-27T11:22:08",
+            "modifyTime": "2019-01-27T11:22:08",
+            "id": 3
+          }
+        ],
+        "memo": "",
+        "sex": true,
+        "systemHide": false,
+        "loginId": "huangyaoshi",
+        "password": "AC59075B964B0715",
+        "enabled": true,
+        "systemInlay": false,
+        "code": "u0001",
+        "name": "黄药师",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-27T22:44:41",
+        "modifyTime": "2019-02-22T22:32:00",
+        "id": 3
+      },
+      {
+        "ownRoles": [
+          {
+            "memo": "技术部门的角色",
+            "systemHide": false,
+            "systemInlay": true,
+            "code": "102",
+            "name": "技术组",
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-27T11:22:08",
+            "modifyTime": "2019-01-27T11:22:08",
+            "id": 3
+          }
+        ],
+        "memo": "",
+        "sex": true,
+        "systemHide": false,
+        "loginId": "tech",
+        "password": "AC59075B964B0715",
+        "enabled": true,
+        "systemInlay": false,
+        "code": "u002",
+        "name": "任我行",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-28T09:25:38",
+        "modifyTime": "2019-02-22T22:52:46",
+        "id": 7
+      },
+      {
+        "ownRoles": [
+          {
+            "memo": "",
+            "systemHide": false,
+            "systemInlay": false,
+            "code": "103",
+            "name": "采购组",
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-02-22T22:29:10",
+            "modifyTime": "2019-02-22T22:29:10",
+            "id": 16
+          }
+        ],
+        "memo": "",
+        "sex": false,
+        "systemHide": false,
+        "loginId": "huangrong",
+        "password": "AC59075B964B0715",
+        "enabled": true,
+        "systemInlay": false,
+        "code": "u00005",
+        "name": "黄蓉",
+        "createrId": 7,
+        "creater": "任我行",
+        "modifierId": 7,
+        "modifier": "任我行",
+        "createTime": "2019-02-22T22:34:06",
+        "modifyTime": "2019-02-22T22:34:06",
+        "id": 10
+      },
+      {
+        "sex": true,
+        "systemHide": false,
+        "loginId": "feasfasfas",
+        "password": "9D8A121CE581499D",
+        "enabled": true,
+        "systemInlay": false,
+        "code": "sa332",
+        "name": "343",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-08-21T08:23:09",
+        "modifyTime": "2019-08-21T08:24:20",
+        "id": 11
+      }
+    ],
+    "pageIndex": 0,
+    "pageSize": 30,
+    "records": 5,
+    "pageCount": 1
+  },
+  "code": 0
+},timed:78398ms
+2020-12-17 23:20:38.8268 DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Void AfterQueryPage(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.Page.PagingInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo]], Int32, Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.FilterInfo, Hzdtf.Utility.Standard.Model.BasicUserInfo),params:[
+  {
+    "data": {
+      "rows": [
+        {
+          "sex": true,
+          "systemHide": false,
+          "loginId": "system",
+          "password": "AC59075B964B0715",
+          "enabled": true,
+          "systemInlay": true,
+          "code": "1000",
+          "name": "系统管理员",
+          "createrId": 0,
+          "creater": "测试用户",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-01-17T15:28:12",
+          "modifyTime": "2019-02-08T08:15:28",
+          "id": 1
+        },
+        {
+          "memo": "",
+          "sex": true,
+          "systemHide": false,
+          "loginId": "huangyaoshi",
+          "password": "AC59075B964B0715",
+          "enabled": true,
+          "systemInlay": false,
+          "code": "u0001",
+          "name": "黄药师",
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-01-27T22:44:41",
+          "modifyTime": "2019-02-22T22:32:00",
+          "id": 3
+        },
+        {
+          "memo": "",
+          "sex": true,
+          "systemHide": false,
+          "loginId": "tech",
+          "password": "AC59075B964B0715",
+          "enabled": true,
+          "systemInlay": false,
+          "code": "u002",
+          "name": "任我行",
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-01-28T09:25:38",
+          "modifyTime": "2019-02-22T22:52:46",
+          "id": 7
+        },
+        {
+          "memo": "",
+          "sex": false,
+          "systemHide": false,
+          "loginId": "huangrong",
+          "password": "AC59075B964B0715",
+          "enabled": true,
+          "systemInlay": false,
+          "code": "u00005",
+          "name": "黄蓉",
+          "createrId": 7,
+          "creater": "任我行",
+          "modifierId": 7,
+          "modifier": "任我行",
+          "createTime": "2019-02-22T22:34:06",
+          "modifyTime": "2019-02-22T22:34:06",
+          "id": 10
+        },
+        {
+          "sex": true,
+          "systemHide": false,
+          "loginId": "feasfasfas",
+          "password": "9D8A121CE581499D",
+          "enabled": true,
+          "systemInlay": false,
+          "code": "sa332",
+          "name": "343",
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-08-21T08:23:09",
+          "modifyTime": "2019-08-21T08:24:20",
+          "id": 11
+        }
+      ],
+      "pageIndex": 0,
+      "pageSize": 30,
+      "records": 5,
+      "pageCount": 1
+    },
+    "code": 0
+  },
+  0,
+  30,
+  null,
+  {
+    "keyword": "",
+    "sort": 0
+  },
+  null
+],timed:2272ms
+2020-12-17 23:43:55.1508 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-12-17 23:43:55.1508 INFO eventId:0,Hosting environment: Development
+2020-12-17 23:43:55.1508 INFO eventId:0,Now listening on: http://localhost:5000
+2020-12-17 23:43:55.1508 INFO eventId:0,Content root path: F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-12-17 23:43:59.2340 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-12-17 23:46:02.2672 INFO 登录ID:system,用户编号:1000,名称:系统管理员 成功授权
+2020-12-17 23:49:10.1388 INFO eventId:0,Content root path: F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-12-17 23:49:10.1388 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-12-17 23:49:10.1388 INFO eventId:0,Hosting environment: Development
+2020-12-17 23:49:10.1388 INFO eventId:0,Now listening on: http://localhost:5000
+2020-12-17 23:49:13.6988 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-12-17 23:50:11.2837 INFO 登录ID:system,用户编号:1000,名称:系统管理员 成功授权

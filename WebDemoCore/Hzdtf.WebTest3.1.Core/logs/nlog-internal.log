@@ -40,3 +40,391 @@
 2020-09-11 15:02:15.5077 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=C:\AndyData\MyProject\Hzdtf.FoundationFramework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Release\netcoreapp3.1\NLog.config
 2020-09-11 15:02:15.5257 Info Configuration initialized.
 2020-09-11 15:02:15.5399 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-06 22:13:27.9612 Info Message Template Auto Format enabled
+2020-12-06 22:13:28.2718 Info Adding target FileTarget(Name=f)
+2020-12-06 22:13:28.2860 Info Adding target FileTarget(Name=fe)
+2020-12-06 22:13:28.3681 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-06 22:13:28.4034 Info Configuration initialized.
+2020-12-06 22:13:28.4707 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-06 22:23:23.3673 Info Message Template Auto Format enabled
+2020-12-06 22:23:23.4434 Info Adding target FileTarget(Name=f)
+2020-12-06 22:23:23.4434 Info Adding target FileTarget(Name=fe)
+2020-12-06 22:23:23.4857 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-06 22:23:23.5154 Info Configuration initialized.
+2020-12-06 22:23:23.5881 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-13 13:31:03.6069 Info Message Template Auto Format enabled
+2020-12-13 13:31:03.7818 Info Adding target FileTarget(Name=f)
+2020-12-13 13:31:03.8046 Info Adding target FileTarget(Name=fe)
+2020-12-13 13:31:03.8520 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-13 13:31:03.9188 Info Configuration initialized.
+2020-12-13 13:31:03.9646 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-13 13:35:11.7835 Info Message Template Auto Format enabled
+2020-12-13 13:35:11.8723 Info Adding target FileTarget(Name=f)
+2020-12-13 13:35:11.8860 Info Adding target FileTarget(Name=fe)
+2020-12-13 13:35:11.9278 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-13 13:35:11.9680 Info Configuration initialized.
+2020-12-13 13:35:11.9967 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-17 20:34:49.8335 Info Message Template Auto Format enabled
+2020-12-17 20:34:50.3520 Info Adding target FileTarget(Name=f)
+2020-12-17 20:34:50.3620 Info Adding target FileTarget(Name=fe)
+2020-12-17 20:34:50.4763 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-17 20:34:50.6499 Info Configuration initialized.
+2020-12-17 20:34:50.7439 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-17 20:37:01.2459 Info Message Template Auto Format enabled
+2020-12-17 20:37:01.3501 Info Adding target FileTarget(Name=f)
+2020-12-17 20:37:01.3680 Info Adding target FileTarget(Name=fe)
+2020-12-17 20:37:01.4281 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-17 20:37:01.4671 Info Configuration initialized.
+2020-12-17 20:37:01.4931 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-17 20:37:27.2186 Info Message Template Auto Format enabled
+2020-12-17 20:37:27.3291 Info Adding target FileTarget(Name=f)
+2020-12-17 20:37:27.3291 Info Adding target FileTarget(Name=fe)
+2020-12-17 20:37:27.3697 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-17 20:37:27.3965 Info Configuration initialized.
+2020-12-17 20:37:27.4197 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-17 20:58:14.7667 Info Message Template Auto Format enabled
+2020-12-17 20:58:14.8749 Info Adding target FileTarget(Name=f)
+2020-12-17 20:58:14.8749 Info Adding target FileTarget(Name=fe)
+2020-12-17 20:58:15.0097 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-17 20:58:15.0711 Info Configuration initialized.
+2020-12-17 20:58:15.0945 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-17 22:54:27.8694 Info Message Template Auto Format enabled
+2020-12-17 22:54:27.9850 Info Adding target FileTarget(Name=f)
+2020-12-17 22:54:27.9970 Info Adding target FileTarget(Name=fe)
+2020-12-17 22:54:28.0401 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-17 22:54:28.0645 Info Configuration initialized.
+2020-12-17 22:54:28.0851 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-17 22:59:59.5840 Info Message Template Auto Format enabled
+2020-12-17 22:59:59.6575 Info Adding target FileTarget(Name=f)
+2020-12-17 22:59:59.6697 Info Adding target FileTarget(Name=fe)
+2020-12-17 22:59:59.7076 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-17 22:59:59.7369 Info Configuration initialized.
+2020-12-17 22:59:59.7565 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-17 23:03:19.7855 Info Message Template Auto Format enabled
+2020-12-17 23:03:20.0091 Info Adding target FileTarget(Name=f)
+2020-12-17 23:03:20.0777 Info Adding target FileTarget(Name=fe)
+2020-12-17 23:03:20.1435 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-17 23:03:20.1886 Info Configuration initialized.
+2020-12-17 23:03:20.2902 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-17 23:03:51.5381 Info Message Template Auto Format enabled
+2020-12-17 23:03:51.6393 Info Adding target FileTarget(Name=f)
+2020-12-17 23:03:51.6766 Info Adding target FileTarget(Name=fe)
+2020-12-17 23:03:51.8280 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-17 23:03:51.8945 Info Configuration initialized.
+2020-12-17 23:03:51.9213 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-17 23:06:13.5588 Info Message Template Auto Format enabled
+2020-12-17 23:06:13.6692 Info Adding target FileTarget(Name=f)
+2020-12-17 23:06:13.6896 Info Adding target FileTarget(Name=fe)
+2020-12-17 23:06:13.7618 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-17 23:06:13.8039 Info Configuration initialized.
+2020-12-17 23:06:13.8330 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-17 23:12:04.2090 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2020-12-17 23:12:04.3368 Debug Found assembly location directory: 'F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2020-12-17 23:12:04.3446 Debug Search for auto loading files in location: F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1
+2020-12-17 23:12:04.3619 Debug Found assembly location directory: 'F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1' (Hzdtf.WebTest3.1.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+2020-12-17 23:12:04.3619 Debug Auto loading based on AppDomain-BaseDirectory found location: F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1
+2020-12-17 23:12:04.3754 Debug Start auto loading, location: F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1
+2020-12-17 23:12:04.3880 Trace Assembly 'Microsoft.Extensions.Logging, Version=3.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2020-12-17 23:12:04.3880 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=3.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2020-12-17 23:12:04.4045 Debug Auto loading done
+2020-12-17 23:12:04.4045 Info Message Template Auto Format enabled
+2020-12-17 23:12:04.4516 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:04.4672 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2020-12-17 23:12:04.4999 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2020-12-17 23:12:04.4999 Trace Wrapping NLog.LayoutRenderers.LevelLayoutRenderer with NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper
+2020-12-17 23:12:04.5209 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:04.5309 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-12-17 23:12:04.5433 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:04.5433 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2020-12-17 23:12:04.5621 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2020-12-17 23:12:04.5621 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2020-12-17 23:12:04.5815 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-12-17 23:12:04.5917 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-12-17 23:12:04.5917 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:04.6112 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2020-12-17 23:12:04.6223 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:04.6223 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2020-12-17 23:12:04.6439 Debug Setting 'NLog.Targets.FileTarget.name' to 'f'
+2020-12-17 23:12:04.6521 Debug Setting 'NLog.Targets.FileTarget.fileName' to '${basedir}/logs/${shortdate}.log'
+2020-12-17 23:12:04.6521 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:04.6703 Trace Scanning BaseDirLayoutRenderer 'Layout Renderer: ${basedir}'
+2020-12-17 23:12:04.6703 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:04.6919 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2020-12-17 23:12:04.7004 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${uppercase:${level}} ${message}'
+2020-12-17 23:12:04.7004 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:04.7197 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2020-12-17 23:12:04.7197 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.Inner' to '${level}'
+2020-12-17 23:12:04.7359 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:04.7446 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-12-17 23:12:04.7446 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:04.7446 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2020-12-17 23:12:04.7656 Trace  Scanning Property Inner ''${level}'' NLog.Layouts
+2020-12-17 23:12:04.7656 Trace  Scanning SimpleLayout ''${level}''
+2020-12-17 23:12:04.7811 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-12-17 23:12:04.7811 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-12-17 23:12:04.7937 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:04.7937 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2020-12-17 23:12:04.7937 Info Adding target FileTarget(Name=f)
+2020-12-17 23:12:04.8151 Debug Registered target f: NLog.Targets.FileTarget
+2020-12-17 23:12:04.8151 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:04.8316 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2020-12-17 23:12:04.8316 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2020-12-17 23:12:04.8441 Trace Wrapping NLog.LayoutRenderers.LevelLayoutRenderer with NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper
+2020-12-17 23:12:04.8441 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:04.8617 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-12-17 23:12:04.8617 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:04.8743 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2020-12-17 23:12:04.8743 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2020-12-17 23:12:04.8913 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2020-12-17 23:12:04.8913 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-12-17 23:12:04.9045 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-12-17 23:12:04.9045 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:04.9249 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2020-12-17 23:12:04.9329 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:04.9329 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2020-12-17 23:12:04.9484 Debug Setting 'NLog.Targets.FileTarget.name' to 'fe'
+2020-12-17 23:12:04.9484 Debug Setting 'NLog.Targets.FileTarget.fileName' to '${basedir}/logs/${shortdate}_error.log'
+2020-12-17 23:12:04.9690 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:04.9690 Trace Scanning BaseDirLayoutRenderer 'Layout Renderer: ${basedir}'
+2020-12-17 23:12:04.9834 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:04.9834 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2020-12-17 23:12:04.9985 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${uppercase:${level}} ${message}'
+2020-12-17 23:12:04.9985 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:05.0147 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2020-12-17 23:12:05.0255 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.Inner' to '${level}'
+2020-12-17 23:12:05.0255 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:05.0255 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-12-17 23:12:05.0483 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:05.0483 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2020-12-17 23:12:05.0641 Trace  Scanning Property Inner ''${level}'' NLog.Layouts
+2020-12-17 23:12:05.0742 Trace  Scanning SimpleLayout ''${level}''
+2020-12-17 23:12:05.0907 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-12-17 23:12:05.0907 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-12-17 23:12:05.1145 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:05.1365 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2020-12-17 23:12:05.1365 Info Adding target FileTarget(Name=fe)
+2020-12-17 23:12:05.1584 Debug Registered target fe: NLog.Targets.FileTarget
+2020-12-17 23:12:05.1697 Trace ParseRulesElement
+2020-12-17 23:12:05.2021 Debug Watching path 'F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1' filter 'NLog.config' for changes.
+2020-12-17 23:12:05.2021 Debug --- NLog configuration dump ---
+2020-12-17 23:12:05.2183 Debug Targets:
+2020-12-17 23:12:05.2183 Debug File Target[f]
+2020-12-17 23:12:05.2356 Debug File Target[fe]
+2020-12-17 23:12:05.2356 Debug Rules:
+2020-12-17 23:12:05.2500 Debug logNamePattern: (:All) levels: [ Info Warn Error Fatal ] appendTo: [ f ]
+2020-12-17 23:12:05.2500 Debug logNamePattern: (:All) levels: [ Error Fatal ] appendTo: [ fe ]
+2020-12-17 23:12:05.2654 Debug --- End of NLog configuration dump ---
+2020-12-17 23:12:05.2654 Trace FindReachableObject<System.Object>:
+2020-12-17 23:12:05.2814 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Info Warn Error Fatal ] appendTo: [ f ]'
+2020-12-17 23:12:05.2814 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2020-12-17 23:12:05.2992 Trace  Scanning FileTarget 'File Target[f]'
+2020-12-17 23:12:05.2992 Trace   Scanning Property FileName ''${basedir}/logs/${shortdate}.log'' NLog.Layouts
+2020-12-17 23:12:05.3160 Trace   Scanning SimpleLayout ''${basedir}/logs/${shortdate}.log''
+2020-12-17 23:12:05.3260 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-12-17 23:12:05.3260 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-12-17 23:12:05.3451 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2020-12-17 23:12:05.3552 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-12-17 23:12:05.3552 Trace   Scanning Property Layout ''${longdate} ${uppercase:${level}} ${message}'' NLog.Layouts
+2020-12-17 23:12:05.3708 Trace   Scanning SimpleLayout ''${longdate} ${uppercase:${level}} ${message}''
+2020-12-17 23:12:05.3708 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-12-17 23:12:05.3899 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2020-12-17 23:12:05.3899 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-12-17 23:12:05.4020 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2020-12-17 23:12:05.4020 Trace     Scanning Property Inner ''${level}'' NLog.Layouts
+2020-12-17 23:12:05.4191 Trace     Scanning SimpleLayout ''${level}''
+2020-12-17 23:12:05.4191 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-12-17 23:12:05.4355 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-12-17 23:12:05.4355 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-12-17 23:12:05.4496 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2020-12-17 23:12:05.4496 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2020-12-17 23:12:05.4678 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2020-12-17 23:12:05.4678 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2020-12-17 23:12:05.4873 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Error Fatal ] appendTo: [ fe ]'
+2020-12-17 23:12:05.4980 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2020-12-17 23:12:05.5107 Trace  Scanning FileTarget 'File Target[fe]'
+2020-12-17 23:12:05.5107 Trace   Scanning Property FileName ''${basedir}/logs/${shortdate}_error.log'' NLog.Layouts
+2020-12-17 23:12:05.5403 Trace   Scanning SimpleLayout ''${basedir}/logs/${shortdate}_error.log''
+2020-12-17 23:12:05.5522 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-12-17 23:12:05.5633 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-12-17 23:12:05.5744 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2020-12-17 23:12:05.5744 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-12-17 23:12:05.5956 Trace   Scanning Property Layout ''${longdate} ${uppercase:${level}} ${message}'' NLog.Layouts
+2020-12-17 23:12:05.6143 Trace   Scanning SimpleLayout ''${longdate} ${uppercase:${level}} ${message}''
+2020-12-17 23:12:05.6266 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-12-17 23:12:05.6388 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2020-12-17 23:12:05.6388 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-12-17 23:12:05.6605 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2020-12-17 23:12:05.6722 Trace     Scanning Property Inner ''${level}'' NLog.Layouts
+2020-12-17 23:12:05.6722 Trace     Scanning SimpleLayout ''${level}''
+2020-12-17 23:12:05.6908 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-12-17 23:12:05.7009 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-12-17 23:12:05.7009 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-12-17 23:12:05.7186 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2020-12-17 23:12:05.7186 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2020-12-17 23:12:05.7368 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2020-12-17 23:12:05.7453 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2020-12-17 23:12:05.7617 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-17 23:12:05.7617 Debug Unused target checking is started... Rule Count: 2, Target Count: 2
+2020-12-17 23:12:05.7919 Debug Unused target checking is completed. Total Rule Count: 2, Total Target Count: 2, Unused Target Count: 0
+2020-12-17 23:12:05.7919 Trace Initializing Layout Renderer: ${message}
+2020-12-17 23:12:05.8114 Trace Initializing Layout Renderer: ${literal}
+2020-12-17 23:12:05.8114 Trace Initializing Layout Renderer: ${level}
+2020-12-17 23:12:05.8284 Trace Initializing '${level}'
+2020-12-17 23:12:05.8412 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:05.8412 Trace Scanning SimpleLayout ''${level}''
+2020-12-17 23:12:05.8567 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-12-17 23:12:05.8567 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-12-17 23:12:05.8762 Trace Initializing Layout Renderer: ${uppercase}
+2020-12-17 23:12:05.8762 Trace Initializing Layout Renderer: ${literal}
+2020-12-17 23:12:05.8929 Trace Initializing Layout Renderer: ${longdate}
+2020-12-17 23:12:05.9025 Trace Initializing '${longdate} ${uppercase:${level}} ${message}'
+2020-12-17 23:12:05.9025 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:05.9183 Trace Scanning SimpleLayout ''${longdate} ${uppercase:${level}} ${message}''
+2020-12-17 23:12:05.9183 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-12-17 23:12:05.9350 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2020-12-17 23:12:05.9350 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-12-17 23:12:05.9576 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2020-12-17 23:12:05.9667 Trace   Scanning Property Inner ''${level}'' NLog.Layouts
+2020-12-17 23:12:05.9667 Trace   Scanning SimpleLayout ''${level}''
+2020-12-17 23:12:05.9866 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-12-17 23:12:05.9942 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-12-17 23:12:05.9942 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-12-17 23:12:06.0171 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2020-12-17 23:12:06.0316 Trace Initializing Layout Renderer: ${literal}
+2020-12-17 23:12:06.0435 Trace Initializing Layout Renderer: ${shortdate}
+2020-12-17 23:12:06.0622 Trace Initializing Layout Renderer: ${literal}
+2020-12-17 23:12:06.0622 Trace Initializing '${basedir}/logs/${shortdate}_error.log'
+2020-12-17 23:12:06.0841 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:06.0951 Trace Scanning SimpleLayout ''${basedir}/logs/${shortdate}_error.log''
+2020-12-17 23:12:06.1068 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-12-17 23:12:06.1214 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-12-17 23:12:06.1214 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2020-12-17 23:12:06.1460 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-12-17 23:12:06.1563 Trace Initializing File Target[fe]
+2020-12-17 23:12:06.1747 Trace FindReachableObject<NLog.Layouts.Layout>:
+2020-12-17 23:12:06.1856 Trace Scanning FileTarget 'File Target[fe]'
+2020-12-17 23:12:06.1856 Trace  Scanning Property FileName ''${basedir}/logs/${shortdate}_error.log'' NLog.Layouts
+2020-12-17 23:12:06.2071 Trace  Scanning SimpleLayout ''${basedir}/logs/${shortdate}_error.log''
+2020-12-17 23:12:06.2154 Trace  Scanning Property Layout ''${longdate} ${uppercase:${level}} ${message}'' NLog.Layouts
+2020-12-17 23:12:06.2154 Trace  Scanning SimpleLayout ''${longdate} ${uppercase:${level}} ${message}''
+2020-12-17 23:12:06.2338 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2020-12-17 23:12:06.2338 Trace File Target[fe] has 2 layouts
+2020-12-17 23:12:06.2544 Trace FileTarget(Name=fe): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2020-12-17 23:12:06.2633 Trace Initializing Layout Renderer: ${message}
+2020-12-17 23:12:06.2633 Trace Initializing Layout Renderer: ${literal}
+2020-12-17 23:12:06.2834 Trace Initializing Layout Renderer: ${level}
+2020-12-17 23:12:06.2911 Trace Initializing '${level}'
+2020-12-17 23:12:06.2911 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:06.3109 Trace Scanning SimpleLayout ''${level}''
+2020-12-17 23:12:06.3109 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-12-17 23:12:06.3251 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-12-17 23:12:06.3251 Trace Initializing Layout Renderer: ${uppercase}
+2020-12-17 23:12:06.3505 Trace Initializing Layout Renderer: ${literal}
+2020-12-17 23:12:06.3602 Trace Initializing Layout Renderer: ${longdate}
+2020-12-17 23:12:06.3708 Trace Initializing '${longdate} ${uppercase:${level}} ${message}'
+2020-12-17 23:12:06.3708 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:06.3925 Trace Scanning SimpleLayout ''${longdate} ${uppercase:${level}} ${message}''
+2020-12-17 23:12:06.3925 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-12-17 23:12:06.4085 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2020-12-17 23:12:06.4170 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-12-17 23:12:06.4170 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2020-12-17 23:12:06.4371 Trace   Scanning Property Inner ''${level}'' NLog.Layouts
+2020-12-17 23:12:06.4371 Trace   Scanning SimpleLayout ''${level}''
+2020-12-17 23:12:06.4578 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-12-17 23:12:06.4681 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-12-17 23:12:06.4681 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-12-17 23:12:06.4893 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2020-12-17 23:12:06.5096 Trace Initializing Layout Renderer: ${literal}
+2020-12-17 23:12:06.5250 Trace Initializing Layout Renderer: ${shortdate}
+2020-12-17 23:12:06.5541 Trace Initializing Layout Renderer: ${literal}
+2020-12-17 23:12:06.5688 Trace Initializing '${basedir}/logs/${shortdate}.log'
+2020-12-17 23:12:06.5898 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-12-17 23:12:06.6109 Trace Scanning SimpleLayout ''${basedir}/logs/${shortdate}.log''
+2020-12-17 23:12:06.6236 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-12-17 23:12:06.6483 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-12-17 23:12:06.6668 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2020-12-17 23:12:06.6885 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-12-17 23:12:06.7015 Trace Initializing File Target[f]
+2020-12-17 23:12:06.7215 Trace FindReachableObject<NLog.Layouts.Layout>:
+2020-12-17 23:12:06.7354 Trace Scanning FileTarget 'File Target[f]'
+2020-12-17 23:12:06.7488 Trace  Scanning Property FileName ''${basedir}/logs/${shortdate}.log'' NLog.Layouts
+2020-12-17 23:12:06.7603 Trace  Scanning SimpleLayout ''${basedir}/logs/${shortdate}.log''
+2020-12-17 23:12:06.7603 Trace  Scanning Property Layout ''${longdate} ${uppercase:${level}} ${message}'' NLog.Layouts
+2020-12-17 23:12:06.7866 Trace  Scanning SimpleLayout ''${longdate} ${uppercase:${level}} ${message}''
+2020-12-17 23:12:06.7965 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2020-12-17 23:12:06.7965 Trace File Target[f] has 2 layouts
+2020-12-17 23:12:06.8174 Trace FileTarget(Name=f): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2020-12-17 23:12:06.8301 Info Configuration initialized.
+2020-12-17 23:12:06.9550 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-17 23:12:06.9696 Debug Targets for IntegrationNLog by level:
+2020-12-17 23:12:06.9796 Debug Trace =>
+2020-12-17 23:12:06.9796 Debug Debug =>
+2020-12-17 23:12:06.9997 Debug Info => f
+2020-12-17 23:12:06.9997 Debug Warn => f
+2020-12-17 23:12:07.0196 Debug Error => f fe
+2020-12-17 23:12:07.0304 Debug Fatal => f fe
+2020-12-17 23:12:47.5409 Debug Targets for Microsoft.Hosting.Lifetime by level:
+2020-12-17 23:12:47.5515 Debug Trace =>
+2020-12-17 23:12:47.5610 Debug Debug =>
+2020-12-17 23:12:47.5610 Debug Info => f
+2020-12-17 23:12:47.5872 Debug Warn => f
+2020-12-17 23:12:47.5986 Debug Error => f fe
+2020-12-17 23:12:47.6138 Debug Fatal => f fe
+2020-12-17 23:12:47.6595 Debug FileTarget(Name=f): Preparing for new file 'F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\logs\2020-12-17.log'
+2020-12-17 23:12:47.6860 Debug Creating file appender: F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\logs\2020-12-17.log
+2020-12-17 23:12:47.7036 Trace Opening F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\logs\2020-12-17.log with allowFileSharedWriting=False
+2020-12-17 23:12:47.7374 Trace Opening F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\logs\2020-12-17.log with allowFileSharedWriting=False
+2020-12-17 23:12:47.8338 Trace Opening F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\logs\2020-12-17.log with allowFileSharedWriting=False
+2020-12-17 23:12:47.8548 Trace Opening F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\logs\2020-12-17.log with allowFileSharedWriting=False
+2020-12-17 23:12:48.7441 Debug Targets for Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware by level:
+2020-12-17 23:12:48.7565 Debug Trace =>
+2020-12-17 23:12:48.7699 Debug Debug =>
+2020-12-17 23:12:48.8024 Debug Info => f
+2020-12-17 23:12:48.8217 Debug Warn => f
+2020-12-17 23:12:48.8367 Debug Error => f fe
+2020-12-17 23:12:48.9238 Debug Fatal => f fe
+2020-12-17 23:12:48.9683 Trace Opening F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\logs\2020-12-17.log with allowFileSharedWriting=False
+2020-12-17 23:12:50.5998 Debug Targets for UserService by level:
+2020-12-17 23:12:50.6147 Debug Trace =>
+2020-12-17 23:12:50.6235 Debug Debug =>
+2020-12-17 23:12:50.6235 Debug Info => f
+2020-12-17 23:12:50.6409 Debug Warn => f
+2020-12-17 23:12:50.6409 Debug Error => f fe
+2020-12-17 23:12:50.6569 Debug Fatal => f fe
+2020-12-17 23:12:50.6688 Trace Opening F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\logs\2020-12-17.log with allowFileSharedWriting=False
+2020-12-17 23:14:31.4182 Info Message Template Auto Format enabled
+2020-12-17 23:14:31.5030 Info Adding target FileTarget(Name=f)
+2020-12-17 23:14:31.5182 Info Adding target FileTarget(Name=fe)
+2020-12-17 23:14:31.5610 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-17 23:14:31.5955 Info Configuration initialized.
+2020-12-17 23:14:31.6195 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-17 23:22:29.7027 Info Message Template Auto Format enabled
+2020-12-17 23:22:29.7822 Info Adding target FileTarget(Name=f)
+2020-12-17 23:22:29.8002 Info Adding target FileTarget(Name=fe)
+2020-12-17 23:22:29.9497 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-17 23:22:29.9781 Info Configuration initialized.
+2020-12-17 23:22:29.9979 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-17 23:26:52.8797 Info Message Template Auto Format enabled
+2020-12-17 23:26:53.0669 Info Adding target FileTarget(Name=f)
+2020-12-17 23:26:53.0845 Info Adding target FileTarget(Name=fe)
+2020-12-17 23:26:53.1551 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-17 23:26:53.2174 Info Configuration initialized.
+2020-12-17 23:26:53.2558 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-17 23:35:25.8684 Info Message Template Auto Format enabled
+2020-12-17 23:35:26.2825 Info Adding target FileTarget(Name=f)
+2020-12-17 23:35:26.2946 Info Adding target FileTarget(Name=fe)
+2020-12-17 23:35:26.4185 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-17 23:35:26.6506 Info Configuration initialized.
+2020-12-17 23:35:26.7379 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-17 23:43:08.5803 Info Message Template Auto Format enabled
+2020-12-17 23:43:09.3324 Info Adding target FileTarget(Name=f)
+2020-12-17 23:43:09.3466 Info Adding target FileTarget(Name=fe)
+2020-12-17 23:43:09.4213 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-17 23:43:09.4542 Info Configuration initialized.
+2020-12-17 23:43:09.5600 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-17 23:48:17.1644 Info Message Template Auto Format enabled
+2020-12-17 23:48:17.3881 Info Adding target FileTarget(Name=f)
+2020-12-17 23:48:17.3881 Info Adding target FileTarget(Name=fe)
+2020-12-17 23:48:17.4323 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-17 23:48:17.4641 Info Configuration initialized.
+2020-12-17 23:48:17.7108 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False

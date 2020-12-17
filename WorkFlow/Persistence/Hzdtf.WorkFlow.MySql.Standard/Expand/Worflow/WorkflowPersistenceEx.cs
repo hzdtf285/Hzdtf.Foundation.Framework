@@ -40,6 +40,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"{CountSql()} WHERE {GetFieldByProp("ApplyNo")}=@ApplyNo";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "CountByApplyNo");
                 result = dbConn.ExecuteScalar<int>(sql, new { ApplyNo = applyNo });
             }, AccessMode.SLAVE);
 
@@ -92,14 +93,17 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             string countSql = string.Format(formatSql, "COUNT(*)");
             string pageSql = string.Format(formatSql, $"{JoinSelectPropMapFields(pfx: Table + ".")},wh.`id`,wh.`is_readed` IsReaded,wh.`handle_type` HandleType,wh.`handle_status` HandleStatus")
                  + " " + sortSql + " " + GetPartPageSql(pageIndex, pageSize);
-            
+
+            var source = this.GetType().Name;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 result = PagingUtil.ExecPage<WorkflowInfo>(pageIndex, pageSize, () =>
                 {
+                    Log.TraceAsync(countSql, source: source, tags: "SelectWaitHandlePage");
                     return dbConn.ExecuteScalar<int>(countSql, parameters, GetDbTransaction(connId));
                 }, () =>
                 {
+                    Log.TraceAsync(pageSql, source: source, tags: "SelectWaitHandlePage");
                     return dbConn.Query<WorkflowInfo, WorkflowHandleInfo, WorkflowInfo>(pageSql, (wf, wh) =>
                     {
                         if (wf.Handles == null)
@@ -159,13 +163,16 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             string pageSql = string.Format(formatSql, $"{JoinSelectPropMapFields(pfx: Table + ".")},wh.`id`,wh.`is_readed` IsReaded")
                  + " " + sortSql + " " + GetPartPageSql(pageIndex, pageSize);
 
+            var source = this.GetType().Name;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 result = PagingUtil.ExecPage<WorkflowInfo>(pageIndex, pageSize, () =>
                 {
+                    Log.TraceAsync(countSql, source: source, tags: "SelectAuditedHandlePage");
                     return dbConn.ExecuteScalar<int>(countSql, parameters, GetDbTransaction(connId));
                 }, () =>
                 {
+                    Log.TraceAsync(pageSql, source: source, tags: "SelectAuditedHandlePage");
                     return dbConn.Query<WorkflowInfo, WorkflowHandleInfo, WorkflowInfo>(pageSql, (wf, wh) =>
                     {
                         if (wf.Handles == null)
@@ -221,13 +228,16 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             string pageSql = string.Format(formatSql, $"{JoinSelectPropMapFields()}")
                  + " " + sortSql + " " + GetPartPageSql(pageIndex, pageSize);
 
+            var source = this.GetType().Name;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 result = PagingUtil.ExecPage<WorkflowInfo>(pageIndex, pageSize, () =>
                 {
+                    Log.TraceAsync(countSql, source: source, tags: "SelectApplyFlowPage");
                     return dbConn.ExecuteScalar<int>(countSql, parameters, GetDbTransaction(connId));
                 }, () =>
                 {
+                    Log.TraceAsync(pageSql, source: source, tags: "SelectApplyFlowPage");
                     return dbConn.Query<WorkflowInfo>(pageSql, parameters, GetDbTransaction(connId)).AsList();
                 });
             }, AccessMode.SLAVE);
@@ -266,6 +276,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectContainHandles");
                 dbConn.Query<WorkflowInfo, WorkflowHandleInfo, WorkflowInfo>(sql, (x, h) =>
                 {
                     if (result == null)
@@ -297,6 +308,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
                         $"`{GetFieldByProp("CurrConcreteCensorshipIds")}`=@CurrConcreteCensorshipIds,`{GetFieldByProp("CurrConcreteCensorships")}`=@CurrConcreteCensorships,`{GetFieldByProp("CurrFlowCensorshipIds")}`=@CurrFlowCensorshipIds," +
                         $"`{GetFieldByProp("CurrHandlerIds")}`=@CurrHandlerIds,`{GetFieldByProp("CurrHandlers")}`=@CurrHandlers" + 
                         $" {GetModifyInfoSql(workflow)} WHERE {GetFieldByProp("Id") }=@Id";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "UpdateFlowStatusAndCensorshipAndHandlerById");
                 result = dbConn.Execute(sql, workflow, GetDbTransaction(connId));
             });
 

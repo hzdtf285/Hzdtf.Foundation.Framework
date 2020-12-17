@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "+Vns1NuLkpjAa6udviuvY59EiKb/Zc/qYjjCz0e02RM26DtLnGp8cuHFvUtSdyDzM2b/Bkod9szqdGx7nrlEFA==",
+  "dgSpecHash": "geAhkk0kc5ENyEo9M1/2AEqXabmFT9hl+LJBQPR0SRYIJqBHVpx3syyAt16qzidYahif18jGEg9BxM6bwI0iTA==",
   "success": true,
-  "projectFilePath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\Hzdtf.Mini.Standard.csproj",
+  "projectFilePath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Common\\Hzdtf.Mini.Standard\\Hzdtf.Mini.Standard.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\huangzd\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\huangzd\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

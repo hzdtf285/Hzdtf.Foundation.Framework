@@ -26,6 +26,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"UPDATE `{Table}` SET `{GetFieldByProp("IsReaded")}`=@IsReaded{GetModifyInfoSql(workflowHandle)} WHERE {GetFieldByProp("Id") }=@Id";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "UpdateIsReadedById");
                 result = dbConn.Execute(sql, workflowHandle, GetDbTransaction(connId));
             });
 
@@ -45,6 +46,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             {
                 string sql = $"UPDATE `{Table}` SET `{GetFieldByProp("HandleStatus")}`=@HandleStatus,`{GetFieldByProp("HandleTime")}`=@HandleTime,`{GetFieldByProp("Idea")}`=@Idea" +
                 $"{GetModifyInfoSql(workflowHandle)} WHERE {GetFieldByProp("Id") }=@Id";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "UpdateHandleStatusById");
                 result = dbConn.Execute(sql, workflowHandle, GetDbTransaction(connId));
             });
 
@@ -65,6 +67,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"{CountSql()} WHERE {GetFieldByProp("WorkflowId")}=@WorkflowId AND {GetFieldByProp("HandleStatus")}=@handleStatus AND {GetFieldByProp("FlowCensorshipId")}!=@NotFlowCensorshipId";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "CountNotFlowCensorshipIdByWorkflowIdAndHandleStatus");
                 result = dbConn.ExecuteScalar<int>(sql, new { WorkflowId = workflowId, HandleStatus = (byte)handleStatus, NotFlowCensorshipId = notFlowCensorshipId }, GetDbTransaction(connId));
             }, AccessMode.SLAVE);
 
@@ -86,6 +89,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
                 $"{GetModifyInfoSql(workflowHandle)} WHERE {GetFieldByProp("Id") }!=@Id AND {GetFieldByProp("WorkflowId") }=@WorkflowId" +
                 $" AND {GetFieldByProp("HandleStatus") }={(byte)HandleStatusEnum.UN_HANDLE} AND {GetFieldByProp("HandleType")}={(byte)HandleTypeEnum.AUDIT}" +
                 $" AND {GetFieldByProp("FlowCensorshipId")}=@FlowCensorshipId AND {GetFieldByProp("ConcreteConcreteId")}=@ConcreteConcreteId";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "UpdateEfficacyedNotIdByWorkflowIdAndFlowCensorshipId");
                 result = dbConn.Execute(sql, workflowHandle, GetDbTransaction(connId));
             });
 
@@ -105,6 +109,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             {
                 string sql = $"UPDATE `{Table}` SET `{GetFieldByProp("HandleStatus")}`={(byte)HandleStatusEnum.EFFICACYED},`{GetFieldByProp("HandleTime")}`=@HandleTime" +
                 $"{GetModifyInfoSql(workflowHandle)} WHERE {GetFieldByProp("Id") }!=@Id AND {GetFieldByProp("WorkflowId") }=@WorkflowId AND {GetFieldByProp("HandleStatus") }={(byte)HandleStatusEnum.UN_HANDLE} AND {GetFieldByProp("HandleType")}={(byte)HandleTypeEnum.AUDIT}";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "UpdateEfficacyedNotIdByWorkflowId");
                 result = dbConn.Execute(sql, workflowHandle, GetDbTransaction(connId));
             });
 
@@ -130,6 +135,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"{SelectSql()} WHERE {GetFieldByProp("WorkflowId")}=@WorkflowId AND {GetFieldByProp("HandleStatus")}=@HandleStatus AND {inSql}";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectSendedByWorkflowIdAndFlowCensorshipIds");
                 result = dbConn.Query<WorkflowHandleInfo>(sql, parameters, GetDbTransaction(connId)).AsList();
             }, AccessMode.SLAVE);
 
@@ -148,6 +154,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"{CountSql()} WHERE {GetFieldByProp("HandlerId")}=@HandlerId AND {GetFieldByProp("HandleStatus")}=@handleStatus AND {GetFieldByProp("HandleType")}=@HandleType";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "CountAuditAndUnhandleByHandleId");
                 result = dbConn.ExecuteScalar<int>(sql, new { HandlerId = handlerId, HandleStatus = (byte)HandleStatusEnum.UN_HANDLE, HandleType = (byte)HandleTypeEnum.AUDIT }, GetDbTransaction(connId));
             }, AccessMode.SLAVE);
 
@@ -174,6 +181,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"{SelectSql()} WHERE {GetFieldByProp("WorkflowId")}=@WorkflowId AND {GetFieldByProp("FlowCensorshipId")}=@FlowCensorshipId AND {GetFieldByProp("HandlerId")}=@HandlerId";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectByWorkflowIdAndFlowCensorshipIdAndHandlerId");
                 result = dbConn.QueryFirstOrDefault<WorkflowHandleInfo>(sql, parameters, GetDbTransaction(connId));
             }, AccessMode.SLAVE);
 
@@ -196,6 +204,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"{SelectSql()} WHERE {GetFieldByProp("WorkflowId")}=@WorkflowId";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectByWorkflowId");
                 result = dbConn.Query<WorkflowHandleInfo>(sql, parameters, GetDbTransaction(connId)).AsList();
             }, AccessMode.SLAVE);
 
@@ -214,6 +223,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"{DeleteSql()} WHERE {GetFieldByProp("WorkflowId")}=@WorkflowId";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "DeleteByWorkflowId");
                 result = dbConn.Execute(sql, new { WorkflowId = workflowId }, GetDbTransaction(connId));
             });
 

@@ -1066,6 +1066,15 @@
           "Hzdtf.BasicFunction.Persistence.Contract.Std.dll": {}
         }
       },
+      "Hzdtf.Logger.Contract.Standard/2.0.0": {
+        "dependencies": {
+          "Hzdtf.Platform.Contract.Standard": "2.0.0",
+          "Hzdtf.Utility.Standard": "2.0.0"
+        },
+        "runtime": {
+          "Hzdtf.Logger.Contract.Standard.dll": {}
+        }
+      },
       "Hzdtf.Mini.Standard/1.0.0": {
         "runtime": {
           "Hzdtf.Mini.Standard.dll": {}
@@ -1082,6 +1091,7 @@
       },
       "Hzdtf.Persistence.Contract.Standard/2.0.0": {
         "dependencies": {
+          "Hzdtf.Logger.Contract.Standard": "2.0.0",
           "Hzdtf.Platform.Contract.Standard": "2.0.0",
           "Hzdtf.Utility.Standard": "2.0.0"
         },
@@ -1785,6 +1795,11 @@
       "sha512": ""
     },
     "Hzdtf.BasicFunction.Persistence.Contract.Std/2.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hzdtf.Logger.Contract.Standard/2.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

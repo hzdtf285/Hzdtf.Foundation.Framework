@@ -42,6 +42,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
                             + " INNER JOIN `function` F ON MF.`function_id`=F.`Id`"
                             + " INNER JOIN user_menu_function MFU ON MFU.`menu_function_id`=MF.`Id` AND MFU.`user_id`=@UserId";
 
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectByUserId");
                 dbConn.Query<MenuInfo, FunctionInfo, MenuInfo>(sql, (x, y) =>
                 {
                     MenuInfo existsMenu = result.Find(q => q.Id == x.Id);
@@ -97,7 +98,9 @@ namespace Hzdtf.BasicFunction.MySql.Standard
                 string sql = "SELECT " + menuFields + ", F.id, F.`code`, F.`name` FROM menu M"
                             + " INNER JOIN menu_function MF ON M.`Id`=MF.`menu_id`"
                             + " INNER JOIN `function` F ON MF.`function_id`=F.`Id`"
-                            + $" INNER JOIN role_menu_function MFU ON MFU.`menu_function_id`= MF.`Id` AND MFU.`role_id` IN({roleSql.ToString()})";                
+                            + $" INNER JOIN role_menu_function MFU ON MFU.`menu_function_id`= MF.`Id` AND MFU.`role_id` IN({roleSql.ToString()})";
+
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectByRoleIds");
                 dbConn.Query<MenuInfo, FunctionInfo, MenuInfo>(sql, (x, y) =>
                 {
                     MenuInfo existsMenu = result.Find(q => q.Id == x.Id);
@@ -145,6 +148,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
                             + " INNER JOIN menu_function MF ON M.`Id`=MF.`menu_id`"
                             + " INNER JOIN `function` F ON MF.`function_id`= F.`Id`";
 
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectContainsFunctions");
                 dbConn.Query<MenuInfo, FunctionInfo, MenuInfo>(sql, (x, y) =>
                 {
                     MenuInfo existsMenu = result.Find(q => q.Id == x.Id);

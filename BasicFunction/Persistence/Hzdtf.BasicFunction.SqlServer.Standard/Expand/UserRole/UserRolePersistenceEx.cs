@@ -46,6 +46,7 @@ namespace Hzdtf.BasicFunction.SqlServer.Standard
             {
                 string sql = $"SELECT {RolePersistence.AllFieldMapProps().JoinSelectPropMapFields("R.")} FROM [{RolePersistence.Table}] R"
                     + $" INNER JOIN [{Table}] UR ON R.id=UR.role_id AND UR.user_id=@UserId";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectRolesByUserId");
                 result = dbConn.Query<RoleInfo>(sql, new { UserId = userId }).AsList();
             }, AccessMode.SLAVE);
 
@@ -64,6 +65,7 @@ namespace Hzdtf.BasicFunction.SqlServer.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"{DeleteSql()} WHERE {GetFieldByProp("UserId")}=@UserId";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "DeleteByUserId");
                 result = dbConn.Execute(sql, new { UserId = userId }, GetDbTransaction(connId));
             });
 
@@ -92,6 +94,7 @@ namespace Hzdtf.BasicFunction.SqlServer.Standard
             {
                 string sql = $"SELECT UR.user_id UserId,{RolePersistence.AllFieldMapProps().JoinSelectPropMapFields("R.")} FROM {Table} UR"
                     + $" INNER JOIN [{RolePersistence.Table}] R ON R.id=UR.role_id AND UR.user_id IN({userIdSql.ToString()})";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectContainsRoleByUserIds");
                 result = dbConn.Query<UserRoleInfo, RoleInfo, UserRoleInfo>(sql, (ur, r) =>
                 {
                     ur.Role = r;
@@ -115,6 +118,7 @@ namespace Hzdtf.BasicFunction.SqlServer.Standard
             {
                 string sql = $"SELECT {UserPersistence.AllFieldMapProps().JoinSelectPropMapFields("U.")} FROM [{UserPersistence.Table}] U"
                     + $" INNER JOIN [{Table}] UR ON U.id=UR.user_id AND UR.role_id=@RoleId AND U.system_hide=@SystemHide";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectUsersByRoleId");
                 result = dbConn.Query<UserInfo>(sql, new { RoleId = roleId, SystemHide = false }).AsList();
             }, AccessMode.SLAVE);
 
@@ -135,6 +139,7 @@ namespace Hzdtf.BasicFunction.SqlServer.Standard
                 string sql = $"SELECT {UserPersistence.AllFieldMapProps().JoinSelectPropMapFields("U.")} FROM [{UserPersistence.Table}] U"
                     + $" INNER JOIN [{Table}] UR ON U.id=UR.user_id AND U.system_hide=@SystemHide AND U.enabled=@Enabled"
                     + $" INNER JOIN [{RolePersistence.Table}] R ON R.id=UR.role_id AND R.code=@RoleCode";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectUsersByRoleCode");
                 result = dbConn.Query<UserInfo>(sql, new { RoleCode = roleCode, SystemHide = false, Enabled = true }).AsList();
             }, AccessMode.SLAVE);
 

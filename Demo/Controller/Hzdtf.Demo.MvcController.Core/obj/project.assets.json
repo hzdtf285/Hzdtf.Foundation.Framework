@@ -2858,6 +2858,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Hzdtf.Logger.Contract.Standard": "2.0.0",
           "Hzdtf.Platform.Contract.Standard": "2.0.0",
           "Hzdtf.Utility.Standard": "2.0.0"
         },
@@ -8660,19 +8661,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {}
+    "C:\\Users\\huangzd\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\Hzdtf.Demo.MvcController.Core.csproj",
+      "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\Hzdtf.Demo.MvcController.Core.csproj",
       "projectName": "Hzdtf.Demo.MvcController.Core",
-      "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\Hzdtf.Demo.MvcController.Core.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\obj\\",
+      "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\Hzdtf.Demo.MvcController.Core.csproj",
+      "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+      "outputPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8685,17 +8690,17 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Controller\\Hzdtf.BasicController.Core\\Hzdtf.BasicController.Core.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Contract.Standard\\Hzdtf.Demo.Service.Contract.Standard.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Contract.Standard\\Hzdtf.Demo.Service.Contract.Standard.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Contract.Standard\\Hzdtf.Demo.Service.Contract.Standard.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Service\\Hzdtf.Demo.Service.Contract.Standard\\Hzdtf.Demo.Service.Contract.Standard.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\Hzdtf.WorkFlow.MvcController.Core.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\Hzdtf.WorkFlow.MvcController.Core.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\Hzdtf.WorkFlow.MvcController.Core.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Controller\\Hzdtf.WorkFlow.MvcController.Core\\Hzdtf.WorkFlow.MvcController.Core.csproj"
             },
-            "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\WorkFlow\\Service\\Hzdtf.WorkFlow.Service.Contract.Standard\\Hzdtf.WorkFlow.Service.Contract.Standard.csproj"
             }
           }
         }

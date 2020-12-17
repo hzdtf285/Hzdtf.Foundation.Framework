@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Text;
 using Dapper;
 using Hzdtf.Utility.Standard.Enums;
-using Hzdtf.Utility.Standard.Attr;
 
 namespace Hzdtf.WorkFlow.MySql.Standard
 {
@@ -27,6 +26,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"{SelectSql()} WHERE {GetFieldByProp("FlowId")}=@FlowId";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectByFlowId");
                 result = dbConn.Query<FlowCensorshipInfo>(sql, new { FlowId = flowId }).AsList();
             }, AccessMode.SLAVE);
 

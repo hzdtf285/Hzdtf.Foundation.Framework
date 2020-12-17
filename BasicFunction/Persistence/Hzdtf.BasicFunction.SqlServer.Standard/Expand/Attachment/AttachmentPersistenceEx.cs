@@ -36,6 +36,7 @@ namespace Hzdtf.BasicFunction.SqlServer.Standard
                     sql += string.Format(" AND title LIKE '%{0}%'", blurTitle.FillSqlValue());
                 }
 
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectByOwner");
                 result = dbConn.Query<AttachmentInfo>(sql, new { OwnerType = ownerType, OwnerId = ownerId }, GetDbTransaction(connId, AccessMode.SLAVE)).AsList();
             }, AccessMode.SLAVE);
 
@@ -61,6 +62,7 @@ namespace Hzdtf.BasicFunction.SqlServer.Standard
                     sql += string.Format(" AND title LIKE '%{0}%'", blurTitle.FillSqlValue());
                 }
 
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "CountByOwner");
                 result = dbConn.ExecuteScalar<int>(sql, new { OwnerType = ownerType, OwnerId = ownerId }, GetDbTransaction(connId, AccessMode.SLAVE));
             }, AccessMode.SLAVE);
 
@@ -80,6 +82,7 @@ namespace Hzdtf.BasicFunction.SqlServer.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"{DeleteSql()} WHERE owner_type=@OwnerType AND owner_id=@OwnerId";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "DeleteByOwner");
                 result = dbConn.Execute(sql, new { OwnerType = ownerType, OwnerId = ownerId }, GetDbTransaction(connId));
             });
 

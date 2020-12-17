@@ -87,6 +87,7 @@ namespace Hzdtf.Autofac.Extend.Standard.Intercepteds
             }
 
             var watch = Stopwatch.StartNew();
+            watch.Start();
             StringBuilder logMsg = new StringBuilder($"{invocation.TargetType.FullName} {invocation.Method}{paraLog}");
 
             invocation.Proceed();
@@ -100,7 +101,7 @@ namespace Hzdtf.Autofac.Extend.Standard.Intercepteds
             watch.Stop();
             logMsg.AppendFormat(",{0}timed:{1}ms", returnValLog, watch.ElapsedMilliseconds);
 
-            Log.InfoAsync(logMsg.ToString(), null, invocation.TargetType.Name);
+            Log.DebugAsync(logMsg.ToString(), null, invocation.TargetType.Name);
         }
     }
 }

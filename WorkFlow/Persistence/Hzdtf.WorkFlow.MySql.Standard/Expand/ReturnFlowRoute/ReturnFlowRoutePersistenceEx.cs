@@ -26,6 +26,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"{SelectSql()} WHERE {GetFieldByProp("FlowCensorshipId")}=@FlowCensorshipId";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectByFlowCensorshipId");
                 result = dbConn.Query<ReturnFlowRouteInfo>(sql, new { FlowCensorshipId = flowCensorshipId }).AsList();
             }, AccessMode.SLAVE);
 
@@ -46,6 +47,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 string sql = $"{SelectSql()} WHERE {idSql}";
+                Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectByFlowCensorshipIds");
                 result = dbConn.Query<ReturnFlowRouteInfo>(sql, parameters).AsList();
             }, AccessMode.SLAVE);
 
