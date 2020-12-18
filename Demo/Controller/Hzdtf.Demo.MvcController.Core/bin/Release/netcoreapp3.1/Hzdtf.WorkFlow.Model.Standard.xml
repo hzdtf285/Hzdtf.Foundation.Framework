@@ -353,13 +353,13 @@
             </summary>
             <returns>流程输入</returns>
         </member>
-        <member name="T:Hzdtf.WorkFlow.Model.Standard.Expand.FlowStatusConvert">
+        <member name="T:Hzdtf.WorkFlow.Model.Standard.Expand.FlowStatusToTextConvert">
             <summary>
-            流程状态转换
+            流程状态到文本转换
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Model.Standard.Expand.FlowStatusConvert.ToNew(System.Object)">
+        <member name="M:Hzdtf.WorkFlow.Model.Standard.Expand.FlowStatusToTextConvert.ToNew(System.Object)">
             <summary>
             转换新值
             </summary>
