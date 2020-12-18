@@ -98,3 +98,4 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Rpc\Hzdtf.MessageQueue.R
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.csproj.CopyComplete
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.csprojAssemblyReference.cache

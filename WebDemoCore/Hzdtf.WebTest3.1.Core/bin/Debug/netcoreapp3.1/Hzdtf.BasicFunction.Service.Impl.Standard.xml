@@ -907,6 +907,7 @@
             <param name="model">模型</param>
             <param name="connectionId">连接ID</param>
             <param name="currUser">当前用户</param>
+            <returns>影响行数</returns>
         </member>
         <member name="T:Hzdtf.BasicFunction.Service.Impl.Standard.DataDictionaryItemExpandService">
             <summary>

@@ -3,14 +3,12 @@ using Hzdtf.BasicFunction.Persistence.Contract.Standard;
 using Hzdtf.Utility.Standard.Attr;
 using Hzdtf.Utility.Standard.Model;
 using Hzdtf.Utility.Standard.Model.Return;
-using Hzdtf.Utility.Standard.Vali;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using Hzdtf.Utility.Standard.Utils;
 using Hzdtf.Utility.Standard.Attr.ParamAttr;
 using Hzdtf.Utility.Standard.Model.Page;
-using Hzdtf.BasicFunction.Model.Standard.Expand.User;
 
 namespace Hzdtf.BasicFunction.Service.Impl.Standard
 {
@@ -203,11 +201,12 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="model">模型</param>
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
-        private void AddUserRoles(UserInfo model, string connectionId = null, BasicUserInfo currUser = null)
+        /// <returns>影响行数</returns>
+        private int AddUserRoles(UserInfo model, string connectionId = null, BasicUserInfo currUser = null)
         {
             if (model.OwnRoles.IsNullOrCount0())
             {
-                return;
+                return 0;
             }
 
             IList<UserRoleInfo> userRoles = new List<UserRoleInfo>(model.OwnRoles.Count);
@@ -224,10 +223,10 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
             }
             if (userRoles.IsNullOrCount0())
             {
-                return;
+                return 0;
             }
 
-            UserRolePersistence.Insert(userRoles, connectionId);
+            return UserRolePersistence.Insert(userRoles, connectionId);
         }
 
         #endregion
