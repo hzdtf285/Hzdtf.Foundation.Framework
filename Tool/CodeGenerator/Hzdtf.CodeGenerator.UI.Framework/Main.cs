@@ -65,10 +65,11 @@ namespace Hzdtf.CodeGenerator.UI.Framework
         /// <param name="e"></param>
         private void btnTestConn_Click(object sender, EventArgs e)
         {
-            ISimpleFactory<string, IDbConnection> factory = AutofacTool.Resolve<ISimpleFactory<string, IDbConnection>>();
-            IDbConnection dbConnection = factory.Create(cbxDataSourceType.SelectedItem.ToString());
             try
             {
+                ISimpleFactory<string, IDbConnection> factory = AutofacTool.Resolve<ISimpleFactory<string, IDbConnection>>();
+                IDbConnection dbConnection = factory.Create(cbxDataSourceType.SelectedItem.ToString());
+
                 dbConnection.ConnectionString = GetDbConnectionString();
                 dbConnection.Open();
                 if (dbConnection.State == ConnectionState.Open)
@@ -110,16 +111,23 @@ namespace Hzdtf.CodeGenerator.UI.Framework
         /// <param name="e"></param>
         private void btnLoad_Click(object sender, EventArgs e)
         {
-            IDbInfoService dbInfoService = AutofacTool.Resolve<IDbInfoService>();
-            ReturnInfo<IList<TableInfo>> returnInfo = dbInfoService.Query(txtDataBase.Text, GetDbConnectionString(), cbxDataSourceType.SelectedItem.ToString());
-            if (returnInfo.Success())
+            try
             {
-                dgvTable.Tag = cbxDataSourceType.SelectedItem.ToString();
-                dgvTable.DataSource = returnInfo.Data;
+                IDbInfoService dbInfoService = AutofacTool.Resolve<IDbInfoService>();
+                ReturnInfo<IList<TableInfo>> returnInfo = dbInfoService.Query(txtDataBase.Text, GetDbConnectionString(), cbxDataSourceType.SelectedItem.ToString());
+                if (returnInfo.Success())
+                {
+                    dgvTable.Tag = cbxDataSourceType.SelectedItem.ToString();
+                    dgvTable.DataSource = returnInfo.Data;
+                }
+                else
+                {
+                    MessageBox.Show(returnInfo.Msg);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show(returnInfo.Msg);
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -130,46 +138,53 @@ namespace Hzdtf.CodeGenerator.UI.Framework
         /// <param name="e"></param>
         private void btnGenerator_Click(object sender, EventArgs e)
         {
-            IList<TableInfo> tables = new List<TableInfo>();
-            foreach (DataGridViewRow row in dgvTable.Rows)
+            try
             {
-                DataGridViewCheckBoxCell checkCell = row.Cells[2] as DataGridViewCheckBoxCell;
-                if (checkCell.Value != null && Convert.ToBoolean(checkCell.Value))
+                IList<TableInfo> tables = new List<TableInfo>();
+                foreach (DataGridViewRow row in dgvTable.Rows)
                 {
-                    tables.Add(row.DataBoundItem as TableInfo);
+                    DataGridViewCheckBoxCell checkCell = row.Cells[2] as DataGridViewCheckBoxCell;
+                    if (checkCell.Value != null && Convert.ToBoolean(checkCell.Value))
+                    {
+                        tables.Add(row.DataBoundItem as TableInfo);
+                    }
+                }
+
+                if (tables.Count == 0)
+                {
+                    MessageBox.Show("请勾选要生成的表");
+                    return;
+                }
+
+                FunctionType[] functionTypes = GetFunctionTypes();
+                if (functionTypes.Length == 0)
+                {
+                    MessageBox.Show("请勾选要生成的功能项");
+                    return;
+                }
+
+                if (string.IsNullOrWhiteSpace(txtNamespacePfx.Text))
+                {
+                    MessageBox.Show("命名空间前辍不能为空");
+                    return;
+                }
+
+                Cursor.Current = Cursors.WaitCursor;
+                ICodeGeneratorService generatorService = AutofacTool.Resolve<ICodeGeneratorService>();
+                ReturnInfo<bool> returnInfo = generatorService.Generator(tables, functionTypes, txtNamespacePfx.Text, dgvTable.Tag.ToString());
+                Cursor.Current = Cursors.Default;
+                if (returnInfo.Success())
+                {
+                    MessageBox.Show("生成成功");
+                }
+                else
+                {
+                    MessageBox.Show(returnInfo.Msg);
                 }
             }
-
-            if (tables.Count == 0)
+            catch (Exception ex)
             {
-                MessageBox.Show("请勾选要生成的表");
-                return;
-            }
-
-            FunctionType[] functionTypes = GetFunctionTypes();
-            if (functionTypes.Length == 0)
-            {
-                MessageBox.Show("请勾选要生成的功能项");
-                return;
-            }
-
-            if (string.IsNullOrWhiteSpace(txtNamespacePfx.Text))
-            {
-                MessageBox.Show("命名空间前辍不能为空");
-                return;
-            }
-
-            Cursor.Current = Cursors.WaitCursor;
-            ICodeGeneratorService generatorService = AutofacTool.Resolve<ICodeGeneratorService>();
-            ReturnInfo<bool> returnInfo = generatorService.Generator(tables, functionTypes, txtNamespacePfx.Text, dgvTable.Tag.ToString());
-            Cursor.Current = Cursors.Default;
-            if (returnInfo.Success())
-            {
-                MessageBox.Show("生成成功");
-            }
-            else
-            {
-                MessageBox.Show(returnInfo.Msg);
+                MessageBox.Show(ex.Message);
             }
         }
 

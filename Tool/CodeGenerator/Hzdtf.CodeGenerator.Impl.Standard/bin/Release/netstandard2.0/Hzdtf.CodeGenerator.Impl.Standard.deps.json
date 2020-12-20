@@ -1386,7 +1386,7 @@
     "runtime.native.System.Security.Cryptography/4.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-nugEDpgv06sz29/lV2Karfy9yVfJWSfuRWHbZY/pDhyNSXREPztizSDmICeXCeoY8a4ERxmqb97NrcCk4RWx1w==",
+      "sha512": "sha512-2CQK0jmO6Eu7ZeMgD+LOFbNJSXHFVQbCJJkEyEwowh1SCgYnrn9W9RykMfpeeVGw7h4IBvYikzpGUlmZTUafJw==",
       "path": "runtime.native.system.security.cryptography/4.0.0",
       "hashPath": "runtime.native.system.security.cryptography.4.0.0.nupkg.sha512"
     },
@@ -1484,7 +1484,7 @@
     "System.Collections.Concurrent/4.0.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-vNpZV1Y+VXtp+N1ZahJ1oA1nLESDwKgTj8q9xrxARQRMF2blMSxfOvgDWU3OVLUz+cs4Y4H9tSnmxrasxl3TMA==",
+      "sha512": "sha512-2gBcbb3drMLgxlI0fBfxMA31ec6AEyYCHygGse4vxceJan8mRIWeKJ24BFzN7+bi/NFTgdIgufzb94LWO5EERQ==",
       "path": "system.collections.concurrent/4.0.12",
       "hashPath": "system.collections.concurrent.4.0.12.nupkg.sha512"
     },
@@ -1540,7 +1540,7 @@
     "System.Diagnostics.Tracing/4.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-L2XRbi6A1rTDiyUx5GqMud8TwGvEF2Jcjn/7XIgk/RRt3iA9GsuqaN9uDmmkfkg/G8Cm7tBn5eAOg8kp1Qq16g==",
+      "sha512": "sha512-vDN1PoMZCkkdNjvZLql592oYJZgS7URcJzJ7bxeBgGtx5UtR5leNm49VmfHGqIffX4FKacHbI3H6UyNSHQknBg==",
       "path": "system.diagnostics.tracing/4.1.0",
       "hashPath": "system.diagnostics.tracing.4.1.0.nupkg.sha512"
     },
@@ -1603,7 +1603,7 @@
     "System.Net.Primitives/4.0.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Z/5m1nOabhJjvOyy5Gh/GDlYzOAjPSLlvf+hAMOCemxpcPKqhHWHEj+tMOyQhBQPAN2MgyKLWYPHi9r1+N7pWA==",
+      "sha512": "sha512-hVvfl4405DRjA2408luZekbPhplJK03j2Y2lSfMlny7GHXlkByw1iLnc9mgKW0GdQn73vvMcWrWewAhylXA4Nw==",
       "path": "system.net.primitives/4.0.11",
       "hashPath": "system.net.primitives.4.0.11.nupkg.sha512"
     },
@@ -1722,7 +1722,7 @@
     "System.Runtime.Numerics/4.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ovxRtvXPXTNQl6UnCnuaW1E0Ftic7T/YjyS+bqRO4DyUBgkBsUFtvmR8pz0N193gbyVW3cbVUzNNP/JSl5tt8Q==",
+      "sha512": "sha512-+XbKFuzdmLP3d1o9pdHu2nxjNr2OEPqGzKeegPLCUMM71a0t50A/rOcIRmGs9wR7a8KuHX6hYs/7/TymIGLNqg==",
       "path": "system.runtime.numerics/4.0.1",
       "hashPath": "system.runtime.numerics.4.0.1.nupkg.sha512"
     },
@@ -1855,7 +1855,7 @@
     "System.Xml.XmlDocument/4.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Kj7DBLvNmhXkNHhnCFfWsMMZ7YHAuyB8h3PCp9liLOnX3rjn+nlgObB+9l8Xjq86xBeFd2e8JJucdD7VU7diGQ==",
+      "sha512": "sha512-2eZu6IP+etFVBBFUFzw2w6J21DqIN5eL9Y8r8JfJWUmV28Z5P0SNU01oCisVHQgHsDhHPnmq2s1hJrJCFZWloQ==",
       "path": "system.xml.xmldocument/4.0.1",
       "hashPath": "system.xml.xmldocument.4.0.1.nupkg.sha512"
     },
