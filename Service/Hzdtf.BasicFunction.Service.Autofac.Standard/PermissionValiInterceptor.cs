@@ -25,6 +25,11 @@ namespace Hzdtf.BasicFunction.Service.Autofac.Standard
         protected override void Intercept(BasicReturnInfo basicReturn, IInvocation invocation, FunctionAttribute attr, out bool isExecProceeded)
         {
             isExecProceeded = false;
+            var ignorePerAttr = invocation.Method.GetAttribute<IgnorePermissionAttribute>();
+            if (ignorePerAttr != null)
+            {
+                return;
+            }
             if (attr.Codes.IsNullOrCount0())
             {
                 basicReturn.SetFailureMsg("功能编码不能为空");

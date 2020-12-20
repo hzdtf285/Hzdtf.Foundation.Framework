@@ -15,4 +15,3 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\Common\Hzdtf.Mini.Standard\obj\Releas
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Common\Hzdtf.Mini.Standard\obj\Release\netstandard2.0\Hzdtf.Mini.Standard.csproj.CoreCompileInputs.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Common\Hzdtf.Mini.Standard\obj\Release\netstandard2.0\Hzdtf.Mini.Standard.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Common\Hzdtf.Mini.Standard\obj\Release\netstandard2.0\Hzdtf.Mini.Standard.pdb
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\Common\Hzdtf.Mini.Standard\obj\Release\netstandard2.0\Hzdtf.Mini.Standard.csprojAssemblyReference.cache

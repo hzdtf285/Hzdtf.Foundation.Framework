@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VXZ6Twwf2koPGkCQ0HEj0b/uVhpW+ziaW4c1ZaLUYmR3FpICtyJ896XH974+K7C1KwFlKqvi8H6eWb1XkWj/ZQ==",
+  "dgSpecHash": "pruoXulhoNVSc76KfSV4aPW98bqW/icHzPb52uQYfL11eJciAOaL94LiZdC3na0fggaEiud6A+cJ3ahaYTfXJw==",
   "success": true,
   "projectFilePath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Logger\\Hzdtf.Logger.Integration.MicrosoftLog.Core\\Hzdtf.Logger.Integration.MicrosoftLog.Core.csproj",
   "expectedPackageFiles": [

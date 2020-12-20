@@ -37,7 +37,6 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\bin
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\bin\Release\netstandard2.0\Hzdtf.Platform.Contract.Standard.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\bin\Release\netstandard2.0\Hzdtf.Platform.Contract.Standard.xml
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.pdb
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\obj\Release\netstandard2.0\Hzdtf.Autofac.Extend.Standard.csprojAssemblyReference.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\obj\Release\netstandard2.0\Hzdtf.Autofac.Extend.Standard.AssemblyInfoInputs.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\obj\Release\netstandard2.0\Hzdtf.Autofac.Extend.Standard.AssemblyInfo.cs
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\obj\Release\netstandard2.0\Hzdtf.Autofac.Extend.Standard.csproj.CoreCompileInputs.cache

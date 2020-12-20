@@ -37,7 +37,7 @@ namespace Hzdtf.BasicController.Core
         {
             get;
             set;
-        } = new ConsoleLog();
+        } = LogTool.DefaultLog;
 
         /// <summary>
         /// 分页解析筛选

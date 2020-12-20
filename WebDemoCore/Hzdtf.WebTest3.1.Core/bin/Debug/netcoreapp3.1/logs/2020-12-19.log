@@ -1,0 +1,25 @@
+2020-12-19 09:57:24.1182 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-12-19 09:57:24.0888 INFO eventId:0,Now listening on: http://localhost:5000
+2020-12-19 09:57:24.0888 INFO eventId:0,Hosting environment: Development
+2020-12-19 09:57:24.1182 INFO eventId:0,Content root path: F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-12-19 09:57:28.7528 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-12-19 09:57:29.4402 WARN eventId:ErrorUnprotectingCookie,Error unprotecting the session cookie.
+2020-12-19 09:59:23.2271 WARN eventId:ErrorUnprotectingCookie,Error unprotecting the session cookie.
+2020-12-19 09:59:24.8380 INFO 登录ID:system,用户编号:1000,名称:系统管理员 成功授权
+2020-12-19 09:59:25.0113 WARN eventId:ErrorUnprotectingCookie,Error unprotecting the session cookie.
+2020-12-19 09:59:26.0314 WARN eventId:ErrorUnprotectingCookie,Error unprotecting the session cookie.
+2020-12-19 09:59:28.0981 WARN eventId:ErrorUnprotectingCookie,Error unprotecting the session cookie.
+2020-12-19 09:59:28.2695 WARN eventId:ErrorUnprotectingCookie,Error unprotecting the session cookie.
+2020-12-19 17:43:53.1667 FATAL eventId:0,Unable to start Kestrel.
+2020-12-19 17:44:58.2930 INFO eventId:0,Content root path: F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-12-19 17:44:58.2930 INFO eventId:0,Now listening on: http://localhost:5000
+2020-12-19 17:44:58.2930 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-12-19 17:44:58.2930 INFO eventId:0,Hosting environment: Development
+2020-12-19 17:44:59.5294 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-12-19 17:45:02.0578 INFO 登录ID:system,用户编号:1000,名称:系统管理员 成功授权
+2020-12-19 17:47:52.4219 INFO eventId:0,Application started. Press Ctrl+C to shut down.
+2020-12-19 17:47:52.4314 INFO eventId:0,Content root path: F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core
+2020-12-19 17:47:52.4219 INFO eventId:0,Now listening on: http://localhost:5000
+2020-12-19 17:47:52.4314 INFO eventId:0,Hosting environment: Development
+2020-12-19 17:47:53.9354 WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect.
+2020-12-19 17:47:57.2027 INFO 登录ID:system,用户编号:1000,名称:系统管理员 成功授权

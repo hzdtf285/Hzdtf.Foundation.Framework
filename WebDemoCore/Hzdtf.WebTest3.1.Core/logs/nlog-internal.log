@@ -488,3 +488,45 @@
 2020-12-18 21:07:45.8091 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
 2020-12-18 21:07:45.8549 Info Configuration initialized.
 2020-12-18 21:07:45.8780 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-19 09:56:57.5913 Info Message Template Auto Format enabled
+2020-12-19 09:56:57.8201 Info Adding target FileTarget(Name=f)
+2020-12-19 09:56:57.8406 Info Adding target FileTarget(Name=fe)
+2020-12-19 09:56:57.9760 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-19 09:56:58.0164 Info Configuration initialized.
+2020-12-19 09:56:58.0664 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-19 17:43:06.3228 Info Message Template Auto Format enabled
+2020-12-19 17:43:06.5565 Info Adding target FileTarget(Name=f)
+2020-12-19 17:43:06.6543 Info Adding target FileTarget(Name=fe)
+2020-12-19 17:43:06.7485 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-19 17:43:06.8003 Info Configuration initialized.
+2020-12-19 17:43:06.8306 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-19 17:44:28.6788 Info Message Template Auto Format enabled
+2020-12-19 17:44:28.8692 Info Adding target FileTarget(Name=f)
+2020-12-19 17:44:29.1041 Info Adding target FileTarget(Name=fe)
+2020-12-19 17:44:29.1802 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-19 17:44:29.2179 Info Configuration initialized.
+2020-12-19 17:44:29.2481 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-19 17:47:23.4888 Info Message Template Auto Format enabled
+2020-12-19 17:47:23.6957 Info Adding target FileTarget(Name=f)
+2020-12-19 17:47:23.7301 Info Adding target FileTarget(Name=fe)
+2020-12-19 17:47:23.8306 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-19 17:47:23.8762 Info Configuration initialized.
+2020-12-19 17:47:23.9165 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-20 10:18:10.8266 Info Message Template Auto Format enabled
+2020-12-20 10:18:10.9912 Info Adding target FileTarget(Name=f)
+2020-12-20 10:18:11.0162 Info Adding target FileTarget(Name=fe)
+2020-12-20 10:18:11.0666 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-20 10:18:11.1077 Info Configuration initialized.
+2020-12-20 10:18:11.1410 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-20 10:23:01.7132 Info Message Template Auto Format enabled
+2020-12-20 10:23:01.8196 Info Adding target FileTarget(Name=f)
+2020-12-20 10:23:01.8522 Info Adding target FileTarget(Name=fe)
+2020-12-20 10:23:01.9724 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-20 10:23:02.0105 Info Configuration initialized.
+2020-12-20 10:23:02.0381 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-12-20 10:29:31.8770 Info Message Template Auto Format enabled
+2020-12-20 10:29:31.9777 Info Adding target FileTarget(Name=f)
+2020-12-20 10:29:32.0228 Info Adding target FileTarget(Name=fe)
+2020-12-20 10:29:32.1236 Info Validating config: TargetNames=f, fe, ConfigItems=28, FilePath=F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core\bin\Debug\netcoreapp3.1\NLog.config
+2020-12-20 10:29:32.1632 Info Configuration initialized.
+2020-12-20 10:29:32.1850 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2VXrbu5XGtwgaVYjapdCkH4fMvatAWgFszUdrEhguTe/Py7tOfqL1ejDDKjQutA5xGJ6awb1VPObte9rE4PscQ==",
+  "dgSpecHash": "q28a04oU7EJ4b/dcf4BZA0cDvaUzOjvtcsCrYJu9hyhPsmczkoYdptqf2tPbLed+CYBvAr5l1R9c4+lwkBxJuQ==",
   "success": true,
   "projectFilePath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\MessageQueue\\Rabbit\\Hzdtf.Rabbit.Impl.Standard\\Hzdtf.Rabbit.Impl.Standard.csproj",
   "expectedPackageFiles": [

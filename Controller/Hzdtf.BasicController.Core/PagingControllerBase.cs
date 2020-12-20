@@ -38,7 +38,7 @@ namespace Hzdtf.BasicController.Core
         /// 执行分页获取数据
         /// </summary>
         /// <returns>分页返回信息</returns>
-        [HttpGet]
+        [HttpGet()]
         [Function(FunCodeDefine.QUERY_CODE)]
         public virtual async Task<object> Page()
         {
