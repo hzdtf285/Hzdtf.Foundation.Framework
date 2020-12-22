@@ -80,6 +80,9 @@ function Form(formId) {
                     val = Number(val);
 
                     break;
+
+                case "date":
+                    val = new Date(val);
             }
             if (con.attr("format") == "fenToYuan" && val && val != "") {
                 val = yuanToFen(val);
