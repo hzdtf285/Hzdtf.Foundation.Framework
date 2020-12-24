@@ -241,7 +241,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
             }
             if (currHandle.HandleStatus == HandleStatusEnum.EFFICACYED)
             {
-                returnInfo.SetFailureMsg("您还处理的流程已失效");
+                returnInfo.SetFailureMsg("您还未处理的流程已失效");
                 return returnInfo;
             }
 
@@ -282,7 +282,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
             }
             if (currHandle.HandleStatus == HandleStatusEnum.EFFICACYED)
             {
-                returnInfo.SetFailureMsg("您还处理的流程已失效");
+                returnInfo.SetFailureMsg("您还未处理的流程已失效");
                 return returnInfo;
             }
 
