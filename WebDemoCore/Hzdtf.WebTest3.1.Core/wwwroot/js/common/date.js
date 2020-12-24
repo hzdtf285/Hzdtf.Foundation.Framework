@@ -55,7 +55,7 @@ function dateToDateString(str) {
  */
 function dateToYMString(str) {
     if (str && str.length > 0) {
-        var dateStr = new Date(str).format("yyyy-M");
+        var dateStr = new Date(str).format("yyyy-MM");
         if (dateStr == "1-1") {
             return "";
         }
@@ -121,5 +121,13 @@ function getLastDay(year, month) {
  * @param {any} day 日
  */
 function getDateString(year, month, day) {
-    return year + "-" + month + "-" + day;
+    var monthStr = "" + month;
+    if (monthStr.length == 1) {
+        monthStr = "0" + monthStr;
+    }
+    var dayStr = "" + day;
+    if (dayStr.length == 1) {
+        dayStr = "0" + dayStr;
+    }
+    return year + "-" + monthStr + "-" + dayStr;
 }
