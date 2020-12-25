@@ -12,8 +12,18 @@ namespace Hzdtf.Logger.Contract.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public class ConfigLogRecordLevel : LogRecordLevelBase
+    public class ConfigLogRecordLevel : ILogRecordLevel
     {
+        /// <summary>
+        /// 等级
+        /// </summary>
+        private static string level;
+
+        /// <summary>
+        /// 同步等级
+        /// </summary>
+        private static readonly object syncLevel = new object();
+
         /// <summary>
         /// 应用配置
         /// </summary>
@@ -24,26 +34,43 @@ namespace Hzdtf.Logger.Contract.Standard
         } = PlatformTool.AppConfig;
 
         /// <summary>
-        /// 获取默认的记录等级
+        /// 获取记录级别
         /// </summary>
         /// <returns>记录级别</returns>
-        protected override string GetDefaultRecordLevel()
+        public string GetRecordLevel()
         {
-            if (string.IsNullOrWhiteSpace(AppConfig["Logging:LogLevel:Default"]))
+            if (string.IsNullOrWhiteSpace(level))
             {
-                if (string.IsNullOrWhiteSpace(AppConfig["HzdtfLog:LogLevel:Default"]))
+                if (string.IsNullOrWhiteSpace(AppConfig["Logging:LogLevel:Default"]))
                 {
-                    ILogRecordLevel logLevel = new DefaultLogRecordLevel();
-                    return logLevel.GetRecordLevel();
+                    if (string.IsNullOrWhiteSpace(AppConfig["HzdtfLog:LogLevel:Default"]))
+                    {
+                        ILogRecordLevel logLevel = new DefaultLogRecordLevel();
+                        return logLevel.GetRecordLevel();
+                    }
+                    else
+                    {
+                        return AppConfig["HzdtfLog:LogLevel:Default"];
+                    }
                 }
                 else
                 {
-                    return AppConfig["HzdtfLog:LogLevel:Default"];
+                    return AppConfig["Logging:LogLevel:Default"];
                 }
             }
-            else
+
+            return level;
+        }
+
+        /// <summary>
+        /// 设置记录级别
+        /// </summary>
+        /// <param name="level">记录级别</param>
+        public void SetRecordLevel(string level)
+        {
+            lock (syncLevel)
             {
-               return AppConfig["Logging:LogLevel:Default"];
+                ConfigLogRecordLevel.level = level;
             }
         }
     }

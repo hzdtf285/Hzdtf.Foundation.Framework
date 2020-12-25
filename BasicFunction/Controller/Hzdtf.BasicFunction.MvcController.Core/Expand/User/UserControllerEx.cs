@@ -67,7 +67,7 @@ namespace Hzdtf.BasicFunction.MvcController.Core
                 return File(new byte[] { 0 }, null);
             }
 
-            Response.Headers.Add("Content-Disposition", "attachment;filename=" + WebUtility.UrlEncode("用户_" + DateTime.Now.ToFixedDate() + ".xls"));
+            Response.Headers.Add("Content-Disposition", "attachment;filename=" + WebUtility.UrlEncode("用户_" + DateTime.Now.ToFixedDate() + ".xlsx"));
 
             try
             {

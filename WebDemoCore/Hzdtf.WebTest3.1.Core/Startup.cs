@@ -66,8 +66,8 @@ namespace Hzdtf.WebTest3._1.Core
 
             services.AddLogging(builder =>
             {
-                builder.SetMinimumLevel(LogLevel.Warning);
-                builder.AddConsole();
+                //builder.SetMinimumLevel(LogLevel.Warning);
+                //builder.AddConsole();
                 builder.AddHzdtf(options =>
                 {
                     options.ProtoLog = new IntegrationNLog();

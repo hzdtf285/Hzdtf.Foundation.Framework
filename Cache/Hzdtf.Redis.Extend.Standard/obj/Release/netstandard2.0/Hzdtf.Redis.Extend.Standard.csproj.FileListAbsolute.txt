@@ -37,3 +37,4 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\Cache\Hzdtf.Redis.Extend.Standard\obj
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Cache\Hzdtf.Redis.Extend.Standard\obj\Release\netstandard2.0\Hzdtf.Redis.Extend.Standard.csproj.CopyComplete
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Cache\Hzdtf.Redis.Extend.Standard\obj\Release\netstandard2.0\Hzdtf.Redis.Extend.Standard.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Cache\Hzdtf.Redis.Extend.Standard\obj\Release\netstandard2.0\Hzdtf.Redis.Extend.Standard.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Cache\Hzdtf.Redis.Extend.Standard\obj\Release\netstandard2.0\Hzdtf.Redis.Extend.Standard.csprojAssemblyReference.cache

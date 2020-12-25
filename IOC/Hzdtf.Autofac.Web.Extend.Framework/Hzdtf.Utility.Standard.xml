@@ -174,6 +174,12 @@
             </summary>
             <param name="code">编码</param>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.Attr.IgnorePermissionAttribute">
+            <summary>
+            忽略权限特性
+            @ 黄振东
+            </summary>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Attr.InjectAttribute">
             <summary>
             注入特性
@@ -1234,26 +1240,52 @@
             <param name="targetType">目标类型</param>
             <returns>新值</returns>
         </member>
-        <member name="T:Hzdtf.Utility.Standard.Conversion.DateStringConvert">
+        <member name="T:Hzdtf.Utility.Standard.Conversion.DateValueToTextConvert">
             <summary>
-            日期字符串转换
+            日期值到文本转换
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Conversion.DateStringConvert.ToNew(System.Object)">
+        <member name="M:Hzdtf.Utility.Standard.Conversion.DateValueToTextConvert.ToNew(System.Object)">
             <summary>
             转换新值
             </summary>
             <param name="value">值</param>
             <returns>新值</returns>
         </member>
-        <member name="T:Hzdtf.Utility.Standard.Conversion.DateTimeStringConvert">
+        <member name="T:Hzdtf.Utility.Standard.Conversion.DateTextToValueConvert">
             <summary>
-            日期时间字符串转换
+            日期文本到值转换
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Conversion.DateTimeStringConvert.ToNew(System.Object)">
+        <member name="M:Hzdtf.Utility.Standard.Conversion.DateTextToValueConvert.ToNew(System.Object)">
+            <summary>
+            转换新值
+            </summary>
+            <param name="value">值</param>
+            <returns>新值</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Conversion.DateTimeValueToTextConvert">
+            <summary>
+            日期时间值到文本转换
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Conversion.DateTimeValueToTextConvert.ToNew(System.Object)">
+            <summary>
+            转换新值
+            </summary>
+            <param name="value">值</param>
+            <returns>新值</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Conversion.DateTimeTextToValueConvert">
+            <summary>
+            日期时间文本到值转换
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Conversion.DateTimeTextToValueConvert.ToNew(System.Object)">
             <summary>
             转换新值
             </summary>
@@ -1354,13 +1386,26 @@
             <param name="targetType">目标类型</param>
             <returns>新值</returns>
         </member>
-        <member name="T:Hzdtf.Utility.Standard.Conversion.YMStringConvert">
+        <member name="T:Hzdtf.Utility.Standard.Conversion.YMValueToTextConvert">
             <summary>
-            年月字符串转换
+            年月值到文本转换
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Conversion.YMStringConvert.ToNew(System.Object)">
+        <member name="M:Hzdtf.Utility.Standard.Conversion.YMValueToTextConvert.ToNew(System.Object)">
+            <summary>
+            转换新值
+            </summary>
+            <param name="value">值</param>
+            <returns>新值</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Conversion.YMTextToValueConvert">
+            <summary>
+            年月文本到值转换
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Conversion.YMTextToValueConvert.ToNew(System.Object)">
             <summary>
             转换新值
             </summary>

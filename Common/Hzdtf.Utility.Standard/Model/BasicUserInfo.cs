@@ -102,7 +102,7 @@ namespace Hzdtf.Utility.Standard.Model
         /// 登录时间
         /// </summary>
         [JsonProperty("loginTime")]
-        [DisplayValueConvert(typeof(DateTimeStringConvert))]
+        [DisplayValueConvert(typeof(DateTimeValueToTextConvert))]
         [Display(Name = "登录时间", Order = 5, AutoGenerateField = false)]
         [MessagePack.Key("loginTime")]
         public DateTime? LoginTime

@@ -1,0 +1,5 @@
+2020-12-25 22:13:13.3527 ERROR Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UserInfo -> UserMenuInfo
+Hzdtf.BasicFunction.Model.Standard.UserInfo -> Hzdtf.BasicFunction.Model.Standard.Expand.User.UserMenuInfo
