@@ -31,4 +31,3 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Con
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.Authorization.Contract.Standard.csproj.CopyComplete
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.Authorization.Contract.Standard.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.Authorization.Contract.Standard.pdb
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.Authorization.Contract.Standard.csprojAssemblyReference.cache

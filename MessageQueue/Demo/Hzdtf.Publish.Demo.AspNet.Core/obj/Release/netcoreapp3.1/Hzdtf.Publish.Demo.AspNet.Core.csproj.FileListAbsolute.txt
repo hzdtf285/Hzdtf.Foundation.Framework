@@ -183,7 +183,6 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\bin\Release\netcoreapp3.1\Hzdtf.Utility.AspNet.Core.xml
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\bin\Release\netcoreapp3.1\Hzdtf.Utility.Standard.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\bin\Release\netcoreapp3.1\Hzdtf.Utility.Standard.xml
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\obj\Release\netcoreapp3.1\Hzdtf.Publish.Demo.AspNet.Core.csprojAssemblyReference.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\obj\Release\netcoreapp3.1\Hzdtf.Publish.Demo.AspNet.Core.AssemblyInfoInputs.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\obj\Release\netcoreapp3.1\Hzdtf.Publish.Demo.AspNet.Core.AssemblyInfo.cs
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\obj\Release\netcoreapp3.1\Hzdtf.Publish.Demo.AspNet.Core.csproj.CoreCompileInputs.cache

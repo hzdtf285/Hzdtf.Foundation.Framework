@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.Logger.Integration.ENLog.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.Logger.Integration.ENLog.Standard.IntegrationNLog">
+            <summary>
+            集成NLog
+            需要在应用程序根目录下创建nlog.config配置文件
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Logger.Integration.ENLog.Standard.IntegrationNLog.nlog">
+            <summary>
+            NLog
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Logger.Integration.ENLog.Standard.IntegrationNLog.name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Logger.Integration.ENLog.Standard.IntegrationNLog.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Logger.Integration.ENLog.Standard.IntegrationNLog.#ctor(System.String)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="name">名称</param>
+        </member>
+        <member name="M:Hzdtf.Logger.Integration.ENLog.Standard.IntegrationNLog.WriteStorage(System.String,System.String,System.Exception,System.String,System.String[])">
+            <summary>
+            将消息与异常写入到存储设备里
+            </summary>
+            <param name="level">级别</param>
+            <param name="msg">消息</param>
+            <param name="ex">异常</param>
+            <param name="source">来源</param>
+            <param name="tags">标签</param>
+        </member>
+    </members>
+</doc>

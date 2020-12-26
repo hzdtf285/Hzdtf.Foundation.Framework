@@ -53,7 +53,7 @@
         </member>
         <member name="P:Autofac.Integration.Mvc.AutofacDependencyResolver.RequestLifetimeScope">
             <summary>
-            The lifetime containing components for processing the current HTTP request.
+            Gets the lifetime containing components for processing the current HTTP request.
             </summary>
         </member>
         <member name="M:Autofac.Integration.Mvc.AutofacDependencyResolver.SetAutofacDependencyResolverAccessor(System.Func{Autofac.Integration.Mvc.AutofacDependencyResolver})">
@@ -251,109 +251,10 @@
             </para>
             </remarks>
         </member>
-        <member name="T:Autofac.Integration.Mvc.FilterMetadata">
-            <summary>
-            Metadata interface for filter registrations.
-            </summary>
-        </member>
-        <member name="P:Autofac.Integration.Mvc.FilterMetadata.ControllerType">
-            <summary>
-            Gets the type of the controller.
-            </summary>
-        </member>
-        <member name="P:Autofac.Integration.Mvc.FilterMetadata.FilterScope">
-            <summary>
-            Gets the filter scope.
-            </summary>
-        </member>
-        <member name="P:Autofac.Integration.Mvc.FilterMetadata.MethodInfo">
-            <summary>
-            Gets the method info.
-            </summary>
-        </member>
-        <member name="P:Autofac.Integration.Mvc.FilterMetadata.Order">
-            <summary>
-            Gets the order in which the filter is applied.
-            </summary>
-        </member>
-        <member name="T:Autofac.Integration.Mvc.RegistrationExtensionsResources">
-            <summary>
-              A strongly-typed resource class, for looking up localized strings, etc.
-            </summary>
-        </member>
-        <member name="P:Autofac.Integration.Mvc.RegistrationExtensionsResources.ResourceManager">
-            <summary>
-              Returns the cached ResourceManager instance used by this class.
-            </summary>
-        </member>
-        <member name="P:Autofac.Integration.Mvc.RegistrationExtensionsResources.Culture">
-            <summary>
-              Overrides the current thread's CurrentUICulture property for all
-              resource lookups using this strongly typed resource class.
-            </summary>
-        </member>
-        <member name="P:Autofac.Integration.Mvc.RegistrationExtensionsResources.InvalidActionExpress">
-            <summary>
-              Looks up a localized string similar to The action method Expression is invalid. It should consist only of a Method call to a controller action method..
-            </summary>
-        </member>
-        <member name="P:Autofac.Integration.Mvc.RegistrationExtensionsResources.InvalidModelBinderType">
-            <summary>
-              Looks up a localized string similar to Type list may not be empty or contain all null values..
-            </summary>
-        </member>
-        <member name="P:Autofac.Integration.Mvc.RegistrationExtensionsResources.MustBeAssignableToFilterType">
-            <summary>
-              Looks up a localized string similar to The type &apos;{0}&apos; must be assignable to the filter type &apos;{1}&apos;..
-            </summary>
-        </member>
-        <member name="T:Autofac.Integration.Mvc.RequestLifetimeScopeProvider">
-            <summary>
-            Creates and disposes HTTP request based lifetime scopes.
-            </summary>
-            <remarks>
-            The provider is notified when a HTTP request ends by the <see cref="T:Autofac.Integration.Mvc.RequestLifetimeHttpModule"/>.
-            </remarks>
-        </member>
-        <member name="M:Autofac.Integration.Mvc.RequestLifetimeScopeProvider.#ctor(Autofac.ILifetimeScope)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Autofac.Integration.Mvc.RequestLifetimeScopeProvider"/> class.
-            </summary>
-            <param name="container">The parent container, usually the application container.</param>
-        </member>
-        <member name="P:Autofac.Integration.Mvc.RequestLifetimeScopeProvider.ApplicationContainer">
-            <summary>
-            Gets the global, application-wide container.
-            </summary>
-        </member>
-        <member name="M:Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScope(System.Action{Autofac.ContainerBuilder})">
-            <summary>
-            Gets a nested lifetime scope that services can be resolved from.
-            </summary>
-            <param name="configurationAction">
-            A configuration action that will execute during lifetime scope creation.
-            </param>
-            <returns>A new or existing nested lifetime scope.</returns>
-        </member>
-        <member name="M:Autofac.Integration.Mvc.RequestLifetimeScopeProvider.EndLifetimeScope">
-            <summary>
-            Ends the current HTTP request lifetime scope.
-            </summary>
-        </member>
-        <member name="M:Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScopeCore(System.Action{Autofac.ContainerBuilder})">
-            <summary>
-            Gets a lifetime scope for the current HTTP request. This method can be overridden
-            to alter the way that the life time scope is constructed.
-            </summary>
-            <param name="configurationAction">
-            A configuration action that will execute during lifetime scope creation.
-            </param>
-            <returns>A new lifetime scope for the current HTTP request.</returns>
-        </member>
         <member name="T:Autofac.Integration.Mvc.ExtensibleActionInvoker">
             <summary>
             Injects services from the container into the ASP.NET MVC invocation pipeline.
-            This is a Async Controller Action Invoker which can be used for both async and non-async scenarios
+            This is a Async Controller Action Invoker which can be used for both async and non-async scenarios.
             </summary>
             <remarks>
             <para>
@@ -389,6 +290,31 @@
             <exception cref="T:System.ArgumentNullException">
             Thrown if <paramref name="parameterDescriptor" /> is <see langword="null" />.
             </exception>
+        </member>
+        <member name="T:Autofac.Integration.Mvc.FilterMetadata">
+            <summary>
+            Metadata interface for filter registrations.
+            </summary>
+        </member>
+        <member name="P:Autofac.Integration.Mvc.FilterMetadata.ControllerType">
+            <summary>
+            Gets or sets the type of the controller.
+            </summary>
+        </member>
+        <member name="P:Autofac.Integration.Mvc.FilterMetadata.FilterScope">
+            <summary>
+            Gets or sets the filter scope.
+            </summary>
+        </member>
+        <member name="P:Autofac.Integration.Mvc.FilterMetadata.MethodInfo">
+            <summary>
+            Gets or sets the method info.
+            </summary>
+        </member>
+        <member name="P:Autofac.Integration.Mvc.FilterMetadata.Order">
+            <summary>
+            Gets or sets the order in which the filter is applied.
+            </summary>
         </member>
         <member name="T:Autofac.Integration.Mvc.ILifetimeScopeProvider">
             <summary>
@@ -703,8 +629,8 @@
             other services.
             </remarks>
             <typeparam name="TLimit">Registration limit type.</typeparam>
-            <typeparam name="TSingleRegistrationStyle">Registration style.</typeparam>
             <typeparam name="TActivatorData">Activator data type.</typeparam>
+            <typeparam name="TSingleRegistrationStyle">Registration style.</typeparam>
             <param name="registration">The registration to configure.</param>
             <returns>A registration builder allowing further configuration of the component.</returns>
         </member>
@@ -735,8 +661,8 @@
             HTTP request.
             </summary>
             <typeparam name="TLimit">Registration limit type.</typeparam>
-            <typeparam name="TStyle">Registration style.</typeparam>
             <typeparam name="TActivatorData">Activator data type.</typeparam>
+            <typeparam name="TStyle">Registration style.</typeparam>
             <param name="registration">The registration to configure.</param>
             <param name="lifetimeScopeTags">Additional tags applied for matching lifetime scopes.</param>
             <returns>A registration builder allowing further configuration of the component.</returns>
@@ -749,7 +675,6 @@
             Sets the provided registration to act as an <see cref="T:System.Web.Mvc.Filters.IOverrideFilter"/> for the specified controller.
             </summary>
             <param name="builder">The container builder.</param>
-            <returns>A registration builder allowing further configuration of the component.</returns>
         </member>
         <member name="M:Autofac.Integration.Mvc.RegistrationExtensions.OverrideActionFilterFor``1(Autofac.ContainerBuilder,System.Linq.Expressions.Expression{System.Action{``0}})">
             <summary>
@@ -757,14 +682,12 @@
             </summary>
             <param name="builder">The container builder.</param>
             <param name="actionSelector">The action selector.</param>
-            <returns>A registration builder allowing further configuration of the component.</returns>
         </member>
         <member name="M:Autofac.Integration.Mvc.RegistrationExtensions.OverrideAuthenticationFilterFor``1(Autofac.ContainerBuilder)">
             <summary>
             Sets the provided registration to act as an <see cref="T:System.Web.Mvc.Filters.IOverrideFilter"/> for the specified controller.
             </summary>
             <param name="builder">The container builder.</param>
-            <returns>A registration builder allowing further configuration of the component.</returns>
         </member>
         <member name="M:Autofac.Integration.Mvc.RegistrationExtensions.OverrideAuthenticationFilterFor``1(Autofac.ContainerBuilder,System.Linq.Expressions.Expression{System.Action{``0}})">
             <summary>
@@ -772,14 +695,12 @@
             </summary>
             <param name="builder">The container builder.</param>
             <param name="actionSelector">The action selector.</param>
-            <returns>A registration builder allowing further configuration of the component.</returns>
         </member>
         <member name="M:Autofac.Integration.Mvc.RegistrationExtensions.OverrideAuthorizationFilterFor``1(Autofac.ContainerBuilder)">
             <summary>
             Sets the provided registration to act as an <see cref="T:System.Web.Mvc.Filters.IOverrideFilter"/> for the specified controller.
             </summary>
             <param name="builder">The container builder.</param>
-            <returns>A registration builder allowing further configuration of the component.</returns>
         </member>
         <member name="M:Autofac.Integration.Mvc.RegistrationExtensions.OverrideAuthorizationFilterFor``1(Autofac.ContainerBuilder,System.Linq.Expressions.Expression{System.Action{``0}})">
             <summary>
@@ -787,14 +708,12 @@
             </summary>
             <param name="builder">The container builder.</param>
             <param name="actionSelector">The action selector.</param>
-            <returns>A registration builder allowing further configuration of the component.</returns>
         </member>
         <member name="M:Autofac.Integration.Mvc.RegistrationExtensions.OverrideExceptionFilterFor``1(Autofac.ContainerBuilder)">
             <summary>
             Sets the provided registration to act as an <see cref="T:System.Web.Mvc.Filters.IOverrideFilter"/> for the specified controller.
             </summary>
             <param name="builder">The container builder.</param>
-            <returns>A registration builder allowing further configuration of the component.</returns>
         </member>
         <member name="M:Autofac.Integration.Mvc.RegistrationExtensions.OverrideExceptionFilterFor``1(Autofac.ContainerBuilder,System.Linq.Expressions.Expression{System.Action{``0}})">
             <summary>
@@ -802,14 +721,12 @@
             </summary>
             <param name="builder">The container builder.</param>
             <param name="actionSelector">The action selector.</param>
-            <returns>A registration builder allowing further configuration of the component.</returns>
         </member>
         <member name="M:Autofac.Integration.Mvc.RegistrationExtensions.OverrideResultFilterFor``1(Autofac.ContainerBuilder)">
             <summary>
             Sets the provided registration to act as an <see cref="T:System.Web.Mvc.Filters.IOverrideFilter"/> for the specified controller.
             </summary>
             <param name="builder">The container builder.</param>
-            <returns>A registration builder allowing further configuration of the component.</returns>
         </member>
         <member name="M:Autofac.Integration.Mvc.RegistrationExtensions.OverrideResultFilterFor``1(Autofac.ContainerBuilder,System.Linq.Expressions.Expression{System.Action{``0}})">
             <summary>
@@ -817,7 +734,6 @@
             </summary>
             <param name="builder">The container builder.</param>
             <param name="actionSelector">The action selector.</param>
-            <returns>A registration builder allowing further configuration of the component.</returns>
         </member>
         <member name="M:Autofac.Integration.Mvc.RegistrationExtensions.RegisterControllers(Autofac.ContainerBuilder,System.Reflection.Assembly[])">
             <summary>
@@ -884,9 +800,40 @@
             </para>
             </remarks>
         </member>
+        <member name="T:Autofac.Integration.Mvc.RegistrationExtensionsResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Autofac.Integration.Mvc.RegistrationExtensionsResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Autofac.Integration.Mvc.RegistrationExtensionsResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Autofac.Integration.Mvc.RegistrationExtensionsResources.InvalidActionExpress">
+            <summary>
+              Looks up a localized string similar to The action method Expression is invalid. It should consist only of a Method call to a controller action method..
+            </summary>
+        </member>
+        <member name="P:Autofac.Integration.Mvc.RegistrationExtensionsResources.InvalidModelBinderType">
+            <summary>
+              Looks up a localized string similar to Type list may not be empty or contain all null values..
+            </summary>
+        </member>
+        <member name="P:Autofac.Integration.Mvc.RegistrationExtensionsResources.MustBeAssignableToFilterType">
+            <summary>
+              Looks up a localized string similar to The type &apos;{0}&apos; must be assignable to the filter type &apos;{1}&apos;..
+            </summary>
+        </member>
         <member name="T:Autofac.Integration.Mvc.RequestLifetimeHttpModule">
             <summary>
-            An <see cref="T:System.Web.IHttpModule"/> and <see cref="T:Autofac.Integration.Mvc.ILifetimeScopeProvider"/> implementation 
+            An <see cref="T:System.Web.IHttpModule"/> and <see cref="T:Autofac.Integration.Mvc.ILifetimeScopeProvider"/> implementation
             that creates a nested lifetime scope for each HTTP request.
             </summary>
         </member>
@@ -899,8 +846,8 @@
             <summary>
             Initializes a module and prepares it to handle requests.
             </summary>
-            <param name="context">An <see cref="T:System.Web.HttpApplication"/> that provides access to the 
-            methods, properties, and events common to all application objects within an ASP.NET application</param>
+            <param name="context">An <see cref="T:System.Web.HttpApplication"/> that provides access to the
+            methods, properties, and events common to all application objects within an ASP.NET application.</param>
             <exception cref="T:System.ArgumentNullException">
             Thrown if <paramref name="context" /> is <see langword="null" />.
             </exception>
@@ -909,6 +856,49 @@
             <summary>
             Disposes of the resources (other than memory) used by the module that implements <see cref="T:System.Web.IHttpModule"/>.
             </summary>
+        </member>
+        <member name="T:Autofac.Integration.Mvc.RequestLifetimeScopeProvider">
+            <summary>
+            Creates and disposes HTTP request based lifetime scopes.
+            </summary>
+            <remarks>
+            The provider is notified when a HTTP request ends by the <see cref="T:Autofac.Integration.Mvc.RequestLifetimeHttpModule"/>.
+            </remarks>
+        </member>
+        <member name="M:Autofac.Integration.Mvc.RequestLifetimeScopeProvider.#ctor(Autofac.ILifetimeScope)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Autofac.Integration.Mvc.RequestLifetimeScopeProvider"/> class.
+            </summary>
+            <param name="container">The parent container, usually the application container.</param>
+        </member>
+        <member name="P:Autofac.Integration.Mvc.RequestLifetimeScopeProvider.ApplicationContainer">
+            <summary>
+            Gets the global, application-wide container.
+            </summary>
+        </member>
+        <member name="M:Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScope(System.Action{Autofac.ContainerBuilder})">
+            <summary>
+            Gets a nested lifetime scope that services can be resolved from.
+            </summary>
+            <param name="configurationAction">
+            A configuration action that will execute during lifetime scope creation.
+            </param>
+            <returns>A new or existing nested lifetime scope.</returns>
+        </member>
+        <member name="M:Autofac.Integration.Mvc.RequestLifetimeScopeProvider.EndLifetimeScope">
+            <summary>
+            Ends the current HTTP request lifetime scope.
+            </summary>
+        </member>
+        <member name="M:Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScopeCore(System.Action{Autofac.ContainerBuilder})">
+            <summary>
+            Gets a lifetime scope for the current HTTP request. This method can be overridden
+            to alter the way that the life time scope is constructed.
+            </summary>
+            <param name="configurationAction">
+            A configuration action that will execute during lifetime scope creation.
+            </param>
+            <returns>A new lifetime scope for the current HTTP request.</returns>
         </member>
         <member name="T:Autofac.Integration.Mvc.RequestLifetimeScopeProviderResources">
             <summary>
@@ -945,7 +935,7 @@
             <see cref="T:System.Web.Mvc.ViewMasterPage"/> and <see cref="T:System.Web.Mvc.ViewUserControl"/> derived types.
             </remarks>
         </member>
-        <member name="M:Autofac.Integration.Mvc.ViewRegistrationSource.RegistrationsFor(Autofac.Core.Service,System.Func{Autofac.Core.Service,System.Collections.Generic.IEnumerable{Autofac.Core.IComponentRegistration}})">
+        <member name="M:Autofac.Integration.Mvc.ViewRegistrationSource.RegistrationsFor(Autofac.Core.Service,System.Func{Autofac.Core.Service,System.Collections.Generic.IEnumerable{Autofac.Core.ServiceRegistration}})">
             <summary>
             Retrieve registrations for an unregistered service, to be used
             by the container.
@@ -956,7 +946,7 @@
         </member>
         <member name="P:Autofac.Integration.Mvc.ViewRegistrationSource.IsAdapterForIndividualComponents">
             <summary>
-            Gets whether the registrations provided by this source are 1:1 adapters on top
+            Gets a value indicating whether the registrations provided by this source are 1:1 adapters on top
             of other components (I.e. like Meta, Func or Owned.)
             </summary>
         </member>

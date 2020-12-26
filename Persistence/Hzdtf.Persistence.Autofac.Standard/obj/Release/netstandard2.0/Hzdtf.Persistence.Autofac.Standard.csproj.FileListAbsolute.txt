@@ -49,10 +49,10 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\Persistence\Hzdtf.Persistence.Autofac
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Persistence\Hzdtf.Persistence.Autofac.Standard\bin\Release\netstandard2.0\Hzdtf.Platform.Contract.Standard.xml
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Persistence\Hzdtf.Persistence.Autofac.Standard\bin\Release\netstandard2.0\Hzdtf.Utility.Standard.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Persistence\Hzdtf.Persistence.Autofac.Standard\bin\Release\netstandard2.0\Hzdtf.Utility.Standard.xml
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\Persistence\Hzdtf.Persistence.Autofac.Standard\obj\Release\netstandard2.0\Hzdtf.Persistence.Autofac.Standard.csprojAssemblyReference.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Persistence\Hzdtf.Persistence.Autofac.Standard\obj\Release\netstandard2.0\Hzdtf.Persistence.Autofac.Standard.AssemblyInfoInputs.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Persistence\Hzdtf.Persistence.Autofac.Standard\obj\Release\netstandard2.0\Hzdtf.Persistence.Autofac.Standard.AssemblyInfo.cs
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Persistence\Hzdtf.Persistence.Autofac.Standard\obj\Release\netstandard2.0\Hzdtf.Persistence.Autofac.Standard.csproj.CoreCompileInputs.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Persistence\Hzdtf.Persistence.Autofac.Standard\obj\Release\netstandard2.0\Hzdtf.Persistence.Autofac.Standard.csproj.CopyComplete
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Persistence\Hzdtf.Persistence.Autofac.Standard\obj\Release\netstandard2.0\Hzdtf.Persistence.Autofac.Standard.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Persistence\Hzdtf.Persistence.Autofac.Standard\obj\Release\netstandard2.0\Hzdtf.Persistence.Autofac.Standard.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Persistence\Hzdtf.Persistence.Autofac.Standard\obj\Release\netstandard2.0\Hzdtf.Persistence.Autofac.Standard.csprojAssemblyReference.cache

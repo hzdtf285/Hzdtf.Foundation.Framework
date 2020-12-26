@@ -135,7 +135,7 @@
             Returns property based on selector strategy
             </summary>
             <param name="columnName">DataReader column name</param>
-            <returns>Poperty member map</returns>
+            <returns>Property member map</returns>
         </member>
         <member name="T:Dapper.DbString">
             <summary>
@@ -1415,7 +1415,7 @@
             <param name="commandTimeout">The command timeout (in seconds).</param>
             <param name="commandType">The type of command to execute.</param>
             <returns>
-            A sequence of data of the supplied type; if a basic type (int, string, etc) is queried then the data from the first column in assumed, otherwise an instance is
+            A sequence of data of the supplied type; if a basic type (int, string, etc) is queried then the data from the first column is assumed, otherwise an instance is
             created per row, and a direct column-name===member-name mapping is assumed (case insensitive).
             </returns>
         </member>
@@ -1647,6 +1647,11 @@
             <param name="cnn">The connection to query on.</param>
             <param name="command">The command to execute for this query.</param>
         </member>
+        <member name="M:Dapper.SqlMapper.ReadRow``1(Dapper.SqlMapper.CacheInfo,Dapper.SqlMapper.Identity,Dapper.CommandDefinition@,System.Type,System.Data.IDataReader)">
+            <summary>
+            Shared value deserialization path for QueryRowImpl and QueryRowAsync
+            </summary>
+        </member>
         <member name="M:Dapper.SqlMapper.Query``3(System.Data.IDbConnection,System.String,System.Func{``0,``1,``2},System.Object,System.Data.IDbTransaction,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
             <summary>
             Perform a multi-mapping query with 2 input types.
@@ -1824,7 +1829,7 @@
         </member>
         <member name="M:Dapper.SqlMapper.SanitizeParameterValue(System.Object)">
             <summary>
-            OBSOLETE: For internal usage only. Sanitizes the paramter value with proper type casting.
+            OBSOLETE: For internal usage only. Sanitizes the parameter value with proper type casting.
             </summary>
             <param name="value">The value to sanitize.</param>
         </member>
@@ -1833,7 +1838,7 @@
             Replace all literal tokens with their text form.
             </summary>
             <param name="parameters">The parameter lookup to do replacements with.</param>
-            <param name="command">The command to repalce parameters in.</param>
+            <param name="command">The command to replace parameters in.</param>
         </member>
         <member name="M:Dapper.SqlMapper.Format(System.Object)">
             <summary>
@@ -1867,7 +1872,7 @@
             Set custom mapping for type deserializers
             </summary>
             <param name="type">Entity type to override</param>
-            <param name="map">Mapping rules impementation, null to remove custom map</param>
+            <param name="map">Mapping rules implementation, null to remove custom map</param>
         </member>
         <member name="M:Dapper.SqlMapper.GetTypeDeserializer(System.Type,System.Data.IDataReader,System.Int32,System.Int32,System.Boolean)">
             <summary>
@@ -2603,7 +2608,7 @@
         <member name="P:Dapper.SqlMapper.Settings.InListStringSplitCount">
             <summary>
             If set (non-negative), when performing in-list expansions of integer types ("where id in @ids", etc), switch to a string_split based
-            operation if there are more than this many elements. Note that this feautre requires SQL Server 2016 / compatibility level 130 (or above).
+            operation if there are this many elements or more. Note that this feature requires SQL Server 2016 / compatibility level 130 (or above).
             </summary>
         </member>
         <member name="T:Dapper.SqlMapper.TypeHandler`1">
@@ -2640,7 +2645,7 @@
         </member>
         <member name="M:Dapper.SqlMapper.StringTypeHandler`1.Format(`0)">
             <summary>
-            Format an instace into a string (the instance will never be null)
+            Format an instance into a string (the instance will never be null)
             </summary>
             <param name="xml">The string to format.</param>
         </member>

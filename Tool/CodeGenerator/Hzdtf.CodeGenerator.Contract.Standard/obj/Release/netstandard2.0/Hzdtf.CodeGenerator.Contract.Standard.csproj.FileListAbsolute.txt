@@ -31,7 +31,6 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerato
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Contract.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Contract.Standard\bin\Release\netstandard2.0\Hzdtf.Utility.Standard.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Contract.Standard\bin\Release\netstandard2.0\Hzdtf.Utility.Standard.xml
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.CodeGenerator.Contract.Standard.csprojAssemblyReference.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.CodeGenerator.Contract.Standard.AssemblyInfoInputs.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.CodeGenerator.Contract.Standard.AssemblyInfo.cs
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.CodeGenerator.Contract.Standard.csproj.CoreCompileInputs.cache

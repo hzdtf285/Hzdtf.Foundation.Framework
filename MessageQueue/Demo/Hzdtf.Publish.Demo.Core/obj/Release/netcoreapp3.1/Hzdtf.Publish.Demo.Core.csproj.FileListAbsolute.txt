@@ -170,7 +170,6 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\Bin\Release\netcoreapp3.1\Hzdtf.Rabbit.Model.Standard.xml
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\Bin\Release\netcoreapp3.1\Hzdtf.Utility.Standard.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\Bin\Release\netcoreapp3.1\Hzdtf.Utility.Standard.xml
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\obj\Release\netcoreapp3.1\Hzdtf.Publish.Demo.Core.csprojAssemblyReference.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\obj\Release\netcoreapp3.1\Hzdtf.Publish.Demo.Core.AssemblyInfoInputs.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\obj\Release\netcoreapp3.1\Hzdtf.Publish.Demo.Core.AssemblyInfo.cs
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\obj\Release\netcoreapp3.1\Hzdtf.Publish.Demo.Core.csproj.CoreCompileInputs.cache
@@ -178,3 +177,4 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\obj\Release\netcoreapp3.1\Hzdtf.Publish.Demo.Core.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\obj\Release\netcoreapp3.1\Hzdtf.Publish.Demo.Core.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\obj\Release\netcoreapp3.1\Hzdtf.Publish.Demo.Core.genruntimeconfig.cache
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.Core\obj\Release\netcoreapp3.1\Hzdtf.Publish.Demo.Core.csprojAssemblyReference.cache

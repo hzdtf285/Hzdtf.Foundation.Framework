@@ -51,6 +51,10 @@ namespace Hzdtf.Logger.Integration.ENLog.Standard
         /// <param name="tags">标签</param>
         protected override void WriteStorage(string level, string msg, Exception ex = null, string source = null, params string[] tags)
         {
+            if (string.IsNullOrWhiteSpace(source) && ex != null)
+            {
+                source = ex.Source;
+            }
             var logger = string.IsNullOrWhiteSpace(source) || name.Equals(source) ? nlog : NLog.LogManager.GetLogger(source);
             msg += " 标签:" + string.Join(",", AppendLocalIdTags(tags));
 

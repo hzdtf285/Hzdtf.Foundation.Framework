@@ -298,9 +298,6 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\Controller\Hzdtf.BasicController.Fram
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Controller\Hzdtf.BasicController.Framework\Bin\Release\System.Memory.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Controller\Hzdtf.BasicController.Framework\Bin\Release\Hzdtf.Platform.Contract.Standard.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Controller\Hzdtf.BasicController.Framework\Bin\Release\Hzdtf.Logger.Contract.Standard.dll
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\Controller\Hzdtf.BasicController.Framework\Bin\Release\System.Numerics.Vectors.dll
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\Controller\Hzdtf.BasicController.Framework\Bin\Release\System.Runtime.CompilerServices.Unsafe.dll
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\Controller\Hzdtf.BasicController.Framework\Bin\Release\System.Buffers.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Controller\Hzdtf.BasicController.Framework\Bin\Release\Hzdtf.BasicFunction.Model.Standard.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Controller\Hzdtf.BasicController.Framework\Bin\Release\Hzdtf.BasicFunction.Model.Standard.xml
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Controller\Hzdtf.BasicController.Framework\Bin\Release\Hzdtf.BasicFunction.Service.Contract.Standard.pdb

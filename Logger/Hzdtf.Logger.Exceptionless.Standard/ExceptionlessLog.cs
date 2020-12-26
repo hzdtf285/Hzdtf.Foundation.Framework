@@ -32,6 +32,10 @@ namespace Hzdtf.Logger.Exceptionless.Standard
         /// <param name="tags">标签</param>
         protected override void WriteStorage(string level, string msg, Exception ex = null, string source = null, params string[] tags)
         {
+            if (string.IsNullOrWhiteSpace(source) && ex != null)
+            {
+                source = ex.Source;
+            }
             var logLevel = LogLevelHelper.Parse(level);
             var exLevel = LogLevel.Off;
             switch (logLevel)

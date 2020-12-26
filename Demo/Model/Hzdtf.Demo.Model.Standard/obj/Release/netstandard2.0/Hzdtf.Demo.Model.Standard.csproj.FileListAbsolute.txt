@@ -29,7 +29,6 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\Demo\Model\Hzdtf.Demo.Model.Standard\
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Demo\Model\Hzdtf.Demo.Model.Standard\bin\Release\netstandard2.0\Hzdtf.WorkFlow.Model.Standard.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Demo\Model\Hzdtf.Demo.Model.Standard\bin\Release\netstandard2.0\Hzdtf.WorkFlow.Model.Standard.xml
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Demo\Model\Hzdtf.Demo.Model.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.pdb
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\Demo\Model\Hzdtf.Demo.Model.Standard\obj\Release\netstandard2.0\Hzdtf.Demo.Model.Standard.csprojAssemblyReference.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Demo\Model\Hzdtf.Demo.Model.Standard\obj\Release\netstandard2.0\Hzdtf.Demo.Model.Standard.AssemblyInfoInputs.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Demo\Model\Hzdtf.Demo.Model.Standard\obj\Release\netstandard2.0\Hzdtf.Demo.Model.Standard.AssemblyInfo.cs
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Demo\Model\Hzdtf.Demo.Model.Standard\obj\Release\netstandard2.0\Hzdtf.Demo.Model.Standard.csproj.CoreCompileInputs.cache

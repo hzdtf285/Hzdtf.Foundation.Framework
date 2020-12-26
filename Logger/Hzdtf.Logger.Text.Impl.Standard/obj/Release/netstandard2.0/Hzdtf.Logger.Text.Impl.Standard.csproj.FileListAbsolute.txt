@@ -37,7 +37,6 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Text.Impl.Standar
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Text.Impl.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Text.Impl.Standard\bin\Release\netstandard2.0\Hzdtf.Utility.Standard.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Text.Impl.Standard\bin\Release\netstandard2.0\Hzdtf.Utility.Standard.xml
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Text.Impl.Standard\obj\Release\netstandard2.0\Hzdtf.Logger.Text.Impl.Standard.csprojAssemblyReference.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Text.Impl.Standard\obj\Release\netstandard2.0\Hzdtf.Logger.Text.Impl.Standard.AssemblyInfoInputs.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Text.Impl.Standard\obj\Release\netstandard2.0\Hzdtf.Logger.Text.Impl.Standard.AssemblyInfo.cs
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Text.Impl.Standard\obj\Release\netstandard2.0\Hzdtf.Logger.Text.Impl.Standard.csproj.CoreCompileInputs.cache

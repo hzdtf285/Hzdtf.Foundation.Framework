@@ -277,3 +277,4 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Rpc\Hzdtf.MessageQueue.R
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcClient.Console.Core\obj\Release\netcoreapp3.1\Hzdtf.MessageQueue.RpcClient.Console.Core.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcClient.Console.Core\obj\Release\netcoreapp3.1\Hzdtf.MessageQueue.RpcClient.Console.Core.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcClient.Console.Core\obj\Release\netcoreapp3.1\Hzdtf.MessageQueue.RpcClient.Console.Core.genruntimeconfig.cache
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcClient.Console.Core\bin\Release\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll

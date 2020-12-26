@@ -49,7 +49,6 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Rpc\Hzdtf.MessageQueue.R
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\bin\Release\netstandard2.0\Hzdtf.Utility.Standard.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\bin\Release\netstandard2.0\Hzdtf.Utility.Standard.xml
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.pdb
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.csprojAssemblyReference.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.AssemblyInfoInputs.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.AssemblyInfo.cs
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Rpc\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.MessageQueue.Rpc.Business.Contract.Standard.csproj.CoreCompileInputs.cache

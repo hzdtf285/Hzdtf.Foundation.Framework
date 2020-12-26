@@ -4,47 +4,48 @@
         <name>Autofac.Integration.WebApi</name>
     </assembly>
     <members>
-        <member name="T:Autofac.Integration.WebApi.AutofacActionFilterAdapter">
-            <summary>
-            This is an adapter responsible for wrapping the old style <see cref="T:Autofac.Integration.WebApi.IAutofacActionFilter"/>
-            and converting it to a <see cref="T:Autofac.Integration.WebApi.IAutofacContinuationActionFilter"/>.
-            </summary>
-            <remarks>
-            The adapter from old -> new is registered in <see cref="M:Autofac.Integration.WebApi.RegistrationExtensions.RegisterWebApiFilterProvider(Autofac.ContainerBuilder,System.Web.Http.HttpConfiguration)"/>.
-            </remarks>
-        </member>
-        <member name="M:Autofac.Integration.WebApi.AutofacActionFilterAdapter.CallOnActionExecutedAsync(System.Web.Http.Controllers.HttpActionContext,System.Threading.CancellationToken,System.Func{System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}})">
-            <summary>
-            The content of this method is taken from the ActionFilterAttribute code in the ASP.NET source, since
-            that is basically the reference implementation for invoking an async filter's OnActionExecuted correctly.
-            </summary>
-        </member>
-        <member name="T:Autofac.Integration.WebApi.ContinuationActionFilterOverrideWrapper">
+        <member name="T:Autofac.Integration.WebApi.AuthenticationFilterOverrideWrapper">
             <summary>
             Resolves a filter override for the specified metadata for each controller request.
             </summary>
         </member>
-        <member name="M:Autofac.Integration.WebApi.ContinuationActionFilterOverrideWrapper.#ctor(System.Collections.Generic.HashSet{Autofac.Integration.WebApi.FilterMetadata})">
+        <member name="M:Autofac.Integration.WebApi.AuthenticationFilterOverrideWrapper.#ctor(System.Collections.Generic.HashSet{Autofac.Integration.WebApi.FilterMetadata})">
             <summary>
-            Initializes a new instance of the <see cref="T:Autofac.Integration.WebApi.ContinuationActionFilterOverrideWrapper"/> class.
+            Initializes a new instance of the <see cref="T:Autofac.Integration.WebApi.AuthenticationFilterOverrideWrapper"/> class.
             </summary>
             <param name="filterMetadata">The filter metadata.</param>
         </member>
-        <member name="P:Autofac.Integration.WebApi.ContinuationActionFilterOverrideWrapper.FiltersToOverride">
+        <member name="P:Autofac.Integration.WebApi.AuthenticationFilterOverrideWrapper.FiltersToOverride">
             <summary>
             Gets the filters to override.
             </summary>
         </member>
-        <member name="T:Autofac.Integration.WebApi.ContinuationActionFilterWrapper">
+        <member name="T:Autofac.Integration.WebApi.AuthenticationFilterWrapper">
             <summary>
             Resolves a filter for the specified metadata for each controller request.
             </summary>
         </member>
-        <member name="M:Autofac.Integration.WebApi.ContinuationActionFilterWrapper.#ctor(System.Collections.Generic.HashSet{Autofac.Integration.WebApi.FilterMetadata})">
+        <member name="M:Autofac.Integration.WebApi.AuthenticationFilterWrapper.#ctor(System.Collections.Generic.HashSet{Autofac.Integration.WebApi.FilterMetadata})">
             <summary>
-            Initializes a new instance of the <see cref="T:Autofac.Integration.WebApi.ContinuationActionFilterWrapper"/> class.
+            Initializes a new instance of the <see cref="T:Autofac.Integration.WebApi.AuthenticationFilterWrapper"/> class.
             </summary>
-            <param name="filterMetadata">The collection of filter metadata blocks that this wrapper should run.</param>
+            <param name="filterMetadata">The filter metadata.</param>
+        </member>
+        <member name="T:Autofac.Integration.WebApi.AuthorizationFilterOverrideWrapper">
+            <summary>
+            Resolves a filter override for the specified metadata for each controller request.
+            </summary>
+        </member>
+        <member name="M:Autofac.Integration.WebApi.AuthorizationFilterOverrideWrapper.#ctor(System.Collections.Generic.HashSet{Autofac.Integration.WebApi.FilterMetadata})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Autofac.Integration.WebApi.AuthorizationFilterOverrideWrapper"/> class.
+            </summary>
+            <param name="filterMetadata">The filter metadata.</param>
+        </member>
+        <member name="P:Autofac.Integration.WebApi.AuthorizationFilterOverrideWrapper.FiltersToOverride">
+            <summary>
+            Gets the filters to override.
+            </summary>
         </member>
         <member name="T:Autofac.Integration.WebApi.AuthorizationFilterWrapper">
             <summary>
@@ -66,6 +67,60 @@
             <exception cref="T:System.ArgumentNullException">
             Thrown if <paramref name="actionContext" /> is <see langword="null" />.
             </exception>
+        </member>
+        <member name="T:Autofac.Integration.WebApi.AutofacActionFilterAdapter">
+            <summary>
+            This is an adapter responsible for wrapping the old style <see cref="T:Autofac.Integration.WebApi.IAutofacActionFilter"/>
+            and converting it to a <see cref="T:Autofac.Integration.WebApi.IAutofacContinuationActionFilter"/>.
+            </summary>
+            <remarks>
+            The adapter from old -> new is registered in <see cref="M:Autofac.Integration.WebApi.RegistrationExtensions.RegisterWebApiFilterProvider(Autofac.ContainerBuilder,System.Web.Http.HttpConfiguration)"/>.
+            </remarks>
+        </member>
+        <member name="M:Autofac.Integration.WebApi.AutofacActionFilterAdapter.CallOnActionExecutedAsync(System.Web.Http.Controllers.HttpActionContext,System.Threading.CancellationToken,System.Func{System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}})">
+            <summary>
+            The content of this method is taken from the ActionFilterAttribute code in the ASP.NET source, since
+            that is basically the reference implementation for invoking an async filter's OnActionExecuted correctly.
+            </summary>
+        </member>
+        <member name="T:Autofac.Integration.WebApi.AutofacControllerConfigurationAttribute">
+            <summary>
+            Configures the controller descriptor with per-controller services from the container.
+            </summary>
+        </member>
+        <member name="M:Autofac.Integration.WebApi.AutofacControllerConfigurationAttribute.Initialize(System.Web.Http.Controllers.HttpControllerSettings,System.Web.Http.Controllers.HttpControllerDescriptor)">
+            <summary>
+            Callback invoked to set per-controller overrides for this controllerDescriptor.
+            </summary>
+            <param name="controllerSettings">The controller settings to initialize.</param>
+            <param name="controllerDescriptor">The controller descriptor. Note that the
+            <see cref="T:System.Web.Http.Controllers.HttpControllerDescriptor"/> can be
+            associated with the derived controller type given that <see cref="T:System.Web.Http.Controllers.IControllerConfiguration"/>
+            is inherited.</param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown if <paramref name="controllerSettings" /> or <paramref name="controllerDescriptor" /> is <see langword="null" />.
+            </exception>
+        </member>
+        <member name="T:Autofac.Integration.WebApi.AutofacControllerConfigurationAttributeResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Autofac.Integration.WebApi.AutofacControllerConfigurationAttributeResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Autofac.Integration.WebApi.AutofacControllerConfigurationAttributeResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Autofac.Integration.WebApi.AutofacControllerConfigurationAttributeResources.DependencyResolverMissing">
+            <summary>
+              Looks up a localized string similar to The &apos;{0}&apos; must be configured as the dependency resolver for Web API before the &apos;{1}&apos; can resolve services from the container for a controller type..
+            </summary>
         </member>
         <member name="T:Autofac.Integration.WebApi.AutofacFilterCategory">
             <summary>
@@ -277,6 +332,33 @@
             Thrown if <paramref name="configuration" /> is <see langword="null" />.
             </exception>
         </member>
+        <member name="T:Autofac.Integration.WebApi.ContinuationActionFilterOverrideWrapper">
+            <summary>
+            Resolves a filter override for the specified metadata for each controller request.
+            </summary>
+        </member>
+        <member name="M:Autofac.Integration.WebApi.ContinuationActionFilterOverrideWrapper.#ctor(System.Collections.Generic.HashSet{Autofac.Integration.WebApi.FilterMetadata})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Autofac.Integration.WebApi.ContinuationActionFilterOverrideWrapper"/> class.
+            </summary>
+            <param name="filterMetadata">The filter metadata.</param>
+        </member>
+        <member name="P:Autofac.Integration.WebApi.ContinuationActionFilterOverrideWrapper.FiltersToOverride">
+            <summary>
+            Gets the filters to override.
+            </summary>
+        </member>
+        <member name="T:Autofac.Integration.WebApi.ContinuationActionFilterWrapper">
+            <summary>
+            Resolves a filter for the specified metadata for each controller request.
+            </summary>
+        </member>
+        <member name="M:Autofac.Integration.WebApi.ContinuationActionFilterWrapper.#ctor(System.Collections.Generic.HashSet{Autofac.Integration.WebApi.FilterMetadata})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Autofac.Integration.WebApi.ContinuationActionFilterWrapper"/> class.
+            </summary>
+            <param name="filterMetadata">The collection of filter metadata blocks that this wrapper should run.</param>
+        </member>
         <member name="T:Autofac.Integration.WebApi.ControllerTypeKey">
             <summary>
             A service key used to register services per controller type.
@@ -319,137 +401,6 @@
             <returns>
             A hash code for the current <see cref="T:System.Object"/>.
             </returns>
-        </member>
-        <member name="T:Autofac.Integration.WebApi.AuthenticationFilterWrapper">
-            <summary>
-            Resolves a filter for the specified metadata for each controller request.
-            </summary>
-        </member>
-        <member name="M:Autofac.Integration.WebApi.AuthenticationFilterWrapper.#ctor(System.Collections.Generic.HashSet{Autofac.Integration.WebApi.FilterMetadata})">
-            <summary>
-            Initializes a new instance of the <see cref="T:Autofac.Integration.WebApi.AuthenticationFilterWrapper"/> class.
-            </summary>
-            <param name="filterMetadata">The filter metadata.</param>
-        </member>
-        <member name="T:Autofac.Integration.WebApi.AuthenticationFilterOverrideWrapper">
-            <summary>
-            Resolves a filter override for the specified metadata for each controller request.
-            </summary>
-        </member>
-        <member name="M:Autofac.Integration.WebApi.AuthenticationFilterOverrideWrapper.#ctor(System.Collections.Generic.HashSet{Autofac.Integration.WebApi.FilterMetadata})">
-            <summary>
-            Initializes a new instance of the <see cref="T:Autofac.Integration.WebApi.AuthenticationFilterOverrideWrapper"/> class.
-            </summary>
-            <param name="filterMetadata">The filter metadata.</param>
-        </member>
-        <member name="P:Autofac.Integration.WebApi.AuthenticationFilterOverrideWrapper.FiltersToOverride">
-            <summary>
-            Gets the filters to override.
-            </summary>
-        </member>
-        <member name="T:Autofac.Integration.WebApi.AuthorizationFilterOverrideWrapper">
-            <summary>
-            Resolves a filter override for the specified metadata for each controller request.
-            </summary>
-        </member>
-        <member name="M:Autofac.Integration.WebApi.AuthorizationFilterOverrideWrapper.#ctor(System.Collections.Generic.HashSet{Autofac.Integration.WebApi.FilterMetadata})">
-            <summary>
-            Initializes a new instance of the <see cref="T:Autofac.Integration.WebApi.AuthorizationFilterOverrideWrapper"/> class.
-            </summary>
-            <param name="filterMetadata">The filter metadata.</param>
-        </member>
-        <member name="P:Autofac.Integration.WebApi.AuthorizationFilterOverrideWrapper.FiltersToOverride">
-            <summary>
-            Gets the filters to override.
-            </summary>
-        </member>
-        <member name="T:Autofac.Integration.WebApi.ExceptionFilterOverrideWrapper">
-            <summary>
-            Resolves a filter override for the specified metadata for each controller request.
-            </summary>
-        </member>
-        <member name="M:Autofac.Integration.WebApi.ExceptionFilterOverrideWrapper.#ctor(System.Collections.Generic.HashSet{Autofac.Integration.WebApi.FilterMetadata})">
-            <summary>
-            Initializes a new instance of the <see cref="T:Autofac.Integration.WebApi.ExceptionFilterOverrideWrapper"/> class.
-            </summary>
-            <param name="filterMetadata">The filter metadata.</param>
-        </member>
-        <member name="P:Autofac.Integration.WebApi.ExceptionFilterOverrideWrapper.FiltersToOverride">
-            <summary>
-            Gets the filters to override.
-            </summary>
-        </member>
-        <member name="T:Autofac.Integration.WebApi.FilterPredicateMetadata">
-            <summary>
-            Metadata block for an individual filter predicate.
-            </summary>
-        </member>
-        <member name="P:Autofac.Integration.WebApi.FilterPredicateMetadata.Predicate">
-            <summary>
-            Gets or sets the callback that determines if a filter matches the action descriptor.
-            Returns true/false to include the filter or not.
-            </summary>
-        </member>
-        <member name="P:Autofac.Integration.WebApi.FilterPredicateMetadata.Scope">
-            <summary>
-            Gets or sets the scope of the filter.
-            </summary>
-            <remarks>
-            We need the scope of this filter registration so we can create the FilterInfo later.
-            </remarks>
-        </member>
-        <member name="P:Autofac.Integration.WebApi.FilterPredicateMetadata.FilterCategory">
-            <summary>
-            Gets or sets the filter category, used to group filters and control execution order.
-            </summary>
-        </member>
-        <member name="T:Autofac.Integration.WebApi.HttpConfigurationExtensions">
-            <summary>
-            Extension methods for <see cref="T:System.Web.Http.HttpConfiguration"/> to enable Web API and Autofac integration.
-            </summary>
-        </member>
-        <member name="M:Autofac.Integration.WebApi.HttpConfigurationExtensions.RegisterHttpRequestMessage(System.Web.Http.HttpConfiguration)">
-            <summary>
-            Makes the current <see cref="T:System.Net.Http.HttpRequestMessage"/> resolvable through the dependency scope.
-            </summary>
-            <param name="config">The HTTP server configuration.</param>
-            <exception cref="T:System.ArgumentNullException">
-            Thrown if <paramref name="config" /> is <see langword="null" />.
-            </exception>
-        </member>
-        <member name="T:Autofac.Integration.WebApi.IAutofacContinuationActionFilter">
-            <summary>
-            An action filter that will be created for each controller request, and
-            executes using continuations, so the async context is preserved.
-            </summary>
-        </member>
-        <member name="M:Autofac.Integration.WebApi.IAutofacContinuationActionFilter.ExecuteActionFilterAsync(System.Web.Http.Controllers.HttpActionContext,System.Threading.CancellationToken,System.Func{System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}})">
-            <summary>
-            The method called when the filter executes. The filter should call 'next' to
-            continue processing the request.
-            </summary>
-            <param name="actionContext">The context of the current action.</param>
-            <param name="cancellationToken">A cancellation token for the request.</param>
-            <param name="next">The function to call that invokes the next filter in the chain.</param>
-        </member>
-        <member name="T:Autofac.Integration.WebApi.IAutofacAuthenticationFilter">
-            <summary>
-            An authentication filter that will be created for each controller request.
-            </summary>
-        </member>
-        <member name="M:Autofac.Integration.WebApi.IAutofacAuthenticationFilter.AuthenticateAsync(System.Web.Http.Filters.HttpAuthenticationContext,System.Threading.CancellationToken)">
-            <summary>
-            Called when a request requires authentication.
-            </summary>
-            <param name="context">The context for the authentication.</param>
-            <param name="cancellationToken">A cancellation token for signaling task ending.</param>
-        </member>
-        <member name="M:Autofac.Integration.WebApi.IAutofacAuthenticationFilter.ChallengeAsync(System.Web.Http.Filters.HttpAuthenticationChallengeContext,System.Threading.CancellationToken)">
-            <summary>
-            Called when an authentication challenge is required.
-            </summary>
-            <param name="context">The context for the authentication challenge.</param>
-            <param name="cancellationToken">A cancellation token for signaling task ending.</param>
         </member>
         <member name="T:Autofac.Integration.WebApi.CurrentRequestHandler">
             <summary>
@@ -494,6 +445,22 @@
             The dependency scope from which the request lifetime scope should be retrieved.
             </param>
         </member>
+        <member name="T:Autofac.Integration.WebApi.ExceptionFilterOverrideWrapper">
+            <summary>
+            Resolves a filter override for the specified metadata for each controller request.
+            </summary>
+        </member>
+        <member name="M:Autofac.Integration.WebApi.ExceptionFilterOverrideWrapper.#ctor(System.Collections.Generic.HashSet{Autofac.Integration.WebApi.FilterMetadata})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Autofac.Integration.WebApi.ExceptionFilterOverrideWrapper"/> class.
+            </summary>
+            <param name="filterMetadata">The filter metadata.</param>
+        </member>
+        <member name="P:Autofac.Integration.WebApi.ExceptionFilterOverrideWrapper.FiltersToOverride">
+            <summary>
+            Gets the filters to override.
+            </summary>
+        </member>
         <member name="T:Autofac.Integration.WebApi.ExceptionFilterWrapper">
             <summary>
             Resolves a filter for the specified metadata for each controller request.
@@ -515,6 +482,59 @@
             Thrown if <paramref name="actionExecutedContext" /> is <see langword="null" />.
             </exception>
         </member>
+        <member name="T:Autofac.Integration.WebApi.FilterMetadata">
+            <summary>
+            Metadata interface for filter registrations.
+            </summary>
+        </member>
+        <member name="P:Autofac.Integration.WebApi.FilterMetadata.Id">
+            <summary>
+            Gets a unique ID for this filter registration.
+            </summary>
+        </member>
+        <member name="P:Autofac.Integration.WebApi.FilterMetadata.PredicateSet">
+            <summary>
+            Gets the registered set of predicates for this filter.
+            </summary>
+        </member>
+        <member name="T:Autofac.Integration.WebApi.FilterPredicateMetadata">
+            <summary>
+            Metadata block for an individual filter predicate.
+            </summary>
+        </member>
+        <member name="P:Autofac.Integration.WebApi.FilterPredicateMetadata.Predicate">
+            <summary>
+            Gets or sets the callback that determines if a filter matches the action descriptor.
+            Returns true/false to include the filter or not.
+            </summary>
+        </member>
+        <member name="P:Autofac.Integration.WebApi.FilterPredicateMetadata.Scope">
+            <summary>
+            Gets or sets the scope of the filter.
+            </summary>
+            <remarks>
+            We need the scope of this filter registration so we can create the FilterInfo later.
+            </remarks>
+        </member>
+        <member name="P:Autofac.Integration.WebApi.FilterPredicateMetadata.FilterCategory">
+            <summary>
+            Gets or sets the filter category, used to group filters and control execution order.
+            </summary>
+        </member>
+        <member name="T:Autofac.Integration.WebApi.HttpConfigurationExtensions">
+            <summary>
+            Extension methods for <see cref="T:System.Web.Http.HttpConfiguration"/> to enable Web API and Autofac integration.
+            </summary>
+        </member>
+        <member name="M:Autofac.Integration.WebApi.HttpConfigurationExtensions.RegisterHttpRequestMessage(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Makes the current <see cref="T:System.Net.Http.HttpRequestMessage"/> resolvable through the dependency scope.
+            </summary>
+            <param name="config">The HTTP server configuration.</param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown if <paramref name="config" /> is <see langword="null" />.
+            </exception>
+        </member>
         <member name="T:Autofac.Integration.WebApi.IAutofacActionFilter">
             <summary>
             An action filter that will be created for each controller request.
@@ -534,6 +554,25 @@
             <param name="actionContext">The context for the action.</param>
             <param name="cancellationToken">A cancellation token for signaling task ending.</param>
         </member>
+        <member name="T:Autofac.Integration.WebApi.IAutofacAuthenticationFilter">
+            <summary>
+            An authentication filter that will be created for each controller request.
+            </summary>
+        </member>
+        <member name="M:Autofac.Integration.WebApi.IAutofacAuthenticationFilter.AuthenticateAsync(System.Web.Http.Filters.HttpAuthenticationContext,System.Threading.CancellationToken)">
+            <summary>
+            Called when a request requires authentication.
+            </summary>
+            <param name="context">The context for the authentication.</param>
+            <param name="cancellationToken">A cancellation token for signaling task ending.</param>
+        </member>
+        <member name="M:Autofac.Integration.WebApi.IAutofacAuthenticationFilter.ChallengeAsync(System.Web.Http.Filters.HttpAuthenticationChallengeContext,System.Threading.CancellationToken)">
+            <summary>
+            Called when an authentication challenge is required.
+            </summary>
+            <param name="context">The context for the authentication challenge.</param>
+            <param name="cancellationToken">A cancellation token for signaling task ending.</param>
+        </member>
         <member name="T:Autofac.Integration.WebApi.IAutofacAuthorizationFilter">
             <summary>
             An authorization filter that will be created for each controller request.
@@ -546,6 +585,21 @@
             <param name="actionContext">The context for the action.</param>
             <param name="cancellationToken">A cancellation token for signaling task ending.</param>
         </member>
+        <member name="T:Autofac.Integration.WebApi.IAutofacContinuationActionFilter">
+            <summary>
+            An action filter that will be created for each controller request, and
+            executes using continuations, so the async context is preserved.
+            </summary>
+        </member>
+        <member name="M:Autofac.Integration.WebApi.IAutofacContinuationActionFilter.ExecuteActionFilterAsync(System.Web.Http.Controllers.HttpActionContext,System.Threading.CancellationToken,System.Func{System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}})">
+            <summary>
+            The method called when the filter executes. The filter should call 'next' to
+            continue processing the request.
+            </summary>
+            <param name="actionContext">The context of the current action.</param>
+            <param name="cancellationToken">A cancellation token for the request.</param>
+            <param name="next">The function to call that invokes the next filter in the chain.</param>
+        </member>
         <member name="T:Autofac.Integration.WebApi.IAutofacExceptionFilter">
             <summary>
             An exception filter that will be created for each controller request.
@@ -557,60 +611,6 @@
             </summary>
             <param name="actionExecutedContext">The context for the action.</param>
             <param name="cancellationToken">A cancellation token for signaling task ending.</param>
-        </member>
-        <member name="T:Autofac.Integration.WebApi.FilterMetadata">
-            <summary>
-            Metadata interface for filter registrations.
-            </summary>
-        </member>
-        <member name="P:Autofac.Integration.WebApi.FilterMetadata.Id">
-            <summary>
-            Gets a unique ID for this filter registration.
-            </summary>
-        </member>
-        <member name="P:Autofac.Integration.WebApi.FilterMetadata.PredicateSet">
-            <summary>
-            Gets the registered set of predicates for this filter.
-            </summary>
-        </member>
-        <member name="T:Autofac.Integration.WebApi.AutofacControllerConfigurationAttribute">
-            <summary>
-            Configures the controller descriptor with per-controller services from the container.
-            </summary>
-        </member>
-        <member name="M:Autofac.Integration.WebApi.AutofacControllerConfigurationAttribute.Initialize(System.Web.Http.Controllers.HttpControllerSettings,System.Web.Http.Controllers.HttpControllerDescriptor)">
-            <summary>
-            Callback invoked to set per-controller overrides for this controllerDescriptor.
-            </summary>
-            <param name="controllerSettings">The controller settings to initialize.</param>
-            <param name="controllerDescriptor">The controller descriptor. Note that the
-            <see cref="T:System.Web.Http.Controllers.HttpControllerDescriptor"/> can be
-            associated with the derived controller type given that <see cref="T:System.Web.Http.Controllers.IControllerConfiguration"/>
-            is inherited.</param>
-            <exception cref="T:System.ArgumentNullException">
-            Thrown if <paramref name="controllerSettings" /> or <paramref name="controllerDescriptor" /> is <see langword="null" />.
-            </exception>
-        </member>
-        <member name="T:Autofac.Integration.WebApi.AutofacControllerConfigurationAttributeResources">
-            <summary>
-              A strongly-typed resource class, for looking up localized strings, etc.
-            </summary>
-        </member>
-        <member name="P:Autofac.Integration.WebApi.AutofacControllerConfigurationAttributeResources.ResourceManager">
-            <summary>
-              Returns the cached ResourceManager instance used by this class.
-            </summary>
-        </member>
-        <member name="P:Autofac.Integration.WebApi.AutofacControllerConfigurationAttributeResources.Culture">
-            <summary>
-              Overrides the current thread's CurrentUICulture property for all
-              resource lookups using this strongly typed resource class.
-            </summary>
-        </member>
-        <member name="P:Autofac.Integration.WebApi.AutofacControllerConfigurationAttributeResources.DependencyResolverMissing">
-            <summary>
-              Looks up a localized string similar to The &apos;{0}&apos; must be configured as the dependency resolver for Web API before the &apos;{1}&apos; can resolve services from the container for a controller type..
-            </summary>
         </member>
         <member name="T:Autofac.Integration.WebApi.RegistrationExtensions">
             <summary>
