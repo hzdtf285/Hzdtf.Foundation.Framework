@@ -52,7 +52,7 @@ namespace Hzdtf.Logger.Contract.Standard
         private string GetLogContent(string level, string msg, Exception ex = null, string source = null, params string[] tags)
         {
             string exMsg = ex == null ? null : string.Format("{0}异常:Message:{1}.Description:{2}", SectionPartitionSymbol(), ex.Message, ex.ToString());
-            string tagMsg = tags == null || tags.Length == 0 ? null : string.Format("{0}标签:{1}", SectionPartitionSymbol(), string.Join(",", tags));
+            string tagMsg = tags == null || tags.Length == 0 ? null : string.Format("{0}标签:{1}", SectionPartitionSymbol(), string.Join(",", AppendLocalIdTags(tags)));
 
             return string.Format("时间:{0}{1}级别:{2}{1}来源:{6}{1}消息:{3}{4}{5}{7}",
                 DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"),

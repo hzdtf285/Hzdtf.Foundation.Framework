@@ -20,6 +20,11 @@
             同步等级
             </summary>
         </member>
+        <member name="F:Hzdtf.Logger.Contract.Standard.ConfigLogRecordLevel.isSet">
+            <summary>
+            是否设置
+            </summary>
+        </member>
         <member name="P:Hzdtf.Logger.Contract.Standard.ConfigLogRecordLevel.AppConfig">
             <summary>
             应用配置
@@ -283,6 +288,11 @@
             日志记录级别
             </summary>
         </member>
+        <member name="F:Hzdtf.Logger.Contract.Standard.LogBase.localIdTags">
+            <summary>
+            本地ID标签数组
+            </summary>
+        </member>
         <member name="M:Hzdtf.Logger.Contract.Standard.LogBase.Trace(System.String,System.Exception,System.String,System.String[])">
             <summary>
             跟踪
@@ -356,6 +366,13 @@
             <param name="ex">异常</param>
             <param name="source">来源</param>
             <param name="tags">标签</param>
+        </member>
+        <member name="M:Hzdtf.Logger.Contract.Standard.LogBase.AppendLocalIdTags(System.String[])">
+            <summary>
+            追加本地标识标签
+            </summary>
+            <param name="tag">标签</param>
+            <returns>本地标识标签</returns>
         </member>
         <member name="M:Hzdtf.Logger.Contract.Standard.LogBase.TraceAsync(System.String,System.Exception,System.String,System.String[])">
             <summary>

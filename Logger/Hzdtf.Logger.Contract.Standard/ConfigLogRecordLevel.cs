@@ -25,6 +25,11 @@ namespace Hzdtf.Logger.Contract.Standard
         private static readonly object syncLevel = new object();
 
         /// <summary>
+        /// 是否设置
+        /// </summary>
+        private static bool isSet = false;
+
+        /// <summary>
         /// 应用配置
         /// </summary>
         public IAppConfiguration AppConfig
@@ -39,24 +44,26 @@ namespace Hzdtf.Logger.Contract.Standard
         /// <returns>记录级别</returns>
         public string GetRecordLevel()
         {
-            if (string.IsNullOrWhiteSpace(level))
+            if (isSet)
             {
-                if (string.IsNullOrWhiteSpace(AppConfig["Logging:LogLevel:Default"]))
+                return level;
+            }
+
+            if (string.IsNullOrWhiteSpace(AppConfig["Logging:LogLevel:Default"]))
+            {
+                if (string.IsNullOrWhiteSpace(AppConfig["HzdtfLog:LogLevel:Default"]))
                 {
-                    if (string.IsNullOrWhiteSpace(AppConfig["HzdtfLog:LogLevel:Default"]))
-                    {
-                        ILogRecordLevel logLevel = new DefaultLogRecordLevel();
-                        return logLevel.GetRecordLevel();
-                    }
-                    else
-                    {
-                        return AppConfig["HzdtfLog:LogLevel:Default"];
-                    }
+                    ILogRecordLevel logLevel = new DefaultLogRecordLevel();
+                    SetRecordLevel(logLevel.GetRecordLevel());
                 }
                 else
                 {
-                    return AppConfig["Logging:LogLevel:Default"];
+                    return AppConfig["HzdtfLog:LogLevel:Default"];
                 }
+            }
+            else
+            {
+                return AppConfig["Logging:LogLevel:Default"];
             }
 
             return level;
@@ -71,6 +78,7 @@ namespace Hzdtf.Logger.Contract.Standard
             lock (syncLevel)
             {
                 ConfigLogRecordLevel.level = level;
+                ConfigLogRecordLevel.isSet = true;
             }
         }
     }

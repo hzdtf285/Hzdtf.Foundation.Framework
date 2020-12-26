@@ -73,10 +73,7 @@ namespace Hzdtf.Logger.Exceptionless.Standard
             }
 
             var builder = ExceptionlessClient.Default.CreateLog(source, msg, exLevel);
-            if (!tags.IsNullOrLength0())
-            {
-                builder.AddTags(tags);
-            }
+            builder.AddTags(AppendLocalIdTags(tags));
 
             builder.Submit();
         }

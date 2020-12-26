@@ -52,10 +52,7 @@ namespace Hzdtf.Logger.Integration.ENLog.Standard
         protected override void WriteStorage(string level, string msg, Exception ex = null, string source = null, params string[] tags)
         {
             var logger = string.IsNullOrWhiteSpace(source) || name.Equals(source) ? nlog : NLog.LogManager.GetLogger(source);
-            if (!tags.IsNullOrLength0())
-            {
-                msg += " 标签:" + JsonUtil.SerializeIgnoreNull(tags);
-            }
+            msg += " 标签:" + string.Join(",", AppendLocalIdTags(tags));
 
             var levelEnum = LogLevelHelper.Parse(level);
             switch (levelEnum)

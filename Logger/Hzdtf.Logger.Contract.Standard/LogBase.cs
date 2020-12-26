@@ -22,6 +22,11 @@ namespace Hzdtf.Logger.Contract.Standard
             set;
         } = new DefaultLogRecordLevel();
 
+        /// <summary>
+        /// 本地ID标签数组
+        /// </summary>
+        private static readonly string[] localIdTags = new string[] { NetworkUtil.LocalIP, Environment.MachineName };
+
         #endregion
 
         #region ILog 接口
@@ -129,6 +134,13 @@ namespace Hzdtf.Logger.Contract.Standard
         protected abstract void WriteStorage(string level, string msg, Exception ex = null, string source = null, params string[] tags);
 
         #endregion
+
+        /// <summary>
+        /// 追加本地标识标签
+        /// </summary>
+        /// <param name="tag">标签</param>
+        /// <returns>本地标识标签</returns>
+        protected string[] AppendLocalIdTags(params string[] tag) => localIdTags.Merge(tag);
     }
 
     /// <summary>
