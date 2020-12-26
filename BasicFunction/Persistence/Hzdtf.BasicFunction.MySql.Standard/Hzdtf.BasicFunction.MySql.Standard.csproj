@@ -20,10 +20,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Dapper" Version="2.0.35" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\..\Persistence\Hzdtf.MySql.Standard\Hzdtf.MySql.Standard.csproj" />
     <ProjectReference Include="..\..\..\Persistence\Hzdtf.Persistence.Contract.Standard\Hzdtf.Persistence.Contract.Standard.csproj" />
     <ProjectReference Include="..\..\Model\Hzdtf.BasicFunction.Model.Standard\Hzdtf.BasicFunction.Model.Standard.csproj" />

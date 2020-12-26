@@ -14,7 +14,7 @@
           "lib/netstandard2.0/AndroidXml.dll": {}
         }
       },
-      "AutoMapper/10.0.0": {
+      "AutoMapper/10.1.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
@@ -41,11 +41,12 @@
           "lib/netstandard2.0/Hei.Captcha.dll": {}
         }
       },
-      "MessagePack/2.1.152": {
+      "MessagePack/2.2.85": {
         "type": "package",
         "dependencies": {
-          "MessagePack.Annotations": "2.1.152",
+          "MessagePack.Annotations": "2.2.85",
           "Microsoft.Bcl.AsyncInterfaces": "1.0.0",
+          "System.Collections.Immutable": "1.5.0",
           "System.Memory": "4.5.3",
           "System.Reflection.Emit": "4.6.0",
           "System.Reflection.Emit.Lightweight": "4.6.0",
@@ -59,7 +60,7 @@
           "lib/netcoreapp2.1/MessagePack.dll": {}
         }
       },
-      "MessagePack.Annotations/2.1.152": {
+      "MessagePack.Annotations/2.2.85": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/MessagePack.Annotations.dll": {}
@@ -556,7 +557,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "NPOI/2.5.1": {
+      "NPOI/2.5.2": {
         "type": "package",
         "dependencies": {
           "Portable.BouncyCastle": "1.8.6",
@@ -565,16 +566,16 @@
           "System.Drawing.Common": "4.5.0"
         },
         "compile": {
-          "lib/netstandard2.0/NPOI.OOXML.dll": {},
-          "lib/netstandard2.0/NPOI.OpenXml4Net.dll": {},
-          "lib/netstandard2.0/NPOI.OpenXmlFormats.dll": {},
-          "lib/netstandard2.0/NPOI.dll": {}
+          "lib/netstandard2.1/NPOI.OOXML.dll": {},
+          "lib/netstandard2.1/NPOI.OpenXml4Net.dll": {},
+          "lib/netstandard2.1/NPOI.OpenXmlFormats.dll": {},
+          "lib/netstandard2.1/NPOI.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/NPOI.OOXML.dll": {},
-          "lib/netstandard2.0/NPOI.OpenXml4Net.dll": {},
-          "lib/netstandard2.0/NPOI.OpenXmlFormats.dll": {},
-          "lib/netstandard2.0/NPOI.dll": {}
+          "lib/netstandard2.1/NPOI.OOXML.dll": {},
+          "lib/netstandard2.1/NPOI.OpenXml4Net.dll": {},
+          "lib/netstandard2.1/NPOI.OpenXmlFormats.dll": {},
+          "lib/netstandard2.1/NPOI.dll": {}
         }
       },
       "Portable.BouncyCastle/1.8.6": {
@@ -586,7 +587,7 @@
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
         }
       },
-      "SharpZipLib/1.2.0": {
+      "SharpZipLib/1.3.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll": {}
@@ -665,6 +666,15 @@
         },
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "System.Collections.Immutable/1.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
         }
       },
       "System.ComponentModel.Annotations/4.7.0": {
@@ -957,15 +967,15 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "AutoMapper": "10.0.0",
+          "AutoMapper": "10.1.1",
           "Hei.Captcha": "0.2.0",
           "Hzdtf.Mini.Standard": "1.0.0",
-          "MessagePack": "2.1.152",
+          "MessagePack": "2.2.85",
           "Microsoft.Extensions.Caching.Abstractions": "3.1.5",
           "Microsoft.Extensions.Caching.Memory": "3.1.5",
-          "NPOI": "2.5.1",
+          "NPOI": "2.5.2",
           "Newtonsoft.Json": "12.0.3",
-          "SharpZipLib": "1.2.0",
+          "SharpZipLib": "1.3.1",
           "System.ComponentModel.Annotations": "4.7.0",
           "System.Drawing.Common": "4.7.0",
           "System.Reflection.DispatchProxy": "4.7.1",
@@ -994,14 +1004,14 @@
         "lib/netstandard2.0/AndroidXml.dll"
       ]
     },
-    "AutoMapper/10.0.0": {
-      "sha512": "T09NoqMZBqw0/JEauXulxnmmerl0Zj03e0r6VCcJ0LURWBIaYxZPPoiDv8bHf5Y4x2xcXJp4JPXoCaeOMJfHEA==",
+    "AutoMapper/10.1.1": {
+      "sha512": "uMgbqOdu9ZG5cIOty0C85hzzayBH2i9BthnS5FlMqKtMSHDv4ts81a2jS1VFaDBVhlBeIqJ/kQKjQY95BZde9w==",
       "type": "package",
-      "path": "automapper/10.0.0",
+      "path": "automapper/10.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "automapper.10.0.0.nupkg.sha512",
+        "automapper.10.1.1.nupkg.sha512",
         "automapper.nuspec",
         "icon.png",
         "lib/net461/AutoMapper.dll",
@@ -1022,10 +1032,10 @@
         "lib/netstandard2.0/Hei.Captcha.dll"
       ]
     },
-    "MessagePack/2.1.152": {
-      "sha512": "PlJ31qf42uGuJfwc61x/Pt4hJi01xh1rrBofj1MJSLzEot/2UAIRdSgxEHN/8qou5CV8OBeDM9HXKPi1Oj8rpQ==",
+    "MessagePack/2.2.85": {
+      "sha512": "3SqAgwNV5LOf+ZapHmjQMUc7WDy/1ur9CfFNjgnfMZKCB5CxkVVbyHa06fObjGTEHZI7mcDathYjkI+ncr92ZQ==",
       "type": "package",
-      "path": "messagepack/2.1.152",
+      "path": "messagepack/2.2.85",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1034,21 +1044,21 @@
         "lib/netcoreapp2.1/MessagePack.xml",
         "lib/netstandard2.0/MessagePack.dll",
         "lib/netstandard2.0/MessagePack.xml",
-        "messagepack.2.1.152.nupkg.sha512",
+        "messagepack.2.2.85.nupkg.sha512",
         "messagepack.nuspec"
       ]
     },
-    "MessagePack.Annotations/2.1.152": {
-      "sha512": "RONktDA/HA641ds/2bfOqYSVew8o8EJMcQ1P4M1J77QGgbzWiWt3nBHvCAwlx0VfO6K9S8xq4b5OLD2CUnhtCg==",
+    "MessagePack.Annotations/2.2.85": {
+      "sha512": "YptRsDCQK35K5FhmZ0LojW4t8I6DpetLfK5KG8PVY2f6h7/gdyr8f4++xdSEK/xS6XX7/GPvEpqszKVPksCsiQ==",
       "type": "package",
-      "path": "messagepack.annotations/2.1.152",
+      "path": "messagepack.annotations/2.2.85",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "lib/netstandard2.0/MessagePack.Annotations.dll",
         "lib/netstandard2.0/MessagePack.Annotations.xml",
-        "messagepack.annotations.2.1.152.nupkg.sha512",
+        "messagepack.annotations.2.2.85.nupkg.sha512",
         "messagepack.annotations.nuspec"
       ]
     },
@@ -1728,33 +1738,41 @@
         "packageIcon.png"
       ]
     },
-    "NPOI/2.5.1": {
-      "sha512": "2RkrIi+h6hDcrdR8EIxMpBb7vSz5Lgsr1HKgrA7Q+9/zQ17ky5b+3eHuJeuautFhRSrUTRxUfOpF5l9Vooy8/A==",
+    "NPOI/2.5.2": {
+      "sha512": "UNKwT9LX/9TFsEPLUebhdS9IHpQdg33s0eRpkEt/cnNU1O/ioOFnLebEMpaPuiW7efahu6SDCxBJLh5NmXksOw==",
       "type": "package",
-      "path": "npoi/2.5.1",
+      "path": "npoi/2.5.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
-        "lib/NPOI.OOXML.XML",
-        "lib/NPOI.XML",
-        "lib/net40/NPOI.OOXML.dll",
-        "lib/net40/NPOI.OpenXml4Net.dll",
-        "lib/net40/NPOI.OpenXmlFormats.dll",
-        "lib/net40/NPOI.dll",
+        "Read Me.txt",
+        "lib/net45/NPOI.OOXML.XML",
         "lib/net45/NPOI.OOXML.dll",
+        "lib/net45/NPOI.OpenXml4Net.XML",
         "lib/net45/NPOI.OpenXml4Net.dll",
         "lib/net45/NPOI.OpenXmlFormats.dll",
+        "lib/net45/NPOI.XML",
         "lib/net45/NPOI.dll",
+        "lib/netstandard2.0/NPOI.OOXML.XML",
         "lib/netstandard2.0/NPOI.OOXML.dll",
+        "lib/netstandard2.0/NPOI.OpenXml4Net.XML",
         "lib/netstandard2.0/NPOI.OpenXml4Net.dll",
         "lib/netstandard2.0/NPOI.OpenXmlFormats.dll",
+        "lib/netstandard2.0/NPOI.XML",
         "lib/netstandard2.0/NPOI.dll",
+        "lib/netstandard2.1/NPOI.OOXML.XML",
+        "lib/netstandard2.1/NPOI.OOXML.dll",
+        "lib/netstandard2.1/NPOI.OpenXml4Net.XML",
+        "lib/netstandard2.1/NPOI.OpenXml4Net.dll",
+        "lib/netstandard2.1/NPOI.OpenXmlFormats.dll",
+        "lib/netstandard2.1/NPOI.XML",
+        "lib/netstandard2.1/NPOI.dll",
         "logo/120_120.jpg",
         "logo/240_240.png",
         "logo/32_32.jpg",
         "logo/60_60.jpg",
-        "npoi.2.5.1.nupkg.sha512",
+        "npoi.2.5.2.nupkg.sha512",
         "npoi.nuspec"
       ]
     },
@@ -1773,20 +1791,21 @@
         "portable.bouncycastle.nuspec"
       ]
     },
-    "SharpZipLib/1.2.0": {
-      "sha512": "zvWa/L02JHNatdtjya6Swpudb2YEHaOLHL1eRrqpjm71iGRNUNONO5adUF/9CHbSJbzhELW1UoH4NGy7n7+3bQ==",
+    "SharpZipLib/1.3.1": {
+      "sha512": "/iMph6bLdKzDhwM/vkAo4BU8z5QQnyodlkZon3XRMtRmVuWv5Rph1kaDmd9XjrQxjPJPuLquTSrkEoSPq/flVw==",
       "type": "package",
-      "path": "sharpziplib/1.2.0",
+      "path": "sharpziplib/1.3.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "images/sharpziplib-nuget-256x256.png",
         "lib/net45/ICSharpCode.SharpZipLib.dll",
         "lib/net45/ICSharpCode.SharpZipLib.pdb",
         "lib/net45/ICSharpCode.SharpZipLib.xml",
         "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll",
         "lib/netstandard2.0/ICSharpCode.SharpZipLib.pdb",
         "lib/netstandard2.0/ICSharpCode.SharpZipLib.xml",
-        "sharpziplib.1.2.0.nupkg.sha512",
+        "sharpziplib.1.3.1.nupkg.sha512",
         "sharpziplib.nuspec"
       ]
     },
@@ -1898,6 +1917,29 @@
         "ref/uap10.0.16299/_._",
         "system.buffers.4.5.0.nupkg.sha512",
         "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Collections.Immutable/1.5.0": {
+      "sha512": "EXKiDFsChZW0RjrZ4FYHu9aW6+P4MCgEDCklsVseRfhoO0F+dXeMSsMRAlVXIo06kGJ/zv+2w1a2uc2+kxxSaQ==",
+      "type": "package",
+      "path": "system.collections.immutable/1.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/System.Collections.Immutable.dll",
+        "lib/netstandard1.0/System.Collections.Immutable.xml",
+        "lib/netstandard1.3/System.Collections.Immutable.dll",
+        "lib/netstandard1.3/System.Collections.Immutable.xml",
+        "lib/netstandard2.0/System.Collections.Immutable.dll",
+        "lib/netstandard2.0/System.Collections.Immutable.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
+        "system.collections.immutable.1.5.0.nupkg.sha512",
+        "system.collections.immutable.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]

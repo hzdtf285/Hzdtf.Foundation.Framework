@@ -107,7 +107,7 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[10.0.0, )"
+              "version": "[10.1.1, )"
             },
             "Hei.Captcha": {
               "target": "Package",
@@ -115,7 +115,7 @@
             },
             "MessagePack": {
               "target": "Package",
-              "version": "[2.1.152, )"
+              "version": "[2.2.85, )"
             },
             "Microsoft.Extensions.Caching.Abstractions": {
               "target": "Package",
@@ -133,7 +133,7 @@
             },
             "NPOI": {
               "target": "Package",
-              "version": "[2.5.1, )"
+              "version": "[2.5.2, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -141,7 +141,7 @@
             },
             "SharpZipLib": {
               "target": "Package",
-              "version": "[1.2.0, )"
+              "version": "[1.3.1, )"
             },
             "System.ComponentModel.Annotations": {
               "target": "Package",
@@ -482,7 +482,7 @@
           "dependencies": {
             "MySql.Data": {
               "target": "Package",
-              "version": "[8.0.20, )"
+              "version": "[8.0.22, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -621,7 +621,7 @@
           "dependencies": {
             "Dapper": {
               "target": "Package",
-              "version": "[2.0.35, )"
+              "version": "[2.0.78, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",

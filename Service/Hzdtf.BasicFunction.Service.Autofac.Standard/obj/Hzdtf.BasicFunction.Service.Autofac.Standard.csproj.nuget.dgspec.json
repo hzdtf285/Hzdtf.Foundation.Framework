@@ -236,7 +236,7 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[10.0.0, )"
+              "version": "[10.1.1, )"
             },
             "Hei.Captcha": {
               "target": "Package",
@@ -244,7 +244,7 @@
             },
             "MessagePack": {
               "target": "Package",
-              "version": "[2.1.152, )"
+              "version": "[2.2.85, )"
             },
             "Microsoft.Extensions.Caching.Abstractions": {
               "target": "Package",
@@ -262,7 +262,7 @@
             },
             "NPOI": {
               "target": "Package",
-              "version": "[2.5.1, )"
+              "version": "[2.5.2, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -270,7 +270,7 @@
             },
             "SharpZipLib": {
               "target": "Package",
-              "version": "[1.2.0, )"
+              "version": "[1.3.1, )"
             },
             "System.ComponentModel.Annotations": {
               "target": "Package",
@@ -353,15 +353,15 @@
           "dependencies": {
             "Autofac": {
               "target": "Package",
-              "version": "[5.2.0, )"
+              "version": "[6.1.0, )"
             },
             "Autofac.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[7.1.0, )"
             },
             "Autofac.Extras.DynamicProxy": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[6.0.0, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",

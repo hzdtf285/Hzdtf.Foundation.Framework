@@ -11,7 +11,7 @@
         "dependencies": {
           "Hzdtf.Logger.Contract.Standard": "2.0.0",
           "NETStandard.Library": "2.0.3",
-          "NLog": "4.7.2"
+          "NLog": "4.7.6"
         },
         "runtime": {
           "Hzdtf.Logger.Integration.ENLog.Standard.dll": {}
@@ -177,11 +177,11 @@
           }
         }
       },
-      "NLog/4.7.2": {
+      "NLog/4.7.6": {
         "runtime": {
           "lib/netstandard2.0/NLog.dll": {
             "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.7.2.11786"
+            "fileVersion": "4.7.6.12219"
           }
         }
       },
@@ -605,12 +605,12 @@
       "path": "newtonsoft.json/12.0.3",
       "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
     },
-    "NLog/4.7.2": {
+    "NLog/4.7.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tfZNTOYr0TwvJNrXsJsVdZPSgIpYN1rXHnAZAadeaIbz+v18agNCCxgZXnXQqNKNizkogJ68zYTNKavyQFWwrg==",
-      "path": "nlog/4.7.2",
-      "hashPath": "nlog.4.7.2.nupkg.sha512"
+      "sha512": "sha512-mVYfNsZk6HY26/S/T3vVd2RS/1GySaeNh6bjP8uE7mKAdTENlRycQr7S4FC+I//QflXl/D/HEEugE47BDxQ5wA==",
+      "path": "nlog/4.7.6",
+      "hashPath": "nlog.4.7.6.nupkg.sha512"
     },
     "NPOI/2.5.1": {
       "type": "package",
