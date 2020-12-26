@@ -46,7 +46,6 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Persistence\Hzdtf.Basic
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Persistence\Hzdtf.BasicFunction.Persistence.Contract.Std\bin\Release\netstandard2.0\Hzdtf.Platform.Contract.Standard.xml
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Persistence\Hzdtf.BasicFunction.Persistence.Contract.Std\bin\Release\netstandard2.0\Hzdtf.Utility.Standard.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Persistence\Hzdtf.BasicFunction.Persistence.Contract.Std\bin\Release\netstandard2.0\Hzdtf.Utility.Standard.xml
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Persistence\Hzdtf.BasicFunction.Persistence.Contract.Std\obj\Release\netstandard2.0\Hzdtf.BasicFunction.Persistence.Contract.Std.csprojAssemblyReference.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Persistence\Hzdtf.BasicFunction.Persistence.Contract.Std\obj\Release\netstandard2.0\Hzdtf.BasicFunction.Persistence.Contract.Std.AssemblyInfoInputs.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Persistence\Hzdtf.BasicFunction.Persistence.Contract.Std\obj\Release\netstandard2.0\Hzdtf.BasicFunction.Persistence.Contract.Std.AssemblyInfo.cs
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Persistence\Hzdtf.BasicFunction.Persistence.Contract.Std\obj\Release\netstandard2.0\Hzdtf.BasicFunction.Persistence.Contract.Std.csproj.CoreCompileInputs.cache

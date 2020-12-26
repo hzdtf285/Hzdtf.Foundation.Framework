@@ -41,5 +41,4 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Integration.ENLog
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Integration.ENLog.Standard\obj\Release\netstandard2.0\Hzdtf.Logger.Integration.ENLog.Standard.csproj.CopyComplete
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Integration.ENLog.Standard\obj\Release\netstandard2.0\Hzdtf.Logger.Integration.ENLog.Standard.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Integration.ENLog.Standard\obj\Release\netstandard2.0\Hzdtf.Logger.Integration.ENLog.Standard.pdb
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Integration.ENLog.Standard\obj\Release\netstandard2.0\Hzdtf.Logger.Integration.ENLog.Standard.csprojAssemblyReference.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Integration.ENLog.Standard\bin\Release\netstandard2.0\Hzdtf.Logger.Integration.ENLog.Standard.xml

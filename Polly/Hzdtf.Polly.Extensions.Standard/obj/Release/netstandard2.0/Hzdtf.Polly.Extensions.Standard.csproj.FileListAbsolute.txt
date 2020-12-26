@@ -37,7 +37,6 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\Polly\Hzdtf.Polly.Extensions.Standard
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Polly\Hzdtf.Polly.Extensions.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Polly\Hzdtf.Polly.Extensions.Standard\bin\Release\netstandard2.0\Hzdtf.Platform.Contract.Standard.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Polly\Hzdtf.Polly.Extensions.Standard\bin\Release\netstandard2.0\Hzdtf.Platform.Contract.Standard.xml
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\Polly\Hzdtf.Polly.Extensions.Standard\obj\Release\netstandard2.0\Hzdtf.Polly.Extensions.Standard.csprojAssemblyReference.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Polly\Hzdtf.Polly.Extensions.Standard\obj\Release\netstandard2.0\Hzdtf.Polly.Extensions.Standard.AssemblyInfoInputs.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Polly\Hzdtf.Polly.Extensions.Standard\obj\Release\netstandard2.0\Hzdtf.Polly.Extensions.Standard.AssemblyInfo.cs
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Polly\Hzdtf.Polly.Extensions.Standard\obj\Release\netstandard2.0\Hzdtf.Polly.Extensions.Standard.csproj.CoreCompileInputs.cache

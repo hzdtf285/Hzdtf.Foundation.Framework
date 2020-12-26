@@ -37,7 +37,6 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\WorkFlow\Service\Hzdtf.WorkFlow.Servi
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\WorkFlow\Service\Hzdtf.WorkFlow.Service.Contract.Standard\bin\Release\netstandard2.0\Hzdtf.Mini.Standard.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\WorkFlow\Service\Hzdtf.WorkFlow.Service.Contract.Standard\bin\Release\netstandard2.0\Hzdtf.Utility.Standard.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\WorkFlow\Service\Hzdtf.WorkFlow.Service.Contract.Standard\bin\Release\netstandard2.0\Hzdtf.Utility.Standard.xml
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\WorkFlow\Service\Hzdtf.WorkFlow.Service.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.WorkFlow.Service.Contract.Standard.csprojAssemblyReference.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\WorkFlow\Service\Hzdtf.WorkFlow.Service.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.WorkFlow.Service.Contract.Standard.AssemblyInfoInputs.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\WorkFlow\Service\Hzdtf.WorkFlow.Service.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.WorkFlow.Service.Contract.Standard.AssemblyInfo.cs
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\WorkFlow\Service\Hzdtf.WorkFlow.Service.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.WorkFlow.Service.Contract.Standard.csproj.CoreCompileInputs.cache

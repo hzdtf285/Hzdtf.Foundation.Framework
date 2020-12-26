@@ -106,4 +106,3 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\WorkFlow\Model\Hzdtf.WorkFlow.Model.S
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\WorkFlow\Model\Hzdtf.WorkFlow.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.WorkFlow.Model.Standard.csproj.CopyComplete
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\WorkFlow\Model\Hzdtf.WorkFlow.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.WorkFlow.Model.Standard.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\WorkFlow\Model\Hzdtf.WorkFlow.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.WorkFlow.Model.Standard.pdb
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\WorkFlow\Model\Hzdtf.WorkFlow.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.WorkFlow.Model.Standard.csprojAssemblyReference.cache

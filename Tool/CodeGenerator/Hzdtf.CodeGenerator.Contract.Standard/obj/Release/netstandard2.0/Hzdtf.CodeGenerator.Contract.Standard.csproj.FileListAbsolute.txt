@@ -37,3 +37,4 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerato
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.CodeGenerator.Contract.Standard.csproj.CopyComplete
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.CodeGenerator.Contract.Standard.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.CodeGenerator.Contract.Standard.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Contract.Standard\obj\Release\netstandard2.0\Hzdtf.CodeGenerator.Contract.Standard.csprojAssemblyReference.cache

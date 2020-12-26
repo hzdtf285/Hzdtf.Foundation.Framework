@@ -31,3 +31,4 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerato
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Model.Standard\obj\Release\netstandard2.0\Hzdtf.CodeGenerator.Model.Standard.csproj.CopyComplete
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Model.Standard\obj\Release\netstandard2.0\Hzdtf.CodeGenerator.Model.Standard.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Model.Standard\obj\Release\netstandard2.0\Hzdtf.CodeGenerator.Model.Standard.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.Model.Standard\obj\Release\netstandard2.0\Hzdtf.CodeGenerator.Model.Standard.csprojAssemblyReference.cache

@@ -138,29 +138,6 @@
             <returns>Registration builder allowing the registration to be configured.</returns>
             <exception cref="T:System.ArgumentNullException"><paramref name="builder"/> or <paramref name="interceptorServiceTypes"/>.</exception>
         </member>
-        <member name="M:Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptTransparentProxy``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Type[])">
-            <summary>
-            Intercepts the interface of a transparent proxy (such as WCF channel factory based clients).
-            </summary>
-            <typeparam name="TLimit">Registration limit type.</typeparam>
-            <typeparam name="TActivatorData">Activator data type.</typeparam>
-            <typeparam name="TSingleRegistrationStyle">Registration style.</typeparam>
-            <param name="registration">Registration to apply interception to.</param>
-            <param name="additionalInterfacesToProxy">Additional interface types. Calls to their members will be proxied as well.</param>
-            <returns>Registration builder allowing the registration to be configured.</returns>
-        </member>
-        <member name="M:Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptTransparentProxy``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},Castle.DynamicProxy.ProxyGenerationOptions,System.Type[])">
-            <summary>
-            Intercepts the interface of a transparent proxy (such as WCF channel factory based clients).
-            </summary>
-            <typeparam name="TLimit">Registration limit type.</typeparam>
-            <typeparam name="TActivatorData">Activator data type.</typeparam>
-            <typeparam name="TSingleRegistrationStyle">Registration style.</typeparam>
-            <param name="registration">Registration to apply interception to.</param>
-            <param name="options">Proxy generation options to apply.</param>
-            <param name="additionalInterfacesToProxy">Additional interface types. Calls to their members will be proxied as well.</param>
-            <returns>Registration builder allowing the registration to be configured.</returns>
-        </member>
         <member name="T:Autofac.Extras.DynamicProxy.RegistrationExtensionsResources">
             <summary>
               A strongly-typed resource class, for looking up localized strings, etc.

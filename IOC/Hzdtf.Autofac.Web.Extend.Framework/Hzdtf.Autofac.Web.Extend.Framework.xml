@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>Hzdtf.Autofac.Web.Extend.Framework</name>
+        <name>Hzdtf.Autofac.Web.Extend.Framework00</name>
     </assembly>
     <members>
         <member name="T:Hzdtf.Autofac.Web.Extend.Framework.MvcContainerBuilderExtend">

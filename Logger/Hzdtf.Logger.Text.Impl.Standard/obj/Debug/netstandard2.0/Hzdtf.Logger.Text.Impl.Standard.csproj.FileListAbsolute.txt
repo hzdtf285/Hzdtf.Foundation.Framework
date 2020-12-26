@@ -147,4 +147,3 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Text.Impl.Standar
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Text.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Text.Impl.Standard.csproj.CopyComplete
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Text.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Text.Impl.Standard.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Text.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Text.Impl.Standard.pdb
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Text.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Text.Impl.Standard.csprojAssemblyReference.cache

@@ -195,3 +195,4 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\obj\Release\netcoreapp3.1\Hzdtf.Publish.Demo.AspNet.Core.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\obj\Release\netcoreapp3.1\Hzdtf.Publish.Demo.AspNet.Core.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\obj\Release\netcoreapp3.1\Hzdtf.Publish.Demo.AspNet.Core.genruntimeconfig.cache
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Publish.Demo.AspNet.Core\obj\Release\netcoreapp3.1\Hzdtf.Publish.Demo.AspNet.Core.csprojAssemblyReference.cache

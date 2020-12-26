@@ -165,12 +165,7 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Web.Extend.Framewor
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Web.Extend.Framework\obj\Release\Hzdtf.Autofac.Web.Extend.Framework.csproj.CoreCompileInputs.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Web.Extend.Framework\obj\Release\Hzdtf.Autofac.Web.Extend.Framework.csproj.CopyComplete
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Config\LanguageLibrary\Hzdtf.Utility.Standard.LanguageLibrary.json
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Hzdtf.Autofac.Web.Extend.Framework.dll.config
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Web.Extend.Framework\obj\Release\Hzdtf.Autofac.Web.Extend.Framework.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Hzdtf.Autofac.Web.Extend.Framework.xml
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Web.Extend.Framework\obj\Release\Hzdtf.Autofac.Web.Extend.Framework.pdb
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Hzdtf.Autofac.Web.Extend.Framework.dll
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Hzdtf.Autofac.Web.Extend.Framework.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Autofac.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Autofac.Extras.DynamicProxy.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Autofac.Integration.Mvc.dll
@@ -232,3 +227,8 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Web.Extend.Framewor
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Web.Extend.Framework\System.Diagnostics.DiagnosticSource.xml
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Web.Extend.Framework\System.Memory.xml
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Web.Extend.Framework\System.Numerics.Vectors.xml
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Hzdtf.Autofac.Web.Extend.Framework00.dll.config
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Web.Extend.Framework\obj\Release\Hzdtf.Autofac.Web.Extend.Framework00.dll
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Web.Extend.Framework\obj\Release\Hzdtf.Autofac.Web.Extend.Framework00.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Hzdtf.Autofac.Web.Extend.Framework00.dll
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Web.Extend.Framework\Hzdtf.Autofac.Web.Extend.Framework00.pdb
