@@ -188,6 +188,8 @@ function getFlowDetailToRemote(url, funCode) {
                             if (typeof (fillFormData) == "function") {
                                 fillFormData(form, data);
                             }
+							
+                            initControlStyle();
                         }
                         else {
                             showToastr({
