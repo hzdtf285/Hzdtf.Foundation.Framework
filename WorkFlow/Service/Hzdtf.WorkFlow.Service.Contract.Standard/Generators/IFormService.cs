@@ -10,7 +10,7 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard
     /// 表单服务接口
     /// @ 黄振东
     /// </summary>
-    public partial interface IFormService : IService<FormInfo>
+    public partial interface IFormService : IService<int, FormInfo>
     {
     }
 }

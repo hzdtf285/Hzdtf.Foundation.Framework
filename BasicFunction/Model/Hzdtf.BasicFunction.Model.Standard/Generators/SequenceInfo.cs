@@ -14,7 +14,7 @@ namespace Hzdtf.BasicFunction.Model.Standard
     /// @ 黄振东
     /// </summary>
     [MessagePackObject]
-    public partial class SequenceInfo : PersonTimeInfo
+    public partial class SequenceInfo : PersonTimeInfo<int>
     {
 ﻿        /// <summary>
         /// 增量_名称

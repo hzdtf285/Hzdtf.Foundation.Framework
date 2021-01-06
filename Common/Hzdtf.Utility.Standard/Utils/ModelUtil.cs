@@ -14,11 +14,12 @@ namespace Hzdtf.Utility.Standard.Utils
         /// <summary>
         /// 设置创建信息
         /// </summary>
+        /// <typeparam name="IdT">ID类型</typeparam>
         /// <param name="model">模型</param>
         /// <param name="currUser">当前用户</param>
-        public static void SetCreateInfo(this PersonTimeInfo model, BasicUserInfo currUser = null)
+        public static void SetCreateInfo<IdT>(this PersonTimeInfo<IdT> model, BasicUserInfo<IdT> currUser = null)
         {
-            var user = UserTool.GetCurrUser(currUser);
+            var user = UserTool<IdT>.GetCurrUser(currUser);
             if (user == null)
             {
                 return;
@@ -32,11 +33,12 @@ namespace Hzdtf.Utility.Standard.Utils
         /// <summary>
         /// 设置修改信息
         /// </summary>
+        /// <typeparam name="IdT">ID类型</typeparam>
         /// <param name="model">模型</param>
         /// <param name="currUser">当前用户</param>
-        public static void SetModifyInfo(this PersonTimeInfo model, BasicUserInfo currUser = null)
+        public static void SetModifyInfo<IdT>(this PersonTimeInfo<IdT> model, BasicUserInfo<IdT> currUser = null)
         {
-            var user = UserTool.GetCurrUser(currUser);
+            var user = UserTool<IdT>.GetCurrUser(currUser);
             if (user == null)
             {
                 return;    

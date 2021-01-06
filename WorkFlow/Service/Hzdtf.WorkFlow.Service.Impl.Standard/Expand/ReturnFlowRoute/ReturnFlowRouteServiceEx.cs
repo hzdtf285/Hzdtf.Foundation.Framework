@@ -23,7 +23,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<IList<ReturnFlowRouteInfo>> QueryByFlowCensorshipId([DisplayName2("流程关卡ID"), Id] int flowCensorshipId, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<IList<ReturnFlowRouteInfo>> QueryByFlowCensorshipId([DisplayName2("流程关卡ID"), Id] int flowCensorshipId, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             return ExecReturnFuncAndConnectionId<IList<ReturnFlowRouteInfo>>((reInfo, connId) =>
             {
@@ -38,7 +38,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<IList<ReturnFlowRouteInfo>> QueryByFlowCensorshipIds(int[] flowCensorshipIds, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<IList<ReturnFlowRouteInfo>> QueryByFlowCensorshipIds(int[] flowCensorshipIds, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             return ExecReturnFuncAndConnectionId<IList<ReturnFlowRouteInfo>>((reInfo, connId) =>
             {

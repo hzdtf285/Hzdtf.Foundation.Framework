@@ -10,7 +10,7 @@ namespace |NamespacePfx|.Persistence.Contract.Standard
     /// |Description|持久化接口
     /// @ 黄振东
     /// </summary>
-    public partial interface |Name| : IPersistence<|Model|Info>
+    public partial interface |Name| : IPersistence<|PkType|, |Model|Info>
     {
     }
 }

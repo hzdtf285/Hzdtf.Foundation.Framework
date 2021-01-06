@@ -1,5 +1,7 @@
 ﻿using Hzdtf.Authorization.Contract.Standard.User;
+using Hzdtf.Autofac.Extend.Standard;
 using Hzdtf.Utility.Standard.Model;
+using Hzdtf.Utility.Standard.Model.Identitys;
 using Hzdtf.Utility.Standard.Model.Return;
 using Hzdtf.Utility.Standard.Utils;
 using System;
@@ -18,14 +20,15 @@ namespace Hzdtf.Authorization.Contract.Standard
         /// <summary>
         /// 验证参数
         /// </summary>
+        /// <typeparam name="IdT">Id类型</typeparam>
         /// <typeparam name="IdentityInfoT">身份模型类型</typeparam>
         /// <param name="returnInfo">返回信息</param>
         /// <param name="user">用户</param>
         /// <param name="password">密码</param>
         /// <param name="userAlias">用户别名</param>
         /// <returns>是否验证通过</returns>
-        public static bool ValiParams<IdentityInfoT>(ReturnInfo<IdentityInfoT> returnInfo, string user, string password, string userAlias = null)
-        where IdentityInfoT : BasicUserInfo
+        public static bool ValiParams<IdT, IdentityInfoT>(ReturnInfo<IdentityInfoT> returnInfo, string user, string password, string userAlias = null)
+        where IdentityInfoT : BasicUserInfo<IdT>
         {            
             if (string.IsNullOrWhiteSpace(user))
             {
@@ -49,11 +52,13 @@ namespace Hzdtf.Authorization.Contract.Standard
         /// <summary>
         /// 保存用户信息并获取证件单元集合
         /// </summary>
+        /// <typeparam name="IdT">ID类型</typeparam>
+        /// <typeparam name="UserT">用户类型</typeparam>
         /// <param name="user">用户信息</param>
         /// <param name="authUserData">身份用户数据</param>
         /// <returns>证件单元集合</returns>
-        public static IList<Claim> SaveUserInfoGetClaims<UserT>(UserT user, IAuthUserData<UserT> authUserData)
-            where UserT : BasicUserInfo
+        public static IList<Claim> SaveUserInfoGetClaims<IdT, UserT>(UserT user, IAuthUserData<IdT, UserT> authUserData)
+            where UserT : BasicUserInfo<IdT>
         {
             if (authUserData == null)
             {
@@ -66,6 +71,7 @@ namespace Hzdtf.Authorization.Contract.Standard
             claims.Add("code", user.Code);
             claims.Add("loginId", user.LoginId);
             claims.Add("loginTime", DateTime.Now.ToFullFixedDateTime());
+            claims.Add("tenantId", user.TenantId.ToString());
 
             authUserData.SetExtraToClaimsData(claims, user);
 
@@ -75,12 +81,13 @@ namespace Hzdtf.Authorization.Contract.Standard
         /// <summary>
         /// 从证件单元集合里获取用户数据
         /// </summary>
+        /// <typeparam name="IdT">ID类型</typeparam>
         /// <typeparam name="UserT">用户类型</typeparam>
         /// <param name="claims">证件单元集合</param>
         /// <param name="authUserData">身份授权用户数据</param>
         /// <returns>用户</returns>
-        public static UserT GetUserDataFromClaims<UserT>(IEnumerable<Claim> claims, IAuthUserData<UserT> authUserData)
-            where UserT : BasicUserInfo
+        public static UserT GetUserDataFromClaims<IdT, UserT>(IEnumerable<Claim> claims, IAuthUserData<IdT, UserT> authUserData)
+            where UserT : BasicUserInfo<IdT>
         {
             if (authUserData == null)
             {
@@ -88,10 +95,12 @@ namespace Hzdtf.Authorization.Contract.Standard
             }
 
             var user = authUserData.CreateUser();
-            user.Id = Convert.ToInt32(claims.Get(ClaimTypes.NameIdentifier));
+            var identity = AutofacTool.Resolve<IIdentity<IdT>>();
+            user.Id = identity.ConvertTo(claims.Get(ClaimTypes.NameIdentifier));
             user.Name = claims.Get(ClaimTypes.Name);
             user.Code = claims.Get("code");
             user.LoginId = claims.Get("loginId");
+            user.TenantId = identity.ConvertTo(claims.Get("tenantId"));
 
             var loginTimeStr = claims.Get("loginTime");
             if (!string.IsNullOrWhiteSpace(loginTimeStr))

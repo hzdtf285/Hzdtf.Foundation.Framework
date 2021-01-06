@@ -16,7 +16,7 @@ namespace Hzdtf.WorkFlow.Model.Standard.Expand
     /// <typeparam name="FormT">表单类型</typeparam>
     [MessagePackObject]
     public class FlowInitInfo<FormT>
-        where FormT : PersonTimeInfo
+        where FormT : PersonTimeInfo<int>
     {
         /// <summary>
         /// ID
@@ -113,11 +113,11 @@ namespace Hzdtf.WorkFlow.Model.Standard.Expand
         /// 转换为流程输入
         /// </summary>
         /// <returns>流程输入</returns>
-        public FlowInInfo<FlowInitInfo<PersonTimeInfo>> ToFlowIn()
+        public FlowInInfo<FlowInitInfo<PersonTimeInfo<int>>> ToFlowIn()
         {
-            return new FlowInInfo<FlowInitInfo<PersonTimeInfo>>()
+            return new FlowInInfo<FlowInitInfo<PersonTimeInfo<int>>>()
             {
-                Flow = new FlowInitInfo<PersonTimeInfo>()
+                Flow = new FlowInitInfo<PersonTimeInfo<int>>()
                 {
                     Id = this.Id,
                     WorkflowCode = this.WorkflowCode,

@@ -10,7 +10,7 @@ namespace Hzdtf.Demo.Persistence.Contract.Standard
     /// 测试表单持久化接口
     /// @ 黄振东
     /// </summary>
-    public partial interface ITestFormPersistence : IPersistence<TestFormInfo>
+    public partial interface ITestFormPersistence : IPersistence<int, TestFormInfo>
     {
     }
 }

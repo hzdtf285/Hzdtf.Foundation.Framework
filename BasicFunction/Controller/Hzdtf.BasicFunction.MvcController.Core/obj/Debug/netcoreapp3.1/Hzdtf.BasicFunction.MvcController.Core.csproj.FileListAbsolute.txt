@@ -139,3 +139,9 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Controller\Hzdtf.BasicF
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\obj\Debug\netcoreapp3.1\Hzdtf.BasicFunction.MvcController.Core.csproj.CopyComplete
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\obj\Debug\netcoreapp3.1\Hzdtf.BasicFunction.MvcController.Core.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\obj\Debug\netcoreapp3.1\Hzdtf.BasicFunction.MvcController.Core.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\bin\Debug\netcoreapp3.1\Hzdtf.Autofac.Extend.Standard.dll
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\bin\Debug\netcoreapp3.1\Hzdtf.Autofac.Extend.Standard.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\bin\Debug\netcoreapp3.1\Hzdtf.Autofac.Extend.Standard.xml
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\bin\Debug\netcoreapp3.1\Hzdtf.BasicFunction.Persistence.Contract.Std.dll
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\bin\Debug\netcoreapp3.1\Hzdtf.BasicFunction.Persistence.Contract.Std.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\bin\Debug\netcoreapp3.1\Hzdtf.BasicFunction.Persistence.Contract.Std.xml

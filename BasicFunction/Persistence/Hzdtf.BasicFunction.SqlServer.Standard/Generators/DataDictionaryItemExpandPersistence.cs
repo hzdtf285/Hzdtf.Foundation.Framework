@@ -11,7 +11,7 @@ namespace Hzdtf.BasicFunction.SqlServer.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class DataDictionaryItemExpandPersistence : SqlServerDapperBase<DataDictionaryItemExpandInfo>, IDataDictionaryItemExpandPersistence
+    public partial class DataDictionaryItemExpandPersistence : SqlServerDapperBase<int, DataDictionaryItemExpandInfo>, IDataDictionaryItemExpandPersistence
     {
         /// <summary>
         /// 表名
@@ -23,6 +23,7 @@ namespace Hzdtf.BasicFunction.SqlServer.Standard
         /// </summary>
         private readonly static string[] INSERT_FIELD_NAMES = new string[]
         {
+            "id",
             "data_dictionary_item_id",
             "creater_id",
             "creater",

@@ -10,7 +10,7 @@ namespace Hzdtf.Demo.Service.Contract.Standard
     /// 测试表单服务接口
     /// @ 黄振东
     /// </summary>
-    public partial interface ITestFormService : IService<TestFormInfo>
+    public partial interface ITestFormService : IService<int, TestFormInfo>
     {
     }
 }

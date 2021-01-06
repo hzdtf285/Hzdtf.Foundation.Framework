@@ -20,6 +20,6 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<IList<FlowCensorshipInfo>> QueryByFlowId(int flowId, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<IList<FlowCensorshipInfo>> QueryByFlowId(int flowId, string connectionId = null, BasicUserInfo<int> currUser = null);
     }
 }

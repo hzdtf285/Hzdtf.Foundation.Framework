@@ -61,7 +61,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<WorkflowDefineInfo> ReaderAllConfig([DisplayName2("工作流定义ID"), Id] int workflowDefineId, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<WorkflowDefineInfo> ReaderAllConfig([DisplayName2("工作流定义ID"), Id] int workflowDefineId, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             if (dicCache.ContainsKey(workflowDefineId))
             {
@@ -90,7 +90,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<WorkflowDefineInfo> ReaderAllConfig([DisplayName2("工作流编码"), Required] string workflowCode, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<WorkflowDefineInfo> ReaderAllConfig([DisplayName2("工作流编码"), Required] string workflowCode, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             if (dicCodeMapId.ContainsKey(workflowCode))
             {

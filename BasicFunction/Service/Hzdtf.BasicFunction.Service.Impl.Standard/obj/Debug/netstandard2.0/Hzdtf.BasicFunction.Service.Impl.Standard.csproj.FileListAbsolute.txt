@@ -296,3 +296,6 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Service\Hzdtf.BasicFunc
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Service\Hzdtf.BasicFunction.Service.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.BasicFunction.Service.Impl.Standard.csproj.CopyComplete
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Service\Hzdtf.BasicFunction.Service.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.BasicFunction.Service.Impl.Standard.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Service\Hzdtf.BasicFunction.Service.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.BasicFunction.Service.Impl.Standard.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Service\Hzdtf.BasicFunction.Service.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.Autofac.Extend.Standard.dll
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Service\Hzdtf.BasicFunction.Service.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.Autofac.Extend.Standard.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Service\Hzdtf.BasicFunction.Service.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.Autofac.Extend.Standard.xml

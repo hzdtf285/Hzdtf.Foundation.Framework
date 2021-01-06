@@ -11,7 +11,7 @@ namespace Hzdtf.Utility.Standard.Model
     /// @ 黄振东
     /// </summary>
     [MessagePackObject]
-    public class DateRangePageInfo : PageInfo
+    public class DateRangePageInfo : PageInfo<int>
     {
         /// <summary>
         /// 开始日期

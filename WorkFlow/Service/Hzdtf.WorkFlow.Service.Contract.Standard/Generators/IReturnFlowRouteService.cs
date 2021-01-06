@@ -10,7 +10,7 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard
     /// 退件流程路线服务接口
     /// @ 黄振东
     /// </summary>
-    public partial interface IReturnFlowRouteService : IService<ReturnFlowRouteInfo>
+    public partial interface IReturnFlowRouteService : IService<int, ReturnFlowRouteInfo>
     {
     }
 }

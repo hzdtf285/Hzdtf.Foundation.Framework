@@ -20,7 +20,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<IList<MenuTreeInfo>> QueryMenuTrees(string connectionId = null, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<IList<MenuTreeInfo>> QueryMenuTrees(string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             return ExecReturnFunc<IList<MenuTreeInfo>>((reInfo) =>
             {

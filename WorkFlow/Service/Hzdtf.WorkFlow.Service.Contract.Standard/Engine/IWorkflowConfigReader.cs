@@ -20,7 +20,7 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard.Engine
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<WorkflowDefineInfo> ReaderAllConfig(int workflowDefineId, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<WorkflowDefineInfo> ReaderAllConfig(int workflowDefineId, string connectionId = null, BasicUserInfo<int> currUser = null);
 
         /// <summary>
         /// 根据工作流编码读取工作流定义信息的所有配置
@@ -29,6 +29,6 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard.Engine
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<WorkflowDefineInfo> ReaderAllConfig(string workflowCode, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<WorkflowDefineInfo> ReaderAllConfig(string workflowCode, string connectionId = null, BasicUserInfo<int> currUser = null);
     }
 }

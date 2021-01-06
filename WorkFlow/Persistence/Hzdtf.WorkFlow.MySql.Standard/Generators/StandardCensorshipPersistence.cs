@@ -11,7 +11,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class StandardCensorshipPersistence : MySqlDapperBase<StandardCensorshipInfo>, IStandardCensorshipPersistence
+    public partial class StandardCensorshipPersistence : MySqlDapperBase<int, StandardCensorshipInfo>, IStandardCensorshipPersistence
     {
         /// <summary>
         /// 表名
@@ -23,6 +23,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
         /// </summary>
         private readonly static string[] INSERT_FIELD_NAMES = new string[]
         {
+            "id",
             "code",
             "create_time",
             "creater",

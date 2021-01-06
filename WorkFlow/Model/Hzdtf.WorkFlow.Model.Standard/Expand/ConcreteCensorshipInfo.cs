@@ -11,7 +11,7 @@ namespace Hzdtf.WorkFlow.Model.Standard.Expand
     /// 具体关卡信息
     /// </summary>
     [MessagePackObject]
-    public partial class ConcreteCensorshipInfo : CodeNameInfo
+    public partial class ConcreteCensorshipInfo : CodeNameInfo<int>
     {
         /// <summary>
         /// 流程关卡

@@ -21,7 +21,7 @@ namespace Hzdtf.BasicFunction.MvcController.Core
     [ApiController]
     [Route("api/[controller]")]
     [Authorize]
-    public partial class AttachmentController : ManageControllerBase<PageInfo, AttachmentInfo, IAttachmentService, AttachmentFilterInfo>
+    public partial class AttachmentController : ManageControllerBase<PageInfo<int>, AttachmentInfo, IAttachmentService, AttachmentFilterInfo>
     {
         /// <summary>
         /// 菜单编码

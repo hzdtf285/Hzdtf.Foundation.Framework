@@ -20,7 +20,10 @@ namespace Hzdtf.Utility.Standard.Utils
         /// <returns>JSON字符串</returns>
         public static string SerializeIgnoreNull(this object obj)
         {
-            var jSetting = new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore };
+            var jSetting = new JsonSerializerSettings
+            {
+                NullValueHandling = NullValueHandling.Ignore
+            };
             return JsonConvert.SerializeObject(obj, Formatting.Indented, jSetting);
         }
 

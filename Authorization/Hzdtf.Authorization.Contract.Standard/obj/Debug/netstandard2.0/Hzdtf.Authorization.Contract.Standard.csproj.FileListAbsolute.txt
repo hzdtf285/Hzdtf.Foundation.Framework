@@ -105,3 +105,13 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Con
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.Authorization.Contract.Standard.csproj.CopyComplete
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.Authorization.Contract.Standard.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.Authorization.Contract.Standard.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.Authorization.Contract.Standard.csprojAssemblyReference.cache
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Contract.Standard\bin\Debug\netstandard2.0\Hzdtf.Autofac.Extend.Standard.dll
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Contract.Standard\bin\Debug\netstandard2.0\Hzdtf.Logger.Contract.Standard.dll
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Contract.Standard\bin\Debug\netstandard2.0\Hzdtf.Platform.Contract.Standard.dll
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Contract.Standard\bin\Debug\netstandard2.0\Hzdtf.Autofac.Extend.Standard.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Contract.Standard\bin\Debug\netstandard2.0\Hzdtf.Autofac.Extend.Standard.xml
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Contract.Standard\bin\Debug\netstandard2.0\Hzdtf.Logger.Contract.Standard.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Contract.Standard\bin\Debug\netstandard2.0\Hzdtf.Logger.Contract.Standard.xml
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Contract.Standard\bin\Debug\netstandard2.0\Hzdtf.Platform.Contract.Standard.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Contract.Standard\bin\Debug\netstandard2.0\Hzdtf.Platform.Contract.Standard.xml

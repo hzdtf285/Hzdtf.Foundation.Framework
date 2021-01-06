@@ -14,7 +14,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class FlowService : ServiceBase<FlowInfo, IFlowPersistence>, IFlowService
+    public partial class FlowService : ServiceBase<int, FlowInfo, IFlowPersistence>, IFlowService
     {
     }
 }

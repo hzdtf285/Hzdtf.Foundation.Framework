@@ -14,7 +14,7 @@ namespace Hzdtf.BasicFunction.Model.Standard.Expand.User
     /// @ 黄振东
     /// </summary>
     [MessagePackObject]
-    public partial class ModifyPasswordInfo : SimpleInfo
+    public partial class ModifyPasswordInfo : SimpleInfo<int>
     {
         /// <summary>
         /// 新密码

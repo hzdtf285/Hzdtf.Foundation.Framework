@@ -25,6 +25,7 @@
     <ProjectReference Include="..\..\..\Authorization\Hzdtf.Authorization.Web.Core\Hzdtf.Authorization.Web.Core.csproj" />
     <ProjectReference Include="..\..\..\Controller\Hzdtf.BasicController.Core\Hzdtf.BasicController.Core.csproj" />
     <ProjectReference Include="..\..\Model\Hzdtf.BasicFunction.Model.Standard\Hzdtf.BasicFunction.Model.Standard.csproj" />
+    <ProjectReference Include="..\..\Persistence\Hzdtf.BasicFunction.Persistence.Contract.Std\Hzdtf.BasicFunction.Persistence.Contract.Std.csproj" />
     <ProjectReference Include="..\..\Service\Hzdtf.BasicFunction.Service.Contract.Standard\Hzdtf.BasicFunction.Service.Contract.Standard.csproj" />
   </ItemGroup>
 

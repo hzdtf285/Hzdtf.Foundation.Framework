@@ -31,7 +31,7 @@ namespace Hzdtf.WorkFlow.Model.Standard.Expand
         /// </summary>
         [JsonProperty("form")]
         [MessagePack.Key("form")]
-        public PersonTimeInfo Form
+        public PersonTimeInfo<int> Form
         {
             get;
             set;

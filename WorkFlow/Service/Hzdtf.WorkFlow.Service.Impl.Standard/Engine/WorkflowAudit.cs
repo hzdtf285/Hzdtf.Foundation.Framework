@@ -29,7 +29,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>工作流定义</returns>
-        protected override WorkflowDefineInfo ValiFlowIn(ReturnInfo<bool> returnInfo, FlowInInfo<FlowAuditInfo> flowIn, out WorkflowInfo workflow, string connectionId = null, BasicUserInfo currUser = null)
+        protected override WorkflowDefineInfo ValiFlowIn(ReturnInfo<bool> returnInfo, FlowInInfo<FlowAuditInfo> flowIn, out WorkflowInfo workflow, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             workflow = null;
             if (flowIn == null)
@@ -54,7 +54,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
                 returnInfo.SetFailureMsg("找不到工作流处理信息");
                 return null;
             }
-            var user = UserTool.GetCurrUser(currUser);
+            var user = UserTool<int>.GetCurrUser(currUser);
             if (reHandle.Data.HandlerId != user.Id)
             {
                 returnInfo.SetFailureMsg("此处理流程不属于您审核");
@@ -117,7 +117,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// <param name="flowIn">流程输入</param>
         /// <param name="findFlowCensorshipIn">查找流程关卡输入信息</param>
         /// <param name="currUser">当前用户</param>
-        protected override void AppendSetFindFlowCensorshipIn(FlowInInfo<FlowAuditInfo> flowIn, FlowCensorshipInInfo findFlowCensorshipIn, BasicUserInfo currUser = null)
+        protected override void AppendSetFindFlowCensorshipIn(FlowInInfo<FlowAuditInfo> flowIn, FlowCensorshipInInfo findFlowCensorshipIn, BasicUserInfo<int> currUser = null)
         {
             findFlowCensorshipIn.ActionType = flowIn.Flow.ActionType;
             findFlowCensorshipIn.Idea = flowIn.Flow.Idea;
@@ -134,7 +134,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         protected override void ExecCore(ReturnInfo<bool> returnInfo, FlowInInfo<FlowAuditInfo> flowIn,
-            FlowCensorshipOutInfo findFlowCensorshipOut, string connectionId = null, BasicUserInfo currUser = null)
+            FlowCensorshipOutInfo findFlowCensorshipOut, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             // 更新工作流状态
             WorkflowPersistence.UpdateFlowStatusAndCensorshipAndHandlerById(findFlowCensorshipOut.Workflow, connectionId);

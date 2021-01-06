@@ -11,8 +11,9 @@ namespace Hzdtf.Utility.Standard.Model
     /// 带有人时间信息
     /// @ 黄振东
     /// </summary>
+    /// <typeparam name="IdT">ID类型</typeparam>
     [MessagePackObject]
-    public class PersonTimeInfo : TimeInfo
+    public class PersonTimeInfo<IdT> : TimeInfo<IdT>
     {
         /// <summary>
         /// 创建人ID_名称
@@ -25,7 +26,7 @@ namespace Hzdtf.Utility.Standard.Model
         [JsonProperty("createrId")]
         [Display(AutoGenerateField = false)]
         [MessagePack.Key("createrId")]
-        public int CreaterId
+        public IdT CreaterId
         {
             get;
             set;
@@ -59,7 +60,7 @@ namespace Hzdtf.Utility.Standard.Model
         [JsonProperty("modifierId")]
         [Display(AutoGenerateField = false)]
         [MessagePack.Key("modifierId")]
-        public int ModifierId
+        public IdT ModifierId
         {
             get;
             set;
@@ -81,5 +82,38 @@ namespace Hzdtf.Utility.Standard.Model
             get;
             set;
         }
-    }    
+    }
+
+    /// <summary>
+    /// 带有人时间信息
+    /// @ 黄振东
+    /// </summary>
+    [MessagePackObject]
+    public class PersonTimeInfo : PersonTimeInfo<int>
+    {
+    }
+
+    /// <summary>
+    /// 带有人时间租户信息
+    /// </summary>
+    /// <typeparam name="IdT">ID类型</typeparam>
+    public class PersonTimeTenantInfo<IdT> : PersonTimeInfo<IdT>
+    {
+        /// <summary>
+        /// 租户ID_名称
+        /// </summary>
+        public const string TenantId_Name = "TenantId";
+
+        /// <summary>
+        /// 租户ID
+        /// </summary>
+        [JsonProperty("tenantId")]
+        [Display(Name = "租户ID", Order = 10, AutoGenerateField = false)]
+        [MessagePack.Key("tenantId")]
+        public IdT TenantId
+        {
+            get;
+            set;
+        }
+    }
 }

@@ -15,9 +15,10 @@ namespace Hzdtf.Authorization.Web.Core
     /// 身份Cookie授权
     /// @ 黄振东
     /// </summary>
+    /// <typeparam name="IdT">ID类型</typeparam>
     /// <typeparam name="UserT">用户类型</typeparam>
-    public class IdentityCookieAuth<UserT> : IdentityClaimAuthBase<UserT>, IIdentityExit
-        where UserT : BasicUserInfo
+    public class IdentityCookieAuth<IdT, UserT> : IdentityClaimAuthBase<IdT, UserT>, IIdentityExit
+        where UserT : BasicUserInfo<IdT>
     {
         #region 属性与字段
 
@@ -36,7 +37,7 @@ namespace Hzdtf.Authorization.Web.Core
         /// <param name="userVali">用户验证</param>
         /// <param name="authUserData">授权用户数据</param>
         /// <param name="httpContext">Http上下文访问</param>
-        public IdentityCookieAuth(IUserVali<UserT> userVali, IAuthUserData<UserT> authUserData, IHttpContextAccessor httpContext)
+        public IdentityCookieAuth(IUserVali<IdT, UserT> userVali, IAuthUserData<IdT, UserT> authUserData, IHttpContextAccessor httpContext)
             : base(userVali, authUserData)
         {
             this.httpContext = httpContext;

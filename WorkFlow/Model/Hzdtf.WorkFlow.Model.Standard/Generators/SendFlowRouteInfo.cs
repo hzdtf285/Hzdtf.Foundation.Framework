@@ -14,7 +14,7 @@ namespace Hzdtf.WorkFlow.Model.Standard
     /// @ 黄振东
     /// </summary>
     [MessagePackObject]
-    public partial class SendFlowRouteInfo : PersonTimeInfo
+    public partial class SendFlowRouteInfo : PersonTimeInfo<int>
     {
 ﻿        /// <summary>
         /// 流程关卡Id_名称

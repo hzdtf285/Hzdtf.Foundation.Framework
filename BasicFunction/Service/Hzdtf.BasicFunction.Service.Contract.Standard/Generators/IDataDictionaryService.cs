@@ -10,7 +10,7 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
     /// 数据字典服务接口
     /// @ 黄振东
     /// </summary>
-    public partial interface IDataDictionaryService : IService<DataDictionaryInfo>
+    public partial interface IDataDictionaryService : IService<int, DataDictionaryInfo>
     {
     }
 }

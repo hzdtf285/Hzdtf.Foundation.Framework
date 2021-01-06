@@ -765,6 +765,32 @@
             文本
             </summary>
         </member>
+        <member name="T:Hzdtf.BasicFunction.Model.Standard.OrderInfo">
+            <summary>
+            订单信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.OrderInfo.OrderNo_Name">
+            <summary>
+            订单号_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.OrderInfo.OrderNo">
+            <summary>
+            订单号
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.Model.Standard.OrderInfo.Amount_Name">
+            <summary>
+            金额_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.Model.Standard.OrderInfo.Amount">
+            <summary>
+            金额
+            </summary>
+        </member>
         <member name="T:Hzdtf.BasicFunction.Model.Standard.RoleInfo">
             <summary>
             角色信息

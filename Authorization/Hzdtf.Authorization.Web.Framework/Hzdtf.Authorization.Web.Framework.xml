@@ -71,7 +71,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Authorization.Web.Framework.IdentityHttpFormAuth.#ctor(Hzdtf.Authorization.Contract.Standard.User.IUserVali{Hzdtf.Utility.Standard.Model.BasicUserInfo})">
+        <member name="M:Hzdtf.Authorization.Web.Framework.IdentityHttpFormAuth.#ctor(Hzdtf.Authorization.Contract.Standard.User.IUserVali{System.Int32,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32}})">
             <summary>
             构造方法
             </summary>
@@ -83,7 +83,7 @@
             </summary>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.Authorization.Web.Framework.IdentityHttpFormAuth.SaveUserInfo(Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.Authorization.Web.Framework.IdentityHttpFormAuth.SaveUserInfo(Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             保存用户信息
             </summary>

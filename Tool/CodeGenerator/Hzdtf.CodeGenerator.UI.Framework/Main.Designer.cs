@@ -42,6 +42,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cbxDataSourceType = new System.Windows.Forms.ComboBox();
             this.groupbox3 = new System.Windows.Forms.GroupBox();
+            this.cbxIsTenant = new System.Windows.Forms.CheckBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cbxPKType = new System.Windows.Forms.ComboBox();
             this.cbxCoreController = new System.Windows.Forms.CheckBox();
             this.cbxModel = new System.Windows.Forms.CheckBox();
             this.btnGenerator = new System.Windows.Forms.Button();
@@ -103,6 +106,7 @@
             // 
             this.txtPassword.Location = new System.Drawing.Point(445, 62);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(105, 21);
             this.txtPassword.TabIndex = 8;
             // 
@@ -178,6 +182,9 @@
             // 
             // groupbox3
             // 
+            this.groupbox3.Controls.Add(this.cbxIsTenant);
+            this.groupbox3.Controls.Add(this.label7);
+            this.groupbox3.Controls.Add(this.cbxPKType);
             this.groupbox3.Controls.Add(this.cbxCoreController);
             this.groupbox3.Controls.Add(this.cbxModel);
             this.groupbox3.Controls.Add(this.btnGenerator);
@@ -192,6 +199,38 @@
             this.groupbox3.TabIndex = 1;
             this.groupbox3.TabStop = false;
             this.groupbox3.Text = "生成项";
+            // 
+            // cbxIsTenant
+            // 
+            this.cbxIsTenant.AutoSize = true;
+            this.cbxIsTenant.Location = new System.Drawing.Point(611, 28);
+            this.cbxIsTenant.Name = "cbxIsTenant";
+            this.cbxIsTenant.Size = new System.Drawing.Size(72, 16);
+            this.cbxIsTenant.TabIndex = 10;
+            this.cbxIsTenant.Text = "是否租户";
+            this.cbxIsTenant.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(400, 29);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(65, 12);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "主键类型：";
+            // 
+            // cbxPKType
+            // 
+            this.cbxPKType.FormattingEnabled = true;
+            this.cbxPKType.Items.AddRange(new object[] {
+            "整型",
+            "字符串",
+            "Guid",
+            "雪花算法"});
+            this.cbxPKType.Location = new System.Drawing.Point(471, 26);
+            this.cbxPKType.Name = "cbxPKType";
+            this.cbxPKType.Size = new System.Drawing.Size(121, 20);
+            this.cbxPKType.TabIndex = 8;
             // 
             // cbxCoreController
             // 
@@ -238,7 +277,7 @@
             // 
             this.txtNamespacePfx.Location = new System.Drawing.Point(115, 26);
             this.txtNamespacePfx.Name = "txtNamespacePfx";
-            this.txtNamespacePfx.Size = new System.Drawing.Size(637, 21);
+            this.txtNamespacePfx.Size = new System.Drawing.Size(268, 21);
             this.txtNamespacePfx.TabIndex = 3;
             // 
             // cbxService
@@ -393,6 +432,9 @@
         private System.Windows.Forms.CheckBox cbxModel;
         private System.Windows.Forms.CheckBox cbxCheckAll;
         private System.Windows.Forms.CheckBox cbxCoreController;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cbxPKType;
+        private System.Windows.Forms.CheckBox cbxIsTenant;
     }
 }
 

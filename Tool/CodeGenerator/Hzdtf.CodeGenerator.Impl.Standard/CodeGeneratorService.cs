@@ -66,21 +66,18 @@ namespace Hzdtf.CodeGenerator.Impl.Standard
         /// <summary>
         /// 生成
         /// </summary>
-        /// <param name="tables">表信息列表</param>
-        /// <param name="functionTypes">功能类型集合</param>
-        /// <param name="namespacePfx">命名空间前辍</param>
-        /// <param name="type">类型</param>
+        /// <param name="param">参数</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<bool> Generator(IList<TableInfo> tables, FunctionType[] functionTypes, string namespacePfx, string type)
+        public virtual ReturnInfo<bool> Generator(CodeGeneratorParamInfo param)
         {
             Util.FOLDER_ROOT.DeleteDirectory();
 
             ReturnInfo<bool> returnInfo = null;
-            IList<IFunctionGeneratorService> services = GetFunctionServices(functionTypes);
+            IList<IFunctionGeneratorService> services = GetFunctionServices(param.FunctionTypes);
 
             foreach (IFunctionGeneratorService s in services)
             {
-                returnInfo = s.Generator(tables, namespacePfx, type);
+                returnInfo = s.Generator(param);
             }
 
             return returnInfo;

@@ -692,3 +692,12 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Web
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Web.Framework\Hzdtf.Authorization.Contract.Standard.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Web.Framework\Hzdtf.Authorization.Contract.Standard.xml
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Web.Framework\Hzdtf.Mini.Standard.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Web.Framework\Hzdtf.Autofac.Extend.Standard.dll
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Web.Framework\Hzdtf.Platform.Contract.Standard.dll
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Web.Framework\Hzdtf.Logger.Contract.Standard.dll
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Web.Framework\Hzdtf.Autofac.Extend.Standard.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Web.Framework\Hzdtf.Autofac.Extend.Standard.xml
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Web.Framework\Hzdtf.Platform.Contract.Standard.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Web.Framework\Hzdtf.Platform.Contract.Standard.xml
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Web.Framework\Hzdtf.Logger.Contract.Standard.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Web.Framework\Hzdtf.Logger.Contract.Standard.xml

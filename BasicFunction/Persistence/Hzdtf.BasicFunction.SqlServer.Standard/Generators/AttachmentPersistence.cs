@@ -11,7 +11,7 @@ namespace Hzdtf.BasicFunction.SqlServer.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class AttachmentPersistence : SqlServerDapperBase<AttachmentInfo>, IAttachmentPersistence
+    public partial class AttachmentPersistence : SqlServerDapperBase<int, AttachmentInfo>, IAttachmentPersistence
     {
         /// <summary>
         /// 表名
@@ -23,6 +23,7 @@ namespace Hzdtf.BasicFunction.SqlServer.Standard
         /// </summary>
         private readonly static string[] INSERT_FIELD_NAMES = new string[]
         {
+            "id",
             "create_time",
             "creater",
             "creater_id",

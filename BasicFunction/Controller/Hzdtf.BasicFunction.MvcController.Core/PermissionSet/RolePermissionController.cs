@@ -22,7 +22,7 @@ namespace Hzdtf.BasicFunction.MvcController.Core.PermissionSet
     [ApiController]
     [Route("api/[controller]")]
     [Authorize]
-    public class RolePermissionController : PagingControllerBase<PageInfo, RoleInfo, IRoleService, KeywordFilterInfo>
+    public class RolePermissionController : PagingControllerBase<PageInfo<int>, RoleInfo, IRoleService, KeywordFilterInfo>
     {
         /// <summary>
         /// 菜单服务

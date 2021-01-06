@@ -14,7 +14,7 @@ namespace Hzdtf.BasicFunction.Model.Standard
     /// @ 黄振东
     /// </summary>
     [MessagePackObject]
-    public partial class MenuInfo : PersonTimeInfo
+    public partial class MenuInfo : PersonTimeInfo<int>
     {
 ﻿        /// <summary>
         /// 编码_名称

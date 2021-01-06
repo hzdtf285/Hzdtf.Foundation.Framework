@@ -33,7 +33,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<string> BuildNo([DisplayName2("序列类型"), Required, MinLength(2), MaxLength(2)] string seqType, byte noLength = 13, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<string> BuildNo([DisplayName2("序列类型"), Required, MinLength(2), MaxLength(2)] string seqType, byte noLength = 13, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             return ExecReturnFuncAndConnectionId<string>((reInfo, connId) =>
             {

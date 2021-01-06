@@ -10,7 +10,7 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard
     /// 流程服务接口
     /// @ 黄振东
     /// </summary>
-    public partial interface IFlowService : IService<FlowInfo>
+    public partial interface IFlowService : IService<int, FlowInfo>
     {
     }
 }

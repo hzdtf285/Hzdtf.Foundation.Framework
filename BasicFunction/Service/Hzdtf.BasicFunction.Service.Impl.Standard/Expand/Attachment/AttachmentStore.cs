@@ -75,7 +75,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment
         /// <param name="attachmentStream">附件流</param>
         /// <returns>返回信息</returns>
         [ProcTrackLog(IgnoreParamValues = true)]
-        public virtual ReturnInfo<IList<string>> Upload(BasicUserInfo currUser = null, params AttachmentStreamInfo[] attachmentStream)
+        public virtual ReturnInfo<IList<string>> Upload(BasicUserInfo<int> currUser = null, params AttachmentStreamInfo[] attachmentStream)
         {
             // 以当前年月为目录
             string yearMonthDic = $"{DateTime.Now.ToCompactShortYM()}/";
@@ -114,7 +114,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Attachment
         /// <param name="currUser">当前用户</param>
         /// <param name="fileAddress">文件地址</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<bool> Remove(BasicUserInfo currUser = null, params string[] fileAddress)
+        public virtual ReturnInfo<bool> Remove(BasicUserInfo<int> currUser = null, params string[] fileAddress)
         {
             ReturnInfo<bool> returnInfo = new ReturnInfo<bool>();
             try

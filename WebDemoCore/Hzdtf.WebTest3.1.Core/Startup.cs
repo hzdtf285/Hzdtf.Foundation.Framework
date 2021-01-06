@@ -21,6 +21,7 @@ using System.Text;
 using Hzdtf.Authorization.Web.Core;
 using Hzdtf.Utility.AspNet.Core;
 using Hzdtf.Utility.AspNet.Core.ModelValidate;
+using Hzdtf.Utility.AspNet.Core.RequestLog;
 
 namespace Hzdtf.WebTest3._1.Core
 {
@@ -53,7 +54,7 @@ namespace Hzdtf.WebTest3._1.Core
             
             //services.AddDistributedRedisCache();// 添加分布式缓存为Redis，如将session存储到redis，则执行此句
 
-            services.AddIdentityAuth(options =>
+            services.AddIdentityAuth<int>(options =>
             {
                 options.LocalAuth.LoginPath = "/login.html";
             });
@@ -75,7 +76,7 @@ namespace Hzdtf.WebTest3._1.Core
                 });
             });
 
-
+            services.AddRequestLog();
             services.AddApiExceptionHandle();
 
             if (Configuration.GetValue<bool>("Swagger:Enabled"))
@@ -118,7 +119,8 @@ namespace Hzdtf.WebTest3._1.Core
             app.UseAuthentication();
             app.UseAuthorization();
 
-            app.UseIdentityAuth();
+            app.UseRequestLog();
+            app.UseIdentityAuth<int>();
 
             app.UseApiExceptionHandle();
             //app.UseHttpClientForBreakerWrapPolicy(); // 使用断路器时才需要

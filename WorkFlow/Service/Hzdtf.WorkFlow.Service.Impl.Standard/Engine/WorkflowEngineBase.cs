@@ -139,7 +139,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
         [Auth(CurrUserParamIndex = 2)]
-        public virtual ReturnInfo<bool> Execute(FlowInT flowIn, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<bool> Execute(FlowInT flowIn, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             return ExecReturnFuncAndConnectionId<bool>((reInfo, connId) =>
             {
@@ -192,7 +192,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// <returns>返回信息</returns>
         [Transaction(ConnectionIdIndex = 4)]
         protected virtual ReturnInfo<bool> ExecTransaction(ReturnInfo<bool> returnInfo, WorkflowDefineInfo workflowDefine,
-            FlowInT flowIn, FlowCensorshipOutInfo findFlowCensorshipOut, string connectionId = null, BasicUserInfo currUser = null)
+            FlowInT flowIn, FlowCensorshipOutInfo findFlowCensorshipOut, string connectionId = null, BasicUserInfo<int> currUser = null)
         {          
             IFormEngine formEngine = FormEngineFactory.Create(workflowDefine.Code);
             if (formEngine == null)
@@ -234,7 +234,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>工作流定义</returns>
-        protected abstract WorkflowDefineInfo ValiFlowIn(ReturnInfo<bool> returnInfo, FlowInT flowIn, out WorkflowInfo workflow, string connectionId = null, BasicUserInfo currUser = null);
+        protected abstract WorkflowDefineInfo ValiFlowIn(ReturnInfo<bool> returnInfo, FlowInT flowIn, out WorkflowInfo workflow, string connectionId = null, BasicUserInfo<int> currUser = null);
 
         /// <summary>
         /// 追加设置查找流程关卡输入信息
@@ -242,7 +242,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// <param name="flowIn">流程输入</param>
         /// <param name="findFlowCensorshipIn">查找流程关卡输入信息</param>
         /// <param name="currUser">当前用户</param>
-        protected abstract void AppendSetFindFlowCensorshipIn(FlowInT flowIn, FlowCensorshipInInfo findFlowCensorshipIn, BasicUserInfo currUser = null);
+        protected abstract void AppendSetFindFlowCensorshipIn(FlowInT flowIn, FlowCensorshipInInfo findFlowCensorshipIn, BasicUserInfo<int> currUser = null);
 
         /// <summary>
         /// 执行核心
@@ -252,7 +252,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// <param name="findFlowCensorshipOut">查找流程关卡输出</param>
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
-        protected abstract void ExecCore(ReturnInfo<bool> returnInfo, FlowInT flowIn, FlowCensorshipOutInfo findFlowCensorshipOut, string connectionId = null, BasicUserInfo currUser = null);
+        protected abstract void ExecCore(ReturnInfo<bool> returnInfo, FlowInT flowIn, FlowCensorshipOutInfo findFlowCensorshipOut, string connectionId = null, BasicUserInfo<int> currUser = null);
 
         #endregion
 

@@ -45,7 +45,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
         [ProcTrackLog(IgnoreParamValues = true)]
-        public virtual ReturnInfo<bool> Upload(IList<AttachmentInfo> attachments, IList<Stream> streams, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<bool> Upload(IList<AttachmentInfo> attachments, IList<Stream> streams, BasicUserInfo<int> currUser = null)
         {
             ReturnInfo<bool> re = new ReturnInfo<bool>();
             AttachmentStreamInfo[] attachmentStreams = new AttachmentStreamInfo[attachments.Count];
@@ -90,7 +90,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
         [ProcTrackLog(IgnoreParamValues = true)]
-        public virtual ReturnInfo<bool> Upload([DisplayName2("附件"), Model] AttachmentInfo attachment, Stream stream, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<bool> Upload([DisplayName2("附件"), Model] AttachmentInfo attachment, Stream stream, BasicUserInfo<int> currUser = null)
         {
             AttachmentStreamInfo attachmentStream = new AttachmentStreamInfo()
             {
@@ -120,7 +120,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public override ReturnInfo<bool> RemoveById([Id] int id, string connectionId = null, BasicUserInfo currUser = null)
+        public override ReturnInfo<bool> RemoveById([Id] int id, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             ReturnInfo<bool> re = new ReturnInfo<bool>();
 
@@ -154,7 +154,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public override ReturnInfo<bool> RemoveByIds([DisplayName2("ID集合"), ArrayNotEmpty] int[] ids, string connectionId = null, BasicUserInfo currUser = null)
+        public override ReturnInfo<bool> RemoveByIds([DisplayName2("ID集合"), ArrayNotEmpty] int[] ids, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             ReturnInfo<bool> re = new ReturnInfo<bool>();
 
@@ -193,7 +193,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<IList<AttachmentInfo>> QueryByOwner(short ownerType, int ownerId, string blurTitle = null, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<IList<AttachmentInfo>> QueryByOwner(short ownerType, int ownerId, string blurTitle = null, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             return ExecReturnFunc<IList<AttachmentInfo>>((reInfo) =>
             {
@@ -210,7 +210,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<int> CountByOwner(short ownerType, int ownerId, string blurTitle = null, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<int> CountByOwner(short ownerType, int ownerId, string blurTitle = null, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             return ExecReturnFunc<int>((reInfo) =>
             {
@@ -227,7 +227,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<bool> ExistsByOwner(short ownerType, int ownerId, string blurTitle = null, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<bool> ExistsByOwner(short ownerType, int ownerId, string blurTitle = null, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             return ExecReturnFunc<bool>((reInfo) =>
             {
@@ -243,7 +243,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<bool> RemoveByOwner(short ownerType, int ownerId, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<bool> RemoveByOwner(short ownerType, int ownerId, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             ReturnInfo<bool> returnInfo = new ReturnInfo<bool>();
             ReturnInfo<IList<AttachmentInfo>> ownerReturnInfo = QueryByOwner(ownerType, ownerId, connectionId: connectionId, currUser: currUser);
@@ -274,7 +274,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="attachment">附件</param>
         /// <param name="returnInfo">返回信息</param>
         /// <param name="currUser">当前用户</param>
-        private ReturnInfo<bool> ValiFile(AttachmentInfo attachment, ReturnInfo<bool> returnInfo, BasicUserInfo currUser = null)
+        private ReturnInfo<bool> ValiFile(AttachmentInfo attachment, ReturnInfo<bool> returnInfo, BasicUserInfo<int> currUser = null)
         {
             AttachmentOwnerInfo attachmentOwner = AttachmentOwnerReader.ReaderByOwnerType(attachment.OwnerType, currUser);
             if (attachmentOwner == null)

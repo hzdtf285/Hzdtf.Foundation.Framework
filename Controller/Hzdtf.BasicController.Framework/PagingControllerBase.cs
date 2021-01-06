@@ -19,9 +19,9 @@ namespace Hzdtf.BasicController.Framework
     /// <typeparam name="ServiceT">服务类型</typeparam>
     /// <typeparam name="PageFilterT">分页筛选类型</typeparam>
     public abstract class PagingControllerBase<PageInfoT, ModelT, ServiceT, PageFilterT> : PageControllerBase<PageInfoT>
-        where PageInfoT : PageInfo
-        where ModelT : SimpleInfo
-        where ServiceT : IService<ModelT>
+        where PageInfoT : PageInfo<int>
+        where ModelT : SimpleInfo<int>
+        where ServiceT : IService<int, ModelT>
         where PageFilterT : FilterInfo
     {
         /// <summary>

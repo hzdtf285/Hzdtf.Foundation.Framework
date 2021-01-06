@@ -16,7 +16,7 @@ namespace Hzdtf.BasicController.Framework
     /// </summary>
     /// <typeparam name="PageInfoT">页面信息类型</typeparam>
     public abstract class PageControllerBase<PageInfoT> : ApiController
-        where PageInfoT : PageInfo
+        where PageInfoT : PageInfo<int>
     {
         /// <summary>
         /// 用户服务
@@ -50,10 +50,10 @@ namespace Hzdtf.BasicController.Framework
                     return returnInfo;
                 }
 
-                returnInfo.Data.Functions = new List<CodeNameInfo>(reFunInfo.Data.Count);
+                returnInfo.Data.Functions = new List<CodeNameInfo<int>>(reFunInfo.Data.Count);
                 foreach (var f in reFunInfo.Data)
                 {
-                    returnInfo.Data.Functions.Add(new CodeNameInfo()
+                    returnInfo.Data.Functions.Add(new CodeNameInfo<int>()
                     {
                         Code = f.Code,
                         Name = f.Name
@@ -76,9 +76,9 @@ namespace Hzdtf.BasicController.Framework
         /// <returns>页面信息</returns>
         private PageInfoT CreatePageInfo()
         {
-            if (typeof(PageInfoT) == typeof(PageInfo))
+            if (typeof(PageInfoT) == typeof(PageInfo<int>))
             {
-                return (PageInfoT)new PageInfo();
+                return (PageInfoT)new PageInfo<int>();
             }
 
             return typeof(PageInfoT).CreateInstance<PageInfoT>();

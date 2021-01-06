@@ -24,7 +24,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<IList<RoleInfo>> OwnRolesByUserId([DisplayName2("用户ID"), Id] int userId, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<IList<RoleInfo>> OwnRolesByUserId([DisplayName2("用户ID"), Id] int userId, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             return ExecReturnFunc<IList<RoleInfo>>((reInfo) =>
             {
@@ -39,7 +39,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<IList<UserInfo>> OwnUsersByRoleId([DisplayName2("角色ID"), Id] int roleId, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<IList<UserInfo>> OwnUsersByRoleId([DisplayName2("角色ID"), Id] int roleId, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             return ExecReturnFunc<IList<UserInfo>>((reInfo) =>
             {
@@ -65,7 +65,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<IList<UserInfo>> OwnUsersByRoleCode([DisplayName2("角色编码"), Required] string roleCode, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<IList<UserInfo>> OwnUsersByRoleCode([DisplayName2("角色编码"), Required] string roleCode, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             return ExecReturnFunc<IList<UserInfo>>((reInfo) =>
             {

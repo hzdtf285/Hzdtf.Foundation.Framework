@@ -4,19 +4,20 @@
         <name>Hzdtf.MySql.Standard</name>
     </assembly>
     <members>
-        <member name="T:Hzdtf.MySql.Standard.MySqlDapperBase`1">
+        <member name="T:Hzdtf.MySql.Standard.MySqlDapperBase`2">
             <summary>
             MySql Dapper基类
             @ 黄振东
             </summary>
+            <typeparam name="IdT">ID类型</typeparam>
             <typeparam name="ModelT">模型类型</typeparam>
         </member>
-        <member name="F:Hzdtf.MySql.Standard.MySqlDapperBase`1.WHERE_ID_EQUAL_PARAM_SQL">
+        <member name="F:Hzdtf.MySql.Standard.MySqlDapperBase`2.WHERE_ID_EQUAL_PARAM_SQL">
             <summary>
             带ID等于参数的条件SQL
             </summary>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.SelectSql(System.Int32,System.String[])">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.SelectSql(`0,System.String[])">
             <summary>
             根据ID查询模型SQL语句
             </summary>
@@ -24,7 +25,7 @@
             <param name="propertyNames">属性名称集合</param>
             <returns>SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.SelectSql(System.Int32[],Dapper.DynamicParameters@,System.String[])">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.SelectSql(`0[],Dapper.DynamicParameters@,System.String[])">
             <summary>
             根据ID集合查询模型列表SQL语句
             </summary>
@@ -33,21 +34,28 @@
             <param name="propertyNames">属性名称集合</param>
             <returns>SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.CountSql(System.Int32)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.CountSql(`0)">
             <summary>
             根据ID统计模型数SQL语句
             </summary>
             <param name="id">ID</param>
             <returns>SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.CountSql(System.String)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.CountSql(System.String)">
             <summary>
             统计模型数SQL语句
             </summary>
             <param name="pfx">前辍</param>
             <returns>SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.SelectSql(System.String,System.String,System.String[])">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.BasicCountSql(System.String)">
+            <summary>
+            基本统计模型数SQL语句
+            </summary>
+            <param name="pfx">前辍</param>
+            <returns>SQL语句</returns>
+        </member>
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.SelectSql(System.String,System.String,System.String[])">
             <summary>
             查询模型列表
             </summary>
@@ -56,7 +64,16 @@
             <param name="propertyNames">属性名称集合</param>
             <returns>SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.SelectPageSql(System.Int32,System.Int32,Dapper.DynamicParameters@,Hzdtf.Utility.Standard.Model.FilterInfo,System.String[])">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.BasicSelectSql(System.String,System.String,System.String[])">
+            <summary>
+            基本查询模型列表
+            </summary>
+            <param name="pfx">前辍</param>
+            <param name="appendFieldSqls">追加字段SQL，包含前面的,</param>
+            <param name="propertyNames">属性名称集合</param>
+            <returns>SQL语句</returns>
+        </member>
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.SelectPageSql(System.Int32,System.Int32,Dapper.DynamicParameters@,Hzdtf.Utility.Standard.Model.FilterInfo,System.String[])">
             <summary>
             查询模型列表并分页SQL语句
             </summary>
@@ -67,7 +84,7 @@
             <param name="propertyNames">属性名称集合</param>
             <returns>SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.MergeWhereSql(Hzdtf.Utility.Standard.Model.FilterInfo,Dapper.DynamicParameters@)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.MergeWhereSql(Hzdtf.Utility.Standard.Model.FilterInfo,Dapper.DynamicParameters@)">
             <summary>
             组合条件SQL
             </summary>
@@ -75,7 +92,7 @@
             <param name="parameters">参数</param>
             <returns>条件SQL</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.AppendCreateTimeSql(System.Text.StringBuilder,Hzdtf.Utility.Standard.Model.FilterInfo,Dapper.DynamicParameters)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.AppendCreateTimeSql(System.Text.StringBuilder,Hzdtf.Utility.Standard.Model.FilterInfo,Dapper.DynamicParameters)">
             <summary>
             追加创建时间SQL
             </summary>
@@ -83,20 +100,20 @@
             <param name="filter">筛选</param>
             <param name="parameters">参数</param>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.AppendKeywordSql(System.Text.StringBuilder,Hzdtf.Utility.Standard.Model.KeywordFilterInfo)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.AppendKeywordSql(System.Text.StringBuilder,Hzdtf.Utility.Standard.Model.KeywordFilterInfo)">
             <summary>
             追加按关键字查询的SQL
             </summary>
             <param name="whereSql">条件SQL</param>
             <param name="keywordFilter">关键字筛选</param>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.GetPageKeywordFields">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.GetPageKeywordFields">
             <summary>
             获取分页按关键字查询的字段集合
             </summary>
             <returns>分页按关键字查询的字段集合</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.CountByFilterSql(Hzdtf.Utility.Standard.Model.FilterInfo,Dapper.DynamicParameters@)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.CountByFilterSql(Hzdtf.Utility.Standard.Model.FilterInfo,Dapper.DynamicParameters@)">
             <summary>
             根据筛选信息统计模型数SQL语句
             </summary>
@@ -104,7 +121,16 @@
             <param name="parameters">参数</param>
             <returns>SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.InsertSql(`0,System.Boolean)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.GetTenantIdFilterSql(System.Boolean,System.Boolean,System.String)">
+            <summary>
+            获取租户ID筛选SQL
+            </summary>
+            <param name="isBeforeAppWhere">是否前面追加WHERE</param>
+            <param name="isBeforeAppAnd">是否前面追加AND</param>
+            <param name="pfx">前辍</param>
+            <returns>租户ID筛选SQL</returns>
+        </member>
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.InsertSql(`1,System.Boolean)">
             <summary>
             插入模型SQL语句
             </summary>
@@ -112,7 +138,7 @@
             <param name="isGetAutoId">是否获取自增ID</param>
             <returns>SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.InsertSql(System.Collections.Generic.IList{`0},Dapper.DynamicParameters@)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.InsertSql(System.Collections.Generic.IList{`1},Dapper.DynamicParameters@)">
             <summary>
             插入模型列表SQL语句
             </summary>
@@ -120,7 +146,7 @@
             <param name="para">参数集合</param>
             <returns>SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.UpdateByIdSql(`0,System.String[])">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.UpdateByIdSql(`1,System.String[])">
             <summary>
             根据ID更新模型SQL语句
             </summary>
@@ -128,14 +154,14 @@
             <param name="propertyNames">属性名称集合</param>
             <returns>SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.DeleteByIdSql(System.Int32)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.DeleteByIdSql(`0)">
             <summary>
             根据ID删除模型SQL语句
             </summary>
             <param name="id">ID</param>
             <returns>SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.DeleteByIdsSql(System.Int32[],Dapper.DynamicParameters@)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.DeleteByIdsSql(`0[],Dapper.DynamicParameters@)">
             <summary>
             根据ID数组删除模型SQL语句
             </summary>
@@ -143,27 +169,46 @@
             <param name="parameters">参数集合</param>
             <returns>SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.DeleteSql">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.DeleteSql">
             <summary>
             删除所有模型SQL语句
             </summary>
             <returns>SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.CreateDbConnection(System.String)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.BasicDeleteSql">
+            <summary>
+            基本删除所有模型SQL语句
+            </summary>
+            <returns>SQL语句</returns>
+        </member>
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.CreateDbConnection(System.String)">
             <summary>
             创建数据库连接
             </summary>
             <param name="connectionString">连接字符串</param>
             <returns>数据库连接</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.DeleteByTableSql(System.String)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.ModelContainerTenantId">
+            <summary>
+            模型是否包含租户ID
+            </summary>
+            <returns>模型是否包含租户ID</returns>
+        </member>
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.DeleteByTableSql(System.String)">
             <summary>
             根据表名删除所有模型SQL语句
             </summary>
             <param name="table">表名</param>
             <returns>SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.DeleteByTableAndForignKeySql(System.String,System.String,System.Int32[],Dapper.DynamicParameters@)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.BasicDeleteByTableSql(System.String)">
+            <summary>
+            基本根据表名删除所有模型SQL语句
+            </summary>
+            <param name="table">表名</param>
+            <returns>SQL语句</returns>
+        </member>
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.DeleteByTableAndForignKeySql(System.String,System.String,`0[],Dapper.DynamicParameters@)">
             <summary>
             根据表名、外键字段和外键值删除模型SQL语句
             </summary>
@@ -173,19 +218,19 @@
             <param name="parameters">参数</param>
             <returns>SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.InsertFieldNames">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.InsertFieldNames">
             <summary>
             插入字段名集合
             </summary>
             <returns>插入字段名集合</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.UpdateFieldNames">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.UpdateFieldNames">
             <summary>
             更新字段名称集合
             </summary>
             <returns>更新字段名称集合</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.GetValueByFieldName(`0,System.String)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.GetValueByFieldName(`1,System.String)">
             <summary>
             根据字段名获取模型的值
             </summary>
@@ -193,7 +238,7 @@
             <param name="field">字段名</param>
             <returns>值</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.GetPartPageSql(System.Int32,System.Int32)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.GetPartPageSql(System.Int32,System.Int32)">
             <summary>
             获取部分的分页SQL语句
             </summary>
@@ -201,13 +246,13 @@
             <param name="pageSize">每页记录数</param>
             <returns>部分的分页SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.GetLastInsertIdSql">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.GetLastInsertIdSql">
             <summary>
             获取最后插入ID SQL语句
             </summary>
             <returns>最后插入ID SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.GetWhereIdsSql(System.Int32[],Dapper.DynamicParameters@,System.String,System.String)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.GetWhereIdsSql(`0[],Dapper.DynamicParameters@,System.String,System.String)">
             <summary>
             根据ID数组获取ID条件SQL语句，不包含where
             </summary>
@@ -217,7 +262,7 @@
             <param name="idField">ID字段</param>
             <returns>ID条件SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.GetWhereTypesSql``1(``0[],Dapper.DynamicParameters@,System.String,System.String)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.GetWhereTypesSql``1(``0[],Dapper.DynamicParameters@,System.String,System.String)">
             <summary>
             根据值数组获取条件SQL语句，不包含where
             </summary>
@@ -227,7 +272,7 @@
             <param name="prefixTable">表前辍</param>
             <returns>ID条件SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.GetPropByField(System.String,System.String[])">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.GetPropByField(System.String,System.String[])">
             <summary>
             根据字段名获取属性名
             </summary>
@@ -235,7 +280,7 @@
             <param name="fieldMapProps">字段映射属性集合</param>
             <returns>属性名</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.GetFieldByProp(System.String,System.String[])">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.GetFieldByProp(System.String,System.String[])">
             <summary>
             根据属性名获取字段名
             </summary>
@@ -243,7 +288,7 @@
             <param name="fieldMapProps">字段映射属性集合</param>
             <returns>属性名</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.GetSortSql(Hzdtf.Utility.Standard.Model.SortEnum,System.String,System.String)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.GetSortSql(Hzdtf.Utility.Standard.Model.SortEnum,System.String,System.String)">
             <summary>
             获取排序SQL语句
             </summary>
@@ -252,7 +297,7 @@
             <param name="pfx">前辍</param>
             <returns>排序SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.GetSortSqlByField(Hzdtf.Utility.Standard.Model.SortEnum,System.String,System.String)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.GetSortSqlByField(Hzdtf.Utility.Standard.Model.SortEnum,System.String,System.String)">
             <summary>
             根据字段名获取排序SQL语句
             </summary>
@@ -261,7 +306,7 @@
             <param name="pfx">前辍</param>
             <returns>排序SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.JoinSelectPropMapFields(System.String[],System.String)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.JoinSelectPropMapFields(System.String[],System.String)">
             <summary>
             连接查询的属性映射字段集合
             带有,号
@@ -270,7 +315,7 @@
             <param name="pfx">前辍</param>
             <returns>连接后的查询的属性映射字段集合</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.GetModifyInfoSql(`0)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.GetModifyInfoSql(`1)">
             <summary>
             获取修改信息SQL
             前面带有,前辍
@@ -278,7 +323,7 @@
             <param name="model">模型</param>
             <returns>修改信息SQL</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.GetSelectPageSortSql(Hzdtf.Utility.Standard.Model.FilterInfo,System.String)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.GetSelectPageSortSql(Hzdtf.Utility.Standard.Model.FilterInfo,System.String)">
             <summary>
             获取查询分页排序的SQL
             </summary>
@@ -286,12 +331,12 @@
             <param name="pfx">前辍</param>
             <returns>分页排序的SQL</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.AppendSelectPageFieldsSql">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.AppendSelectPageFieldsSql">
             <summary>
             追加查询分页字段SQL
             </summary>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.AppendSelectPageWhereSql(System.Text.StringBuilder,Dapper.DynamicParameters,Hzdtf.Utility.Standard.Model.FilterInfo)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.AppendSelectPageWhereSql(System.Text.StringBuilder,Dapper.DynamicParameters,Hzdtf.Utility.Standard.Model.FilterInfo)">
             <summary>
             追加查询分页条件SQL
             </summary>
@@ -299,7 +344,7 @@
             <param name="parameters">参数</param>
             <param name="filter">筛选</param>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.GetSelectPageJoinSql(Dapper.DynamicParameters,Hzdtf.Utility.Standard.Model.FilterInfo)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.GetSelectPageJoinSql(Dapper.DynamicParameters,Hzdtf.Utility.Standard.Model.FilterInfo)">
             <summary>
             获取查询分页连接SQL
             </summary>
@@ -307,21 +352,28 @@
             <param name="filter">筛选</param>
             <returns>连接SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.ConvertSortName(System.String)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.ConvertSortName(System.String)">
             <summary>
             转换排序名称
             </summary>
             <param name="sortName">排名名称</param>
             <returns>排序名称</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.CombineInsertSqlByFieldNames(System.String[])">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.WrapInsertFieldNames(`0)">
+            <summary>
+            包装插入字段名集合
+            </summary>
+            <param name="id">ID</param>
+            <returns>插入字段名集合</returns>
+        </member>
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.CombineInsertSqlByFieldNames(System.String[])">
             <summary>
             根据字段名称集合组合插入SQL语句
             </summary>
             <param name="fieldNames">字段名称集合</param>
             <returns>插入SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.CombineBatchInsertSqlByFieldNames(System.String[],System.Collections.Generic.IList{`0},Dapper.DynamicParameters@)">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.CombineBatchInsertSqlByFieldNames(System.String[],System.Collections.Generic.IList{`1},Dapper.DynamicParameters@)">
             <summary>
             根据字段名称集合组合批量插入SQL语句
             </summary>
@@ -330,14 +382,14 @@
             <param name="para">参数</param>
             <returns>插入SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.CompareUpdateSqlByFieldNames(System.String[])">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.CompareUpdateSqlByFieldNames(System.String[])">
             <summary>
             根据字段名称集合组合更新SQL语句
             </summary>
             <param name="fieldNames">字段名称集合</param>
             <returns>更新SQL语句</returns>
         </member>
-        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`1.GetUpdateFieldsSql(System.String[])">
+        <member name="M:Hzdtf.MySql.Standard.MySqlDapperBase`2.GetUpdateFieldsSql(System.String[])">
             <summary>
             获取更新字段SQL
             如果传入的属性名称为null则获取子类的字段

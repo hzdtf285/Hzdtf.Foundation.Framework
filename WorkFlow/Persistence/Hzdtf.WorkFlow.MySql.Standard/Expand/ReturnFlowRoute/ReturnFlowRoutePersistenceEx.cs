@@ -25,7 +25,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             IList<ReturnFlowRouteInfo> result = null;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                string sql = $"{SelectSql()} WHERE {GetFieldByProp("FlowCensorshipId")}=@FlowCensorshipId";
+                string sql = $"{BasicSelectSql()} WHERE {GetFieldByProp("FlowCensorshipId")}=@FlowCensorshipId";
                 Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectByFlowCensorshipId");
                 result = dbConn.Query<ReturnFlowRouteInfo>(sql, new { FlowCensorshipId = flowCensorshipId }).AsList();
             }, AccessMode.SLAVE);
@@ -46,7 +46,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             string idSql = GetWhereIdsSql(flowCensorshipIds, out parameters, null, GetFieldByProp("FlowCensorshipId"));
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                string sql = $"{SelectSql()} WHERE {idSql}";
+                string sql = $"{BasicSelectSql()} WHERE {idSql}";
                 Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectByFlowCensorshipIds");
                 result = dbConn.Query<ReturnFlowRouteInfo>(sql, parameters).AsList();
             }, AccessMode.SLAVE);

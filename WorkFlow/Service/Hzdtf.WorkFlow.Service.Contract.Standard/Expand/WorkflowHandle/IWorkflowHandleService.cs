@@ -20,7 +20,7 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<bool> ModifyToReadedById(int id, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<bool> ModifyToReadedById(int id, string connectionId = null, BasicUserInfo<int> currUser = null);
 
         /// <summary>
         /// 根据处理人ID是否存在审核且未处理的个数
@@ -29,7 +29,7 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<bool> ExistsAuditAndUnhandleByHandleId(int handlerId, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<bool> ExistsAuditAndUnhandleByHandleId(int handlerId, string connectionId = null, BasicUserInfo<int> currUser = null);
 
         /// <summary>
         /// 根据处理人ID集合是否存在审核且未处理的个数
@@ -38,7 +38,7 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<bool[]> ExistsAuditAndUnhandleByHandleIds(int[] handlerIds, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<bool[]> ExistsAuditAndUnhandleByHandleIds(int[] handlerIds, string connectionId = null, BasicUserInfo<int> currUser = null);
 
         /// <summary>
         /// 根据工作流人ID、流程关卡ID和处理人ID查找工作流处理信息
@@ -49,6 +49,6 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<WorkflowHandleInfo> FindByWorkflowIdAndFlowCensorshipIdAndHandlerId(int workflowId, int flowCensorshipId, int handleId, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<WorkflowHandleInfo> FindByWorkflowIdAndFlowCensorshipIdAndHandlerId(int workflowId, int flowCensorshipId, int handleId, string connectionId = null, BasicUserInfo<int> currUser = null);
     }
 }

@@ -13,7 +13,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
     /// 异步持久化基类
     /// @ 黄振东
     /// </summary>
-    public abstract partial class PersistenceBase<ModelT> where ModelT : SimpleInfo
+    public abstract partial class PersistenceBase<IdT, ModelT> where ModelT : SimpleInfo<IdT>
     {
         #region 读取方法
 
@@ -23,7 +23,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="id">ID</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>模型任务</returns>
-        public virtual Task<ModelT> SelectAsync(int id, ref string connectionId)
+        public virtual Task<ModelT> SelectAsync(IdT id, ref string connectionId)
         {
             Task<ModelT> task = null;
             DbConnectionManager.BrainpowerExecuteAsync(ref connectionId, this, (connId, isClose, dbConn) =>
@@ -44,7 +44,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="propertyNames">属性名称集合</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>模型任务</returns>
-        public virtual Task<ModelT> SelectAsync(int id, string[] propertyNames, ref string connectionId)
+        public virtual Task<ModelT> SelectAsync(IdT id, string[] propertyNames, ref string connectionId)
         {
             Task<ModelT> task = null;
             DbConnectionManager.BrainpowerExecuteAsync(ref connectionId, this, (connId, isClose, dbConn) =>
@@ -64,7 +64,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="ids">ID集合</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>模型任务</returns>
-        public virtual Task<IList<ModelT>> SelectAsync(int[] ids, ref string connectionId)
+        public virtual Task<IList<ModelT>> SelectAsync(IdT[] ids, ref string connectionId)
         {
             Task<IList<ModelT>> task = null;
             DbConnectionManager.BrainpowerExecuteAsync(ref connectionId, this, (connId, isClose, dbConn) =>
@@ -85,7 +85,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="propertyNames">属性名称集合</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>模型任务</returns>
-        public virtual Task<IList<ModelT>> SelectAsync(int[] ids, string[] propertyNames, ref string connectionId)
+        public virtual Task<IList<ModelT>> SelectAsync(IdT[] ids, string[] propertyNames, ref string connectionId)
         {
             Task<IList<ModelT>> task = null;
             DbConnectionManager.BrainpowerExecuteAsync(ref connectionId, this, (connId, isClose, dbConn) =>
@@ -105,7 +105,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="id">ID</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>模型数任务</returns>
-        public virtual Task<int> CountAsync(int id, ref string connectionId)
+        public virtual Task<int> CountAsync(IdT id, ref string connectionId)
         {
             Task<int> task = null;
             DbConnectionManager.BrainpowerExecuteAsync(ref connectionId, this, (connId, isClose, dbConn) =>
@@ -313,7 +313,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="id">ID</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>影响行数任务</returns>
-        public virtual Task<int> DeleteByIdAsync(int id, ref string connectionId)
+        public virtual Task<int> DeleteByIdAsync(IdT id, ref string connectionId)
         {
             Task<int> task = null;
             DbConnectionManager.BrainpowerExecuteAsync(ref connectionId, this, (connId, isClose, dbConn) =>
@@ -333,7 +333,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="ids">ID数组</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>影响行数任务</returns>
-        public virtual Task<int> DeleteByIdsAsync(int[] ids, ref string connectionId)
+        public virtual Task<int> DeleteByIdsAsync(IdT[] ids, ref string connectionId)
         {
             Task<int> task = null;
             DbConnectionManager.BrainpowerExecuteAsync(ref connectionId, this, (connId, isClose, dbConn) =>

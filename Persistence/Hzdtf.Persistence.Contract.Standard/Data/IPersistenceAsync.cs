@@ -12,8 +12,9 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
     /// 持久化异步接口
     /// @ 黄振东
     /// </summary>
+    /// <typeparam name="IdT">ID类型</typeparam>
     /// <typeparam name="ModelT">模型类型</typeparam>
-    public interface IPersistenceAsync<ModelT> : IPersistenceConnection where ModelT : SimpleInfo
+    public interface IPersistenceAsync<IdT, ModelT> : IPersistenceConnection where ModelT : SimpleInfo<IdT>
     {
         #region 读取方法
 
@@ -23,7 +24,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="id">ID</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>模型任务</returns>
-        Task<ModelT> SelectAsync(int id, ref string connectionId);
+        Task<ModelT> SelectAsync(IdT id, ref string connectionId);
 
         /// <summary>
         /// 异步根据ID查询模型
@@ -32,7 +33,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="propertyNames">属性名称集合</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>模型任务</returns>
-        Task<ModelT> SelectAsync(int id, string[] propertyNames, ref string connectionId);
+        Task<ModelT> SelectAsync(IdT id, string[] propertyNames, ref string connectionId);
 
         /// <summary>
         /// 异步根据ID集合查询模型
@@ -40,7 +41,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="ids">ID集合</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>模型任务</returns>
-        Task<IList<ModelT>> SelectAsync(int[] ids, ref string connectionId);
+        Task<IList<ModelT>> SelectAsync(IdT[] ids, ref string connectionId);
 
         /// <summary>
         /// 异步根据ID集合查询模型
@@ -49,7 +50,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="propertyNames">属性名称集合</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>模型任务</returns>
-        Task<IList<ModelT>> SelectAsync(int[] ids, string[] propertyNames, ref string connectionId);
+        Task<IList<ModelT>> SelectAsync(IdT[] ids, string[] propertyNames, ref string connectionId);
 
         /// <summary>
         /// 异步根据ID统计模型数
@@ -57,7 +58,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="id">ID</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>模型数任务</returns>
-        Task<int> CountAsync(int id, ref string connectionId);
+        Task<int> CountAsync(IdT id, ref string connectionId);
 
         /// <summary>
         /// 异步统计模型数
@@ -145,7 +146,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="id">ID</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>影响行数任务</returns>
-        Task<int> DeleteByIdAsync(int id, ref string connectionId);
+        Task<int> DeleteByIdAsync(IdT id, ref string connectionId);
 
         /// <summary>
         /// 异步根据ID数组删除模型
@@ -153,7 +154,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="ids">ID数组</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>影响行数任务</returns>
-        Task<int> DeleteByIdsAsync(int[] ids, ref string connectionId);
+        Task<int> DeleteByIdsAsync(IdT[] ids, ref string connectionId);
 
         /// <summary>
         /// 异步删除所有模型

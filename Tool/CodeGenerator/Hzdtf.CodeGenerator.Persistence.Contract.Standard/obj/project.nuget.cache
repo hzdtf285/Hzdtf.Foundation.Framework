@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Oshk8TXj5E+ndGvlAGFL1fHv+ADcUCPvPnACxfkiDGm/jb9zlgcJNwpmrzYCLeDgYhnCC35tlpQMlg9ZECYGbg==",
+  "dgSpecHash": "snb+fjaXQXhhkCfLaJnA8ZJ5B0wuiPhAvPsOxmnd1EKS/7geLyJo5WUOnpXyC8pWMmTW0TJP+o9mavZ+r/A56Q==",
   "success": true,
   "projectFilePath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Tool\\CodeGenerator\\Hzdtf.CodeGenerator.Persistence.Contract.Standard\\Hzdtf.CodeGenerator.Persistence.Contract.Standard.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "C:\\Users\\huangzd\\.nuget\\packages\\sixlabors.imagesharp\\1.0.0-beta0006\\sixlabors.imagesharp.1.0.0-beta0006.nupkg.sha512",
     "C:\\Users\\huangzd\\.nuget\\packages\\sixlabors.imagesharp.drawing\\1.0.0-beta0006\\sixlabors.imagesharp.drawing.1.0.0-beta0006.nupkg.sha512",
     "C:\\Users\\huangzd\\.nuget\\packages\\sixlabors.shapes\\1.0.0-beta0008\\sixlabors.shapes.1.0.0-beta0008.nupkg.sha512",
+    "C:\\Users\\huangzd\\.nuget\\packages\\snowflake.core\\2.0.0\\snowflake.core.2.0.0.nupkg.sha512",
     "C:\\Users\\huangzd\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
     "C:\\Users\\huangzd\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",

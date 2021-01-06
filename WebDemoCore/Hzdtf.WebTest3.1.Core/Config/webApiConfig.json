@@ -1,0 +1,9 @@
+{
+  "config": [
+    {
+      "Url": "/app/ss",
+      "MenuCode": "ff",
+      "FunctionCode": "test"
+    }
+  ]
+}

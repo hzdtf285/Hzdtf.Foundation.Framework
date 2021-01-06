@@ -16,7 +16,7 @@ namespace Hzdtf.Authorization.Web.Framework
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public class IdentityHttpFormAuth : IdentityAuthBase<BasicUserInfo>, IIdentityExit
+    public class IdentityHttpFormAuth : IdentityAuthBase<int, BasicUserInfo<int>>, IIdentityExit
     {
         #region 初始化
 
@@ -24,7 +24,7 @@ namespace Hzdtf.Authorization.Web.Framework
         /// 构造方法
         /// </summary>
         /// <param name="userVali">用户验证</param>
-        public IdentityHttpFormAuth(IUserVali<BasicUserInfo> userVali)
+        public IdentityHttpFormAuth(IUserVali<int, BasicUserInfo<int>> userVali)
             : base(userVali)
         {
         }
@@ -61,7 +61,7 @@ namespace Hzdtf.Authorization.Web.Framework
         /// 保存用户信息
         /// </summary>
         /// <param name="basicUser">基本用户</param>
-        protected override void SaveUserInfo(BasicUserInfo basicUser) => HttpFormsAuthorizationUtil.SetAuthenticationCookie<BasicUserInfo>(basicUser);
+        protected override void SaveUserInfo(BasicUserInfo<int> basicUser) => HttpFormsAuthorizationUtil.SetAuthenticationCookie<BasicUserInfo<int>>(basicUser);
 
         #endregion
     }

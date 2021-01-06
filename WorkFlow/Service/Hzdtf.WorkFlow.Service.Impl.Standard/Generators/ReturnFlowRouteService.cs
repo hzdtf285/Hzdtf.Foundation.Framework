@@ -14,7 +14,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class ReturnFlowRouteService : ServiceBase<ReturnFlowRouteInfo, IReturnFlowRoutePersistence>, IReturnFlowRouteService
+    public partial class ReturnFlowRouteService : ServiceBase<int, ReturnFlowRouteInfo, IReturnFlowRoutePersistence>, IReturnFlowRouteService
     {
     }
 }

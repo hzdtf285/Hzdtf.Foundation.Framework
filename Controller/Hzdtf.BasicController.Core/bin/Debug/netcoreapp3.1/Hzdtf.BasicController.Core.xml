@@ -101,6 +101,18 @@
             <param name="ids">ID集合</param>
             <returns>返回信息</returns>
         </member>
+        <member name="M:Hzdtf.BasicController.Core.ManageControllerBase`4.Count">
+            <summary>
+            统计模型数量
+            </summary>
+            <returns>返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.BasicController.Core.ManageControllerBase`4.Exists(System.Int32)">
+            <summary>
+            根据ID获取是否存在模型
+            </summary>
+            <returns>返回信息</returns>
+        </member>
         <member name="T:Hzdtf.BasicController.Core.PageControllerBase`1">
             <summary>
             页面控制器基类

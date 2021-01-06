@@ -1,0 +1,14 @@
+2021-01-06 23:02:55.2977 ApiExceptionHandleMiddleware ERROR You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order WHERE `Id`=18  AND `tenant_id`=20' at line 1 标签:192.168.3.16,DESKTOP-KDN1753 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order WHERE `Id`=18  AND `tenant_id`=20' at line 1    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2813
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 572
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 443
+   at Hzdtf.Persistence.Dapper.Standard.DapperPersistenceBase`2.DeleteById(IdT id, IDbConnection dbConnection, IDbTransaction dbTransaction) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\Persistence\Hzdtf.Persistence.Dapper.Standard\DapperPersistenceBase.cs:line 197
+   at Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.<>c__DisplayClass18_0.<DeleteById>b__0(String connId, IDbConnection dbConn) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\Persistence\Hzdtf.Persistence.Contract.Standard\Data\PersistenceBase.cs:line 321
+   at Hzdtf.Persistence.Contract.Standard.Management.DbConnectionManager.BrainpowerExecute(String connectionId, IPersistenceConnection persistenceConnection, Action`2 action, AccessMode accessMode) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\Persistence\Hzdtf.Persistence.Contract.Standard\Management\DbConnectionManager.cs:line 94

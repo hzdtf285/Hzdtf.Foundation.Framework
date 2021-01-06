@@ -11,7 +11,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class UserPersistence : MySqlDapperBase<UserInfo>, IUserPersistence
+    public partial class UserPersistence : MySqlDapperBase<int, UserInfo>, IUserPersistence
     {
         /// <summary>
         /// 表名
@@ -23,6 +23,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
         /// </summary>
         private readonly static string[] INSERT_FIELD_NAMES = new string[]
         {
+            "id",
             "code",
             "create_time",
             "creater",
@@ -105,7 +106,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
 ﻿                case "code":
                     return model.Code;
 
-﻿                case "create_time":
+                case "create_time":
                     return model.CreateTime;
 
 ﻿                case "creater":

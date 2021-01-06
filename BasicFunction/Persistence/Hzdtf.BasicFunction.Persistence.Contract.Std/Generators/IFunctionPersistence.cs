@@ -10,7 +10,7 @@ namespace Hzdtf.BasicFunction.Persistence.Contract.Standard
     /// 功能持久化接口
     /// @ 黄振东
     /// </summary>
-    public partial interface IFunctionPersistence : IPersistence<FunctionInfo>
+    public partial interface IFunctionPersistence : IPersistence<int, FunctionInfo>
     {
     }
 }

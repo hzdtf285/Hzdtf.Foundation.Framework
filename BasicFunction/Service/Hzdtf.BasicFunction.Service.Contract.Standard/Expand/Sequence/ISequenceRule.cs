@@ -19,6 +19,6 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard.Expand.Sequence
         /// <param name="increment">增量</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>序列号</returns>
-        string BuilderNo(string seqType, byte noLength, int increment, BasicUserInfo currUser = null);
+        string BuilderNo(string seqType, byte noLength, int increment, BasicUserInfo<int> currUser = null);
     }
 }

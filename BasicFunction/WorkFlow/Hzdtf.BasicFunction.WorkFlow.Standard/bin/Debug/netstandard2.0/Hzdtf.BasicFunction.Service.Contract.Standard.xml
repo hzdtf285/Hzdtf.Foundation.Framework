@@ -22,7 +22,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.Expand.Attachment.IAttachmentOwnerReader.ReaderByOwnerType(System.Int16,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.Expand.Attachment.IAttachmentOwnerReader.ReaderByOwnerType(System.Int16,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据归属类型读取附件归属信息
             </summary>
@@ -36,7 +36,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.Expand.Attachment.IAttachmentStore.Upload(Hzdtf.Utility.Standard.Model.BasicUserInfo,Hzdtf.BasicFunction.Model.Standard.Expand.Attachment.AttachmentStreamInfo[])">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.Expand.Attachment.IAttachmentStore.Upload(Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32},Hzdtf.BasicFunction.Model.Standard.Expand.Attachment.AttachmentStreamInfo[])">
             <summary>
             上传
             </summary>
@@ -44,7 +44,7 @@
             <param name="attachmentStream">附件流</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.Expand.Attachment.IAttachmentStore.Remove(Hzdtf.Utility.Standard.Model.BasicUserInfo,System.String[])">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.Expand.Attachment.IAttachmentStore.Remove(Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32},System.String[])">
             <summary>
             移除
             </summary>
@@ -58,7 +58,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.Expand.Sequence.ISequenceRule.BuilderNo(System.String,System.Byte,System.Int32,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.Expand.Sequence.ISequenceRule.BuilderNo(System.String,System.Byte,System.Int32,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             生成序列号
             </summary>
@@ -78,7 +78,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IAttachmentService.Upload(System.Collections.Generic.IList{Hzdtf.BasicFunction.Model.Standard.AttachmentInfo},System.Collections.Generic.IList{System.IO.Stream},Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IAttachmentService.Upload(System.Collections.Generic.IList{Hzdtf.BasicFunction.Model.Standard.AttachmentInfo},System.Collections.Generic.IList{System.IO.Stream},Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             上传
             </summary>
@@ -87,7 +87,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IAttachmentService.Upload(Hzdtf.BasicFunction.Model.Standard.AttachmentInfo,System.IO.Stream,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IAttachmentService.Upload(Hzdtf.BasicFunction.Model.Standard.AttachmentInfo,System.IO.Stream,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             上传
             </summary>
@@ -96,7 +96,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IAttachmentService.QueryByOwner(System.Int16,System.Int32,System.String,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IAttachmentService.QueryByOwner(System.Int16,System.Int32,System.String,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据归属查询附件列表
             </summary>
@@ -107,7 +107,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IAttachmentService.CountByOwner(System.Int16,System.Int32,System.String,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IAttachmentService.CountByOwner(System.Int16,System.Int32,System.String,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据归属统计附件个数
             </summary>
@@ -118,7 +118,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IAttachmentService.ExistsByOwner(System.Int16,System.Int32,System.String,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IAttachmentService.ExistsByOwner(System.Int16,System.Int32,System.String,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据归属是否存在附件
             </summary>
@@ -129,7 +129,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IAttachmentService.RemoveByOwner(System.Int16,System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IAttachmentService.RemoveByOwner(System.Int16,System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据归属移除
             </summary>
@@ -149,7 +149,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IDataDictionaryItemService.QueryByDataDictionaryId(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IDataDictionaryItemService.QueryByDataDictionaryId(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据数据字典ID获取数据字典子项列表
             </summary>
@@ -158,7 +158,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IDataDictionaryItemService.QueryByDataDictionaryCode(System.String,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IDataDictionaryItemService.QueryByDataDictionaryCode(System.String,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据数据字典编码获取数据字典子项列表
             </summary>
@@ -177,7 +177,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IMenuService.QueryMenuTrees(System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IMenuService.QueryMenuTrees(System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             查询菜单树列表
             </summary>
@@ -195,7 +195,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IRoleMenuFunctionService.QueryMenuFunctionsByRoleId(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IRoleMenuFunctionService.QueryMenuFunctionsByRoleId(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据角色ID查询菜单功能信息列表
             </summary>
@@ -204,7 +204,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IRoleMenuFunctionService.SaveRoleMenuFunctions(System.Int32,System.Collections.Generic.IList{System.Int32},System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IRoleMenuFunctionService.SaveRoleMenuFunctions(System.Int32,System.Collections.Generic.IList{System.Int32},System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             保存角色拥有的菜单功能信息列表
             </summary>
@@ -224,7 +224,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IRoleService.QueryAndNotSystemHide(System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IRoleService.QueryAndNotSystemHide(System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             查询角色列表并去掉系统隐藏
             </summary>
@@ -232,7 +232,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IRoleService.QueryByFilter(Hzdtf.Utility.Standard.Model.KeywordFilterInfo,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IRoleService.QueryByFilter(Hzdtf.Utility.Standard.Model.KeywordFilterInfo,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据筛选条件查询角色列表
             </summary>
@@ -251,7 +251,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.ISequenceService.BuildNo(System.String,System.Byte,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.ISequenceService.BuildNo(System.String,System.Byte,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             生成序列号
             </summary>
@@ -271,7 +271,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserRoleService.OwnRolesByUserId(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserRoleService.OwnRolesByUserId(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据用户ID查询拥有的角色列表
             </summary>
@@ -280,7 +280,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserRoleService.OwnUsersByRoleId(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserRoleService.OwnUsersByRoleId(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据角色ID查询拥有的用户列表
             </summary>
@@ -289,7 +289,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserRoleService.OwnUsersByRoleCode(System.String,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserRoleService.OwnUsersByRoleCode(System.String,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据角色编码查询拥有的用户列表
             </summary>
@@ -304,7 +304,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.User.IUserMenuService.CanAccessMenus(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.User.IUserMenuService.CanAccessMenus(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据用户ID获取能访问的菜单列表
             </summary>
@@ -323,7 +323,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserService.ModifyPasswordByLoginId(Hzdtf.BasicFunction.Model.Standard.Expand.User.CurrUserModifyPasswordInfo,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserService.ModifyPasswordByLoginId(Hzdtf.BasicFunction.Model.Standard.Expand.User.CurrUserModifyPasswordInfo,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据登录ID修改密码
             </summary>
@@ -332,7 +332,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserService.ResetUserPassword(Hzdtf.BasicFunction.Model.Standard.Expand.User.ModifyPasswordInfo,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserService.ResetUserPassword(Hzdtf.BasicFunction.Model.Standard.Expand.User.ModifyPasswordInfo,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             重置用户密码
             </summary>
@@ -341,7 +341,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserService.IsCurrUserPermission(System.String,System.String,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserService.IsCurrUserPermission(System.String,System.String,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据菜单编码和功能编码判断当前用户是否有权限
             </summary>
@@ -351,7 +351,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserService.IsCurrUserPermission(System.String,System.String[],System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserService.IsCurrUserPermission(System.String,System.String[],System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据菜单编码和功能编码集合判断当前用户是否有权限
             </summary>
@@ -361,7 +361,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserService.IsPermission(System.Int32,System.String,System.String[],System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserService.IsPermission(System.Int32,System.String,System.String[],System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据用户ID、菜单编码和功能编码集合判断用户是否有权限
             </summary>
@@ -372,7 +372,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserService.QueryCurrUserOwnFunctionsByMenuCode(System.String,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserService.QueryCurrUserOwnFunctionsByMenuCode(System.String,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据菜单编码查询当前用户所拥有的功能信息列表
             </summary>
@@ -381,7 +381,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserService.QueryUserOwnFunctionsByMenuCode(System.Int32,System.String,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserService.QueryUserOwnFunctionsByMenuCode(System.Int32,System.String,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据用户ID和菜单编码查询用户所拥有的功能信息列表
             </summary>
@@ -391,7 +391,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserService.IsCurrUserAdministrators(System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserService.IsCurrUserAdministrators(System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             判断当前用户是否是系统管理组
             </summary>
@@ -399,7 +399,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserService.IsUserAdministrators(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserService.IsUserAdministrators(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             判断用户是否是系统管理组
             </summary>
@@ -408,7 +408,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserService.QueryByFilter(Hzdtf.BasicFunction.Model.Standard.Expand.User.UserFilterInfo,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.Service.Contract.Standard.IUserService.QueryByFilter(Hzdtf.BasicFunction.Model.Standard.Expand.User.UserFilterInfo,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据筛选条件查询用户列表
             </summary>
@@ -438,6 +438,12 @@
         <member name="T:Hzdtf.BasicFunction.Service.Contract.Standard.IMenuFunctionService">
             <summary>
             菜单功能服务接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="T:Hzdtf.BasicFunction.Service.Contract.Standard.IOrderService">
+            <summary>
+            订单服务接口
             @ 黄振东
             </summary>
         </member>

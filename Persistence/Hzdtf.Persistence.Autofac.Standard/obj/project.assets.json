@@ -396,6 +396,15 @@
           "lib/netstandard2.0/SixLabors.Shapes.dll": {}
         }
       },
+      "Snowflake.Core/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Snowflake.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Snowflake.Core.dll": {}
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -1206,6 +1215,7 @@
           "NPOI": "2.5.2",
           "Newtonsoft.Json": "12.0.3",
           "SharpZipLib": "1.3.1",
+          "Snowflake.Core": "2.0.0",
           "System.ComponentModel.Annotations": "4.7.0",
           "System.Drawing.Common": "4.7.0",
           "System.Reflection.DispatchProxy": "4.7.1",
@@ -1933,6 +1943,18 @@
         "lib/netstandard2.0/SixLabors.Shapes.xml",
         "sixlabors.shapes.1.0.0-beta0008.nupkg.sha512",
         "sixlabors.shapes.nuspec"
+      ]
+    },
+    "Snowflake.Core/2.0.0": {
+      "sha512": "YB4SqYbTgG6UvwFHFZOWny/pE415KNjRbbiGwfPOUDWUCEjYLB9P11EiIHQ7y6LlkjejVAAIi8Wt3WM7Ys9qyw==",
+      "type": "package",
+      "path": "snowflake.core/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Snowflake.Core.dll",
+        "snowflake.core.2.0.0.nupkg.sha512",
+        "snowflake.core.nuspec"
       ]
     },
     "System.Buffers/4.5.1": {

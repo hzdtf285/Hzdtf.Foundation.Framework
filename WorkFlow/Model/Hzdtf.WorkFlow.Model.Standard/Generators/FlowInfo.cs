@@ -14,7 +14,7 @@ namespace Hzdtf.WorkFlow.Model.Standard
     /// @ 黄振东
     /// </summary>
     [MessagePackObject]
-    public partial class FlowInfo : PersonTimeInfo
+    public partial class FlowInfo : PersonTimeInfo<int>
     {
 ﻿        /// <summary>
         /// 名称_名称

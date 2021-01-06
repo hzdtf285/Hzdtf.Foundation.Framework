@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5IUiUVlvuxmP4Qt4pInh7P6PZTOU7hmr9JHJ620ByZZpjALhbSMs8JmiGuMoTeJPAoXY2Ef4OW6HJ6k5ESS9rQ==",
+  "dgSpecHash": "e3aA8oRktj8Ikzla5ZbVVfLFtxhD9a+siVObNTMm9/94ajjsFA89+S56QIInFu9rArlc936BoO+cK3+H4g6HQA==",
   "success": true,
   "projectFilePath": "F:\\MyWorks\\net2\\Hzdtf.Foundation.Framework\\Demo\\Controller\\Hzdtf.Demo.MvcController.Core\\Hzdtf.Demo.MvcController.Core.csproj",
   "expectedPackageFiles": [
@@ -111,6 +111,7 @@
     "C:\\Users\\huangzd\\.nuget\\packages\\sixlabors.imagesharp\\1.0.0-beta0006\\sixlabors.imagesharp.1.0.0-beta0006.nupkg.sha512",
     "C:\\Users\\huangzd\\.nuget\\packages\\sixlabors.imagesharp.drawing\\1.0.0-beta0006\\sixlabors.imagesharp.drawing.1.0.0-beta0006.nupkg.sha512",
     "C:\\Users\\huangzd\\.nuget\\packages\\sixlabors.shapes\\1.0.0-beta0008\\sixlabors.shapes.1.0.0-beta0008.nupkg.sha512",
+    "C:\\Users\\huangzd\\.nuget\\packages\\snowflake.core\\2.0.0\\snowflake.core.2.0.0.nupkg.sha512",
     "C:\\Users\\huangzd\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\huangzd\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\huangzd\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

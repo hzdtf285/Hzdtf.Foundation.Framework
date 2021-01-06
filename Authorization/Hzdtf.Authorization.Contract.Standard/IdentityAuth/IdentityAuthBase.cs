@@ -10,16 +10,17 @@ namespace Hzdtf.Authorization.Contract.Standard.IdentityAuth
     /// 先执行原生验证，原生通过后再把授权信息保存到存储器里
     /// @ 黄振东
     /// </summary>
+    /// <typeparam name="IdT">ID类型</typeparam>
     /// <typeparam name="UserT">用户顾炎武</typeparam>
-    public abstract class IdentityAuthBase<UserT> : IIdentityAuth<UserT>
-        where UserT : BasicUserInfo
+    public abstract class IdentityAuthBase<IdT, UserT> : IIdentityAuth<IdT, UserT>
+        where UserT : BasicUserInfo<IdT>
     {
         #region 属性与字段
 
         /// <summary>
         /// 用户验证
         /// </summary>
-        protected readonly IUserVali<UserT> userVali;
+        protected readonly IUserVali<IdT, UserT> userVali;
 
         #endregion
 
@@ -27,7 +28,7 @@ namespace Hzdtf.Authorization.Contract.Standard.IdentityAuth
         /// 构造方法
         /// </summary>
         /// <param name="userVali">用户验证</param>
-        public IdentityAuthBase(IUserVali<UserT> userVali)
+        public IdentityAuthBase(IUserVali<IdT, UserT> userVali)
         {
             this.userVali = userVali;
         }

@@ -303,6 +303,80 @@
             </summary>
             <param name="services">服务配置数组</param>
         </member>
+        <member name="T:Hzdtf.Utility.AspNet.Core.RequestLog.RequestLogMiddleware">
+            <summary>
+            请求日志中间件
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.AspNet.Core.RequestLog.RequestLogMiddleware.next">
+            <summary>
+            下一个中间件处理委托
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.AspNet.Core.RequestLog.RequestLogMiddleware.options">
+            <summary>
+            请求日志选项配置
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.AspNet.Core.RequestLog.RequestLogMiddleware.log">
+            <summary>
+            日志
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.RequestLog.RequestLogMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions{Hzdtf.Utility.AspNet.Core.RequestLog.RequestLogOptions},Hzdtf.Logger.Contract.Standard.ILogable)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="next">下一个中间件处理委托</param>
+            <param name="options">请求日志选项配置</param>
+            <param name="log">日志</param>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.RequestLog.RequestLogMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            执行
+            </summary>
+            <param name="context">http上下文</param>
+            <returns>任务</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.AspNet.Core.RequestLog.RequestLogMiddlewareExtensions">
+            <summary>
+            请求日志中间件扩展类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.RequestLog.RequestLogMiddlewareExtensions.UseRequestLog(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            使用请求日志
+            </summary>
+            <param name="app">应用</param>
+            <returns>应用</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.AspNet.Core.RequestLog.RequestLogOptions">
+            <summary>
+            请求日志选项
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.AspNet.Core.RequestLog.RequestLogOptions.LogLevel">
+            <summary>
+            日志等级，默认是Trace
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Utility.AspNet.Core.RequestLog.RequestLogServiceExtensions">
+            <summary>
+            请求日志扩展类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.AspNet.Core.RequestLog.RequestLogServiceExtensions.AddRequestLog(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hzdtf.Utility.AspNet.Core.RequestLog.RequestLogOptions})">
+            <summary>
+            添加请求日志服务
+            </summary>
+            <param name="services">服务收藏</param>
+            <param name="options">请求日志选项配置</param>
+            <returns>服务收藏</returns>
+        </member>
         <member name="T:Hzdtf.Utility.AspNet.Core.ServiceProviderTool">
             <summary>
             服务提供者工具

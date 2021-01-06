@@ -45,7 +45,7 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public override ReturnInfo<bool> AfterExecFlow(FlowCensorshipOutInfo flowCensorshipOut, object flowIn, bool isSuccess, string connectionId = null, BasicUserInfo currUser = null)
+        public override ReturnInfo<bool> AfterExecFlow(FlowCensorshipOutInfo flowCensorshipOut, object flowIn, bool isSuccess, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             ReturnInfo<bool> returnInfo = new ReturnInfo<bool>();
             if (isSuccess)
@@ -54,7 +54,7 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form
                 if (flowCensorshipOut.IsCurrApplicantCensorship() 
                     && (flowCensorshipOut.ActionType == ActionType.SAVE || flowCensorshipOut.ActionType == ActionType.SEND))
                 {
-                    FlowInInfo<FlowInitInfo<PersonTimeInfo>> conFlowIn;
+                    FlowInInfo<FlowInitInfo<PersonTimeInfo<int>>> conFlowIn;
                     ConcreteFormInfoT form = ToApplyConcreteFormInfo(flowCensorshipOut, flowIn, returnInfo, out conFlowIn);
                     if (returnInfo.Failure())
                     {
@@ -124,9 +124,9 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form
         /// <param name="returnInfo">返回信息</param>
         /// <param name="conFlowIn">具体流程输入</param>
         /// <returns>具体表单信息</returns>
-        private ConcreteFormInfoT ToApplyConcreteFormInfo(FlowCensorshipOutInfo flowCensorshipOut, object flowIn, ReturnInfo<bool> returnInfo, out FlowInInfo<FlowInitInfo<PersonTimeInfo>> conFlowIn)
+        private ConcreteFormInfoT ToApplyConcreteFormInfo(FlowCensorshipOutInfo flowCensorshipOut, object flowIn, ReturnInfo<bool> returnInfo, out FlowInInfo<FlowInitInfo<PersonTimeInfo<int>>> conFlowIn)
         {
-            conFlowIn = flowIn as FlowInInfo<FlowInitInfo<PersonTimeInfo>>;
+            conFlowIn = flowIn as FlowInInfo<FlowInitInfo<PersonTimeInfo<int>>>;
             if (conFlowIn == null)
             {
                 returnInfo.SetFailureMsg("流程输入不能转换为FlowInInfo<FlowApplyInfo<PersonTimeInfo>>");

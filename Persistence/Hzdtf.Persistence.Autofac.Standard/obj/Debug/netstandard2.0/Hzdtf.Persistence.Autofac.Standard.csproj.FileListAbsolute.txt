@@ -190,3 +190,4 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\Persistence\Hzdtf.Persistence.Autofac
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Persistence\Hzdtf.Persistence.Autofac.Standard\obj\Debug\netstandard2.0\Hzdtf.Persistence.Autofac.Standard.csproj.CopyComplete
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Persistence\Hzdtf.Persistence.Autofac.Standard\obj\Debug\netstandard2.0\Hzdtf.Persistence.Autofac.Standard.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Persistence\Hzdtf.Persistence.Autofac.Standard\obj\Debug\netstandard2.0\Hzdtf.Persistence.Autofac.Standard.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Persistence\Hzdtf.Persistence.Autofac.Standard\obj\Debug\netstandard2.0\Hzdtf.Persistence.Autofac.Standard.csprojAssemblyReference.cache

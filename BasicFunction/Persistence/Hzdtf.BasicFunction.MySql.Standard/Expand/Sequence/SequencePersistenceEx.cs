@@ -25,7 +25,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
             SequenceInfo result = null;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                string sql = $"{SelectSql()} WHERE {GetFieldByProp("SeqType")}=@SeqType";
+                string sql = $"{BasicSelectSql()} WHERE {GetFieldByProp("SeqType")}=@SeqType";
                 Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectBySeqType");
                 result = dbConn.QueryFirstOrDefault<SequenceInfo>(sql, new { SeqType = seqType });
             }, AccessMode.SLAVE);

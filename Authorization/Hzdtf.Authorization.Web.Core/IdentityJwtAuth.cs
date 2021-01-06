@@ -24,9 +24,10 @@ namespace Hzdtf.Authorization.Web.Core
     /// Jwt:Expires:过期时间，单位为分钟，如未设置，默认为2小时
     /// @ 黄振东
     /// </summary>
+    /// <typeparam name="IdT">ID类型</typeparam>
     /// <typeparam name="UserT">用户类型</typeparam>
-    public class IdentityJwtAuth<UserT> : IIdentityTokenAuth
-        where UserT : BasicUserInfo
+    public class IdentityJwtAuth<IdT, UserT> : IIdentityTokenAuth
+        where UserT : BasicUserInfo<IdT>
     {
         #region 属性与字段
 
@@ -38,12 +39,12 @@ namespace Hzdtf.Authorization.Web.Core
         /// <summary>
         /// 用户验证
         /// </summary>
-        private readonly IUserVali<UserT> userVali;
+        private readonly IUserVali<IdT, UserT> userVali;
 
         /// <summary>
         /// 授权用户数据
         /// </summary>
-        public readonly IAuthUserData<UserT> authUserData;
+        public readonly IAuthUserData<IdT, UserT> authUserData;
 
         /// <summary>
         /// 应用配置
@@ -61,7 +62,7 @@ namespace Hzdtf.Authorization.Web.Core
         /// <param name="authUserData">授权用户数据</param>
         /// <param name="httpContext">Http上下文访问</param>
         /// <param name="appConfig">应用配置</param>
-        public IdentityJwtAuth(IUserVali<UserT> userVali, IAuthUserData<UserT> authUserData, IHttpContextAccessor httpContext, IAppConfiguration appConfig)
+        public IdentityJwtAuth(IUserVali<IdT, UserT> userVali, IAuthUserData<IdT, UserT> authUserData, IHttpContextAccessor httpContext, IAppConfiguration appConfig)
         {
             this.userVali = userVali;
             this.httpContext = httpContext;

@@ -10,7 +10,7 @@ namespace Hzdtf.BasicFunction.Persistence.Contract.Standard
     /// 菜单持久化接口
     /// @ 黄振东
     /// </summary>
-    public partial interface IMenuPersistence : IPersistence<MenuInfo>
+    public partial interface IMenuPersistence : IPersistence<int, MenuInfo>
     {
     }
 }

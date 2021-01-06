@@ -25,7 +25,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             WorkflowDefineInfo result = null;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                string sql = $"{SelectSql()} WHERE {GetFieldByProp("Code")}=@Code";
+                string sql = $"{BasicSelectSql()} WHERE {GetFieldByProp("Code")}=@Code";
                 Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectByCode");
                 result = dbConn.QueryFirstOrDefault<WorkflowDefineInfo>(sql, new { Code = code });
             }, AccessMode.SLAVE);

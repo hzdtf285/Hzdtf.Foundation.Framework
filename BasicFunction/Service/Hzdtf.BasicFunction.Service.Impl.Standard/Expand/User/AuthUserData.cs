@@ -13,7 +13,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public class AuthUserData : AuthUserDataBase<UserInfo>
+    public class AuthUserData : AuthUserDataBase<int, UserInfo>
     {
         /// <summary>
         /// 创建用户

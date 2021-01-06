@@ -308,3 +308,4 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Rpc\Hzdtf.MessageQueue.R
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcServer.Console.Core\obj\Debug\netcoreapp3.1\Hzdtf.MessageQueue.RpcServer.Console.Core.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcServer.Console.Core\obj\Debug\netcoreapp3.1\Hzdtf.MessageQueue.RpcServer.Console.Core.genruntimeconfig.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcServer.Console.Core\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Rpc\Hzdtf.MessageQueue.RpcServer.Console.Core\bin\Debug\netcoreapp3.1\Snowflake.Core.dll

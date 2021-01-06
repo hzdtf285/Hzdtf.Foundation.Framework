@@ -11,9 +11,10 @@ namespace Hzdtf.Authorization.Contract.Standard.User
     /// 身份认证用户数据基类
     /// @ 黄振东
     /// </summary>
+    /// <typeparam name="IdT">ID类型</typeparam>
     /// <typeparam name="UserT">用户类型</typeparam>
-    public abstract class AuthUserDataBase<UserT> : IAuthUserData<UserT>
-        where UserT : BasicUserInfo
+    public abstract class AuthUserDataBase<IdT, UserT> : IAuthUserData<IdT, UserT>
+        where UserT : BasicUserInfo<IdT>
     {
         /// <summary>
         /// 创建用户

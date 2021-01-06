@@ -13,8 +13,9 @@ namespace Hzdtf.Utility.Standard.Model
     /// 编码名称信息
     /// @ 黄振东
     /// </summary>
+    /// <typeparam name="IdT">ID类型</typeparam>
     [MessagePackObject]
-    public class CodeNameInfo : PersonTimeInfo
+    public class CodeNameInfo<IdT> : PersonTimeInfo<IdT>
     {
         /// <summary>
         /// 编码_名称
@@ -53,5 +54,14 @@ namespace Hzdtf.Utility.Standard.Model
             get;
             set;
         }
+    }
+
+    /// <summary>
+    /// 编码名称信息
+    /// @ 黄振东
+    /// </summary>
+    [MessagePackObject]
+    public class CodeNameInfo : CodeNameInfo<int>
+    {
     }
 }

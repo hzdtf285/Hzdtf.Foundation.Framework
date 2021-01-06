@@ -11,7 +11,7 @@ namespace Hzdtf.BasicFunction.SqlServer.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class FunctionPersistence : SqlServerDapperBase<FunctionInfo>, IFunctionPersistence
+    public partial class FunctionPersistence : SqlServerDapperBase<int, FunctionInfo>, IFunctionPersistence
     {
         /// <summary>
         /// 表名
@@ -23,6 +23,7 @@ namespace Hzdtf.BasicFunction.SqlServer.Standard
         /// </summary>
         private readonly static string[] INSERT_FIELD_NAMES = new string[]
         {
+            "id",
             "code",
             "name",
             "creater_id",

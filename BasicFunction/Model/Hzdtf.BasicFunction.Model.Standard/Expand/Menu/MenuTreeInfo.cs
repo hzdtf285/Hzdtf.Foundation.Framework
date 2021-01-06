@@ -12,7 +12,7 @@ namespace Hzdtf.BasicFunction.Model.Standard.Expand.Menu
     /// @ 黄振东
     /// </summary>
     [MessagePackObject]
-    public class MenuTreeInfo : SimpleInfo
+    public class MenuTreeInfo : SimpleInfo<int>
     {
         /// <summary>
         /// 功能菜单ID

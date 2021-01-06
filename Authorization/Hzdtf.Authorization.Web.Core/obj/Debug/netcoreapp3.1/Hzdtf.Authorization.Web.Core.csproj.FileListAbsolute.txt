@@ -99,3 +99,9 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Web
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Web.Core\obj\Debug\netcoreapp3.1\Hzdtf.Authorization.Web.Core.csproj.CopyComplete
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Web.Core\obj\Debug\netcoreapp3.1\Hzdtf.Authorization.Web.Core.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Web.Core\obj\Debug\netcoreapp3.1\Hzdtf.Authorization.Web.Core.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Web.Core\bin\Debug\netcoreapp3.1\Hzdtf.Autofac.Extend.Standard.dll
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Web.Core\bin\Debug\netcoreapp3.1\Hzdtf.Logger.Contract.Standard.dll
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Web.Core\bin\Debug\netcoreapp3.1\Hzdtf.Autofac.Extend.Standard.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Web.Core\bin\Debug\netcoreapp3.1\Hzdtf.Autofac.Extend.Standard.xml
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Web.Core\bin\Debug\netcoreapp3.1\Hzdtf.Logger.Contract.Standard.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Web.Core\bin\Debug\netcoreapp3.1\Hzdtf.Logger.Contract.Standard.xml

@@ -407,5 +407,11 @@
             @ 黄振东
             </summary>
         </member>
+        <member name="T:Hzdtf.BasicFunction.Persistence.Contract.Standard.IOrderPersistence">
+            <summary>
+            订单持久化接口
+            @ 黄振东
+            </summary>
+        </member>
     </members>
 </doc>

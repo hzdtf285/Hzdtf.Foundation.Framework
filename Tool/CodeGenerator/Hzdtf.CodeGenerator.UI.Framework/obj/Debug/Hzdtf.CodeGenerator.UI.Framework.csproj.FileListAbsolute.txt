@@ -1171,7 +1171,6 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerato
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.UI.Framework\bin\Debug\K4os.Compression.LZ4.Streams.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.UI.Framework\bin\Debug\K4os.Hash.xxHash.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.UI.Framework\bin\Debug\MessagePack.Annotations.dll
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.UI.Framework\bin\Debug\MessagePack.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.UI.Framework\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.UI.Framework\bin\Debug\MySql.Data.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.UI.Framework\bin\Debug\Newtonsoft.Json.dll
@@ -1220,7 +1219,6 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerato
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.UI.Framework\bin\Debug\K4os.Compression.LZ4.xml
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.UI.Framework\bin\Debug\K4os.Compression.LZ4.Streams.xml
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.UI.Framework\bin\Debug\K4os.Hash.xxHash.xml
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.UI.Framework\bin\Debug\MessagePack.xml
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.UI.Framework\bin\Debug\MessagePack.Annotations.xml
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.UI.Framework\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.UI.Framework\bin\Debug\MySql.Data.xml
@@ -1246,3 +1244,4 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerato
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.UI.Framework\obj\Debug\Hzdtf.CodeGenerator.UI.Framework.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.UI.Framework\bin\Debug\System.Diagnostics.DiagnosticSource.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.UI.Framework\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Tool\CodeGenerator\Hzdtf.CodeGenerator.UI.Framework\obj\Debug\Hzdtf.CodeGenerator.UI.Framework.exe.config

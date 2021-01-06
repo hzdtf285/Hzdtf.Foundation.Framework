@@ -21,7 +21,7 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// <param name="streams">文件流列表</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<bool> Upload(IList<AttachmentInfo> attachments, IList<Stream> streams, BasicUserInfo currUser = null);
+        ReturnInfo<bool> Upload(IList<AttachmentInfo> attachments, IList<Stream> streams, BasicUserInfo<int> currUser = null);
 
         /// <summary>
         /// 上传
@@ -30,7 +30,7 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// <param name="stream">文件流列表</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<bool> Upload(AttachmentInfo attachment, Stream stream, BasicUserInfo currUser = null);
+        ReturnInfo<bool> Upload(AttachmentInfo attachment, Stream stream, BasicUserInfo<int> currUser = null);
 
         /// <summary>
         /// 根据归属查询附件列表
@@ -41,7 +41,7 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<IList<AttachmentInfo>> QueryByOwner(short ownerType, int ownerId, string blurTitle = null, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<IList<AttachmentInfo>> QueryByOwner(short ownerType, int ownerId, string blurTitle = null, string connectionId = null, BasicUserInfo<int> currUser = null);
 
         /// <summary>
         /// 根据归属统计附件个数
@@ -52,7 +52,7 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<int> CountByOwner(short ownerType, int ownerId, string blurTitle = null, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<int> CountByOwner(short ownerType, int ownerId, string blurTitle = null, string connectionId = null, BasicUserInfo<int> currUser = null);
 
         /// <summary>
         /// 根据归属是否存在附件
@@ -63,7 +63,7 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<bool> ExistsByOwner(short ownerType, int ownerId, string blurTitle = null, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<bool> ExistsByOwner(short ownerType, int ownerId, string blurTitle = null, string connectionId = null, BasicUserInfo<int> currUser = null);
 
         /// <summary>
         /// 根据归属移除
@@ -73,6 +73,6 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<bool> RemoveByOwner(short ownerType, int ownerId, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<bool> RemoveByOwner(short ownerType, int ownerId, string connectionId = null, BasicUserInfo<int> currUser = null);
     }
 }

@@ -14,7 +14,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class SequenceService : ServiceBase<SequenceInfo, ISequencePersistence>, ISequenceService
+    public partial class SequenceService : ServiceBase<int, SequenceInfo, ISequencePersistence>, ISequenceService
     {
     }
 }

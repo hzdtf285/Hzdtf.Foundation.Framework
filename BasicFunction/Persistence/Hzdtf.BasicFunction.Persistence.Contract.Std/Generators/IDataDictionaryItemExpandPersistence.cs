@@ -10,7 +10,7 @@ namespace Hzdtf.BasicFunction.Persistence.Contract.Standard
     /// 数据字典子项扩展持久化接口
     /// @ 黄振东
     /// </summary>
-    public partial interface IDataDictionaryItemExpandPersistence : IPersistence<DataDictionaryItemExpandInfo>
+    public partial interface IDataDictionaryItemExpandPersistence : IPersistence<int, DataDictionaryItemExpandInfo>
     {
     }
 }

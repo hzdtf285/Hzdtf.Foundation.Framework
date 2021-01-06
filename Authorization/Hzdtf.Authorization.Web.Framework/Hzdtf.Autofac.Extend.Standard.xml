@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.Autofac.Extend.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.Autofac.Extend.Standard.AutofacInstance">
+            <summary>
+            Autofac实例
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.AutofacInstance.CreateInstance(System.String)">
+            <summary>
+            创建实例
+            </summary>
+            <param name="classFullPath">类全路径</param>
+            <returns>实例</returns>
+        </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.AutofacInstance.CreateInstance``1(System.String)">
+            <summary>
+            创建实例
+            </summary>
+            <typeparam name="T">实例类型</typeparam>
+            <param name="classFullPath">类全路径</param>
+            <returns>实例</returns>
+        </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.AutofacInstance.CreateInstanceObj(System.String)">
+            <summary>
+            创建实例对象
+            </summary>
+            <param name="classFullPath">类全路径</param>
+            <returns>实例</returns>
+        </member>
+        <member name="T:Hzdtf.Autofac.Extend.Standard.AutofacTool">
+            <summary>
+            Autofac工具
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Autofac.Extend.Standard.AutofacTool.Container">
+            <summary>
+            容器
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Autofac.Extend.Standard.AutofacTool.LifetimeScope">
+            <summary>
+            生效的容器
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Autofac.Extend.Standard.AutofacTool.ResolveFunc">
+            <summary>
+            获取服务回调
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.AutofacTool.Resolve``1">
+            <summary>
+            获取服务
+            </summary>
+            <typeparam name="TService">服务类型</typeparam>
+            <returns>服务</returns>
+        </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.AutofacTool.Resolve(System.Type)">
+            <summary>
+            获取服务
+            </summary>
+            <param name="type">类型</param>
+            <returns>服务</returns>
+        </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.AutofacTool.ResolveFromBusinessDispatchProxy``1">
+            <summary>
+            解析来自业务动态代理创建的对象
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <returns>由业务动态代理创建的对象</returns>
+        </member>
+        <member name="T:Hzdtf.Autofac.Extend.Standard.AutofacUtil">
+            <summary>
+            Autofac辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.AutofacUtil.CanInject(System.Type)">
+            <summary>
+            是否能注入
+            </summary>
+            <param name="type">类型</param>
+            <returns>是否能注入</returns>
+        </member>
+        <member name="T:Hzdtf.Autofac.Extend.Standard.BuilderParam">
+            <summary>
+            生成参数
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Autofac.Extend.Standard.BuilderParam.AssemblyServices">
+            <summary>
+            程序集服务集合
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Autofac.Extend.Standard.BuilderParam.RegisteringServiceAction">
+            <summary>
+            注册中服务动作
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Autofac.Extend.Standard.BuilderParam.IsLoadAutoMapperConfig">
+            <summary>
+            是否加载自动映射配置
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Autofac.Extend.Standard.ContainerBuilderExtend">
+            <summary>
+            容器生成器扩展类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.ContainerBuilderExtend.UnifiedRegisterAssemblys(Autofac.ContainerBuilder,Hzdtf.Autofac.Extend.Standard.BuilderParam,System.Boolean)">
+            <summary>
+            统一注册服务程序集
+            </summary>
+            <param name="containerBuilder">容器生成器</param>
+            <param name="param">参数</param>
+            <param name="isExecBuilderContainer">是否执行生成容器，如果为false，则返回值为null</param>
+            <returns>容器</returns>
+        </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.ContainerBuilderExtend.UnifiedRegisterAssemblys(Autofac.ContainerBuilder,Microsoft.Extensions.DependencyInjection.IServiceCollection,Hzdtf.Autofac.Extend.Standard.BuilderParam,System.IServiceProvider@)">
+            <summary>
+            统一注册服务程序集
+            专门为.NET Core提供
+            </summary>
+            <param name="containerBuilder">容器生成器</param>
+            <param name="services">服务</param>
+            <param name="param">参数</param>
+            <param name="serviceProvider">服务提供者</param>
+            <returns>容器</returns>
+        </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.ContainerBuilderExtend.UnifiedRegisterAssemblysV3_0(Autofac.ContainerBuilder,Hzdtf.Autofac.Extend.Standard.BuilderParam)">
+            <summary>
+            统一注册服务程序集
+            专门为.NET Core 3.0以上提供
+            </summary>
+            <param name="containerBuilder">容器生成器</param>
+            <param name="param">参数</param>
+        </member>
+        <member name="T:Hzdtf.Autofac.Extend.Standard.Intercepteds.AttrInterceptorBase`1">
+            <summary>
+            特性拦截器基类
+            @ 黄振东
+            </summary>
+            <typeparam name="AttrT">特性类型</typeparam>
+        </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.Intercepteds.AttrInterceptorBase`1.InterceptOperation(Castle.DynamicProxy.IInvocation,System.Boolean@)">
+            <summary>
+            拦截操作
+            </summary>
+            <param name="invocation">拦截参数</param>
+            <param name="isExecProceeded">是否已执行</param>
+            <returns>基本返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.Intercepteds.AttrInterceptorBase`1.Intercept(Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo,Castle.DynamicProxy.IInvocation,`0,System.Boolean@)">
+            <summary>
+            拦截
+            </summary>
+            <param name="basicReturn">基本返回</param>
+            <param name="invocation">拦截参数</param>
+            <param name="attr">特性</param>
+            <param name="isExecProceeded">是否已执行</param>
+        </member>
+        <member name="T:Hzdtf.Autofac.Extend.Standard.Intercepteds.AuthInterceptor">
+            <summary>
+            授权拦截器
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.Intercepteds.AuthInterceptor.Intercept(Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo,Castle.DynamicProxy.IInvocation,Hzdtf.Utility.Standard.Attr.AuthAttribute,System.Boolean@)">
+            <summary>
+            拦截
+            </summary>
+            <param name="basicReturn">基本返回</param>
+            <param name="invocation">拦截参数</param>
+            <param name="attr">特性</param>
+            <param name="isExecProceeded">是否已执行</param>
+        </member>
+        <member name="T:Hzdtf.Autofac.Extend.Standard.Intercepteds.DisabledInterceptor">
+            <summary>
+            禁用拦截器
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.Intercepteds.DisabledInterceptor.Intercept(Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo,Castle.DynamicProxy.IInvocation,Hzdtf.Utility.Standard.Attr.DisabledAttribute,System.Boolean@)">
+            <summary>
+            拦截
+            </summary>
+            <param name="basicReturn">基本返回</param>
+            <param name="invocation">拦截参数</param>
+            <param name="attr">特性</param>
+            <param name="isExecProceeded">是否已执行</param>
+        </member>
+        <member name="T:Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase">
+            <summary>
+            拦截器基类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(Castle.DynamicProxy.IInvocation)">
+            <summary>
+            拦截
+            </summary>
+            <param name="invocation">拦截参数</param>
+        </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.InterceptOperation(Castle.DynamicProxy.IInvocation,System.Boolean@)">
+            <summary>
+            拦截操作
+            </summary>
+            <param name="invocation">拦截参数</param>
+            <param name="isExecProceeded">是否已执行</param>
+            <returns>基本返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.SetErrMsg(Castle.DynamicProxy.IInvocation,Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo)">
+            <summary>
+            设置错误消息
+            </summary>
+            <param name="invocation">拦截参数</param>
+            <param name="returnInfo">返回信息</param>
+        </member>
+        <member name="T:Hzdtf.Autofac.Extend.Standard.Intercepteds.ParamValiInterceptor">
+            <summary>
+            参数验证拦截器
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Autofac.Extend.Standard.Intercepteds.ParamValiInterceptor.syncDicValiParam">
+            <summary>
+            同步验证参数字典
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Autofac.Extend.Standard.Intercepteds.ParamValiInterceptor.dicValiParams">
+            <summary>
+            验证参数字典
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.Intercepteds.ParamValiInterceptor.InterceptOperation(Castle.DynamicProxy.IInvocation,System.Boolean@)">
+            <summary>
+            拦截操作
+            </summary>
+            <param name="invocation">拦截参数</param>
+            <param name="isExecProceeded">是否已执行</param>
+            <returns>基本返回信息</returns>
+        </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.Intercepteds.ParamValiInterceptor.AppendAttrMapValiHandler(System.Type,Hzdtf.Utility.Standard.VaiParam.IValiParam)">
+            <summary>
+            追加属性映射验证处理
+            attrType必须是特性，且是继承于ValidationAttribute
+            </summary>
+            <param name="attrType">特性类型</param>
+            <param name="valiParam">验证参数</param>
+        </member>
+        <member name="T:Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor">
+            <summary>
+            执行过程轨迹日志拦截器
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor.syncLog">
+            <summary>
+            同步日志
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor.log">
+            <summary>
+            日志
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor.Log">
+            <summary>
+            日志
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor.Intercept(Castle.DynamicProxy.IInvocation)">
+            <summary>
+            拦截
+            </summary>
+            <param name="invocation">拦截参数</param>
+        </member>
+        <member name="T:Hzdtf.Autofac.Extend.Standard.Intercepteds.TryExceptionInterceptor">
+            <summary>
+            捕获异常拦截器，方法的返回值必须是BasicReturnInfo或BasicReturnInfo子类，否则会抛出异常
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Autofac.Extend.Standard.Intercepteds.TryExceptionInterceptor.syncLog">
+            <summary>
+            同步日志
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Autofac.Extend.Standard.Intercepteds.TryExceptionInterceptor.log">
+            <summary>
+            日志
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Autofac.Extend.Standard.Intercepteds.TryExceptionInterceptor.Log">
+            <summary>
+            日志
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.Intercepteds.TryExceptionInterceptor.Intercept(Castle.DynamicProxy.IInvocation)">
+            <summary>
+            拦截
+            </summary>
+            <param name="invocation">拦截参数</param>
+        </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.Intercepteds.TryExceptionInterceptor.FilterReturnValue(Castle.DynamicProxy.IInvocation,System.Exception)">
+            <summary>
+            过滤返回值
+            </summary>
+            <param name="invocation">拦截参数</param>
+            <param name="ex"></param>
+            <returns>是否已过滤</returns>
+        </member>
+        <member name="T:Hzdtf.Autofac.Extend.Standard.Intercepteds.ValiInterceptor">
+            <summary>
+            验证拦截器
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Autofac.Extend.Standard.Intercepteds.ValiInterceptor.Intercept(Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo,Castle.DynamicProxy.IInvocation,Hzdtf.Utility.Standard.Attr.ValiAttribute,System.Boolean@)">
+            <summary>
+            拦截
+            </summary>
+            <param name="basicReturn">基本返回</param>
+            <param name="invocation">拦截参数</param>
+            <param name="attr">特性</param>
+            <param name="isExecProceeded">是否已执行</param>
+        </member>
+    </members>
+</doc>

@@ -16,19 +16,18 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public class UserValiService : IUserVali<BasicUserInfo>
+    public class UserValiService : IUserVali<int, BasicUserInfo<int>>
     {
         #region 属性与字段
 
         /// <summary>
         /// 原生用户验证
         /// </summary>
-        public IUserVali<UserInfo> ProtoUserVali
+        public IUserVali<int, UserInfo> ProtoUserVali
         {
             get;
             set;
         }
-
 
         #endregion
 
@@ -41,9 +40,9 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User
         /// <param name="password">密码</param>
         /// <returns>返回信息</returns>
         [ProcTrackLog(IgnoreParamValues = true)]
-        public virtual ReturnInfo<BasicUserInfo> Vali([DisplayName2("用户"), Required] string user, [DisplayName2("密码"), Required] string password)
+        public virtual ReturnInfo<BasicUserInfo<int>> Vali([DisplayName2("用户"), Required] string user, [DisplayName2("密码"), Required] string password)
         {
-            ReturnInfo<BasicUserInfo> returnInfo = new ReturnInfo<BasicUserInfo>();
+            ReturnInfo<BasicUserInfo<int>> returnInfo = new ReturnInfo<BasicUserInfo<int>>();
             var re = ProtoUserVali.Vali(user, password);
             returnInfo.FromBasic(re);
             if (returnInfo.Success())

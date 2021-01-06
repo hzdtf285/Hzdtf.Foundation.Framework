@@ -13,7 +13,7 @@ namespace |NamespacePfx|.Model.Standard
     /// |Description|信息
     /// @ 黄振东
     /// </summary>
-    public partial class |Name| : |Inherit|
+    public partial class |Name| : |Inherit|<|PkType|>
     {
 |Property|
     }

@@ -10,7 +10,7 @@ namespace Hzdtf.BasicFunction.Persistence.Contract.Standard
     /// 角色持久化接口
     /// @ 黄振东
     /// </summary>
-    public partial interface IRolePersistence : IPersistence<RoleInfo>
+    public partial interface IRolePersistence : IPersistence<int, RoleInfo>
     {
     }
 }

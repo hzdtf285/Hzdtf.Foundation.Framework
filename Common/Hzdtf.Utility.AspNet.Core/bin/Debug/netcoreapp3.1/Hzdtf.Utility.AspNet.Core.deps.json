@@ -707,6 +707,14 @@
           }
         }
       },
+      "Snowflake.Core/2.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/Snowflake.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
       "System.AppContext/4.1.0": {
         "dependencies": {
           "System.Runtime": "4.1.0"
@@ -1051,6 +1059,7 @@
           "NPOI": "2.5.2",
           "Newtonsoft.Json": "12.0.3",
           "SharpZipLib": "1.3.1",
+          "Snowflake.Core": "2.0.0",
           "System.ComponentModel.Annotations": "4.7.0",
           "System.Drawing.Common": "4.7.0",
           "System.Reflection.DispatchProxy": "4.7.1",
@@ -1480,6 +1489,13 @@
       "sha512": "sha512-qGouMMBI2EIMvXXWMBxAWRGg1iI8Z1AYvgww+P5pXVJoixCO1IEwil6SlYZ7XR+eppCjQzfenVtXHH3BDT/Eww==",
       "path": "sixlabors.shapes/1.0.0-beta0008",
       "hashPath": "sixlabors.shapes.1.0.0-beta0008.nupkg.sha512"
+    },
+    "Snowflake.Core/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YB4SqYbTgG6UvwFHFZOWny/pE415KNjRbbiGwfPOUDWUCEjYLB9P11EiIHQ7y6LlkjejVAAIi8Wt3WM7Ys9qyw==",
+      "path": "snowflake.core/2.0.0",
+      "hashPath": "snowflake.core.2.0.0.nupkg.sha512"
     },
     "System.AppContext/4.1.0": {
       "type": "package",

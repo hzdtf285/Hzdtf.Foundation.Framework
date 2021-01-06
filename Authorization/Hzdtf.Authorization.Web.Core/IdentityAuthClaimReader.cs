@@ -14,9 +14,10 @@ namespace Hzdtf.Authorization.Web.Core
     /// 身份认证证件单元读取
     /// @ 黄振东
     /// </summary>
+    /// <typeparam name="IdT">ID类型</typeparam>
     /// <typeparam name="UserT">用户类型</typeparam>
-    public class IdentityAuthClaimReader<UserT> : IIdentityAuthReader<UserT>
-        where UserT : BasicUserInfo
+    public class IdentityAuthClaimReader<IdT, UserT> : IIdentityAuthReader<IdT, UserT>
+        where UserT : BasicUserInfo<IdT>
     {
         /// <summary>
         /// Http上下文访问
@@ -26,14 +27,14 @@ namespace Hzdtf.Authorization.Web.Core
         /// <summary>
         /// 授权用户数据
         /// </summary>
-        private readonly IAuthUserData<UserT> authUserData;
+        private readonly IAuthUserData<IdT, UserT> authUserData;
 
         /// <summary>
         /// 构造方法
         /// </summary>
         /// <param name="httpContext">Http上下文访问</param>
         /// <param name="authUserData">授权用户数据</param>
-        public IdentityAuthClaimReader(IHttpContextAccessor httpContext, IAuthUserData<UserT> authUserData)
+        public IdentityAuthClaimReader(IHttpContextAccessor httpContext, IAuthUserData<IdT, UserT> authUserData)
         {
             this.httpContext = httpContext;
             this.authUserData = authUserData;
@@ -72,7 +73,7 @@ namespace Hzdtf.Authorization.Web.Core
                     return returnInfo;
                 }
 
-                returnInfo.Data = IdentityAuthUtil.GetUserDataFromClaims<UserT>(claims, authUserData);
+                returnInfo.Data = IdentityAuthUtil.GetUserDataFromClaims<IdT, UserT>(claims, authUserData);
             }
 
             return returnInfo;

@@ -66,7 +66,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             int result = 0;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                string sql = $"{CountSql()} WHERE {GetFieldByProp("WorkflowId")}=@WorkflowId AND {GetFieldByProp("HandleStatus")}=@handleStatus AND {GetFieldByProp("FlowCensorshipId")}!=@NotFlowCensorshipId";
+                string sql = $"{BasicCountSql()} WHERE {GetFieldByProp("WorkflowId")}=@WorkflowId AND {GetFieldByProp("HandleStatus")}=@handleStatus AND {GetFieldByProp("FlowCensorshipId")}!=@NotFlowCensorshipId";
                 Log.TraceAsync(sql, source: this.GetType().Name, tags: "CountNotFlowCensorshipIdByWorkflowIdAndHandleStatus");
                 result = dbConn.ExecuteScalar<int>(sql, new { WorkflowId = workflowId, HandleStatus = (byte)handleStatus, NotFlowCensorshipId = notFlowCensorshipId }, GetDbTransaction(connId));
             }, AccessMode.SLAVE);
@@ -134,7 +134,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
 
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                string sql = $"{SelectSql()} WHERE {GetFieldByProp("WorkflowId")}=@WorkflowId AND {GetFieldByProp("HandleStatus")}=@HandleStatus AND {inSql}";
+                string sql = $"{BasicSelectSql()} WHERE {GetFieldByProp("WorkflowId")}=@WorkflowId AND {GetFieldByProp("HandleStatus")}=@HandleStatus AND {inSql}";
                 Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectSendedByWorkflowIdAndFlowCensorshipIds");
                 result = dbConn.Query<WorkflowHandleInfo>(sql, parameters, GetDbTransaction(connId)).AsList();
             }, AccessMode.SLAVE);
@@ -153,7 +153,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             int result = 0;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                string sql = $"{CountSql()} WHERE {GetFieldByProp("HandlerId")}=@HandlerId AND {GetFieldByProp("HandleStatus")}=@handleStatus AND {GetFieldByProp("HandleType")}=@HandleType";
+                string sql = $"{BasicCountSql()} WHERE {GetFieldByProp("HandlerId")}=@HandlerId AND {GetFieldByProp("HandleStatus")}=@handleStatus AND {GetFieldByProp("HandleType")}=@HandleType";
                 Log.TraceAsync(sql, source: this.GetType().Name, tags: "CountAuditAndUnhandleByHandleId");
                 result = dbConn.ExecuteScalar<int>(sql, new { HandlerId = handlerId, HandleStatus = (byte)HandleStatusEnum.UN_HANDLE, HandleType = (byte)HandleTypeEnum.AUDIT }, GetDbTransaction(connId));
             }, AccessMode.SLAVE);
@@ -180,7 +180,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
 
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                string sql = $"{SelectSql()} WHERE {GetFieldByProp("WorkflowId")}=@WorkflowId AND {GetFieldByProp("FlowCensorshipId")}=@FlowCensorshipId AND {GetFieldByProp("HandlerId")}=@HandlerId";
+                string sql = $"{BasicSelectSql()} WHERE {GetFieldByProp("WorkflowId")}=@WorkflowId AND {GetFieldByProp("FlowCensorshipId")}=@FlowCensorshipId AND {GetFieldByProp("HandlerId")}=@HandlerId";
                 Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectByWorkflowIdAndFlowCensorshipIdAndHandlerId");
                 result = dbConn.QueryFirstOrDefault<WorkflowHandleInfo>(sql, parameters, GetDbTransaction(connId));
             }, AccessMode.SLAVE);
@@ -203,7 +203,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
 
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                string sql = $"{SelectSql()} WHERE {GetFieldByProp("WorkflowId")}=@WorkflowId";
+                string sql = $"{BasicSelectSql()} WHERE {GetFieldByProp("WorkflowId")}=@WorkflowId";
                 Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectByWorkflowId");
                 result = dbConn.Query<WorkflowHandleInfo>(sql, parameters, GetDbTransaction(connId)).AsList();
             }, AccessMode.SLAVE);
@@ -222,7 +222,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             int result = 0;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                string sql = $"{DeleteSql()} WHERE {GetFieldByProp("WorkflowId")}=@WorkflowId";
+                string sql = $"{BasicDeleteSql()} WHERE {GetFieldByProp("WorkflowId")}=@WorkflowId";
                 Log.TraceAsync(sql, source: this.GetType().Name, tags: "DeleteByWorkflowId");
                 result = dbConn.Execute(sql, new { WorkflowId = workflowId }, GetDbTransaction(connId));
             });

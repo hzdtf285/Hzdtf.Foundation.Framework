@@ -14,7 +14,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class SendFlowRouteService : ServiceBase<SendFlowRouteInfo, ISendFlowRoutePersistence>, ISendFlowRouteService
+    public partial class SendFlowRouteService : ServiceBase<int, SendFlowRouteInfo, ISendFlowRoutePersistence>, ISendFlowRouteService
     {
     }
 }

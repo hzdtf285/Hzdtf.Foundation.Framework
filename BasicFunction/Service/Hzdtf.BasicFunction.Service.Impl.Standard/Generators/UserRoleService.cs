@@ -14,7 +14,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class UserRoleService : ServiceBase<UserRoleInfo, IUserRolePersistence>, IUserRoleService
+    public partial class UserRoleService : ServiceBase<int, UserRoleInfo, IUserRolePersistence>, IUserRoleService
     {
     }
 }

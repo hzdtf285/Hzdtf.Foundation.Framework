@@ -10,16 +10,17 @@ namespace Hzdtf.Authorization.Contract.Standard.IdentityAuth
     /// 身份证件授权
     /// @ 黄振东
     /// </summary>
+    /// <typeparam name="IdT">ID类型</typeparam>
     /// <typeparam name="UserT">用户类型</typeparam>
-    public abstract class IdentityClaimAuthBase<UserT> : IdentityAuthBase<UserT>
-        where UserT : BasicUserInfo
+    public abstract class IdentityClaimAuthBase<IdT, UserT> : IdentityAuthBase<IdT, UserT>
+        where UserT : BasicUserInfo<IdT>
     {
         #region 属性与字段
 
         /// <summary>
         /// 授权用户数据
         /// </summary>
-        private readonly IAuthUserData<UserT> authUserData;
+        private readonly IAuthUserData<IdT, UserT> authUserData;
 
         #endregion
 
@@ -28,7 +29,7 @@ namespace Hzdtf.Authorization.Contract.Standard.IdentityAuth
         /// </summary>
         /// <param name="userVali">用户验证</param>
         /// <param name="authUserData">授权用户数据</param>
-        public IdentityClaimAuthBase(IUserVali<UserT> userVali, IAuthUserData<UserT> authUserData)
+        public IdentityClaimAuthBase(IUserVali<IdT, UserT> userVali, IAuthUserData<IdT, UserT> authUserData)
             : base(userVali)
         {
             this.authUserData = authUserData;

@@ -15,7 +15,7 @@ namespace Hzdtf.WorkFlow.Model.Standard.Expand
     /// @ 黄振东
     /// </summary>
     [MessagePackObject]
-    public class ConcreteFormInfo : PersonTimeInfo
+    public class ConcreteFormInfo : PersonTimeInfo<int>
     {
         /// <summary>
         /// 申请单号_名称

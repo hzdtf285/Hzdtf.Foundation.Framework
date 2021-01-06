@@ -66,3 +66,4 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Integration.Micro
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Integration.MicrosoftLog.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csproj.CopyComplete
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Integration.MicrosoftLog.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Integration.MicrosoftLog.Standard.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Integration.MicrosoftLog.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Integration.MicrosoftLog.Standard.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Logger\Hzdtf.Logger.Integration.MicrosoftLog.Standard\obj\Debug\netstandard2.0\Hzdtf.Logger.Integration.MicrosoftLog.Standard.csprojAssemblyReference.cache

@@ -211,14 +211,15 @@
             <param name="setAction">设置动作</param>
             <returns>持久化连接信息</returns>
         </member>
-        <member name="T:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`1">
+        <member name="T:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`2">
             <summary>
             持久化接口
             @ 黄振东
             </summary>
+            <typeparam name="IdT">ID类型</typeparam>
             <typeparam name="ModelT">模型类型</typeparam>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`1.Select(System.Int32,System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`2.Select(`0,System.String)">
             <summary>
             根据ID查询模型
             </summary>
@@ -226,7 +227,7 @@
             <param name="connectionId">连接ID</param>
             <returns>模型</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`1.Select(System.Int32,System.String[],System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`2.Select(`0,System.String[],System.String)">
             <summary>
             根据ID查询模型
             </summary>
@@ -235,7 +236,7 @@
             <param name="connectionId">连接ID</param>
             <returns>模型</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`1.Select(System.Int32[],System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`2.Select(`0[],System.String)">
             <summary>
             根据ID集合查询模型
             </summary>
@@ -243,7 +244,7 @@
             <param name="connectionId">连接ID</param>
             <returns>模型</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`1.Select(System.Int32[],System.String[],System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`2.Select(`0[],System.String[],System.String)">
             <summary>
             根据ID集合查询模型
             </summary>
@@ -252,7 +253,7 @@
             <param name="connectionId">连接ID</param>
             <returns>模型</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`1.Count(System.Int32,System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`2.Count(`0,System.String)">
             <summary>
             根据ID统计模型数
             </summary>
@@ -260,21 +261,21 @@
             <param name="connectionId">连接ID</param>
             <returns>模型数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`1.Count(System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`2.Count(System.String)">
             <summary>
             统计模型数
             </summary>
             <param name="connectionId">连接ID</param>
             <returns>模型数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`1.Select(System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`2.Select(System.String)">
             <summary>
             查询模型列表
             </summary>
             <param name="connectionId">连接ID</param>
             <returns>模型列表</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`1.Select(System.String[],System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`2.Select(System.String[],System.String)">
             <summary>
             查询模型列表
             </summary>
@@ -282,7 +283,7 @@
             <param name="connectionId">连接ID</param>
             <returns>模型列表</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`1.SelectPage(System.Int32,System.Int32,Hzdtf.Utility.Standard.Model.FilterInfo,System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`2.SelectPage(System.Int32,System.Int32,Hzdtf.Utility.Standard.Model.FilterInfo,System.String)">
             <summary>
             查询模型列表并分页
             </summary>
@@ -292,7 +293,7 @@
             <param name="connectionId">连接ID</param>
             <returns>分页信息</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`1.SelectPage(System.Int32,System.Int32,System.String[],Hzdtf.Utility.Standard.Model.FilterInfo,System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`2.SelectPage(System.Int32,System.Int32,System.String[],Hzdtf.Utility.Standard.Model.FilterInfo,System.String)">
             <summary>
             查询模型列表并分页
             </summary>
@@ -303,13 +304,13 @@
             <param name="connectionId">连接ID</param>
             <returns>分页信息</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`1.AllFieldMapProps">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`2.AllFieldMapProps">
             <summary>
             所有字段映射集合
             </summary>
             <returns>所有字段映射集合</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`1.Insert(`0,System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`2.Insert(`1,System.String)">
             <summary>
             插入模型
             </summary>
@@ -317,7 +318,7 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`1.Insert(System.Collections.Generic.IList{`0},System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`2.Insert(System.Collections.Generic.IList{`1},System.String)">
             <summary>
             插入模型列表
             </summary>
@@ -325,7 +326,7 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`1.UpdateById(`0,System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`2.UpdateById(`1,System.String)">
             <summary>
             根据ID更新模型
             </summary>
@@ -333,7 +334,7 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`1.UpdateById(`0,System.String[],System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`2.UpdateById(`1,System.String[],System.String)">
             <summary>
             根据ID更新模型
             </summary>
@@ -342,7 +343,7 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`1.DeleteById(System.Int32,System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`2.DeleteById(`0,System.String)">
             <summary>
             根据ID删除模型
             </summary>
@@ -350,7 +351,7 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`1.DeleteByIds(System.Int32[],System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`2.DeleteByIds(`0[],System.String)">
             <summary>
             根据ID数组删除模型
             </summary>
@@ -358,21 +359,22 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`1.Delete(System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistence`2.Delete(System.String)">
             <summary>
             删除所有模型
             </summary>
             <param name="connectionId">连接ID</param>
             <returns>影响行数</returns>
         </member>
-        <member name="T:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`1">
+        <member name="T:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`2">
             <summary>
             持久化异步接口
             @ 黄振东
             </summary>
+            <typeparam name="IdT">ID类型</typeparam>
             <typeparam name="ModelT">模型类型</typeparam>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`1.SelectAsync(System.Int32,System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`2.SelectAsync(`0,System.String@)">
             <summary>
             异步根据ID查询模型
             </summary>
@@ -380,7 +382,7 @@
             <param name="connectionId">连接ID</param>
             <returns>模型任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`1.SelectAsync(System.Int32,System.String[],System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`2.SelectAsync(`0,System.String[],System.String@)">
             <summary>
             异步根据ID查询模型
             </summary>
@@ -389,7 +391,7 @@
             <param name="connectionId">连接ID</param>
             <returns>模型任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`1.SelectAsync(System.Int32[],System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`2.SelectAsync(`0[],System.String@)">
             <summary>
             异步根据ID集合查询模型
             </summary>
@@ -397,7 +399,7 @@
             <param name="connectionId">连接ID</param>
             <returns>模型任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`1.SelectAsync(System.Int32[],System.String[],System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`2.SelectAsync(`0[],System.String[],System.String@)">
             <summary>
             异步根据ID集合查询模型
             </summary>
@@ -406,7 +408,7 @@
             <param name="connectionId">连接ID</param>
             <returns>模型任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`1.CountAsync(System.Int32,System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`2.CountAsync(`0,System.String@)">
             <summary>
             异步根据ID统计模型数
             </summary>
@@ -414,21 +416,21 @@
             <param name="connectionId">连接ID</param>
             <returns>模型数任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`1.CountAsync(System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`2.CountAsync(System.String@)">
             <summary>
             异步统计模型数
             </summary>
             <param name="connectionId">连接ID</param>
             <returns>模型数任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`1.SelectAsync(System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`2.SelectAsync(System.String@)">
             <summary>
             异步查询模型列表
             </summary>
             <param name="connectionId">连接ID</param>
             <returns>模型列表任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`1.SelectAsync(System.String[],System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`2.SelectAsync(System.String[],System.String@)">
             <summary>
             异步查询模型列表
             </summary>
@@ -436,7 +438,7 @@
             <param name="connectionId">连接ID</param>
             <returns>模型列表任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`1.SelectPageAsync(System.Int32,System.Int32,System.String@,Hzdtf.Utility.Standard.Model.FilterInfo)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`2.SelectPageAsync(System.Int32,System.Int32,System.String@,Hzdtf.Utility.Standard.Model.FilterInfo)">
             <summary>
             异步查询模型列表并分页
             </summary>
@@ -446,7 +448,7 @@
             <param name="filter">筛选</param>
             <returns>分页信息任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`1.SelectPageAsync(System.Int32,System.Int32,System.String[],System.String@,Hzdtf.Utility.Standard.Model.FilterInfo)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`2.SelectPageAsync(System.Int32,System.Int32,System.String[],System.String@,Hzdtf.Utility.Standard.Model.FilterInfo)">
             <summary>
             异步查询模型列表并分页
             </summary>
@@ -457,7 +459,7 @@
             <param name="filter">筛选</param>
             <returns>分页信息任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`1.InsertAsync(`0,System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`2.InsertAsync(`1,System.String@)">
             <summary>
             异步插入模型
             </summary>
@@ -465,7 +467,7 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`1.InsertAsync(System.Collections.Generic.IList{`0},System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`2.InsertAsync(System.Collections.Generic.IList{`1},System.String@)">
             <summary>
             异步插入模型列表
             </summary>
@@ -473,7 +475,7 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`1.UpdateByIdAsync(`0,System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`2.UpdateByIdAsync(`1,System.String@)">
             <summary>
             异步根据ID更新模型
             </summary>
@@ -481,7 +483,7 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`1.UpdateByIdAsync(`0,System.String[],System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`2.UpdateByIdAsync(`1,System.String[],System.String@)">
             <summary>
             异步根据ID更新模型
             </summary>
@@ -490,7 +492,7 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`1.DeleteByIdAsync(System.Int32,System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`2.DeleteByIdAsync(`0,System.String@)">
             <summary>
             异步根据ID删除模型
             </summary>
@@ -498,7 +500,7 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`1.DeleteByIdsAsync(System.Int32[],System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`2.DeleteByIdsAsync(`0[],System.String@)">
             <summary>
             异步根据ID数组删除模型
             </summary>
@@ -506,25 +508,31 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`1.DeleteAsync(System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.IPersistenceAsync`2.DeleteAsync(System.String@)">
             <summary>
             异步删除所有模型
             </summary>
             <param name="connectionId">连接ID</param>
             <returns>影响行数任务</returns>
         </member>
-        <member name="T:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1">
+        <member name="T:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2">
             <summary>
             持久化基类
             @ 黄振东
             </summary>
+            <typeparam name="IdT">ID类型</typeparam>
             <typeparam name="ModelT">模型类型</typeparam>
             <summary>
             异步持久化基类
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.Select(System.Int32,System.String)">
+        <member name="P:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.Identity">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.Select(`0,System.String)">
             <summary>
             根据ID查询模型
             </summary>
@@ -532,7 +540,7 @@
             <param name="connectionId">连接ID</param>
             <returns>模型</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.Select(System.Int32,System.String[],System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.Select(`0,System.String[],System.String)">
             <summary>
             根据ID查询模型
             </summary>
@@ -541,7 +549,7 @@
             <param name="connectionId">连接ID</param>
             <returns>模型</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.Select(System.Int32[],System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.Select(`0[],System.String)">
             <summary>
             根据ID集合查询模型列表
             </summary>
@@ -549,7 +557,7 @@
             <param name="connectionId">连接ID</param>
             <returns>模型列表</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.Select(System.Int32[],System.String[],System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.Select(`0[],System.String[],System.String)">
             <summary>
             根据ID集合查询模型列表
             </summary>
@@ -558,7 +566,7 @@
             <param name="connectionId">连接ID</param>
             <returns>模型列表</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.Count(System.Int32,System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.Count(`0,System.String)">
             <summary>
             根据ID统计模型数
             </summary>
@@ -566,21 +574,21 @@
             <param name="connectionId">连接ID</param>
             <returns>模型数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.Count(System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.Count(System.String)">
             <summary>
             统计模型数
             </summary>
             <param name="connectionId">连接ID</param>
             <returns>模型数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.Select(System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.Select(System.String)">
             <summary>
             查询模型列表
             </summary>
             <param name="connectionId">连接ID</param>
             <returns>模型列表</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.Select(System.String[],System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.Select(System.String[],System.String)">
             <summary>
             查询模型列表
             </summary>
@@ -588,7 +596,7 @@
             <param name="connectionId">连接ID</param>
             <returns>模型列表</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.SelectPage(System.Int32,System.Int32,Hzdtf.Utility.Standard.Model.FilterInfo,System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.SelectPage(System.Int32,System.Int32,Hzdtf.Utility.Standard.Model.FilterInfo,System.String)">
             <summary>
             查询模型列表并分页
             </summary>
@@ -598,7 +606,7 @@
             <param name="connectionId">连接ID</param>
             <returns>分页信息</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.SelectPage(System.Int32,System.Int32,System.String[],Hzdtf.Utility.Standard.Model.FilterInfo,System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.SelectPage(System.Int32,System.Int32,System.String[],Hzdtf.Utility.Standard.Model.FilterInfo,System.String)">
             <summary>
             查询模型列表并分页
             </summary>
@@ -609,7 +617,7 @@
             <param name="connectionId">连接ID</param>
             <returns>分页信息</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.Insert(`0,System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.Insert(`1,System.String)">
             <summary>
             插入模型
             </summary>
@@ -617,7 +625,7 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.Insert(System.Collections.Generic.IList{`0},System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.Insert(System.Collections.Generic.IList{`1},System.String)">
             <summary>
             插入模型列表
             </summary>
@@ -625,7 +633,7 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.UpdateById(`0,System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.UpdateById(`1,System.String)">
             <summary>
             根据ID更新模型
             </summary>
@@ -633,7 +641,7 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.UpdateById(`0,System.String[],System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.UpdateById(`1,System.String[],System.String)">
             <summary>
             根据ID更新模型
             </summary>
@@ -642,7 +650,7 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.DeleteById(System.Int32,System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.DeleteById(`0,System.String)">
             <summary>
             根据ID删除模型
             </summary>
@@ -650,7 +658,7 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.DeleteByIds(System.Int32[],System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.DeleteByIds(`0[],System.String)">
             <summary>
             根据ID数组删除模型
             </summary>
@@ -658,14 +666,14 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.Delete(System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.Delete(System.String)">
             <summary>
             删除所有模型
             </summary>
             <param name="connectionId">连接ID</param>
             <returns>影响行数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.Select(System.Int32,System.Data.IDbConnection,System.Data.IDbTransaction,System.String[])">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.Select(`0,System.Data.IDbConnection,System.Data.IDbTransaction,System.String[])">
             <summary>
             根据ID查询模型
             </summary>
@@ -675,7 +683,7 @@
             <param name="propertyNames">属性名称集合</param>
             <returns>模型</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.Select(System.Int32[],System.Data.IDbConnection,System.Data.IDbTransaction,System.String[])">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.Select(`0[],System.Data.IDbConnection,System.Data.IDbTransaction,System.String[])">
             <summary>
             根据ID集合查询模型列表
             </summary>
@@ -685,7 +693,7 @@
             <param name="propertyNames">属性名称集合</param>
             <returns>模型列表</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.Count(System.Int32,System.Data.IDbConnection,System.Data.IDbTransaction)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.Count(`0,System.Data.IDbConnection,System.Data.IDbTransaction)">
             <summary>
             根据ID统计模型数
             </summary>
@@ -694,7 +702,7 @@
             <param name="dbTransaction">数据库事务</param>
             <returns>模型数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.Count(System.Data.IDbConnection,System.Data.IDbTransaction)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.Count(System.Data.IDbConnection,System.Data.IDbTransaction)">
             <summary>
             统计模型数
             </summary>
@@ -702,7 +710,7 @@
             <param name="dbConnection">数据库连接</param>
             <param name="dbTransaction">数据库事务</param>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.Select(System.Data.IDbConnection,System.Data.IDbTransaction,System.String[])">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.Select(System.Data.IDbConnection,System.Data.IDbTransaction,System.String[])">
             <summary>
             查询模型列表
             </summary>
@@ -711,7 +719,7 @@
             <param name="dbTransaction">数据库事务</param>
             <param name="propertyNames">属性名称集合</param>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.SelectPage(System.Int32,System.Int32,System.Data.IDbConnection,Hzdtf.Utility.Standard.Model.FilterInfo,System.Data.IDbTransaction,System.String[])">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.SelectPage(System.Int32,System.Int32,System.Data.IDbConnection,Hzdtf.Utility.Standard.Model.FilterInfo,System.Data.IDbTransaction,System.String[])">
             <summary>
             查询模型列表并分页
             </summary>
@@ -723,13 +731,13 @@
             <param name="propertyNames">属性名称集合</param>
             <returns>分页信息</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.AllFieldMapProps">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.AllFieldMapProps">
             <summary>
             所有字段映射集合
             </summary>
             <returns>所有字段映射集合</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.Insert(`0,System.Data.IDbConnection,System.Data.IDbTransaction)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.Insert(`1,System.Data.IDbConnection,System.Data.IDbTransaction)">
             <summary>
             插入模型
             </summary>
@@ -738,7 +746,7 @@
             <param name="dbTransaction">数据库事务</param>
             <returns>影响行数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.Insert(System.Collections.Generic.IList{`0},System.Data.IDbConnection,System.Data.IDbTransaction)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.Insert(System.Collections.Generic.IList{`1},System.Data.IDbConnection,System.Data.IDbTransaction)">
             <summary>
             插入模型列表
             </summary>
@@ -747,7 +755,7 @@
             <param name="dbTransaction">数据库事务</param>
             <returns>影响行数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.UpdateById(`0,System.Data.IDbConnection,System.Data.IDbTransaction,System.String[])">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.UpdateById(`1,System.Data.IDbConnection,System.Data.IDbTransaction,System.String[])">
             <summary>
             根据ID更新模型
             </summary>
@@ -757,7 +765,7 @@
             <param name="propertyNames">属性名称集合</param>
             <returns>影响行数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.DeleteById(System.Int32,System.Data.IDbConnection,System.Data.IDbTransaction)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.DeleteById(`0,System.Data.IDbConnection,System.Data.IDbTransaction)">
             <summary>
             根据ID删除模型
             </summary>
@@ -766,7 +774,7 @@
             <param name="dbTransaction">数据库事务</param>
             <returns>影响行数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.DeleteByIds(System.Int32[],System.Data.IDbConnection,System.Data.IDbTransaction)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.DeleteByIds(`0[],System.Data.IDbConnection,System.Data.IDbTransaction)">
             <summary>
             根据ID数组删除模型
             </summary>
@@ -775,7 +783,7 @@
             <param name="dbTransaction">数据库事务</param>
             <returns>影响行数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.Delete(System.Data.IDbConnection,System.Data.IDbTransaction)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.Delete(System.Data.IDbConnection,System.Data.IDbTransaction)">
             <summary>
             删除所有模型
             </summary>
@@ -783,14 +791,14 @@
             <param name="dbTransaction">数据库事务</param>
             <returns>影响行数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.SlaveTables">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.SlaveTables">
             <summary>
             从表集合
             Key:表名;Value:外键字段
             </summary>
             <returns>从表集合</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.DeleteSlaveTable(System.String,System.Data.IDbConnection,System.Data.IDbTransaction)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.DeleteSlaveTable(System.String,System.Data.IDbConnection,System.Data.IDbTransaction)">
             <summary>
             删除从表
             </summary>
@@ -799,7 +807,7 @@
             <param name="dbTransaction">数据库事务</param>
             <returns>影响行数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.DeleteSlaveTableByForeignKeys(System.String,System.String,System.Int32[],System.Data.IDbConnection,System.Data.IDbTransaction)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.DeleteSlaveTableByForeignKeys(System.String,System.String,`0[],System.Data.IDbConnection,System.Data.IDbTransaction)">
             <summary>
             删除从表
             </summary>
@@ -810,13 +818,46 @@
             <param name="dbTransaction">数据库事务</param>
             <returns>影响行数</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.BeforeFilterInfo(Hzdtf.Utility.Standard.Model.FilterInfo)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.BeforeFilterInfo(Hzdtf.Utility.Standard.Model.FilterInfo)">
             <summary>
             过滤信息前
             </summary>
             <param name="filter">过滤</param>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.ExecTransaction(System.Action{System.String},Hzdtf.Utility.Standard.Enums.AccessMode,System.Data.IsolationLevel,System.String)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.PrimaryKeyIncr(`0)">
+            <summary>
+            主键是否自增
+            </summary>
+            <param name="id">ID</param>
+            <returns>主键是否自增</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.IsExistsTenantId">
+            <summary>
+            是否存在租赁ID
+            </summary>
+            <returns>查询时是否需要追加租赁ID为过滤条件</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.IsExistsTenantId(`0@)">
+            <summary>
+            是否存在租赁ID
+            </summary>
+            <param name="currUserTenantId">当前用户租户ID</param>
+            <returns>是否存在租赁ID</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.ModelContainerTenantId">
+            <summary>
+            模型是否包含租户ID
+            </summary>
+            <returns>模型是否包含租户ID</returns>
+        </member>
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.SetTenantId(`1,`0)">
+            <summary>
+            设置模型的租赁ID
+            </summary>
+            <param name="model">模型</param>
+            <param name="tenantId">租赁ID</param>
+        </member>
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.ExecTransaction(System.Action{System.String},Hzdtf.Utility.Standard.Enums.AccessMode,System.Data.IsolationLevel,System.String)">
             <summary>
             执行事务
             </summary>
@@ -825,7 +866,7 @@
             <param name="level">事务等级</param>
             <param name="connectionId">连接ID</param>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.SelectAsync(System.Int32,System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.SelectAsync(`0,System.String@)">
             <summary>
             异步根据ID查询模型
             </summary>
@@ -833,7 +874,7 @@
             <param name="connectionId">连接ID</param>
             <returns>模型任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.SelectAsync(System.Int32,System.String[],System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.SelectAsync(`0,System.String[],System.String@)">
             <summary>
             异步根据ID查询模型
             </summary>
@@ -842,7 +883,7 @@
             <param name="connectionId">连接ID</param>
             <returns>模型任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.SelectAsync(System.Int32[],System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.SelectAsync(`0[],System.String@)">
             <summary>
             异步根据ID集合查询模型
             </summary>
@@ -850,7 +891,7 @@
             <param name="connectionId">连接ID</param>
             <returns>模型任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.SelectAsync(System.Int32[],System.String[],System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.SelectAsync(`0[],System.String[],System.String@)">
             <summary>
             异步根据ID集合查询模型
             </summary>
@@ -859,7 +900,7 @@
             <param name="connectionId">连接ID</param>
             <returns>模型任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.CountAsync(System.Int32,System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.CountAsync(`0,System.String@)">
             <summary>
             异步根据ID统计模型数
             </summary>
@@ -867,21 +908,21 @@
             <param name="connectionId">连接ID</param>
             <returns>模型数任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.CountAsync(System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.CountAsync(System.String@)">
             <summary>
             异步统计模型数
             </summary>
             <param name="connectionId">连接ID</param>
             <returns>模型数任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.SelectAsync(System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.SelectAsync(System.String@)">
             <summary>
             异步查询模型列表
             </summary>
             <param name="connectionId">连接ID</param>
             <returns>模型列表任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.SelectAsync(System.String[],System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.SelectAsync(System.String[],System.String@)">
             <summary>
             异步查询模型列表
             </summary>
@@ -889,7 +930,7 @@
             <param name="connectionId">连接ID</param>
             <returns>模型列表任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.SelectPageAsync(System.Int32,System.Int32,System.String@,Hzdtf.Utility.Standard.Model.FilterInfo)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.SelectPageAsync(System.Int32,System.Int32,System.String@,Hzdtf.Utility.Standard.Model.FilterInfo)">
             <summary>
             异步查询模型列表并分页
             </summary>
@@ -899,7 +940,7 @@
             <param name="filter">筛选</param>
             <returns>分页信息任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.SelectPageAsync(System.Int32,System.Int32,System.String[],System.String@,Hzdtf.Utility.Standard.Model.FilterInfo)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.SelectPageAsync(System.Int32,System.Int32,System.String[],System.String@,Hzdtf.Utility.Standard.Model.FilterInfo)">
             <summary>
             异步查询模型列表并分页
             </summary>
@@ -910,7 +951,7 @@
             <param name="filter">筛选</param>
             <returns>分页信息任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.InsertAsync(`0,System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.InsertAsync(`1,System.String@)">
             <summary>
             异步插入模型
             </summary>
@@ -918,7 +959,7 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.InsertAsync(System.Collections.Generic.IList{`0},System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.InsertAsync(System.Collections.Generic.IList{`1},System.String@)">
             <summary>
             异步插入模型列表
             </summary>
@@ -926,7 +967,7 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.UpdateByIdAsync(`0,System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.UpdateByIdAsync(`1,System.String@)">
             <summary>
             异步根据ID更新模型
             </summary>
@@ -934,7 +975,7 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.UpdateByIdAsync(`0,System.String[],System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.UpdateByIdAsync(`1,System.String[],System.String@)">
             <summary>
             异步根据ID更新模型
             </summary>
@@ -943,7 +984,7 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.DeleteByIdAsync(System.Int32,System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.DeleteByIdAsync(`0,System.String@)">
             <summary>
             异步根据ID删除模型
             </summary>
@@ -951,7 +992,7 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.DeleteByIdsAsync(System.Int32[],System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.DeleteByIdsAsync(`0[],System.String@)">
             <summary>
             异步根据ID数组删除模型
             </summary>
@@ -959,14 +1000,14 @@
             <param name="connectionId">连接ID</param>
             <returns>影响行数任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.DeleteAsync(System.String@)">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.DeleteAsync(System.String@)">
             <summary>
             异步删除所有模型
             </summary>
             <param name="connectionId">连接ID</param>
             <returns>影响行数任务</returns>
         </member>
-        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`1.ExecAsync``1(System.String,System.Boolean,System.Data.IDbConnection,System.Func{``0})">
+        <member name="M:Hzdtf.Persistence.Contract.Standard.Data.PersistenceBase`2.ExecAsync``1(System.String,System.Boolean,System.Data.IDbConnection,System.Func{``0})">
             <summary>
             异步执行
             </summary>

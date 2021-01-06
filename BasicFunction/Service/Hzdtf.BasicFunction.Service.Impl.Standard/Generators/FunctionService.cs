@@ -14,7 +14,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class FunctionService : ServiceBase<FunctionInfo, IFunctionPersistence>, IFunctionService
+    public partial class FunctionService : ServiceBase<int, FunctionInfo, IFunctionPersistence>, IFunctionService
     {
     }
 }

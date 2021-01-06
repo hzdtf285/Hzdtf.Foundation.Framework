@@ -11,7 +11,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class WorkflowPersistence : MySqlDapperBase<WorkflowInfo>, IWorkflowPersistence
+    public partial class WorkflowPersistence : MySqlDapperBase<int, WorkflowInfo>, IWorkflowPersistence
     {
         /// <summary>
         /// 表名
@@ -23,6 +23,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
         /// </summary>
         private readonly static string[] INSERT_FIELD_NAMES = new string[]
         {
+            "id",
             "apply_no",
             "create_time",
             "creater",

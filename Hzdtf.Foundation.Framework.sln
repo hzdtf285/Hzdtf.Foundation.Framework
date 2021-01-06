@@ -85,8 +85,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hzdtf.Authorization.Web.Fra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hzdtf.BasicController.Framework", "Controller\Hzdtf.BasicController.Framework\Hzdtf.BasicController.Framework.csproj", "{27D5FD7D-D86B-4489-BF0E-1945C2304BB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hzdtf.BasicFunction.MvcController.Framework", "BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Framework\Hzdtf.BasicFunction.MvcController.Framework.csproj", "{6457946C-0355-4F37-BBF7-6DB9347D7181}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "900.WebDemoCore", "900.WebDemoCore", "{0E5D4923-AD7A-4348-8D18-A8BE0E0B3967}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.BasicController.Core", "Controller\Hzdtf.BasicController.Core\Hzdtf.BasicController.Core.csproj", "{A0A1BC1E-6C9C-45B1-8FC5-533C13BC3764}"
@@ -228,7 +226,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Authorization.Web.Cor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Logger.Exceptionless.Standard", "Logger\Hzdtf.Logger.Exceptionless.Standard\Hzdtf.Logger.Exceptionless.Standard.csproj", "{90176806-7875-4F8F-9AD1-1FBF1B5D5258}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hzdtf.Mini.Standard", "Common\Hzdtf.Mini.Standard\Hzdtf.Mini.Standard.csproj", "{EEF341A3-DD91-455A-8710-2052B03CFC86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Mini.Standard", "Common\Hzdtf.Mini.Standard\Hzdtf.Mini.Standard.csproj", "{EEF341A3-DD91-455A-8710-2052B03CFC86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -340,10 +338,6 @@ Global
 		{27D5FD7D-D86B-4489-BF0E-1945C2304BB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27D5FD7D-D86B-4489-BF0E-1945C2304BB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27D5FD7D-D86B-4489-BF0E-1945C2304BB7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6457946C-0355-4F37-BBF7-6DB9347D7181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6457946C-0355-4F37-BBF7-6DB9347D7181}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6457946C-0355-4F37-BBF7-6DB9347D7181}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6457946C-0355-4F37-BBF7-6DB9347D7181}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A0A1BC1E-6C9C-45B1-8FC5-533C13BC3764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A0A1BC1E-6C9C-45B1-8FC5-533C13BC3764}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0A1BC1E-6C9C-45B1-8FC5-533C13BC3764}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -576,7 +570,6 @@ Global
 		{D3CB1733-8D86-4D38-B3B1-3D216768350C} = {9CDDB65E-5FE0-4163-8181-0A9348261321}
 		{6327D3C3-47A7-480C-8C26-F7CE97CC63E6} = {E9DF525B-2D71-4518-B2F4-8521761B54E5}
 		{27D5FD7D-D86B-4489-BF0E-1945C2304BB7} = {5B35EE06-3661-43A3-AE0C-357ACE6AAA1E}
-		{6457946C-0355-4F37-BBF7-6DB9347D7181} = {147A8738-FDBA-482C-9E73-6F56B9A146D4}
 		{A0A1BC1E-6C9C-45B1-8FC5-533C13BC3764} = {5B35EE06-3661-43A3-AE0C-357ACE6AAA1E}
 		{B84DB9AC-3A2B-4E93-9065-B534BC7801D6} = {147A8738-FDBA-482C-9E73-6F56B9A146D4}
 		{DDD91DA6-A87E-4CE8-88E9-356A612FF978} = {54A2AF8C-8962-4B1C-AB67-5024CBD3F7B5}

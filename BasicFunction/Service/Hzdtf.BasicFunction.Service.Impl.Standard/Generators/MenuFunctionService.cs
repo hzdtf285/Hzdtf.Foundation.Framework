@@ -14,7 +14,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class MenuFunctionService : ServiceBase<MenuFunctionInfo, IMenuFunctionPersistence>, IMenuFunctionService
+    public partial class MenuFunctionService : ServiceBase<int, MenuFunctionInfo, IMenuFunctionPersistence>, IMenuFunctionService
     {
     }
 }

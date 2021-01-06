@@ -21,7 +21,7 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard.Engine
     /// </summary>
     /// <typeparam name="FormT">表单类型</typeparam>
     public partial interface IFormDataReader<FormT>
-        where FormT : PersonTimeInfo
+        where FormT : PersonTimeInfo<int>
     {
         /// <summary>
         /// 根据工作流ID读取表单数据
@@ -30,6 +30,6 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard.Engine
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<FormT> ReaderByWorkflowId(int workflowId, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<FormT> ReaderByWorkflowId(int workflowId, string connectionId = null, BasicUserInfo<int> currUser = null);
     }
 }

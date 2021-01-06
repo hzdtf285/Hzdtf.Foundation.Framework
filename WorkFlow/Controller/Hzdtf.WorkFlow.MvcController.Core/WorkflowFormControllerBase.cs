@@ -16,7 +16,7 @@ namespace Hzdtf.WorkFlow.MvcController.Core
     /// </summary>
     /// <typeparam name="FormT">表单类型</typeparam>
     public abstract class WorkflowFormControllerBase<FormT> : ControllerBase
-        where FormT : PersonTimeInfo
+        where FormT : PersonTimeInfo<int>
     {
         /// <summary>
         /// 工作流初始服务

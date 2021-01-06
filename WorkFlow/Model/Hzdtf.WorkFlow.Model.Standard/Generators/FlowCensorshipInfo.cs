@@ -14,7 +14,7 @@ namespace Hzdtf.WorkFlow.Model.Standard
     /// @ 黄振东
     /// </summary>
     [MessagePackObject]
-    public partial class FlowCensorshipInfo : PersonTimeInfo
+    public partial class FlowCensorshipInfo : PersonTimeInfo<int>
     {
 ﻿        /// <summary>
         /// 流程Id_名称

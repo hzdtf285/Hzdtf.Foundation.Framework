@@ -30,7 +30,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
             IList<AttachmentInfo> result = null;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                string sql = $"{SelectSql()} WHERE owner_type=@OwnerType AND owner_id=@OwnerId";
+                string sql = $"{BasicSelectSql()} WHERE owner_type=@OwnerType AND owner_id=@OwnerId";
                 if (!string.IsNullOrWhiteSpace(blurTitle))
                 {
                     sql += string.Format(" AND title LIKE '%{0}%'", blurTitle.FillSqlValue());
@@ -56,7 +56,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
             int result = 0;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                string sql = $"{CountSql()} WHERE owner_type=@OwnerType AND owner_id=@OwnerId";
+                string sql = $"{BasicCountSql()} WHERE owner_type=@OwnerType AND owner_id=@OwnerId";
                 if (!string.IsNullOrWhiteSpace(blurTitle))
                 {
                     sql += string.Format(" AND title LIKE '%{0}%'", blurTitle.FillSqlValue());
@@ -81,7 +81,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
             int result = 0;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                string sql = $"{DeleteSql()} WHERE owner_type=@OwnerType AND owner_id=@OwnerId";
+                string sql = $"{BasicDeleteSql()} WHERE owner_type=@OwnerType AND owner_id=@OwnerId";
                 Log.TraceAsync(sql, source: this.GetType().Name, tags: "DeleteByOwner");
                 result = dbConn.Execute(sql, new { OwnerType = ownerType, OwnerId = ownerId }, GetDbTransaction(connId));
             });

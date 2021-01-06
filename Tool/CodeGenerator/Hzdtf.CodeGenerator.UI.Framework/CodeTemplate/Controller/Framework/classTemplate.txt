@@ -21,7 +21,7 @@ namespace |NamespacePfx|.MvcController.Framework
     [Menu("|Model|")]
     [RoutePrefix("api/|Model|")]
     [System.Web.Mvc.Authorize]
-    public partial class |Name| : ManageControllerBase<PageInfo, |Model|Info, I|Model|Service, FilterInfo>
+    public partial class |Name| : ManageControllerBase<PageInfo<|PkType|>, |Model|Info, I|Model|Service, FilterInfo>
     {
         /// <summary>
         /// 获取页面数据，包含当前用户所拥有的权限功能列表

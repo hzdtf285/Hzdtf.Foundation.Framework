@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using Hzdtf.Utility.Standard.Utils;
+using Hzdtf.Utility.Standard.Model.Identitys;
+using System.Linq;
 
 namespace Hzdtf.Persistence.Contract.Standard.Data
 {
@@ -15,9 +17,23 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
     /// 持久化基类
     /// @ 黄振东
     /// </summary>
+    /// <typeparam name="IdT">ID类型</typeparam>
     /// <typeparam name="ModelT">模型类型</typeparam>
-    public abstract partial class PersistenceBase<ModelT> : PersistenceConnectionBase, IPersistence<ModelT> where ModelT : SimpleInfo
+    public abstract partial class PersistenceBase<IdT, ModelT> : PersistenceConnectionBase, IPersistence<IdT, ModelT> where ModelT : SimpleInfo<IdT>
     {
+        #region 属性与字段
+
+        /// <summary>
+        /// ID
+        /// </summary>
+        public IIdentity<IdT> Identity
+        {
+            get;
+            set;
+        }
+
+        #endregion
+
         #region 读取方法
 
         /// <summary>
@@ -26,7 +42,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="id">ID</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>模型</returns>
-        public virtual ModelT Select(int id, string connectionId = null)
+        public virtual ModelT Select(IdT id, string connectionId = null)
         {
             ModelT result = null;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
@@ -44,7 +60,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="propertyNames">属性名称集合</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>模型</returns>
-        public virtual ModelT Select(int id, string[] propertyNames, string connectionId = null)
+        public virtual ModelT Select(IdT id, string[] propertyNames, string connectionId = null)
         {
             ModelT result = null;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
@@ -61,7 +77,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="ids">ID集合</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>模型列表</returns>
-        public virtual IList<ModelT> Select(int[] ids, string connectionId = null)
+        public virtual IList<ModelT> Select(IdT[] ids, string connectionId = null)
         {
             IList<ModelT> result = null;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
@@ -79,7 +95,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="propertyNames">属性名称集合</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>模型列表</returns>
-        public virtual IList<ModelT> Select(int[] ids, string[] propertyNames, string connectionId = null)
+        public virtual IList<ModelT> Select(IdT[] ids, string[] propertyNames, string connectionId = null)
         {
             IList<ModelT> result = null;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
@@ -96,7 +112,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="id">ID</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>模型数</returns>
-        public virtual int Count(int id, string connectionId = null)
+        public virtual int Count(IdT id, string connectionId = null)
         {
             int result = 0;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
@@ -210,6 +226,13 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         public virtual int Insert(ModelT model, string connectionId = null)
         {
             int result = 0;
+
+            IdT tenantId;
+            if (IsExistsTenantId(out tenantId))
+            {
+                SetTenantId(model, tenantId);
+            }
+
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 result = Insert(model, dbConn, GetDbTransaction(connId, AccessMode.MASTER));
@@ -227,6 +250,16 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         public virtual int Insert(IList<ModelT> models, string connectionId = null)
         {
             int result = 0;
+
+            IdT tenantId;
+            if (IsExistsTenantId(out tenantId))
+            {
+                foreach (var m in models)
+                {
+                    SetTenantId(m, tenantId);
+                }
+            }
+
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
                 result = Insert(models, dbConn, GetDbTransaction(connId, AccessMode.MASTER));
@@ -277,7 +310,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="connectionId">连接ID</param>
         /// <returns>影响行数</returns>
         [Transaction(ConnectionIdIndex = 1)]
-        public virtual int DeleteById(int id, string connectionId = null)
+        public virtual int DeleteById(IdT id, string connectionId = null)
         {
             int result = 0;
             IDictionary<string, string> slaveTables = SlaveTables();
@@ -299,7 +332,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
 
                     foreach (KeyValuePair<string, string> slTable in slaveTables)
                     {
-                        DeleteSlaveTableByForeignKeys(slTable.Key, slTable.Value, new int[] { id }, dbConn, GetDbTransaction(connId, AccessMode.MASTER));
+                        DeleteSlaveTableByForeignKeys(slTable.Key, slTable.Value, new IdT[] { id }, dbConn, GetDbTransaction(connId, AccessMode.MASTER));
                     }
                 }, AccessMode.MASTER);
             }, AccessMode.MASTER, connectionId: connectionId);           
@@ -314,7 +347,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="connectionId">连接ID</param>
         /// <returns>影响行数</returns>
         [Transaction(ConnectionIdIndex = 1)]
-        public virtual int DeleteByIds(int[] ids, string connectionId = null)
+        public virtual int DeleteByIds(IdT[] ids, string connectionId = null)
         {
             int result = 0;
             IDictionary<string, string> slaveTables = SlaveTables();
@@ -394,7 +427,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="dbTransaction">数据库事务</param>
         /// <param name="propertyNames">属性名称集合</param>
         /// <returns>模型</returns>
-        protected abstract ModelT Select(int id, IDbConnection dbConnection, IDbTransaction dbTransaction = null, string[] propertyNames = null);
+        protected abstract ModelT Select(IdT id, IDbConnection dbConnection, IDbTransaction dbTransaction = null, string[] propertyNames = null);
 
         /// <summary>
         /// 根据ID集合查询模型列表
@@ -404,7 +437,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="dbTransaction">数据库事务</param>
         /// <param name="propertyNames">属性名称集合</param>
         /// <returns>模型列表</returns>
-        protected abstract IList<ModelT> Select(int[] ids, IDbConnection dbConnection, IDbTransaction dbTransaction = null, string[] propertyNames = null);
+        protected abstract IList<ModelT> Select(IdT[] ids, IDbConnection dbConnection, IDbTransaction dbTransaction = null, string[] propertyNames = null);
 
         /// <summary>
         /// 根据ID统计模型数
@@ -413,7 +446,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="dbConnection">数据库连接</param>
         /// <param name="dbTransaction">数据库事务</param>
         /// <returns>模型数</returns>
-        protected abstract int Count(int id, IDbConnection dbConnection, IDbTransaction dbTransaction = null);
+        protected abstract int Count(IdT id, IDbConnection dbConnection, IDbTransaction dbTransaction = null);
 
         /// <summary>
         /// 统计模型数
@@ -489,7 +522,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="dbConnection">数据库连接</param>
         /// <param name="dbTransaction">数据库事务</param>
         /// <returns>影响行数</returns>
-        protected abstract int DeleteById(int id, IDbConnection dbConnection, IDbTransaction dbTransaction = null);
+        protected abstract int DeleteById(IdT id, IDbConnection dbConnection, IDbTransaction dbTransaction = null);
 
         /// <summary>
         /// 根据ID数组删除模型
@@ -498,7 +531,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="dbConnection">数据库连接</param>
         /// <param name="dbTransaction">数据库事务</param>
         /// <returns>影响行数</returns>
-        protected abstract int DeleteByIds(int[] ids, IDbConnection dbConnection, IDbTransaction dbTransaction = null);
+        protected abstract int DeleteByIds(IdT[] ids, IDbConnection dbConnection, IDbTransaction dbTransaction = null);
 
         /// <summary>
         /// 删除所有模型
@@ -539,13 +572,93 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="dbConnection">数据库连接</param>
         /// <param name="dbTransaction">数据库事务</param>
         /// <returns>影响行数</returns>
-        protected virtual int DeleteSlaveTableByForeignKeys(string table, string foreignKeyName, int[] foreignKeyValues, IDbConnection dbConnection, IDbTransaction dbTransaction = null) => 0;
+        protected virtual int DeleteSlaveTableByForeignKeys(string table, string foreignKeyName, IdT[] foreignKeyValues, IDbConnection dbConnection, IDbTransaction dbTransaction = null) => 0;
         
         /// <summary>
         /// 过滤信息前
         /// </summary>
         /// <param name="filter">过滤</param>
         protected virtual void BeforeFilterInfo(FilterInfo filter) { }
+
+        /// <summary>
+        /// 主键是否自增
+        /// </summary>
+        /// <param name="id">ID</param>
+        /// <returns>主键是否自增</returns>
+        protected virtual bool PrimaryKeyIncr(IdT id) => Identity.IsEmpty(id);
+
+        /// <summary>
+        /// 是否存在租赁ID
+        /// </summary>
+        /// <returns>查询时是否需要追加租赁ID为过滤条件</returns>
+        protected virtual bool IsExistsTenantId()
+        {
+            IdT currUserTenantId;
+            return IsExistsTenantId(out currUserTenantId);
+        }
+
+        /// <summary>
+        /// 是否存在租赁ID
+        /// </summary>
+        /// <param name="currUserTenantId">当前用户租户ID</param>
+        /// <returns>是否存在租赁ID</returns>
+        protected virtual bool IsExistsTenantId(out IdT currUserTenantId)
+        {
+            currUserTenantId = default(IdT);
+            
+            if (ModelContainerTenantId())
+            {
+                var currUser = UserTool<IdT>.GetCurrUser();
+                if (currUser == null)
+                {
+                    throw new ArgumentNullException("当前用户为空");
+                }
+                if (Identity.IsEmpty(currUser.TenantId))
+                {
+                    throw new ArgumentException("当前用户的租户ID为空");
+                }
+                currUserTenantId = currUser.TenantId;
+
+                return true;
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// 模型是否包含租户ID
+        /// </summary>
+        /// <returns>模型是否包含租户ID</returns>
+        protected virtual bool ModelContainerTenantId() => false;
+
+        /// <summary>
+        /// 设置模型的租赁ID
+        /// </summary>
+        /// <param name="model">模型</param>
+        /// <param name="tenantId">租赁ID</param>
+        protected virtual void SetTenantId(ModelT model, IdT tenantId)
+        {
+            if (model == null)
+            {
+                return;
+            }
+
+            if (model is PersonTimeTenantInfo<ModelT>)
+            {
+                var temp = model as PersonTimeTenantInfo<IdT>;
+                temp.TenantId = tenantId;
+            }
+            if (model is PersonTimeTenantInfo<IdT>)
+            {
+                var temp = model as PersonTimeTenantInfo<IdT>;
+                temp.TenantId = tenantId;
+            }
+            else if (model is BasicUserInfo<IdT>)
+            {
+                var temp = model as BasicUserInfo<IdT>;
+                temp.TenantId = tenantId;
+            }
+        }
 
         #endregion
 

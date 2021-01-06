@@ -1,0 +1,4742 @@
+2021-01-05 22:53:51.2979 Microsoft.Hosting.Lifetime INFO eventId:0,Hosting environment: Development 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 22:53:51.3077 Microsoft.Hosting.Lifetime INFO eventId:0,Now listening on: http://localhost:5000 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 22:53:51.3077 Microsoft.Hosting.Lifetime INFO eventId:0,Application started. Press Ctrl+C to shut down. 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 22:53:51.3077 Microsoft.Hosting.Lifetime INFO eventId:0,Content root path: F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 22:53:52.5231 Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect. 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 22:53:52.8882 RequestLogMiddleware TRACE 请求:/api/authorization/getisverificationcode,耗时:167ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/getisverificationcode 
+2021-01-05 22:54:31.8955 UserPersistence TRACE SELECT `user`.code Code,`user`.create_time CreateTime,`user`.creater Creater,`user`.creater_id CreaterId,`user`.enabled Enabled,`user`.id Id,`user`.login_id LoginId,`user`.mail Mail,`user`.memo Memo,`user`.mobile Mobile,`user`.modifier Modifier,`user`.modifier_id ModifierId,`user`.modify_time ModifyTime,`user`.name Name,`user`.password Password,`user`.QQ QQ,`user`.sex Sex,`user`.system_hide SystemHide,`user`.system_inlay SystemInlay,`user`.wechat Wechat FROM `user`  WHERE login_id=@LoginId AND `password`=@Password 标签:192.168.3.16,DESKTOP-KDN1753,SelectByLoginIdAndPassword 
+2021-01-05 22:54:32.0914 UserService INFO 登录ID:system,用户编号:1000,名称:系统管理员 成功授权 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 22:54:32.2443 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:1089ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 22:54:32.2443 UserValiService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.UserValiService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:1109ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 22:54:32.2748 RequestLogMiddleware TRACE 请求:/api/authorization/login,耗时:1278ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/login 
+2021-01-05 22:54:32.3421 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Void BeforeFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo], Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  {
+    "code": 0
+  },
+  1,
+  "3eb01397d354456ca8666727fb52b230",
+  null
+],timed:1ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 22:55:52.2938 UserPersistence TRACE SELECT `user`.code Code,`user`.create_time CreateTime,`user`.creater Creater,`user`.creater_id CreaterId,`user`.enabled Enabled,`user`.id Id,`user`.login_id LoginId,`user`.mail Mail,`user`.memo Memo,`user`.mobile Mobile,`user`.modifier Modifier,`user`.modifier_id ModifierId,`user`.modify_time ModifyTime,`user`.name Name,`user`.password Password,`user`.QQ QQ,`user`.sex Sex,`user`.system_hide SystemHide,`user`.system_inlay SystemInlay,`user`.wechat Wechat FROM `user`  WHERE `Id`=@Id  标签:192.168.3.16,DESKTOP-KDN1753,Select 
+2021-01-05 22:55:52.3070 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Void AfterFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo], Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  {
+    "data": {
+      "sex": true,
+      "systemHide": false,
+      "loginId": "system",
+      "password": "AC59075B964B0715",
+      "enabled": true,
+      "systemInlay": true,
+      "code": "1000",
+      "name": "系统管理员",
+      "createrId": 0,
+      "creater": "测试用户",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-17T15:28:12",
+      "modifyTime": "2019-02-08T08:15:28",
+      "id": 1
+    },
+    "code": 0
+  },
+  1,
+  "3eb01397d354456ca8666727fb52b230",
+  null
+],timed:1ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 22:55:52.3070 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo] Find(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  1,
+  "3eb01397d354456ca8666727fb52b230",
+  null
+],ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "creater": "测试用户",
+    "modifierId": 1,
+    "modifier": "系统管理员",
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0
+},timed:79966ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 22:55:52.3070 UserRolePersistence TRACE SELECT R.id Id,R.system_inlay SystemInlay,R.system_hide SystemHide,R.memo Memo,R.name Name,R.creater_id CreaterId,R.creater Creater,R.create_time CreateTime,R.modifier_id ModifierId,R.modifier Modifier,R.modify_time ModifyTime,R.code Code FROM `role` R INNER JOIN `user_role` UR ON R.id=UR.role_id AND UR.user_id=@UserId 标签:192.168.3.16,DESKTOP-KDN1753,SelectRolesByUserId 
+2021-01-05 22:55:52.3411 UserRoleService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  1,
+  "3eb01397d354456ca8666727fb52b230",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:34ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 22:55:52.4080 MenuPersistence TRACE SELECT M.code Code,M.create_time CreateTime,M.creater Creater,M.creater_id CreaterId,M.icon Icon,M.id Id,M.link Link,M.modifier Modifier,M.modifier_id ModifierId,M.modify_time ModifyTime,M.name Name,M.parent_id ParentId,M.sort Sort, F.id, F.`code`, F.`name` FROM menu M INNER JOIN menu_function MF ON M.`Id`=MF.`menu_id` INNER JOIN `function` F ON MF.`function_id`=F.`Id` INNER JOIN role_menu_function MFU ON MFU.`menu_function_id`= MF.`Id` AND MFU.`role_id` IN(@RoleId0) 标签:192.168.3.16,DESKTOP-KDN1753,SelectByRoleIds 
+2021-01-05 22:55:52.5757 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.Expand.User.UserMenuInfo] CanAccessMenus(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  1,
+  null,
+  null
+],ReturnValue:{
+  "data": {
+    "menus": [
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T22:55:52.4466917+08:00",
+            "modifyTime": "2021-01-05T22:55:52.446694+08:00",
+            "id": 1
+          }
+        ],
+        "children": [
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T22:55:52.4495228+08:00",
+                "modifyTime": "2021-01-05T22:55:52.4495245+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Audit",
+                "name": "审核",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T22:55:52.4505273+08:00",
+                "modifyTime": "2021-01-05T22:55:52.4505289+08:00",
+                "id": 13
+              }
+            ],
+            "children": [],
+            "code": "MyWaitFlow",
+            "link": "/html/FlowHandle/MyWaitFlow/page.html",
+            "name": "我的待办",
+            "parentId": 8,
+            "sort": 1,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:03:18",
+            "modifyTime": "2019-03-25T00:03:23",
+            "id": 9
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T22:55:52.4512749+08:00",
+                "modifyTime": "2021-01-05T22:55:52.4512761+08:00",
+                "id": 1
+              }
+            ],
+            "children": [],
+            "code": "MyAuditedFlow",
+            "link": "/html/FlowHandle/MyAuditedFlow/page.html",
+            "name": "我已审核",
+            "parentId": 8,
+            "sort": 2,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:04:48",
+            "modifyTime": "2019-03-25T00:04:53",
+            "id": 10
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T22:55:52.4516414+08:00",
+                "modifyTime": "2021-01-05T22:55:52.4516421+08:00",
+                "id": 1
+              }
+            ],
+            "children": [],
+            "code": "MyApplyFlow",
+            "link": "/html/FlowHandle/MyApplyFlow/page.html",
+            "name": "我的申请",
+            "parentId": 8,
+            "sort": 3,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:05:46",
+            "modifyTime": "2019-03-25T00:05:50",
+            "id": 11
+          }
+        ],
+        "code": "FlowHandle",
+        "icon": "fa fa-envelope",
+        "name": "流程处理",
+        "parentId": 0,
+        "sort": 0,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-03-25T00:02:43",
+        "modifyTime": "2019-03-25T00:02:48",
+        "id": 8
+      },
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Save",
+            "name": "保存",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T22:55:52.4519894+08:00",
+            "modifyTime": "2021-01-05T22:55:52.4519901+08:00",
+            "id": 6
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Apply",
+            "name": "申请",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T22:55:52.4530263+08:00",
+            "modifyTime": "2021-01-05T22:55:52.4530281+08:00",
+            "id": 11
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T22:55:52.4536302+08:00",
+            "modifyTime": "2021-01-05T22:55:52.4536315+08:00",
+            "id": 1
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Edit",
+            "name": "编辑",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T22:55:52.4542756+08:00",
+            "modifyTime": "2021-01-05T22:55:52.4542768+08:00",
+            "id": 3
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Remove",
+            "name": "移除",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T22:55:52.4549606+08:00",
+            "modifyTime": "2021-01-05T22:55:52.4549616+08:00",
+            "id": 4
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Undo",
+            "name": "撤消",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T22:55:52.4556384+08:00",
+            "modifyTime": "2021-01-05T22:55:52.4556394+08:00",
+            "id": 14
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "ForceRemove",
+            "name": "强制删除",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T22:55:52.4563489+08:00",
+            "modifyTime": "2021-01-05T22:55:52.4563499+08:00",
+            "id": 16
+          }
+        ],
+        "children": [],
+        "code": "TestForm",
+        "icon": "fa fa-cutlery",
+        "link": "/html/Demo/Form/page.html",
+        "name": "测试表单",
+        "parentId": 0,
+        "sort": 1,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-08-06T06:38:31",
+        "modifyTime": "2019-08-06T06:38:40",
+        "id": 7
+      },
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T22:55:52.4569688+08:00",
+            "modifyTime": "2021-01-05T22:55:52.4569699+08:00",
+            "id": 1
+          }
+        ],
+        "children": [
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T22:55:52.4575621+08:00",
+                "modifyTime": "2021-01-05T22:55:52.4575631+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T22:55:52.4582267+08:00",
+                "modifyTime": "2021-01-05T22:55:52.4582277+08:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T22:55:52.4588154+08:00",
+                "modifyTime": "2021-01-05T22:55:52.4588168+08:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T22:55:52.4594579+08:00",
+                "modifyTime": "2021-01-05T22:55:52.459459+08:00",
+                "id": 4
+              }
+            ],
+            "children": [],
+            "code": "Role",
+            "link": "/html/BasicFunction/Role/page.html",
+            "name": "角色管理",
+            "parentId": 1,
+            "sort": 1,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-17T15:39:39",
+            "modifyTime": "2019-01-17T15:39:45",
+            "id": 2
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T22:55:52.4600825+08:00",
+                "modifyTime": "2021-01-05T22:55:52.4600838+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T22:55:52.46069+08:00",
+                "modifyTime": "2021-01-05T22:55:52.4606911+08:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T22:55:52.4613892+08:00",
+                "modifyTime": "2021-01-05T22:55:52.4613902+08:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T22:55:52.46199+08:00",
+                "modifyTime": "2021-01-05T22:55:52.4619908+08:00",
+                "id": 4
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "ResetPassword",
+                "name": "重置密码",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T22:55:52.4624827+08:00",
+                "modifyTime": "2021-01-05T22:55:52.4624836+08:00",
+                "id": 5
+              }
+            ],
+            "children": [],
+            "code": "User",
+            "link": "/html/BasicFunction/User/page.html",
+            "name": "用户管理",
+            "parentId": 1,
+            "sort": 2,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-17T15:40:19",
+            "modifyTime": "2019-01-17T15:40:28",
+            "id": 3
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T22:55:52.4628789+08:00",
+                "modifyTime": "2021-01-05T22:55:52.4628795+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Save",
+                "name": "保存",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T22:55:52.4635883+08:00",
+                "modifyTime": "2021-01-05T22:55:52.4635893+08:00",
+                "id": 6
+              }
+            ],
+            "children": [],
+            "code": "RolePermission",
+            "link": "/html/BasicFunction/PermissionSet/role.html",
+            "name": "角色权限",
+            "parentId": 1,
+            "sort": 3,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-28T11:35:04",
+            "modifyTime": "2019-01-28T11:35:10",
+            "id": 4
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T22:55:52.4641611+08:00",
+                "modifyTime": "2021-01-05T22:55:52.4641622+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T22:55:52.4648168+08:00",
+                "modifyTime": "2021-01-05T22:55:52.464818+08:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T22:55:52.46546+08:00",
+                "modifyTime": "2021-01-05T22:55:52.4654608+08:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T22:55:52.4660422+08:00",
+                "modifyTime": "2021-01-05T22:55:52.4660432+08:00",
+                "id": 4
+              }
+            ],
+            "children": [],
+            "code": "DataDictionary",
+            "link": "/html/BasicFunction/DataDictionary/page.html",
+            "name": "数据字典",
+            "parentId": 1,
+            "sort": 4,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-28T17:33:14",
+            "modifyTime": "2019-01-28T17:33:19",
+            "id": 5
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T22:55:52.4666288+08:00",
+                "modifyTime": "2021-01-05T22:55:52.4666298+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T22:55:52.4673379+08:00",
+                "modifyTime": "2021-01-05T22:55:52.4673389+08:00",
+                "id": 4
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Upload",
+                "name": "上传",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T22:55:52.4679852+08:00",
+                "modifyTime": "2021-01-05T22:55:52.4679861+08:00",
+                "id": 7
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "DownLoad",
+                "name": "下载",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T22:55:52.4685499+08:00",
+                "modifyTime": "2021-01-05T22:55:52.4685508+08:00",
+                "id": 8
+              }
+            ],
+            "children": [],
+            "code": "Attachment",
+            "link": "/html/BasicFunction/Attachment/page.html",
+            "name": "附件",
+            "parentId": 1,
+            "sort": 5,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-02T18:41:11",
+            "modifyTime": "2019-03-02T18:41:19",
+            "id": 6
+          }
+        ],
+        "code": "BasicFunction",
+        "icon": "fa fa-cutlery",
+        "name": "基础功能",
+        "parentId": 0,
+        "sort": 1,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-17T15:35:43",
+        "modifyTime": "2019-01-17T15:35:46",
+        "id": 1
+      }
+    ],
+    "ownRoles": [
+      {
+        "memo": "系统最高角色",
+        "systemHide": false,
+        "systemInlay": true,
+        "code": "100",
+        "name": "系统管理组",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-25T20:56:27",
+        "modifyTime": "2019-01-27T23:31:54",
+        "id": 1
+      }
+    ],
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "creater": "测试用户",
+    "modifierId": 1,
+    "modifier": "系统管理员",
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0
+},timed:80242ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 22:55:52.6582 RequestLogMiddleware TRACE 请求:/,耗时:80350ms 标签:192.168.3.16,DESKTOP-KDN1753,/ 
+2021-01-05 22:55:52.9799 RequestLogMiddleware TRACE 请求:/api/authorization/getisverificationcode,耗时:1ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/getisverificationcode 
+2021-01-05 23:02:27.2601 Microsoft.Hosting.Lifetime INFO eventId:0,Application started. Press Ctrl+C to shut down. 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:02:27.2601 Microsoft.Hosting.Lifetime INFO eventId:0,Now listening on: http://localhost:5000 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:02:27.2601 Microsoft.Hosting.Lifetime INFO eventId:0,Content root path: F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:02:27.2601 Microsoft.Hosting.Lifetime INFO eventId:0,Hosting environment: Development 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:02:27.9108 Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect. 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:02:28.2197 RequestLogMiddleware TRACE 请求:/api/authorization/getisverificationcode,耗时:114ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/getisverificationcode 
+2021-01-05 23:02:34.6902 UserPersistence TRACE SELECT `user`.code Code,`user`.create_time CreateTime,`user`.creater Creater,`user`.creater_id CreaterId,`user`.enabled Enabled,`user`.id Id,`user`.login_id LoginId,`user`.mail Mail,`user`.memo Memo,`user`.mobile Mobile,`user`.modifier Modifier,`user`.modifier_id ModifierId,`user`.modify_time ModifyTime,`user`.name Name,`user`.password Password,`user`.QQ QQ,`user`.sex Sex,`user`.system_hide SystemHide,`user`.system_inlay SystemInlay,`user`.wechat Wechat FROM `user`  WHERE login_id=@LoginId AND `password`=@Password 标签:192.168.3.16,DESKTOP-KDN1753,SelectByLoginIdAndPassword 
+2021-01-05 23:02:34.9747 UserService INFO 登录ID:system,用户编号:1000,名称:系统管理员 成功授权 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:02:35.1733 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:903ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:02:35.1825 UserValiService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.UserValiService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:920ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:02:35.2176 RequestLogMiddleware TRACE 请求:/api/authorization/login,耗时:1007ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/login 
+2021-01-05 23:02:35.3264 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Void BeforeFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo], Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  {
+    "code": 0
+  },
+  1,
+  "92069bba03b24a2ea1a088597b3ed959",
+  null
+],timed:1ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:02:39.0182 UserPersistence TRACE SELECT `user`.code Code,`user`.create_time CreateTime,`user`.creater Creater,`user`.creater_id CreaterId,`user`.enabled Enabled,`user`.id Id,`user`.login_id LoginId,`user`.mail Mail,`user`.memo Memo,`user`.mobile Mobile,`user`.modifier Modifier,`user`.modifier_id ModifierId,`user`.modify_time ModifyTime,`user`.name Name,`user`.password Password,`user`.QQ QQ,`user`.sex Sex,`user`.system_hide SystemHide,`user`.system_inlay SystemInlay,`user`.wechat Wechat FROM `user`  WHERE `Id`=@Id  标签:192.168.3.16,DESKTOP-KDN1753,Select 
+2021-01-05 23:02:39.0315 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Void AfterFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo], Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  {
+    "data": {
+      "sex": true,
+      "systemHide": false,
+      "loginId": "system",
+      "password": "AC59075B964B0715",
+      "enabled": true,
+      "systemInlay": true,
+      "code": "1000",
+      "name": "系统管理员",
+      "createrId": 0,
+      "creater": "测试用户",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-17T15:28:12",
+      "modifyTime": "2019-02-08T08:15:28",
+      "id": 1
+    },
+    "code": 0
+  },
+  1,
+  "92069bba03b24a2ea1a088597b3ed959",
+  null
+],timed:1ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:02:39.0315 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo] Find(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  1,
+  "92069bba03b24a2ea1a088597b3ed959",
+  null
+],ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "creater": "测试用户",
+    "modifierId": 1,
+    "modifier": "系统管理员",
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0
+},timed:3716ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:02:39.0315 UserRolePersistence TRACE SELECT R.id Id,R.system_inlay SystemInlay,R.system_hide SystemHide,R.memo Memo,R.name Name,R.creater_id CreaterId,R.creater Creater,R.create_time CreateTime,R.modifier_id ModifierId,R.modifier Modifier,R.modify_time ModifyTime,R.code Code FROM `role` R INNER JOIN `user_role` UR ON R.id=UR.role_id AND UR.user_id=@UserId 标签:192.168.3.16,DESKTOP-KDN1753,SelectRolesByUserId 
+2021-01-05 23:02:39.0797 UserRoleService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  1,
+  "92069bba03b24a2ea1a088597b3ed959",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:46ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:02:39.1321 MenuPersistence TRACE SELECT M.code Code,M.create_time CreateTime,M.creater Creater,M.creater_id CreaterId,M.icon Icon,M.id Id,M.link Link,M.modifier Modifier,M.modifier_id ModifierId,M.modify_time ModifyTime,M.name Name,M.parent_id ParentId,M.sort Sort, F.id, F.`code`, F.`name` FROM menu M INNER JOIN menu_function MF ON M.`Id`=MF.`menu_id` INNER JOIN `function` F ON MF.`function_id`=F.`Id` INNER JOIN role_menu_function MFU ON MFU.`menu_function_id`= MF.`Id` AND MFU.`role_id` IN(@RoleId0) 标签:192.168.3.16,DESKTOP-KDN1753,SelectByRoleIds 
+2021-01-05 23:02:39.3091 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.Expand.User.UserMenuInfo] CanAccessMenus(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  1,
+  null,
+  null
+],ReturnValue:{
+  "data": {
+    "menus": [
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:02:39.2264814+08:00",
+            "modifyTime": "2021-01-05T23:02:39.2264849+08:00",
+            "id": 1
+          }
+        ],
+        "children": [
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:02:39.2312554+08:00",
+                "modifyTime": "2021-01-05T23:02:39.2312587+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Audit",
+                "name": "审核",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:02:39.2325895+08:00",
+                "modifyTime": "2021-01-05T23:02:39.2325915+08:00",
+                "id": 13
+              }
+            ],
+            "children": [],
+            "code": "MyWaitFlow",
+            "link": "/html/FlowHandle/MyWaitFlow/page.html",
+            "name": "我的待办",
+            "parentId": 8,
+            "sort": 1,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:03:18",
+            "modifyTime": "2019-03-25T00:03:23",
+            "id": 9
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:02:39.233989+08:00",
+                "modifyTime": "2021-01-05T23:02:39.2339924+08:00",
+                "id": 1
+              }
+            ],
+            "children": [],
+            "code": "MyAuditedFlow",
+            "link": "/html/FlowHandle/MyAuditedFlow/page.html",
+            "name": "我已审核",
+            "parentId": 8,
+            "sort": 2,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:04:48",
+            "modifyTime": "2019-03-25T00:04:53",
+            "id": 10
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:02:39.2348969+08:00",
+                "modifyTime": "2021-01-05T23:02:39.2349001+08:00",
+                "id": 1
+              }
+            ],
+            "children": [],
+            "code": "MyApplyFlow",
+            "link": "/html/FlowHandle/MyApplyFlow/page.html",
+            "name": "我的申请",
+            "parentId": 8,
+            "sort": 3,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:05:46",
+            "modifyTime": "2019-03-25T00:05:50",
+            "id": 11
+          }
+        ],
+        "code": "FlowHandle",
+        "icon": "fa fa-envelope",
+        "name": "流程处理",
+        "parentId": 0,
+        "sort": 0,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-03-25T00:02:43",
+        "modifyTime": "2019-03-25T00:02:48",
+        "id": 8
+      },
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Save",
+            "name": "保存",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:02:39.2357535+08:00",
+            "modifyTime": "2021-01-05T23:02:39.2357554+08:00",
+            "id": 6
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Apply",
+            "name": "申请",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:02:39.2368987+08:00",
+            "modifyTime": "2021-01-05T23:02:39.2369019+08:00",
+            "id": 11
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:02:39.2378254+08:00",
+            "modifyTime": "2021-01-05T23:02:39.2378287+08:00",
+            "id": 1
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Edit",
+            "name": "编辑",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:02:39.2390096+08:00",
+            "modifyTime": "2021-01-05T23:02:39.2390127+08:00",
+            "id": 3
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Remove",
+            "name": "移除",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:02:39.2401467+08:00",
+            "modifyTime": "2021-01-05T23:02:39.2401549+08:00",
+            "id": 4
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Undo",
+            "name": "撤消",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:02:39.2420202+08:00",
+            "modifyTime": "2021-01-05T23:02:39.2420236+08:00",
+            "id": 14
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "ForceRemove",
+            "name": "强制删除",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:02:39.243197+08:00",
+            "modifyTime": "2021-01-05T23:02:39.2432009+08:00",
+            "id": 16
+          }
+        ],
+        "children": [],
+        "code": "TestForm",
+        "icon": "fa fa-cutlery",
+        "link": "/html/Demo/Form/page.html",
+        "name": "测试表单",
+        "parentId": 0,
+        "sort": 1,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-08-06T06:38:31",
+        "modifyTime": "2019-08-06T06:38:40",
+        "id": 7
+      },
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:02:39.2442893+08:00",
+            "modifyTime": "2021-01-05T23:02:39.2442929+08:00",
+            "id": 1
+          }
+        ],
+        "children": [
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:02:39.2451057+08:00",
+                "modifyTime": "2021-01-05T23:02:39.2451073+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:02:39.2456586+08:00",
+                "modifyTime": "2021-01-05T23:02:39.24566+08:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:02:39.2461691+08:00",
+                "modifyTime": "2021-01-05T23:02:39.2461702+08:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:02:39.2467417+08:00",
+                "modifyTime": "2021-01-05T23:02:39.2467428+08:00",
+                "id": 4
+              }
+            ],
+            "children": [],
+            "code": "Role",
+            "link": "/html/BasicFunction/Role/page.html",
+            "name": "角色管理",
+            "parentId": 1,
+            "sort": 1,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-17T15:39:39",
+            "modifyTime": "2019-01-17T15:39:45",
+            "id": 2
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:02:39.2472565+08:00",
+                "modifyTime": "2021-01-05T23:02:39.2472576+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:02:39.2477755+08:00",
+                "modifyTime": "2021-01-05T23:02:39.2477765+08:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:02:39.2483001+08:00",
+                "modifyTime": "2021-01-05T23:02:39.2483011+08:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:02:39.2495311+08:00",
+                "modifyTime": "2021-01-05T23:02:39.2495345+08:00",
+                "id": 4
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "ResetPassword",
+                "name": "重置密码",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:02:39.2505906+08:00",
+                "modifyTime": "2021-01-05T23:02:39.2505931+08:00",
+                "id": 5
+              }
+            ],
+            "children": [],
+            "code": "User",
+            "link": "/html/BasicFunction/User/page.html",
+            "name": "用户管理",
+            "parentId": 1,
+            "sort": 2,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-17T15:40:19",
+            "modifyTime": "2019-01-17T15:40:28",
+            "id": 3
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:02:39.2515358+08:00",
+                "modifyTime": "2021-01-05T23:02:39.2515377+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Save",
+                "name": "保存",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:02:39.2525743+08:00",
+                "modifyTime": "2021-01-05T23:02:39.2525771+08:00",
+                "id": 6
+              }
+            ],
+            "children": [],
+            "code": "RolePermission",
+            "link": "/html/BasicFunction/PermissionSet/role.html",
+            "name": "角色权限",
+            "parentId": 1,
+            "sort": 3,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-28T11:35:04",
+            "modifyTime": "2019-01-28T11:35:10",
+            "id": 4
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:02:39.2547744+08:00",
+                "modifyTime": "2021-01-05T23:02:39.2547772+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:02:39.2560824+08:00",
+                "modifyTime": "2021-01-05T23:02:39.2560853+08:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:02:39.256939+08:00",
+                "modifyTime": "2021-01-05T23:02:39.2569405+08:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:02:39.2573868+08:00",
+                "modifyTime": "2021-01-05T23:02:39.2573882+08:00",
+                "id": 4
+              }
+            ],
+            "children": [],
+            "code": "DataDictionary",
+            "link": "/html/BasicFunction/DataDictionary/page.html",
+            "name": "数据字典",
+            "parentId": 1,
+            "sort": 4,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-28T17:33:14",
+            "modifyTime": "2019-01-28T17:33:19",
+            "id": 5
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:02:39.2578529+08:00",
+                "modifyTime": "2021-01-05T23:02:39.2578541+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:02:39.2583135+08:00",
+                "modifyTime": "2021-01-05T23:02:39.2583148+08:00",
+                "id": 4
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Upload",
+                "name": "上传",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:02:39.2587288+08:00",
+                "modifyTime": "2021-01-05T23:02:39.2587294+08:00",
+                "id": 7
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "DownLoad",
+                "name": "下载",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:02:39.259012+08:00",
+                "modifyTime": "2021-01-05T23:02:39.2590125+08:00",
+                "id": 8
+              }
+            ],
+            "children": [],
+            "code": "Attachment",
+            "link": "/html/BasicFunction/Attachment/page.html",
+            "name": "附件",
+            "parentId": 1,
+            "sort": 5,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-02T18:41:11",
+            "modifyTime": "2019-03-02T18:41:19",
+            "id": 6
+          }
+        ],
+        "code": "BasicFunction",
+        "icon": "fa fa-cutlery",
+        "name": "基础功能",
+        "parentId": 0,
+        "sort": 1,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-17T15:35:43",
+        "modifyTime": "2019-01-17T15:35:46",
+        "id": 1
+      }
+    ],
+    "ownRoles": [
+      {
+        "memo": "系统最高角色",
+        "systemHide": false,
+        "systemInlay": true,
+        "code": "100",
+        "name": "系统管理组",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-25T20:56:27",
+        "modifyTime": "2019-01-27T23:31:54",
+        "id": 1
+      }
+    ],
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "creater": "测试用户",
+    "modifierId": 1,
+    "modifier": "系统管理员",
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0
+},timed:3998ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:02:39.5158 RequestLogMiddleware TRACE 请求:/,耗时:4242ms 标签:192.168.3.16,DESKTOP-KDN1753,/ 
+2021-01-05 23:02:39.9435 RequestLogMiddleware TRACE 请求:/api/authorization/getisverificationcode,耗时:2ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/getisverificationcode 
+2021-01-05 23:02:44.7791 UserRolePersistence TRACE SELECT R.id Id,R.system_inlay SystemInlay,R.system_hide SystemHide,R.memo Memo,R.name Name,R.creater_id CreaterId,R.creater Creater,R.create_time CreateTime,R.modifier_id ModifierId,R.modifier Modifier,R.modify_time ModifyTime,R.code Code FROM `role` R INNER JOIN `user_role` UR ON R.id=UR.role_id AND UR.user_id=@UserId 标签:192.168.3.16,DESKTOP-KDN1753,SelectRolesByUserId 
+2021-01-05 23:02:44.7953 RoleMenuFunctionPersistence TRACE SELECT F.* FROM `function` F INNER JOIN menu_function MF ON MF.`function_id`= F.`id` INNER JOIN menu M ON M.`id`= MF.`menu_id` AND M.`code`=@MenuCode INNER JOIN role_menu_function RMF ON RMF.`menu_function_id`= MF.`id` AND RMF.`role_id` IN(@RoleId0) 标签:192.168.3.16,DESKTOP-KDN1753,SelectFunctionsByMenuCodeAndRoleIds 
+2021-01-05 23:02:44.7953 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.FunctionInfo]] QueryUserOwnFunctionsByMenuCode(Int32, System.String, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  1,
+  "Role",
+  null,
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "menuFunctionId": 0,
+      "code": "Query",
+      "name": "查询",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2021-01-05T23:02:44.7880115+08:00",
+      "modifyTime": "2021-01-05T23:02:44.7880162+08:00",
+      "id": 1
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Add",
+      "name": "添加",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2021-01-05T23:02:44.7886908+08:00",
+      "modifyTime": "2021-01-05T23:02:44.7886944+08:00",
+      "id": 2
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Edit",
+      "name": "编辑",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2021-01-05T23:02:44.788841+08:00",
+      "modifyTime": "2021-01-05T23:02:44.7888423+08:00",
+      "id": 3
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Remove",
+      "name": "移除",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2021-01-05T23:02:44.788957+08:00",
+      "modifyTime": "2021-01-05T23:02:44.7889579+08:00",
+      "id": 4
+    }
+  ],
+  "code": 0
+},timed:17ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:02:44.8234 RequestLogMiddleware TRACE 请求:/api/role/pagedata,耗时:58ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/role/pagedata 
+2021-01-05 23:02:44.7953 UserRoleService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  1,
+  "c8e4482bb0264be69be2eb9240b411a8",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:4ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:02:44.7953 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.FunctionInfo]] QueryCurrUserOwnFunctionsByMenuCode(System.String, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  "Role",
+  null,
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "menuFunctionId": 0,
+      "code": "Query",
+      "name": "查询",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2021-01-05T23:02:44.7880115+08:00",
+      "modifyTime": "2021-01-05T23:02:44.7880162+08:00",
+      "id": 1
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Add",
+      "name": "添加",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2021-01-05T23:02:44.7886908+08:00",
+      "modifyTime": "2021-01-05T23:02:44.7886944+08:00",
+      "id": 2
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Edit",
+      "name": "编辑",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2021-01-05T23:02:44.788841+08:00",
+      "modifyTime": "2021-01-05T23:02:44.7888423+08:00",
+      "id": 3
+    },
+    {
+      "menuFunctionId": 0,
+      "code": "Remove",
+      "name": "移除",
+      "createrId": 0,
+      "creater": "系统管理员",
+      "modifierId": 0,
+      "modifier": "系统管理员",
+      "createTime": "2021-01-05T23:02:44.788957+08:00",
+      "modifyTime": "2021-01-05T23:02:44.7889579+08:00",
+      "id": 4
+    }
+  ],
+  "code": 0
+},timed:19ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:02:44.9270 RoleService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.RoleService System.Threading.Tasks.Task`1[Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.Page.PagingInfo`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]]] QueryPageAsync(Int32, Int32, Hzdtf.Utility.Standard.Model.FilterInfo, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  0,
+  30,
+  {
+    "keyword": "",
+    "sort": 0
+  },
+  null,
+  null
+],timed:2ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:02:44.9386 RoleService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.RoleService Void BeforeQueryPage(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.Page.PagingInfo`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]], Int32, Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.FilterInfo, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  {
+    "code": 0
+  },
+  0,
+  30,
+  null,
+  {
+    "keyword": "",
+    "sort": 0
+  },
+  null
+],timed:0ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:02:44.9386 RolePersistence TRACE SELECT COUNT(*) FROM `role`    WHERE 1=1 AND `system_hide`=@SystemHide 标签:192.168.3.16,DESKTOP-KDN1753,SelectPage 
+2021-01-05 23:02:44.9518 RolePersistence TRACE SELECT `role`.id Id,`role`.system_inlay SystemInlay,`role`.system_hide SystemHide,`role`.memo Memo,`role`.name Name,`role`.creater_id CreaterId,`role`.creater Creater,`role`.create_time CreateTime,`role`.modifier_id ModifierId,`role`.modifier Modifier,`role`.modify_time ModifyTime,`role`.code Code FROM `role`    WHERE 1=1 AND `system_hide`=@SystemHide  LIMIT 0,30 标签:192.168.3.16,DESKTOP-KDN1753,SelectPage 
+2021-01-05 23:02:44.9518 RoleService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.RoleService Void AfterQueryPage(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.Page.PagingInfo`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]], Int32, Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.FilterInfo, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  {
+    "data": {
+      "rows": [
+        {
+          "memo": "系统最高角色",
+          "systemHide": false,
+          "systemInlay": true,
+          "code": "100",
+          "name": "系统管理组",
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-01-25T20:56:27",
+          "modifyTime": "2019-01-27T23:31:54",
+          "id": 1
+        },
+        {
+          "memo": "业务部门的角色",
+          "systemHide": false,
+          "systemInlay": true,
+          "code": "101",
+          "name": "业务组",
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-01-27T11:21:26",
+          "modifyTime": "2019-01-27T11:21:26",
+          "id": 2
+        },
+        {
+          "memo": "技术部门的角色",
+          "systemHide": false,
+          "systemInlay": true,
+          "code": "102",
+          "name": "技术组",
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-01-27T11:22:08",
+          "modifyTime": "2019-01-27T11:22:08",
+          "id": 3
+        },
+        {
+          "memo": "",
+          "systemHide": false,
+          "systemInlay": false,
+          "code": "103",
+          "name": "采购组",
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-02-22T22:29:10",
+          "modifyTime": "2019-02-22T22:29:10",
+          "id": 16
+        },
+        {
+          "memo": "4334",
+          "systemHide": false,
+          "systemInlay": false,
+          "code": "104",
+          "name": "fgdsg",
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-03-02T18:38:06",
+          "modifyTime": "2019-08-21T13:16:40",
+          "id": 17
+        },
+        {
+          "memo": "3232",
+          "systemHide": false,
+          "systemInlay": false,
+          "code": "3232",
+          "name": "32",
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-08-21T13:16:59",
+          "modifyTime": "2019-08-21T13:16:59",
+          "id": 18
+        },
+        {
+          "memo": "4343",
+          "systemHide": false,
+          "systemInlay": false,
+          "code": "323243",
+          "name": "4343",
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-08-21T13:17:08",
+          "modifyTime": "2019-08-21T13:17:08",
+          "id": 19
+        },
+        {
+          "memo": "6464",
+          "systemHide": false,
+          "systemInlay": false,
+          "code": "56454",
+          "name": "4564",
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2019-08-21T13:17:13",
+          "modifyTime": "2019-08-21T13:17:13",
+          "id": 20
+        },
+        {
+          "memo": "3535353543535353",
+          "systemHide": false,
+          "systemInlay": false,
+          "code": "2353453535",
+          "name": "435435",
+          "createrId": 1,
+          "creater": "系统管理员",
+          "modifierId": 1,
+          "modifier": "系统管理员",
+          "createTime": "2021-01-04T00:21:26",
+          "modifyTime": "2021-01-04T00:21:32",
+          "id": 23
+        }
+      ],
+      "pageIndex": 0,
+      "pageSize": 30,
+      "records": 9,
+      "pageCount": 1
+    },
+    "code": 0
+  },
+  0,
+  30,
+  null,
+  {
+    "keyword": "",
+    "sort": 0
+  },
+  null
+],timed:1ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:02:44.9629 RoleService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.RoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.Page.PagingInfo`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] QueryPage(Int32, Int32, Hzdtf.Utility.Standard.Model.FilterInfo, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  0,
+  30,
+  {
+    "keyword": "",
+    "sort": 0
+  },
+  null,
+  null
+],ReturnValue:{
+  "data": {
+    "rows": [
+      {
+        "memo": "系统最高角色",
+        "systemHide": false,
+        "systemInlay": true,
+        "code": "100",
+        "name": "系统管理组",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-25T20:56:27",
+        "modifyTime": "2019-01-27T23:31:54",
+        "id": 1
+      },
+      {
+        "memo": "业务部门的角色",
+        "systemHide": false,
+        "systemInlay": true,
+        "code": "101",
+        "name": "业务组",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-27T11:21:26",
+        "modifyTime": "2019-01-27T11:21:26",
+        "id": 2
+      },
+      {
+        "memo": "技术部门的角色",
+        "systemHide": false,
+        "systemInlay": true,
+        "code": "102",
+        "name": "技术组",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-27T11:22:08",
+        "modifyTime": "2019-01-27T11:22:08",
+        "id": 3
+      },
+      {
+        "memo": "",
+        "systemHide": false,
+        "systemInlay": false,
+        "code": "103",
+        "name": "采购组",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-02-22T22:29:10",
+        "modifyTime": "2019-02-22T22:29:10",
+        "id": 16
+      },
+      {
+        "memo": "4334",
+        "systemHide": false,
+        "systemInlay": false,
+        "code": "104",
+        "name": "fgdsg",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-03-02T18:38:06",
+        "modifyTime": "2019-08-21T13:16:40",
+        "id": 17
+      },
+      {
+        "memo": "3232",
+        "systemHide": false,
+        "systemInlay": false,
+        "code": "3232",
+        "name": "32",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-08-21T13:16:59",
+        "modifyTime": "2019-08-21T13:16:59",
+        "id": 18
+      },
+      {
+        "memo": "4343",
+        "systemHide": false,
+        "systemInlay": false,
+        "code": "323243",
+        "name": "4343",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-08-21T13:17:08",
+        "modifyTime": "2019-08-21T13:17:08",
+        "id": 19
+      },
+      {
+        "memo": "6464",
+        "systemHide": false,
+        "systemInlay": false,
+        "code": "56454",
+        "name": "4564",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-08-21T13:17:13",
+        "modifyTime": "2019-08-21T13:17:13",
+        "id": 20
+      },
+      {
+        "memo": "3535353543535353",
+        "systemHide": false,
+        "systemInlay": false,
+        "code": "2353453535",
+        "name": "435435",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2021-01-04T00:21:26",
+        "modifyTime": "2021-01-04T00:21:32",
+        "id": 23
+      }
+    ],
+    "pageIndex": 0,
+    "pageSize": 30,
+    "records": 9,
+    "pageCount": 1
+  },
+  "code": 0
+},timed:33ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:02:44.9629 RequestLogMiddleware TRACE 请求:/api/role,耗时:96ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/role 
+2021-01-05 23:06:20.7456 Microsoft.Hosting.Lifetime INFO eventId:0,Hosting environment: Development 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:06:20.7456 Microsoft.Hosting.Lifetime INFO eventId:0,Content root path: F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:06:20.7456 Microsoft.Hosting.Lifetime INFO eventId:0,Now listening on: http://localhost:5000 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:06:20.7456 Microsoft.Hosting.Lifetime INFO eventId:0,Application started. Press Ctrl+C to shut down. 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:06:21.3613 Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect. 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:06:21.6181 RequestLogMiddleware TRACE 请求:/api/authorization/getisverificationcode,耗时:117ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/getisverificationcode 
+2021-01-05 23:06:25.8562 UserPersistence TRACE SELECT `user`.code Code,`user`.create_time CreateTime,`user`.creater Creater,`user`.creater_id CreaterId,`user`.enabled Enabled,`user`.id Id,`user`.login_id LoginId,`user`.mail Mail,`user`.memo Memo,`user`.mobile Mobile,`user`.modifier Modifier,`user`.modifier_id ModifierId,`user`.modify_time ModifyTime,`user`.name Name,`user`.password Password,`user`.QQ QQ,`user`.sex Sex,`user`.system_hide SystemHide,`user`.system_inlay SystemInlay,`user`.wechat Wechat FROM `user`  WHERE login_id=@LoginId AND `password`=@Password 标签:192.168.3.16,DESKTOP-KDN1753,SelectByLoginIdAndPassword 
+2021-01-05 23:06:25.9690 UserService INFO 登录ID:system,用户编号:1000,名称:系统管理员 成功授权 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:06:26.0632 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:642ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:06:26.0632 UserValiService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.UserValiService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:652ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:06:26.0896 RequestLogMiddleware TRACE 请求:/api/authorization/login,耗时:725ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/login 
+2021-01-05 23:06:31.9312 AttachmentPersistence TRACE SELECT `attachment`.create_time CreateTime,`attachment`.creater Creater,`attachment`.tenant_id TenantId,`attachment`.creater_id CreaterId,`attachment`.expand_name ExpandName,`attachment`.file_address FileAddress,`attachment`.file_name FileName,`attachment`.file_size FileSize,`attachment`.id Id,`attachment`.memo Memo,`attachment`.modifier Modifier,`attachment`.modifier_id ModifierId,`attachment`.modify_time ModifyTime,`attachment`.owner_id OwnerId,`attachment`.owner_type OwnerType,`attachment`.title Title FROM `attachment`  WHERE `Id`=@Id  标签:192.168.3.16,DESKTOP-KDN1753,Select 
+2021-01-05 23:06:31.9488 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Void BeforeFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo], Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  {
+    "code": 0
+  },
+  1,
+  "34851fb0190a45da897ef31adf822bc1",
+  null
+],timed:0ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:06:35.0460 UserPersistence TRACE SELECT `user`.code Code,`user`.create_time CreateTime,`user`.creater Creater,`user`.creater_id CreaterId,`user`.enabled Enabled,`user`.id Id,`user`.login_id LoginId,`user`.mail Mail,`user`.memo Memo,`user`.mobile Mobile,`user`.modifier Modifier,`user`.modifier_id ModifierId,`user`.modify_time ModifyTime,`user`.name Name,`user`.password Password,`user`.QQ QQ,`user`.sex Sex,`user`.system_hide SystemHide,`user`.system_inlay SystemInlay,`user`.wechat Wechat FROM `user`  WHERE `Id`=@Id  标签:192.168.3.16,DESKTOP-KDN1753,Select 
+2021-01-05 23:06:35.0947 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Void AfterFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo], Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  {
+    "data": {
+      "sex": true,
+      "systemHide": false,
+      "loginId": "system",
+      "password": "AC59075B964B0715",
+      "enabled": true,
+      "systemInlay": true,
+      "code": "1000",
+      "name": "系统管理员",
+      "createrId": 0,
+      "creater": "测试用户",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-17T15:28:12",
+      "modifyTime": "2019-02-08T08:15:28",
+      "id": 1
+    },
+    "code": 0
+  },
+  1,
+  "34851fb0190a45da897ef31adf822bc1",
+  null
+],timed:1ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:06:35.0947 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo] Find(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  1,
+  "34851fb0190a45da897ef31adf822bc1",
+  null
+],ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "creater": "测试用户",
+    "modifierId": 1,
+    "modifier": "系统管理员",
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0
+},timed:3135ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:06:35.0947 UserRolePersistence TRACE SELECT R.id Id,R.system_inlay SystemInlay,R.system_hide SystemHide,R.memo Memo,R.name Name,R.creater_id CreaterId,R.creater Creater,R.create_time CreateTime,R.modifier_id ModifierId,R.modifier Modifier,R.modify_time ModifyTime,R.code Code FROM `role` R INNER JOIN `user_role` UR ON R.id=UR.role_id AND UR.user_id=@UserId 标签:192.168.3.16,DESKTOP-KDN1753,SelectRolesByUserId 
+2021-01-05 23:06:35.1223 UserRoleService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  1,
+  "34851fb0190a45da897ef31adf822bc1",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:32ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:06:35.1923 MenuPersistence TRACE SELECT M.code Code,M.create_time CreateTime,M.creater Creater,M.creater_id CreaterId,M.icon Icon,M.id Id,M.link Link,M.modifier Modifier,M.modifier_id ModifierId,M.modify_time ModifyTime,M.name Name,M.parent_id ParentId,M.sort Sort, F.id, F.`code`, F.`name` FROM menu M INNER JOIN menu_function MF ON M.`Id`=MF.`menu_id` INNER JOIN `function` F ON MF.`function_id`=F.`Id` INNER JOIN role_menu_function MFU ON MFU.`menu_function_id`= MF.`Id` AND MFU.`role_id` IN(@RoleId0) 标签:192.168.3.16,DESKTOP-KDN1753,SelectByRoleIds 
+2021-01-05 23:06:35.3337 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.Expand.User.UserMenuInfo] CanAccessMenus(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  1,
+  null,
+  null
+],ReturnValue:{
+  "data": {
+    "menus": [
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:06:35.2294386+08:00",
+            "modifyTime": "2021-01-05T23:06:35.2294417+08:00",
+            "id": 1
+          }
+        ],
+        "children": [
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:35.2320515+08:00",
+                "modifyTime": "2021-01-05T23:06:35.2320528+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Audit",
+                "name": "审核",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:35.2327249+08:00",
+                "modifyTime": "2021-01-05T23:06:35.2327258+08:00",
+                "id": 13
+              }
+            ],
+            "children": [],
+            "code": "MyWaitFlow",
+            "link": "/html/FlowHandle/MyWaitFlow/page.html",
+            "name": "我的待办",
+            "parentId": 8,
+            "sort": 1,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:03:18",
+            "modifyTime": "2019-03-25T00:03:23",
+            "id": 9
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:35.2333391+08:00",
+                "modifyTime": "2021-01-05T23:06:35.2333399+08:00",
+                "id": 1
+              }
+            ],
+            "children": [],
+            "code": "MyAuditedFlow",
+            "link": "/html/FlowHandle/MyAuditedFlow/page.html",
+            "name": "我已审核",
+            "parentId": 8,
+            "sort": 2,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:04:48",
+            "modifyTime": "2019-03-25T00:04:53",
+            "id": 10
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:35.2336928+08:00",
+                "modifyTime": "2021-01-05T23:06:35.2336937+08:00",
+                "id": 1
+              }
+            ],
+            "children": [],
+            "code": "MyApplyFlow",
+            "link": "/html/FlowHandle/MyApplyFlow/page.html",
+            "name": "我的申请",
+            "parentId": 8,
+            "sort": 3,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:05:46",
+            "modifyTime": "2019-03-25T00:05:50",
+            "id": 11
+          }
+        ],
+        "code": "FlowHandle",
+        "icon": "fa fa-envelope",
+        "name": "流程处理",
+        "parentId": 0,
+        "sort": 0,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-03-25T00:02:43",
+        "modifyTime": "2019-03-25T00:02:48",
+        "id": 8
+      },
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Save",
+            "name": "保存",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:06:35.2340607+08:00",
+            "modifyTime": "2021-01-05T23:06:35.2340615+08:00",
+            "id": 6
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Apply",
+            "name": "申请",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:06:35.2344541+08:00",
+            "modifyTime": "2021-01-05T23:06:35.2344551+08:00",
+            "id": 11
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:06:35.2348561+08:00",
+            "modifyTime": "2021-01-05T23:06:35.2348585+08:00",
+            "id": 1
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Edit",
+            "name": "编辑",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:06:35.2352558+08:00",
+            "modifyTime": "2021-01-05T23:06:35.2352567+08:00",
+            "id": 3
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Remove",
+            "name": "移除",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:06:35.2356133+08:00",
+            "modifyTime": "2021-01-05T23:06:35.2356141+08:00",
+            "id": 4
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Undo",
+            "name": "撤消",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:06:35.2359744+08:00",
+            "modifyTime": "2021-01-05T23:06:35.2359753+08:00",
+            "id": 14
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "ForceRemove",
+            "name": "强制删除",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:06:35.2365274+08:00",
+            "modifyTime": "2021-01-05T23:06:35.2365291+08:00",
+            "id": 16
+          }
+        ],
+        "children": [],
+        "code": "TestForm",
+        "icon": "fa fa-cutlery",
+        "link": "/html/Demo/Form/page.html",
+        "name": "测试表单",
+        "parentId": 0,
+        "sort": 1,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-08-06T06:38:31",
+        "modifyTime": "2019-08-06T06:38:40",
+        "id": 7
+      },
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:06:35.2369303+08:00",
+            "modifyTime": "2021-01-05T23:06:35.2369311+08:00",
+            "id": 1
+          }
+        ],
+        "children": [
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:35.2373419+08:00",
+                "modifyTime": "2021-01-05T23:06:35.2373459+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:35.2381208+08:00",
+                "modifyTime": "2021-01-05T23:06:35.2381224+08:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:35.2385201+08:00",
+                "modifyTime": "2021-01-05T23:06:35.2385211+08:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:35.2389283+08:00",
+                "modifyTime": "2021-01-05T23:06:35.2389296+08:00",
+                "id": 4
+              }
+            ],
+            "children": [],
+            "code": "Role",
+            "link": "/html/BasicFunction/Role/page.html",
+            "name": "角色管理",
+            "parentId": 1,
+            "sort": 1,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-17T15:39:39",
+            "modifyTime": "2019-01-17T15:39:45",
+            "id": 2
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:35.2393716+08:00",
+                "modifyTime": "2021-01-05T23:06:35.2393728+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:35.2397667+08:00",
+                "modifyTime": "2021-01-05T23:06:35.2397677+08:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:35.2401531+08:00",
+                "modifyTime": "2021-01-05T23:06:35.240154+08:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:35.240535+08:00",
+                "modifyTime": "2021-01-05T23:06:35.240536+08:00",
+                "id": 4
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "ResetPassword",
+                "name": "重置密码",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:35.2409455+08:00",
+                "modifyTime": "2021-01-05T23:06:35.2409464+08:00",
+                "id": 5
+              }
+            ],
+            "children": [],
+            "code": "User",
+            "link": "/html/BasicFunction/User/page.html",
+            "name": "用户管理",
+            "parentId": 1,
+            "sort": 2,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-17T15:40:19",
+            "modifyTime": "2019-01-17T15:40:28",
+            "id": 3
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:35.2414139+08:00",
+                "modifyTime": "2021-01-05T23:06:35.241415+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Save",
+                "name": "保存",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:35.2417991+08:00",
+                "modifyTime": "2021-01-05T23:06:35.2418001+08:00",
+                "id": 6
+              }
+            ],
+            "children": [],
+            "code": "RolePermission",
+            "link": "/html/BasicFunction/PermissionSet/role.html",
+            "name": "角色权限",
+            "parentId": 1,
+            "sort": 3,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-28T11:35:04",
+            "modifyTime": "2019-01-28T11:35:10",
+            "id": 4
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:35.242208+08:00",
+                "modifyTime": "2021-01-05T23:06:35.2422089+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:35.2426313+08:00",
+                "modifyTime": "2021-01-05T23:06:35.2426322+08:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:35.2430309+08:00",
+                "modifyTime": "2021-01-05T23:06:35.243032+08:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:35.2434611+08:00",
+                "modifyTime": "2021-01-05T23:06:35.2434623+08:00",
+                "id": 4
+              }
+            ],
+            "children": [],
+            "code": "DataDictionary",
+            "link": "/html/BasicFunction/DataDictionary/page.html",
+            "name": "数据字典",
+            "parentId": 1,
+            "sort": 4,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-28T17:33:14",
+            "modifyTime": "2019-01-28T17:33:19",
+            "id": 5
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:35.2438161+08:00",
+                "modifyTime": "2021-01-05T23:06:35.243817+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:35.2441951+08:00",
+                "modifyTime": "2021-01-05T23:06:35.244196+08:00",
+                "id": 4
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Upload",
+                "name": "上传",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:35.2445188+08:00",
+                "modifyTime": "2021-01-05T23:06:35.2445196+08:00",
+                "id": 7
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "DownLoad",
+                "name": "下载",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:35.2448337+08:00",
+                "modifyTime": "2021-01-05T23:06:35.2448344+08:00",
+                "id": 8
+              }
+            ],
+            "children": [],
+            "code": "Attachment",
+            "link": "/html/BasicFunction/Attachment/page.html",
+            "name": "附件",
+            "parentId": 1,
+            "sort": 5,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-02T18:41:11",
+            "modifyTime": "2019-03-02T18:41:19",
+            "id": 6
+          }
+        ],
+        "code": "BasicFunction",
+        "icon": "fa fa-cutlery",
+        "name": "基础功能",
+        "parentId": 0,
+        "sort": 1,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-17T15:35:43",
+        "modifyTime": "2019-01-17T15:35:46",
+        "id": 1
+      }
+    ],
+    "ownRoles": [
+      {
+        "memo": "系统最高角色",
+        "systemHide": false,
+        "systemInlay": true,
+        "code": "100",
+        "name": "系统管理组",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-25T20:56:27",
+        "modifyTime": "2019-01-27T23:31:54",
+        "id": 1
+      }
+    ],
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "creater": "测试用户",
+    "modifierId": 1,
+    "modifier": "系统管理员",
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0
+},timed:3389ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:06:35.4586 RequestLogMiddleware TRACE 请求:/,耗时:9336ms 标签:192.168.3.16,DESKTOP-KDN1753,/ 
+2021-01-05 23:06:35.7392 RequestLogMiddleware TRACE 请求:/api/authorization/getisverificationcode,耗时:3ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/getisverificationcode 
+2021-01-05 23:06:49.8984 AttachmentPersistence TRACE SELECT `attachment`.create_time CreateTime,`attachment`.creater Creater,`attachment`.tenant_id TenantId,`attachment`.creater_id CreaterId,`attachment`.expand_name ExpandName,`attachment`.file_address FileAddress,`attachment`.file_name FileName,`attachment`.file_size FileSize,`attachment`.id Id,`attachment`.memo Memo,`attachment`.modifier Modifier,`attachment`.modifier_id ModifierId,`attachment`.modify_time ModifyTime,`attachment`.owner_id OwnerId,`attachment`.owner_type OwnerType,`attachment`.title Title FROM `attachment`  WHERE `Id`=@Id  标签:192.168.3.16,DESKTOP-KDN1753,Select 
+2021-01-05 23:06:49.9292 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Void BeforeFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo], Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  {
+    "code": 0
+  },
+  1,
+  "b83a5be4bc7a4ef9abb4121ee42f17b0",
+  null
+],timed:0ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:06:50.9321 UserPersistence TRACE SELECT `user`.code Code,`user`.create_time CreateTime,`user`.creater Creater,`user`.creater_id CreaterId,`user`.enabled Enabled,`user`.id Id,`user`.login_id LoginId,`user`.mail Mail,`user`.memo Memo,`user`.mobile Mobile,`user`.modifier Modifier,`user`.modifier_id ModifierId,`user`.modify_time ModifyTime,`user`.name Name,`user`.password Password,`user`.QQ QQ,`user`.sex Sex,`user`.system_hide SystemHide,`user`.system_inlay SystemInlay,`user`.wechat Wechat FROM `user`  WHERE `Id`=@Id  标签:192.168.3.16,DESKTOP-KDN1753,Select 
+2021-01-05 23:06:50.9321 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Void AfterFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo], Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  {
+    "data": {
+      "sex": true,
+      "systemHide": false,
+      "loginId": "system",
+      "password": "AC59075B964B0715",
+      "enabled": true,
+      "systemInlay": true,
+      "code": "1000",
+      "name": "系统管理员",
+      "createrId": 0,
+      "creater": "测试用户",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-17T15:28:12",
+      "modifyTime": "2019-02-08T08:15:28",
+      "id": 1
+    },
+    "code": 0
+  },
+  1,
+  "b83a5be4bc7a4ef9abb4121ee42f17b0",
+  null
+],timed:0ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:06:50.9544 UserRolePersistence TRACE SELECT R.id Id,R.system_inlay SystemInlay,R.system_hide SystemHide,R.memo Memo,R.name Name,R.creater_id CreaterId,R.creater Creater,R.create_time CreateTime,R.modifier_id ModifierId,R.modifier Modifier,R.modify_time ModifyTime,R.code Code FROM `role` R INNER JOIN `user_role` UR ON R.id=UR.role_id AND UR.user_id=@UserId 标签:192.168.3.16,DESKTOP-KDN1753,SelectRolesByUserId 
+2021-01-05 23:06:50.9544 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo] Find(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  1,
+  "b83a5be4bc7a4ef9abb4121ee42f17b0",
+  null
+],ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "creater": "测试用户",
+    "modifierId": 1,
+    "modifier": "系统管理员",
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0
+},timed:1013ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:06:50.9544 UserRoleService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  1,
+  "b83a5be4bc7a4ef9abb4121ee42f17b0",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:1ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:06:50.9544 MenuPersistence TRACE SELECT M.code Code,M.create_time CreateTime,M.creater Creater,M.creater_id CreaterId,M.icon Icon,M.id Id,M.link Link,M.modifier Modifier,M.modifier_id ModifierId,M.modify_time ModifyTime,M.name Name,M.parent_id ParentId,M.sort Sort, F.id, F.`code`, F.`name` FROM menu M INNER JOIN menu_function MF ON M.`Id`=MF.`menu_id` INNER JOIN `function` F ON MF.`function_id`=F.`Id` INNER JOIN role_menu_function MFU ON MFU.`menu_function_id`= MF.`Id` AND MFU.`role_id` IN(@RoleId0) 标签:192.168.3.16,DESKTOP-KDN1753,SelectByRoleIds 
+2021-01-05 23:06:50.9827 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.Expand.User.UserMenuInfo] CanAccessMenus(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  1,
+  null,
+  null
+],ReturnValue:{
+  "data": {
+    "menus": [
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:06:50.9498255+08:00",
+            "modifyTime": "2021-01-05T23:06:50.9498263+08:00",
+            "id": 1
+          }
+        ],
+        "children": [
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:50.9501387+08:00",
+                "modifyTime": "2021-01-05T23:06:50.9501394+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Audit",
+                "name": "审核",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:50.9547212+08:00",
+                "modifyTime": "2021-01-05T23:06:50.9547225+08:00",
+                "id": 13
+              }
+            ],
+            "children": [],
+            "code": "MyWaitFlow",
+            "link": "/html/FlowHandle/MyWaitFlow/page.html",
+            "name": "我的待办",
+            "parentId": 8,
+            "sort": 1,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:03:18",
+            "modifyTime": "2019-03-25T00:03:23",
+            "id": 9
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:50.9613973+08:00",
+                "modifyTime": "2021-01-05T23:06:50.9613998+08:00",
+                "id": 1
+              }
+            ],
+            "children": [],
+            "code": "MyAuditedFlow",
+            "link": "/html/FlowHandle/MyAuditedFlow/page.html",
+            "name": "我已审核",
+            "parentId": 8,
+            "sort": 2,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:04:48",
+            "modifyTime": "2019-03-25T00:04:53",
+            "id": 10
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:50.9713802+08:00",
+                "modifyTime": "2021-01-05T23:06:50.9713825+08:00",
+                "id": 1
+              }
+            ],
+            "children": [],
+            "code": "MyApplyFlow",
+            "link": "/html/FlowHandle/MyApplyFlow/page.html",
+            "name": "我的申请",
+            "parentId": 8,
+            "sort": 3,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:05:46",
+            "modifyTime": "2019-03-25T00:05:50",
+            "id": 11
+          }
+        ],
+        "code": "FlowHandle",
+        "icon": "fa fa-envelope",
+        "name": "流程处理",
+        "parentId": 0,
+        "sort": 0,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-03-25T00:02:43",
+        "modifyTime": "2019-03-25T00:02:48",
+        "id": 8
+      },
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Save",
+            "name": "保存",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:06:50.9716999+08:00",
+            "modifyTime": "2021-01-05T23:06:50.9717012+08:00",
+            "id": 6
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Apply",
+            "name": "申请",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:06:50.9720145+08:00",
+            "modifyTime": "2021-01-05T23:06:50.9720156+08:00",
+            "id": 11
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:06:50.9724209+08:00",
+            "modifyTime": "2021-01-05T23:06:50.972422+08:00",
+            "id": 1
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Edit",
+            "name": "编辑",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:06:50.9728963+08:00",
+            "modifyTime": "2021-01-05T23:06:50.9728973+08:00",
+            "id": 3
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Remove",
+            "name": "移除",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:06:50.9732403+08:00",
+            "modifyTime": "2021-01-05T23:06:50.9732412+08:00",
+            "id": 4
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Undo",
+            "name": "撤消",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:06:50.973557+08:00",
+            "modifyTime": "2021-01-05T23:06:50.9735578+08:00",
+            "id": 14
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "ForceRemove",
+            "name": "强制删除",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:06:50.9739139+08:00",
+            "modifyTime": "2021-01-05T23:06:50.9739147+08:00",
+            "id": 16
+          }
+        ],
+        "children": [],
+        "code": "TestForm",
+        "icon": "fa fa-cutlery",
+        "link": "/html/Demo/Form/page.html",
+        "name": "测试表单",
+        "parentId": 0,
+        "sort": 1,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-08-06T06:38:31",
+        "modifyTime": "2019-08-06T06:38:40",
+        "id": 7
+      },
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:06:50.9742209+08:00",
+            "modifyTime": "2021-01-05T23:06:50.9742215+08:00",
+            "id": 1
+          }
+        ],
+        "children": [
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:50.9745075+08:00",
+                "modifyTime": "2021-01-05T23:06:50.9745081+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:50.9748079+08:00",
+                "modifyTime": "2021-01-05T23:06:50.9748084+08:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:50.9750931+08:00",
+                "modifyTime": "2021-01-05T23:06:50.9750936+08:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:50.9753999+08:00",
+                "modifyTime": "2021-01-05T23:06:50.9754004+08:00",
+                "id": 4
+              }
+            ],
+            "children": [],
+            "code": "Role",
+            "link": "/html/BasicFunction/Role/page.html",
+            "name": "角色管理",
+            "parentId": 1,
+            "sort": 1,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-17T15:39:39",
+            "modifyTime": "2019-01-17T15:39:45",
+            "id": 2
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:50.9758263+08:00",
+                "modifyTime": "2021-01-05T23:06:50.9758273+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:50.9762686+08:00",
+                "modifyTime": "2021-01-05T23:06:50.9762696+08:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:50.9766512+08:00",
+                "modifyTime": "2021-01-05T23:06:50.9766518+08:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:50.9770812+08:00",
+                "modifyTime": "2021-01-05T23:06:50.9770818+08:00",
+                "id": 4
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "ResetPassword",
+                "name": "重置密码",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:50.9773868+08:00",
+                "modifyTime": "2021-01-05T23:06:50.9773875+08:00",
+                "id": 5
+              }
+            ],
+            "children": [],
+            "code": "User",
+            "link": "/html/BasicFunction/User/page.html",
+            "name": "用户管理",
+            "parentId": 1,
+            "sort": 2,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-17T15:40:19",
+            "modifyTime": "2019-01-17T15:40:28",
+            "id": 3
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:50.9778263+08:00",
+                "modifyTime": "2021-01-05T23:06:50.977827+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Save",
+                "name": "保存",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:50.9782537+08:00",
+                "modifyTime": "2021-01-05T23:06:50.9782545+08:00",
+                "id": 6
+              }
+            ],
+            "children": [],
+            "code": "RolePermission",
+            "link": "/html/BasicFunction/PermissionSet/role.html",
+            "name": "角色权限",
+            "parentId": 1,
+            "sort": 3,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-28T11:35:04",
+            "modifyTime": "2019-01-28T11:35:10",
+            "id": 4
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:50.9786925+08:00",
+                "modifyTime": "2021-01-05T23:06:50.9786933+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:50.9791188+08:00",
+                "modifyTime": "2021-01-05T23:06:50.9791198+08:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:50.9794196+08:00",
+                "modifyTime": "2021-01-05T23:06:50.9794202+08:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:50.9798536+08:00",
+                "modifyTime": "2021-01-05T23:06:50.9798546+08:00",
+                "id": 4
+              }
+            ],
+            "children": [],
+            "code": "DataDictionary",
+            "link": "/html/BasicFunction/DataDictionary/page.html",
+            "name": "数据字典",
+            "parentId": 1,
+            "sort": 4,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-28T17:33:14",
+            "modifyTime": "2019-01-28T17:33:19",
+            "id": 5
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:50.9801537+08:00",
+                "modifyTime": "2021-01-05T23:06:50.9801542+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:50.9805823+08:00",
+                "modifyTime": "2021-01-05T23:06:50.980583+08:00",
+                "id": 4
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Upload",
+                "name": "上传",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:50.9810005+08:00",
+                "modifyTime": "2021-01-05T23:06:50.9810012+08:00",
+                "id": 7
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "DownLoad",
+                "name": "下载",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:06:50.9813052+08:00",
+                "modifyTime": "2021-01-05T23:06:50.9813058+08:00",
+                "id": 8
+              }
+            ],
+            "children": [],
+            "code": "Attachment",
+            "link": "/html/BasicFunction/Attachment/page.html",
+            "name": "附件",
+            "parentId": 1,
+            "sort": 5,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-02T18:41:11",
+            "modifyTime": "2019-03-02T18:41:19",
+            "id": 6
+          }
+        ],
+        "code": "BasicFunction",
+        "icon": "fa fa-cutlery",
+        "name": "基础功能",
+        "parentId": 0,
+        "sort": 1,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-17T15:35:43",
+        "modifyTime": "2019-01-17T15:35:46",
+        "id": 1
+      }
+    ],
+    "ownRoles": [
+      {
+        "memo": "系统最高角色",
+        "systemHide": false,
+        "systemInlay": true,
+        "code": "100",
+        "name": "系统管理组",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-25T20:56:27",
+        "modifyTime": "2019-01-27T23:31:54",
+        "id": 1
+      }
+    ],
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "creater": "测试用户",
+    "modifierId": 1,
+    "modifier": "系统管理员",
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0
+},timed:1074ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:06:50.9827 RequestLogMiddleware TRACE 请求:/,耗时:13777ms 标签:192.168.3.16,DESKTOP-KDN1753,/ 
+2021-01-05 23:06:51.1617 RequestLogMiddleware TRACE 请求:/api/authorization/getisverificationcode,耗时:2ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/getisverificationcode 
+2021-01-05 23:07:20.1945 AttachmentPersistence TRACE SELECT `attachment`.create_time CreateTime,`attachment`.creater Creater,`attachment`.tenant_id TenantId,`attachment`.creater_id CreaterId,`attachment`.expand_name ExpandName,`attachment`.file_address FileAddress,`attachment`.file_name FileName,`attachment`.file_size FileSize,`attachment`.id Id,`attachment`.memo Memo,`attachment`.modifier Modifier,`attachment`.modifier_id ModifierId,`attachment`.modify_time ModifyTime,`attachment`.owner_id OwnerId,`attachment`.owner_type OwnerType,`attachment`.title Title FROM `attachment`  WHERE `Id`=@Id  标签:192.168.3.16,DESKTOP-KDN1753,Select 
+2021-01-05 23:07:20.2020 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Void BeforeFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo], Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  {
+    "code": 0
+  },
+  1,
+  "86845281e2a242ccaad31e8de8b168eb",
+  null
+],timed:0ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:07:21.3705 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Void AfterFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo], Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  {
+    "data": {
+      "sex": true,
+      "systemHide": false,
+      "loginId": "system",
+      "password": "AC59075B964B0715",
+      "enabled": true,
+      "systemInlay": true,
+      "code": "1000",
+      "name": "系统管理员",
+      "createrId": 0,
+      "creater": "测试用户",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-17T15:28:12",
+      "modifyTime": "2019-02-08T08:15:28",
+      "id": 1
+    },
+    "code": 0
+  },
+  1,
+  "86845281e2a242ccaad31e8de8b168eb",
+  null
+],timed:0ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:07:21.3705 UserPersistence TRACE SELECT `user`.code Code,`user`.create_time CreateTime,`user`.creater Creater,`user`.creater_id CreaterId,`user`.enabled Enabled,`user`.id Id,`user`.login_id LoginId,`user`.mail Mail,`user`.memo Memo,`user`.mobile Mobile,`user`.modifier Modifier,`user`.modifier_id ModifierId,`user`.modify_time ModifyTime,`user`.name Name,`user`.password Password,`user`.QQ QQ,`user`.sex Sex,`user`.system_hide SystemHide,`user`.system_inlay SystemInlay,`user`.wechat Wechat FROM `user`  WHERE `Id`=@Id  标签:192.168.3.16,DESKTOP-KDN1753,Select 
+2021-01-05 23:07:21.3705 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo] Find(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  1,
+  "86845281e2a242ccaad31e8de8b168eb",
+  null
+],ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "creater": "测试用户",
+    "modifierId": 1,
+    "modifier": "系统管理员",
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0
+},timed:1178ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:07:21.3951 UserRolePersistence TRACE SELECT R.id Id,R.system_inlay SystemInlay,R.system_hide SystemHide,R.memo Memo,R.name Name,R.creater_id CreaterId,R.creater Creater,R.create_time CreateTime,R.modifier_id ModifierId,R.modifier Modifier,R.modify_time ModifyTime,R.code Code FROM `role` R INNER JOIN `user_role` UR ON R.id=UR.role_id AND UR.user_id=@UserId 标签:192.168.3.16,DESKTOP-KDN1753,SelectRolesByUserId 
+2021-01-05 23:07:21.4075 UserRoleService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  1,
+  "86845281e2a242ccaad31e8de8b168eb",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:3ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:07:21.4075 MenuPersistence TRACE SELECT M.code Code,M.create_time CreateTime,M.creater Creater,M.creater_id CreaterId,M.icon Icon,M.id Id,M.link Link,M.modifier Modifier,M.modifier_id ModifierId,M.modify_time ModifyTime,M.name Name,M.parent_id ParentId,M.sort Sort, F.id, F.`code`, F.`name` FROM menu M INNER JOIN menu_function MF ON M.`Id`=MF.`menu_id` INNER JOIN `function` F ON MF.`function_id`=F.`Id` INNER JOIN role_menu_function MFU ON MFU.`menu_function_id`= MF.`Id` AND MFU.`role_id` IN(@RoleId0) 标签:192.168.3.16,DESKTOP-KDN1753,SelectByRoleIds 
+2021-01-05 23:07:21.4075 RequestLogMiddleware TRACE 请求:/,耗时:28943ms 标签:192.168.3.16,DESKTOP-KDN1753,/ 
+2021-01-05 23:07:21.4265 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.Expand.User.UserMenuInfo] CanAccessMenus(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  1,
+  null,
+  null
+],ReturnValue:{
+  "data": {
+    "menus": [
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:07:21.3836287+08:00",
+            "modifyTime": "2021-01-05T23:07:21.38363+08:00",
+            "id": 1
+          }
+        ],
+        "children": [
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:21.3840787+08:00",
+                "modifyTime": "2021-01-05T23:07:21.3840797+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Audit",
+                "name": "审核",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:21.3845003+08:00",
+                "modifyTime": "2021-01-05T23:07:21.3845011+08:00",
+                "id": 13
+              }
+            ],
+            "children": [],
+            "code": "MyWaitFlow",
+            "link": "/html/FlowHandle/MyWaitFlow/page.html",
+            "name": "我的待办",
+            "parentId": 8,
+            "sort": 1,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:03:18",
+            "modifyTime": "2019-03-25T00:03:23",
+            "id": 9
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:21.3849215+08:00",
+                "modifyTime": "2021-01-05T23:07:21.3849225+08:00",
+                "id": 1
+              }
+            ],
+            "children": [],
+            "code": "MyAuditedFlow",
+            "link": "/html/FlowHandle/MyAuditedFlow/page.html",
+            "name": "我已审核",
+            "parentId": 8,
+            "sort": 2,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:04:48",
+            "modifyTime": "2019-03-25T00:04:53",
+            "id": 10
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:21.3853399+08:00",
+                "modifyTime": "2021-01-05T23:07:21.3853406+08:00",
+                "id": 1
+              }
+            ],
+            "children": [],
+            "code": "MyApplyFlow",
+            "link": "/html/FlowHandle/MyApplyFlow/page.html",
+            "name": "我的申请",
+            "parentId": 8,
+            "sort": 3,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:05:46",
+            "modifyTime": "2019-03-25T00:05:50",
+            "id": 11
+          }
+        ],
+        "code": "FlowHandle",
+        "icon": "fa fa-envelope",
+        "name": "流程处理",
+        "parentId": 0,
+        "sort": 0,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-03-25T00:02:43",
+        "modifyTime": "2019-03-25T00:02:48",
+        "id": 8
+      },
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Save",
+            "name": "保存",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:07:21.385722+08:00",
+            "modifyTime": "2021-01-05T23:07:21.3857229+08:00",
+            "id": 6
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Apply",
+            "name": "申请",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:07:21.3860854+08:00",
+            "modifyTime": "2021-01-05T23:07:21.3860864+08:00",
+            "id": 11
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:07:21.3865435+08:00",
+            "modifyTime": "2021-01-05T23:07:21.3865446+08:00",
+            "id": 1
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Edit",
+            "name": "编辑",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:07:21.3869352+08:00",
+            "modifyTime": "2021-01-05T23:07:21.386936+08:00",
+            "id": 3
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Remove",
+            "name": "移除",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:07:21.3871565+08:00",
+            "modifyTime": "2021-01-05T23:07:21.387157+08:00",
+            "id": 4
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Undo",
+            "name": "撤消",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:07:21.387371+08:00",
+            "modifyTime": "2021-01-05T23:07:21.3873715+08:00",
+            "id": 14
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "ForceRemove",
+            "name": "强制删除",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:07:21.3876154+08:00",
+            "modifyTime": "2021-01-05T23:07:21.3876162+08:00",
+            "id": 16
+          }
+        ],
+        "children": [],
+        "code": "TestForm",
+        "icon": "fa fa-cutlery",
+        "link": "/html/Demo/Form/page.html",
+        "name": "测试表单",
+        "parentId": 0,
+        "sort": 1,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-08-06T06:38:31",
+        "modifyTime": "2019-08-06T06:38:40",
+        "id": 7
+      },
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:07:21.3886706+08:00",
+            "modifyTime": "2021-01-05T23:07:21.3886718+08:00",
+            "id": 1
+          }
+        ],
+        "children": [
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:21.3938934+08:00",
+                "modifyTime": "2021-01-05T23:07:21.3938968+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:21.3942866+08:00",
+                "modifyTime": "2021-01-05T23:07:21.394288+08:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:21.3946345+08:00",
+                "modifyTime": "2021-01-05T23:07:21.3946354+08:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:21.3950401+08:00",
+                "modifyTime": "2021-01-05T23:07:21.3950413+08:00",
+                "id": 4
+              }
+            ],
+            "children": [],
+            "code": "Role",
+            "link": "/html/BasicFunction/Role/page.html",
+            "name": "角色管理",
+            "parentId": 1,
+            "sort": 1,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-17T15:39:39",
+            "modifyTime": "2019-01-17T15:39:45",
+            "id": 2
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:21.3953863+08:00",
+                "modifyTime": "2021-01-05T23:07:21.395387+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:21.3957582+08:00",
+                "modifyTime": "2021-01-05T23:07:21.395759+08:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:21.3960947+08:00",
+                "modifyTime": "2021-01-05T23:07:21.3960953+08:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:21.3964108+08:00",
+                "modifyTime": "2021-01-05T23:07:21.3964114+08:00",
+                "id": 4
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "ResetPassword",
+                "name": "重置密码",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:21.3967313+08:00",
+                "modifyTime": "2021-01-05T23:07:21.3967319+08:00",
+                "id": 5
+              }
+            ],
+            "children": [],
+            "code": "User",
+            "link": "/html/BasicFunction/User/page.html",
+            "name": "用户管理",
+            "parentId": 1,
+            "sort": 2,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-17T15:40:19",
+            "modifyTime": "2019-01-17T15:40:28",
+            "id": 3
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:21.3970855+08:00",
+                "modifyTime": "2021-01-05T23:07:21.397086+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Save",
+                "name": "保存",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:21.3972854+08:00",
+                "modifyTime": "2021-01-05T23:07:21.3972858+08:00",
+                "id": 6
+              }
+            ],
+            "children": [],
+            "code": "RolePermission",
+            "link": "/html/BasicFunction/PermissionSet/role.html",
+            "name": "角色权限",
+            "parentId": 1,
+            "sort": 3,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-28T11:35:04",
+            "modifyTime": "2019-01-28T11:35:10",
+            "id": 4
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:21.3974831+08:00",
+                "modifyTime": "2021-01-05T23:07:21.3974835+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:21.397668+08:00",
+                "modifyTime": "2021-01-05T23:07:21.3976683+08:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:21.3978618+08:00",
+                "modifyTime": "2021-01-05T23:07:21.3978622+08:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:21.3980683+08:00",
+                "modifyTime": "2021-01-05T23:07:21.3980687+08:00",
+                "id": 4
+              }
+            ],
+            "children": [],
+            "code": "DataDictionary",
+            "link": "/html/BasicFunction/DataDictionary/page.html",
+            "name": "数据字典",
+            "parentId": 1,
+            "sort": 4,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-28T17:33:14",
+            "modifyTime": "2019-01-28T17:33:19",
+            "id": 5
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:21.3982645+08:00",
+                "modifyTime": "2021-01-05T23:07:21.3982649+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:21.398435+08:00",
+                "modifyTime": "2021-01-05T23:07:21.3984354+08:00",
+                "id": 4
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Upload",
+                "name": "上传",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:21.3986148+08:00",
+                "modifyTime": "2021-01-05T23:07:21.3986152+08:00",
+                "id": 7
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "DownLoad",
+                "name": "下载",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:21.3987914+08:00",
+                "modifyTime": "2021-01-05T23:07:21.3987918+08:00",
+                "id": 8
+              }
+            ],
+            "children": [],
+            "code": "Attachment",
+            "link": "/html/BasicFunction/Attachment/page.html",
+            "name": "附件",
+            "parentId": 1,
+            "sort": 5,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-02T18:41:11",
+            "modifyTime": "2019-03-02T18:41:19",
+            "id": 6
+          }
+        ],
+        "code": "BasicFunction",
+        "icon": "fa fa-cutlery",
+        "name": "基础功能",
+        "parentId": 0,
+        "sort": 1,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-17T15:35:43",
+        "modifyTime": "2019-01-17T15:35:46",
+        "id": 1
+      }
+    ],
+    "ownRoles": [
+      {
+        "memo": "系统最高角色",
+        "systemHide": false,
+        "systemInlay": true,
+        "code": "100",
+        "name": "系统管理组",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-25T20:56:27",
+        "modifyTime": "2019-01-27T23:31:54",
+        "id": 1
+      }
+    ],
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "creater": "测试用户",
+    "modifierId": 1,
+    "modifier": "系统管理员",
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0
+},timed:1201ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:07:21.6805 RequestLogMiddleware TRACE 请求:/api/authorization/getisverificationcode,耗时:1ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/getisverificationcode 
+2021-01-05 23:07:26.0780 RequestLogMiddleware TRACE 请求:/api/authorization/logout,耗时:9ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/logout 
+2021-01-05 23:07:26.1664 RequestLogMiddleware TRACE 请求:/api/authorization/getisverificationcode,耗时:1ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/getisverificationcode 
+2021-01-05 23:07:27.2190 UserPersistence TRACE SELECT `user`.code Code,`user`.create_time CreateTime,`user`.creater Creater,`user`.creater_id CreaterId,`user`.enabled Enabled,`user`.id Id,`user`.login_id LoginId,`user`.mail Mail,`user`.memo Memo,`user`.mobile Mobile,`user`.modifier Modifier,`user`.modifier_id ModifierId,`user`.modify_time ModifyTime,`user`.name Name,`user`.password Password,`user`.QQ QQ,`user`.sex Sex,`user`.system_hide SystemHide,`user`.system_inlay SystemInlay,`user`.wechat Wechat FROM `user`  WHERE login_id=@LoginId AND `password`=@Password 标签:192.168.3.16,DESKTOP-KDN1753,SelectByLoginIdAndPassword 
+2021-01-05 23:07:27.2190 UserService INFO 登录ID:system,用户编号:1000,名称:系统管理员 成功授权 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:07:27.2190 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:4ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:07:27.2321 UserValiService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.UserValiService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:4ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:07:27.2190 RequestLogMiddleware TRACE 请求:/api/authorization/login,耗时:10ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/login 
+2021-01-05 23:07:35.1077 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Void BeforeFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo], Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  {
+    "code": 0
+  },
+  1,
+  "95b08bad5e3546beb32cfe81041bacc6",
+  null
+],timed:0ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:07:35.1037 AttachmentPersistence TRACE SELECT `attachment`.create_time CreateTime,`attachment`.creater Creater,`attachment`.tenant_id TenantId,`attachment`.creater_id CreaterId,`attachment`.expand_name ExpandName,`attachment`.file_address FileAddress,`attachment`.file_name FileName,`attachment`.file_size FileSize,`attachment`.id Id,`attachment`.memo Memo,`attachment`.modifier Modifier,`attachment`.modifier_id ModifierId,`attachment`.modify_time ModifyTime,`attachment`.owner_id OwnerId,`attachment`.owner_type OwnerType,`attachment`.title Title FROM `attachment`  WHERE `Id`=@Id  标签:192.168.3.16,DESKTOP-KDN1753,Select 
+2021-01-05 23:07:36.1918 UserPersistence TRACE SELECT `user`.code Code,`user`.create_time CreateTime,`user`.creater Creater,`user`.creater_id CreaterId,`user`.enabled Enabled,`user`.id Id,`user`.login_id LoginId,`user`.mail Mail,`user`.memo Memo,`user`.mobile Mobile,`user`.modifier Modifier,`user`.modifier_id ModifierId,`user`.modify_time ModifyTime,`user`.name Name,`user`.password Password,`user`.QQ QQ,`user`.sex Sex,`user`.system_hide SystemHide,`user`.system_inlay SystemInlay,`user`.wechat Wechat FROM `user`  WHERE `Id`=@Id  标签:192.168.3.16,DESKTOP-KDN1753,Select 
+2021-01-05 23:07:36.2013 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Void AfterFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo], Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  {
+    "data": {
+      "sex": true,
+      "systemHide": false,
+      "loginId": "system",
+      "password": "AC59075B964B0715",
+      "enabled": true,
+      "systemInlay": true,
+      "code": "1000",
+      "name": "系统管理员",
+      "createrId": 0,
+      "creater": "测试用户",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-17T15:28:12",
+      "modifyTime": "2019-02-08T08:15:28",
+      "id": 1
+    },
+    "code": 0
+  },
+  1,
+  "95b08bad5e3546beb32cfe81041bacc6",
+  null
+],timed:0ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:07:36.2130 UserRolePersistence TRACE SELECT R.id Id,R.system_inlay SystemInlay,R.system_hide SystemHide,R.memo Memo,R.name Name,R.creater_id CreaterId,R.creater Creater,R.create_time CreateTime,R.modifier_id ModifierId,R.modifier Modifier,R.modify_time ModifyTime,R.code Code FROM `role` R INNER JOIN `user_role` UR ON R.id=UR.role_id AND UR.user_id=@UserId 标签:192.168.3.16,DESKTOP-KDN1753,SelectRolesByUserId 
+2021-01-05 23:07:36.3040 UserRoleService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserRoleService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[System.Collections.Generic.IList`1[Hzdtf.BasicFunction.Model.Standard.RoleInfo]] OwnRolesByUserId(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  1,
+  "95b08bad5e3546beb32cfe81041bacc6",
+  null
+],ReturnValue:{
+  "data": [
+    {
+      "memo": "系统最高角色",
+      "systemHide": false,
+      "systemInlay": true,
+      "code": "100",
+      "name": "系统管理组",
+      "createrId": 1,
+      "creater": "系统管理员",
+      "modifierId": 1,
+      "modifier": "系统管理员",
+      "createTime": "2019-01-25T20:56:27",
+      "modifyTime": "2019-01-27T23:31:54",
+      "id": 1
+    }
+  ],
+  "code": 0
+},timed:2ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:07:36.2130 RequestLogMiddleware TRACE 请求:/,耗时:8964ms 标签:192.168.3.16,DESKTOP-KDN1753,/ 
+2021-01-05 23:07:36.3221 MenuPersistence TRACE SELECT M.code Code,M.create_time CreateTime,M.creater Creater,M.creater_id CreaterId,M.icon Icon,M.id Id,M.link Link,M.modifier Modifier,M.modifier_id ModifierId,M.modify_time ModifyTime,M.name Name,M.parent_id ParentId,M.sort Sort, F.id, F.`code`, F.`name` FROM menu M INNER JOIN menu_function MF ON M.`Id`=MF.`menu_id` INNER JOIN `function` F ON MF.`function_id`=F.`Id` INNER JOIN role_menu_function MFU ON MFU.`menu_function_id`= MF.`Id` AND MFU.`role_id` IN(@RoleId0) 标签:192.168.3.16,DESKTOP-KDN1753,SelectByRoleIds 
+2021-01-05 23:07:36.2013 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo] Find(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  1,
+  "95b08bad5e3546beb32cfe81041bacc6",
+  null
+],ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "creater": "测试用户",
+    "modifierId": 1,
+    "modifier": "系统管理员",
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0
+},timed:1091ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:07:36.3451 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.Expand.User.UserMenuInfo] CanAccessMenus(Int32, System.String, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  1,
+  null,
+  null
+],ReturnValue:{
+  "data": {
+    "menus": [
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:07:36.2000009+08:00",
+            "modifyTime": "2021-01-05T23:07:36.2000025+08:00",
+            "id": 1
+          }
+        ],
+        "children": [
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:36.200291+08:00",
+                "modifyTime": "2021-01-05T23:07:36.2002919+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Audit",
+                "name": "审核",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:36.2005443+08:00",
+                "modifyTime": "2021-01-05T23:07:36.2005452+08:00",
+                "id": 13
+              }
+            ],
+            "children": [],
+            "code": "MyWaitFlow",
+            "link": "/html/FlowHandle/MyWaitFlow/page.html",
+            "name": "我的待办",
+            "parentId": 8,
+            "sort": 1,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:03:18",
+            "modifyTime": "2019-03-25T00:03:23",
+            "id": 9
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:36.2007837+08:00",
+                "modifyTime": "2021-01-05T23:07:36.2007843+08:00",
+                "id": 1
+              }
+            ],
+            "children": [],
+            "code": "MyAuditedFlow",
+            "link": "/html/FlowHandle/MyAuditedFlow/page.html",
+            "name": "我已审核",
+            "parentId": 8,
+            "sort": 2,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:04:48",
+            "modifyTime": "2019-03-25T00:04:53",
+            "id": 10
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:36.2010195+08:00",
+                "modifyTime": "2021-01-05T23:07:36.2010203+08:00",
+                "id": 1
+              }
+            ],
+            "children": [],
+            "code": "MyApplyFlow",
+            "link": "/html/FlowHandle/MyApplyFlow/page.html",
+            "name": "我的申请",
+            "parentId": 8,
+            "sort": 3,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-25T00:05:46",
+            "modifyTime": "2019-03-25T00:05:50",
+            "id": 11
+          }
+        ],
+        "code": "FlowHandle",
+        "icon": "fa fa-envelope",
+        "name": "流程处理",
+        "parentId": 0,
+        "sort": 0,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-03-25T00:02:43",
+        "modifyTime": "2019-03-25T00:02:48",
+        "id": 8
+      },
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Save",
+            "name": "保存",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:07:36.2012556+08:00",
+            "modifyTime": "2021-01-05T23:07:36.2012563+08:00",
+            "id": 6
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Apply",
+            "name": "申请",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:07:36.2015109+08:00",
+            "modifyTime": "2021-01-05T23:07:36.2015116+08:00",
+            "id": 11
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:07:36.2017627+08:00",
+            "modifyTime": "2021-01-05T23:07:36.2017633+08:00",
+            "id": 1
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Edit",
+            "name": "编辑",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:07:36.2020537+08:00",
+            "modifyTime": "2021-01-05T23:07:36.2020544+08:00",
+            "id": 3
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Remove",
+            "name": "移除",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:07:36.2023267+08:00",
+            "modifyTime": "2021-01-05T23:07:36.2023273+08:00",
+            "id": 4
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "Undo",
+            "name": "撤消",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:07:36.2025547+08:00",
+            "modifyTime": "2021-01-05T23:07:36.2025554+08:00",
+            "id": 14
+          },
+          {
+            "menuFunctionId": 0,
+            "code": "ForceRemove",
+            "name": "强制删除",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:07:36.2027967+08:00",
+            "modifyTime": "2021-01-05T23:07:36.2027973+08:00",
+            "id": 16
+          }
+        ],
+        "children": [],
+        "code": "TestForm",
+        "icon": "fa fa-cutlery",
+        "link": "/html/Demo/Form/page.html",
+        "name": "测试表单",
+        "parentId": 0,
+        "sort": 1,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-08-06T06:38:31",
+        "modifyTime": "2019-08-06T06:38:40",
+        "id": 7
+      },
+      {
+        "functions": [
+          {
+            "menuFunctionId": 0,
+            "code": "Query",
+            "name": "查询",
+            "createrId": 0,
+            "modifierId": 0,
+            "createTime": "2021-01-05T23:07:36.2030874+08:00",
+            "modifyTime": "2021-01-05T23:07:36.2030886+08:00",
+            "id": 1
+          }
+        ],
+        "children": [
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:36.2034128+08:00",
+                "modifyTime": "2021-01-05T23:07:36.2034135+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:36.2036644+08:00",
+                "modifyTime": "2021-01-05T23:07:36.2036652+08:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:36.2039499+08:00",
+                "modifyTime": "2021-01-05T23:07:36.203951+08:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:36.2043295+08:00",
+                "modifyTime": "2021-01-05T23:07:36.2043313+08:00",
+                "id": 4
+              }
+            ],
+            "children": [],
+            "code": "Role",
+            "link": "/html/BasicFunction/Role/page.html",
+            "name": "角色管理",
+            "parentId": 1,
+            "sort": 1,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-17T15:39:39",
+            "modifyTime": "2019-01-17T15:39:45",
+            "id": 2
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:36.2047671+08:00",
+                "modifyTime": "2021-01-05T23:07:36.2047685+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:36.2050185+08:00",
+                "modifyTime": "2021-01-05T23:07:36.2050197+08:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:36.2052749+08:00",
+                "modifyTime": "2021-01-05T23:07:36.2052757+08:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:36.205551+08:00",
+                "modifyTime": "2021-01-05T23:07:36.205552+08:00",
+                "id": 4
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "ResetPassword",
+                "name": "重置密码",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:36.2057941+08:00",
+                "modifyTime": "2021-01-05T23:07:36.2057948+08:00",
+                "id": 5
+              }
+            ],
+            "children": [],
+            "code": "User",
+            "link": "/html/BasicFunction/User/page.html",
+            "name": "用户管理",
+            "parentId": 1,
+            "sort": 2,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-17T15:40:19",
+            "modifyTime": "2019-01-17T15:40:28",
+            "id": 3
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:36.2060342+08:00",
+                "modifyTime": "2021-01-05T23:07:36.2060351+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Save",
+                "name": "保存",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:36.2062647+08:00",
+                "modifyTime": "2021-01-05T23:07:36.2062653+08:00",
+                "id": 6
+              }
+            ],
+            "children": [],
+            "code": "RolePermission",
+            "link": "/html/BasicFunction/PermissionSet/role.html",
+            "name": "角色权限",
+            "parentId": 1,
+            "sort": 3,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-28T11:35:04",
+            "modifyTime": "2019-01-28T11:35:10",
+            "id": 4
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:36.2064994+08:00",
+                "modifyTime": "2021-01-05T23:07:36.2065001+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Add",
+                "name": "添加",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:36.2067337+08:00",
+                "modifyTime": "2021-01-05T23:07:36.2067344+08:00",
+                "id": 2
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Edit",
+                "name": "编辑",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:36.2069792+08:00",
+                "modifyTime": "2021-01-05T23:07:36.2069801+08:00",
+                "id": 3
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:36.2072121+08:00",
+                "modifyTime": "2021-01-05T23:07:36.2072129+08:00",
+                "id": 4
+              }
+            ],
+            "children": [],
+            "code": "DataDictionary",
+            "link": "/html/BasicFunction/DataDictionary/page.html",
+            "name": "数据字典",
+            "parentId": 1,
+            "sort": 4,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-01-28T17:33:14",
+            "modifyTime": "2019-01-28T17:33:19",
+            "id": 5
+          },
+          {
+            "functions": [
+              {
+                "menuFunctionId": 0,
+                "code": "Query",
+                "name": "查询",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:36.2074398+08:00",
+                "modifyTime": "2021-01-05T23:07:36.2074406+08:00",
+                "id": 1
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Remove",
+                "name": "移除",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:36.207678+08:00",
+                "modifyTime": "2021-01-05T23:07:36.2076786+08:00",
+                "id": 4
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "Upload",
+                "name": "上传",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:36.208008+08:00",
+                "modifyTime": "2021-01-05T23:07:36.208009+08:00",
+                "id": 7
+              },
+              {
+                "menuFunctionId": 0,
+                "code": "DownLoad",
+                "name": "下载",
+                "createrId": 0,
+                "modifierId": 0,
+                "createTime": "2021-01-05T23:07:36.2082559+08:00",
+                "modifyTime": "2021-01-05T23:07:36.2082568+08:00",
+                "id": 8
+              }
+            ],
+            "children": [],
+            "code": "Attachment",
+            "link": "/html/BasicFunction/Attachment/page.html",
+            "name": "附件",
+            "parentId": 1,
+            "sort": 5,
+            "createrId": 1,
+            "creater": "系统管理员",
+            "modifierId": 1,
+            "modifier": "系统管理员",
+            "createTime": "2019-03-02T18:41:11",
+            "modifyTime": "2019-03-02T18:41:19",
+            "id": 6
+          }
+        ],
+        "code": "BasicFunction",
+        "icon": "fa fa-cutlery",
+        "name": "基础功能",
+        "parentId": 0,
+        "sort": 1,
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-17T15:35:43",
+        "modifyTime": "2019-01-17T15:35:46",
+        "id": 1
+      }
+    ],
+    "ownRoles": [
+      {
+        "memo": "系统最高角色",
+        "systemHide": false,
+        "systemInlay": true,
+        "code": "100",
+        "name": "系统管理组",
+        "createrId": 1,
+        "creater": "系统管理员",
+        "modifierId": 1,
+        "modifier": "系统管理员",
+        "createTime": "2019-01-25T20:56:27",
+        "modifyTime": "2019-01-27T23:31:54",
+        "id": 1
+      }
+    ],
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "creater": "测试用户",
+    "modifierId": 1,
+    "modifier": "系统管理员",
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0
+},timed:1105ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:07:37.0635 RequestLogMiddleware TRACE 请求:/api/authorization/getisverificationcode,耗时:1ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/getisverificationcode 
+2021-01-05 23:07:39.8529 RequestLogMiddleware TRACE 请求:/api/authorization/logout,耗时:1ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/logout 
+2021-01-05 23:07:39.9361 RequestLogMiddleware TRACE 请求:/api/authorization/getisverificationcode,耗时:2ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/getisverificationcode 
+2021-01-05 23:07:42.6869 RequestLogMiddleware TRACE 请求:/api/authorization/getisverificationcode,耗时:0ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/getisverificationcode 
+2021-01-05 23:07:47.3295 RequestLogMiddleware TRACE 请求:/api/authorization/getisverificationcode,耗时:3ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/getisverificationcode 
+2021-01-05 23:07:49.2007 UserPersistence TRACE SELECT `user`.code Code,`user`.create_time CreateTime,`user`.creater Creater,`user`.creater_id CreaterId,`user`.enabled Enabled,`user`.id Id,`user`.login_id LoginId,`user`.mail Mail,`user`.memo Memo,`user`.mobile Mobile,`user`.modifier Modifier,`user`.modifier_id ModifierId,`user`.modify_time ModifyTime,`user`.name Name,`user`.password Password,`user`.QQ QQ,`user`.sex Sex,`user`.system_hide SystemHide,`user`.system_inlay SystemInlay,`user`.wechat Wechat FROM `user`  WHERE login_id=@LoginId AND `password`=@Password 标签:192.168.3.16,DESKTOP-KDN1753,SelectByLoginIdAndPassword 
+2021-01-05 23:07:49.2007 UserService INFO 登录ID:system,用户编号:1000,名称:系统管理员 成功授权 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:07:49.2007 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:3ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:08:08.7358 AttachmentPersistence TRACE SELECT `attachment`.create_time CreateTime,`attachment`.creater Creater,`attachment`.tenant_id TenantId,`attachment`.creater_id CreaterId,`attachment`.expand_name ExpandName,`attachment`.file_address FileAddress,`attachment`.file_name FileName,`attachment`.file_size FileSize,`attachment`.id Id,`attachment`.memo Memo,`attachment`.modifier Modifier,`attachment`.modifier_id ModifierId,`attachment`.modify_time ModifyTime,`attachment`.owner_id OwnerId,`attachment`.owner_type OwnerType,`attachment`.title Title FROM `attachment`  WHERE `Id`=@Id  标签:192.168.3.16,DESKTOP-KDN1753,Select 
+2021-01-05 23:07:49.2007 UserValiService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.UserValiService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:3ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:07:49.2007 RequestLogMiddleware TRACE 请求:/api/authorization/login,耗时:11ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/login 
+2021-01-05 23:08:08.7358 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Void BeforeFind(Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo], Int32, System.String ByRef, Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]),params:[
+  {
+    "code": 0
+  },
+  1,
+  "37b8abdd3f6e428a806a15ae216ea50f",
+  null
+],timed:0ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:10:49.0663 Microsoft.Hosting.Lifetime INFO eventId:0,Application started. Press Ctrl+C to shut down. 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:10:49.0663 Microsoft.Hosting.Lifetime INFO eventId:0,Content root path: F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:10:49.0663 Microsoft.Hosting.Lifetime INFO eventId:0,Now listening on: http://localhost:5000 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:10:49.0663 Microsoft.Hosting.Lifetime INFO eventId:0,Hosting environment: Development 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:10:49.1683 Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect. 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:10:49.5629 RequestLogMiddleware TRACE 请求:/api/authorization/getisverificationcode,耗时:241ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/getisverificationcode 
+2021-01-05 23:10:51.8859 UserPersistence TRACE SELECT `user`.code Code,`user`.create_time CreateTime,`user`.creater Creater,`user`.creater_id CreaterId,`user`.enabled Enabled,`user`.id Id,`user`.login_id LoginId,`user`.mail Mail,`user`.memo Memo,`user`.mobile Mobile,`user`.modifier Modifier,`user`.modifier_id ModifierId,`user`.modify_time ModifyTime,`user`.name Name,`user`.password Password,`user`.QQ QQ,`user`.sex Sex,`user`.system_hide SystemHide,`user`.system_inlay SystemInlay,`user`.wechat Wechat FROM `user`  WHERE login_id=@LoginId AND `password`=@Password 标签:192.168.3.16,DESKTOP-KDN1753,SelectByLoginIdAndPassword 
+2021-01-05 23:10:51.9976 UserService INFO 登录ID:system,用户编号:1000,名称:系统管理员 成功授权 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:10:52.0625 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "tenantId": 0,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:625ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:10:52.0625 UserValiService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.UserValiService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "tenantId": 0,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:635ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:10:52.0838 RequestLogMiddleware TRACE 请求:/api/authorization/login,耗时:702ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/login 
+2021-01-05 23:21:18.3063 Microsoft.Hosting.Lifetime INFO eventId:0,Now listening on: http://localhost:5000 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:21:18.3063 Microsoft.Hosting.Lifetime INFO eventId:0,Content root path: F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:21:18.3028 Microsoft.Hosting.Lifetime INFO eventId:0,Hosting environment: Development 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:21:18.3063 Microsoft.Hosting.Lifetime INFO eventId:0,Application started. Press Ctrl+C to shut down. 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:21:18.9465 Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect. 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:21:19.2103 RequestLogMiddleware TRACE 请求:/api/authorization/getisverificationcode,耗时:118ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/getisverificationcode 
+2021-01-05 23:21:25.2561 UserPersistence TRACE SELECT `user`.code Code,`user`.create_time CreateTime,`user`.creater Creater,`user`.creater_id CreaterId,`user`.enabled Enabled,`user`.id Id,`user`.login_id LoginId,`user`.mail Mail,`user`.memo Memo,`user`.mobile Mobile,`user`.modifier Modifier,`user`.modifier_id ModifierId,`user`.modify_time ModifyTime,`user`.name Name,`user`.password Password,`user`.QQ QQ,`user`.sex Sex,`user`.system_hide SystemHide,`user`.system_inlay SystemInlay,`user`.wechat Wechat FROM `user`  WHERE login_id=@LoginId AND `password`=@Password 标签:192.168.3.16,DESKTOP-KDN1753,SelectByLoginIdAndPassword 
+2021-01-05 23:21:25.4744 UserService INFO 登录ID:system,用户编号:1000,名称:系统管理员 成功授权 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:21:25.6112 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "tenantId": 0,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:943ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:21:25.6255 UserValiService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.UserValiService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "tenantId": 0,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:967ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:21:25.6643 RequestLogMiddleware TRACE 请求:/api/authorization/login,耗时:1055ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/login 
+2021-01-05 23:24:44.4664 Microsoft.Hosting.Lifetime INFO eventId:0,Content root path: F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:24:44.4664 Microsoft.Hosting.Lifetime INFO eventId:0,Now listening on: http://localhost:5000 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:24:44.4664 Microsoft.Hosting.Lifetime INFO eventId:0,Application started. Press Ctrl+C to shut down. 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:24:44.4664 Microsoft.Hosting.Lifetime INFO eventId:0,Hosting environment: Development 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:24:44.8667 Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect. 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:24:45.2335 RequestLogMiddleware TRACE 请求:/api/authorization/getisverificationcode,耗时:125ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/getisverificationcode 
+2021-01-05 23:24:47.9703 UserPersistence TRACE SELECT `user`.code Code,`user`.create_time CreateTime,`user`.creater Creater,`user`.creater_id CreaterId,`user`.enabled Enabled,`user`.id Id,`user`.login_id LoginId,`user`.mail Mail,`user`.memo Memo,`user`.mobile Mobile,`user`.modifier Modifier,`user`.modifier_id ModifierId,`user`.modify_time ModifyTime,`user`.name Name,`user`.password Password,`user`.QQ QQ,`user`.sex Sex,`user`.system_hide SystemHide,`user`.system_inlay SystemInlay,`user`.wechat Wechat FROM `user`  WHERE login_id=@LoginId AND `password`=@Password 标签:192.168.3.16,DESKTOP-KDN1753,SelectByLoginIdAndPassword 
+2021-01-05 23:24:48.0568 UserService INFO 登录ID:system,用户编号:1000,名称:系统管理员 成功授权 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:24:48.1175 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "tenantId": 0,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:530ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:24:48.1313 UserValiService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.UserValiService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "tenantId": 0,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:541ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:24:48.1492 RequestLogMiddleware TRACE 请求:/api/authorization/login,耗时:614ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/login 
+2021-01-05 23:26:24.0528 AttachmentPersistence TRACE SELECT `attachment`.create_time CreateTime,`attachment`.creater Creater,`attachment`.tenant_id TenantId,`attachment`.creater_id CreaterId,`attachment`.expand_name ExpandName,`attachment`.file_address FileAddress,`attachment`.file_name FileName,`attachment`.file_size FileSize,`attachment`.id Id,`attachment`.memo Memo,`attachment`.modifier Modifier,`attachment`.modifier_id ModifierId,`attachment`.modify_time ModifyTime,`attachment`.owner_id OwnerId,`attachment`.owner_type OwnerType,`attachment`.title Title FROM `attachment`  WHERE `Id`=@Id  AND `tenant_id`=@TenantId 标签:192.168.3.16,DESKTOP-KDN1753,Select 
+2021-01-05 23:27:23.7873 Microsoft.Hosting.Lifetime INFO eventId:0,Application started. Press Ctrl+C to shut down. 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:27:23.7873 Microsoft.Hosting.Lifetime INFO eventId:0,Content root path: F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:27:23.7873 Microsoft.Hosting.Lifetime INFO eventId:0,Now listening on: http://localhost:5000 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:27:23.7873 Microsoft.Hosting.Lifetime INFO eventId:0,Hosting environment: Development 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:27:24.5753 Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect. 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:27:24.8357 RequestLogMiddleware TRACE 请求:/api/authorization/getisverificationcode,耗时:103ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/getisverificationcode 
+2021-01-05 23:27:33.0616 UserPersistence TRACE SELECT `user`.code Code,`user`.create_time CreateTime,`user`.creater Creater,`user`.creater_id CreaterId,`user`.enabled Enabled,`user`.id Id,`user`.login_id LoginId,`user`.mail Mail,`user`.memo Memo,`user`.mobile Mobile,`user`.modifier Modifier,`user`.modifier_id ModifierId,`user`.modify_time ModifyTime,`user`.name Name,`user`.password Password,`user`.QQ QQ,`user`.sex Sex,`user`.system_hide SystemHide,`user`.system_inlay SystemInlay,`user`.wechat Wechat FROM `user`  WHERE login_id=@LoginId AND `password`=@Password 标签:192.168.3.16,DESKTOP-KDN1753,SelectByLoginIdAndPassword 
+2021-01-05 23:27:33.2781 UserService INFO 登录ID:system,用户编号:1000,名称:系统管理员 成功授权 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:27:33.3902 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "tenantId": 0,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:696ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:27:33.4018 UserValiService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.UserValiService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "tenantId": 0,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:718ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:27:33.4211 RequestLogMiddleware TRACE 请求:/api/authorization/login,耗时:859ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/login 
+2021-01-05 23:27:37.7525 AttachmentPersistence TRACE SELECT `attachment`.create_time CreateTime,`attachment`.creater Creater,`attachment`.tenant_id TenantId,`attachment`.creater_id CreaterId,`attachment`.expand_name ExpandName,`attachment`.file_address FileAddress,`attachment`.file_name FileName,`attachment`.file_size FileSize,`attachment`.id Id,`attachment`.memo Memo,`attachment`.modifier Modifier,`attachment`.modifier_id ModifierId,`attachment`.modify_time ModifyTime,`attachment`.owner_id OwnerId,`attachment`.owner_type OwnerType,`attachment`.title Title FROM `attachment`  WHERE `Id`=@Id  AND `tenant_id`=@TenantId 标签:192.168.3.16,DESKTOP-KDN1753,Select 
+2021-01-05 23:28:13.3800 AttachmentPersistence TRACE SELECT `attachment`.create_time CreateTime,`attachment`.creater Creater,`attachment`.tenant_id TenantId,`attachment`.creater_id CreaterId,`attachment`.expand_name ExpandName,`attachment`.file_address FileAddress,`attachment`.file_name FileName,`attachment`.file_size FileSize,`attachment`.id Id,`attachment`.memo Memo,`attachment`.modifier Modifier,`attachment`.modifier_id ModifierId,`attachment`.modify_time ModifyTime,`attachment`.owner_id OwnerId,`attachment`.owner_type OwnerType,`attachment`.title Title FROM `attachment`  WHERE `Id`=@Id  AND `tenant_id`=@TenantId 标签:192.168.3.16,DESKTOP-KDN1753,Select 
+2021-01-05 23:45:50.8777 Microsoft.Hosting.Lifetime INFO eventId:0,Hosting environment: Development 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:45:50.8777 Microsoft.Hosting.Lifetime INFO eventId:0,Now listening on: http://localhost:5000 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:45:50.8777 Microsoft.Hosting.Lifetime INFO eventId:0,Content root path: F:\MyWorks\net2\Hzdtf.Foundation.Framework\WebDemoCore\Hzdtf.WebTest3.1.Core 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:45:50.8777 Microsoft.Hosting.Lifetime INFO eventId:0,Application started. Press Ctrl+C to shut down. 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:45:51.8630 Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware WARN eventId:FailedToDeterminePort,Failed to determine the https port for redirect. 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:45:52.1614 RequestLogMiddleware TRACE 请求:/api/authorization/getisverificationcode,耗时:117ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/getisverificationcode 
+2021-01-05 23:45:54.5908 UserPersistence TRACE SELECT `user`.code Code,`user`.create_time CreateTime,`user`.creater Creater,`user`.creater_id CreaterId,`user`.enabled Enabled,`user`.id Id,`user`.login_id LoginId,`user`.mail Mail,`user`.memo Memo,`user`.mobile Mobile,`user`.modifier Modifier,`user`.modifier_id ModifierId,`user`.modify_time ModifyTime,`user`.name Name,`user`.password Password,`user`.QQ QQ,`user`.sex Sex,`user`.system_hide SystemHide,`user`.system_inlay SystemInlay,`user`.wechat Wechat FROM `user`  WHERE login_id=@LoginId AND `password`=@Password 标签:192.168.3.16,DESKTOP-KDN1753,SelectByLoginIdAndPassword 
+2021-01-05 23:45:54.7041 UserService INFO 登录ID:system,用户编号:1000,名称:系统管理员 成功授权 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:45:54.7793 UserService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.UserService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.BasicFunction.Model.Standard.UserInfo] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "tenantId": 0,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:941ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:45:54.7793 UserValiService DEBUG Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.UserValiService Hzdtf.Utility.Standard.Model.Return.ReturnInfo`1[Hzdtf.Utility.Standard.Model.BasicUserInfo`1[System.Int32]] Vali(System.String, System.String),ReturnValue:{
+  "data": {
+    "sex": true,
+    "systemHide": false,
+    "loginId": "system",
+    "enabled": true,
+    "systemInlay": true,
+    "tenantId": 0,
+    "code": "1000",
+    "name": "系统管理员",
+    "createrId": 0,
+    "modifierId": 1,
+    "createTime": "2019-01-17T15:28:12",
+    "modifyTime": "2019-02-08T08:15:28",
+    "id": 1
+  },
+  "code": 0,
+  "msg": "登录成功"
+},timed:972ms 标签:192.168.3.16,DESKTOP-KDN1753 
+2021-01-05 23:45:54.8090 RequestLogMiddleware TRACE 请求:/api/authorization/login,耗时:1113ms 标签:192.168.3.16,DESKTOP-KDN1753,/api/authorization/login 
+2021-01-05 23:45:57.6151 AttachmentPersistence TRACE SELECT `attachment`.create_time CreateTime,`attachment`.creater Creater,`attachment`.tenant_id TenantId,`attachment`.creater_id CreaterId,`attachment`.expand_name ExpandName,`attachment`.file_address FileAddress,`attachment`.file_name FileName,`attachment`.file_size FileSize,`attachment`.id Id,`attachment`.memo Memo,`attachment`.modifier Modifier,`attachment`.modifier_id ModifierId,`attachment`.modify_time ModifyTime,`attachment`.owner_id OwnerId,`attachment`.owner_type OwnerType,`attachment`.title Title FROM `attachment`  WHERE `Id`=@Id  AND `tenant_id`=1 标签:192.168.3.16,DESKTOP-KDN1753,Select 
+2021-01-05 23:46:11.5540 AttachmentPersistence TRACE SELECT `attachment`.create_time CreateTime,`attachment`.creater Creater,`attachment`.tenant_id TenantId,`attachment`.creater_id CreaterId,`attachment`.expand_name ExpandName,`attachment`.file_address FileAddress,`attachment`.file_name FileName,`attachment`.file_size FileSize,`attachment`.id Id,`attachment`.memo Memo,`attachment`.modifier Modifier,`attachment`.modifier_id ModifierId,`attachment`.modify_time ModifyTime,`attachment`.owner_id OwnerId,`attachment`.owner_type OwnerType,`attachment`.title Title FROM `attachment`  WHERE `Id`=@Id  AND `tenant_id`=1 标签:192.168.3.16,DESKTOP-KDN1753,Select 

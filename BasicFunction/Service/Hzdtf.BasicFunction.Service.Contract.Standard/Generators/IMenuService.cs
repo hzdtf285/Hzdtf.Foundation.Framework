@@ -10,7 +10,7 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
     /// 菜单服务接口
     /// @ 黄振东
     /// </summary>
-    public partial interface IMenuService : IService<MenuInfo>
+    public partial interface IMenuService : IService<int, MenuInfo>
     {
     }
 }

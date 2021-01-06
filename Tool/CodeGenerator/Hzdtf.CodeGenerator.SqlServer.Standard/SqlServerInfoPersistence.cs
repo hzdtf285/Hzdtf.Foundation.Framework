@@ -26,7 +26,7 @@ namespace Hzdtf.CodeGenerator.SqlServer.Standard
                     + " FROM sys.extended_properties ds"
                     + " LEFT JOIN sysobjects tbs ON ds.major_id=tbs.id"
                     + " WHERE ds.minor_id=0";
-            IDbConnection dbConnection = null;// new SqlConnection(connectionString);
+            IDbConnection dbConnection = new SqlConnection(connectionString);
             IList<TableInfo> tables = dbConnection.Query<TableInfo>(sql).AsList();
             dbConnection.Close();
             dbConnection.Dispose();

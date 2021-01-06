@@ -11,7 +11,7 @@ namespace Hzdtf.BasicFunction.SqlServer.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class UserMenuFunctionPersistence : SqlServerDapperBase<UserMenuFunctionInfo>, IUserMenuFunctionPersistence
+    public partial class UserMenuFunctionPersistence : SqlServerDapperBase<int, UserMenuFunctionInfo>, IUserMenuFunctionPersistence
     {
         /// <summary>
         /// 表名
@@ -23,6 +23,7 @@ namespace Hzdtf.BasicFunction.SqlServer.Standard
         /// </summary>
         private readonly static string[] INSERT_FIELD_NAMES = new string[]
         {
+            "id",
             "user_id",
             "menu_function_id",
             "creater_id",

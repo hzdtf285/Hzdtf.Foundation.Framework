@@ -10,7 +10,7 @@ namespace Hzdtf.BasicFunction.Persistence.Contract.Standard
     /// 用户菜单功能持久化接口
     /// @ 黄振东
     /// </summary>
-    public partial interface IUserMenuFunctionPersistence : IPersistence<UserMenuFunctionInfo>
+    public partial interface IUserMenuFunctionPersistence : IPersistence<int, UserMenuFunctionInfo>
     {
     }
 }

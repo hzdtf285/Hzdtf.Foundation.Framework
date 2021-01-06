@@ -151,7 +151,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
 
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                var sql = DeleteSql();
+                var sql = BasicDeleteSql();
                 Log.TraceAsync(sql, source: this.GetType().Name, tags: "DeleteByRoleId");
                 result = dbConn.Execute($"{sql} WHERE role_id=@RoleId", new { RoleId = roleId }, GetDbTransaction(connId));
             });

@@ -36,6 +36,8 @@ namespace Hzdtf.CodeGenerator.UI.Framework
             dgvTable.AutoGenerateColumns = false;
 
             BindDataSourceType();
+
+            cbxPKType.SelectedIndex = 0;
         }
 
         /// <summary>
@@ -138,26 +140,27 @@ namespace Hzdtf.CodeGenerator.UI.Framework
         /// <param name="e"></param>
         private void btnGenerator_Click(object sender, EventArgs e)
         {
+            var param = new CodeGeneratorParamInfo();
             try
             {
-                IList<TableInfo> tables = new List<TableInfo>();
+                param.Tables = new List<TableInfo>();
                 foreach (DataGridViewRow row in dgvTable.Rows)
                 {
                     DataGridViewCheckBoxCell checkCell = row.Cells[2] as DataGridViewCheckBoxCell;
                     if (checkCell.Value != null && Convert.ToBoolean(checkCell.Value))
                     {
-                        tables.Add(row.DataBoundItem as TableInfo);
+                        param.Tables.Add(row.DataBoundItem as TableInfo);
                     }
                 }
 
-                if (tables.Count == 0)
+                if (param.Tables.Count == 0)
                 {
                     MessageBox.Show("请勾选要生成的表");
                     return;
                 }
 
-                FunctionType[] functionTypes = GetFunctionTypes();
-                if (functionTypes.Length == 0)
+                param.FunctionTypes = GetFunctionTypes();
+                if (param.FunctionTypes.Length == 0)
                 {
                     MessageBox.Show("请勾选要生成的功能项");
                     return;
@@ -168,10 +171,31 @@ namespace Hzdtf.CodeGenerator.UI.Framework
                     MessageBox.Show("命名空间前辍不能为空");
                     return;
                 }
+                param.NamespacePfx = txtNamespacePfx.Text;
+
+                switch (cbxPKType.SelectedItem.ToString())
+                {
+                    case "字符串":
+                        param.PkType = PrimaryKeyType.STRING;
+
+                        break;
+
+                    case "Guid":
+                        param.PkType = PrimaryKeyType.GUID;
+
+                        break;
+
+                    case "雪花算法":
+                        param.PkType = PrimaryKeyType.SNOWFLAKE;
+
+                        break;
+                }
+                param.Type = dgvTable.Tag.ToString();
+                param.IsTenant = cbxIsTenant.Checked;
 
                 Cursor.Current = Cursors.WaitCursor;
                 ICodeGeneratorService generatorService = AutofacTool.Resolve<ICodeGeneratorService>();
-                ReturnInfo<bool> returnInfo = generatorService.Generator(tables, functionTypes, txtNamespacePfx.Text, dgvTable.Tag.ToString());
+                ReturnInfo<bool> returnInfo = generatorService.Generator(param);
                 Cursor.Current = Cursors.Default;
                 if (returnInfo.Success())
                 {

@@ -14,7 +14,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class AttachmentService : ServiceBase<AttachmentInfo, IAttachmentPersistence>, IAttachmentService
+    public partial class AttachmentService : ServiceBase<int, AttachmentInfo, IAttachmentPersistence>, IAttachmentService
     {
     }
 }

@@ -11,7 +11,7 @@ namespace Hzdtf.Demo.MySql.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class TestFormPersistence : MySqlDapperBase<TestFormInfo>, ITestFormPersistence
+    public partial class TestFormPersistence : MySqlDapperBase<int, TestFormInfo>, ITestFormPersistence
     {
         /// <summary>
         /// 表名
@@ -23,6 +23,7 @@ namespace Hzdtf.Demo.MySql.Standard
         /// </summary>
         private readonly static string[] INSERT_FIELD_NAMES = new string[]
         {
+            "id",
             "flow_status",
             "workflow_id",
             "code",

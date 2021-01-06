@@ -2140,6 +2140,17 @@
           "lib/netstandard2.0/SixLabors.Shapes.dll": {}
         }
       },
+      "Snowflake.Core/2.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/Snowflake.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Snowflake.Core.dll": {}
+        }
+      },
       "SSH.NET/2016.1.0": {
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
@@ -3376,6 +3387,7 @@
       },
       "Hzdtf.Authorization.Contract.Standard/2.0.0": {
         "dependencies": {
+          "Hzdtf.Autofac.Extend.Standard": "2.0.0",
           "Hzdtf.Utility.Standard": "2.0.0"
         },
         "runtime": {
@@ -3456,6 +3468,7 @@
           "Hzdtf.Authorization.Web.Core": "3.1.5",
           "Hzdtf.BasicController.Core": "3.1.5",
           "Hzdtf.BasicFunction.Model.Standard": "2.0.0",
+          "Hzdtf.BasicFunction.Persistence.Contract.Std": "2.0.0",
           "Hzdtf.BasicFunction.Service.Contract.Standard": "2.0.0",
           "Microsoft.AspNetCore.Mvc": "2.2.0"
         },
@@ -3876,6 +3889,7 @@
           "NPOI": "2.5.2",
           "Newtonsoft.Json": "12.0.3",
           "SharpZipLib": "1.3.1",
+          "Snowflake.Core": "2.0.0",
           "System.ComponentModel.Annotations": "4.7.0",
           "System.Drawing.Common": "5.0.0",
           "System.Reflection.DispatchProxy": "4.7.1",
@@ -6569,6 +6583,13 @@
       "sha512": "sha512-qGouMMBI2EIMvXXWMBxAWRGg1iI8Z1AYvgww+P5pXVJoixCO1IEwil6SlYZ7XR+eppCjQzfenVtXHH3BDT/Eww==",
       "path": "sixlabors.shapes/1.0.0-beta0008",
       "hashPath": "sixlabors.shapes.1.0.0-beta0008.nupkg.sha512"
+    },
+    "Snowflake.Core/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YB4SqYbTgG6UvwFHFZOWny/pE415KNjRbbiGwfPOUDWUCEjYLB9P11EiIHQ7y6LlkjejVAAIi8Wt3WM7Ys9qyw==",
+      "path": "snowflake.core/2.0.0",
+      "hashPath": "snowflake.core.2.0.0.nupkg.sha512"
     },
     "SSH.NET/2016.1.0": {
       "type": "package",

@@ -20,7 +20,7 @@ namespace Hzdtf.BasicFunction.MvcController.Core
     [Route("api/[controller]")]
     [Authorize]
     public partial class DataDictionaryItemController :
-        ManageControllerBase<PageInfo, DataDictionaryItemInfo, IDataDictionaryItemService, DataDictionaryItemFilterInfo>
+        ManageControllerBase<PageInfo<int>, DataDictionaryItemInfo, IDataDictionaryItemService, DataDictionaryItemFilterInfo>
     {
         /// <summary>
         /// 菜单编码

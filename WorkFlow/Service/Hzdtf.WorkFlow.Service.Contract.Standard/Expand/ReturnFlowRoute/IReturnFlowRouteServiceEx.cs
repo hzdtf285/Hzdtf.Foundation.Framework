@@ -20,7 +20,7 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<IList<ReturnFlowRouteInfo>> QueryByFlowCensorshipId(int flowCensorshipId, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<IList<ReturnFlowRouteInfo>> QueryByFlowCensorshipId(int flowCensorshipId, string connectionId = null, BasicUserInfo<int> currUser = null);
 
         /// <summary>
         /// 根据流程关卡ID数组查询退件流程路线列表
@@ -29,6 +29,6 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<IList<ReturnFlowRouteInfo>> QueryByFlowCensorshipIds(int[] flowCensorshipIds, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<IList<ReturnFlowRouteInfo>> QueryByFlowCensorshipIds(int[] flowCensorshipIds, string connectionId = null, BasicUserInfo<int> currUser = null);
     }
 }

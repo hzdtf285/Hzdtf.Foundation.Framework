@@ -200,13 +200,7 @@ function BasicManage(param) {
         var actionType;
         if (obj.id && obj.id > 0) {
             actionType = EDIT_CODE;
-            url = param.modifyByIdUrl;
-            if (url.indexOf("?") == -1) {
-                url += "?id=" + obj.id;
-            }
-            else {
-                url += "&id=" + obj.id;
-            }
+            url = param.modifyByIdUrl + "/" + obj.id;
             method = MODIFY_REQUEST_TYPE;
         }
         else {
@@ -276,13 +270,7 @@ function BasicManage(param) {
      * @param {any} id ID
      */
     this.removeById = function (id) {
-        var url = param.removeByIdUrl;
-        if (url.indexOf("?") == -1) {
-            url += "?id=" + id;
-        }
-        else {
-            url += "&id=" + id;
-        }
+        var url = param.removeByIdUrl + "/" + id;
         confirm({
             text: "确认要移除吗？",
             closeOnConfirm: false,

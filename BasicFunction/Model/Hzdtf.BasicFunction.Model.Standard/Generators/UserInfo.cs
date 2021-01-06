@@ -16,7 +16,7 @@ namespace Hzdtf.BasicFunction.Model.Standard
     /// @ 黄振东
     /// </summary>
     [MessagePackObject]
-    public partial class UserInfo : BasicUserInfo
+    public partial class UserInfo : BasicUserInfo<int>
     {
 ﻿        /// <summary>
         /// 邮箱_名称

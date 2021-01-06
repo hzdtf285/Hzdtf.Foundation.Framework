@@ -10,7 +10,7 @@ namespace Hzdtf.WorkFlow.Persistence.Contract.Standard
     /// 退件流程路线持久化接口
     /// @ 黄振东
     /// </summary>
-    public partial interface IReturnFlowRoutePersistence : IPersistence<ReturnFlowRouteInfo>
+    public partial interface IReturnFlowRoutePersistence : IPersistence<int, ReturnFlowRouteInfo>
     {
     }
 }

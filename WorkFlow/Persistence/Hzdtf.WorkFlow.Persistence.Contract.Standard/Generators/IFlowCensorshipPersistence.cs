@@ -10,7 +10,7 @@ namespace Hzdtf.WorkFlow.Persistence.Contract.Standard
     /// 流程关卡持久化接口
     /// @ 黄振东
     /// </summary>
-    public partial interface IFlowCensorshipPersistence : IPersistence<FlowCensorshipInfo>
+    public partial interface IFlowCensorshipPersistence : IPersistence<int, FlowCensorshipInfo>
     {
     }
 }

@@ -11,7 +11,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class AttachmentPersistence : MySqlDapperBase<AttachmentInfo>, IAttachmentPersistence
+    public partial class AttachmentPersistence : MySqlDapperBase<int, AttachmentInfo>, IAttachmentPersistence
     {
         /// <summary>
         /// 表名
@@ -23,6 +23,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
         /// </summary>
         private readonly static string[] INSERT_FIELD_NAMES = new string[]
         {
+            "id",
             "create_time",
             "creater",
             "creater_id",
@@ -95,7 +96,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
 ﻿                case "creater":
                     return model.Creater;
 
-﻿                case "creater_id":
+                case "creater_id":
                     return model.CreaterId;
 
 ﻿                case "expand_name":

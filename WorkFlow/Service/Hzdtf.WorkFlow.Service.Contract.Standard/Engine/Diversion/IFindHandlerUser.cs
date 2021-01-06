@@ -21,6 +21,6 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Diversion
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<FindHandlerUserOutInfo> FindById(int id, int userId, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<FindHandlerUserOutInfo> FindById(int id, int userId, string connectionId = null, BasicUserInfo<int> currUser = null);
     }
 }

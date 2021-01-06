@@ -25,7 +25,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             IList<FlowCensorshipInfo> result = null;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                string sql = $"{SelectSql()} WHERE {GetFieldByProp("FlowId")}=@FlowId";
+                string sql = $"{BasicSelectSql()} WHERE {GetFieldByProp("FlowId")}=@FlowId";
                 Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectByFlowId");
                 result = dbConn.Query<FlowCensorshipInfo>(sql, new { FlowId = flowId }).AsList();
             }, AccessMode.SLAVE);

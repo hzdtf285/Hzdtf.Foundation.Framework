@@ -44,7 +44,7 @@ namespace Hzdtf.Demo.MySql.Standard
             TestFormInfo result = null;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                string sql = $"{SelectSql()} WHERE {GetFieldByProp("WorkflowId")}=@WorkflowId";
+                string sql = $"{BasicSelectSql()} WHERE {GetFieldByProp("WorkflowId")}=@WorkflowId";
                 result = dbConn.QueryFirstOrDefault<TestFormInfo>(sql, new { WorkflowId = workflowId }, GetDbTransaction(connId));
             }, AccessMode.SLAVE);
 
@@ -62,7 +62,7 @@ namespace Hzdtf.Demo.MySql.Standard
             int result = 0;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                string sql = $"{DeleteSql()} WHERE {GetFieldByProp("WorkflowId")}=@WorkflowId";
+                string sql = $"{BasicDeleteSql()} WHERE {GetFieldByProp("WorkflowId")}=@WorkflowId";
                 result = dbConn.Execute(sql, new { WorkflowId = workflowId }, GetDbTransaction(connId));
             });
 

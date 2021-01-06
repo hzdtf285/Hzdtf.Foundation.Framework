@@ -80,7 +80,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
         [Auth(CurrUserParamIndex = 2)]
-        public virtual ReturnInfo<FlowCensorshipOutInfo> NextHandler(FlowCensorshipInInfo findFlowCensorshipIn, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<FlowCensorshipOutInfo> NextHandler(FlowCensorshipInInfo findFlowCensorshipIn, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             ReturnInfo<FlowCensorshipOutInfo> returnInfo = new ReturnInfo<FlowCensorshipOutInfo>();
 
@@ -200,7 +200,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
         /// <param name="findFlowCensorshipIn">查找流程关卡输入</param>
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
-        private void ApplyHandle(ReturnInfo<FlowCensorshipOutInfo> returnInfo, FlowCensorshipInInfo findFlowCensorshipIn, string connectionId = null, BasicUserInfo currUser = null)
+        private void ApplyHandle(ReturnInfo<FlowCensorshipOutInfo> returnInfo, FlowCensorshipInInfo findFlowCensorshipIn, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             if (findFlowCensorshipIn.ActionType == ActionType.RETURN)
             {
@@ -216,7 +216,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
                 return;
             }
 
-            var user = UserTool.GetCurrUser(currUser);
+            var user = UserTool<int>.GetCurrUser(currUser);
 
             if (returnInfo.Data.Workflow == null)
             {
@@ -326,7 +326,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
         /// <param name="findFlowCensorshipIn">查找流程关卡输入</param>
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
-        private void AuditHandle(ReturnInfo<FlowCensorshipOutInfo> returnInfo, FlowCensorshipInInfo findFlowCensorshipIn, string connectionId = null, BasicUserInfo currUser = null)
+        private void AuditHandle(ReturnInfo<FlowCensorshipOutInfo> returnInfo, FlowCensorshipInInfo findFlowCensorshipIn, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             if (findFlowCensorshipIn.CurrWorkflowHandle == null)
             {
@@ -792,11 +792,11 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>具体关卡数组</returns>
-        private ConcreteCensorshipInfo[] FindMappingConcreteCensorships(ReturnInfo<FlowCensorshipOutInfo> returnInfo, FlowCensorshipInInfo findFlowCensorshipIn, FlowCensorshipInfo[] flowCensorships, string connectionId = null, BasicUserInfo currUser = null)
+        private ConcreteCensorshipInfo[] FindMappingConcreteCensorships(ReturnInfo<FlowCensorshipOutInfo> returnInfo, FlowCensorshipInInfo findFlowCensorshipIn, FlowCensorshipInfo[] flowCensorships, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             IList<ConcreteCensorshipInfo> concreteCensorships = new List<ConcreteCensorshipInfo>();
 
-            var user = UserTool.GetCurrUser(currUser);
+            var user = UserTool<int>.GetCurrUser(currUser);
             ExecProcConnectionId(connId =>
             {
                 foreach (var f in flowCensorships)
@@ -879,7 +879,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine.Diversion
             FlowCensorshipInfo flowCensorship,
             IList<ConcreteCensorshipInfo> concreteCensorships,
             Func<ReturnInfo<FindHandlerUserOutInfo>> funcToUsers, 
-            BasicUserInfo currUser = null)
+            BasicUserInfo<int> currUser = null)
         {
             ReturnInfo<FindHandlerUserOutInfo> reUsers = funcToUsers();
             if (reUsers.Failure())

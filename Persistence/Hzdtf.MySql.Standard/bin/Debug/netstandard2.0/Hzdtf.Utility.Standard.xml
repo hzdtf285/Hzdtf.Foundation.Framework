@@ -198,6 +198,39 @@
             </summary>
             <param name="code">编码</param>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.Attr.MenuFunctionAttribute">
+            <summary>
+            菜单功能特性
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Attr.MenuFunctionAttribute.menuCode">
+            <summary>
+            菜单编码
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Attr.MenuFunctionAttribute.MenuCode">
+            <summary>
+            菜单编码
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Attr.MenuFunctionAttribute.functionCode">
+            <summary>
+            功能编码
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Attr.MenuFunctionAttribute.FunctionCode">
+            <summary>
+            功能编码
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Attr.MenuFunctionAttribute.#ctor(System.String,System.String)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="menuCode">菜单编码</param>
+            <param name="functionCode">功能编码</param>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Attr.MuliCodeAttributeBase">
             <summary>
             多个编码特性基类
@@ -2853,60 +2886,79 @@
             默认已初始化列表
             </summary>
         </member>
-        <member name="T:Hzdtf.Utility.Standard.Model.BasicUserInfo">
+        <member name="T:Hzdtf.Utility.Standard.Model.BasicUserInfo`1">
             <summary>
             基本用户信息
             @ 黄振东
             </summary>
+            <typeparam name="IdT">ID类型</typeparam>
         </member>
-        <member name="F:Hzdtf.Utility.Standard.Model.BasicUserInfo.LoginId_Name">
+        <member name="F:Hzdtf.Utility.Standard.Model.BasicUserInfo`1.LoginId_Name">
             <summary>
             登录ID_名称
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Standard.Model.BasicUserInfo.LoginId">
+        <member name="P:Hzdtf.Utility.Standard.Model.BasicUserInfo`1.LoginId">
             <summary>
             登录ID
             </summary>
         </member>
-        <member name="F:Hzdtf.Utility.Standard.Model.BasicUserInfo.Password_Name">
+        <member name="F:Hzdtf.Utility.Standard.Model.BasicUserInfo`1.Password_Name">
             <summary>
             密码_名称
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Standard.Model.BasicUserInfo.Password">
+        <member name="P:Hzdtf.Utility.Standard.Model.BasicUserInfo`1.Password">
             <summary>
             密码
             </summary>
         </member>
-        <member name="F:Hzdtf.Utility.Standard.Model.BasicUserInfo.Enabled_Name">
+        <member name="F:Hzdtf.Utility.Standard.Model.BasicUserInfo`1.Enabled_Name">
             <summary>
             启用_名称
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Standard.Model.BasicUserInfo.Enabled">
+        <member name="P:Hzdtf.Utility.Standard.Model.BasicUserInfo`1.Enabled">
             <summary>
             启用
             </summary>
         </member>
-        <member name="F:Hzdtf.Utility.Standard.Model.BasicUserInfo.SystemInlay_Name">
+        <member name="F:Hzdtf.Utility.Standard.Model.BasicUserInfo`1.SystemInlay_Name">
             <summary>
             系统内置_名称
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Standard.Model.BasicUserInfo.SystemInlay">
+        <member name="P:Hzdtf.Utility.Standard.Model.BasicUserInfo`1.SystemInlay">
             <summary>
             系统内置
             </summary>
         </member>
-        <member name="F:Hzdtf.Utility.Standard.Model.BasicUserInfo.LoginTime_Name">
+        <member name="F:Hzdtf.Utility.Standard.Model.BasicUserInfo`1.LoginTime_Name">
             <summary>
             登录时间_名称
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Standard.Model.BasicUserInfo.LoginTime">
+        <member name="P:Hzdtf.Utility.Standard.Model.BasicUserInfo`1.LoginTime">
             <summary>
             登录时间
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Model.BasicUserInfo`1.TenantId_Name">
+            <summary>
+            租户ID_名称
+            一般情况没有，特殊情况下有用，如SAAS中的租户
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Model.BasicUserInfo`1.TenantId">
+            <summary>
+            租户ID
+            一般情况没有，特殊情况下有用，如SAAS中的租户
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Model.BasicUserInfo">
+            <summary>
+            基本用户信息
+            @ 黄振东
             </summary>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Model.CodeNameFilterInfo">
@@ -2925,30 +2977,37 @@
             模糊名称
             </summary>
         </member>
-        <member name="T:Hzdtf.Utility.Standard.Model.CodeNameInfo">
+        <member name="T:Hzdtf.Utility.Standard.Model.CodeNameInfo`1">
             <summary>
             编码名称信息
             @ 黄振东
             </summary>
+            <typeparam name="IdT">ID类型</typeparam>
         </member>
-        <member name="F:Hzdtf.Utility.Standard.Model.CodeNameInfo.Code_Name">
+        <member name="F:Hzdtf.Utility.Standard.Model.CodeNameInfo`1.Code_Name">
             <summary>
             编码_名称
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Standard.Model.CodeNameInfo.Code">
+        <member name="P:Hzdtf.Utility.Standard.Model.CodeNameInfo`1.Code">
             <summary>
             编码
             </summary>
         </member>
-        <member name="F:Hzdtf.Utility.Standard.Model.CodeNameInfo.Name_Name">
+        <member name="F:Hzdtf.Utility.Standard.Model.CodeNameInfo`1.Name_Name">
             <summary>
             名称_名称
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Standard.Model.CodeNameInfo.Name">
+        <member name="P:Hzdtf.Utility.Standard.Model.CodeNameInfo`1.Name">
             <summary>
             名称
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Model.CodeNameInfo">
+            <summary>
+            编码名称信息
+            @ 黄振东
             </summary>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Model.DateRangePageInfo">
@@ -3100,22 +3159,215 @@
             强制删除
             </summary>
         </member>
-        <member name="T:Hzdtf.Utility.Standard.Model.IncludeUserInfo`1">
+        <member name="T:Hzdtf.Utility.Standard.Model.Identitys.GuidId">
             <summary>
-            包含用户信息
-            @ 黄振东
+            Guid ID
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Standard.Model.IncludeUserInfo`1.CurrUser">
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.GuidId.ConvertTo(System.String)">
             <summary>
-            当前用户
+            转换
+            </summary>
+            <param name="idStr">ID字符串</param>
+            <returns>ID值</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.GuidId.New">
+            <summary>
+            新建
+            </summary>
+            <returns>ID值</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.GuidId.Default">
+            <summary>
+            默认
+            </summary>
+            <returns>ID值</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.GuidId.IsEmpty(System.Guid)">
+            <summary>
+            是否为空
+            </summary>
+            <param name="id">ID</param>
+            <returns>是否为空</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.GuidId.GetValueSql(System.Guid)">
+            <summary>
+            获取值SQL
+            </summary>
+            <param name="id">ID</param>
+            <returns>值SQL</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Model.Identitys.IIdentity`1">
+            <summary>
+            ID接口
+            </summary>
+            <typeparam name="IdT">ID类型</typeparam>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.IIdentity`1.ConvertTo(System.String)">
+            <summary>
+            转换
+            </summary>
+            <param name="idStr">ID字符串</param>
+            <returns>ID值</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.IIdentity`1.New">
+            <summary>
+            新建
+            </summary>
+            <returns>ID值</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.IIdentity`1.Default">
+            <summary>
+            默认
+            </summary>
+            <returns>ID值</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.IIdentity`1.IsEmpty(`0)">
+            <summary>
+            是否为空
+            </summary>
+            <param name="id">ID</param>
+            <returns>是否为空</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.IIdentity`1.GetValueSql(`0)">
+            <summary>
+            获取值SQL
+            </summary>
+            <param name="id">ID</param>
+            <returns>值SQL</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Model.Identitys.IntId">
+            <summary>
+            整型ID
             </summary>
         </member>
-        <member name="T:Hzdtf.Utility.Standard.Model.IncludeUserInfo">
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.IntId.ConvertTo(System.String)">
             <summary>
-            包含用户信息
-            @ 黄振东
+            转换
             </summary>
+            <param name="idStr">ID字符串</param>
+            <returns>ID值</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.IntId.New">
+            <summary>
+            新建
+            </summary>
+            <returns>ID值</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.IntId.Default">
+            <summary>
+            默认
+            </summary>
+            <returns>ID值</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.IntId.IsEmpty(System.Int32)">
+            <summary>
+            是否为空
+            </summary>
+            <param name="id">ID</param>
+            <returns>是否为空</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.IntId.GetValueSql(System.Int32)">
+            <summary>
+            获取值SQL
+            </summary>
+            <param name="id">ID</param>
+            <returns>值SQL</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Model.Identitys.SnowflakeId">
+            <summary>
+            雪花算法ID
+            分布式全局唯一ID
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Model.Identitys.SnowflakeId.worker">
+            <summary>
+            ID工作
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Model.Identitys.SnowflakeId.syncWorker">
+            <summary>
+            同步ID工作
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.SnowflakeId.Init(System.Int64,System.Int64,System.Int64)">
+            <summary>
+            初始化，如果ID工作对象已初始化过，则会忽略
+            </summary>
+            <param name="workerId">工作ID</param>
+            <param name="datacenterId">数据中心ID</param>
+            <param name="sequence">序列</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.SnowflakeId.ConvertTo(System.String)">
+            <summary>
+            转换
+            </summary>
+            <param name="idStr">ID字符串</param>
+            <returns>ID值</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.SnowflakeId.New">
+            <summary>
+            新建
+            </summary>
+            <returns>ID值</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.SnowflakeId.Default">
+            <summary>
+            默认
+            </summary>
+            <returns>ID值</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.SnowflakeId.IsEmpty(System.Int64)">
+            <summary>
+            是否为空
+            </summary>
+            <param name="id">ID</param>
+            <returns>是否为空</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.SnowflakeId.GetValueSql(System.Int64)">
+            <summary>
+            获取值SQL
+            </summary>
+            <param name="id">ID</param>
+            <returns>值SQL</returns>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Model.Identitys.StringId">
+            <summary>
+            字符串ID
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.StringId.ConvertTo(System.String)">
+            <summary>
+            转换
+            </summary>
+            <param name="idStr">ID字符串</param>
+            <returns>ID值</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.StringId.New">
+            <summary>
+            新建
+            </summary>
+            <returns>ID值</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.StringId.Default">
+            <summary>
+            默认
+            </summary>
+            <returns>ID值</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.StringId.IsEmpty(System.String)">
+            <summary>
+            是否为空
+            </summary>
+            <param name="id">ID</param>
+            <returns>是否为空</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.Identitys.StringId.GetValueSql(System.String)">
+            <summary>
+            获取值SQL
+            </summary>
+            <param name="id">ID</param>
+            <returns>值SQL</returns>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Model.InstanceMapMethodsInfo">
             <summary>
@@ -3215,15 +3467,22 @@
             返回路径
             </summary>
         </member>
-        <member name="T:Hzdtf.Utility.Standard.Model.PageInfo">
+        <member name="T:Hzdtf.Utility.Standard.Model.PageInfo`1">
             <summary>
             页面信息
             @ 黄振东
             </summary>
+            <typeparam name="IdT">ID类型</typeparam>
         </member>
-        <member name="P:Hzdtf.Utility.Standard.Model.PageInfo.Functions">
+        <member name="P:Hzdtf.Utility.Standard.Model.PageInfo`1.Functions">
             <summary>
             功能列表
+            </summary>
+        </member>
+        <member name="T:Hzdtf.Utility.Standard.Model.PageInfo">
+            <summary>
+            页面信息
+            @ 黄振东
             </summary>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Model.Page.IPagingReturnConvert">
@@ -3278,50 +3537,73 @@
             </summary>
             <returns>字符串</returns>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.Model.PersonTimeInfo`1">
+            <summary>
+            带有人时间信息
+            @ 黄振东
+            </summary>
+            <typeparam name="IdT">ID类型</typeparam>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Model.PersonTimeInfo`1.CreaterId_Name">
+            <summary>
+            创建人ID_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Model.PersonTimeInfo`1.CreaterId">
+            <summary>
+            创建人ID
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Model.PersonTimeInfo`1.Creater_Name">
+            <summary>
+            创建人_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Model.PersonTimeInfo`1.Creater">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Model.PersonTimeInfo`1.ModifierId_Name">
+            <summary>
+            修改人ID_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Model.PersonTimeInfo`1.ModifierId">
+            <summary>
+            修改人ID
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Model.PersonTimeInfo`1.Modifier_Name">
+            <summary>
+            修改人_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Model.PersonTimeInfo`1.Modifier">
+            <summary>
+            修改人
+            </summary>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Model.PersonTimeInfo">
             <summary>
             带有人时间信息
             @ 黄振东
             </summary>
         </member>
-        <member name="F:Hzdtf.Utility.Standard.Model.PersonTimeInfo.CreaterId_Name">
+        <member name="T:Hzdtf.Utility.Standard.Model.PersonTimeTenantInfo`1">
             <summary>
-            创建人ID_名称
+            带有人时间租户信息
+            </summary>
+            <typeparam name="IdT">ID类型</typeparam>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Model.PersonTimeTenantInfo`1.TenantId_Name">
+            <summary>
+            租户ID_名称
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Standard.Model.PersonTimeInfo.CreaterId">
+        <member name="P:Hzdtf.Utility.Standard.Model.PersonTimeTenantInfo`1.TenantId">
             <summary>
-            创建人ID
-            </summary>
-        </member>
-        <member name="F:Hzdtf.Utility.Standard.Model.PersonTimeInfo.Creater_Name">
-            <summary>
-            创建人_名称
-            </summary>
-        </member>
-        <member name="P:Hzdtf.Utility.Standard.Model.PersonTimeInfo.Creater">
-            <summary>
-            创建人
-            </summary>
-        </member>
-        <member name="F:Hzdtf.Utility.Standard.Model.PersonTimeInfo.ModifierId_Name">
-            <summary>
-            修改人ID_名称
-            </summary>
-        </member>
-        <member name="P:Hzdtf.Utility.Standard.Model.PersonTimeInfo.ModifierId">
-            <summary>
-            修改人ID
-            </summary>
-        </member>
-        <member name="F:Hzdtf.Utility.Standard.Model.PersonTimeInfo.Modifier_Name">
-            <summary>
-            修改人_名称
-            </summary>
-        </member>
-        <member name="P:Hzdtf.Utility.Standard.Model.PersonTimeInfo.Modifier">
-            <summary>
-            修改人
+            租户ID
             </summary>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Model.Return.BasicReturnInfo">
@@ -3665,33 +3947,83 @@
             方法的参数数组
             </summary>
         </member>
+        <member name="T:Hzdtf.Utility.Standard.Model.SimpleInfo`1">
+            <summary>
+            简单信息
+            @ 黄振东
+            </summary>
+            <typeparam name="IdT">ID类型</typeparam>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Model.SimpleInfo`1.Id_Name">
+            <summary>
+            ID_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Model.SimpleInfo`1.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.SimpleInfo`1.Clone">
+            <summary>
+            浅拷贝
+            </summary>
+            <returns>拷贝后的对象</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Model.SimpleInfo`1.ToString">
+            <summary>
+            转换为字符串
+            </summary>
+            <returns>字符串</returns>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Model.SimpleInfo">
             <summary>
             简单信息
             @ 黄振东
             </summary>
         </member>
-        <member name="F:Hzdtf.Utility.Standard.Model.SimpleInfo.Id_Name">
+        <member name="T:Hzdtf.Utility.Standard.Model.SimpleTenanInfo`1">
             <summary>
-            ID_名称
+            简单租户信息
+            </summary>
+            <typeparam name="IdT">ID类型</typeparam>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Model.SimpleTenanInfo`1.TenantId_Name">
+            <summary>
+            租户ID_名称
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Standard.Model.SimpleInfo.Id">
+        <member name="P:Hzdtf.Utility.Standard.Model.SimpleTenanInfo`1.TenantId">
             <summary>
-            ID
+            租户ID
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Model.SimpleInfo.Clone">
+        <member name="T:Hzdtf.Utility.Standard.Model.TimeInfo`1">
             <summary>
-            浅拷贝
+            带有时间的信息
+            @ 黄振东
             </summary>
-            <returns>拷贝后的对象</returns>
+            <typeparam name="IdT">ID类型</typeparam>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Model.SimpleInfo.ToString">
+        <member name="F:Hzdtf.Utility.Standard.Model.TimeInfo`1.CreateTime_Name">
             <summary>
-            转换为字符串
+            创建时间_名称
             </summary>
-            <returns>字符串</returns>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Model.TimeInfo`1.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="F:Hzdtf.Utility.Standard.Model.TimeInfo`1.ModifyTime_Name">
+            <summary>
+            修改时间_名称
+            </summary>
+        </member>
+        <member name="P:Hzdtf.Utility.Standard.Model.TimeInfo`1.ModifyTime">
+            <summary>
+            修改时间
+            </summary>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Model.TimeInfo">
             <summary>
@@ -3699,48 +4031,29 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="F:Hzdtf.Utility.Standard.Model.TimeInfo.CreateTime_Name">
-            <summary>
-            创建时间_名称
-            </summary>
-        </member>
-        <member name="P:Hzdtf.Utility.Standard.Model.TimeInfo.CreateTime">
-            <summary>
-            创建时间
-            </summary>
-        </member>
-        <member name="F:Hzdtf.Utility.Standard.Model.TimeInfo.ModifyTime_Name">
-            <summary>
-            修改时间_名称
-            </summary>
-        </member>
-        <member name="P:Hzdtf.Utility.Standard.Model.TimeInfo.ModifyTime">
-            <summary>
-            修改时间
-            </summary>
-        </member>
-        <member name="T:Hzdtf.Utility.Standard.Model.UserTool">
+        <member name="T:Hzdtf.Utility.Standard.Model.UserTool`1">
             <summary>
             用户工具类
             @ 黄振东
             </summary>
+            <typeparam name="IdT">ID类型</typeparam>
         </member>
-        <member name="P:Hzdtf.Utility.Standard.Model.UserTool.CurrUser">
+        <member name="P:Hzdtf.Utility.Standard.Model.UserTool`1.CurrUser">
             <summary>
             当前用户
             </summary>
         </member>
-        <member name="F:Hzdtf.Utility.Standard.Model.UserTool.GetCurrUserFunc">
+        <member name="F:Hzdtf.Utility.Standard.Model.UserTool`1.GetCurrUserFunc">
             <summary>
             获取当前用户方法
             </summary>
         </member>
-        <member name="F:Hzdtf.Utility.Standard.Model.UserTool.TestUser">
+        <member name="F:Hzdtf.Utility.Standard.Model.UserTool`1.TestUser">
             <summary>
             测试用户
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Model.UserTool.GetCurrUser(Hzdtf.Utility.Standard.Model.BasicUserInfo,System.Boolean)">
+        <member name="M:Hzdtf.Utility.Standard.Model.UserTool`1.GetCurrUser(Hzdtf.Utility.Standard.Model.BasicUserInfo{`0},System.Boolean)">
             <summary>
             获取当前用户，如果传入的用户不为null，则取传入的用户。否则调GetCurrUserFunc委托
             </summary>
@@ -3748,7 +4061,7 @@
             <param name="notExistsIsOutTestUser">如果不存在是否输出测试用户</param>
             <returns>当前用户</returns>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Model.UserTool.GetCurrUser``1(Hzdtf.Utility.Standard.Model.BasicUserInfo,System.Boolean)">
+        <member name="M:Hzdtf.Utility.Standard.Model.UserTool`1.GetCurrUser``1(Hzdtf.Utility.Standard.Model.BasicUserInfo{`0},System.Boolean)">
             <summary>
             获取当前用户，如果传入的用户不为null，则取传入的用户。否则调GetCurrUserFunc委托
             </summary>
@@ -5368,6 +5681,50 @@
             <param name="array">数组</param>
             <returns>反转后的数组</returns>
         </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.CollectionUtil.GetValueByIndex``1(``0[],System.Int32)">
+            <summary>
+            根据索引获取值
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="array">数组</param>
+            <param name="index">索引</param>
+            <returns>值</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.CollectionUtil.GetValueByIndex``1(System.Collections.Generic.IList{``0},System.Int32)">
+            <summary>
+            根据索引获取值
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="list">列表</param>
+            <param name="index">索引</param>
+            <returns>值</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.CollectionUtil.Remove``1(``0[],``0,System.Func{``0,System.Boolean})">
+            <summary>
+            移除指定的值
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="array">数组</param>
+            <param name="value">值</param>
+            <param name="compact">比较回调</param>
+            <returns>新的数组</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.CollectionUtil.Remove(System.Int32[],System.Int32)">
+            <summary>
+            移除指定的值
+            </summary>
+            <param name="array">数组</param>
+            <param name="value">值</param>
+            <returns>新的数组</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.CollectionUtil.Remove(System.String[],System.String)">
+            <summary>
+            移除指定的值
+            </summary>
+            <param name="array">数组</param>
+            <param name="value">值</param>
+            <returns>新的数组</returns>
+        </member>
         <member name="T:Hzdtf.Utility.Standard.Utils.DataTableUtil">
             <summary>
             数据表辅助类
@@ -6176,17 +6533,19 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Utils.ModelUtil.SetCreateInfo(Hzdtf.Utility.Standard.Model.PersonTimeInfo,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.Utility.Standard.Utils.ModelUtil.SetCreateInfo``1(Hzdtf.Utility.Standard.Model.PersonTimeInfo{``0},Hzdtf.Utility.Standard.Model.BasicUserInfo{``0})">
             <summary>
             设置创建信息
             </summary>
+            <typeparam name="IdT">ID类型</typeparam>
             <param name="model">模型</param>
             <param name="currUser">当前用户</param>
         </member>
-        <member name="M:Hzdtf.Utility.Standard.Utils.ModelUtil.SetModifyInfo(Hzdtf.Utility.Standard.Model.PersonTimeInfo,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.Utility.Standard.Utils.ModelUtil.SetModifyInfo``1(Hzdtf.Utility.Standard.Model.PersonTimeInfo{``0},Hzdtf.Utility.Standard.Model.BasicUserInfo{``0})">
             <summary>
             设置修改信息
             </summary>
+            <typeparam name="IdT">ID类型</typeparam>
             <param name="model">模型</param>
             <param name="currUser">当前用户</param>
         </member>
@@ -6578,6 +6937,25 @@
             </summary>
             <param name="method">方法</param>
             <returns>方法的返回值类型</returns>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.ReflectUtil.SyncAssign``1(``0,``0,System.String[])">
+            <summary>
+            同步赋值
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="source">源对象</param>
+            <param name="target">目标对象</param>
+            <param name="ignoreProp">忽略属性</param>
+        </member>
+        <member name="M:Hzdtf.Utility.Standard.Utils.ReflectUtil.SyncAssign``2(``0,``1,System.String[])">
+            <summary>
+            同步赋值
+            </summary>
+            <typeparam name="SourceT">源对象类型</typeparam>
+            <typeparam name="TargetT">目标对象类型</typeparam>
+            <param name="source">源对象</param>
+            <param name="target">目标对象</param>
+            <param name="ignoreProp">忽略属性</param>
         </member>
         <member name="T:Hzdtf.Utility.Standard.Utils.SqlUtil">
             <summary>

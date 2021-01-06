@@ -21,7 +21,7 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<bool> BeforeExecFlow(FlowCensorshipOutInfo flowCensorshipOut, object flowIn, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<bool> BeforeExecFlow(FlowCensorshipOutInfo flowCensorshipOut, object flowIn, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             return new ReturnInfo<bool>();
         }
@@ -35,7 +35,7 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<bool> AfterExecFlow(FlowCensorshipOutInfo flowCensorshipOut, object flowIn, bool isSuccess, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<bool> AfterExecFlow(FlowCensorshipOutInfo flowCensorshipOut, object flowIn, bool isSuccess, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             return new ReturnInfo<bool>();
         }

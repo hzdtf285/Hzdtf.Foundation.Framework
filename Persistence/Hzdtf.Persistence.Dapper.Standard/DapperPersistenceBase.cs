@@ -13,8 +13,9 @@ namespace Hzdtf.Persistence.Dapper.Standard
     /// Dapper持久化基类
     /// @ 黄振东
     /// </summary>
+    /// <typeparam name="IdT">ID类型</typeparam>
     /// <typeparam name="ModelT">模型类型</typeparam>
-    public abstract partial class DapperPersistenceBase<ModelT> : PersistenceBase<ModelT> where ModelT : SimpleInfo
+    public abstract partial class DapperPersistenceBase<IdT, ModelT> : PersistenceBase<IdT, ModelT> where ModelT : SimpleInfo<IdT>
     {
         #region 属性与字段
 
@@ -35,11 +36,11 @@ namespace Hzdtf.Persistence.Dapper.Standard
         /// <param name="dbTransaction">数据库事务</param>
         /// <param name="propertyNames">属性名称集合</param>
         /// <returns>模型</returns>
-        protected override ModelT Select(int id, IDbConnection dbConnection, IDbTransaction dbTransaction = null, string[] propertyNames = null)
+        protected override ModelT Select(IdT id, IDbConnection dbConnection, IDbTransaction dbTransaction = null, string[] propertyNames = null)
         {
             var sql = SelectSql(id, propertyNames);
             Log.TraceAsync(sql, source: this.GetType().Name, tags: "Select");
-            return dbConnection.QueryFirstOrDefault<ModelT>(sql, new SimpleInfo() { Id = id }, dbTransaction);
+            return dbConnection.QueryFirstOrDefault<ModelT>(sql, new SimpleInfo<IdT>() { Id = id }, dbTransaction);
         }
 
         /// <summary>
@@ -50,7 +51,7 @@ namespace Hzdtf.Persistence.Dapper.Standard
         /// <param name="dbTransaction">数据库事务</param>
         /// <param name="propertyNames">属性名称集合</param>
         /// <returns>模型列表</returns>
-        protected override IList<ModelT> Select(int[] ids, IDbConnection dbConnection, IDbTransaction dbTransaction = null, string[] propertyNames = null)
+        protected override IList<ModelT> Select(IdT[] ids, IDbConnection dbConnection, IDbTransaction dbTransaction = null, string[] propertyNames = null)
         {
             DynamicParameters parameters;
             var sql = SelectSql(ids, out parameters, propertyNames);
@@ -65,11 +66,11 @@ namespace Hzdtf.Persistence.Dapper.Standard
         /// <param name="dbConnection">数据库连接</param>
         /// <param name="dbTransaction">数据库事务</param>
         /// <returns>模型数</returns>
-        protected override int Count(int id, IDbConnection dbConnection, IDbTransaction dbTransaction = null)
+        protected override int Count(IdT id, IDbConnection dbConnection, IDbTransaction dbTransaction = null)
         {
             var sql = CountSql(id);
             Log.TraceAsync(sql, source: this.GetType().Name, tags: "Count");
-            return dbConnection.ExecuteScalar<int>(sql, new SimpleInfo() { Id = id }, dbTransaction);
+            return dbConnection.ExecuteScalar<int>(sql, new SimpleInfo<IdT>() { Id = id }, dbTransaction);
         }
 
         /// <summary>
@@ -141,9 +142,13 @@ namespace Hzdtf.Persistence.Dapper.Standard
         /// <returns>影响行数</returns>
         protected override int Insert(ModelT model, IDbConnection dbConnection, IDbTransaction dbTransaction = null)
         {
-            var sql = InsertSql(model, true);
+            var isAuto = PrimaryKeyIncr(model.Id);
+            var sql = InsertSql(model, isAuto);
             Log.TraceAsync(sql, source: this.GetType().Name, tags: "Insert");
-            model.Id = dbConnection.ExecuteScalar<int>(sql, model, dbTransaction);
+            if (isAuto)
+            {
+                model.Id = dbConnection.ExecuteScalar<IdT>(sql, model, dbTransaction);
+            }
 
             return 1;
         }
@@ -185,11 +190,11 @@ namespace Hzdtf.Persistence.Dapper.Standard
         /// <param name="dbConnection">数据库连接</param>
         /// <param name="dbTransaction">数据库事务</param>
         /// <returns>影响行数</returns>
-        protected override int DeleteById(int id, IDbConnection dbConnection, IDbTransaction dbTransaction = null)
+        protected override int DeleteById(IdT id, IDbConnection dbConnection, IDbTransaction dbTransaction = null)
         {
             var sql = DeleteByIdSql(id);
             Log.TraceAsync(sql, source: this.GetType().Name, tags: "DeleteById");
-            return dbConnection.Execute(sql, new SimpleInfo() { Id = id }, dbTransaction);
+            return dbConnection.Execute(sql, new SimpleInfo<IdT>() { Id = id }, dbTransaction);
         }
 
         /// <summary>
@@ -199,7 +204,7 @@ namespace Hzdtf.Persistence.Dapper.Standard
         /// <param name="dbConnection">数据库连接</param>
         /// <param name="dbTransaction">数据库事务</param>
         /// <returns>影响行数</returns>
-        protected override int DeleteByIds(int[] ids, IDbConnection dbConnection, IDbTransaction dbTransaction = null)
+        protected override int DeleteByIds(IdT[] ids, IDbConnection dbConnection, IDbTransaction dbTransaction = null)
         {
             DynamicParameters parameters;
             var sql = DeleteByIdsSql(ids, out parameters);
@@ -247,7 +252,7 @@ namespace Hzdtf.Persistence.Dapper.Standard
         /// <param name="dbConnection">数据库连接</param>
         /// <param name="dbTransaction">数据库事务</param>
         /// <returns>影响行数</returns>
-        protected override int DeleteSlaveTableByForeignKeys(string table, string foreignKeyName, int[] foreignKeyValues, IDbConnection dbConnection, IDbTransaction dbTransaction = null)
+        protected override int DeleteSlaveTableByForeignKeys(string table, string foreignKeyName, IdT[] foreignKeyValues, IDbConnection dbConnection, IDbTransaction dbTransaction = null)
         {
             DynamicParameters parameters;
             var sql = DeleteByTableAndForignKeySql(table, foreignKeyName, foreignKeyValues, out parameters);
@@ -267,7 +272,7 @@ namespace Hzdtf.Persistence.Dapper.Standard
         /// <param name="id">ID</param>
         /// <param name="propertyNames">属性名称集合</param>
         /// <returns>SQL语句</returns>
-        protected abstract string SelectSql(int id, string[] propertyNames = null);
+        protected abstract string SelectSql(IdT id, string[] propertyNames = null);
 
         /// <summary>
         /// 根据ID集合查询模型列表SQL语句
@@ -276,14 +281,14 @@ namespace Hzdtf.Persistence.Dapper.Standard
         /// <param name="parameters">参数</param>
         /// <param name="propertyNames">属性名称集合</param>
         /// <returns>SQL语句</returns>
-        protected abstract string SelectSql(int[] ids, out DynamicParameters parameters, string[] propertyNames = null);
+        protected abstract string SelectSql(IdT[] ids, out DynamicParameters parameters, string[] propertyNames = null);
 
         /// <summary>
         /// 根据ID统计模型数SQL语句
         /// </summary>
         /// <param name="id">ID</param>
         /// <returns>SQL语句</returns>
-        protected abstract string CountSql(int id);
+        protected abstract string CountSql(IdT id);
 
         /// <summary>
         /// 统计模型数SQL语句
@@ -353,7 +358,7 @@ namespace Hzdtf.Persistence.Dapper.Standard
         /// </summary>
         /// <param name="id">ID</param>
         /// <returns>SQL语句</returns>
-        protected abstract string DeleteByIdSql(int id);
+        protected abstract string DeleteByIdSql(IdT id);
 
         /// <summary>
         /// 根据ID数组删除模型SQL语句
@@ -361,7 +366,7 @@ namespace Hzdtf.Persistence.Dapper.Standard
         /// <param name="ids">ID数组</param>
         /// <param name="parameters">参数</param>
         /// <returns>SQL语句</returns>
-        protected abstract string DeleteByIdsSql(int[] ids, out DynamicParameters parameters);
+        protected abstract string DeleteByIdsSql(IdT[] ids, out DynamicParameters parameters);
 
         /// <summary>
         /// 删除所有模型SQL语句
@@ -390,7 +395,7 @@ namespace Hzdtf.Persistence.Dapper.Standard
         /// <param name="foreignKeyValues">外键值集合</param>
         /// <param name="parameters">参数</param>
         /// <returns>SQL语句</returns>
-        protected virtual string DeleteByTableAndForignKeySql(string table, string foreignKeyName, int[] foreignKeyValues, out DynamicParameters parameters)
+        protected virtual string DeleteByTableAndForignKeySql(string table, string foreignKeyName, IdT[] foreignKeyValues, out DynamicParameters parameters)
         {
             parameters = null;
             return null;

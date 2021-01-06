@@ -3,6 +3,7 @@ using Hzdtf.Demo.Persistence.Contract.Standard;
 using Hzdtf.Demo.Service.Contract.Standard;
 using Hzdtf.Service.Impl.Standard;
 using Hzdtf.Utility.Standard.Attr;
+using Hzdtf.Utility.Standard.Model;
 using Hzdtf.Utility.Standard.Model.Return;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,7 @@ namespace Hzdtf.Demo.Service.Impl.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class TestFormService : ServiceBase<TestFormInfo, ITestFormPersistence>, ITestFormService
+    public partial class TestFormService : ServiceBase<int, TestFormInfo, ITestFormPersistence>, ITestFormService
     {
     }
 }

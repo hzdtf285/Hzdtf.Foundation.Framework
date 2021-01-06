@@ -10,7 +10,7 @@ namespace Hzdtf.BasicFunction.Persistence.Contract.Standard
     /// 序列持久化接口
     /// @ 黄振东
     /// </summary>
-    public partial interface ISequencePersistence : IPersistence<SequenceInfo>
+    public partial interface ISequencePersistence : IPersistence<int, SequenceInfo>
     {
     }
 }

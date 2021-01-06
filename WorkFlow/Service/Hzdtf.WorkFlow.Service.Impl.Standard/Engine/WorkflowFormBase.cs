@@ -15,7 +15,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
     /// 工作流表单基类
     /// @ 黄振东
     /// </summary>
-    public abstract class WorkflowFormBase : WorkflowEngineBase<FlowInInfo<FlowInitInfo<PersonTimeInfo>>>, IWorkflowForm
+    public abstract class WorkflowFormBase : WorkflowEngineBase<FlowInInfo<FlowInitInfo<PersonTimeInfo<int>>>>, IWorkflowForm
     {
         #region 重写父类的方法
 
@@ -28,7 +28,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>工作流定义</returns>
-        protected override WorkflowDefineInfo ValiFlowIn(ReturnInfo<bool> returnInfo, FlowInInfo<FlowInitInfo<PersonTimeInfo>> flowIn, out WorkflowInfo workflow, string connectionId = null, BasicUserInfo currUser = null)
+        protected override WorkflowDefineInfo ValiFlowIn(ReturnInfo<bool> returnInfo, FlowInInfo<FlowInitInfo<PersonTimeInfo<int>>> flowIn, out WorkflowInfo workflow, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             workflow = null;
             ValiBasicInParam(returnInfo, flowIn);
@@ -59,7 +59,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// <param name="flowIn">流程输入</param>
         /// <param name="findFlowCensorshipIn">查找流程关卡输入信息</param>
         /// <param name="currUser">当前用户</param>
-        protected override void AppendSetFindFlowCensorshipIn(FlowInInfo<FlowInitInfo<PersonTimeInfo>> flowIn, FlowCensorshipInInfo findFlowCensorshipIn, BasicUserInfo currUser = null)
+        protected override void AppendSetFindFlowCensorshipIn(FlowInInfo<FlowInitInfo<PersonTimeInfo<int>>> flowIn, FlowCensorshipInInfo findFlowCensorshipIn, BasicUserInfo<int> currUser = null)
         {
             findFlowCensorshipIn.ApplyNo = flowIn.Flow.ApplyNo;
             findFlowCensorshipIn.Title = flowIn.Flow.Title;
@@ -74,8 +74,8 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// <param name="findFlowCensorshipOut">查找流程关卡输出</param>
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
-        protected override void ExecCore(ReturnInfo<bool> returnInfo, FlowInInfo<FlowInitInfo<PersonTimeInfo>> flowIn,
-            FlowCensorshipOutInfo findFlowCensorshipOut, string connectionId = null, BasicUserInfo currUser = null)
+        protected override void ExecCore(ReturnInfo<bool> returnInfo, FlowInInfo<FlowInitInfo<PersonTimeInfo<int>>> flowIn,
+            FlowCensorshipOutInfo findFlowCensorshipOut, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             // 操作工作流
             ReturnInfo<bool> reWorkflow = WorkflowService.Set(findFlowCensorshipOut.Workflow, connectionId, currUser);
@@ -100,7 +100,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
                 return;
             }
 
-            var user = UserTool.GetCurrUser(currUser);
+            var user = UserTool<int>.GetCurrUser(currUser);
             if (existsHandleReturnInfo.Data != null)
             {
                 if (existsHandleReturnInfo.Data.HandlerId != user.Id)
@@ -156,7 +156,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// </summary>
         /// <param name="returnInfo">返回信息</param>
         /// <param name="flowIn">流程输入</param>
-        private void ValiBasicInParam(ReturnInfo<bool> returnInfo, FlowInInfo<FlowInitInfo<PersonTimeInfo>> flowIn)
+        private void ValiBasicInParam(ReturnInfo<bool> returnInfo, FlowInInfo<FlowInitInfo<PersonTimeInfo<int>>> flowIn)
         {
             if (flowIn == null)
             {
@@ -198,7 +198,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
         /// <param name="workflow">工作流</param>
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
-        private void ValiDbParam(ReturnInfo<bool> returnInfo, FlowInInfo<FlowInitInfo<PersonTimeInfo>> flowIn, out WorkflowInfo workflow, string connectionId = null, BasicUserInfo currUser = null)
+        private void ValiDbParam(ReturnInfo<bool> returnInfo, FlowInInfo<FlowInitInfo<PersonTimeInfo<int>>> flowIn, out WorkflowInfo workflow, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             workflow = null;
             ReturnInfo<WorkflowDefineInfo> reWorkFlowConfig = WorkflowConfigReader.ReaderAllConfig(flowIn.Flow.WorkflowCode, connectionId, currUser);
@@ -208,7 +208,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard.Engine
                 return;
             }
 
-            var user = UserTool.GetCurrUser(currUser);
+            var user = UserTool<int>.GetCurrUser(currUser);
             if (flowIn.Flow.Id > 0)
             {
                 var reInfo = WorkflowService.Find(flowIn.Flow.Id, connectionId, currUser);

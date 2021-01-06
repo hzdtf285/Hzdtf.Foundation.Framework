@@ -8,12 +8,13 @@ namespace Hzdtf.Utility.Standard.Model
     /// 用户工具类
     /// @ 黄振东
     /// </summary>
-    public static class UserTool
+    /// <typeparam name="IdT">ID类型</typeparam>
+    public static class UserTool<IdT>
     {
         /// <summary>
         /// 当前用户
         /// </summary>
-        private static BasicUserInfo CurrUser
+        private static BasicUserInfo<IdT> CurrUser
         {
             get => GetCurrUserFunc != null ? GetCurrUserFunc() : null;
         }
@@ -21,12 +22,12 @@ namespace Hzdtf.Utility.Standard.Model
         /// <summary>
         /// 获取当前用户方法
         /// </summary>
-        public static Func<BasicUserInfo> GetCurrUserFunc;
+        public static Func<BasicUserInfo<IdT>> GetCurrUserFunc;
 
         /// <summary>
         /// 测试用户
         /// </summary>
-        public readonly static BasicUserInfo TestUser = new BasicUserInfo()
+        public readonly static BasicUserInfo<IdT> TestUser = new BasicUserInfo<IdT>()
         {
             Code = "000000",
             Name = "测试用户"
@@ -38,7 +39,7 @@ namespace Hzdtf.Utility.Standard.Model
         /// <param name="currUser">当前用户</param>
         /// <param name="notExistsIsOutTestUser">如果不存在是否输出测试用户</param>
         /// <returns>当前用户</returns>
-        public static BasicUserInfo GetCurrUser(BasicUserInfo currUser = null, bool notExistsIsOutTestUser = false)
+        public static BasicUserInfo<IdT> GetCurrUser(BasicUserInfo<IdT> currUser = null, bool notExistsIsOutTestUser = false)
         {
             var result = currUser == null ? CurrUser : currUser;
             if (result == null && notExistsIsOutTestUser)
@@ -56,7 +57,7 @@ namespace Hzdtf.Utility.Standard.Model
         /// <param name="currUser">当前用户</param>
         /// <param name="notExistsIsOutTestUser">如果不存在是否输出测试用户</param>
         /// <returns>当前用户</returns>
-        public static UserT GetCurrUser<UserT>(BasicUserInfo currUser = null, bool notExistsIsOutTestUser = false) where UserT : BasicUserInfo
+        public static UserT GetCurrUser<UserT>(BasicUserInfo<IdT> currUser = null, bool notExistsIsOutTestUser = false) where UserT : BasicUserInfo<IdT>
         {
             var result = currUser == null ? CurrUser : currUser;
             if (result == null && notExistsIsOutTestUser)

@@ -13,9 +13,9 @@ namespace Hzdtf.Service.Impl.Standard
     /// 服务基类
     /// @ 黄振东
     /// </summary>
-    public abstract partial class ServiceBase<ModelT, PersistenceT> 
-        where ModelT : SimpleInfo
-        where PersistenceT : IPersistence<ModelT>
+    public abstract partial class ServiceBase<IdT, ModelT, PersistenceT> 
+        where ModelT : SimpleInfo<IdT>
+        where PersistenceT : IPersistence<IdT, ModelT>
     {
         #region 读取
 
@@ -26,7 +26,7 @@ namespace Hzdtf.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<ModelT>> FindAsync(int id, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual async Task<ReturnInfo<ModelT>> FindAsync(IdT id, string connectionId = null, BasicUserInfo<IdT> currUser = null)
         {
             return await Task.Run<ReturnInfo<ModelT>>(() =>
             {
@@ -41,7 +41,7 @@ namespace Hzdtf.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<IList<ModelT>>> FindAsync(int[] ids, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual async Task<ReturnInfo<IList<ModelT>>> FindAsync(IdT[] ids, string connectionId = null, BasicUserInfo<IdT> currUser = null)
         {
             return await Task.Run<ReturnInfo<IList<ModelT>>>(() =>
             {
@@ -56,7 +56,7 @@ namespace Hzdtf.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<bool>> ExistsAsync(int id, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual async Task<ReturnInfo<bool>> ExistsAsync(IdT id, string connectionId = null, BasicUserInfo<IdT> currUser = null)
         {
             return await Task.Run<ReturnInfo<bool>>(() =>
             {
@@ -70,7 +70,7 @@ namespace Hzdtf.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<int>> CountAsync(string connectionId = null, BasicUserInfo currUser = null)
+        public virtual async Task<ReturnInfo<int>> CountAsync(string connectionId = null, BasicUserInfo<IdT> currUser = null)
         {
             return await Task.Run<ReturnInfo<int>>(() =>
             {
@@ -84,7 +84,7 @@ namespace Hzdtf.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<IList<ModelT>>> QueryAsync(string connectionId = null, BasicUserInfo currUser = null)
+        public virtual async Task<ReturnInfo<IList<ModelT>>> QueryAsync(string connectionId = null, BasicUserInfo<IdT> currUser = null)
         {
             return await Task.Run<ReturnInfo<IList<ModelT>>>(() =>
             {
@@ -101,7 +101,7 @@ namespace Hzdtf.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<PagingInfo<ModelT>>> QueryPageAsync(int pageIndex, int pageSize, FilterInfo filter = null, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual async Task<ReturnInfo<PagingInfo<ModelT>>> QueryPageAsync(int pageIndex, int pageSize, FilterInfo filter = null, string connectionId = null, BasicUserInfo<IdT> currUser = null)
         {
             return await Task.Run<ReturnInfo<PagingInfo<ModelT>>>(() =>
             {
@@ -120,7 +120,7 @@ namespace Hzdtf.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<bool>> AddAsync(ModelT model, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual async Task<ReturnInfo<bool>> AddAsync(ModelT model, string connectionId = null, BasicUserInfo<IdT> currUser = null)
         {
             return await Task.Run<ReturnInfo<bool>>(() =>
             {
@@ -135,7 +135,7 @@ namespace Hzdtf.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<bool>> AddAsync(IList<ModelT> models, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual async Task<ReturnInfo<bool>> AddAsync(IList<ModelT> models, string connectionId = null, BasicUserInfo<IdT> currUser = null)
         {
             return await Task.Run<ReturnInfo<bool>>(() =>
             {
@@ -151,7 +151,7 @@ namespace Hzdtf.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<bool>> SetAsync(ModelT model, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual async Task<ReturnInfo<bool>> SetAsync(ModelT model, string connectionId = null, BasicUserInfo<IdT> currUser = null)
         {
             return await Task.Run<ReturnInfo<bool>>(() =>
             {
@@ -166,7 +166,7 @@ namespace Hzdtf.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<bool>> ModifyByIdAsync(ModelT model, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual async Task<ReturnInfo<bool>> ModifyByIdAsync(ModelT model, string connectionId = null, BasicUserInfo<IdT> currUser = null)
         {
             return await Task.Run<ReturnInfo<bool>>(() =>
             {
@@ -181,7 +181,7 @@ namespace Hzdtf.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<bool>> RemoveByIdAsync(int id, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual async Task<ReturnInfo<bool>> RemoveByIdAsync(IdT id, string connectionId = null, BasicUserInfo<IdT> currUser = null)
         {
             return await Task.Run<ReturnInfo<bool>>(() =>
             {
@@ -196,7 +196,7 @@ namespace Hzdtf.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<bool>> RemoveByIdsAsync(int[] ids, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual async Task<ReturnInfo<bool>> RemoveByIdsAsync(IdT[] ids, string connectionId = null, BasicUserInfo<IdT> currUser = null)
         {
             return await Task.Run<ReturnInfo<bool>>(() =>
             {
@@ -210,7 +210,7 @@ namespace Hzdtf.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        public virtual async Task<ReturnInfo<bool>> ClearAsync(string connectionId = null, BasicUserInfo currUser = null)
+        public virtual async Task<ReturnInfo<bool>> ClearAsync(string connectionId = null, BasicUserInfo<IdT> currUser = null)
         {
             return await Task.Run<ReturnInfo<bool>>(() =>
             {

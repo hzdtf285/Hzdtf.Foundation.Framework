@@ -23,7 +23,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard.Expand.Sequence
         /// <param name="increment">增量</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>序列号</returns>
-        public string BuilderNo(string seqType, byte noLength, int increment, BasicUserInfo currUser = null)
+        public string BuilderNo(string seqType, byte noLength, int increment, BasicUserInfo<int> currUser = null)
         {
             string dateStr = DateTime.Now.ToCompactFixedShortDate();
             StringBuilder result = new StringBuilder($"{seqType}{dateStr}");

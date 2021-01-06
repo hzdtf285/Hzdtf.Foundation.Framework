@@ -295,3 +295,4 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Consumer.Demo
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Consumer.Demo.AspNet.Core\obj\Debug\netcoreapp3.1\Hzdtf.Consumer.Demo.AspNet.Core.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Consumer.Demo.AspNet.Core\obj\Debug\netcoreapp3.1\Hzdtf.Consumer.Demo.AspNet.Core.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Consumer.Demo.AspNet.Core\obj\Debug\netcoreapp3.1\Hzdtf.Consumer.Demo.AspNet.Core.genruntimeconfig.cache
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\MessageQueue\Demo\Hzdtf.Consumer.Demo.AspNet.Core\bin\Debug\netcoreapp3.1\Snowflake.Core.dll

@@ -19,10 +19,10 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
         /// <param name="workflowHandle">工作流处理</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>当前用户能否审核</returns>
-        public static BasicReturnInfo CanCurrUserAudit(WorkflowHandleInfo workflowHandle, BasicUserInfo currUser = null)
+        public static BasicReturnInfo CanCurrUserAudit(WorkflowHandleInfo workflowHandle, BasicUserInfo<int> currUser = null)
         {
             BasicReturnInfo returnInfo = new BasicReturnInfo();
-            var user = UserTool.GetCurrUser(currUser);
+            var user = UserTool<int>.GetCurrUser(currUser);
             if (user == null)
             {
                 returnInfo.SetFailureMsg("您还未登录，请先登录系统");

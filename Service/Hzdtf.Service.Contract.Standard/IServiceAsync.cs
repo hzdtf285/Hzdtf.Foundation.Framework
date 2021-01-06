@@ -12,8 +12,9 @@ namespace Hzdtf.Service.Contract.Standard
     /// 异步服务接口
     /// @ 黄振东
     /// </summary>
+    /// <typeparam name="IdT">ID类型</typeparam>
     /// <typeparam name="ModelT">模型类型</typeparam>
-    public partial interface IServiceAsync<ModelT> where ModelT : SimpleInfo
+    public partial interface IServiceAsync<IdT, ModelT> where ModelT : SimpleInfo<IdT>
     {
         #region 读取
 
@@ -24,7 +25,7 @@ namespace Hzdtf.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        Task<ReturnInfo<ModelT>> FindAsync(int id, string connectionId = null, BasicUserInfo currUser = null);
+        Task<ReturnInfo<ModelT>> FindAsync(IdT id, string connectionId = null, BasicUserInfo<IdT> currUser = null);
 
         /// <summary>
         /// 异步根据ID集合查找模型列表
@@ -33,7 +34,7 @@ namespace Hzdtf.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        Task<ReturnInfo<IList<ModelT>>> FindAsync(int[] ids, string connectionId = null, BasicUserInfo currUser = null);
+        Task<ReturnInfo<IList<ModelT>>> FindAsync(IdT[] ids, string connectionId = null, BasicUserInfo<IdT> currUser = null);
 
         /// <summary>
         /// 异步根据ID判断模型是否存在
@@ -42,7 +43,7 @@ namespace Hzdtf.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        Task<ReturnInfo<bool>> ExistsAsync(int id, string connectionId = null, BasicUserInfo currUser = null);
+        Task<ReturnInfo<bool>> ExistsAsync(IdT id, string connectionId = null, BasicUserInfo<IdT> currUser = null);
 
         /// <summary>
         /// 异步统计模型数
@@ -50,7 +51,7 @@ namespace Hzdtf.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        Task<ReturnInfo<int>> CountAsync(string connectionId = null, BasicUserInfo currUser = null);
+        Task<ReturnInfo<int>> CountAsync(string connectionId = null, BasicUserInfo<IdT> currUser = null);
 
         /// <summary>
         /// 异步查询模型列表
@@ -58,7 +59,7 @@ namespace Hzdtf.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        Task<ReturnInfo<IList<ModelT>>> QueryAsync(string connectionId = null, BasicUserInfo currUser = null);
+        Task<ReturnInfo<IList<ModelT>>> QueryAsync(string connectionId = null, BasicUserInfo<IdT> currUser = null);
 
         /// <summary>
         /// 异步执行查询模型列表并分页
@@ -69,7 +70,7 @@ namespace Hzdtf.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        Task<ReturnInfo<PagingInfo<ModelT>>> QueryPageAsync(int pageIndex, int pageSize, FilterInfo filter = null, string connectionId = null, BasicUserInfo currUser = null);
+        Task<ReturnInfo<PagingInfo<ModelT>>> QueryPageAsync(int pageIndex, int pageSize, FilterInfo filter = null, string connectionId = null, BasicUserInfo<IdT> currUser = null);
 
         #endregion
 
@@ -82,7 +83,7 @@ namespace Hzdtf.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        Task<ReturnInfo<bool>> AddAsync(ModelT model, string connectionId = null, BasicUserInfo currUser = null);
+        Task<ReturnInfo<bool>> AddAsync(ModelT model, string connectionId = null, BasicUserInfo<IdT> currUser = null);
 
         /// <summary>
         /// 异步添加模型列表
@@ -91,7 +92,7 @@ namespace Hzdtf.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        Task<ReturnInfo<bool>> AddAsync(IList<ModelT> models, string connectionId = null, BasicUserInfo currUser = null);
+        Task<ReturnInfo<bool>> AddAsync(IList<ModelT> models, string connectionId = null, BasicUserInfo<IdT> currUser = null);
 
         /// <summary>
         /// 异步设置模型
@@ -101,7 +102,7 @@ namespace Hzdtf.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        Task<ReturnInfo<bool>> SetAsync(ModelT model, string connectionId = null, BasicUserInfo currUser = null);
+        Task<ReturnInfo<bool>> SetAsync(ModelT model, string connectionId = null, BasicUserInfo<IdT> currUser = null);
 
         /// <summary>
         /// 异步根据ID修改模型
@@ -110,7 +111,7 @@ namespace Hzdtf.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        Task<ReturnInfo<bool>> ModifyByIdAsync(ModelT model, string connectionId = null, BasicUserInfo currUser = null);
+        Task<ReturnInfo<bool>> ModifyByIdAsync(ModelT model, string connectionId = null, BasicUserInfo<IdT> currUser = null);
 
         /// <summary>
         /// 异步根据ID移除模型
@@ -119,7 +120,7 @@ namespace Hzdtf.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        Task<ReturnInfo<bool>> RemoveByIdAsync(int id, string connectionId = null, BasicUserInfo currUser = null);
+        Task<ReturnInfo<bool>> RemoveByIdAsync(IdT id, string connectionId = null, BasicUserInfo<IdT> currUser = null);
 
         /// <summary>
         /// 异步根据ID数组移除模型
@@ -128,7 +129,7 @@ namespace Hzdtf.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        Task<ReturnInfo<bool>> RemoveByIdsAsync(int[] ids, string connectionId = null, BasicUserInfo currUser = null);
+        Task<ReturnInfo<bool>> RemoveByIdsAsync(IdT[] ids, string connectionId = null, BasicUserInfo<IdT> currUser = null);
 
         /// <summary>
         /// 异步清空所有模型
@@ -136,7 +137,7 @@ namespace Hzdtf.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息任务</returns>
-        Task<ReturnInfo<bool>> ClearAsync(string connectionId = null, BasicUserInfo currUser = null);
+        Task<ReturnInfo<bool>> ClearAsync(string connectionId = null, BasicUserInfo<IdT> currUser = null);
 
         #endregion
     }

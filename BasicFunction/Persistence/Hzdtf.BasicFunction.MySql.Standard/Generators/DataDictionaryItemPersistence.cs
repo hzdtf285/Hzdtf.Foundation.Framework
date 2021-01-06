@@ -11,7 +11,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class DataDictionaryItemPersistence : MySqlDapperBase<DataDictionaryItemInfo>, IDataDictionaryItemPersistence
+    public partial class DataDictionaryItemPersistence : MySqlDapperBase<int, DataDictionaryItemInfo>, IDataDictionaryItemPersistence
     {
         /// <summary>
         /// 表名
@@ -23,6 +23,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
         /// </summary>
         private readonly static string[] INSERT_FIELD_NAMES = new string[]
         {
+            "id",
             "code",
             "data_dictionary_id",
             "creater_id",

@@ -10,8 +10,9 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
     /// 持久化接口
     /// @ 黄振东
     /// </summary>
+    /// <typeparam name="IdT">ID类型</typeparam>
     /// <typeparam name="ModelT">模型类型</typeparam>
-    public interface IPersistence<ModelT> : IPersistenceAsync<ModelT> where ModelT : SimpleInfo
+    public interface IPersistence<IdT, ModelT> : IPersistenceAsync<IdT, ModelT> where ModelT : SimpleInfo<IdT>
     {
         #region 读取方法
 
@@ -21,7 +22,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="id">ID</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>模型</returns>
-        ModelT Select(int id, string connectionId = null);
+        ModelT Select(IdT id, string connectionId = null);
 
         /// <summary>
         /// 根据ID查询模型
@@ -30,7 +31,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="propertyNames">属性名称集合</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>模型</returns>
-        ModelT Select(int id, string[] propertyNames, string connectionId = null);
+        ModelT Select(IdT id, string[] propertyNames, string connectionId = null);
 
         /// <summary>
         /// 根据ID集合查询模型
@@ -38,7 +39,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="ids">ID集合</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>模型</returns>
-        IList<ModelT> Select(int[] ids, string connectionId = null);
+        IList<ModelT> Select(IdT[] ids, string connectionId = null);
 
         /// <summary>
         /// 根据ID集合查询模型
@@ -47,7 +48,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="propertyNames">属性名称集合</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>模型</returns>
-        IList<ModelT> Select(int[] ids, string[] propertyNames, string connectionId = null);
+        IList<ModelT> Select(IdT[] ids, string[] propertyNames, string connectionId = null);
 
         /// <summary>
         /// 根据ID统计模型数
@@ -55,7 +56,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="id">ID</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>模型数</returns>
-        int Count(int id, string connectionId = null);
+        int Count(IdT id, string connectionId = null);
 
         /// <summary>
         /// 统计模型数
@@ -149,7 +150,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="id">ID</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>影响行数</returns>
-        int DeleteById(int id, string connectionId = null);
+        int DeleteById(IdT id, string connectionId = null);
 
         /// <summary>
         /// 根据ID数组删除模型
@@ -157,7 +158,7 @@ namespace Hzdtf.Persistence.Contract.Standard.Data
         /// <param name="ids">ID数组</param>
         /// <param name="connectionId">连接ID</param>
         /// <returns>影响行数</returns>
-        int DeleteByIds(int[] ids, string connectionId = null);
+        int DeleteByIds(IdT[] ids, string connectionId = null);
 
         /// <summary>
         /// 删除所有模型

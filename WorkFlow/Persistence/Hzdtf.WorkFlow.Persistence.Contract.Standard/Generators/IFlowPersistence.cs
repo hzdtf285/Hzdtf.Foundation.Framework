@@ -10,7 +10,7 @@ namespace Hzdtf.WorkFlow.Persistence.Contract.Standard
     /// 流程持久化接口
     /// @ 黄振东
     /// </summary>
-    public partial interface IFlowPersistence : IPersistence<FlowInfo>
+    public partial interface IFlowPersistence : IPersistence<int, FlowInfo>
     {
     }
 }

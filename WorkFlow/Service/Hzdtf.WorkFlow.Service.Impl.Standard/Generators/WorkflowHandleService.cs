@@ -14,7 +14,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class WorkflowHandleService : ServiceBase<WorkflowHandleInfo, IWorkflowHandlePersistence>, IWorkflowHandleService
+    public partial class WorkflowHandleService : ServiceBase<int, WorkflowHandleInfo, IWorkflowHandlePersistence>, IWorkflowHandleService
     {
     }
 }

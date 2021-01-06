@@ -25,11 +25,11 @@ namespace Hzdtf.Autofac.Extend.Standard.Intercepteds
         {
             isExecProceeded = false;
             var currUser = attr.CurrUserParamIndex == -1 ? null : invocation.Arguments[attr.CurrUserParamIndex];
-            var user = UserTool.GetCurrUser(currUser as BasicUserInfo);
-            if (user == null)
-            {
-                basicReturn.SetCodeMsg(403, "您还未授权，无权限访问");
-            }
+            //var user = UserTool.GetCurrUser(currUser as BasicUserInfo);
+            //if (user == null)
+            //{
+            //    basicReturn.SetCodeMsg(403, "您还未授权，无权限访问");
+            //}
         }
     }
 }

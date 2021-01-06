@@ -10,7 +10,7 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard
     /// 送件流程路线服务接口
     /// @ 黄振东
     /// </summary>
-    public partial interface ISendFlowRouteService : IService<SendFlowRouteInfo>
+    public partial interface ISendFlowRouteService : IService<int, SendFlowRouteInfo>
     {
     }
 }

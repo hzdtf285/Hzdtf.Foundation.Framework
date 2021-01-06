@@ -14,7 +14,7 @@ namespace Hzdtf.BasicFunction.Model.Standard
     /// @ 黄振东
     /// </summary>
     [MessagePackObject]
-    public partial class RoleInfo : CodeNameInfo
+    public partial class RoleInfo : CodeNameInfo<int>
     {
 ﻿        /// <summary>
         /// 备注_名称

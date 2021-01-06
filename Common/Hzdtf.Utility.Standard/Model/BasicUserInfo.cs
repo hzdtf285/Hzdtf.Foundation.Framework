@@ -14,8 +14,9 @@ namespace Hzdtf.Utility.Standard.Model
     /// 基本用户信息
     /// @ 黄振东
     /// </summary>
+    /// <typeparam name="IdT">ID类型</typeparam>
     [MessagePackObject]
-    public class BasicUserInfo : CodeNameInfo
+    public class BasicUserInfo<IdT> : CodeNameInfo<IdT>
     {
         /// <summary>
         /// 登录ID_名称
@@ -110,5 +111,33 @@ namespace Hzdtf.Utility.Standard.Model
             get;
             set;
         }
+
+        /// <summary>
+        /// 租户ID_名称
+        /// 一般情况没有，特殊情况下有用，如SAAS中的租户
+        /// </summary>
+        public const string TenantId_Name = "TenantId";
+
+        /// <summary>
+        /// 租户ID
+        /// 一般情况没有，特殊情况下有用，如SAAS中的租户
+        /// </summary>
+        [JsonProperty("tenantId")]
+        [Display(Name = "租户ID", Order = 999, AutoGenerateField = false)]
+        [MessagePack.Key("tenantId")]
+        public IdT TenantId
+        {
+            get;
+            set;
+        }
+    }
+
+    /// <summary>
+    /// 基本用户信息
+    /// @ 黄振东
+    /// </summary>
+    [MessagePackObject]
+    public class BasicUserInfo : BasicUserInfo<int>
+    {
     }
 }

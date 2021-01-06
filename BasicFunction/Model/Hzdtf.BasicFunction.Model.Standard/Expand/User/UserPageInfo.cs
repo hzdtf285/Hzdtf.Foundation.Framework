@@ -11,7 +11,7 @@ namespace Hzdtf.BasicFunction.Model.Standard.Expand.User
     /// 用户页面信息
     /// </summary>
     [MessagePackObject]
-    public class UserPageInfo : PageInfo
+    public class UserPageInfo : PageInfo<int>
     {
         /// <summary>
         /// 角色列表

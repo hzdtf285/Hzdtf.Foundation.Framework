@@ -34,7 +34,7 @@ namespace Hzdtf.BasicFunction.WorkFlow.Standard
         /// <param name="returnInfo">返回信息</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>申请单号</returns>
-        protected override string BuilderApplyNo<FormT>(FlowInitInfo<FormT> flowInit, ReturnInfo<WorkflowBasicInfo> returnInfo, BasicUserInfo currUser = null)
+        protected override string BuilderApplyNo<FormT>(FlowInitInfo<FormT> flowInit, ReturnInfo<WorkflowBasicInfo> returnInfo, BasicUserInfo<int> currUser = null)
         {
             var buildNoReturnInfo = SequenceService.BuildNo(flowInit.WorkflowCode, currUser: currUser);
             if (buildNoReturnInfo.Failure())

@@ -28,7 +28,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
             int result = 0;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                string sql = $"{CountSql()} WHERE {GetFieldByProp("DataDictionaryId")}=@DataDictionaryId AND `{GetFieldByProp("Text")}`=@Text";
+                string sql = $"{BasicCountSql()} WHERE {GetFieldByProp("DataDictionaryId")}=@DataDictionaryId AND `{GetFieldByProp("Text")}`=@Text";
                 Log.TraceAsync(sql, source: this.GetType().Name, tags: "CountByDataItemIdAndText");
                 result = dbConn.ExecuteScalar<int>(sql, new { DataDictionaryId = dataDictionaryId, Text = text });
             }, AccessMode.SLAVE);
@@ -49,7 +49,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
             int result = 0;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                string sql = $"{CountSql()} WHERE `{GetFieldByProp("Id")}`!=@Id AND {GetFieldByProp("DataDictionaryId")}=@DataDictionaryId AND `{GetFieldByProp("Text")}`=@Text";
+                string sql = $"{BasicCountSql()} WHERE `{GetFieldByProp("Id")}`!=@Id AND {GetFieldByProp("DataDictionaryId")}=@DataDictionaryId AND `{GetFieldByProp("Text")}`=@Text";
                 Log.TraceAsync(sql, source: this.GetType().Name, tags: "CountByDataItemIdAndTextNotId");
                 result = dbConn.ExecuteScalar<int>(sql, new { Id = notId, DataDictionaryId = dataDictionaryId, Text = text });
             }, AccessMode.SLAVE);
@@ -68,7 +68,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
             IList<DataDictionaryItemInfo> result = null;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                string sql = $"{SelectSql()} WHERE {GetFieldByProp("DataDictionaryId")}=@DataDictionaryId";
+                string sql = $"{BasicSelectSql()} WHERE {GetFieldByProp("DataDictionaryId")}=@DataDictionaryId";
                 Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectByDataDictionaryId");
                 result = dbConn.Query<DataDictionaryItemInfo>(sql, new { DataDictionaryId = dataDictionaryId }).AsList();
             }, AccessMode.SLAVE);
@@ -87,7 +87,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
             IList<DataDictionaryItemInfo> result = null;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                string sql = $"{SelectSql("DDI.")} INNER JOIN data_dictionary DD" +
+                string sql = $"{BasicSelectSql("DDI.")} INNER JOIN data_dictionary DD" +
                 $" ON DD.id=DDI.data_dictionary_id AND DD.code=@DataDictionaryCode";
                 Log.TraceAsync(sql, source: this.GetType().Name, tags: "SelectByDataDictionaryCode");
                 result = dbConn.Query<DataDictionaryItemInfo>(sql, new { DataDictionaryCode = dataDictionaryCode }).AsList();

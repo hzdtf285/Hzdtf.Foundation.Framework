@@ -10,7 +10,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Diversion.IFindFlowCensorship.NextHandler(Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipInInfo,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Diversion.IFindFlowCensorship.NextHandler(Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipInInfo,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             查找下一个处理信息
             </summary>
@@ -43,7 +43,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Diversion.IFindHandlerUser.FindById(System.Int32,System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Diversion.IFindHandlerUser.FindById(System.Int32,System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据ID查找用户信息数组
             </summary>
@@ -59,7 +59,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.BasicFormEngineBase.BeforeExecFlow(Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipOutInfo,System.Object,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.BasicFormEngineBase.BeforeExecFlow(Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipOutInfo,System.Object,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             执行流程前
             </summary>
@@ -69,7 +69,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.BasicFormEngineBase.AfterExecFlow(Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipOutInfo,System.Object,System.Boolean,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.BasicFormEngineBase.AfterExecFlow(Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipOutInfo,System.Object,System.Boolean,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             执行流程后
             </summary>
@@ -86,7 +86,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.BasicFormRemoveBase.BeforeExecFlow(Hzdtf.WorkFlow.Model.Standard.WorkflowInfo,Hzdtf.WorkFlow.Model.Standard.Expand.RemoveType,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.BasicFormRemoveBase.BeforeExecFlow(Hzdtf.WorkFlow.Model.Standard.WorkflowInfo,Hzdtf.WorkFlow.Model.Standard.Expand.RemoveType,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             执行流程前
             </summary>
@@ -96,7 +96,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.BasicFormRemoveBase.AfterExecFlow(Hzdtf.WorkFlow.Model.Standard.WorkflowInfo,Hzdtf.WorkFlow.Model.Standard.Expand.RemoveType,System.Boolean,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.BasicFormRemoveBase.AfterExecFlow(Hzdtf.WorkFlow.Model.Standard.WorkflowInfo,Hzdtf.WorkFlow.Model.Standard.Expand.RemoveType,System.Boolean,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             执行流程后
             </summary>
@@ -113,7 +113,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.IFormEngine.BeforeExecFlow(Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipOutInfo,System.Object,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.IFormEngine.BeforeExecFlow(Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipOutInfo,System.Object,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             执行流程前
             </summary>
@@ -123,7 +123,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.IFormEngine.AfterExecFlow(Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipOutInfo,System.Object,System.Boolean,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.IFormEngine.AfterExecFlow(Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipOutInfo,System.Object,System.Boolean,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             执行流程后
             </summary>
@@ -146,7 +146,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.IFormRemove.BeforeExecFlow(Hzdtf.WorkFlow.Model.Standard.WorkflowInfo,Hzdtf.WorkFlow.Model.Standard.Expand.RemoveType,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.IFormRemove.BeforeExecFlow(Hzdtf.WorkFlow.Model.Standard.WorkflowInfo,Hzdtf.WorkFlow.Model.Standard.Expand.RemoveType,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             执行流程前
             </summary>
@@ -156,7 +156,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.IFormRemove.AfterExecFlow(Hzdtf.WorkFlow.Model.Standard.WorkflowInfo,Hzdtf.WorkFlow.Model.Standard.Expand.RemoveType,System.Boolean,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.IFormRemove.AfterExecFlow(Hzdtf.WorkFlow.Model.Standard.WorkflowInfo,Hzdtf.WorkFlow.Model.Standard.Expand.RemoveType,System.Boolean,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             执行流程后
             </summary>
@@ -178,9 +178,9 @@
             表单服务
             @黄振东
             </summary>
-            <typeparam name="ConcreteFormInfT">具体表单信息类型</typeparam>
+            <typeparam name="ConcreteFormInfoT">具体表单信息类型</typeparam>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.IFormService`1.Set(`0,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.IFormService`1.Set(`0,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             设置表单
             如果ID存在则修改，否则添加
@@ -190,7 +190,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.IFormService`1.ModifyFlowStatusByWorkflowId(`0,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.IFormService`1.ModifyFlowStatusByWorkflowId(`0,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据流程ID修改流程状态
             </summary>
@@ -199,7 +199,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.IFormService`1.RemoveByWorkflowId(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.IFormService`1.RemoveByWorkflowId(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据工作流ID移除
             </summary>
@@ -225,7 +225,7 @@
             表单数据读取工厂
             </summary>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.SimpleFormEngineBase`1.AfterExecFlow(Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipOutInfo,System.Object,System.Boolean,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.SimpleFormEngineBase`1.AfterExecFlow(Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipOutInfo,System.Object,System.Boolean,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             执行流程后
             </summary>
@@ -236,7 +236,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.SimpleFormEngineBase`1.ToApplyConcreteFormInfo(Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipOutInfo,System.Object,Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},Hzdtf.WorkFlow.Model.Standard.Expand.FlowInInfo{Hzdtf.WorkFlow.Model.Standard.Expand.FlowInitInfo{Hzdtf.Utility.Standard.Model.PersonTimeInfo}}@)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.SimpleFormEngineBase`1.ToApplyConcreteFormInfo(Hzdtf.WorkFlow.Model.Standard.Expand.Diversion.FlowCensorshipOutInfo,System.Object,Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},Hzdtf.WorkFlow.Model.Standard.Expand.FlowInInfo{Hzdtf.WorkFlow.Model.Standard.Expand.FlowInitInfo{Hzdtf.Utility.Standard.Model.PersonTimeInfo{System.Int32}}}@)">
             <summary>
             转换为申请的具体表单信息
             </summary>
@@ -258,7 +258,7 @@
             表单服务
             </summary>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.SimpleFormRemoveBase`1.AfterExecFlow(Hzdtf.WorkFlow.Model.Standard.WorkflowInfo,Hzdtf.WorkFlow.Model.Standard.Expand.RemoveType,System.Boolean,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.Form.SimpleFormRemoveBase`1.AfterExecFlow(Hzdtf.WorkFlow.Model.Standard.WorkflowInfo,Hzdtf.WorkFlow.Model.Standard.Expand.RemoveType,System.Boolean,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             执行流程后
             </summary>
@@ -282,7 +282,7 @@
             </summary>
             <typeparam name="FormT">表单类型</typeparam>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.IFormDataReader`1.ReaderByWorkflowId(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.IFormDataReader`1.ReaderByWorkflowId(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据工作流ID读取表单数据
             </summary>
@@ -315,7 +315,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.IWorkflowConfigReader.ReaderAllConfig(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.IWorkflowConfigReader.ReaderAllConfig(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据工作流定义ID读取工作流定义信息的所有配置
             </summary>
@@ -324,7 +324,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.IWorkflowConfigReader.ReaderAllConfig(System.String,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.IWorkflowConfigReader.ReaderAllConfig(System.String,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据工作流编码读取工作流定义信息的所有配置
             </summary>
@@ -340,7 +340,7 @@
             </summary>
             <typeparam name="FlowInT">流程输入类型</typeparam>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.IWorkflowEngine`1.Execute(`0,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.IWorkflowEngine`1.Execute(`0,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             执行
             </summary>
@@ -367,7 +367,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.IWorkflowFormService.Save``1(Hzdtf.WorkFlow.Model.Standard.Expand.FlowInitInfo{``0},Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.IWorkflowFormService.Save``1(Hzdtf.WorkFlow.Model.Standard.Expand.FlowInitInfo{``0},Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             保存
             </summary>
@@ -376,7 +376,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.IWorkflowFormService.Apply``1(Hzdtf.WorkFlow.Model.Standard.Expand.FlowInitInfo{``0},Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.Engine.IWorkflowFormService.Apply``1(Hzdtf.WorkFlow.Model.Standard.Expand.FlowInitInfo{``0},Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             申请
             </summary>
@@ -413,7 +413,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IFlowCensorshipService.QueryByFlowId(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IFlowCensorshipService.QueryByFlowId(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据流程ID查询流程关卡列表
             </summary>
@@ -428,7 +428,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IReturnFlowRouteServiceAsync.QueryByFlowCensorshipIdAsync(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IReturnFlowRouteServiceAsync.QueryByFlowCensorshipIdAsync(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             异步根据流程关卡ID查询退件流程路线列表
             </summary>
@@ -437,7 +437,7 @@
             <param name="currUser">当前用户</param>
             <returns>任务</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IReturnFlowRouteServiceAsync.QueryByFlowCensorshipIdsAsync(System.Int32[],System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IReturnFlowRouteServiceAsync.QueryByFlowCensorshipIdsAsync(System.Int32[],System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             异步根据流程关卡ID数组查询退件流程路线列表
             </summary>
@@ -456,7 +456,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IReturnFlowRouteService.QueryByFlowCensorshipId(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IReturnFlowRouteService.QueryByFlowCensorshipId(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据流程关卡ID查询退件流程路线列表
             </summary>
@@ -465,7 +465,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IReturnFlowRouteService.QueryByFlowCensorshipIds(System.Int32[],System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IReturnFlowRouteService.QueryByFlowCensorshipIds(System.Int32[],System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据流程关卡ID数组查询退件流程路线列表
             </summary>
@@ -480,7 +480,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.ISendFlowRouteServiceAsync.QueryByFlowCensorshipIdAsync(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.ISendFlowRouteServiceAsync.QueryByFlowCensorshipIdAsync(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             异步根据流程关卡ID查询送件流程路线列表
             </summary>
@@ -489,7 +489,7 @@
             <param name="currUser">当前用户</param>
             <returns>任务</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.ISendFlowRouteServiceAsync.QueryByFlowCensorshipIdsAsync(System.Int32[],System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.ISendFlowRouteServiceAsync.QueryByFlowCensorshipIdsAsync(System.Int32[],System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             异步根据流程关卡ID数组查询送件流程路线列表
             </summary>
@@ -508,7 +508,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.ISendFlowRouteService.QueryByFlowCensorshipId(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.ISendFlowRouteService.QueryByFlowCensorshipId(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据流程关卡ID查询送件流程路线列表
             </summary>
@@ -517,7 +517,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.ISendFlowRouteService.QueryByFlowCensorshipIds(System.Int32[],System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.ISendFlowRouteService.QueryByFlowCensorshipIds(System.Int32[],System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据流程关卡ID数组查询送件流程路线列表
             </summary>
@@ -536,7 +536,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowDefineService.FindByCode(System.String,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowDefineService.FindByCode(System.String,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据编码查询工作流定义信息
             </summary>
@@ -555,7 +555,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowHandleService.ModifyToReadedById(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowHandleService.ModifyToReadedById(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据ID修改为已读
             </summary>
@@ -564,7 +564,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowHandleService.ExistsAuditAndUnhandleByHandleId(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowHandleService.ExistsAuditAndUnhandleByHandleId(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据处理人ID是否存在审核且未处理的个数
             </summary>
@@ -573,7 +573,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowHandleService.ExistsAuditAndUnhandleByHandleIds(System.Int32[],System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowHandleService.ExistsAuditAndUnhandleByHandleIds(System.Int32[],System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据处理人ID集合是否存在审核且未处理的个数
             </summary>
@@ -582,7 +582,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowHandleService.FindByWorkflowIdAndFlowCensorshipIdAndHandlerId(System.Int32,System.Int32,System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowHandleService.FindByWorkflowIdAndFlowCensorshipIdAndHandlerId(System.Int32,System.Int32,System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据工作流人ID、流程关卡ID和处理人ID查找工作流处理信息
             </summary>
@@ -603,7 +603,7 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowService.ExistsByApplyNo(System.String,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowService.ExistsByApplyNo(System.String,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据申请单号判断是否存在
             </summary>
@@ -612,7 +612,7 @@
             <param name="currUser">当前用户</param>
             <returns>申请单号判断是否存在</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowService.QueryCurrUserWaitHandlePage(System.Int32,System.Int32,Hzdtf.WorkFlow.Model.Standard.Expand.Filter.WaitHandleFilterInfo,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowService.QueryCurrUserWaitHandlePage(System.Int32,System.Int32,Hzdtf.WorkFlow.Model.Standard.Expand.Filter.WaitHandleFilterInfo,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             查询当前用户的待办的工作流列表并分页
             </summary>
@@ -623,7 +623,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowService.QueryCurrUserAuditedFlowPage(System.Int32,System.Int32,Hzdtf.WorkFlow.Model.Standard.Expand.Filter.AuditFlowFilterInfo,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowService.QueryCurrUserAuditedFlowPage(System.Int32,System.Int32,Hzdtf.WorkFlow.Model.Standard.Expand.Filter.AuditFlowFilterInfo,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             查询当前用户的已审核的工作流列表并分页
             </summary>
@@ -634,7 +634,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowService.QueryCurrUserApplyFlowPage(System.Int32,System.Int32,Hzdtf.WorkFlow.Model.Standard.Expand.Filter.ApplyFlowFilterInfo,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowService.QueryCurrUserApplyFlowPage(System.Int32,System.Int32,Hzdtf.WorkFlow.Model.Standard.Expand.Filter.ApplyFlowFilterInfo,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             查询当前用户的申请的工作流列表并分页
             </summary>
@@ -645,7 +645,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowService.FindContainHandlesAndAllConfigs(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowService.FindContainHandlesAndAllConfigs(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据ID查找工作流信息且包含处理列表和所有配置信息
             </summary>
@@ -654,7 +654,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowService.FindCurrUserApplyDetail(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowService.FindCurrUserApplyDetail(System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据ID查找当前用户申请明细信息
             </summary>
@@ -663,7 +663,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowService.FindAuditDetail(System.Int32,System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowService.FindAuditDetail(System.Int32,System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据ID查找审核明细信息
             </summary>
@@ -673,7 +673,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowService.FindWaitDetail(System.Int32,System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowService.FindWaitDetail(System.Int32,System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据ID查找待审核明细信息
             </summary>
@@ -683,7 +683,7 @@
             <param name="currUser">当前用户</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowService.FindAuditedDetail(System.Int32,System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.WorkFlow.Service.Contract.Standard.IWorkflowService.FindAuditedDetail(System.Int32,System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据ID查找已审核明细信息
             </summary>

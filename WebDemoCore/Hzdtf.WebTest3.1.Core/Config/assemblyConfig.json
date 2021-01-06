@@ -6,10 +6,6 @@
         "Hzdtf.WorkFlow.MvcController.Core",
         "Hzdtf.BasicFunction.MvcController.Core",
         "Hzdtf.Demo.MvcController.Core"
-      ],
-      "Intercepteds": [
-        "Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.DisabledInterceptor",
-        "Hzdtf.BasicFunction.Service.Autofac.Standard,Hzdtf.BasicFunction.Service.Autofac.Standard.PermissionValiInterceptor"
       ]
     },
     {
@@ -44,8 +40,6 @@
       ],
       "Lifecycle": "SIGNLETON",
       "Intercepteds": [
-        "Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.TryExceptionInterceptor",
-        "Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.AuthInterceptor",
         "Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor",
         "Hzdtf.Autofac.Extend.Standard,Hzdtf.Autofac.Extend.Standard.Intercepteds.ParamValiInterceptor",
         "Hzdtf.Persistence.Autofac.Standard,Hzdtf.Persistence.Autofac.Standard.TransactionInterceptor"

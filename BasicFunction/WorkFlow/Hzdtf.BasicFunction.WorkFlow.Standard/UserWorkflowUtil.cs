@@ -34,7 +34,7 @@ namespace Hzdtf.BasicFunction.WorkFlow.Standard
         /// <param name="arg2">用户ID</param>
         /// <param name="arg3">连接ID</param>
         /// <param name="arg4">当前用户</param>
-        private static void UserService_RemoveByIdsing(ReturnInfo<bool> arg1, int[] arg2, string arg3, BasicUserInfo arg4)
+        private static void UserService_RemoveByIdsing(ReturnInfo<bool> arg1, int[] arg2, string arg3, BasicUserInfo<int> arg4)
         {
             IWorkflowHandleService workflowHandleService = AutofacTool.Resolve<IWorkflowHandleService>();
             ReturnInfo<bool[]> handleReturnInfo = workflowHandleService.ExistsAuditAndUnhandleByHandleIds(arg2, arg3, arg4);
@@ -66,7 +66,7 @@ namespace Hzdtf.BasicFunction.WorkFlow.Standard
         /// <param name="arg2">用户ID</param>
         /// <param name="arg3">连接ID</param>
         /// <param name="arg4">当前用户</param>
-        private static void UserService_RemoveByIding(ReturnInfo<bool> arg1, int arg2, string arg3, BasicUserInfo arg4)
+        private static void UserService_RemoveByIding(ReturnInfo<bool> arg1, int arg2, string arg3, BasicUserInfo<int> arg4)
         {
             IWorkflowHandleService workflowHandleService = AutofacTool.Resolve<IWorkflowHandleService>();
             ReturnInfo<bool> handleReturnInfo = workflowHandleService.ExistsAuditAndUnhandleByHandleId(arg2, arg3, arg4);

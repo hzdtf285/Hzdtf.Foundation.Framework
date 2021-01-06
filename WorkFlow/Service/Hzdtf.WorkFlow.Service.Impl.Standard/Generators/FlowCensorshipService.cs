@@ -14,7 +14,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class FlowCensorshipService : ServiceBase<FlowCensorshipInfo, IFlowCensorshipPersistence>, IFlowCensorshipService
+    public partial class FlowCensorshipService : ServiceBase<int, FlowCensorshipInfo, IFlowCensorshipPersistence>, IFlowCensorshipService
     {
     }
 }

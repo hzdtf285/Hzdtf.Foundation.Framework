@@ -19,7 +19,7 @@ namespace |NamespacePfx|.MvcController.Core
     [ApiController]
     [Route("api/[controller]")]
     [Authorize]
-    public partial class |Name| : ManageControllerBase<PageInfo, |Model|Info, I|Model|Service, FilterInfo>
+    public partial class |Name| : ManageControllerBase<PageInfo<|PkType|>, |Model|Info, I|Model|Service, FilterInfo>
     {
         /// <summary>
         /// 菜单编码

@@ -77,7 +77,7 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\Common\Hzdtf.Utility.Standard\bin\Deb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.csprojAssemblyReference.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.AssemblyInfoInputs.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.AssemblyInfo.cs
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.csproj.CoreCompileInputs.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.csproj.CopyComplete
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Common\Hzdtf.Utility.Standard\obj\Debug\netstandard2.0\Hzdtf.Utility.Standard.csproj.CoreCompileInputs.cache

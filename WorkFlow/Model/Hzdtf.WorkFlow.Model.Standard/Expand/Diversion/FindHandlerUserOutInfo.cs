@@ -19,7 +19,7 @@ namespace Hzdtf.WorkFlow.Model.Standard.Expand.Diversion
         /// </summary>
         [JsonProperty("concreteCensorship")]
         [MessagePack.Key("concreteCensorship")]
-        public CodeNameInfo ConcreteCensorship
+        public CodeNameInfo<int> ConcreteCensorship
         {
             get;
             set;
@@ -30,7 +30,7 @@ namespace Hzdtf.WorkFlow.Model.Standard.Expand.Diversion
         /// </summary>
         [JsonProperty("users")]
         [MessagePack.Key("users")]
-        public BasicUserInfo[] Users
+        public BasicUserInfo<int>[] Users
         {
             get;
             set;

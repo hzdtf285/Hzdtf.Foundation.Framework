@@ -21,7 +21,7 @@ namespace Hzdtf.Autofac.Extend.Standard
         /// <returns>是否能注入</returns>
         public static bool CanInject(Type type)
         {
-            if (type.IsClass && !type.IsAbstract)
+            if (type.IsClass && type.IsPublic && !type.IsAbstract)
             {
                 return !type.GetCustomAttributes(typeof(InjectAttribute), false).IsNullOrLength0();                
             }

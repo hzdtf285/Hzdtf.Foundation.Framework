@@ -1,0 +1,143 @@
+2021-01-04 21:22:59.5843 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware ERROR eventId:UnhandledException,An unhandled exception has occurred while executing the request. 标签:192.168.3.16,DESKTOP-KDN1753 test abc的    at Hzdtf.BasicFunction.Service.Impl.Standard.UserService.Vali(String user, String password) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Service\Hzdtf.BasicFunction.Service.Impl.Standard\Expand\User\UserServiceEx.cs:line 343
+   at Castle.Proxies.UserServiceProxy.Vali_callback(String user, String password)
+   at Castle.Proxies.Invocations.UserService_Vali.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\Intercepteds\InterceptorBase.cs:line 31
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\Intercepteds\InterceptorBase.cs:line 31
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor.Intercept(IInvocation invocation) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\Intercepteds\ProcTrackLogInterceptor.cs:line 93
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.UserServiceProxy.Vali(String user, String password)
+   at Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.UserValiService.Vali(String user, String password) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Service\Hzdtf.BasicFunction.Service.Impl.Standard\Expand\User\UserValiService.cs:line 46
+   at Castle.Proxies.UserValiServiceProxy.Vali_callback(String user, String password)
+   at Castle.Proxies.Invocations.UserValiService_Vali.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\Intercepteds\InterceptorBase.cs:line 31
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\Intercepteds\InterceptorBase.cs:line 31
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor.Intercept(IInvocation invocation) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\Intercepteds\ProcTrackLogInterceptor.cs:line 93
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.UserValiServiceProxy.Vali(String user, String password)
+   at Hzdtf.Authorization.Contract.Standard.IdentityAuth.IdentityAuthBase`2.Accredit(String user, String password) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Contract.Standard\IdentityAuth\IdentityAuthBase.cs:line 51
+   at Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.<>c__DisplayClass22_0.<Login>b__0(String user, String pwd, ReturnInfo`1 reInfo) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\Home\AuthorizationController.cs:line 123
+   at Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.ExecLogin(LoginInfo loginInfo, Action`3 callbackLogin) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\Home\AuthorizationController.cs:line 245
+   at Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.Login(LoginInfo loginInfo) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\Home\AuthorizationController.cs:line 114
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-01-04 21:23:48.0037 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware ERROR eventId:UnhandledException,An unhandled exception has occurred while executing the request. 标签:192.168.3.16,DESKTOP-KDN1753 test abc的    at Hzdtf.BasicFunction.Service.Impl.Standard.UserService.Vali(String user, String password) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Service\Hzdtf.BasicFunction.Service.Impl.Standard\Expand\User\UserServiceEx.cs:line 343
+   at Castle.Proxies.UserServiceProxy.Vali_callback(String user, String password)
+   at Castle.Proxies.Invocations.UserService_Vali.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\Intercepteds\InterceptorBase.cs:line 31
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\Intercepteds\InterceptorBase.cs:line 31
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor.Intercept(IInvocation invocation) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\Intercepteds\ProcTrackLogInterceptor.cs:line 93
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.UserServiceProxy.Vali(String user, String password)
+   at Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.UserValiService.Vali(String user, String password) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Service\Hzdtf.BasicFunction.Service.Impl.Standard\Expand\User\UserValiService.cs:line 46
+   at Castle.Proxies.UserValiServiceProxy.Vali_callback(String user, String password)
+   at Castle.Proxies.Invocations.UserValiService_Vali.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\Intercepteds\InterceptorBase.cs:line 31
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\Intercepteds\InterceptorBase.cs:line 31
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor.Intercept(IInvocation invocation) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\Intercepteds\ProcTrackLogInterceptor.cs:line 93
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.UserValiServiceProxy.Vali(String user, String password)
+   at Hzdtf.Authorization.Contract.Standard.IdentityAuth.IdentityAuthBase`2.Accredit(String user, String password) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Contract.Standard\IdentityAuth\IdentityAuthBase.cs:line 51
+   at Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.<>c__DisplayClass22_0.<Login>b__0(String user, String pwd, ReturnInfo`1 reInfo) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\Home\AuthorizationController.cs:line 123
+   at Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.ExecLogin(LoginInfo loginInfo, Action`3 callbackLogin) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\Home\AuthorizationController.cs:line 245
+   at Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.Login(LoginInfo loginInfo) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\Home\AuthorizationController.cs:line 114
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-01-04 21:24:49.1534 ApiExceptionHandleMiddleware ERROR test abc的 标签:192.168.3.16,DESKTOP-KDN1753 test abc的    at Hzdtf.BasicFunction.Service.Impl.Standard.UserService.Vali(String user, String password) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Service\Hzdtf.BasicFunction.Service.Impl.Standard\Expand\User\UserServiceEx.cs:line 343
+   at Castle.Proxies.UserServiceProxy.Vali_callback(String user, String password)
+   at Castle.Proxies.Invocations.UserService_Vali.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\Intercepteds\InterceptorBase.cs:line 31
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\Intercepteds\InterceptorBase.cs:line 31
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor.Intercept(IInvocation invocation) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\Intercepteds\ProcTrackLogInterceptor.cs:line 93
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.UserServiceProxy.Vali(String user, String password)
+   at Hzdtf.BasicFunction.Service.Impl.Standard.Expand.User.UserValiService.Vali(String user, String password) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Service\Hzdtf.BasicFunction.Service.Impl.Standard\Expand\User\UserValiService.cs:line 46
+   at Castle.Proxies.UserValiServiceProxy.Vali_callback(String user, String password)
+   at Castle.Proxies.Invocations.UserValiService_Vali.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\Intercepteds\InterceptorBase.cs:line 31
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Hzdtf.Autofac.Extend.Standard.Intercepteds.InterceptorBase.Intercept(IInvocation invocation) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\Intercepteds\InterceptorBase.cs:line 31
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Hzdtf.Autofac.Extend.Standard.Intercepteds.ProcTrackLogInterceptor.Intercept(IInvocation invocation) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\IOC\Hzdtf.Autofac.Extend.Standard\Intercepteds\ProcTrackLogInterceptor.cs:line 93
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.UserValiServiceProxy.Vali(String user, String password)
+   at Hzdtf.Authorization.Contract.Standard.IdentityAuth.IdentityAuthBase`2.Accredit(String user, String password) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\Authorization\Hzdtf.Authorization.Contract.Standard\IdentityAuth\IdentityAuthBase.cs:line 51
+   at Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.<>c__DisplayClass22_0.<Login>b__0(String user, String pwd, ReturnInfo`1 reInfo) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\Home\AuthorizationController.cs:line 123
+   at Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.ExecLogin(LoginInfo loginInfo, Action`3 callbackLogin) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\Home\AuthorizationController.cs:line 245
+   at Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController.Login(LoginInfo loginInfo) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\BasicFunction\Controller\Hzdtf.BasicFunction.MvcController.Core\Home\AuthorizationController.cs:line 114
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Hzdtf.Utility.AspNet.Core.ExceptionHandle.ApiExceptionHandleMiddleware.InvokeAsync(HttpContext context) in F:\MyWorks\net2\Hzdtf.Foundation.Framework\Common\Hzdtf.Utility.AspNet.Core\ExceptionHandle\ApiExceptionHandleMiddleware.cs:line 60

@@ -35,14 +35,11 @@
             Core控制生成服务
             </summary>
         </member>
-        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.CodeGeneratorService.Generator(System.Collections.Generic.IList{Hzdtf.CodeGenerator.Model.Standard.TableInfo},Hzdtf.CodeGenerator.Model.Standard.FunctionType[],System.String,System.String)">
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.CodeGeneratorService.Generator(Hzdtf.CodeGenerator.Model.Standard.CodeGeneratorParamInfo)">
             <summary>
             生成
             </summary>
-            <param name="tables">表信息列表</param>
-            <param name="functionTypes">功能类型集合</param>
-            <param name="namespacePfx">命名空间前辍</param>
-            <param name="type">类型</param>
+            <param name="param">参数</param>
             <returns>返回信息</returns>
         </member>
         <member name="M:Hzdtf.CodeGenerator.Impl.Standard.CodeGeneratorService.GetFunctionServices(Hzdtf.CodeGenerator.Model.Standard.FunctionType[])">
@@ -125,13 +122,12 @@
             类模板
             </summary>
         </member>
-        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService.BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo,System.String,System.String,System.String[]@)">
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.CoreControllerGeneratorService.BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo,Hzdtf.CodeGenerator.Model.Standard.CodeParamInfo,System.String[]@)">
             <summary>
             生成代码文本集合
             </summary>
             <param name="table">表名</param>
-            <param name="namespacePfx">命名空间前辍</param>
-            <param name="type">类型</param>
+            <param name="codeParam">代码参数</param>
             <param name="fileNames">文件名集合</param>
             <returns>代码文本集合</returns>
         </member>
@@ -201,13 +197,12 @@
             类模板
             </summary>
         </member>
-        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.FrameworkControllerGeneratorService.BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo,System.String,System.String,System.String[]@)">
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.FrameworkControllerGeneratorService.BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo,Hzdtf.CodeGenerator.Model.Standard.CodeParamInfo,System.String[]@)">
             <summary>
             生成代码文本集合
             </summary>
             <param name="table">表名</param>
-            <param name="namespacePfx">命名空间前辍</param>
-            <param name="type">类型</param>
+            <param name="codeParam">代码参数</param>
             <param name="fileNames">文件名集合</param>
             <returns>代码文本集合</returns>
         </member>
@@ -223,22 +218,19 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.FunctionGeneratorBase.Generator(System.Collections.Generic.IList{Hzdtf.CodeGenerator.Model.Standard.TableInfo},System.String,System.String)">
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.FunctionGeneratorBase.Generator(Hzdtf.CodeGenerator.Model.Standard.CodeGeneratorParamInfo)">
             <summary>
             生成
             </summary>
-            <param name="tables">表信息列表</param>
-            <param name="namespacePfx">命名空间前辍</param>
-            <param name="type">类型</param>
+            <param name="param">参数</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.FunctionGeneratorBase.BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo,System.String,System.String,System.String[]@)">
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.FunctionGeneratorBase.BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo,Hzdtf.CodeGenerator.Model.Standard.CodeParamInfo,System.String[]@)">
             <summary>
             生成代码文本集合
             </summary>
             <param name="table">表名</param>
-            <param name="namespacePfx">命名空间前辍</param>
-            <param name="type">类型</param>
+            <param name="codeParam">代码参数</param>
             <param name="fileNames">文件名集合</param>
             <returns>代码文本集合</returns>
         </member>
@@ -289,13 +281,12 @@
             用户忽略的属性名称集合
             </summary>
         </member>
-        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService.BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo,System.String,System.String,System.String[]@)">
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.ModelGeneratorService.BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo,Hzdtf.CodeGenerator.Model.Standard.CodeParamInfo,System.String[]@)">
             <summary>
             生成代码文本集合
             </summary>
             <param name="table">表名</param>
-            <param name="namespacePfx">命名空间前辍</param>
-            <param name="type">类型</param>
+            <param name="codeParam">代码参数</param>
             <param name="fileNames">文件名集合</param>
             <returns>代码文本集合</returns>
         </member>
@@ -368,33 +359,30 @@
             忽略的修改属性集合
             </summary>
         </member>
-        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService.BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo,System.String,System.String,System.String[]@)">
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService.BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo,Hzdtf.CodeGenerator.Model.Standard.CodeParamInfo,System.String[]@)">
             <summary>
             生成代码文本集合
             </summary>
             <param name="table">表名</param>
-            <param name="namespacePfx">命名空间前辍</param>
-            <param name="type">类型</param>
+            <param name="codeParam">代码参数</param>
             <param name="fileNames">文件名集合</param>
             <returns>代码文本集合</returns>
         </member>
-        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService.BuilderInterfaceCode(Hzdtf.CodeGenerator.Model.Standard.TableInfo,System.String,System.String,System.String@)">
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService.BuilderInterfaceCode(Hzdtf.CodeGenerator.Model.Standard.TableInfo,Hzdtf.CodeGenerator.Model.Standard.CodeParamInfo,System.String@)">
             <summary>
             生成接口代码
             </summary>
             <param name="table">表名</param>
-            <param name="namespacePfx">命名空间前辍</param>
-            <param name="type">类型</param>
+            <param name="codeParam">代码参数</param>
             <param name="fileName">文件名</param>
             <returns>接口代码</returns>
         </member>
-        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService.BuilderClassCode(Hzdtf.CodeGenerator.Model.Standard.TableInfo,System.String,System.String,System.String@)">
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.PersistenceGeneratorService.BuilderClassCode(Hzdtf.CodeGenerator.Model.Standard.TableInfo,Hzdtf.CodeGenerator.Model.Standard.CodeParamInfo,System.String@)">
             <summary>
             生成类代码
             </summary>
             <param name="table">表名</param>
-            <param name="namespacePfx">命名空间前辍</param>
-            <param name="type">类型</param>
+            <param name="codeParam">代码参数</param>
             <param name="fileName">文件名</param>
             <returns>类代码</returns>
         </member>
@@ -437,33 +425,30 @@
             类模板
             </summary>
         </member>
-        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService.BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo,System.String,System.String,System.String[]@)">
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService.BuilderCodeTexts(Hzdtf.CodeGenerator.Model.Standard.TableInfo,Hzdtf.CodeGenerator.Model.Standard.CodeParamInfo,System.String[]@)">
             <summary>
             生成代码文本集合
             </summary>
             <param name="table">表名</param>
-            <param name="namespacePfx">命名空间前辍</param>
-            <param name="type">类型</param>
+            <param name="codeParam">代码参数</param>
             <param name="fileNames">文件名集合</param>
             <returns>代码文本集合</returns>
         </member>
-        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService.BuilderInterfaceCode(Hzdtf.CodeGenerator.Model.Standard.TableInfo,System.String,System.String,System.String@)">
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService.BuilderInterfaceCode(Hzdtf.CodeGenerator.Model.Standard.TableInfo,Hzdtf.CodeGenerator.Model.Standard.CodeParamInfo,System.String@)">
             <summary>
             生成接口代码
             </summary>
             <param name="table">表名</param>
-            <param name="namespacePfx">命名空间前辍</param>
-            <param name="type">类型</param>
+            <param name="codeParam">代码参数</param>
             <param name="fileName">文件名</param>
             <returns>接口代码</returns>
         </member>
-        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService.BuilderClassCode(Hzdtf.CodeGenerator.Model.Standard.TableInfo,System.String,System.String,System.String@)">
+        <member name="M:Hzdtf.CodeGenerator.Impl.Standard.Function.ServiceGeneratorService.BuilderClassCode(Hzdtf.CodeGenerator.Model.Standard.TableInfo,Hzdtf.CodeGenerator.Model.Standard.CodeParamInfo,System.String@)">
             <summary>
             生成类代码
             </summary>
             <param name="table">表名</param>
-            <param name="namespacePfx">命名空间前辍</param>
-            <param name="type">类型</param>
+            <param name="codeParam">代码参数</param>
             <param name="fileName">文件名</param>
             <returns>类代码</returns>
         </member>

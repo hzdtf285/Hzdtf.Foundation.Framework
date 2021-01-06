@@ -85,7 +85,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<WorkflowDefineInfo> FindByCode([DisplayName2("编码"), Required] string code, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<WorkflowDefineInfo> FindByCode([DisplayName2("编码"), Required] string code, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             return ExecReturnFuncAndConnectionId<WorkflowDefineInfo>((reInfo, connId) =>
             {
@@ -102,7 +102,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<WorkflowDefineInfo> ReaderAllConfig([DisplayName2("工作流定义ID"), Id] int workflowDefineId, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<WorkflowDefineInfo> ReaderAllConfig([DisplayName2("工作流定义ID"), Id] int workflowDefineId, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             return ExecReturnFuncAndConnectionId<WorkflowDefineInfo>((reInfo, connId) =>
             {
@@ -126,7 +126,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<WorkflowDefineInfo> ReaderAllConfig([DisplayName2("工作流编码"), Required] string workflowCode, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<WorkflowDefineInfo> ReaderAllConfig([DisplayName2("工作流编码"), Required] string workflowCode, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             return ExecReturnFuncAndConnectionId<WorkflowDefineInfo>((reInfo, connId) =>
             {
@@ -153,7 +153,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
         /// <param name="workflowDefine">工作流定义</param>
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
-        private BasicReturnInfo ReaderOtherConfig(WorkflowDefineInfo workflowDefine, string connectionId, BasicUserInfo currUser = null)
+        private BasicReturnInfo ReaderOtherConfig(WorkflowDefineInfo workflowDefine, string connectionId, BasicUserInfo<int> currUser = null)
         {
             BasicReturnInfo basicReturn = new BasicReturnInfo();
             if (workflowDefine == null)

@@ -20,7 +20,7 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<IList<DataDictionaryItemInfo>> QueryByDataDictionaryId(int dataDictionaryId, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<IList<DataDictionaryItemInfo>> QueryByDataDictionaryId(int dataDictionaryId, string connectionId = null, BasicUserInfo<int> currUser = null);
 
         /// <summary>
         /// 根据数据字典编码获取数据字典子项列表
@@ -29,6 +29,6 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<IList<DataDictionaryItemInfo>> QueryByDataDictionaryCode(string dataDictionaryCode, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<IList<DataDictionaryItemInfo>> QueryByDataDictionaryCode(string dataDictionaryCode, string connectionId = null, BasicUserInfo<int> currUser = null);
     }
 }

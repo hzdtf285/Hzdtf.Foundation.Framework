@@ -2,20 +2,21 @@
 using Hzdtf.Persistence.Dapper.Standard;
 using Hzdtf.Utility.Standard.Model;
 using Hzdtf.Utility.Standard.Utils;
+using System.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
 using System.Text;
 
-namespace Hzdtf.SqlServer.Standard
+namespace Hzdtf.MySql.Standard
 {
     /// <summary>
     /// SqlServer Dapper基类
     /// @ 黄振东
     /// </summary>
+    /// <typeparam name="IdT">ID类型</typeparam>
     /// <typeparam name="ModelT">模型类型</typeparam>
-    public abstract partial class SqlServerDapperBase<ModelT> : DapperPersistenceBase<ModelT> where ModelT : SimpleInfo
+    public abstract partial class SqlServerDapperBase<IdT, ModelT> : DapperPersistenceBase<IdT, ModelT> where ModelT : SimpleInfo<IdT>
     {
         #region 属性与字段
 
@@ -36,7 +37,7 @@ namespace Hzdtf.SqlServer.Standard
         /// <param name="id">ID</param>
         /// <param name="propertyNames">属性名称集合</param>
         /// <returns>SQL语句</returns>
-        protected override string SelectSql(int id, string[] propertyNames = null) => $"{SelectSql(propertyNames: propertyNames)} {WHERE_ID_EQUAL_PARAM_SQL}";
+        protected override string SelectSql(IdT id, string[] propertyNames = null) => $"{BasicSelectSql(propertyNames: propertyNames)} {WHERE_ID_EQUAL_PARAM_SQL} {GetTenantIdFilterSql(isBeforeAppAnd: true)}";
 
         /// <summary>
         /// 根据ID集合查询模型列表SQL语句
@@ -45,15 +46,14 @@ namespace Hzdtf.SqlServer.Standard
         /// <param name="parameters">参数</param>
         /// <param name="propertyNames">属性名称集合</param>
         /// <returns>SQL语句</returns>
-        protected override string SelectSql(int[] ids, out DynamicParameters parameters, string[] propertyNames = null) => $"{SelectSql(propertyNames: propertyNames)} WHERE {GetWhereIdsSql(ids, out parameters)}";
+        protected override string SelectSql(IdT[] ids, out DynamicParameters parameters, string[] propertyNames = null) => $"{BasicSelectSql(propertyNames: propertyNames)} WHERE {GetWhereIdsSql(ids, out parameters)} {GetTenantIdFilterSql(isBeforeAppAnd: true)}";
 
         /// <summary>
         /// 根据ID统计模型数SQL语句
         /// </summary>
         /// <param name="id">ID</param>
         /// <returns>SQL语句</returns>
-        protected override string CountSql(int id) => $"{CountSql()} {WHERE_ID_EQUAL_PARAM_SQL}";
-
+        protected override string CountSql(IdT id) => $"{BasicCountSql()} {WHERE_ID_EQUAL_PARAM_SQL} {GetTenantIdFilterSql(isBeforeAppAnd: true)}";
 
         /// <summary>
         /// 统计模型数SQL语句
@@ -64,6 +64,18 @@ namespace Hzdtf.SqlServer.Standard
         {
             string tbAlias = string.IsNullOrWhiteSpace(pfx) ? null : pfx.Replace(".", null);
 
+            return $"{BasicCountSql(pfx)} {GetTenantIdFilterSql(isBeforeAppWhere: true, pfx: tbAlias)}";
+        }
+
+        /// <summary>
+        /// 基本统计模型数SQL语句
+        /// </summary>
+        /// <param name="pfx">前辍</param>
+        /// <returns>SQL语句</returns>
+        protected string BasicCountSql(string pfx = null)
+        {
+            string tbAlias = string.IsNullOrWhiteSpace(pfx) ? null : pfx.Replace(".", null);
+
             return $"SELECT COUNT(*) FROM [{Table}] {tbAlias}";
         }
 
@@ -71,7 +83,7 @@ namespace Hzdtf.SqlServer.Standard
         /// 查询模型列表
         /// </summary>
         /// <param name="pfx">前辍</param>
-        /// <param name="appendFieldSqls">追加字段SQL，包含前面的,</param>、
+        /// <param name="appendFieldSqls">追加字段SQL，包含前面的,</param>
         /// <param name="propertyNames">属性名称集合</param>
         /// <returns>SQL语句</returns>
         protected override string SelectSql(string pfx = null, string appendFieldSqls = null, string[] propertyNames = null)
@@ -86,7 +98,29 @@ namespace Hzdtf.SqlServer.Standard
                 tbAlias = pfx.Replace(".", null);
             }
 
-            return $"SELECT {JoinSelectPropMapFields(propertyNames, pfx: pfx)} FROM [{Table}] {tbAlias}";
+            return $"{BasicSelectSql(pfx, appendFieldSqls, propertyNames)} {GetTenantIdFilterSql(isBeforeAppWhere: true, pfx: tbAlias)}";
+        }
+
+        /// <summary>
+        /// 基本查询模型列表
+        /// </summary>
+        /// <param name="pfx">前辍</param>
+        /// <param name="appendFieldSqls">追加字段SQL，包含前面的,</param>
+        /// <param name="propertyNames">属性名称集合</param>
+        /// <returns>SQL语句</returns>
+        protected string BasicSelectSql(string pfx = null, string appendFieldSqls = null, string[] propertyNames = null)
+        {
+            string tbAlias = null;
+            if (string.IsNullOrWhiteSpace(pfx))
+            {
+                pfx = $"[{Table}].";
+            }
+            else
+            {
+                tbAlias = pfx.Replace(".", null);
+            }
+
+            return $"SELECT {JoinSelectPropMapFields(propertyNames, pfx: pfx)}{appendFieldSqls} FROM [{Table}] {tbAlias}";
         }
 
         /// <summary>
@@ -103,11 +137,8 @@ namespace Hzdtf.SqlServer.Standard
             StringBuilder whereSql = MergeWhereSql(filter, out parameters);
             string sortSql = GetSelectPageSortSql(filter, GetSelectSortNamePfx(filter));
 
-            string[] partPage = GetPartPageSql(pageIndex, pageSize, sortSql);
-
-            string sql = $"SELECT {JoinSelectPropMapFields(propertyNames, pfx: "[" + Table + "].")},{partPage[0]} FROM [{Table}] {GetSelectPageJoinSql(parameters, filter)} {whereSql.ToString()}";
-
-            return $"SELECT * FROM ({sql}) T {partPage[1]}";
+            return $"{BasicSelectSql(appendFieldSqls: AppendSelectPageFieldsSql(), propertyNames: propertyNames)} " +
+                $"{GetSelectPageJoinSql(parameters, filter)} {whereSql.ToString()}  {GetTenantIdFilterSql(isBeforeAppAnd: true)} {sortSql} {GetPartPageSql(pageIndex, pageSize)}";
         }
 
         /// <summary>
@@ -151,19 +182,19 @@ namespace Hzdtf.SqlServer.Standard
                 parameters.Add("@StartCreateTime", filter.StartCreateTime);
                 parameters.Add("@EndCreateTime", filter.EndCreateTime);
 
-                whereSql.AppendFormat(" AND `{0}`.{1} BETWEEN @StartCreateTime AND @EndCreateTime", Table, createTimeField);
+                whereSql.AppendFormat(" AND [{0}].{1} BETWEEN @StartCreateTime AND @EndCreateTime", Table, createTimeField);
             }
             else if (filter.StartCreateTime != null)
             {
                 parameters.Add("@StartCreateTime", filter.StartCreateTime);
 
-                whereSql.AppendFormat(" AND `{0}`.{1}>=@StartCreateTime", Table, createTimeField);
+                whereSql.AppendFormat(" AND [{0}].{1}>=@StartCreateTime", Table, createTimeField);
             }
             else if (filter.EndCreateTime != null)
             {
                 parameters.Add("@EndCreateTime", filter.EndCreateTime);
 
-                whereSql.AppendFormat(" AND `{0}`.{1}<=@EndCreateTime", Table, createTimeField);
+                whereSql.AppendFormat(" AND [{0}].{1}<=@EndCreateTime", Table, createTimeField);
             }
         }
 
@@ -208,7 +239,37 @@ namespace Hzdtf.SqlServer.Standard
         protected override string CountByFilterSql(FilterInfo filter, out DynamicParameters parameters)
         {
             StringBuilder whereSql = MergeWhereSql(filter, out parameters);
-            return $"{CountSql()} {GetSelectPageJoinSql(parameters, filter)} {whereSql.ToString()}";
+            return $"{BasicCountSql()} {GetSelectPageJoinSql(parameters, filter)} {whereSql.ToString()} {GetTenantIdFilterSql(isBeforeAppAnd: true)}";
+        }
+
+        /// <summary>
+        /// 获取租户ID筛选SQL
+        /// </summary>
+        /// <param name="isBeforeAppWhere">是否前面追加WHERE</param>
+        /// <param name="isBeforeAppAnd">是否前面追加AND</param>
+        /// <param name="pfx">前辍</param>
+        /// <returns>租户ID筛选SQL</returns>
+        protected virtual string GetTenantIdFilterSql(bool isBeforeAppWhere = false, bool isBeforeAppAnd = false, string pfx = null)
+        {
+            IdT tenantId;
+            if (IsExistsTenantId(out tenantId))
+            {
+                var tenantIdField = GetFieldByProp("TenantId");
+                pfx = string.IsNullOrWhiteSpace(pfx) ? null : pfx + ".";
+                var sql = $"{pfx}]{tenantIdField}]={Identity.GetValueSql(tenantId)}";
+                if (isBeforeAppWhere)
+                {
+                    return $" WHERE {sql}";
+                }
+                else if (isBeforeAppAnd)
+                {
+                    return $" AND {sql}";
+                }
+
+                return sql;
+            }
+
+            return null;
         }
 
         #endregion
@@ -223,8 +284,9 @@ namespace Hzdtf.SqlServer.Standard
         /// <returns>SQL语句</returns>
         protected override string InsertSql(ModelT model, bool isGetAutoId = false)
         {
-            string[] partSql = CombineInsertSqlByFieldNames(InsertFieldNames());
+            string[] partSql = CombineInsertSqlByFieldNames(WrapInsertFieldNames(model.Id));
             string sql = $"INSERT INTO [{Table}]({partSql[0]}) VALUES({partSql[1]})";
+
             return isGetAutoId ? $"{sql};{GetLastInsertIdSql()}" : sql;
         }
 
@@ -236,7 +298,7 @@ namespace Hzdtf.SqlServer.Standard
         /// <returns>SQL语句</returns>
         protected override string InsertSql(IList<ModelT> models, out DynamicParameters para)
         {
-            string[] partSql = CombineBatchInsertSqlByFieldNames(InsertFieldNames(), models, out para);
+            string[] partSql = CombineBatchInsertSqlByFieldNames(WrapInsertFieldNames(models[0].Id), models, out para);
             return $"INSERT INTO [{Table}]({partSql[0]}) VALUES{partSql[1]}";
         }
 
@@ -246,14 +308,14 @@ namespace Hzdtf.SqlServer.Standard
         /// <param name="model">模型</param>
         /// <param name="propertyNames">属性名称集合</param>
         /// <returns>SQL语句</returns>
-        protected override string UpdateByIdSql(ModelT model, string[] propertyNames = null) => $"UPDATE [{Table}] SET {GetUpdateFieldsSql(propertyNames)} {WHERE_ID_EQUAL_PARAM_SQL}";
+        protected override string UpdateByIdSql(ModelT model, string[] propertyNames = null) => $"UPDATE [{Table}] SET {GetUpdateFieldsSql(propertyNames)} {WHERE_ID_EQUAL_PARAM_SQL} {GetTenantIdFilterSql(isBeforeAppAnd: true)}";
 
         /// <summary>
         /// 根据ID删除模型SQL语句
         /// </summary>
         /// <param name="id">ID</param>
         /// <returns>SQL语句</returns>
-        protected override string DeleteByIdSql(int id) => $"{DeleteSql()} {WHERE_ID_EQUAL_PARAM_SQL}";
+        protected override string DeleteByIdSql(IdT id) => $"{BasicDeleteSql()} {WHERE_ID_EQUAL_PARAM_SQL} {GetTenantIdFilterSql(isBeforeAppAnd: true)}";
 
         /// <summary>
         /// 根据ID数组删除模型SQL语句
@@ -261,13 +323,19 @@ namespace Hzdtf.SqlServer.Standard
         /// <param name="ids">ID数组</param>
         /// <param name="parameters">参数集合</param>
         /// <returns>SQL语句</returns>
-        protected override string DeleteByIdsSql(int[] ids, out DynamicParameters parameters) => $"{DeleteSql()} WHERE {GetWhereIdsSql(ids, out parameters)}";
+        protected override string DeleteByIdsSql(IdT[] ids, out DynamicParameters parameters) => $"{BasicDeleteSql()} WHERE {GetWhereIdsSql(ids, out parameters)} {GetTenantIdFilterSql(isBeforeAppAnd: true)}";
 
         /// <summary>
         /// 删除所有模型SQL语句
         /// </summary>
         /// <returns>SQL语句</returns>
-        protected override string DeleteSql() => $"DELETE FROM [{Table}]";
+        protected override string DeleteSql() => $"DELETE FROM [{Table}] {GetTenantIdFilterSql(isBeforeAppWhere: true)}";
+
+        /// <summary>
+        /// 基本删除所有模型SQL语句
+        /// </summary>
+        /// <returns>SQL语句</returns>
+        protected string BasicDeleteSql() => $"DELETE FROM [{Table}]";
 
         /// <summary>
         /// 创建数据库连接
@@ -276,6 +344,12 @@ namespace Hzdtf.SqlServer.Standard
         /// <returns>数据库连接</returns>
         public override IDbConnection CreateDbConnection(string connectionString) => new SqlConnection(connectionString);
 
+        /// <summary>
+        /// 模型是否包含租户ID
+        /// </summary>
+        /// <returns>模型是否包含租户ID</returns>
+        protected override bool ModelContainerTenantId() => !string.IsNullOrWhiteSpace(GetFieldByProp("TenantId"));
+
         #endregion
 
         /// <summary>
@@ -283,7 +357,14 @@ namespace Hzdtf.SqlServer.Standard
         /// </summary>
         /// <param name="table">表名</param>
         /// <returns>SQL语句</returns>
-        protected override string DeleteByTableSql(string table) => $"DELETE FROM [{table}]";
+        protected override string DeleteByTableSql(string table) => $"DELETE FROM [{table}] WHERE 1=1 {GetTenantIdFilterSql(isBeforeAppAnd: true)}";
+
+        /// <summary>
+        /// 基本根据表名删除所有模型SQL语句
+        /// </summary>
+        /// <param name="table">表名</param>
+        /// <returns>SQL语句</returns>
+        protected string BasicDeleteByTableSql(string table) => $"DELETE FROM [{table}]";
 
         /// <summary>
         /// 根据表名、外键字段和外键值删除模型SQL语句
@@ -293,7 +374,7 @@ namespace Hzdtf.SqlServer.Standard
         /// <param name="foreignKeyValues">外键值集合</param>
         /// <param name="parameters">参数</param>
         /// <returns>SQL语句</returns>
-        protected override string DeleteByTableAndForignKeySql(string table, string foreignKeyName, int[] foreignKeyValues, out DynamicParameters parameters)
+        protected override string DeleteByTableAndForignKeySql(string table, string foreignKeyName, IdT[] foreignKeyValues, out DynamicParameters parameters)
         {
             parameters = new DynamicParameters();
             StringBuilder whereSql = new StringBuilder();
@@ -305,7 +386,7 @@ namespace Hzdtf.SqlServer.Standard
             }
             whereSql.Remove(whereSql.Length - 1, 1);
 
-            return $"{DeleteByTableSql(table)} WHERE [{foreignKeyName}] IN({whereSql.ToString()})";
+            return $"{BasicDeleteByTableSql(table)} WHERE [{foreignKeyName}] IN({whereSql.ToString()}) {GetTenantIdFilterSql(isBeforeAppAnd: true)}";
         }
 
         #endregion
@@ -352,14 +433,6 @@ namespace Hzdtf.SqlServer.Standard
         }
 
         /// <summary>
-        /// 获取最外层的分页SQL
-        /// </summary>
-        /// <param name="sql">SQL语句</param>
-        /// <param name="pageConditonSql">分页条件SQL</param>
-        /// <returns>最外层的分页SQL</returns>
-        protected string GetOuterPageSql(string sql, string pageConditonSql) => $"SELECT * FROM ({sql}) T {pageConditonSql}";
-
-        /// <summary>
         /// 获取最后插入ID SQL语句
         /// </summary>
         /// <returns>最后插入ID SQL语句</returns>
@@ -373,7 +446,7 @@ namespace Hzdtf.SqlServer.Standard
         /// <param name="prefixTable">表前辍</param>
         /// <param name="idField">ID字段</param>
         /// <returns>ID条件SQL语句</returns>
-        protected string GetWhereIdsSql(int[] ids, out DynamicParameters parameters, string prefixTable = null, string idField = "Id") => GetWhereTypesSql<int>(ids, out parameters, idField, prefixTable);
+        protected string GetWhereIdsSql(IdT[] ids, out DynamicParameters parameters, string prefixTable = null, string idField = "Id") => GetWhereTypesSql<IdT>(ids, out parameters, idField, prefixTable);
 
         /// <summary>
         /// 根据值数组获取条件SQL语句，不包含where
@@ -386,7 +459,7 @@ namespace Hzdtf.SqlServer.Standard
         protected string GetWhereTypesSql<T>(T[] values, out DynamicParameters parameters, string field, string prefixTable = null)
         {
             parameters = new DynamicParameters(values.Length);
-            StringBuilder whereSql = new StringBuilder($"{prefixTable}[{field}] IN(");
+            StringBuilder whereSql = new StringBuilder($"{prefixTable}]{field}] IN(");
             for (int i = 0; i < values.Length; i++)
             {
                 string paraName = $"@{field}{i}";
@@ -484,6 +557,37 @@ namespace Hzdtf.SqlServer.Standard
         }
 
         /// <summary>
+        /// 根据字段名获取排序SQL语句
+        /// </summary>
+        /// <param name="sort">排序</param>
+        /// <param name="field">排序的字段名</param>
+        /// <param name="pfx">前辍</param>
+        /// <returns>排序SQL语句</returns>
+        protected string GetSortSqlByField(SortEnum sort, string field, string pfx = null)
+        {
+            if (string.IsNullOrWhiteSpace(field))
+            {
+                return null;
+            }
+            if (string.IsNullOrWhiteSpace(pfx))
+            {
+                pfx = Table + ".";
+            }
+
+            StringBuilder sql = new StringBuilder($"ORDER BY {pfx}{field}");
+            if (sort == SortEnum.ASC)
+            {
+                sql.Append(" ASC");
+            }
+            else
+            {
+                sql.Append(" DESC");
+            }
+
+            return sql.ToString();
+        }
+
+        /// <summary>
         /// 连接查询的属性映射字段集合
         /// 带有,号
         /// </summary>
@@ -524,7 +628,7 @@ namespace Hzdtf.SqlServer.Standard
         /// <returns>修改信息SQL</returns>
         protected string GetModifyInfoSql(ModelT model)
         {
-            if (model is PersonTimeInfo)
+            if (model is PersonTimeInfo<IdT>)
             {
                 string[] modifyProps = new string[] { "ModifierId", "Modifier", "ModifyTime" };
                 StringBuilder sql = new StringBuilder();
@@ -554,14 +658,19 @@ namespace Hzdtf.SqlServer.Standard
         {
             if (filter == null || string.IsNullOrWhiteSpace(filter.SortName))
             {
-                return GetSortSql(SortEnum.ASC, "Id");
+                return null;
             }
 
-            return GetSortSql(filter.Sort, filter.SortName.FristUpper(), pfx);
+            return GetSortSql(filter.Sort, ConvertSortName(filter.SortName), pfx);
         }
 
         /// <summary>
-        /// 追加查询分页SQL
+        /// 追加查询分页字段SQL
+        /// </summary>
+        protected virtual string AppendSelectPageFieldsSql() => null;
+
+        /// <summary>
+        /// 追加查询分页条件SQL
         /// </summary>
         /// <param name="whereSql">where语句</param>
         /// <param name="parameters">参数</param>
@@ -575,6 +684,30 @@ namespace Hzdtf.SqlServer.Standard
         /// <param name="filter">筛选</param>
         /// <returns>连接SQL语句</returns>
         protected virtual string GetSelectPageJoinSql(DynamicParameters parameters, FilterInfo filter = null) => null;
+
+        /// <summary>
+        /// 转换排序名称
+        /// </summary>
+        /// <param name="sortName">排名名称</param>
+        /// <returns>排序名称</returns>
+        protected virtual string ConvertSortName(string sortName) => sortName.FristUpper();
+
+        /// <summary>
+        /// 包装插入字段名集合
+        /// </summary>
+        /// <param name="id">ID</param>
+        /// <returns>插入字段名集合</returns>
+        protected virtual string[] WrapInsertFieldNames(IdT id)
+        {
+            var fields = InsertFieldNames();
+            if (PrimaryKeyIncr(id))
+            {
+                var idField = GetFieldByProp("Id", AllFieldMapProps());
+                return fields.Remove(idField);
+            }
+
+            return fields;
+        }
 
         #endregion
 
@@ -595,6 +728,7 @@ namespace Hzdtf.SqlServer.Standard
                 fieldBuilder.AppendFormat("[{0}],", field);
                 valueBuilder.AppendFormat("@{0},", GetPropByField(field));
             }
+
             fieldBuilder.Remove(fieldBuilder.Length - 1, 1);
             valueBuilder.Remove(valueBuilder.Length - 1, 1);
 
@@ -668,12 +802,21 @@ namespace Hzdtf.SqlServer.Standard
         /// <returns>更新字段SQL</returns>
         private string GetUpdateFieldsSql(string[] propertyNames = null)
         {
+            string[] fields = null;
             if (propertyNames == null)
             {
-                propertyNames = UpdateFieldNames();
+                fields = UpdateFieldNames();
+            }
+            else
+            {
+                fields = new string[propertyNames.Length];
+                for (var i = 0; i < propertyNames.Length; i++)
+                {
+                    fields[i] = GetFieldByProp(propertyNames[i]);
+                }
             }
 
-            return CompareUpdateSqlByFieldNames(propertyNames);
+            return CompareUpdateSqlByFieldNames(fields);
         }
 
         #endregion

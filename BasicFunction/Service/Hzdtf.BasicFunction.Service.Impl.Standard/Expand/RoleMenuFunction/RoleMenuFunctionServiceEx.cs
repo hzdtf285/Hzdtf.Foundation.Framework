@@ -33,7 +33,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<IList<MenuFunctionInfo>> QueryMenuFunctionsByRoleId([DisplayName2("角色ID"), Id] int roleId, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<IList<MenuFunctionInfo>> QueryMenuFunctionsByRoleId([DisplayName2("角色ID"), Id] int roleId, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             return ExecReturnFunc<IList<MenuFunctionInfo>>((reInfo) =>
             {
@@ -49,7 +49,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<bool> SaveRoleMenuFunctions([DisplayName2("角色ID"), Id] int roleId, IList<int> menuFunctionIds, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<bool> SaveRoleMenuFunctions([DisplayName2("角色ID"), Id] int roleId, IList<int> menuFunctionIds, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             IList<RoleMenuFunctionInfo> rmfs = new List<RoleMenuFunctionInfo>(menuFunctionIds.Count);
             foreach (var id in menuFunctionIds)
@@ -79,7 +79,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         [Transaction(ConnectionIdIndex = 3)]
-        protected virtual void ExecSaveRoleMenuFunctions(ReturnInfo<bool> returnInfo, int roleId, IList<RoleMenuFunctionInfo> rmfs, string connectionId = null, BasicUserInfo currUser = null)
+        protected virtual void ExecSaveRoleMenuFunctions(ReturnInfo<bool> returnInfo, int roleId, IList<RoleMenuFunctionInfo> rmfs, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             Persistence.DeleteByRoleId(roleId, connectionId);
             if (rmfs.IsNullOrCount0())

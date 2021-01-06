@@ -226,10 +226,10 @@ F:\MyWorks\net2\Hzdtf.Foundation.Framework\Service\Hzdtf.BasicFunction.Service.A
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Service\Hzdtf.BasicFunction.Service.Autofac.Standard\bin\Debug\netstandard2.0\Hzdtf.Platform.Contract.Standard.xml
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Service\Hzdtf.BasicFunction.Service.Autofac.Standard\bin\Debug\netstandard2.0\Hzdtf.Service.Contract.Standard.pdb
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Service\Hzdtf.BasicFunction.Service.Autofac.Standard\bin\Debug\netstandard2.0\Hzdtf.Service.Contract.Standard.xml
-F:\MyWorks\net2\Hzdtf.Foundation.Framework\Service\Hzdtf.BasicFunction.Service.Autofac.Standard\obj\Debug\netstandard2.0\Hzdtf.BasicFunction.Service.Autofac.Standard.csprojAssemblyReference.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Service\Hzdtf.BasicFunction.Service.Autofac.Standard\obj\Debug\netstandard2.0\Hzdtf.BasicFunction.Service.Autofac.Standard.AssemblyInfoInputs.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Service\Hzdtf.BasicFunction.Service.Autofac.Standard\obj\Debug\netstandard2.0\Hzdtf.BasicFunction.Service.Autofac.Standard.AssemblyInfo.cs
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Service\Hzdtf.BasicFunction.Service.Autofac.Standard\obj\Debug\netstandard2.0\Hzdtf.BasicFunction.Service.Autofac.Standard.csproj.CoreCompileInputs.cache
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Service\Hzdtf.BasicFunction.Service.Autofac.Standard\obj\Debug\netstandard2.0\Hzdtf.BasicFunction.Service.Autofac.Standard.csproj.CopyComplete
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Service\Hzdtf.BasicFunction.Service.Autofac.Standard\obj\Debug\netstandard2.0\Hzdtf.BasicFunction.Service.Autofac.Standard.dll
 F:\MyWorks\net2\Hzdtf.Foundation.Framework\Service\Hzdtf.BasicFunction.Service.Autofac.Standard\obj\Debug\netstandard2.0\Hzdtf.BasicFunction.Service.Autofac.Standard.pdb
+F:\MyWorks\net2\Hzdtf.Foundation.Framework\Service\Hzdtf.BasicFunction.Service.Autofac.Standard\obj\Debug\netstandard2.0\Hzdtf.BasicFunction.Service.Autofac.Standard.csprojAssemblyReference.cache

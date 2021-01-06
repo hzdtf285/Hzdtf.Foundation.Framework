@@ -103,7 +103,6 @@ namespace Hzdtf.CodeGenerator.Impl.Standard.Function
         /// </summary>
         private static readonly string[] IGNORE_INSERT_PROPS = new string[]
         {
-            "Id"
         };
 
         /// <summary>
@@ -118,15 +117,14 @@ namespace Hzdtf.CodeGenerator.Impl.Standard.Function
         /// 生成代码文本集合
         /// </summary>
         /// <param name="table">表名</param>
-        /// <param name="namespacePfx">命名空间前辍</param>
-        /// <param name="type">类型</param>
+        /// <param name="codeParam">代码参数</param>
         /// <param name="fileNames">文件名集合</param>
         /// <returns>代码文本集合</returns>
-        protected override string[] BuilderCodeTexts(TableInfo table, string namespacePfx, string type, out string[] fileNames)
+        protected override string[] BuilderCodeTexts(TableInfo table, CodeParamInfo codeParam, out string[] fileNames)
         {
             string interfaceFile, classFile;
-            string interfaceCode = BuilderInterfaceCode(table, namespacePfx, type, out interfaceFile);
-            string classCode = BuilderClassCode(table, namespacePfx, type, out classFile);
+            string interfaceCode = BuilderInterfaceCode(table, codeParam, out interfaceFile);
+            string classCode = BuilderClassCode(table, codeParam, out classFile);
 
             fileNames = new string[] { interfaceFile, classFile };
             return new string[] { interfaceCode, classCode };
@@ -136,11 +134,10 @@ namespace Hzdtf.CodeGenerator.Impl.Standard.Function
         /// 生成接口代码
         /// </summary>
         /// <param name="table">表名</param>
-        /// <param name="namespacePfx">命名空间前辍</param>
-        /// <param name="type">类型</param>
+        /// <param name="codeParam">代码参数</param>
         /// <param name="fileName">文件名</param>
         /// <returns>接口代码</returns>
-        private string BuilderInterfaceCode(TableInfo table, string namespacePfx, string type, out string fileName)
+        private string BuilderInterfaceCode(TableInfo table, CodeParamInfo codeParam, out string fileName)
         {
             string basicName = table.Name.FristUpper();
             string name = $"I{basicName}Persistence";
@@ -148,21 +145,21 @@ namespace Hzdtf.CodeGenerator.Impl.Standard.Function
 
             var desc = string.IsNullOrWhiteSpace(table.Description) ? basicName : table.Description;
             return InterfaceTemplate
-                .Replace("|NamespacePfx|", namespacePfx)
+                .Replace("|NamespacePfx|", codeParam.NamespacePfx)
                 .Replace("|Description|", desc)
                 .Replace("|Name|", name)
-                .Replace("|Model|", basicName);
+                .Replace("|Model|", basicName)
+                .Replace("|PkType|", codeParam.PkType.ToCodeString());
         }
 
         /// <summary>
         /// 生成类代码
         /// </summary>
         /// <param name="table">表名</param>
-        /// <param name="namespacePfx">命名空间前辍</param>
-        /// <param name="type">类型</param>
+        /// <param name="codeParam">代码参数</param>
         /// <param name="fileName">文件名</param>
         /// <returns>类代码</returns>
-        private string BuilderClassCode(TableInfo table, string namespacePfx, string type, out string fileName)
+        private string BuilderClassCode(TableInfo table, CodeParamInfo codeParam, out string fileName)
         {
             string basicName = table.Name.FristUpper();
             string name = $"{basicName}Persistence";
@@ -190,10 +187,13 @@ namespace Hzdtf.CodeGenerator.Impl.Standard.Function
 
                     if (!IGNORE_UPDATE_PROPS.Contains(propName))
                     {
-                        updFiled.Append($"            \"{c.Name}\",");
-                        if (i < table.Columns.Count - 1)
+                        if (!(codeParam.IsTenant && "TenantId".Equals(propName)))
                         {
-                            updFiled.AppendLine();
+                            updFiled.Append($"            \"{c.Name}\",");
+                            if (i < table.Columns.Count - 1)
+                            {
+                                updFiled.AppendLine();
+                            }
                         }
                     }
 
@@ -218,12 +218,13 @@ namespace Hzdtf.CodeGenerator.Impl.Standard.Function
             }
 
             var desc = string.IsNullOrWhiteSpace(table.Description) ? basicName : table.Description;
-            return GetClassTemplate(type)
-            .Replace("|DbType|", type)
-            .Replace("|NamespacePfx|", namespacePfx)
+            return GetClassTemplate(codeParam.Type)
+            .Replace("|DbType|", codeParam.Type)
+            .Replace("|NamespacePfx|", codeParam.NamespacePfx)
             .Replace("|Description|", desc)
             .Replace("|Name|", name)
             .Replace("|Model|", basicName)
+            .Replace("|PkType|", codeParam.PkType.ToCodeString())
             .Replace("|Table|", table.Name)
             .Replace("|InsertFields|", insFiled.ToString())
             .Replace("|UpdateFields|", updFiled.ToString())

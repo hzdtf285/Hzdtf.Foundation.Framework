@@ -22,7 +22,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>任务</returns>
-        public virtual async Task<ReturnInfo<IList<SendFlowRouteInfo>>> QueryByFlowCensorshipIdAsync(int flowCensorshipId, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual async Task<ReturnInfo<IList<SendFlowRouteInfo>>> QueryByFlowCensorshipIdAsync(int flowCensorshipId, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             return await Task.Run<ReturnInfo<IList<SendFlowRouteInfo>>>(() =>
             {
@@ -37,7 +37,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>任务</returns>
-        public virtual async Task<ReturnInfo<IList<SendFlowRouteInfo>>> QueryByFlowCensorshipIdsAsync(int[] flowCensorshipIds, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual async Task<ReturnInfo<IList<SendFlowRouteInfo>>> QueryByFlowCensorshipIdsAsync(int[] flowCensorshipIds, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             return await Task.Run<ReturnInfo<IList<SendFlowRouteInfo>>>(() =>
             {

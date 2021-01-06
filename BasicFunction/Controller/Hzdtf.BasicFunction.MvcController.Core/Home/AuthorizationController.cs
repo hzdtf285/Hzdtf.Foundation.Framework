@@ -29,7 +29,7 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Home
         /// <summary>
         /// 身份授权
         /// </summary>
-        public IIdentityAuth<UserInfo> IdentityAuth
+        public IIdentityAuth<int, UserInfo> IdentityAuth
         {
             get;
             set;
@@ -38,7 +38,7 @@ namespace Hzdtf.BasicFunction.MvcController.Core.Home
         /// <summary>
         /// 身份基本授权
         /// </summary>
-        public IIdentityAuth<BasicUserInfo> IdentityBasicAuth
+        public IIdentityAuth<int, BasicUserInfo<int>> IdentityBasicAuth
         {
             get;
             set;

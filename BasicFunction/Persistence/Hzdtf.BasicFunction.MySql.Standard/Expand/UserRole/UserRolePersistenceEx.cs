@@ -64,7 +64,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
             int result = 0;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                string sql = $"{DeleteSql()} WHERE {GetFieldByProp("UserId")}=@UserId";
+                string sql = $"{BasicDeleteSql()} WHERE {GetFieldByProp("UserId")}=@UserId";
                 Log.TraceAsync(sql, source: this.GetType().Name, tags: "DeleteByUserId");
                 result = dbConn.Execute(sql, new { UserId = userId }, GetDbTransaction(connId));
             });

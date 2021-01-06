@@ -14,7 +14,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class DataDictionaryItemService : ServiceBase<DataDictionaryItemInfo, IDataDictionaryItemPersistence>, IDataDictionaryItemService
+    public partial class DataDictionaryItemService : ServiceBase<int, DataDictionaryItemInfo, IDataDictionaryItemPersistence>, IDataDictionaryItemService
     {
     }
 }

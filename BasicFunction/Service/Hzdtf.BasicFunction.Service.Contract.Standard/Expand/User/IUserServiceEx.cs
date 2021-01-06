@@ -21,7 +21,7 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<bool> ModifyPasswordByLoginId(CurrUserModifyPasswordInfo currUserModifyPassword, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<bool> ModifyPasswordByLoginId(CurrUserModifyPasswordInfo currUserModifyPassword, string connectionId = null, BasicUserInfo<int> currUser = null);
 
         /// <summary>
         /// 重置用户密码
@@ -30,7 +30,7 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<bool> ResetUserPassword(ModifyPasswordInfo modifyPassword, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<bool> ResetUserPassword(ModifyPasswordInfo modifyPassword, string connectionId = null, BasicUserInfo<int> currUser = null);
 
         /// <summary>
         /// 根据菜单编码和功能编码判断当前用户是否有权限
@@ -40,7 +40,7 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<bool> IsCurrUserPermission(string menuCode, string functionCode, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<bool> IsCurrUserPermission(string menuCode, string functionCode, string connectionId = null, BasicUserInfo<int> currUser = null);
 
         /// <summary>
         /// 根据菜单编码和功能编码集合判断当前用户是否有权限
@@ -50,7 +50,7 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<bool> IsCurrUserPermission(string menuCode, string[] functionCodes, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<bool> IsCurrUserPermission(string menuCode, string[] functionCodes, string connectionId = null, BasicUserInfo<int> currUser = null);
 
         /// <summary>
         /// 根据用户ID、菜单编码和功能编码集合判断用户是否有权限
@@ -61,7 +61,7 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<bool> IsPermission(int userId, string menuCode, string[] functionCodes, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<bool> IsPermission(int userId, string menuCode, string[] functionCodes, string connectionId = null, BasicUserInfo<int> currUser = null);
 
         /// <summary>
         /// 根据菜单编码查询当前用户所拥有的功能信息列表
@@ -70,7 +70,7 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<IList<FunctionInfo>> QueryCurrUserOwnFunctionsByMenuCode(string menuCode, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<IList<FunctionInfo>> QueryCurrUserOwnFunctionsByMenuCode(string menuCode, string connectionId = null, BasicUserInfo<int> currUser = null);
 
         /// <summary>
         /// 根据用户ID和菜单编码查询用户所拥有的功能信息列表
@@ -80,7 +80,7 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<IList<FunctionInfo>> QueryUserOwnFunctionsByMenuCode(int userId, string menuCode, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<IList<FunctionInfo>> QueryUserOwnFunctionsByMenuCode(int userId, string menuCode, string connectionId = null, BasicUserInfo<int> currUser = null);
 
         /// <summary>
         /// 判断当前用户是否是系统管理组
@@ -88,7 +88,7 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<bool> IsCurrUserAdministrators(string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<bool> IsCurrUserAdministrators(string connectionId = null, BasicUserInfo<int> currUser = null);
 
         /// <summary>
         /// 判断用户是否是系统管理组
@@ -97,7 +97,7 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<bool> IsUserAdministrators(int userId, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<bool> IsUserAdministrators(int userId, string connectionId = null, BasicUserInfo<int> currUser = null);
 
         /// <summary>
         /// 根据筛选条件查询用户列表
@@ -106,6 +106,6 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<IList<UserInfo>> QueryByFilter(UserFilterInfo filter, string connectionId = null, BasicUserInfo currUser = null);
+        ReturnInfo<IList<UserInfo>> QueryByFilter(UserFilterInfo filter, string connectionId = null, BasicUserInfo<int> currUser = null);
     }
 }

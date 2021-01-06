@@ -650,5 +650,87 @@ namespace Hzdtf.Utility.Standard.Utils
 
             return targetType;
         }
+
+        /// <summary>
+        /// 同步赋值
+        /// </summary>
+        /// <typeparam name="T">类型</typeparam>
+        /// <param name="source">源对象</param>
+        /// <param name="target">目标对象</param>
+        /// <param name="ignoreProp">忽略属性</param>
+        public static void SyncAssign<T>(this T source, T target, params string[] ignoreProp)
+        {
+            if (source == null || target == null)
+            {
+                return;
+            }
+
+            var props = typeof(T).GetProperties();
+            if (props.Length == 0)
+            {
+                return;
+            }
+
+            foreach (var p in props)
+            {
+                if (p.CanRead && p.CanWrite)
+                {
+                    if (!ignoreProp.IsNullOrLength0() && ignoreProp.Contains(p.Name))
+                    {
+                        continue;
+                    }
+
+                    var value = p.GetValue(source);
+                    p.SetValue(target, value);
+                }
+            }
+        }
+
+        /// <summary>
+        /// 同步赋值
+        /// </summary>
+        /// <typeparam name="SourceT">源对象类型</typeparam>
+        /// <typeparam name="TargetT">目标对象类型</typeparam>
+        /// <param name="source">源对象</param>
+        /// <param name="target">目标对象</param>
+        /// <param name="ignoreProp">忽略属性</param>
+        public static void SyncAssign<SourceT, TargetT>(this SourceT source, TargetT target, params string[] ignoreProp)
+        {
+            if (source == null || target == null)
+            {
+                return;
+            }
+
+            var sourceProps = typeof(SourceT).GetProperties();
+            if (sourceProps.Length == 0)
+            {
+                return;
+            }
+            var targetProps = typeof(TargetT).GetProperties();
+            if (targetProps.Length == 0)
+            {
+                return;
+            }
+
+            foreach (var sourceP in sourceProps)
+            {
+                if (sourceP.CanRead)
+                {
+                    if (!ignoreProp.IsNullOrLength0() && ignoreProp.Contains(sourceP.Name))
+                    {
+                        continue;
+                    }
+
+                    var targetP = targetProps.Where(p => p.CanWrite && p.Name == sourceP.Name).FirstOrDefault();
+                    if (targetP == null)
+                    {
+                        continue;
+                    }
+
+                    var value = sourceP.GetValue(source);
+                    targetP.SetValue(target, value);
+                }
+            }
+        }
     }
 }

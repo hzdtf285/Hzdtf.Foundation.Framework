@@ -10,7 +10,7 @@ namespace Hzdtf.BasicFunction.Persistence.Contract.Standard
     /// 附件持久化接口
     /// @ 黄振东
     /// </summary>
-    public partial interface IAttachmentPersistence : IPersistence<AttachmentInfo>
+    public partial interface IAttachmentPersistence : IPersistence<int, AttachmentInfo>
     {
     }
 }

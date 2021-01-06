@@ -39,7 +39,7 @@ namespace Hzdtf.WorkFlow.MySql.Standard
             int result = 0;
             DbConnectionManager.BrainpowerExecute(connectionId, this, (connId, dbConn) =>
             {
-                string sql = $"{CountSql()} WHERE {GetFieldByProp("ApplyNo")}=@ApplyNo";
+                string sql = $"{BasicCountSql()} WHERE {GetFieldByProp("ApplyNo")}=@ApplyNo";
                 Log.TraceAsync(sql, source: this.GetType().Name, tags: "CountByApplyNo");
                 result = dbConn.ExecuteScalar<int>(sql, new { ApplyNo = applyNo });
             }, AccessMode.SLAVE);

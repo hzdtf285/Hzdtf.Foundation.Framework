@@ -11,7 +11,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class MenuPersistence : MySqlDapperBase<MenuInfo>, IMenuPersistence
+    public partial class MenuPersistence : MySqlDapperBase<int, MenuInfo>, IMenuPersistence
     {
         /// <summary>
         /// 表名
@@ -23,6 +23,7 @@ namespace Hzdtf.BasicFunction.MySql.Standard
         /// </summary>
         private readonly static string[] INSERT_FIELD_NAMES = new string[]
         {
+            "id",
             "code",
             "create_time",
             "creater",

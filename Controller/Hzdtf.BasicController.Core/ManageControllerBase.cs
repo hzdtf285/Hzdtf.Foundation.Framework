@@ -18,9 +18,9 @@ namespace Hzdtf.BasicController.Core
     /// <typeparam name="ServiceT">服务类型</typeparam>
     /// <typeparam name="PageFilterT">分页筛选类型</typeparam>
     public abstract partial class ManageControllerBase<PageInfoT, ModelT, ServiceT, PageFilterT> : PagingControllerBase<PageInfoT, ModelT, ServiceT, PageFilterT>
-        where PageInfoT : PageInfo
-        where ModelT : SimpleInfo
-        where ServiceT : IService<ModelT>
+        where PageInfoT : PageInfo<int>
+        where ModelT : SimpleInfo<int>
+        where ServiceT : IService<int, ModelT>
         where PageFilterT : FilterInfo
     {
         /// <summary>
@@ -47,7 +47,7 @@ namespace Hzdtf.BasicController.Core
         /// <param name="id">ID</param>
         /// <param name="model">模型</param>
         /// <returns>返回信息</returns>
-        [HttpPut]
+        [HttpPut("{id}")]
         [Function(FunCodeDefine.EDIT_CODE)]
         public virtual async Task<ReturnInfo<bool>> Put(int id, ModelT model)
         {
@@ -64,7 +64,7 @@ namespace Hzdtf.BasicController.Core
         /// </summary>
         /// <param name="id">ID</param>
         /// <returns>返回信息</returns>
-        [HttpDelete]
+        [HttpDelete("{id}")]
         [Function(FunCodeDefine.REMOVE_CODE)]
         public virtual async Task<ReturnInfo<bool>> Delete(int id) => await Service.RemoveByIdAsync(id);
 
@@ -85,5 +85,21 @@ namespace Hzdtf.BasicController.Core
         [HttpDelete("BatchRemove")]
         [Function(FunCodeDefine.REMOVE_CODE)]
         public virtual async Task<ReturnInfo<bool>> BatchRemove(int[] ids) => await Service.RemoveByIdsAsync(ids);
+
+        /// <summary>
+        /// 统计模型数量
+        /// </summary>
+        /// <returns>返回信息</returns>
+        [HttpDelete("Count")]
+        [Function(FunCodeDefine.QUERY_CODE)]
+        public virtual async Task<ReturnInfo<int>> Count() => await Service.CountAsync();
+
+        /// <summary>
+        /// 根据ID获取是否存在模型
+        /// </summary>
+        /// <returns>返回信息</returns>
+        [HttpGet("Exists/{id}")]
+        [Function(FunCodeDefine.QUERY_CODE)]
+        public virtual async Task<ReturnInfo<bool>> Exists(int id) => await Service.ExistsAsync(id);
     }
 }

@@ -19,7 +19,7 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard.Expand.Attachment
         /// <param name="currUser">当前用户</param>
         /// <param name="attachmentStream">附件流</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<IList<string>> Upload(BasicUserInfo currUser = null, params AttachmentStreamInfo[] attachmentStream);
+        ReturnInfo<IList<string>> Upload(BasicUserInfo<int> currUser = null, params AttachmentStreamInfo[] attachmentStream);
 
         /// <summary>
         /// 移除
@@ -27,6 +27,6 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard.Expand.Attachment
         /// <param name="currUser">当前用户</param>
         /// <param name="fileAddress">文件地址</param>
         /// <returns>返回信息</returns>
-        ReturnInfo<bool> Remove(BasicUserInfo currUser = null, params string[] fileAddress);
+        ReturnInfo<bool> Remove(BasicUserInfo<int> currUser = null, params string[] fileAddress);
     }
 }

@@ -14,7 +14,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class FormService : ServiceBase<FormInfo, IFormPersistence>, IFormService
+    public partial class FormService : ServiceBase<int, FormInfo, IFormPersistence>, IFormService
     {
     }
 }

@@ -13,7 +13,7 @@ namespace Hzdtf.Authorization.Web.Framework
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public class IdentityAuthClaimReader : IIdentityAuthReader<BasicUserInfo>
+    public class IdentityAuthClaimReader : IIdentityAuthReader<int, BasicUserInfo<int>>
     {
         /// <summary>
         /// 判断是否已授权
@@ -22,7 +22,7 @@ namespace Hzdtf.Authorization.Web.Framework
         public ReturnInfo<bool> IsAuthed()
         {
             ReturnInfo<bool> returnInfo = new ReturnInfo<bool>();
-            returnInfo.Data = HttpFormsAuthorizationUtil.IsAuthenticated<BasicUserInfo>();
+            returnInfo.Data = HttpFormsAuthorizationUtil.IsAuthenticated<BasicUserInfo<int>>();
 
             return returnInfo;
         }
@@ -31,10 +31,10 @@ namespace Hzdtf.Authorization.Web.Framework
         /// 读取
         /// </summary>
         /// <returns>数据</returns>
-        public ReturnInfo<BasicUserInfo> Reader()
+        public ReturnInfo<BasicUserInfo<int>> Reader()
         {
-            ReturnInfo<BasicUserInfo> returnInfo = new ReturnInfo<BasicUserInfo>();
-            returnInfo.Data = HttpFormsAuthorizationUtil.ParseUserData<BasicUserInfo>();
+            ReturnInfo<BasicUserInfo<int>> returnInfo = new ReturnInfo<BasicUserInfo<int>>();
+            returnInfo.Data = HttpFormsAuthorizationUtil.ParseUserData<BasicUserInfo<int>>();
 
             return returnInfo;
         }

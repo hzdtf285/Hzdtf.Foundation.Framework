@@ -14,7 +14,7 @@ namespace Hzdtf.BasicFunction.Model.Standard
     /// @ 黄振东
     /// </summary>
     [MessagePackObject]
-    public partial class DataDictionaryItemExpandInfo : PersonTimeInfo
+    public partial class DataDictionaryItemExpandInfo : PersonTimeInfo<int>
     {
 ﻿        /// <summary>
         /// 数据字典子项Id_名称

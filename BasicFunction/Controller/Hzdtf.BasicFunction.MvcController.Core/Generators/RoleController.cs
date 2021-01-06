@@ -18,7 +18,7 @@ namespace Hzdtf.BasicFunction.MvcController.Core
     [ApiController]
     [Route("api/[controller]")]
     [Authorize]
-    public partial class RoleController : ManageControllerBase<PageInfo, RoleInfo, IRoleService, KeywordFilterInfo>
+    public partial class RoleController : ManageControllerBase<PageInfo<int>, RoleInfo, IRoleService, KeywordFilterInfo>
     {
         /// <summary>
         /// 菜单编码

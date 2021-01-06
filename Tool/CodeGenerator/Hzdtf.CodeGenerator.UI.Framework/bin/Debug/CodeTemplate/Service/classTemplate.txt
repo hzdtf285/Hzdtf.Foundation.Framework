@@ -14,7 +14,7 @@ namespace |NamespacePfx|.Service.Impl.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class |Model|Service : ServiceBase<|Model|Info, I|Model|Persistence>, I|Model|Service
+    public partial class |Model|Service : ServiceBase<|PkType|, |Model|Info, I|Model|Persistence>, I|Model|Service
     {
     }
 }

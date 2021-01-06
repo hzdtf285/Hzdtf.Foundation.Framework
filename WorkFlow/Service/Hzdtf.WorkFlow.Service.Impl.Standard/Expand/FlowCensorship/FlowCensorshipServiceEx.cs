@@ -22,7 +22,7 @@ namespace Hzdtf.WorkFlow.Service.Impl.Standard
         /// <param name="connectionId">连接ID</param>
         /// <param name="currUser">当前用户</param>
         /// <returns>返回信息</returns>
-        public virtual ReturnInfo<IList<FlowCensorshipInfo>> QueryByFlowId([DisplayName2("流程ID"), Id] int flowId, string connectionId = null, BasicUserInfo currUser = null)
+        public virtual ReturnInfo<IList<FlowCensorshipInfo>> QueryByFlowId([DisplayName2("流程ID"), Id] int flowId, string connectionId = null, BasicUserInfo<int> currUser = null)
         {
             return ExecReturnFuncAndConnectionId<IList<FlowCensorshipInfo>>((reInfo, connId) =>
             {

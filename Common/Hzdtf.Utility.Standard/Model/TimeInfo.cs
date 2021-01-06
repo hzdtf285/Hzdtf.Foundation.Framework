@@ -11,8 +11,9 @@ namespace Hzdtf.Utility.Standard.Model
     /// 带有时间的信息
     /// @ 黄振东
     /// </summary>
+    /// <typeparam name="IdT">ID类型</typeparam>
     [MessagePackObject]
-    public class TimeInfo : SimpleInfo
+    public class TimeInfo<IdT> : SimpleInfo<IdT>
     {
         /// <summary>
         /// 创建时间_名称
@@ -47,5 +48,14 @@ namespace Hzdtf.Utility.Standard.Model
             get;
             set;
         } = DateTime.Now;
+    }
+
+    /// <summary>
+    /// 带有时间的信息
+    /// @ 黄振东
+    /// </summary>
+    [MessagePackObject]
+    public class TimeInfo : TimeInfo<int>
+    {
     }
 }

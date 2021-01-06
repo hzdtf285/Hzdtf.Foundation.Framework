@@ -10,7 +10,7 @@ namespace |NamespacePfx|.Service.Contract.Standard
     /// |Description|服务接口
     /// @ 黄振东
     /// </summary>
-    public partial interface I|Model|Service : IService<|Model|Info>
+    public partial interface I|Model|Service : IService<|PkType|, |Model|Info>
     {
     }
 }

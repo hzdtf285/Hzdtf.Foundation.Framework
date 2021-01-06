@@ -20,6 +20,48 @@
             描述
             </summary>
         </member>
+        <member name="T:Hzdtf.CodeGenerator.Model.Standard.CodeParamInfo">
+            <summary>
+            代码参数信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.CodeParamInfo.FunctionTypes">
+            <summary>
+            功能类型数组
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.CodeParamInfo.NamespacePfx">
+            <summary>
+            命名空间前辍
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.CodeParamInfo.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.CodeParamInfo.PkType">
+            <summary>
+            主键类型
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.CodeParamInfo.IsTenant">
+            <summary>
+            是否租户
+            </summary>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Model.Standard.CodeGeneratorParamInfo">
+            <summary>
+            代码生成参数信息
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.CodeGenerator.Model.Standard.CodeGeneratorParamInfo.Tables">
+            <summary>
+            表列表
+            </summary>
+        </member>
         <member name="T:Hzdtf.CodeGenerator.Model.Standard.ColumnInfo">
             <summary>
             列信息
@@ -163,6 +205,45 @@
             <summary>
             特性列表
             </summary>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Model.Standard.PrimaryKeyType">
+            <summary>
+            主键类型
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Model.Standard.PrimaryKeyType.INT">
+            <summary>
+            整型
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Model.Standard.PrimaryKeyType.STRING">
+            <summary>
+            字符串
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Model.Standard.PrimaryKeyType.GUID">
+            <summary>
+            GUID
+            </summary>
+        </member>
+        <member name="F:Hzdtf.CodeGenerator.Model.Standard.PrimaryKeyType.SNOWFLAKE">
+            <summary>
+            雪花算法
+            </summary>
+        </member>
+        <member name="T:Hzdtf.CodeGenerator.Model.Standard.PrimaryKeyExtensions">
+            <summary>
+            主键类型扩展类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.CodeGenerator.Model.Standard.PrimaryKeyExtensions.ToCodeString(Hzdtf.CodeGenerator.Model.Standard.PrimaryKeyType)">
+            <summary>
+            根据主键类型转换为编码字符串
+            </summary>
+            <param name="pkType">主键类型</param>
+            <returns>编码字符串</returns>
         </member>
         <member name="T:Hzdtf.CodeGenerator.Model.Standard.TableInfo">
             <summary>

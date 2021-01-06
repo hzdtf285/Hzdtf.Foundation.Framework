@@ -13,8 +13,9 @@ namespace Hzdtf.Utility.Standard.Model
     /// 简单信息
     /// @ 黄振东
     /// </summary>
+    /// <typeparam name="IdT">ID类型</typeparam>
     [MessagePackObject]
-    public class SimpleInfo : ICloneable
+    public class SimpleInfo<IdT> : ICloneable
     {
         /// <summary>
         /// ID_名称
@@ -27,7 +28,7 @@ namespace Hzdtf.Utility.Standard.Model
         [JsonProperty("id")]
         [Display(AutoGenerateField = false)]
         [MessagePack.Key("id")]
-        public int Id
+        public IdT Id
         {
             get;
             set;
@@ -47,5 +48,38 @@ namespace Hzdtf.Utility.Standard.Model
         /// </summary>
         /// <returns>字符串</returns>
         public override string ToString() => JsonUtil.SerializeIgnoreNull(this);
+    }
+
+    /// <summary>
+    /// 简单信息
+    /// @ 黄振东
+    /// </summary>
+    [MessagePackObject]
+    public class SimpleInfo : SimpleInfo<int>
+    {
+    }
+
+    /// <summary>
+    /// 简单租户信息
+    /// </summary>
+    /// <typeparam name="IdT">ID类型</typeparam>
+    public class SimpleTenanInfo<IdT> : SimpleInfo<IdT>
+    {
+        /// <summary>
+        /// 租户ID_名称
+        /// </summary>
+        public const string TenantId_Name = "TenantId";
+
+        /// <summary>
+        /// 租户ID
+        /// </summary>
+        [JsonProperty("tenantId")]
+        [Display(Name = "租户ID", Order = 10, AutoGenerateField = false)]
+        [MessagePack.Key("tenantId")]
+        public IdT TenantId
+        {
+            get;
+            set;
+        }
     }
 }

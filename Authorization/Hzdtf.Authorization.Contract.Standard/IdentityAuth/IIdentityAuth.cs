@@ -8,8 +8,9 @@ namespace Hzdtf.Authorization.Contract.Standard.IdentityAuth
     /// 身份授权接口
     /// @ 黄振东
     /// </summary>
+    /// <typeparam name="IdT">ID类型</typeparam>
     /// <typeparam name="UserT">用户类型</typeparam>
-    public interface IIdentityAuth<UserT> where UserT : BasicUserInfo
+    public interface IIdentityAuth<IdT, UserT> where UserT : BasicUserInfo<IdT>
     {
         /// <summary>
         /// 授权

@@ -8,8 +8,9 @@ namespace Hzdtf.Authorization.Contract.Standard.User
     /// 用户验证接口
     /// @ 黄振东
     /// </summary>
+    /// <typeparam name="IdT">ID类型</typeparam>
     /// <typeparam name="UserT">用户类型</typeparam>
-    public interface IUserVali<UserT> where UserT : BasicUserInfo
+    public interface IUserVali<IdT, UserT> where UserT : BasicUserInfo<IdT>
     {
         /// <summary>
         /// 验证

@@ -20,7 +20,7 @@ namespace Hzdtf.Utility.Standard.Utils
         /// <param name="collection">收藏</param>
         /// <returns>列表是否为null或长度是否为0</returns>
         public static bool IsNullOrCount0<T>(this ICollection<T> collection) => collection == null || collection.Count == 0 ? true : false;
-       
+
         /// <summary>
         /// 判断数组是否为null或长度是否为0
         /// </summary>
@@ -75,7 +75,7 @@ namespace Hzdtf.Utility.Standard.Utils
             {
                 result[i] = list[i];
             }
-            
+
             return result;
         }
 
@@ -181,7 +181,7 @@ namespace Hzdtf.Utility.Standard.Utils
             {
                 newArray[i] = array1[i];
             }
-            for (int i = 0,startIndex = array1.Length; i < array2.Length; i++, startIndex++)
+            for (int i = 0, startIndex = array1.Length; i < array2.Length; i++, startIndex++)
             {
                 newArray[startIndex] = array2[i];
             }
@@ -389,6 +389,96 @@ namespace Hzdtf.Utility.Standard.Utils
             }
 
             return newArray;
+        }
+
+        /// <summary>
+        /// 根据索引获取值
+        /// </summary>
+        /// <typeparam name="T">类型</typeparam>
+        /// <param name="array">数组</param>
+        /// <param name="index">索引</param>
+        /// <returns>值</returns>
+        public static T GetValueByIndex<T>(this T[] array, int index = 0)
+        {
+            return array.IsNullOrLength0() ? default(T) : array[index];
+        }
+
+        /// <summary>
+        /// 根据索引获取值
+        /// </summary>
+        /// <typeparam name="T">类型</typeparam>
+        /// <param name="list">列表</param>
+        /// <param name="index">索引</param>
+        /// <returns>值</returns>
+        public static T GetValueByIndex<T>(this IList<T> list, int index = 0)
+        {
+            return list.IsNullOrCount0() ? default(T) : list[index];
+        }
+
+        /// <summary>
+        /// 移除指定的值
+        /// </summary>
+        /// <typeparam name="T">类型</typeparam>
+        /// <param name="array">数组</param>
+        /// <param name="value">值</param>
+        /// <param name="compact">比较回调</param>
+        /// <returns>新的数组</returns>
+        public static T[] Remove<T>(this T[] array, T value, Func<T, bool> compact)
+        {
+            if (array.IsNullOrLength0())
+            {
+                return array;
+            }
+
+            if (array.Contains(value))
+            {
+                var newArray = new T[array.Length - 1];
+                var newIndex = 0;
+                for (var i = 0; i < array.Length; i++)
+                {
+                    if (compact(array[i]))
+                    {
+                        continue;
+                    }
+
+                    newArray[newIndex] = array[i];
+                    newIndex++;
+                }
+
+                return newArray;
+            }
+            else
+            {
+                return array;
+            }
+        }
+
+        /// <summary>
+        /// 移除指定的值
+        /// </summary>
+        /// <param name="array">数组</param>
+        /// <param name="value">值</param>
+        /// <returns>新的数组</returns>
+        public static int[] Remove(this int[] array, int value)
+        {
+            return Remove(array, value, curr =>
+            {
+                return curr == value;
+            });
+        }
+
+        /// <summary>
+        /// 移除指定的值
+        /// </summary>
+        /// <param name="array">数组</param>
+        /// <param name="value">值</param>
+        /// <returns>新的数组</returns>
+        public static string[] Remove(this string[] array, string value)
+        {
+            return Remove(array, value, curr =>
+            {
+                return curr.Equals(value);
+            });
         }
     }
 }

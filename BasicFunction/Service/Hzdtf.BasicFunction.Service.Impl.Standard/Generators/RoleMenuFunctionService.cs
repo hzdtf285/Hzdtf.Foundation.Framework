@@ -14,7 +14,7 @@ namespace Hzdtf.BasicFunction.Service.Impl.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class RoleMenuFunctionService : ServiceBase<RoleMenuFunctionInfo, IRoleMenuFunctionPersistence>, IRoleMenuFunctionService
+    public partial class RoleMenuFunctionService : ServiceBase<int, RoleMenuFunctionInfo, IRoleMenuFunctionPersistence>, IRoleMenuFunctionService
     {
     }
 }

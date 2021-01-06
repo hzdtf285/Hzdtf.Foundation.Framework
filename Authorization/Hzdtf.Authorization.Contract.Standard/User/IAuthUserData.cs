@@ -10,8 +10,9 @@ namespace Hzdtf.Authorization.Contract.Standard.User
     /// 身份认证用户数据接口
     /// @ 黄振东
     /// </summary>
+    /// <typeparam name="IdT">Id类型</typeparam>
     /// <typeparam name="UserT">用户类型</typeparam>
-    public interface IAuthUserData<UserT> where UserT : BasicUserInfo
+    public interface IAuthUserData<IdT, UserT> where UserT : BasicUserInfo<IdT>
     {
         /// <summary>
         /// 创建用户

@@ -10,7 +10,7 @@ namespace Hzdtf.WorkFlow.Persistence.Contract.Standard
     /// 表单持久化接口
     /// @ 黄振东
     /// </summary>
-    public partial interface IFormPersistence : IPersistence<FormInfo>
+    public partial interface IFormPersistence : IPersistence<int, FormInfo>
     {
     }
 }

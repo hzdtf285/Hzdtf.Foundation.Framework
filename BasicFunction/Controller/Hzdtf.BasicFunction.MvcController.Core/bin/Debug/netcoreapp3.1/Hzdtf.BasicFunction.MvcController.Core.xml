@@ -217,6 +217,18 @@
             </summary>
             <returns>菜单编码</returns>
         </member>
+        <member name="T:Hzdtf.BasicFunction.MvcController.Core.OrderController">
+            <summary>
+            订单控制器
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.MvcController.Core.OrderController.MenuCode">
+            <summary>
+            菜单编码
+            </summary>
+            <returns>菜单编码</returns>
+        </member>
         <member name="T:Hzdtf.BasicFunction.MvcController.Core.Home.AuthorizationController">
             <summary>
             授权控制器

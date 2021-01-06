@@ -39,11 +39,10 @@ namespace Hzdtf.CodeGenerator.Impl.Standard.Function
         /// 生成代码文本集合
         /// </summary>
         /// <param name="table">表名</param>
-        /// <param name="namespacePfx">命名空间前辍</param>
-        /// <param name="type">类型</param>
+        /// <param name="codeParam">代码参数</param>
         /// <param name="fileNames">文件名集合</param>
         /// <returns>代码文本集合</returns>
-        protected override string[] BuilderCodeTexts(TableInfo table, string namespacePfx, string type, out string[] fileNames)
+        protected override string[] BuilderCodeTexts(TableInfo table, CodeParamInfo codeParam, out string[] fileNames)
         {
             string basicName = table.Name.FristUpper();
             string name = $"{basicName}Controller";
@@ -53,10 +52,11 @@ namespace Hzdtf.CodeGenerator.Impl.Standard.Function
             return new string[] 
             {
                 ClassTemplate
-                .Replace("|NamespacePfx|", namespacePfx)
+                .Replace("|NamespacePfx|", codeParam.NamespacePfx)
                 .Replace("|Description|", desc)
                 .Replace("|Name|", name)
                 .Replace("|Model|", basicName)
+                .Replace("|PkType|", codeParam.PkType.ToCodeString())
             };
         }
 

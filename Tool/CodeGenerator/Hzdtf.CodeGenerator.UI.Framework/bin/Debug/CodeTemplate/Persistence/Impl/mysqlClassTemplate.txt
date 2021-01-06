@@ -11,7 +11,7 @@ namespace |NamespacePfx|.|DbType|.Standard
     /// @ 黄振东
     /// </summary>
     [Inject]
-    public partial class |Name| : MySqlDapperBase<|Model|Info>, I|Name|
+    public partial class |Name| : MySqlDapperBase<|PkType|, |Model|Info>, I|Name|
     {
         /// <summary>
         /// 表名

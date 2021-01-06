@@ -10,7 +10,7 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard
     /// 标准关卡服务接口
     /// @ 黄振东
     /// </summary>
-    public partial interface IStandardCensorshipService : IService<StandardCensorshipInfo>
+    public partial interface IStandardCensorshipService : IService<int, StandardCensorshipInfo>
     {
     }
 }

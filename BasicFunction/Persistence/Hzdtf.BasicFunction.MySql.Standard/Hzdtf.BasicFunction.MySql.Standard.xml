@@ -1157,5 +1157,57 @@
             </summary>
             <returns>所有字段映射集合</returns>
         </member>
+        <member name="T:Hzdtf.BasicFunction.MySql.Standard.OrderPersistence">
+            <summary>
+            订单持久化
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.BasicFunction.MySql.Standard.OrderPersistence.Table">
+            <summary>
+            表名
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.MySql.Standard.OrderPersistence.INSERT_FIELD_NAMES">
+            <summary>
+            插入字段名称集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.MySql.Standard.OrderPersistence.UPDATE_FIELD_NAMES">
+            <summary>
+            更新字段名称集合
+            </summary>
+        </member>
+        <member name="F:Hzdtf.BasicFunction.MySql.Standard.OrderPersistence.FIELD_MAP_PROPS">
+            <summary>
+            所有字段映射集合
+            </summary>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.MySql.Standard.OrderPersistence.GetValueByFieldName(Hzdtf.BasicFunction.Model.Standard.OrderInfo,System.String)">
+            <summary>
+            根据字段名获取模型的值
+            </summary>
+            <param name="model">模型</param>
+            <param name="field">字段名</param>
+            <returns>值</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.MySql.Standard.OrderPersistence.InsertFieldNames">
+            <summary>
+            插入字段名集合
+            </summary>
+            <returns>插入字段名集合</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.MySql.Standard.OrderPersistence.UpdateFieldNames">
+            <summary>
+            更新字段名称集合
+            </summary>
+            <returns>更新字段名称集合</returns>
+        </member>
+        <member name="M:Hzdtf.BasicFunction.MySql.Standard.OrderPersistence.AllFieldMapProps">
+            <summary>
+            所有字段映射集合
+            </summary>
+            <returns>所有字段映射集合</returns>
+        </member>
     </members>
 </doc>

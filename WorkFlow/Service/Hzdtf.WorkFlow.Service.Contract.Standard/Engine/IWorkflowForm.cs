@@ -10,7 +10,7 @@ namespace Hzdtf.WorkFlow.Service.Contract.Standard.Engine
     /// 流程表单接口
     /// @ 黄振东
     /// </summary>
-    public interface IWorkflowForm : IWorkflowEngine<FlowInInfo<FlowInitInfo<PersonTimeInfo>>>
+    public interface IWorkflowForm : IWorkflowEngine<FlowInInfo<FlowInitInfo<PersonTimeInfo<int>>>>
     {
     }
 }

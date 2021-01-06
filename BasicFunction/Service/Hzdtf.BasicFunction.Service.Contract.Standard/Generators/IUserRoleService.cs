@@ -10,7 +10,7 @@ namespace Hzdtf.BasicFunction.Service.Contract.Standard
     /// 用户角色服务接口
     /// @ 黄振东
     /// </summary>
-    public partial interface IUserRoleService : IService<UserRoleInfo>
+    public partial interface IUserRoleService : IService<int, UserRoleInfo>
     {
     }
 }

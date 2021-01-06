@@ -10,7 +10,7 @@ namespace Hzdtf.BasicFunction.Persistence.Contract.Standard
     /// 角色菜单功能持久化接口
     /// @ 黄振东
     /// </summary>
-    public partial interface IRoleMenuFunctionPersistence : IPersistence<RoleMenuFunctionInfo>
+    public partial interface IRoleMenuFunctionPersistence : IPersistence<int, RoleMenuFunctionInfo>
     {
     }
 }

@@ -21,6 +21,11 @@
             Defines the stage of the authentication.
             </summary>
         </member>
+        <member name="T:MySql.Data.MySqlClient.Authentication.MySqlClearPasswordPlugin">
+            <summary>
+            Allows connections to a user account set with the mysql_clear_password authentication plugin.
+            </summary>
+        </member>
         <member name="T:MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin">
             <summary>
             Defines the default behavior for an authentication plugin.
@@ -106,6 +111,23 @@
             </summary>
             <returns>An object containing the encoded, encrypted, or converted password.</returns>
         </member>
+        <member name="T:MySql.Data.MySqlClient.Authentication.MySqlPemReader">
+            <summary>
+            Provides functionality to read, decode and convert PEM files to objects supported in .NET.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.MySqlPemReader.ConvertPemToRSAProvider(System.Byte[])">
+            <summary>
+            Converts the binary data of a PEM file to an <see cref="T:System.Security.Cryptography.RSACryptoServiceProvider"/> object. 
+            </summary>
+            <param name="rawPublicKey">A binary representation of the public key provided by the server.</param>
+            <returns>An <see cref="T:System.Security.Cryptography.RSACryptoServiceProvider"/> object containing the data found in the public key.</returns>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Authentication.MySqlSASLPlugin">
+            <summary>
+            Allows connections to a user account set with the authentication_ldap_sasl authentication plugin.
+            </summary>
+        </member>
         <member name="T:MySql.Data.MySqlClient.Authentication.MySqlNativePasswordPlugin">
             <summary>
             Allows connections to a user account set with the mysql_native_password authentication plugin.
@@ -119,6 +141,98 @@
             <param name="password"></param>
             <param name="seedBytes"></param>
             <returns></returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.ClientInitial">
+            <summary>
+            Builds up the client-first message.
+            </summary>
+            <returns>An array of bytes containig the client-first message.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.ProcessServerResponse(System.Byte[])">
+            <summary>
+            Processes the server response from the client-first message and 
+            builds up the client-final message.
+            </summary>
+            <param name="data">Response from the server.</param>
+            <returns>An array of bytes containing the client-final message.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.ValidateAuth(System.Byte[])">
+            <summary>
+            Validates the server response.
+            </summary>
+            <param name="data">Server-final message</param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.SaslPrep(System.String)">
+            <summary>
+            Prepares the user name or password string.
+            </summary>
+            <param name="s">The string to prepare.</param>
+            <returns>The prepared string.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.IsNonAsciiSpace(System.Char)">
+            <summary>
+            Determines if the character is a non-ASCII space.
+            </summary>
+            <remarks>
+            This list was obtained from http://tools.ietf.org/html/rfc3454#appendix-C.1.2
+            </remarks>
+            <returns><c>true</c> if the character is a non-ASCII space; otherwise, <c>false</c>.</returns>
+            <param name="c">The character.</param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.IsCommonlyMappedToNothing(System.Char)">
+            <summary>
+            Determines if the character is commonly mapped to nothing.
+            </summary>
+            <remarks>
+            This list was obtained from http://tools.ietf.org/html/rfc3454#appendix-B.1
+            </remarks>
+            <returns><c>true</c> if the character is commonly mapped to nothing; otherwise, <c>false</c>.</returns>
+            <param name="c">The character.</param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.IsProhibited(System.String,System.Int32)">
+            <summary>
+            Determines if the character is prohibited.
+            </summary>
+            <remarks>
+            This list was obtained from http://tools.ietf.org/html/rfc3454#appendix-C.3
+            </remarks>
+            <returns><c>true</c> if the character is prohibited; otherwise, <c>false</c>.</returns>
+            <param name="s">The string.</param>
+            <param name="index">The character index.</param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.CreateHMACSHA1(System.Byte[])">
+            <summary>
+            Creates the HMAC SHA1 context.
+            </summary>
+            <returns>The HMAC context.</returns>
+            <param name="key">The secret key.</param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.Xor(System.Byte[],System.Byte[])">
+            <summary>
+            Applies the exclusive-or operation to combine two octet strings.
+            </summary>
+            <param name="a">The alpha component.</param>
+            <param name="b">The blue component.</param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.HMAC(System.Byte[],System.Byte[])">
+            <summary>
+            Apply the HMAC keyed algorithm.
+            </summary>
+            <returns>The results of the HMAC keyed algorithm.</returns>
+            <param name="key">The key.</param>
+            <param name="str">The string.</param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.Hash(System.Byte[])">
+            <summary>
+            Applies the cryptographic hash function.
+            </summary>
+            <returns>The results of the hash.</returns>
+            <param name="str">The string.</param>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Authentication.AuthState">
+            <summary>
+            Defines the state of the authentication process.
+            </summary>
         </member>
         <member name="T:MySql.Data.MySqlClient.Authentication.Sha256AuthenticationPlugin">
             <summary>
@@ -419,6 +533,11 @@
         <member name="M:MySql.Data.MySqlClient.CharSetMap.InitializeMapping">
             <summary>
             Initializes the mapping.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.CharacterSet">
+            <summary>
+            Represents a character set object.
             </summary>
         </member>
         <member name="T:MySql.Data.MySqlClient.MySqlCommand">
@@ -1564,7 +1683,10 @@
       <para />
       You can change the value for these properties only by using the <B>ConnectionString</B> property.
     </remarks><example>
-    </example><param name="connectionString">The connection properties used to open the MySQL database. </param>
+    </example><param name="connectionString">
+      The connection properties used to open the MySQL database.
+      <para>The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.</para>
+    </param>
         </member>
         <member name="P:MySql.Data.MySqlClient.MySqlConnection.IsClone">
             <summary>
@@ -1834,6 +1956,7 @@
                 In Unix environment with Mono, this can be a fully qualified path to MySQL socket filename. With this configuration, the Unix socket will be used instead of TCP/IP socket.
                 Currently only a single socket name can be given so accessing MySQL in a replicated environment using Unix sockets is not currently supported.
               </para>
+              <para>The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.</para>
             </td>
           </tr>
           <tr>
@@ -2297,8 +2420,8 @@
       </code>
     </example>
         </member>
-        <member name="M:MySql.Data.MySqlClient.MySqlConnection.BeginTransaction(System.Data.IsolationLevel)">
-            <summary>Begins a database transaction with the specified isolation level.</summary><param name="iso">The isolation level under which the transaction should run. </param><returns>An object representing the new transaction.</returns><exception cref="T:System.InvalidOperationException">Parallel exceptions are not supported.</exception><remarks>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.BeginTransaction(System.Data.IsolationLevel,System.String)">
+            <summary>Begins a database transaction with the specified isolation level.</summary><param name="iso">The isolation level under which the transaction should run. </param><param name="scope">The scope of the transaction. </param><returns>An object representing the new transaction.</returns><exception cref="T:System.InvalidOperationException">Parallel exceptions are not supported.</exception><remarks>
       <para>This command is equivalent to the MySQL BEGIN TRANSACTION command.</para>
       <para>
         You must explicitly commit or roll back the transaction using the <see cref="M:MySql.Data.MySqlClient.MySqlTransaction.Commit" /> or
@@ -2492,23 +2615,6 @@
         }
       </code>
     </example>
-        </member>
-        <member name="M:MySql.Data.MySqlClient.MySqlConnection.ParseHostList(System.String)">
-            <summary>
-            Initializes the <see cref="T:MySql.Data.Failover.FailoverManager"/> if more than one host is found.
-            </summary>
-            <param name="hierPart">A string containing an unparsed list of hosts.</param>
-            <param name="connectionDataIsUri"><c>true</c> if the connection data is a URI; otherwise <c>false</c>.</param>
-            <returns>The number of hosts found, -1 if an error was raised during parsing.</returns>
-        </member>
-        <member name="M:MySql.Data.MySqlClient.MySqlConnection.ConvertToFailoverServer(System.String,System.Int32,System.Int32)">
-            <summary>
-            Creates a <see cref="T:MySql.Data.Failover.FailoverServer"/> object based on the provided parameters.
-            </summary>
-            <param name="host">The host string which can be a simple host name or a host name and port.</param>
-            <param name="priority">The priority of the host.</param>
-            <param name="port">The port number of the host.</param>
-            <returns></returns>
         </member>
         <member name="M:MySql.Data.MySqlClient.MySqlConnection.CreateCommand">
             <summary>
@@ -6121,6 +6227,7 @@
         <member name="P:MySql.Data.MySqlClient.MySqlBaseConnectionStringBuilder.Server">
             <summary>
             Gets or sets the name of the server.
+            <para>The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.</para>
             </summary>
             <value>The server.</value>
         </member>
@@ -6365,6 +6472,11 @@
             <summary>
             Gets or sets a boolean value that indicates whether this connection will allow
             to load data local infile.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.AllowLoadLocalInfileInPath">
+            <summary>
+            Gets or sets the safe path where files can be read and uploaded to the server.
             </summary>
         </member>
         <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.PersistSecurityInfo">
@@ -7014,6 +7126,11 @@
         <member name="F:MySql.Data.MySqlClient.CompressionType.Disabled">
             <summary>
             Disables compression.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.CompressionAlgorithms">
+            <summary>
+            Defines the compression algorithms that can be used.
             </summary>
         </member>
         <member name="T:MySql.Data.MySqlClient.MySqlError">
@@ -10047,6 +10164,14 @@
             Query is the method that is called to send all queries to the server
             </summary>
         </member>
+        <member name="M:MySql.Data.MySqlClient.NativeDriver.ValidateLocalInfileSafePath(System.String)">
+            <summary>
+            Verify that the file to upload is in a valid directory
+            according to the safe path entered by a user under
+            "AllowLoadLocalInfileInPath" connection option.
+            </summary>
+            <param name="filePath">File to validate against the safe path.</param>
+        </member>
         <member name="M:MySql.Data.MySqlClient.NativeDriver.SendFileToServer(System.String)">
             <summary>
             Sends the specified file to the server. 
@@ -10829,7 +10954,7 @@
             DNS resolver that runs queries against a server.
             </summary>
         </member>
-        <member name="M:MySql.Data.Common.DnsResolver.CreateResolver(System.String,Ubiety.Dns.Core.Common.TransportType)">
+        <member name="M:MySql.Data.Common.DnsResolver.CreateResolver(System.String)">
             <summary>
             Initializes a new instance of the <see cref="T:Ubiety.Dns.Core.Resolver"/> class.
             </summary>
@@ -10958,6 +11083,13 @@
             Stores a list of SSH clients having different connection settings.
             </summary>
         </member>
+        <member name="M:MySql.Data.Common.MySqlSshClientManager.RemoveUnsupportedAlgorithms(Renci.SshNet.SshClient)">
+            <summary>
+            Removes the MySQL unsupported encryptions (SSH Ciphers), MACs and key exchange algorithms.
+            </summary>
+            <param name="client">The <see cref="T:Renci.SshNet.SshClient"/> instance containing the list of supported elements.</param>
+            <remarks>See https://confluence.oraclecorp.com/confluence/display/GPS/Approved+Security+Technologies%3A+Standards+-+SSH+Ciphers+and+Versions for an updated list.</remarks>
+        </member>
         <member name="M:MySql.Data.Common.MySqlSshClientManager.SetupSshClient(System.String,System.String,System.String,System.String,System.String,System.UInt32,System.String,System.UInt32,System.Boolean)">
             <summary>
             Initializes an <see cref="T:Renci.SshNet.SshClient"/> instance if no SSH client with similar connection options has already been initialized.
@@ -10972,6 +11104,13 @@
             <param name="port">The local port number.</param>
             <param name="isXProtocol">Flag to indicate if the connection will be created for the classic or X Protocol.</param>
             <returns></returns>
+        </member>
+        <member name="M:MySql.Data.Common.MySqlSshClientManager.ValidateDeprecatedAlgorithms(Renci.SshNet.SshClient)">
+            <summary>
+            Raises warning messages if the SSH client is using a deprecated encryption, MAC or key exchanged algorithm.
+            </summary>
+            <param name="client">The <see cref="T:Renci.SshNet.SshClient"/> instance containing the
+            encryption, MAC algorithm and key exchange algorithm currently being used.</param>
         </member>
         <member name="M:MySql.Data.Common.MySqlTokenizer.ReadQuotedToken(System.Char)">
             <summary>
@@ -11099,12 +11238,13 @@
             Raises an exception if the specified connection option is null, empty or whitespace.
             </summary>
             <param name="connectionOption">The connection option to verify.</param>
+            <param name="connectionOptionName">The name of the connection option.</param>
         </member>
         <member name="M:MySql.Data.common.SslPemCertificateValidator.GetBuffer(System.String)">
             <summary>
             Reads the specified file as a byte array.
             </summary>
-            <param name="fileName">The path of the file to read.</param>
+            <param name="filePath">The path of the file to read.</param>
             <returns>A byte array representing the read file.</returns>
         </member>
         <member name="M:MySql.Data.common.SslPemCertificateValidator.ReadSslCertificate(System.String)">
@@ -11210,6 +11350,7 @@
             <param name="originalConnectionString">The original connection string set by the user.</param>
             <param name="connectionString">An out parameter that stores the updated connection string.</param>
             <param name="client">A <see cref="T:MySqlX.XDevAPI.Client"/> object in case this is a pooling scenario.</param>
+            <param name="isDefaultPort">A flag indicating if the default port is used in the connection.</param>
             <returns>An <see cref="T:MySqlX.Sessions.InternalSession"/> instance if the connection was succesfully established, a <see cref="T:MySql.Data.MySqlClient.MySqlException"/> exception is thrown otherwise.</returns>
         </member>
         <!-- Badly formed XML comment ignored for member "M:MySql.Data.Failover.FailoverManager.AttemptConnection(MySql.Data.MySqlClient.MySqlConnection,System.String,System.String@,System.Boolean)" -->
@@ -11409,12 +11550,12 @@
         </member>
         <member name="P:MySql.Data.Resources.BufferCannotBeNull">
             <summary>
-              Looks up a localized string similar to  The buffer cannot be null.
+              Looks up a localized string similar to The buffer cannot be null.
             </summary>
         </member>
         <member name="P:MySql.Data.Resources.BufferNotLargeEnough">
             <summary>
-              Looks up a localized string similar to  Buffer is not large enough.
+              Looks up a localized string similar to The buffer is not large enough.
             </summary>
         </member>
         <member name="P:MySql.Data.Resources.CancelNeeds50">
@@ -11445,6 +11586,11 @@
         <member name="P:MySql.Data.Resources.ChaosNotSupported">
             <summary>
               Looks up a localized string similar to Chaos isolation level is not supported .
+            </summary>
+        </member>
+        <member name="P:MySql.Data.Resources.ClearPasswordNotSupported">
+            <summary>
+              Looks up a localized string similar to Clear-password authentication is not supported over insecure channels..
             </summary>
         </member>
         <member name="P:MySql.Data.Resources.CommandTextNotInitialized">
@@ -11512,6 +11658,11 @@
               Looks up a localized string similar to The default connection encoding was not found. Please report this as a bug along with your connection string and system details..
             </summary>
         </member>
+        <member name="P:MySql.Data.Resources.DeprecatedSshAlgorithm">
+            <summary>
+              Looks up a localized string similar to The {0} algorithm being used by the server({1}) has been deprecated and will be removed in a future version. It is recommended that you configure the server to use a non-deprecated {0} algorithm..
+            </summary>
+        </member>
         <member name="P:MySql.Data.Resources.DistributedTxnNotSupported">
             <summary>
               Looks up a localized string similar to MySQL Connector/NET does not currently support distributed transactions..
@@ -11555,6 +11706,11 @@
         <member name="P:MySql.Data.Resources.ErrorCreatingSocket">
             <summary>
               Looks up a localized string similar to Error creating socket connection.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.Resources.ExecuteProcedureUnauthorized">
+            <summary>
+              Looks up a localized string similar to Verify that user &apos;{0}&apos;@&apos;{1}&apos; has enough privileges to execute..
             </summary>
         </member>
         <member name="P:MySql.Data.Resources.FatalErrorDuringExecute">
@@ -11672,6 +11828,11 @@
               Looks up a localized string similar to No other SSL options are accepted when SSL Mode is set to None..
             </summary>
         </member>
+        <member name="P:MySql.Data.Resources.InvalidPathForLoadLocalInfile">
+            <summary>
+              Looks up a localized string similar to Either provide a valid path for &apos;allowloadlocalinfileinpath&apos; or enable &apos;allowloadlocalinfile&apos;..
+            </summary>
+        </member>
         <member name="P:MySql.Data.Resources.InvalidProcName">
             <summary>
               Looks up a localized string similar to Procedure or function &apos;{0}&apos; cannot be found in database &apos;{1}&apos;..
@@ -11721,67 +11882,6 @@
             <summary>
               Looks up a localized string similar to Option not supported..
             </summary>
-        </member>
-        <member name="P:MySql.Data.Resources.keywords">
-             <summary>
-               Looks up a localized string similar to ACCESSIBLE
-            ADD
-            ALL
-            ALTER
-            ANALYZE
-            AND
-            AS
-            ASC
-            ASENSITIVE
-            BEFORE
-            BEGIN
-            BETWEEN
-            BIGINT
-            BINARY
-            BLOB
-            BOTH
-            BY
-            CALL
-            CASCADE
-            CASE
-            CHANGE
-            CHAR
-            CHARACTER
-            CHECK
-            COLLATE
-            COLUMN
-            COMMIT
-            CONDITION
-            CONNECTION
-            CONSTRAINT
-            CONTINUE
-            CONVERT
-            CREATE
-            CROSS
-            CURRENT_DATE
-            CURRENT_TIME
-            CURRENT_TIMESTAMP
-            CURRENT_USER
-            CURSOR
-            DATABASE
-            DATABASES
-            DAY_HOUR
-            DAY_MICROSECOND
-            DAY_MINUTE
-            DAY_SECOND
-            DEC
-            DECIMAL
-            DECLARE
-            DEFAULT
-            DELAYED
-            DELETE
-            DESC
-            DESCRIBE
-            DETERMINISTIC
-            DISTINCT
-            DISTINCTROW
-            D [rest of string was truncated]&quot;;.
-             </summary>
         </member>
         <member name="P:MySql.Data.Resources.LocalInfileDisabled">
             <summary>
@@ -11855,7 +11955,7 @@
         </member>
         <member name="P:MySql.Data.Resources.OffsetCannotBeNegative">
             <summary>
-              Looks up a localized string similar to  Offset cannot be negative.
+              Looks up a localized string similar to The offset cannot be negative.
             </summary>
         </member>
         <member name="P:MySql.Data.Resources.OffsetMustBeValid">
@@ -12075,7 +12175,7 @@
         </member>
         <member name="P:MySql.Data.Resources.StreamNoRead">
             <summary>
-              Looks up a localized string similar to  The stream does not support reading.
+              Looks up a localized string similar to The stream does not support reading.
             </summary>
         </member>
         <member name="P:MySql.Data.Resources.StreamNoWrite">
@@ -12286,6 +12386,11 @@
         <member name="P:MySql.Data.Resources.UnknownConnectionProtocol">
             <summary>
               Looks up a localized string similar to Unknown connection protocol.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.Resources.UnsafePathForLoadLocalInfile">
+            <summary>
+              Looks up a localized string similar to Trying to upload a file from outside the path set on &apos;allowloadlocalinfileinpath&apos; is invalid..
             </summary>
         </member>
         <member name="P:MySql.Data.Resources.ValueNotCorrectType">
@@ -12871,262 +12976,6 @@
             </summary>
             <returns>A string representation of the WKT.</returns>
         </member>
-        <member name="T:MySql.Data.X.common.UnmanagedLibraryLoader">
-            <summary>
-            Provides functionality for loading unmanaged libraries.
-            </summary>
-        </member>
-        <member name="M:MySql.Data.X.common.UnmanagedLibraryLoader.LoadUnmanagedLibraryFromEmbeddedResources(System.String,System.String)">
-            <summary>
-            Loads the specified unmanaged library from the embedded resources.
-            </summary>
-            <param name="applicationName">The application name.</param>
-            <param name="libraryName">The library name.</param>
-        </member>
-        <member name="T:MySql.Data.X.Communication.XCompressionController">
-            <summary>
-            Provides support for configuring X Protocol compressed messages.
-            </summary>
-        </member>
-        <member name="F:MySql.Data.X.Communication.XCompressionController.ALGORITHMS_SUBKEY">
-            <summary>
-            The capabilities sub-key used to specify the compression algorithm.
-            </summary>
-        </member>
-        <member name="F:MySql.Data.X.Communication.XCompressionController.COMPRESSION_KEY">
-            <summary>
-            The capabilities key used to specify the compression capability.
-            </summary>
-        </member>
-        <member name="F:MySql.Data.X.Communication.XCompressionController.COMPRESSION_THRESHOLD">
-            <summary>
-            Messages with a value lower than this threshold will not be compressed.
-            </summary>
-        </member>
-        <member name="F:MySql.Data.X.Communication.XCompressionController.DEFAULT_SERVER_COMBINE_MIXED_MESSAGES_VALUE">
-            <summary>
-            Default value for enabling or disabling combined compressed messages.
-            </summary>
-        </member>
-        <member name="F:MySql.Data.X.Communication.XCompressionController.DEFAULT_SERVER_MAX_COMBINE_MESSAGES_VALUE">
-            <summary>
-            Default value for the maximum number of combined compressed messages contained in a compression message.
-            </summary>
-        </member>
-        <member name="F:MySql.Data.X.Communication.XCompressionController.DEFLATE_STREAM_COMPRESSION_ALGORITHM">
-            <summary>
-            deflate_stream compression algorithm.
-            </summary>
-        </member>
-        <member name="F:MySql.Data.X.Communication.XCompressionController.LZ4_MESSAGE_COMPRESSION_ALGORITHM">
-            <summary>
-            lz4_message compression algorithm.
-            </summary>
-        </member>
-        <member name="F:MySql.Data.X.Communication.XCompressionController.SERVER_COMBINE_MIXED_MESSAGES_SUBKEY">
-            <summary>
-            The capabilities sub-key used to specify if combining compressed messages is permitted.
-            </summary>
-        </member>
-        <member name="F:MySql.Data.X.Communication.XCompressionController.SERVER_MAX_COMBINE_MESSAGES_SUBKEY">
-            <summary>
-            The capabilities sub-key used to specify the maximum number of compressed messages contained in a compression message.
-            </summary>
-        </member>
-        <member name="F:MySql.Data.X.Communication.XCompressionController.ZSTD_STREAM_COMPRESSION_ALGORITHM">
-            <summary>
-            zstd_stream compression algorithm.
-            </summary>
-        </member>
-        <member name="F:MySql.Data.X.Communication.XCompressionController._buffer">
-            <summary>
-            Buffer used to store the data received from the server.
-            </summary>
-        </member>
-        <member name="F:MySql.Data.X.Communication.XCompressionController._deflateCompressStream">
-            <summary>
-            Deflate stream used for compressing data.
-            </summary>
-        </member>
-        <member name="F:MySql.Data.X.Communication.XCompressionController._deflateDecompressStream">
-            <summary>
-            Deflate stream used for decompressing data.
-            </summary>
-        </member>
-        <member name="F:MySql.Data.X.Communication.XCompressionController._initializeForCompression">
-            <summary>
-            Flag indicating if the initialization is for compression or decompression.
-            </summary>
-        </member>
-        <member name="F:MySql.Data.X.Communication.XCompressionController._lastCommunicationPacket">
-            <summary>
-            Stores the communication packet generated the last time ReadNextBufferedMessage method was called.
-            </summary>
-        </member>
-        <member name="F:MySql.Data.X.Communication.XCompressionController._libzstdLoaded">
-            <summary>
-            Indicates if the libzstd.dll has been loaded.
-            </summary>
-        </member>
-        <member name="F:MySql.Data.X.Communication.XCompressionController._multipleMessagesStream">
-            <summary>
-            Stream used to store multiple X Protocol messages.
-            </summary>
-        </member>
-        <member name="F:MySql.Data.X.Communication.XCompressionController._zstdDecompressStream">
-            <summary>
-            ZStandard stream used for decompressing data.
-            </summary>
-        </member>
-        <member name="M:MySql.Data.X.Communication.XCompressionController.#cctor">
-            <summary>
-            Static constructor used to initialize the client supported compression algorithms.
-            </summary>
-        </member>
-        <member name="M:MySql.Data.X.Communication.XCompressionController.#ctor(System.String,System.Boolean)">
-            <summary>
-            Main constructor used to set the compression algorithm and initialize the list of messages to
-            be compressed by the client.
-            </summary>
-            <param name="compressionAlgorithm">The compression algorithm to use.</param>
-            <param name="initializeForCompression">Flag indicating if the initialization is for compression or decompression.</param>
-        </member>
-        <member name="P:MySql.Data.X.Communication.XCompressionController.ClientSupportedCompressedMessages">
-            <summary>
-            Gets or sets the list of messages that should be compressed by the client when compression is enabled.
-            </summary>
-        </member>
-        <member name="P:MySql.Data.X.Communication.XCompressionController.ClientSupportedCompressionAlgorithms">
-            <summary>
-            Gets or sets an array containing the compression algorithms supported by the client.
-            </summary>
-        </member>
-        <member name="P:MySql.Data.X.Communication.XCompressionController.CompressionAlgorithm">
-            <summary>
-            Gets or sets the compression algorithm.
-            </summary>
-        </member>
-        <member name="P:MySql.Data.X.Communication.XCompressionController.IsCompressionEnabled">
-            <summary>
-            Flag indicating if compression is enabled.
-            </summary>
-        </member>
-        <member name="P:MySql.Data.X.Communication.XCompressionController.LastMessageContainsMultipleMessages">
-            <summary>
-            Flag indicating if the last decompressed message contains multiple messages.
-            </summary>
-        </member>
-        <member name="M:MySql.Data.X.Communication.XCompressionController.Compress(System.Byte[])">
-            <summary>
-            General method used to compress data using the compression algorithm defined in the constructor.
-            </summary>
-            <param name="input">The data to compress.</param>
-            <returns>A compressed byte array.</returns>
-        </member>
-        <member name="M:MySql.Data.X.Communication.XCompressionController.CompressUsingDeflateStream(System.Byte[])">
-            <summary>
-            Compresses data using the deflate_stream algorithm.
-            </summary>
-            <param name="input">The data to compress.</param>
-            <returns>A compressed byte array.</returns>
-        </member>
-        <member name="M:MySql.Data.X.Communication.XCompressionController.CompressUsingLz4Message(System.Byte[])">
-            <summary>
-            Compresses data using the lz4_message algorithm.
-            </summary>
-            <param name="input">The data to compress.</param>
-            <returns>A compressed byte array.</returns>
-        </member>
-        <member name="M:MySql.Data.X.Communication.XCompressionController.CompressUsingZstdStream(System.Byte[])">
-            <summary>
-            Compresses data using the zstd_stream algorithm.
-            </summary>
-            <param name="input">The data to compress.</param>
-            <returns>A compressed byte array.</returns>
-        </member>
-        <member name="M:MySql.Data.X.Communication.XCompressionController.Decompress(System.Byte[],System.Int32)">
-            <summary>
-            General method used to decompress data using the compression algorithm defined in the constructor.
-            </summary>
-            <param name="input">The data to decompress.</param>
-            <param name="length">The expected length of the decompressed data.</param>
-            <returns>A decompressed byte array.</returns>
-        </member>
-        <member name="M:MySql.Data.X.Communication.XCompressionController.DecompressUsingDeflateStream(System.Byte[],System.Int32)">
-            <summary>
-            Decompresses data using the deflate_stream compression algorithm.
-            </summary>
-            <param name="input">The data to decompress.</param>
-            <param name="length">The expected length of the decompressed data.</param>
-            <returns>A decompressed byte array.</returns>
-        </member>
-        <member name="M:MySql.Data.X.Communication.XCompressionController.DecompressUsingLz4Message(System.Byte[],System.Int32)">
-            <summary>
-            Decompresses data using the lz4_message compression algorithm.
-            </summary>
-            <param name="input">The data to decompress.</param>
-            <param name="length">The expected length of the decompressed data.</param>
-            <returns>A decompressed byte array.</returns>
-        </member>
-        <member name="M:MySql.Data.X.Communication.XCompressionController.DecompressUsingZstdStream(System.Byte[],System.Int32)">
-            <summary>
-            Decompresses data using the zstd_stream compression algorithm.
-            </summary>
-            <param name="input">The data to decompress.</param>
-            <param name="length">The expected length of the decompressed data.</param>
-            <returns>A decompressed byte array.</returns>
-        </member>
-        <member name="M:MySql.Data.X.Communication.XCompressionController.Close">
-            <summary>
-            Closes and disposes of any open streams.
-            </summary>
-        </member>
-        <member name="M:MySql.Data.X.Communication.XCompressionController.ReadNextBufferedMessage">
-            <summary>
-            Gets the byte array representing the next X Protocol frame that is stored in cache.
-            </summary>
-            <returns>A byte array representing an X Protocol frame.</returns>
-        </member>
-        <member name="M:MySql.Data.X.Communication.XCompressionController.ReadNextBufferedMessageAsCommunicationPacket">
-            <summary>
-            Gets a <see cref="T:MySqlX.Communication.CommunicationPacket"/> representing the next X Protocol frame that is stored in cache.
-            </summary>
-            <returns>A <see cref="T:MySqlX.Communication.CommunicationPacket"/> with the next X Protocol frame.</returns>
-        </member>
-        <member name="M:MySql.Data.X.Communication.XCompressionController.LoadLibzstdLibrary">
-            <summary>
-            Loads the libzstd.dll assembly.
-            </summary>
-        </member>
-        <member name="T:MySql.Data.X.XDevAPI.Common.CreateCollectionOptions">
-            <summary>
-            This object store the required parameters to create a Collection with schema validation.
-            </summary>
-            <param name="ReuseExisting">If false, throws an exception if the collection exists.</param>
-            <param name="Validation">Object which hold the Level and Schema parameters</param>
-            <see cref="P:MySql.Data.X.XDevAPI.Common.CreateCollectionOptions.Validation"/>
-        </member>
-        <member name="P:MySql.Data.X.XDevAPI.Common.ModifyCollectionOptions.Validation">
-            <summary>
-            This object store the required parameters to Modify a Collection with schema validation.
-            </summary>
-            <param name="Validation">Object which hold the Level and Schema parameters</param>
-            <see cref="P:MySql.Data.X.XDevAPI.Common.ModifyCollectionOptions.Validation"/>
-        </member>
-        <member name="P:MySql.Data.X.XDevAPI.Common.Validation.Level">
-            <summary>
-            This object store the required parameters to create a Collection with schema validation.
-            </summary>
-            <param name="Level">It can be STRICT to enable schema validation or OFF to disable <see cref="T:MySql.Data.X.XDevAPI.Common.ValidationLevel"/></param>
-            <param name="Schema">The JSON which define the rules to be validated in the collection</param>
-        </member>
-        <member name="T:MySql.Data.X.XDevAPI.Common.ValidationLevel">
-            <summary>
-            The possible values for parameter Level in Validation object.
-            </summary>
-            <param name="STRICT">Enforce schema validation.</param>
-            <param name="OFF">Schema validation disabled.</param>
-        </member>
         <member name="T:MySqlX.Security.ExternalAuthenticationPlugin">
             <summary>
             Implementation of EXTERNAL authentication type.
@@ -13158,13 +13007,215 @@
             <param name="guid2">The second <see cref="T:System.Guid"/> to compare.</param>
             <returns>An integer that indicates the lexical relationship between the two comparands, similar to <see cref="M:System.String.Compare(System.String,System.String)"/></returns>
         </member>
+        <member name="T:MySqlX.Common.UnmanagedLibraryLoader">
+            <summary>
+            Provides functionality for loading unmanaged libraries.
+            </summary>
+        </member>
+        <member name="M:MySqlX.Common.UnmanagedLibraryLoader.LoadUnmanagedLibraryFromEmbeddedResources(System.String,System.String)">
+            <summary>
+            Loads the specified unmanaged library from the embedded resources.
+            </summary>
+            <param name="applicationName">The application name.</param>
+            <param name="libraryName">The library name.</param>
+        </member>
+        <member name="T:MySqlX.Communication.XCompressionController">
+            <summary>
+            Provides support for configuring X Protocol compressed messages.
+            </summary>
+        </member>
+        <member name="F:MySqlX.Communication.XCompressionController.ALGORITHMS_SUBKEY">
+            <summary>
+            The capabilities sub-key used to specify the compression algorithm.
+            </summary>
+        </member>
+        <member name="F:MySqlX.Communication.XCompressionController.COMPRESSION_KEY">
+            <summary>
+            The capabilities key used to specify the compression capability.
+            </summary>
+        </member>
+        <member name="F:MySqlX.Communication.XCompressionController.COMPRESSION_THRESHOLD">
+            <summary>
+            Messages with a value lower than this threshold will not be compressed.
+            </summary>
+        </member>
+        <member name="F:MySqlX.Communication.XCompressionController.DEFAULT_SERVER_COMBINE_MIXED_MESSAGES_VALUE">
+            <summary>
+            Default value for enabling or disabling combined compressed messages.
+            </summary>
+        </member>
+        <member name="F:MySqlX.Communication.XCompressionController.DEFAULT_SERVER_MAX_COMBINE_MESSAGES_VALUE">
+            <summary>
+            Default value for the maximum number of combined compressed messages contained in a compression message.
+            </summary>
+        </member>
+        <member name="F:MySqlX.Communication.XCompressionController.SERVER_COMBINE_MIXED_MESSAGES_SUBKEY">
+            <summary>
+            The capabilities sub-key used to specify if combining compressed messages is permitted.
+            </summary>
+        </member>
+        <member name="F:MySqlX.Communication.XCompressionController.SERVER_MAX_COMBINE_MESSAGES_SUBKEY">
+            <summary>
+            The capabilities sub-key used to specify the maximum number of compressed messages contained in a compression message.
+            </summary>
+        </member>
+        <member name="F:MySqlX.Communication.XCompressionController._buffer">
+            <summary>
+            Buffer used to store the data received from the server.
+            </summary>
+        </member>
+        <member name="F:MySqlX.Communication.XCompressionController._deflateCompressStream">
+            <summary>
+            Deflate stream used for compressing data.
+            </summary>
+        </member>
+        <member name="F:MySqlX.Communication.XCompressionController._deflateDecompressStream">
+            <summary>
+            Deflate stream used for decompressing data.
+            </summary>
+        </member>
+        <member name="F:MySqlX.Communication.XCompressionController._initializeForCompression">
+            <summary>
+            Flag indicating if the initialization is for compression or decompression.
+            </summary>
+        </member>
+        <member name="F:MySqlX.Communication.XCompressionController._lastCommunicationPacket">
+            <summary>
+            Stores the communication packet generated the last time ReadNextBufferedMessage method was called.
+            </summary>
+        </member>
+        <member name="F:MySqlX.Communication.XCompressionController.LibZstdLoaded">
+            <summary>
+            Indicates if the libzstd.dll has been loaded.
+            </summary>
+        </member>
+        <member name="F:MySqlX.Communication.XCompressionController._multipleMessagesStream">
+            <summary>
+            Stream used to store multiple X Protocol messages.
+            </summary>
+        </member>
+        <member name="F:MySqlX.Communication.XCompressionController._zstdDecompressStream">
+            <summary>
+            ZStandard stream used for decompressing data.
+            </summary>
+        </member>
+        <member name="M:MySqlX.Communication.XCompressionController.#ctor(MySql.Data.MySqlClient.CompressionAlgorithms,System.Boolean)">
+            <summary>
+            Main constructor used to set the compression algorithm and initialize the list of messages to
+            be compressed by the client.
+            </summary>
+            <param name="compressionAlgorithm">The compression algorithm to use.</param>
+            <param name="initializeForCompression">Flag indicating if the initialization is for compression or decompression.</param>
+        </member>
+        <member name="P:MySqlX.Communication.XCompressionController.ClientSupportedCompressedMessages">
+            <summary>
+            Gets or sets the list of messages that should be compressed by the client when compression is enabled.
+            </summary>
+        </member>
+        <member name="P:MySqlX.Communication.XCompressionController.CompressionAlgorithm">
+            <summary>
+            Gets or sets the compression algorithm.
+            </summary>
+        </member>
+        <member name="P:MySqlX.Communication.XCompressionController.IsCompressionEnabled">
+            <summary>
+            Flag indicating if compression is enabled.
+            </summary>
+        </member>
+        <member name="P:MySqlX.Communication.XCompressionController.LastMessageContainsMultipleMessages">
+            <summary>
+            Flag indicating if the last decompressed message contains multiple messages.
+            </summary>
+        </member>
+        <member name="M:MySqlX.Communication.XCompressionController.Compress(System.Byte[])">
+            <summary>
+            General method used to compress data using the compression algorithm defined in the constructor.
+            </summary>
+            <param name="input">The data to compress.</param>
+            <returns>A compressed byte array.</returns>
+        </member>
+        <member name="M:MySqlX.Communication.XCompressionController.CompressUsingDeflateStream(System.Byte[])">
+            <summary>
+            Compresses data using the deflate_stream algorithm.
+            </summary>
+            <param name="input">The data to compress.</param>
+            <returns>A compressed byte array.</returns>
+        </member>
+        <member name="M:MySqlX.Communication.XCompressionController.CompressUsingLz4Message(System.Byte[])">
+            <summary>
+            Compresses data using the lz4_message algorithm.
+            </summary>
+            <param name="input">The data to compress.</param>
+            <returns>A compressed byte array.</returns>
+        </member>
+        <member name="M:MySqlX.Communication.XCompressionController.CompressUsingZstdStream(System.Byte[])">
+            <summary>
+            Compresses data using the zstd_stream algorithm.
+            </summary>
+            <param name="input">The data to compress.</param>
+            <returns>A compressed byte array.</returns>
+        </member>
+        <member name="M:MySqlX.Communication.XCompressionController.Decompress(System.Byte[],System.Int32)">
+            <summary>
+            General method used to decompress data using the compression algorithm defined in the constructor.
+            </summary>
+            <param name="input">The data to decompress.</param>
+            <param name="length">The expected length of the decompressed data.</param>
+            <returns>A decompressed byte array.</returns>
+        </member>
+        <member name="M:MySqlX.Communication.XCompressionController.DecompressUsingDeflateStream(System.Byte[],System.Int32)">
+            <summary>
+            Decompresses data using the deflate_stream compression algorithm.
+            </summary>
+            <param name="input">The data to decompress.</param>
+            <param name="length">The expected length of the decompressed data.</param>
+            <returns>A decompressed byte array.</returns>
+        </member>
+        <member name="M:MySqlX.Communication.XCompressionController.DecompressUsingLz4Message(System.Byte[],System.Int32)">
+            <summary>
+            Decompresses data using the lz4_message compression algorithm.
+            </summary>
+            <param name="input">The data to decompress.</param>
+            <param name="length">The expected length of the decompressed data.</param>
+            <returns>A decompressed byte array.</returns>
+        </member>
+        <member name="M:MySqlX.Communication.XCompressionController.DecompressUsingZstdStream(System.Byte[],System.Int32)">
+            <summary>
+            Decompresses data using the zstd_stream compression algorithm.
+            </summary>
+            <param name="input">The data to decompress.</param>
+            <param name="length">The expected length of the decompressed data.</param>
+            <returns>A decompressed byte array.</returns>
+        </member>
+        <member name="M:MySqlX.Communication.XCompressionController.Close">
+            <summary>
+            Closes and disposes of any open streams.
+            </summary>
+        </member>
+        <member name="M:MySqlX.Communication.XCompressionController.ReadNextBufferedMessage">
+            <summary>
+            Gets the byte array representing the next X Protocol frame that is stored in cache.
+            </summary>
+            <returns>A byte array representing an X Protocol frame.</returns>
+        </member>
+        <member name="M:MySqlX.Communication.XCompressionController.ReadNextBufferedMessageAsCommunicationPacket">
+            <summary>
+            Gets a <see cref="T:MySqlX.Communication.CommunicationPacket"/> representing the next X Protocol frame that is stored in cache.
+            </summary>
+            <returns>A <see cref="T:MySqlX.Communication.CommunicationPacket"/> with the next X Protocol frame.</returns>
+        </member>
+        <member name="M:MySqlX.Communication.XCompressionController.LoadLibzstdLibrary">
+            <summary>
+            Loads the libzstd.dll assembly.
+            </summary>
+        </member>
         <member name="M:MySqlX.Communication.XPacketReaderWriter.#ctor(System.IO.Stream)">
             <summary>
             Constructor that sets the stream used to read or write data.
             </summary>
             <param name="stream">The stream used to read or write data.</param>
         </member>
-        <member name="M:MySqlX.Communication.XPacketReaderWriter.#ctor(System.IO.Stream,MySql.Data.X.Communication.XCompressionController)">
+        <member name="M:MySqlX.Communication.XPacketReaderWriter.#ctor(System.IO.Stream,MySqlX.Communication.XCompressionController)">
             <summary>
             Constructor that sets the stream used to read or write data and the compression controller.
             </summary>
@@ -13516,31 +13567,41 @@
             The used client to handle SSH connections.
             </summary>
         </member>
-        <member name="M:MySqlX.Sessions.XInternalSession.NegotiateCompression(System.String[])">
+        <member name="M:MySqlX.Sessions.XInternalSession.VerifyDefaultOrder(System.String[]@)">
+            <summary>
+            Reorder the list of algorithms retrieved from server to the preferred order
+            </summary>
+        </member>
+        <member name="M:MySqlX.Sessions.XInternalSession.NegotiateUserAgainstClientAlgorithms(System.String)">
+            <summary>
+            Validate the algorithms given in the connection string are valid compared with enum CompressionAlgorithms
+            </summary>
+        </member>
+        <member name="M:MySqlX.Sessions.XInternalSession.NegotiateCompression(System.String[],System.String[])">
             <summary>
             Negotiates compression capabilities with the server.
             </summary>
             <param name="serverSupportedAlgorithms">An array containing the compression algorithms supported by the server.</param>
+            <param name="clientAgainstUserAlgorithms">An array containing the compression algorithms given by user/client.</param>
         </member>
-        <member name="M:MySqlX.Sessions.XInternalSession.CreateCollection(System.String,System.String,MySql.Data.X.XDevAPI.Common.CreateCollectionOptions)">
+        <member name="M:MySqlX.Sessions.XInternalSession.CreateCollection(System.String,System.String,MySqlX.XDevAPI.Common.CreateCollectionOptions)">
             <summary>
             Prepare the dictionary of arguments required to create a MySQL message.
             </summary>
             <param name="schemaName">The name of the MySQL schema.</param>
             <param name="collectionName">The name of the collection.</param>
             <param name="options">This object hold the parameters required to create the collection.</param>
-            <see cref="T:MySql.Data.X.XDevAPI.Common.CreateCollectionOptions"/>
+            <see cref="T:MySqlX.XDevAPI.Common.CreateCollectionOptions"/>
             <returns>Collection referente.</returns>
         </member>
-        <member name="M:MySqlX.Sessions.XInternalSession.ModifyCollection(System.String,System.String,System.Nullable{MySql.Data.X.XDevAPI.Common.ModifyCollectionOptions})">
+        <member name="M:MySqlX.Sessions.XInternalSession.ModifyCollection(System.String,System.String,System.Nullable{MySqlX.XDevAPI.Common.ModifyCollectionOptions})">
             <summary>
             Prepare the dictionary of arguments required to Modify a MySQL message.
             </summary>
             <param name="schemaName">The name of the MySQL schema.</param>
             <param name="collectionName">The name of the collection.</param>
             <param name="options">This object hold the parameters required to Modify the collection.</param>
-            <see cref="T:MySql.Data.X.XDevAPI.Common.ModifyCollectionOptions"/>
-            <returns>Collection referente.</returns>
+            <see cref="T:MySqlX.XDevAPI.Common.ModifyCollectionOptions"/>
         </member>
         <member name="M:MySqlX.Sessions.XInternalSession.GetCompressionAlgorithm(System.Boolean)">
             <summary>
@@ -13586,6 +13647,7 @@
             Initializes a new instance of the BaseSession class based on the specified connection string.
             </summary>
             <param name="connectionString">The connection used to create the session.</param>
+            <param name="client">A <see cref="T:MySqlX.XDevAPI.Client"/> object.</param>
             <exception cref="T:System.ArgumentNullException"><paramref name="connectionString"/> is <c>null</c>.</exception>
             <exception cref="T:System.UriFormatException">Unable to parse the <paramref name="connectionString"/> when 
             in URI format.</exception>
@@ -13631,6 +13693,7 @@
             Initializes a new instance of the BaseSession class based on the specified anonymous type object.
             </summary>
             <param name="connectionData">The connection data as an anonymous type used to create the session.</param>
+            <param name="client">A <see cref="T:MySqlX.XDevAPI.Client"/> object.</param>
             <exception cref="T:System.ArgumentNullException"><paramref name="connectionData"/> is null.</exception>
             <remarks>
             <para>Multiple hosts can be specified as part of the <paramref name="connectionData"/>, which enables client-side failover when trying to
@@ -13724,6 +13787,7 @@
             Parses the connection data.
             </summary>
             <param name="connectionData">The connection string or connection URI.</param>
+            <param name="client">A <see cref="T:MySqlX.XDevAPI.Client"/> object.</param>
             <returns>An updated connection string representation of the provided connection string or connection URI.</returns>
         </member>
         <member name="M:MySqlX.XDevAPI.BaseSession.ParseConnectionUri(System.String)">
@@ -13747,6 +13811,7 @@
             <param name="uri">An <see cref="P:MySqlX.XDevAPI.BaseSession.Uri"/> instance with the values for the provided connection options.</param>
             <param name="unixSocketPath">The path of the Unix socket file.</param>
             <param name="parseServerAsUnixSocket">If <c>true</c> the <paramref name="unixSocketPath"/> replaces the value for the server connection option; otherwise, <c>false</c></param>
+            <param name="isDnsSrvScheme">Flag indicating if this is a connection using DNS SRV.</param>
             <returns>A connection string.</returns>
         </member>
         <member name="M:MySqlX.XDevAPI.BaseSession.ParseConnectionString(System.String)">
@@ -14162,6 +14227,51 @@
         <member name="M:MySqlX.XDevAPI.Common.BufferingResult`1.Dispose">
             <summary>
             No body has been defined for this method.
+            </summary>
+        </member>
+        <member name="T:MySqlX.XDevAPI.Common.CreateCollectionOptions">
+            <summary>
+            This object store the required parameters to create a Collection with schema validation.
+            </summary>
+        </member>
+        <member name="P:MySqlX.XDevAPI.Common.CreateCollectionOptions.ReuseExisting">
+            <summary>
+            If false, throws an exception if the collection exists.
+            </summary>
+        </member>
+        <member name="P:MySqlX.XDevAPI.Common.CreateCollectionOptions.Validation">
+            <summary>
+            Object which hold the Level and Schema parameters.
+            </summary>
+        </member>
+        <member name="T:MySqlX.XDevAPI.Common.ModifyCollectionOptions">
+            <summary>
+            This object store the required parameters to modify a Collection with schema validation.
+            </summary>
+        </member>
+        <member name="P:MySqlX.XDevAPI.Common.ModifyCollectionOptions.Validation">
+            <summary>
+            This object store the required parameters to Modify a Collection with schema validation.
+            </summary>
+        </member>
+        <member name="T:MySqlX.XDevAPI.Common.Validation">
+            <summary>
+            This object store the required parameters to create a Collection with schema validation.
+            </summary>
+        </member>
+        <member name="P:MySqlX.XDevAPI.Common.Validation.Level">
+            <summary>
+            It can be STRICT to enable schema validation or OFF to disable <see cref="T:MySqlX.XDevAPI.Common.ValidationLevel"/>.
+            </summary>
+        </member>
+        <member name="P:MySqlX.XDevAPI.Common.Validation.Schema">
+            <summary>
+            The JSON which define the rules to be validated in the collection.
+            </summary>
+        </member>
+        <member name="T:MySqlX.XDevAPI.Common.ValidationLevel">
+            <summary>
+            The possible values for parameter Level in Validation object.
             </summary>
         </member>
         <member name="T:MySqlX.XDevAPI.Common.ErrorInfo">
@@ -14670,7 +14780,9 @@
             <summary>
             Opens a session to the server given or to the first available server if multiple servers were specified.
             </summary>
-            <param name="connectionString">The connection string or URI string format.</param>
+            <param name="connectionString">The connection string or URI string format.
+            The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.
+            </param>
             <returns>A <see cref="T:MySqlX.XDevAPI.Session"/> object representing the established session.</returns>
             <remarks>Multiple hosts can be specified as part of the <paramref name="connectionString"/> which
             will enable client side failover when trying to establish a connection. For additional details and syntax 
@@ -14680,14 +14792,18 @@
             <summary>
             Opens a session to the server given.
             </summary>
-            <param name="connectionData">The connection data for the server.</param>
+            <param name="connectionData">The connection data for the server.
+            The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.
+            </param>
             <returns>A <see cref="T:MySqlX.XDevAPI.Session"/> object representing the established session.</returns>
         </member>
         <member name="M:MySqlX.XDevAPI.MySQLX.GetClient(System.String,System.String)">
             <summary>
             Creates a new <see cref="T:MySqlX.XDevAPI.Client"/> instance.
             </summary>
-            <param name="connectionString">The connection string or URI string format.</param>
+            <param name="connectionString">The connection string or URI string format.
+            The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.
+            </param>
             <param name="connectionOptions">The connection options in JSON string format.</param>
             <returns>A <see cref="T:MySqlX.XDevAPI.Client"/> object representing a session pool.</returns>
         </member>
@@ -14695,7 +14811,9 @@
             <summary>
             Creates a new <see cref="T:MySqlX.XDevAPI.Client"/> instance.
             </summary>
-            <param name="connectionString">The connection string or URI string format.</param>
+            <param name="connectionString">The connection string or URI string format.
+            The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.
+            </param>
             <param name="connectionOptions">The connection options in object format.
             <example>
             <code>
@@ -14716,7 +14834,9 @@
             <summary>
             Creates a new <see cref="T:MySqlX.XDevAPI.Client"/> instance.
             </summary>
-            <param name="connectionData">The connection data.</param>
+            <param name="connectionData">The connection data.
+            The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.
+            </param>
             <param name="connectionOptions">The connection options in JSON string format.</param>
             <returns>A <see cref="T:MySqlX.XDevAPI.Client"/> object representing a session pool.</returns>
         </member>
@@ -14724,7 +14844,9 @@
             <summary>
             Creates a new <see cref="T:MySqlX.XDevAPI.Client"/> instance.
             </summary>
-            <param name="connectionData">The connection data.</param>
+            <param name="connectionData">The connection data.
+            The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.
+            </param>
             <param name="connectionOptions">The connection options in object format.
             <example>
             <code>
@@ -14757,6 +14879,7 @@
             Constructor accepting a connection string.
             </summary>
             <param name="connectionString">The connection string.</param>
+            <param name="isDefaultPort">A flag indicating if the default port is used in the connection.</param>
         </member>
         <member name="F:MySqlX.XDevAPI.MySqlXConnectionStringBuilder.Options">
             <summary>
@@ -14781,6 +14904,11 @@
         <member name="P:MySqlX.XDevAPI.MySqlXConnectionStringBuilder.Compression">
             <summary>
             Gets or sets the compression type between client and server.
+            </summary>
+        </member>
+        <member name="P:MySqlX.XDevAPI.MySqlXConnectionStringBuilder.CompressionAlgorithm">
+            <summary>
+            Gets or sets the compression algorithm.
             </summary>
         </member>
         <member name="P:MySqlX.XDevAPI.MySqlXConnectionStringBuilder.Item(System.String)">
@@ -15228,16 +15356,16 @@
             <param name="ReuseExisting">If false, throws an exception if the collection exists.</param>
             <returns>Collection referente.</returns>
         </member>
-        <member name="M:MySqlX.XDevAPI.Schema.CreateCollection(System.String,MySql.Data.X.XDevAPI.Common.CreateCollectionOptions)">
+        <member name="M:MySqlX.XDevAPI.Schema.CreateCollection(System.String,MySqlX.XDevAPI.Common.CreateCollectionOptions)">
             <summary>
             Creates a collection including a schema validation.
             </summary>
             <param name="collectionName">The name of the collection to create.</param>
             <param name="options">This object hold the parameters required to create the collection.</param>
-            <see cref="T:MySql.Data.X.XDevAPI.Common.CreateCollectionOptions"/>
+            <see cref="T:MySqlX.XDevAPI.Common.CreateCollectionOptions"/>
             <returns>Collection referente.</returns>
         </member>
-        <member name="M:MySqlX.XDevAPI.Schema.ModifyCollection(System.String,System.Nullable{MySql.Data.X.XDevAPI.Common.ModifyCollectionOptions})">
+        <member name="M:MySqlX.XDevAPI.Schema.ModifyCollection(System.String,System.Nullable{MySqlX.XDevAPI.Common.ModifyCollectionOptions})">
             <summary>
             Modify a collection adding or removing schema validation parameters.
             </summary>

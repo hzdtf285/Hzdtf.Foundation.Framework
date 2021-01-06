@@ -14,7 +14,7 @@ namespace Hzdtf.BasicFunction.Model.Standard
     /// @ 黄振东
     /// </summary>
     [MessagePackObject]
-    public partial class UserRoleInfo : PersonTimeInfo
+    public partial class UserRoleInfo : PersonTimeInfo<int>
     {
 ﻿        /// <summary>
         /// 角色Id_名称

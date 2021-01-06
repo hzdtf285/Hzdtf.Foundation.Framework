@@ -15,7 +15,7 @@
             用户服务
             </summary>
         </member>
-        <member name="M:Hzdtf.BasicFunction.WorkFlow.Standard.FindHandlerConcreteUser.FindById(System.Int32,System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.WorkFlow.Standard.FindHandlerConcreteUser.FindById(System.Int32,System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据ID查找用户信息数组
             </summary>
@@ -41,7 +41,7 @@
             角色用户服务
             </summary>
         </member>
-        <member name="M:Hzdtf.BasicFunction.WorkFlow.Standard.FindHandlerRoleUser.FindById(System.Int32,System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.WorkFlow.Standard.FindHandlerRoleUser.FindById(System.Int32,System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据ID查找用户信息数组
             </summary>
@@ -63,7 +63,7 @@
             注册用户删除前判断是否有处理的事件
             </summary>
         </member>
-        <member name="M:Hzdtf.BasicFunction.WorkFlow.Standard.UserWorkflowUtil.UserService_RemoveByIdsing(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},System.Int32[],System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.WorkFlow.Standard.UserWorkflowUtil.UserService_RemoveByIdsing(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},System.Int32[],System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据用户ID移除前事件
             </summary>
@@ -72,7 +72,7 @@
             <param name="arg3">连接ID</param>
             <param name="arg4">当前用户</param>
         </member>
-        <member name="M:Hzdtf.BasicFunction.WorkFlow.Standard.UserWorkflowUtil.UserService_RemoveByIding(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.WorkFlow.Standard.UserWorkflowUtil.UserService_RemoveByIding(Hzdtf.Utility.Standard.Model.Return.ReturnInfo{System.Boolean},System.Int32,System.String,Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             根据用户ID移除前事件
             </summary>
@@ -92,7 +92,7 @@
             序列服务
             </summary>
         </member>
-        <member name="M:Hzdtf.BasicFunction.WorkFlow.Standard.WorkflowInitSequenceService.BuilderApplyNo``1(Hzdtf.WorkFlow.Model.Standard.Expand.FlowInitInfo{``0},Hzdtf.Utility.Standard.Model.Return.ReturnInfo{Hzdtf.WorkFlow.Model.Standard.Expand.WorkflowBasicInfo},Hzdtf.Utility.Standard.Model.BasicUserInfo)">
+        <member name="M:Hzdtf.BasicFunction.WorkFlow.Standard.WorkflowInitSequenceService.BuilderApplyNo``1(Hzdtf.WorkFlow.Model.Standard.Expand.FlowInitInfo{``0},Hzdtf.Utility.Standard.Model.Return.ReturnInfo{Hzdtf.WorkFlow.Model.Standard.Expand.WorkflowBasicInfo},Hzdtf.Utility.Standard.Model.BasicUserInfo{System.Int32})">
             <summary>
             生成申请单号
             </summary>
